@@ -1,6 +1,6 @@
 {
   "name": "dcs-js",
-  "version": "1.2.2-beta.1",
+  "version": "2.0.0-beta.0",
   "description": "OpenAPI client for DCS (Door43 Content Service)",
   "author": "OpenAPI-Generator Contributors",
   "keywords": [
@@ -18,9 +18,6 @@
     "prepublishOnly": "npm run build",
     "docmd": "npx typedoc --plugin typedoc-plugin-markdown --out documentation/ ./ --name dcs-js --namedAnchors true",
     "dochtml": "npx typedoc --plugin none --out typedoc/ ./ --name dcs-js"
-  },
-  "dependencies": {
-    "axios": "^0.21.1"
   },
   "devDependencies": {
     "@types/node": "^12.11.5",
