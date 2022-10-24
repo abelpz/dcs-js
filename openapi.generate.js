@@ -28,7 +28,7 @@ try {
     console.error(`stderr: ${data}`);
   });
   command.stdout.on("data", (output) => {
-    console.log("Output: ", output.toString());
+    console.log(output.toString());
   });
   command.on("close", (code) => {
     console.log(`child process exited with code ${code}`);
