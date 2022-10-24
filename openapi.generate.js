@@ -16,12 +16,12 @@ try {
   );
   console.log(
     "\x1b[32m",
-    `✏️. Executing command '${command.spawnargs.at(-1)}'...`,
+    `✏️ ~ Executing command: ${command.spawnargs.at(-1)}...`,
     "\x1b[0m"
   );
   console.log(
     "\x1b[32m",
-    `⚙️. Generating library using '${target}'...`,
+    `⚙️ ~ Generating library using: "${target}"...`,
     "\x1b[0m"
   );
   command.stderr.on("data", (data) => {
