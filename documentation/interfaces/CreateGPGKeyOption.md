@@ -12,14 +12,14 @@ CreateGPGKeyOption options create user GPG key
 
 ### Properties
 
-- [armoredPublicKey](CreateGPGKeyOption.md#armoredpublickey)
-- [armoredSignature](CreateGPGKeyOption.md#armoredsignature)
+- [armored\_public\_key](CreateGPGKeyOption.md#armored_public_key)
+- [armored\_signature](CreateGPGKeyOption.md#armored_signature)
 
 ## Properties
 
-### <a id="armoredpublickey" name="armoredpublickey"></a> armoredPublicKey
+### <a id="armored_public_key" name="armored_public_key"></a> armored\_public\_key
 
-• **armoredPublicKey**: `string`
+• **armored\_public\_key**: `string`
 
 An armored GPG key to add
 
@@ -27,16 +27,16 @@ An armored GPG key to add
 
 #### Defined in
 
-[models/create-gpgkey-option.ts:25](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-gpgkey-option.ts#L25)
+[models/create-gpgkey-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-gpgkey-option.ts#L28)
 
 ___
 
-### <a id="armoredsignature" name="armoredsignature"></a> armoredSignature
+### <a id="armored_signature" name="armored_signature"></a> armored\_signature
 
-• `Optional` **armoredSignature**: `string`
+• `Optional` **armored\_signature**: `string`
 
 **`memberof`** CreateGPGKeyOption
 
 #### Defined in
 
-[models/create-gpgkey-option.ts:31](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-gpgkey-option.ts#L31)
+[models/create-gpgkey-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-gpgkey-option.ts#L34)

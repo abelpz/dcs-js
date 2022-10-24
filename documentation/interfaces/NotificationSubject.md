@@ -12,9 +12,9 @@ NotificationSubject contains the notification subject (Issue/Pull/Commit)
 
 ### Properties
 
-- [htmlUrl](NotificationSubject.md#htmlurl)
-- [latestCommentHtmlUrl](NotificationSubject.md#latestcommenthtmlurl)
-- [latestCommentUrl](NotificationSubject.md#latestcommenturl)
+- [html\_url](NotificationSubject.md#html_url)
+- [latest\_comment\_html\_url](NotificationSubject.md#latest_comment_html_url)
+- [latest\_comment\_url](NotificationSubject.md#latest_comment_url)
 - [state](NotificationSubject.md#state)
 - [title](NotificationSubject.md#title)
 - [type](NotificationSubject.md#type)
@@ -22,51 +22,53 @@ NotificationSubject contains the notification subject (Issue/Pull/Commit)
 
 ## Properties
 
-### <a id="htmlurl" name="htmlurl"></a> htmlUrl
+### <a id="html_url" name="html_url"></a> html\_url
 
-• `Optional` **htmlUrl**: `string`
+• `Optional` **html\_url**: `string`
 
 **`memberof`** NotificationSubject
 
 #### Defined in
 
-[models/notification-subject.ts:27](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/notification-subject.ts#L27)
+[models/notification-subject.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/notification-subject.ts#L28)
 
 ___
 
-### <a id="latestcommenthtmlurl" name="latestcommenthtmlurl"></a> latestCommentHtmlUrl
+### <a id="latest_comment_html_url" name="latest_comment_html_url"></a> latest\_comment\_html\_url
 
-• `Optional` **latestCommentHtmlUrl**: `string`
+• `Optional` **latest\_comment\_html\_url**: `string`
 
 **`memberof`** NotificationSubject
 
 #### Defined in
 
-[models/notification-subject.ts:33](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/notification-subject.ts#L33)
+[models/notification-subject.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/notification-subject.ts#L34)
 
 ___
 
-### <a id="latestcommenturl" name="latestcommenturl"></a> latestCommentUrl
+### <a id="latest_comment_url" name="latest_comment_url"></a> latest\_comment\_url
 
-• `Optional` **latestCommentUrl**: `string`
+• `Optional` **latest\_comment\_url**: `string`
 
 **`memberof`** NotificationSubject
 
 #### Defined in
 
-[models/notification-subject.ts:39](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/notification-subject.ts#L39)
+[models/notification-subject.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/notification-subject.ts#L40)
 
 ___
 
 ### <a id="state" name="state"></a> state
 
-• `Optional` **state**: [`StateType`](StateType.md)
+• `Optional` **state**: `string`
+
+StateType issue state type
 
 **`memberof`** NotificationSubject
 
 #### Defined in
 
-[models/notification-subject.ts:45](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/notification-subject.ts#L45)
+[models/notification-subject.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/notification-subject.ts#L46)
 
 ___
 
@@ -78,19 +80,21 @@ ___
 
 #### Defined in
 
-[models/notification-subject.ts:51](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/notification-subject.ts#L51)
+[models/notification-subject.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/notification-subject.ts#L52)
 
 ___
 
 ### <a id="type" name="type"></a> type
 
-• `Optional` **type**: [`NotifySubjectType`](NotifySubjectType.md)
+• `Optional` **type**: `string`
+
+NotifySubjectType represent type of notification subject
 
 **`memberof`** NotificationSubject
 
 #### Defined in
 
-[models/notification-subject.ts:57](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/notification-subject.ts#L57)
+[models/notification-subject.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/notification-subject.ts#L58)
 
 ___
 
@@ -102,4 +106,4 @@ ___
 
 #### Defined in
 
-[models/notification-subject.ts:63](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/notification-subject.ts#L63)
+[models/notification-subject.ts:64](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/notification-subject.ts#L64)

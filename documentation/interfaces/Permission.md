@@ -26,7 +26,7 @@ Permission represents a set of permissions
 
 #### Defined in
 
-[models/permission.ts:25](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/permission.ts#L25)
+[models/permission.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/permission.ts#L28)
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 #### Defined in
 
-[models/permission.ts:31](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/permission.ts#L31)
+[models/permission.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/permission.ts#L34)
 
 ___
 
@@ -50,4 +50,4 @@ ___
 
 #### Defined in
 
-[models/permission.ts:37](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/permission.ts#L37)
+[models/permission.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/permission.ts#L40)

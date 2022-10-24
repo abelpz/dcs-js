@@ -13,33 +13,33 @@ TimelineComment represents a timeline comment (comment of any type) on a commit 
 ### Properties
 
 - [assignee](TimelineComment.md#assignee)
-- [assigneeTeam](TimelineComment.md#assigneeteam)
+- [assignee\_team](TimelineComment.md#assignee_team)
 - [body](TimelineComment.md#body)
-- [createdAt](TimelineComment.md#createdat)
-- [dependentIssue](TimelineComment.md#dependentissue)
-- [htmlUrl](TimelineComment.md#htmlurl)
+- [created\_at](TimelineComment.md#created_at)
+- [dependent\_issue](TimelineComment.md#dependent_issue)
+- [html\_url](TimelineComment.md#html_url)
 - [id](TimelineComment.md#id)
-- [issueUrl](TimelineComment.md#issueurl)
+- [issue\_url](TimelineComment.md#issue_url)
 - [label](TimelineComment.md#label)
 - [milestone](TimelineComment.md#milestone)
-- [newRef](TimelineComment.md#newref)
-- [newTitle](TimelineComment.md#newtitle)
-- [oldMilestone](TimelineComment.md#oldmilestone)
-- [oldProjectId](TimelineComment.md#oldprojectid)
-- [oldRef](TimelineComment.md#oldref)
-- [oldTitle](TimelineComment.md#oldtitle)
-- [projectId](TimelineComment.md#projectid)
-- [pullRequestUrl](TimelineComment.md#pullrequesturl)
-- [refAction](TimelineComment.md#refaction)
-- [refComment](TimelineComment.md#refcomment)
-- [refCommitSha](TimelineComment.md#refcommitsha)
-- [refIssue](TimelineComment.md#refissue)
-- [removedAssignee](TimelineComment.md#removedassignee)
-- [resolveDoer](TimelineComment.md#resolvedoer)
-- [reviewId](TimelineComment.md#reviewid)
-- [trackedTime](TimelineComment.md#trackedtime)
+- [new\_ref](TimelineComment.md#new_ref)
+- [new\_title](TimelineComment.md#new_title)
+- [old\_milestone](TimelineComment.md#old_milestone)
+- [old\_project\_id](TimelineComment.md#old_project_id)
+- [old\_ref](TimelineComment.md#old_ref)
+- [old\_title](TimelineComment.md#old_title)
+- [project\_id](TimelineComment.md#project_id)
+- [pull\_request\_url](TimelineComment.md#pull_request_url)
+- [ref\_action](TimelineComment.md#ref_action)
+- [ref\_comment](TimelineComment.md#ref_comment)
+- [ref\_commit\_sha](TimelineComment.md#ref_commit_sha)
+- [ref\_issue](TimelineComment.md#ref_issue)
+- [removed\_assignee](TimelineComment.md#removed_assignee)
+- [resolve\_doer](TimelineComment.md#resolve_doer)
+- [review\_id](TimelineComment.md#review_id)
+- [tracked\_time](TimelineComment.md#tracked_time)
 - [type](TimelineComment.md#type)
-- [updatedAt](TimelineComment.md#updatedat)
+- [updated\_at](TimelineComment.md#updated_at)
 - [user](TimelineComment.md#user)
 
 ## Properties
@@ -52,19 +52,19 @@ TimelineComment represents a timeline comment (comment of any type) on a commit 
 
 #### Defined in
 
-[models/timeline-comment.ts:32](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/timeline-comment.ts#L32)
+[models/timeline-comment.ts:49](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/timeline-comment.ts#L49)
 
 ___
 
-### <a id="assigneeteam" name="assigneeteam"></a> assigneeTeam
+### <a id="assignee_team" name="assignee_team"></a> assignee\_team
 
-• `Optional` **assigneeTeam**: [`Team`](Team.md)
+• `Optional` **assignee\_team**: [`Team`](Team.md)
 
 **`memberof`** TimelineComment
 
 #### Defined in
 
-[models/timeline-comment.ts:38](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/timeline-comment.ts#L38)
+[models/timeline-comment.ts:55](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/timeline-comment.ts#L55)
 
 ___
 
@@ -76,43 +76,43 @@ ___
 
 #### Defined in
 
-[models/timeline-comment.ts:44](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/timeline-comment.ts#L44)
+[models/timeline-comment.ts:61](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/timeline-comment.ts#L61)
 
 ___
 
-### <a id="createdat" name="createdat"></a> createdAt
+### <a id="created_at" name="created_at"></a> created\_at
 
-• `Optional` **createdAt**: `Date`
+• `Optional` **created\_at**: `string`
 
 **`memberof`** TimelineComment
 
 #### Defined in
 
-[models/timeline-comment.ts:50](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/timeline-comment.ts#L50)
+[models/timeline-comment.ts:67](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/timeline-comment.ts#L67)
 
 ___
 
-### <a id="dependentissue" name="dependentissue"></a> dependentIssue
+### <a id="dependent_issue" name="dependent_issue"></a> dependent\_issue
 
-• `Optional` **dependentIssue**: [`Issue`](Issue.md)
+• `Optional` **dependent\_issue**: [`Issue`](Issue.md)
 
 **`memberof`** TimelineComment
 
 #### Defined in
 
-[models/timeline-comment.ts:56](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/timeline-comment.ts#L56)
+[models/timeline-comment.ts:73](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/timeline-comment.ts#L73)
 
 ___
 
-### <a id="htmlurl" name="htmlurl"></a> htmlUrl
+### <a id="html_url" name="html_url"></a> html\_url
 
-• `Optional` **htmlUrl**: `string`
+• `Optional` **html\_url**: `string`
 
 **`memberof`** TimelineComment
 
 #### Defined in
 
-[models/timeline-comment.ts:62](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/timeline-comment.ts#L62)
+[models/timeline-comment.ts:79](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/timeline-comment.ts#L79)
 
 ___
 
@@ -124,19 +124,19 @@ ___
 
 #### Defined in
 
-[models/timeline-comment.ts:68](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/timeline-comment.ts#L68)
+[models/timeline-comment.ts:85](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/timeline-comment.ts#L85)
 
 ___
 
-### <a id="issueurl" name="issueurl"></a> issueUrl
+### <a id="issue_url" name="issue_url"></a> issue\_url
 
-• `Optional` **issueUrl**: `string`
+• `Optional` **issue\_url**: `string`
 
 **`memberof`** TimelineComment
 
 #### Defined in
 
-[models/timeline-comment.ts:74](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/timeline-comment.ts#L74)
+[models/timeline-comment.ts:91](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/timeline-comment.ts#L91)
 
 ___
 
@@ -148,7 +148,7 @@ ___
 
 #### Defined in
 
-[models/timeline-comment.ts:80](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/timeline-comment.ts#L80)
+[models/timeline-comment.ts:97](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/timeline-comment.ts#L97)
 
 ___
 
@@ -160,133 +160,133 @@ ___
 
 #### Defined in
 
-[models/timeline-comment.ts:86](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/timeline-comment.ts#L86)
+[models/timeline-comment.ts:103](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/timeline-comment.ts#L103)
 
 ___
 
-### <a id="newref" name="newref"></a> newRef
+### <a id="new_ref" name="new_ref"></a> new\_ref
 
-• `Optional` **newRef**: `string`
+• `Optional` **new\_ref**: `string`
 
 **`memberof`** TimelineComment
 
 #### Defined in
 
-[models/timeline-comment.ts:92](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/timeline-comment.ts#L92)
+[models/timeline-comment.ts:109](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/timeline-comment.ts#L109)
 
 ___
 
-### <a id="newtitle" name="newtitle"></a> newTitle
+### <a id="new_title" name="new_title"></a> new\_title
 
-• `Optional` **newTitle**: `string`
+• `Optional` **new\_title**: `string`
 
 **`memberof`** TimelineComment
 
 #### Defined in
 
-[models/timeline-comment.ts:98](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/timeline-comment.ts#L98)
+[models/timeline-comment.ts:115](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/timeline-comment.ts#L115)
 
 ___
 
-### <a id="oldmilestone" name="oldmilestone"></a> oldMilestone
+### <a id="old_milestone" name="old_milestone"></a> old\_milestone
 
-• `Optional` **oldMilestone**: [`Milestone`](Milestone.md)
+• `Optional` **old\_milestone**: [`Milestone`](Milestone.md)
 
 **`memberof`** TimelineComment
 
 #### Defined in
 
-[models/timeline-comment.ts:104](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/timeline-comment.ts#L104)
+[models/timeline-comment.ts:121](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/timeline-comment.ts#L121)
 
 ___
 
-### <a id="oldprojectid" name="oldprojectid"></a> oldProjectId
+### <a id="old_project_id" name="old_project_id"></a> old\_project\_id
 
-• `Optional` **oldProjectId**: `number`
+• `Optional` **old\_project\_id**: `number`
 
 **`memberof`** TimelineComment
 
 #### Defined in
 
-[models/timeline-comment.ts:110](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/timeline-comment.ts#L110)
+[models/timeline-comment.ts:127](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/timeline-comment.ts#L127)
 
 ___
 
-### <a id="oldref" name="oldref"></a> oldRef
+### <a id="old_ref" name="old_ref"></a> old\_ref
 
-• `Optional` **oldRef**: `string`
+• `Optional` **old\_ref**: `string`
 
 **`memberof`** TimelineComment
 
 #### Defined in
 
-[models/timeline-comment.ts:116](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/timeline-comment.ts#L116)
+[models/timeline-comment.ts:133](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/timeline-comment.ts#L133)
 
 ___
 
-### <a id="oldtitle" name="oldtitle"></a> oldTitle
+### <a id="old_title" name="old_title"></a> old\_title
 
-• `Optional` **oldTitle**: `string`
+• `Optional` **old\_title**: `string`
 
 **`memberof`** TimelineComment
 
 #### Defined in
 
-[models/timeline-comment.ts:122](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/timeline-comment.ts#L122)
+[models/timeline-comment.ts:139](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/timeline-comment.ts#L139)
 
 ___
 
-### <a id="projectid" name="projectid"></a> projectId
+### <a id="project_id" name="project_id"></a> project\_id
 
-• `Optional` **projectId**: `number`
+• `Optional` **project\_id**: `number`
 
 **`memberof`** TimelineComment
 
 #### Defined in
 
-[models/timeline-comment.ts:128](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/timeline-comment.ts#L128)
+[models/timeline-comment.ts:145](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/timeline-comment.ts#L145)
 
 ___
 
-### <a id="pullrequesturl" name="pullrequesturl"></a> pullRequestUrl
+### <a id="pull_request_url" name="pull_request_url"></a> pull\_request\_url
 
-• `Optional` **pullRequestUrl**: `string`
+• `Optional` **pull\_request\_url**: `string`
 
 **`memberof`** TimelineComment
 
 #### Defined in
 
-[models/timeline-comment.ts:134](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/timeline-comment.ts#L134)
+[models/timeline-comment.ts:151](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/timeline-comment.ts#L151)
 
 ___
 
-### <a id="refaction" name="refaction"></a> refAction
+### <a id="ref_action" name="ref_action"></a> ref\_action
 
-• `Optional` **refAction**: `string`
+• `Optional` **ref\_action**: `string`
 
 **`memberof`** TimelineComment
 
 #### Defined in
 
-[models/timeline-comment.ts:140](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/timeline-comment.ts#L140)
+[models/timeline-comment.ts:157](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/timeline-comment.ts#L157)
 
 ___
 
-### <a id="refcomment" name="refcomment"></a> refComment
+### <a id="ref_comment" name="ref_comment"></a> ref\_comment
 
-• `Optional` **refComment**: [`Comment`](Comment.md)
+• `Optional` **ref\_comment**: [`Comment`](Comment.md)
 
 **`memberof`** TimelineComment
 
 #### Defined in
 
-[models/timeline-comment.ts:146](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/timeline-comment.ts#L146)
+[models/timeline-comment.ts:163](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/timeline-comment.ts#L163)
 
 ___
 
-### <a id="refcommitsha" name="refcommitsha"></a> refCommitSha
+### <a id="ref_commit_sha" name="ref_commit_sha"></a> ref\_commit\_sha
 
-• `Optional` **refCommitSha**: `string`
+• `Optional` **ref\_commit\_sha**: `string`
 
 commit SHA where issue/PR was referenced
 
@@ -294,25 +294,25 @@ commit SHA where issue/PR was referenced
 
 #### Defined in
 
-[models/timeline-comment.ts:152](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/timeline-comment.ts#L152)
+[models/timeline-comment.ts:169](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/timeline-comment.ts#L169)
 
 ___
 
-### <a id="refissue" name="refissue"></a> refIssue
+### <a id="ref_issue" name="ref_issue"></a> ref\_issue
 
-• `Optional` **refIssue**: [`Issue`](Issue.md)
+• `Optional` **ref\_issue**: [`Issue`](Issue.md)
 
 **`memberof`** TimelineComment
 
 #### Defined in
 
-[models/timeline-comment.ts:158](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/timeline-comment.ts#L158)
+[models/timeline-comment.ts:175](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/timeline-comment.ts#L175)
 
 ___
 
-### <a id="removedassignee" name="removedassignee"></a> removedAssignee
+### <a id="removed_assignee" name="removed_assignee"></a> removed\_assignee
 
-• `Optional` **removedAssignee**: `boolean`
+• `Optional` **removed\_assignee**: `boolean`
 
 whether the assignees were removed or added
 
@@ -320,43 +320,43 @@ whether the assignees were removed or added
 
 #### Defined in
 
-[models/timeline-comment.ts:164](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/timeline-comment.ts#L164)
+[models/timeline-comment.ts:181](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/timeline-comment.ts#L181)
 
 ___
 
-### <a id="resolvedoer" name="resolvedoer"></a> resolveDoer
+### <a id="resolve_doer" name="resolve_doer"></a> resolve\_doer
 
-• `Optional` **resolveDoer**: [`User`](User.md)
+• `Optional` **resolve\_doer**: [`User`](User.md)
 
 **`memberof`** TimelineComment
 
 #### Defined in
 
-[models/timeline-comment.ts:170](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/timeline-comment.ts#L170)
+[models/timeline-comment.ts:187](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/timeline-comment.ts#L187)
 
 ___
 
-### <a id="reviewid" name="reviewid"></a> reviewId
+### <a id="review_id" name="review_id"></a> review\_id
 
-• `Optional` **reviewId**: `number`
+• `Optional` **review\_id**: `number`
 
 **`memberof`** TimelineComment
 
 #### Defined in
 
-[models/timeline-comment.ts:176](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/timeline-comment.ts#L176)
+[models/timeline-comment.ts:193](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/timeline-comment.ts#L193)
 
 ___
 
-### <a id="trackedtime" name="trackedtime"></a> trackedTime
+### <a id="tracked_time" name="tracked_time"></a> tracked\_time
 
-• `Optional` **trackedTime**: [`TrackedTime`](TrackedTime.md)
+• `Optional` **tracked\_time**: [`TrackedTime`](TrackedTime.md)
 
 **`memberof`** TimelineComment
 
 #### Defined in
 
-[models/timeline-comment.ts:182](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/timeline-comment.ts#L182)
+[models/timeline-comment.ts:199](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/timeline-comment.ts#L199)
 
 ___
 
@@ -368,19 +368,19 @@ ___
 
 #### Defined in
 
-[models/timeline-comment.ts:188](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/timeline-comment.ts#L188)
+[models/timeline-comment.ts:205](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/timeline-comment.ts#L205)
 
 ___
 
-### <a id="updatedat" name="updatedat"></a> updatedAt
+### <a id="updated_at" name="updated_at"></a> updated\_at
 
-• `Optional` **updatedAt**: `Date`
+• `Optional` **updated\_at**: `string`
 
 **`memberof`** TimelineComment
 
 #### Defined in
 
-[models/timeline-comment.ts:194](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/timeline-comment.ts#L194)
+[models/timeline-comment.ts:211](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/timeline-comment.ts#L211)
 
 ___
 
@@ -392,4 +392,4 @@ ___
 
 #### Defined in
 
-[models/timeline-comment.ts:200](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/timeline-comment.ts#L200)
+[models/timeline-comment.ts:217](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/timeline-comment.ts#L217)

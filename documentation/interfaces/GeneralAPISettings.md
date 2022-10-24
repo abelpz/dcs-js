@@ -12,55 +12,55 @@ GeneralAPISettings contains global api settings exposed by it
 
 ### Properties
 
-- [defaultGitTreesPerPage](GeneralAPISettings.md#defaultgittreesperpage)
-- [defaultMaxBlobSize](GeneralAPISettings.md#defaultmaxblobsize)
-- [defaultPagingNum](GeneralAPISettings.md#defaultpagingnum)
-- [maxResponseItems](GeneralAPISettings.md#maxresponseitems)
+- [default\_git\_trees\_per\_page](GeneralAPISettings.md#default_git_trees_per_page)
+- [default\_max\_blob\_size](GeneralAPISettings.md#default_max_blob_size)
+- [default\_paging\_num](GeneralAPISettings.md#default_paging_num)
+- [max\_response\_items](GeneralAPISettings.md#max_response_items)
 
 ## Properties
 
-### <a id="defaultgittreesperpage" name="defaultgittreesperpage"></a> defaultGitTreesPerPage
+### <a id="default_git_trees_per_page" name="default_git_trees_per_page"></a> default\_git\_trees\_per\_page
 
-• `Optional` **defaultGitTreesPerPage**: `number`
+• `Optional` **default\_git\_trees\_per\_page**: `number`
 
 **`memberof`** GeneralAPISettings
 
 #### Defined in
 
-[models/general-apisettings.ts:25](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/general-apisettings.ts#L25)
+[models/general-apisettings.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/general-apisettings.ts#L28)
 
 ___
 
-### <a id="defaultmaxblobsize" name="defaultmaxblobsize"></a> defaultMaxBlobSize
+### <a id="default_max_blob_size" name="default_max_blob_size"></a> default\_max\_blob\_size
 
-• `Optional` **defaultMaxBlobSize**: `number`
+• `Optional` **default\_max\_blob\_size**: `number`
 
 **`memberof`** GeneralAPISettings
 
 #### Defined in
 
-[models/general-apisettings.ts:31](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/general-apisettings.ts#L31)
+[models/general-apisettings.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/general-apisettings.ts#L34)
 
 ___
 
-### <a id="defaultpagingnum" name="defaultpagingnum"></a> defaultPagingNum
+### <a id="default_paging_num" name="default_paging_num"></a> default\_paging\_num
 
-• `Optional` **defaultPagingNum**: `number`
+• `Optional` **default\_paging\_num**: `number`
 
 **`memberof`** GeneralAPISettings
 
 #### Defined in
 
-[models/general-apisettings.ts:37](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/general-apisettings.ts#L37)
+[models/general-apisettings.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/general-apisettings.ts#L40)
 
 ___
 
-### <a id="maxresponseitems" name="maxresponseitems"></a> maxResponseItems
+### <a id="max_response_items" name="max_response_items"></a> max\_response\_items
 
-• `Optional` **maxResponseItems**: `number`
+• `Optional` **max\_response\_items**: `number`
 
 **`memberof`** GeneralAPISettings
 
 #### Defined in
 
-[models/general-apisettings.ts:43](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/general-apisettings.ts#L43)
+[models/general-apisettings.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/general-apisettings.ts#L46)

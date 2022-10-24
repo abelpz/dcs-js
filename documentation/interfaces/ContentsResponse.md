@@ -2,7 +2,7 @@
 
 # Interface: ContentsResponse
 
-ContentsResponse contains information about a repo's entry's (dir, file, symlink, submodule) metadata and content
+ContentsResponse contains information about a repo\'s entry\'s (dir, file, symlink, submodule) metadata and content
 
 **`export`**
 
@@ -12,22 +12,34 @@ ContentsResponse contains information about a repo's entry's (dir, file, symlink
 
 ### Properties
 
+- [\_links](ContentsResponse.md#_links)
 - [content](ContentsResponse.md#content)
-- [downloadUrl](ContentsResponse.md#downloadurl)
+- [download\_url](ContentsResponse.md#download_url)
 - [encoding](ContentsResponse.md#encoding)
-- [gitUrl](ContentsResponse.md#giturl)
-- [htmlUrl](ContentsResponse.md#htmlurl)
-- [links](ContentsResponse.md#links)
+- [git\_url](ContentsResponse.md#git_url)
+- [html\_url](ContentsResponse.md#html_url)
 - [name](ContentsResponse.md#name)
 - [path](ContentsResponse.md#path)
 - [sha](ContentsResponse.md#sha)
 - [size](ContentsResponse.md#size)
-- [submoduleGitUrl](ContentsResponse.md#submodulegiturl)
+- [submodule\_git\_url](ContentsResponse.md#submodule_git_url)
 - [target](ContentsResponse.md#target)
 - [type](ContentsResponse.md#type)
 - [url](ContentsResponse.md#url)
 
 ## Properties
+
+### <a id="_links" name="_links"></a> \_links
+
+• `Optional` **\_links**: [`FileLinksResponse`](FileLinksResponse.md)
+
+**`memberof`** ContentsResponse
+
+#### Defined in
+
+[models/contents-response.ts:31](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/contents-response.ts#L31)
+
+___
 
 ### <a id="content" name="content"></a> content
 
@@ -39,19 +51,19 @@ ContentsResponse contains information about a repo's entry's (dir, file, symlink
 
 #### Defined in
 
-[models/contents-response.ts:32](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/contents-response.ts#L32)
+[models/contents-response.ts:37](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/contents-response.ts#L37)
 
 ___
 
-### <a id="downloadurl" name="downloadurl"></a> downloadUrl
+### <a id="download_url" name="download_url"></a> download\_url
 
-• `Optional` **downloadUrl**: `string`
+• `Optional` **download\_url**: `string`
 
 **`memberof`** ContentsResponse
 
 #### Defined in
 
-[models/contents-response.ts:38](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/contents-response.ts#L38)
+[models/contents-response.ts:43](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/contents-response.ts#L43)
 
 ___
 
@@ -65,43 +77,31 @@ ___
 
 #### Defined in
 
-[models/contents-response.ts:44](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/contents-response.ts#L44)
+[models/contents-response.ts:49](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/contents-response.ts#L49)
 
 ___
 
-### <a id="giturl" name="giturl"></a> gitUrl
+### <a id="git_url" name="git_url"></a> git\_url
 
-• `Optional` **gitUrl**: `string`
+• `Optional` **git\_url**: `string`
 
 **`memberof`** ContentsResponse
 
 #### Defined in
 
-[models/contents-response.ts:50](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/contents-response.ts#L50)
+[models/contents-response.ts:55](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/contents-response.ts#L55)
 
 ___
 
-### <a id="htmlurl" name="htmlurl"></a> htmlUrl
+### <a id="html_url" name="html_url"></a> html\_url
 
-• `Optional` **htmlUrl**: `string`
+• `Optional` **html\_url**: `string`
 
 **`memberof`** ContentsResponse
 
 #### Defined in
 
-[models/contents-response.ts:56](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/contents-response.ts#L56)
-
-___
-
-### <a id="links" name="links"></a> links
-
-• `Optional` **links**: [`FileLinksResponse`](FileLinksResponse.md)
-
-**`memberof`** ContentsResponse
-
-#### Defined in
-
-[models/contents-response.ts:26](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/contents-response.ts#L26)
+[models/contents-response.ts:61](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/contents-response.ts#L61)
 
 ___
 
@@ -113,7 +113,7 @@ ___
 
 #### Defined in
 
-[models/contents-response.ts:62](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/contents-response.ts#L62)
+[models/contents-response.ts:67](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/contents-response.ts#L67)
 
 ___
 
@@ -125,7 +125,7 @@ ___
 
 #### Defined in
 
-[models/contents-response.ts:68](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/contents-response.ts#L68)
+[models/contents-response.ts:73](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/contents-response.ts#L73)
 
 ___
 
@@ -137,7 +137,7 @@ ___
 
 #### Defined in
 
-[models/contents-response.ts:74](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/contents-response.ts#L74)
+[models/contents-response.ts:79](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/contents-response.ts#L79)
 
 ___
 
@@ -149,13 +149,13 @@ ___
 
 #### Defined in
 
-[models/contents-response.ts:80](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/contents-response.ts#L80)
+[models/contents-response.ts:85](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/contents-response.ts#L85)
 
 ___
 
-### <a id="submodulegiturl" name="submodulegiturl"></a> submoduleGitUrl
+### <a id="submodule_git_url" name="submodule_git_url"></a> submodule\_git\_url
 
-• `Optional` **submoduleGitUrl**: `string`
+• `Optional` **submodule\_git\_url**: `string`
 
 `submodule_git_url` is populated when `type` is `submodule`, otherwise null
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-[models/contents-response.ts:86](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/contents-response.ts#L86)
+[models/contents-response.ts:91](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/contents-response.ts#L91)
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-[models/contents-response.ts:92](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/contents-response.ts#L92)
+[models/contents-response.ts:97](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/contents-response.ts#L97)
 
 ___
 
@@ -191,7 +191,7 @@ ___
 
 #### Defined in
 
-[models/contents-response.ts:98](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/contents-response.ts#L98)
+[models/contents-response.ts:103](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/contents-response.ts#L103)
 
 ___
 
@@ -203,4 +203,4 @@ ___
 
 #### Defined in
 
-[models/contents-response.ts:104](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/contents-response.ts#L104)
+[models/contents-response.ts:109](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/contents-response.ts#L109)

@@ -25,16 +25,18 @@ UserHeatmapData represents the data needed to create a heatmap
 
 #### Defined in
 
-[models/user-heatmap-data.ts:26](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/user-heatmap-data.ts#L26)
+[models/user-heatmap-data.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/user-heatmap-data.ts#L28)
 
 ___
 
 ### <a id="timestamp" name="timestamp"></a> timestamp
 
-• `Optional` **timestamp**: [`TimeStamp`](TimeStamp.md)
+• `Optional` **timestamp**: `number`
+
+TimeStamp defines a timestamp
 
 **`memberof`** UserHeatmapData
 
 #### Defined in
 
-[models/user-heatmap-data.ts:32](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/user-heatmap-data.ts#L32)
+[models/user-heatmap-data.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/user-heatmap-data.ts#L34)

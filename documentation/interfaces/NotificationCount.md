@@ -12,16 +12,16 @@ NotificationCount number of unread notifications
 
 ### Properties
 
-- [\_new](NotificationCount.md#_new)
+- [new](NotificationCount.md#new)
 
 ## Properties
 
-### <a id="_new" name="_new"></a> \_new
+### <a id="new" name="new"></a> new
 
-• `Optional` **\_new**: `number`
+• `Optional` **new**: `number`
 
 **`memberof`** NotificationCount
 
 #### Defined in
 
-[models/notification-count.ts:25](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/notification-count.ts#L25)
+[models/notification-count.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/notification-count.ts#L28)

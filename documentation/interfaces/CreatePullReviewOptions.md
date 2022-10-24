@@ -14,7 +14,7 @@ CreatePullReviewOptions are options to create a pull review
 
 - [body](CreatePullReviewOptions.md#body)
 - [comments](CreatePullReviewOptions.md#comments)
-- [commitId](CreatePullReviewOptions.md#commitid)
+- [commit\_id](CreatePullReviewOptions.md#commit_id)
 - [event](CreatePullReviewOptions.md#event)
 
 ## Properties
@@ -27,7 +27,7 @@ CreatePullReviewOptions are options to create a pull review
 
 #### Defined in
 
-[models/create-pull-review-options.ts:27](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-pull-review-options.ts#L27)
+[models/create-pull-review-options.ts:31](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-pull-review-options.ts#L31)
 
 ___
 
@@ -39,28 +39,30 @@ ___
 
 #### Defined in
 
-[models/create-pull-review-options.ts:33](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-pull-review-options.ts#L33)
+[models/create-pull-review-options.ts:37](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-pull-review-options.ts#L37)
 
 ___
 
-### <a id="commitid" name="commitid"></a> commitId
+### <a id="commit_id" name="commit_id"></a> commit\_id
 
-• `Optional` **commitId**: `string`
+• `Optional` **commit\_id**: `string`
 
 **`memberof`** CreatePullReviewOptions
 
 #### Defined in
 
-[models/create-pull-review-options.ts:39](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-pull-review-options.ts#L39)
+[models/create-pull-review-options.ts:43](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-pull-review-options.ts#L43)
 
 ___
 
 ### <a id="event" name="event"></a> event
 
-• `Optional` **event**: [`ReviewStateType`](ReviewStateType.md)
+• `Optional` **event**: `string`
+
+ReviewStateType review state type
 
 **`memberof`** CreatePullReviewOptions
 
 #### Defined in
 
-[models/create-pull-review-options.ts:45](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-pull-review-options.ts#L45)
+[models/create-pull-review-options.ts:49](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-pull-review-options.ts#L49)

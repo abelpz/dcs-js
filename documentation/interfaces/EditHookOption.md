@@ -13,7 +13,7 @@ EditHookOption options when modify one hook
 ### Properties
 
 - [active](EditHookOption.md#active)
-- [branchFilter](EditHookOption.md#branchfilter)
+- [branch\_filter](EditHookOption.md#branch_filter)
 - [config](EditHookOption.md#config)
 - [events](EditHookOption.md#events)
 
@@ -27,19 +27,19 @@ EditHookOption options when modify one hook
 
 #### Defined in
 
-[models/edit-hook-option.ts:25](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-hook-option.ts#L25)
+[models/edit-hook-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-hook-option.ts#L28)
 
 ___
 
-### <a id="branchfilter" name="branchfilter"></a> branchFilter
+### <a id="branch_filter" name="branch_filter"></a> branch\_filter
 
-• `Optional` **branchFilter**: `string`
+• `Optional` **branch\_filter**: `string`
 
 **`memberof`** EditHookOption
 
 #### Defined in
 
-[models/edit-hook-option.ts:31](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-hook-option.ts#L31)
+[models/edit-hook-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-hook-option.ts#L34)
 
 ___
 
@@ -55,7 +55,7 @@ ___
 
 #### Defined in
 
-[models/edit-hook-option.ts:37](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-hook-option.ts#L37)
+[models/edit-hook-option.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-hook-option.ts#L40)
 
 ___
 
@@ -67,4 +67,4 @@ ___
 
 #### Defined in
 
-[models/edit-hook-option.ts:43](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-hook-option.ts#L43)
+[models/edit-hook-option.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-hook-option.ts#L46)

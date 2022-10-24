@@ -26,7 +26,7 @@ NodeInfoUsage contains usage statistics for this server
 
 #### Defined in
 
-[models/node-info-usage.ts:26](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/node-info-usage.ts#L26)
+[models/node-info-usage.ts:31](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/node-info-usage.ts#L31)
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 #### Defined in
 
-[models/node-info-usage.ts:32](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/node-info-usage.ts#L32)
+[models/node-info-usage.ts:37](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/node-info-usage.ts#L37)
 
 ___
 
@@ -50,4 +50,4 @@ ___
 
 #### Defined in
 
-[models/node-info-usage.ts:38](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/node-info-usage.ts#L38)
+[models/node-info-usage.ts:43](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/node-info-usage.ts#L43)

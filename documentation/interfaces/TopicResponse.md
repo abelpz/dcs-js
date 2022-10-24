@@ -14,21 +14,21 @@ TopicResponse for returning topics
 
 - [created](TopicResponse.md#created)
 - [id](TopicResponse.md#id)
-- [repoCount](TopicResponse.md#repocount)
-- [topicName](TopicResponse.md#topicname)
+- [repo\_count](TopicResponse.md#repo_count)
+- [topic\_name](TopicResponse.md#topic_name)
 - [updated](TopicResponse.md#updated)
 
 ## Properties
 
 ### <a id="created" name="created"></a> created
 
-• `Optional` **created**: `Date`
+• `Optional` **created**: `string`
 
 **`memberof`** TopicResponse
 
 #### Defined in
 
-[models/topic-response.ts:25](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/topic-response.ts#L25)
+[models/topic-response.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/topic-response.ts#L28)
 
 ___
 
@@ -40,40 +40,40 @@ ___
 
 #### Defined in
 
-[models/topic-response.ts:31](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/topic-response.ts#L31)
+[models/topic-response.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/topic-response.ts#L34)
 
 ___
 
-### <a id="repocount" name="repocount"></a> repoCount
+### <a id="repo_count" name="repo_count"></a> repo\_count
 
-• `Optional` **repoCount**: `number`
+• `Optional` **repo\_count**: `number`
 
 **`memberof`** TopicResponse
 
 #### Defined in
 
-[models/topic-response.ts:37](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/topic-response.ts#L37)
+[models/topic-response.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/topic-response.ts#L40)
 
 ___
 
-### <a id="topicname" name="topicname"></a> topicName
+### <a id="topic_name" name="topic_name"></a> topic\_name
 
-• `Optional` **topicName**: `string`
+• `Optional` **topic\_name**: `string`
 
 **`memberof`** TopicResponse
 
 #### Defined in
 
-[models/topic-response.ts:43](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/topic-response.ts#L43)
+[models/topic-response.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/topic-response.ts#L46)
 
 ___
 
 ### <a id="updated" name="updated"></a> updated
 
-• `Optional` **updated**: `Date`
+• `Optional` **updated**: `string`
 
 **`memberof`** TopicResponse
 
 #### Defined in
 
-[models/topic-response.ts:49](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/topic-response.ts#L49)
+[models/topic-response.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/topic-response.ts#L52)

@@ -12,68 +12,68 @@ OrganizationPermissions list different users permissions on an organization
 
 ### Properties
 
-- [canCreateRepository](OrganizationPermissions.md#cancreaterepository)
-- [canRead](OrganizationPermissions.md#canread)
-- [canWrite](OrganizationPermissions.md#canwrite)
-- [isAdmin](OrganizationPermissions.md#isadmin)
-- [isOwner](OrganizationPermissions.md#isowner)
+- [can\_create\_repository](OrganizationPermissions.md#can_create_repository)
+- [can\_read](OrganizationPermissions.md#can_read)
+- [can\_write](OrganizationPermissions.md#can_write)
+- [is\_admin](OrganizationPermissions.md#is_admin)
+- [is\_owner](OrganizationPermissions.md#is_owner)
 
 ## Properties
 
-### <a id="cancreaterepository" name="cancreaterepository"></a> canCreateRepository
+### <a id="can_create_repository" name="can_create_repository"></a> can\_create\_repository
 
-• `Optional` **canCreateRepository**: `boolean`
+• `Optional` **can\_create\_repository**: `boolean`
 
 **`memberof`** OrganizationPermissions
 
 #### Defined in
 
-[models/organization-permissions.ts:25](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/organization-permissions.ts#L25)
+[models/organization-permissions.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/organization-permissions.ts#L28)
 
 ___
 
-### <a id="canread" name="canread"></a> canRead
+### <a id="can_read" name="can_read"></a> can\_read
 
-• `Optional` **canRead**: `boolean`
+• `Optional` **can\_read**: `boolean`
 
 **`memberof`** OrganizationPermissions
 
 #### Defined in
 
-[models/organization-permissions.ts:31](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/organization-permissions.ts#L31)
+[models/organization-permissions.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/organization-permissions.ts#L34)
 
 ___
 
-### <a id="canwrite" name="canwrite"></a> canWrite
+### <a id="can_write" name="can_write"></a> can\_write
 
-• `Optional` **canWrite**: `boolean`
+• `Optional` **can\_write**: `boolean`
 
 **`memberof`** OrganizationPermissions
 
 #### Defined in
 
-[models/organization-permissions.ts:37](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/organization-permissions.ts#L37)
+[models/organization-permissions.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/organization-permissions.ts#L40)
 
 ___
 
-### <a id="isadmin" name="isadmin"></a> isAdmin
+### <a id="is_admin" name="is_admin"></a> is\_admin
 
-• `Optional` **isAdmin**: `boolean`
+• `Optional` **is\_admin**: `boolean`
 
 **`memberof`** OrganizationPermissions
 
 #### Defined in
 
-[models/organization-permissions.ts:43](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/organization-permissions.ts#L43)
+[models/organization-permissions.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/organization-permissions.ts#L46)
 
 ___
 
-### <a id="isowner" name="isowner"></a> isOwner
+### <a id="is_owner" name="is_owner"></a> is\_owner
 
-• `Optional` **isOwner**: `boolean`
+• `Optional` **is\_owner**: `boolean`
 
 **`memberof`** OrganizationPermissions
 
 #### Defined in
 
-[models/organization-permissions.ts:49](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/organization-permissions.ts#L49)
+[models/organization-permissions.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/organization-permissions.ts#L52)

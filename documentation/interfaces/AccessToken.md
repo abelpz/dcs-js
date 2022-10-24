@@ -13,7 +13,7 @@
 - [id](AccessToken.md#id)
 - [name](AccessToken.md#name)
 - [sha1](AccessToken.md#sha1)
-- [tokenLastEight](AccessToken.md#tokenlasteight)
+- [token\_last\_eight](AccessToken.md#token_last_eight)
 
 ## Properties
 
@@ -25,7 +25,7 @@
 
 #### Defined in
 
-[models/access-token.ts:25](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/access-token.ts#L25)
+[models/access-token.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/access-token.ts#L28)
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 #### Defined in
 
-[models/access-token.ts:31](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/access-token.ts#L31)
+[models/access-token.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/access-token.ts#L34)
 
 ___
 
@@ -49,16 +49,16 @@ ___
 
 #### Defined in
 
-[models/access-token.ts:37](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/access-token.ts#L37)
+[models/access-token.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/access-token.ts#L40)
 
 ___
 
-### <a id="tokenlasteight" name="tokenlasteight"></a> tokenLastEight
+### <a id="token_last_eight" name="token_last_eight"></a> token\_last\_eight
 
-• `Optional` **tokenLastEight**: `string`
+• `Optional` **token\_last\_eight**: `string`
 
 **`memberof`** AccessToken
 
 #### Defined in
 
-[models/access-token.ts:43](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/access-token.ts#L43)
+[models/access-token.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/access-token.ts#L46)

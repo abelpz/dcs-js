@@ -24,4 +24,4 @@ CreateAccessTokenOption options when create access token
 
 #### Defined in
 
-[models/create-access-token-option.ts:25](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-access-token-option.ts#L25)
+[models/create-access-token-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-access-token-option.ts#L28)

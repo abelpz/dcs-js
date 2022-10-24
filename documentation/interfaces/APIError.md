@@ -25,7 +25,7 @@ APIError is an api error with a message
 
 #### Defined in
 
-[models/apierror.ts:25](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/apierror.ts#L25)
+[models/apierror.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/apierror.ts#L28)
 
 ___
 
@@ -37,4 +37,4 @@ ___
 
 #### Defined in
 
-[models/apierror.ts:31](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/apierror.ts#L31)
+[models/apierror.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/apierror.ts#L34)

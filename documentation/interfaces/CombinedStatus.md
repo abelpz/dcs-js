@@ -12,25 +12,25 @@ CombinedStatus holds the combined state of several statuses for a single commit
 
 ### Properties
 
-- [commitUrl](CombinedStatus.md#commiturl)
+- [commit\_url](CombinedStatus.md#commit_url)
 - [repository](CombinedStatus.md#repository)
 - [sha](CombinedStatus.md#sha)
 - [state](CombinedStatus.md#state)
 - [statuses](CombinedStatus.md#statuses)
-- [totalCount](CombinedStatus.md#totalcount)
+- [total\_count](CombinedStatus.md#total_count)
 - [url](CombinedStatus.md#url)
 
 ## Properties
 
-### <a id="commiturl" name="commiturl"></a> commitUrl
+### <a id="commit_url" name="commit_url"></a> commit\_url
 
-• `Optional` **commitUrl**: `string`
+• `Optional` **commit\_url**: `string`
 
 **`memberof`** CombinedStatus
 
 #### Defined in
 
-[models/combined-status.ts:28](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/combined-status.ts#L28)
+[models/combined-status.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/combined-status.ts#L34)
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 #### Defined in
 
-[models/combined-status.ts:34](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/combined-status.ts#L34)
+[models/combined-status.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/combined-status.ts#L40)
 
 ___
 
@@ -54,19 +54,21 @@ ___
 
 #### Defined in
 
-[models/combined-status.ts:40](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/combined-status.ts#L40)
+[models/combined-status.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/combined-status.ts#L46)
 
 ___
 
 ### <a id="state" name="state"></a> state
 
-• `Optional` **state**: [`CommitStatusState`](CommitStatusState.md)
+• `Optional` **state**: `string`
+
+CommitStatusState holds the state of a CommitStatus It can be \"pending\", \"success\", \"error\", \"failure\", and \"warning\"
 
 **`memberof`** CombinedStatus
 
 #### Defined in
 
-[models/combined-status.ts:46](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/combined-status.ts#L46)
+[models/combined-status.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/combined-status.ts#L52)
 
 ___
 
@@ -78,19 +80,19 @@ ___
 
 #### Defined in
 
-[models/combined-status.ts:52](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/combined-status.ts#L52)
+[models/combined-status.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/combined-status.ts#L58)
 
 ___
 
-### <a id="totalcount" name="totalcount"></a> totalCount
+### <a id="total_count" name="total_count"></a> total\_count
 
-• `Optional` **totalCount**: `number`
+• `Optional` **total\_count**: `number`
 
 **`memberof`** CombinedStatus
 
 #### Defined in
 
-[models/combined-status.ts:58](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/combined-status.ts#L58)
+[models/combined-status.ts:64](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/combined-status.ts#L64)
 
 ___
 
@@ -102,4 +104,4 @@ ___
 
 #### Defined in
 
-[models/combined-status.ts:64](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/combined-status.ts#L64)
+[models/combined-status.ts:70](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/combined-status.ts#L70)

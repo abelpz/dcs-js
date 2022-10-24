@@ -12,15 +12,15 @@ ExternalTracker represents settings for external tracker
 
 ### Properties
 
-- [externalTrackerFormat](ExternalTracker.md#externaltrackerformat)
-- [externalTrackerStyle](ExternalTracker.md#externaltrackerstyle)
-- [externalTrackerUrl](ExternalTracker.md#externaltrackerurl)
+- [external\_tracker\_format](ExternalTracker.md#external_tracker_format)
+- [external\_tracker\_style](ExternalTracker.md#external_tracker_style)
+- [external\_tracker\_url](ExternalTracker.md#external_tracker_url)
 
 ## Properties
 
-### <a id="externaltrackerformat" name="externaltrackerformat"></a> externalTrackerFormat
+### <a id="external_tracker_format" name="external_tracker_format"></a> external\_tracker\_format
 
-• `Optional` **externalTrackerFormat**: `string`
+• `Optional` **external\_tracker\_format**: `string`
 
 External Issue Tracker URL Format. Use the placeholders {user}, {repo} and {index} for the username, repository name and issue index.
 
@@ -28,13 +28,13 @@ External Issue Tracker URL Format. Use the placeholders {user}, {repo} and {inde
 
 #### Defined in
 
-[models/external-tracker.ts:25](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/external-tracker.ts#L25)
+[models/external-tracker.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/external-tracker.ts#L28)
 
 ___
 
-### <a id="externaltrackerstyle" name="externaltrackerstyle"></a> externalTrackerStyle
+### <a id="external_tracker_style" name="external_tracker_style"></a> external\_tracker\_style
 
-• `Optional` **externalTrackerStyle**: `string`
+• `Optional` **external\_tracker\_style**: `string`
 
 External Issue Tracker Number Format, either `numeric` or `alphanumeric`
 
@@ -42,13 +42,13 @@ External Issue Tracker Number Format, either `numeric` or `alphanumeric`
 
 #### Defined in
 
-[models/external-tracker.ts:31](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/external-tracker.ts#L31)
+[models/external-tracker.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/external-tracker.ts#L34)
 
 ___
 
-### <a id="externaltrackerurl" name="externaltrackerurl"></a> externalTrackerUrl
+### <a id="external_tracker_url" name="external_tracker_url"></a> external\_tracker\_url
 
-• `Optional` **externalTrackerUrl**: `string`
+• `Optional` **external\_tracker\_url**: `string`
 
 URL of external issue tracker.
 
@@ -56,4 +56,4 @@ URL of external issue tracker.
 
 #### Defined in
 
-[models/external-tracker.ts:37](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/external-tracker.ts#L37)
+[models/external-tracker.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/external-tracker.ts#L40)

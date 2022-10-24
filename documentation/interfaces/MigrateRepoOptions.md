@@ -2,7 +2,7 @@
 
 # Interface: MigrateRepoOptions
 
-MigrateRepoOptions options for migrating repository's this is used to interact with api v1
+MigrateRepoOptions options for migrating repository\'s this is used to interact with api v1
 
 **`export`**
 
@@ -12,86 +12,74 @@ MigrateRepoOptions options for migrating repository's this is used to interact w
 
 ### Properties
 
-- [\_private](MigrateRepoOptions.md#_private)
-- [authPassword](MigrateRepoOptions.md#authpassword)
-- [authToken](MigrateRepoOptions.md#authtoken)
-- [authUsername](MigrateRepoOptions.md#authusername)
-- [cloneAddr](MigrateRepoOptions.md#cloneaddr)
+- [auth\_password](MigrateRepoOptions.md#auth_password)
+- [auth\_token](MigrateRepoOptions.md#auth_token)
+- [auth\_username](MigrateRepoOptions.md#auth_username)
+- [clone\_addr](MigrateRepoOptions.md#clone_addr)
 - [description](MigrateRepoOptions.md#description)
 - [issues](MigrateRepoOptions.md#issues)
 - [labels](MigrateRepoOptions.md#labels)
 - [lfs](MigrateRepoOptions.md#lfs)
-- [lfsEndpoint](MigrateRepoOptions.md#lfsendpoint)
+- [lfs\_endpoint](MigrateRepoOptions.md#lfs_endpoint)
 - [milestones](MigrateRepoOptions.md#milestones)
 - [mirror](MigrateRepoOptions.md#mirror)
-- [mirrorInterval](MigrateRepoOptions.md#mirrorinterval)
-- [pullRequests](MigrateRepoOptions.md#pullrequests)
+- [mirror\_interval](MigrateRepoOptions.md#mirror_interval)
+- [private](MigrateRepoOptions.md#private)
+- [pull\_requests](MigrateRepoOptions.md#pull_requests)
 - [releases](MigrateRepoOptions.md#releases)
-- [repoName](MigrateRepoOptions.md#reponame)
-- [repoOwner](MigrateRepoOptions.md#repoowner)
+- [repo\_name](MigrateRepoOptions.md#repo_name)
+- [repo\_owner](MigrateRepoOptions.md#repo_owner)
 - [service](MigrateRepoOptions.md#service)
 - [uid](MigrateRepoOptions.md#uid)
 - [wiki](MigrateRepoOptions.md#wiki)
 
 ## Properties
 
-### <a id="_private" name="_private"></a> \_private
+### <a id="auth_password" name="auth_password"></a> auth\_password
 
-• `Optional` **\_private**: `boolean`
+• `Optional` **auth\_password**: `string`
 
 **`memberof`** MigrateRepoOptions
 
 #### Defined in
 
-[models/migrate-repo-options.ts:97](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/migrate-repo-options.ts#L97)
+[models/migrate-repo-options.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/migrate-repo-options.ts#L28)
 
 ___
 
-### <a id="authpassword" name="authpassword"></a> authPassword
+### <a id="auth_token" name="auth_token"></a> auth\_token
 
-• `Optional` **authPassword**: `string`
+• `Optional` **auth\_token**: `string`
 
 **`memberof`** MigrateRepoOptions
 
 #### Defined in
 
-[models/migrate-repo-options.ts:25](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/migrate-repo-options.ts#L25)
+[models/migrate-repo-options.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/migrate-repo-options.ts#L34)
 
 ___
 
-### <a id="authtoken" name="authtoken"></a> authToken
+### <a id="auth_username" name="auth_username"></a> auth\_username
 
-• `Optional` **authToken**: `string`
+• `Optional` **auth\_username**: `string`
 
 **`memberof`** MigrateRepoOptions
 
 #### Defined in
 
-[models/migrate-repo-options.ts:31](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/migrate-repo-options.ts#L31)
+[models/migrate-repo-options.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/migrate-repo-options.ts#L40)
 
 ___
 
-### <a id="authusername" name="authusername"></a> authUsername
+### <a id="clone_addr" name="clone_addr"></a> clone\_addr
 
-• `Optional` **authUsername**: `string`
-
-**`memberof`** MigrateRepoOptions
-
-#### Defined in
-
-[models/migrate-repo-options.ts:37](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/migrate-repo-options.ts#L37)
-
-___
-
-### <a id="cloneaddr" name="cloneaddr"></a> cloneAddr
-
-• **cloneAddr**: `string`
+• **clone\_addr**: `string`
 
 **`memberof`** MigrateRepoOptions
 
 #### Defined in
 
-[models/migrate-repo-options.ts:43](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/migrate-repo-options.ts#L43)
+[models/migrate-repo-options.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/migrate-repo-options.ts#L46)
 
 ___
 
@@ -103,7 +91,7 @@ ___
 
 #### Defined in
 
-[models/migrate-repo-options.ts:49](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/migrate-repo-options.ts#L49)
+[models/migrate-repo-options.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/migrate-repo-options.ts#L52)
 
 ___
 
@@ -115,7 +103,7 @@ ___
 
 #### Defined in
 
-[models/migrate-repo-options.ts:55](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/migrate-repo-options.ts#L55)
+[models/migrate-repo-options.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/migrate-repo-options.ts#L58)
 
 ___
 
@@ -127,7 +115,7 @@ ___
 
 #### Defined in
 
-[models/migrate-repo-options.ts:61](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/migrate-repo-options.ts#L61)
+[models/migrate-repo-options.ts:64](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/migrate-repo-options.ts#L64)
 
 ___
 
@@ -139,19 +127,19 @@ ___
 
 #### Defined in
 
-[models/migrate-repo-options.ts:67](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/migrate-repo-options.ts#L67)
+[models/migrate-repo-options.ts:70](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/migrate-repo-options.ts#L70)
 
 ___
 
-### <a id="lfsendpoint" name="lfsendpoint"></a> lfsEndpoint
+### <a id="lfs_endpoint" name="lfs_endpoint"></a> lfs\_endpoint
 
-• `Optional` **lfsEndpoint**: `string`
+• `Optional` **lfs\_endpoint**: `string`
 
 **`memberof`** MigrateRepoOptions
 
 #### Defined in
 
-[models/migrate-repo-options.ts:73](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/migrate-repo-options.ts#L73)
+[models/migrate-repo-options.ts:76](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/migrate-repo-options.ts#L76)
 
 ___
 
@@ -163,7 +151,7 @@ ___
 
 #### Defined in
 
-[models/migrate-repo-options.ts:79](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/migrate-repo-options.ts#L79)
+[models/migrate-repo-options.ts:82](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/migrate-repo-options.ts#L82)
 
 ___
 
@@ -175,31 +163,43 @@ ___
 
 #### Defined in
 
-[models/migrate-repo-options.ts:85](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/migrate-repo-options.ts#L85)
+[models/migrate-repo-options.ts:88](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/migrate-repo-options.ts#L88)
 
 ___
 
-### <a id="mirrorinterval" name="mirrorinterval"></a> mirrorInterval
+### <a id="mirror_interval" name="mirror_interval"></a> mirror\_interval
 
-• `Optional` **mirrorInterval**: `string`
+• `Optional` **mirror\_interval**: `string`
 
 **`memberof`** MigrateRepoOptions
 
 #### Defined in
 
-[models/migrate-repo-options.ts:91](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/migrate-repo-options.ts#L91)
+[models/migrate-repo-options.ts:94](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/migrate-repo-options.ts#L94)
 
 ___
 
-### <a id="pullrequests" name="pullrequests"></a> pullRequests
+### <a id="private" name="private"></a> private
 
-• `Optional` **pullRequests**: `boolean`
+• `Optional` **private**: `boolean`
 
 **`memberof`** MigrateRepoOptions
 
 #### Defined in
 
-[models/migrate-repo-options.ts:103](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/migrate-repo-options.ts#L103)
+[models/migrate-repo-options.ts:100](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/migrate-repo-options.ts#L100)
+
+___
+
+### <a id="pull_requests" name="pull_requests"></a> pull\_requests
+
+• `Optional` **pull\_requests**: `boolean`
+
+**`memberof`** MigrateRepoOptions
+
+#### Defined in
+
+[models/migrate-repo-options.ts:106](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/migrate-repo-options.ts#L106)
 
 ___
 
@@ -211,25 +211,25 @@ ___
 
 #### Defined in
 
-[models/migrate-repo-options.ts:109](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/migrate-repo-options.ts#L109)
+[models/migrate-repo-options.ts:112](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/migrate-repo-options.ts#L112)
 
 ___
 
-### <a id="reponame" name="reponame"></a> repoName
+### <a id="repo_name" name="repo_name"></a> repo\_name
 
-• **repoName**: `string`
+• **repo\_name**: `string`
 
 **`memberof`** MigrateRepoOptions
 
 #### Defined in
 
-[models/migrate-repo-options.ts:115](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/migrate-repo-options.ts#L115)
+[models/migrate-repo-options.ts:118](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/migrate-repo-options.ts#L118)
 
 ___
 
-### <a id="repoowner" name="repoowner"></a> repoOwner
+### <a id="repo_owner" name="repo_owner"></a> repo\_owner
 
-• `Optional` **repoOwner**: `string`
+• `Optional` **repo\_owner**: `string`
 
 Name of User or Organisation who will own Repo after migration
 
@@ -237,19 +237,19 @@ Name of User or Organisation who will own Repo after migration
 
 #### Defined in
 
-[models/migrate-repo-options.ts:121](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/migrate-repo-options.ts#L121)
+[models/migrate-repo-options.ts:124](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/migrate-repo-options.ts#L124)
 
 ___
 
 ### <a id="service" name="service"></a> service
 
-• `Optional` **service**: [`MigrateRepoOptionsServiceEnum`](../enums/MigrateRepoOptionsServiceEnum.md)
+• `Optional` **service**: [`MigrateRepoOptionsServiceEnum`](../modules.md#migraterepooptionsserviceenum-1)
 
 **`memberof`** MigrateRepoOptions
 
 #### Defined in
 
-[models/migrate-repo-options.ts:127](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/migrate-repo-options.ts#L127)
+[models/migrate-repo-options.ts:130](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/migrate-repo-options.ts#L130)
 
 ___
 
@@ -263,7 +263,7 @@ deprecated (only for backwards compatibility)
 
 #### Defined in
 
-[models/migrate-repo-options.ts:133](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/migrate-repo-options.ts#L133)
+[models/migrate-repo-options.ts:136](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/migrate-repo-options.ts#L136)
 
 ___
 
@@ -275,4 +275,4 @@ ___
 
 #### Defined in
 
-[models/migrate-repo-options.ts:139](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/migrate-repo-options.ts#L139)
+[models/migrate-repo-options.ts:142](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/migrate-repo-options.ts#L142)

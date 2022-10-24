@@ -13,7 +13,7 @@ PullRequestMeta PR info if an issue is a PR
 ### Properties
 
 - [merged](PullRequestMeta.md#merged)
-- [mergedAt](PullRequestMeta.md#mergedat)
+- [merged\_at](PullRequestMeta.md#merged_at)
 
 ## Properties
 
@@ -25,16 +25,16 @@ PullRequestMeta PR info if an issue is a PR
 
 #### Defined in
 
-[models/pull-request-meta.ts:25](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/pull-request-meta.ts#L25)
+[models/pull-request-meta.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-request-meta.ts#L28)
 
 ___
 
-### <a id="mergedat" name="mergedat"></a> mergedAt
+### <a id="merged_at" name="merged_at"></a> merged\_at
 
-• `Optional` **mergedAt**: `Date`
+• `Optional` **merged\_at**: `string`
 
 **`memberof`** PullRequestMeta
 
 #### Defined in
 
-[models/pull-request-meta.ts:31](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/pull-request-meta.ts#L31)
+[models/pull-request-meta.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-request-meta.ts#L34)

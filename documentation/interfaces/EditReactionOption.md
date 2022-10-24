@@ -24,4 +24,4 @@ EditReactionOption contain the reaction type
 
 #### Defined in
 
-[models/edit-reaction-option.ts:25](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-reaction-option.ts#L25)
+[models/edit-reaction-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-reaction-option.ts#L28)

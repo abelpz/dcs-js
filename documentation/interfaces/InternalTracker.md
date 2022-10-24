@@ -12,15 +12,15 @@ InternalTracker represents settings for internal tracker
 
 ### Properties
 
-- [allowOnlyContributorsToTrackTime](InternalTracker.md#allowonlycontributorstotracktime)
-- [enableIssueDependencies](InternalTracker.md#enableissuedependencies)
-- [enableTimeTracker](InternalTracker.md#enabletimetracker)
+- [allow\_only\_contributors\_to\_track\_time](InternalTracker.md#allow_only_contributors_to_track_time)
+- [enable\_issue\_dependencies](InternalTracker.md#enable_issue_dependencies)
+- [enable\_time\_tracker](InternalTracker.md#enable_time_tracker)
 
 ## Properties
 
-### <a id="allowonlycontributorstotracktime" name="allowonlycontributorstotracktime"></a> allowOnlyContributorsToTrackTime
+### <a id="allow_only_contributors_to_track_time" name="allow_only_contributors_to_track_time"></a> allow\_only\_contributors\_to\_track\_time
 
-• `Optional` **allowOnlyContributorsToTrackTime**: `boolean`
+• `Optional` **allow\_only\_contributors\_to\_track\_time**: `boolean`
 
 Let only contributors track time (Built-in issue tracker)
 
@@ -28,13 +28,13 @@ Let only contributors track time (Built-in issue tracker)
 
 #### Defined in
 
-[models/internal-tracker.ts:25](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/internal-tracker.ts#L25)
+[models/internal-tracker.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/internal-tracker.ts#L28)
 
 ___
 
-### <a id="enableissuedependencies" name="enableissuedependencies"></a> enableIssueDependencies
+### <a id="enable_issue_dependencies" name="enable_issue_dependencies"></a> enable\_issue\_dependencies
 
-• `Optional` **enableIssueDependencies**: `boolean`
+• `Optional` **enable\_issue\_dependencies**: `boolean`
 
 Enable dependencies for issues and pull requests (Built-in issue tracker)
 
@@ -42,13 +42,13 @@ Enable dependencies for issues and pull requests (Built-in issue tracker)
 
 #### Defined in
 
-[models/internal-tracker.ts:31](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/internal-tracker.ts#L31)
+[models/internal-tracker.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/internal-tracker.ts#L34)
 
 ___
 
-### <a id="enabletimetracker" name="enabletimetracker"></a> enableTimeTracker
+### <a id="enable_time_tracker" name="enable_time_tracker"></a> enable\_time\_tracker
 
-• `Optional` **enableTimeTracker**: `boolean`
+• `Optional` **enable\_time\_tracker**: `boolean`
 
 Enable time tracking (Built-in issue tracker)
 
@@ -56,4 +56,4 @@ Enable time tracking (Built-in issue tracker)
 
 #### Defined in
 
-[models/internal-tracker.ts:37](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/internal-tracker.ts#L37)
+[models/internal-tracker.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/internal-tracker.ts#L40)

@@ -25,7 +25,7 @@ WikiCommitList commit/revision list
 
 #### Defined in
 
-[models/wiki-commit-list.ts:26](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/wiki-commit-list.ts#L26)
+[models/wiki-commit-list.ts:31](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/wiki-commit-list.ts#L31)
 
 ___
 
@@ -37,4 +37,4 @@ ___
 
 #### Defined in
 
-[models/wiki-commit-list.ts:32](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/wiki-commit-list.ts#L32)
+[models/wiki-commit-list.ts:37](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/wiki-commit-list.ts#L37)

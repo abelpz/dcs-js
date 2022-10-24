@@ -30,7 +30,7 @@ AnnotatedTag represents an annotated tag
 
 #### Defined in
 
-[models/annotated-tag.ts:28](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/annotated-tag.ts#L28)
+[models/annotated-tag.ts:37](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/annotated-tag.ts#L37)
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 #### Defined in
 
-[models/annotated-tag.ts:34](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/annotated-tag.ts#L34)
+[models/annotated-tag.ts:43](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/annotated-tag.ts#L43)
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 #### Defined in
 
-[models/annotated-tag.ts:40](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/annotated-tag.ts#L40)
+[models/annotated-tag.ts:49](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/annotated-tag.ts#L49)
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 #### Defined in
 
-[models/annotated-tag.ts:46](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/annotated-tag.ts#L46)
+[models/annotated-tag.ts:55](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/annotated-tag.ts#L55)
 
 ___
 
@@ -78,7 +78,7 @@ ___
 
 #### Defined in
 
-[models/annotated-tag.ts:52](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/annotated-tag.ts#L52)
+[models/annotated-tag.ts:61](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/annotated-tag.ts#L61)
 
 ___
 
@@ -90,7 +90,7 @@ ___
 
 #### Defined in
 
-[models/annotated-tag.ts:58](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/annotated-tag.ts#L58)
+[models/annotated-tag.ts:67](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/annotated-tag.ts#L67)
 
 ___
 
@@ -102,4 +102,4 @@ ___
 
 #### Defined in
 
-[models/annotated-tag.ts:64](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/annotated-tag.ts#L64)
+[models/annotated-tag.ts:73](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/annotated-tag.ts#L73)

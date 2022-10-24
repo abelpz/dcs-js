@@ -12,27 +12,27 @@ DeployKey a deploy key
 
 ### Properties
 
-- [createdAt](DeployKey.md#createdat)
+- [created\_at](DeployKey.md#created_at)
 - [fingerprint](DeployKey.md#fingerprint)
 - [id](DeployKey.md#id)
 - [key](DeployKey.md#key)
-- [keyId](DeployKey.md#keyid)
-- [readOnly](DeployKey.md#readonly)
+- [key\_id](DeployKey.md#key_id)
+- [read\_only](DeployKey.md#read_only)
 - [repository](DeployKey.md#repository)
 - [title](DeployKey.md#title)
 - [url](DeployKey.md#url)
 
 ## Properties
 
-### <a id="createdat" name="createdat"></a> createdAt
+### <a id="created_at" name="created_at"></a> created\_at
 
-• `Optional` **createdAt**: `Date`
+• `Optional` **created\_at**: `string`
 
 **`memberof`** DeployKey
 
 #### Defined in
 
-[models/deploy-key.ts:26](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/deploy-key.ts#L26)
+[models/deploy-key.ts:31](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/deploy-key.ts#L31)
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 #### Defined in
 
-[models/deploy-key.ts:32](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/deploy-key.ts#L32)
+[models/deploy-key.ts:37](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/deploy-key.ts#L37)
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 #### Defined in
 
-[models/deploy-key.ts:38](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/deploy-key.ts#L38)
+[models/deploy-key.ts:43](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/deploy-key.ts#L43)
 
 ___
 
@@ -68,31 +68,31 @@ ___
 
 #### Defined in
 
-[models/deploy-key.ts:44](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/deploy-key.ts#L44)
+[models/deploy-key.ts:49](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/deploy-key.ts#L49)
 
 ___
 
-### <a id="keyid" name="keyid"></a> keyId
+### <a id="key_id" name="key_id"></a> key\_id
 
-• `Optional` **keyId**: `number`
+• `Optional` **key\_id**: `number`
 
 **`memberof`** DeployKey
 
 #### Defined in
 
-[models/deploy-key.ts:50](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/deploy-key.ts#L50)
+[models/deploy-key.ts:55](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/deploy-key.ts#L55)
 
 ___
 
-### <a id="readonly" name="readonly"></a> readOnly
+### <a id="read_only" name="read_only"></a> read\_only
 
-• `Optional` **readOnly**: `boolean`
+• `Optional` **read\_only**: `boolean`
 
 **`memberof`** DeployKey
 
 #### Defined in
 
-[models/deploy-key.ts:56](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/deploy-key.ts#L56)
+[models/deploy-key.ts:61](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/deploy-key.ts#L61)
 
 ___
 
@@ -104,7 +104,7 @@ ___
 
 #### Defined in
 
-[models/deploy-key.ts:62](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/deploy-key.ts#L62)
+[models/deploy-key.ts:67](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/deploy-key.ts#L67)
 
 ___
 
@@ -116,7 +116,7 @@ ___
 
 #### Defined in
 
-[models/deploy-key.ts:68](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/deploy-key.ts#L68)
+[models/deploy-key.ts:73](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/deploy-key.ts#L73)
 
 ___
 
@@ -128,4 +128,4 @@ ___
 
 #### Defined in
 
-[models/deploy-key.ts:74](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/deploy-key.ts#L74)
+[models/deploy-key.ts:79](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/deploy-key.ts#L79)

@@ -16,8 +16,8 @@ Tag represents a repository tag
 - [id](Tag.md#id)
 - [message](Tag.md#message)
 - [name](Tag.md#name)
-- [tarballUrl](Tag.md#tarballurl)
-- [zipballUrl](Tag.md#zipballurl)
+- [tarball\_url](Tag.md#tarball_url)
+- [zipball\_url](Tag.md#zipball_url)
 
 ## Properties
 
@@ -29,7 +29,7 @@ Tag represents a repository tag
 
 #### Defined in
 
-[models/tag.ts:26](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/tag.ts#L26)
+[models/tag.ts:31](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/tag.ts#L31)
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 #### Defined in
 
-[models/tag.ts:32](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/tag.ts#L32)
+[models/tag.ts:37](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/tag.ts#L37)
 
 ___
 
@@ -53,7 +53,7 @@ ___
 
 #### Defined in
 
-[models/tag.ts:38](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/tag.ts#L38)
+[models/tag.ts:43](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/tag.ts#L43)
 
 ___
 
@@ -65,28 +65,28 @@ ___
 
 #### Defined in
 
-[models/tag.ts:44](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/tag.ts#L44)
+[models/tag.ts:49](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/tag.ts#L49)
 
 ___
 
-### <a id="tarballurl" name="tarballurl"></a> tarballUrl
+### <a id="tarball_url" name="tarball_url"></a> tarball\_url
 
-• `Optional` **tarballUrl**: `string`
+• `Optional` **tarball\_url**: `string`
 
 **`memberof`** Tag
 
 #### Defined in
 
-[models/tag.ts:50](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/tag.ts#L50)
+[models/tag.ts:55](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/tag.ts#L55)
 
 ___
 
-### <a id="zipballurl" name="zipballurl"></a> zipballUrl
+### <a id="zipball_url" name="zipball_url"></a> zipball\_url
 
-• `Optional` **zipballUrl**: `string`
+• `Optional` **zipball\_url**: `string`
 
 **`memberof`** Tag
 
 #### Defined in
 
-[models/tag.ts:56](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/tag.ts#L56)
+[models/tag.ts:61](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/tag.ts#L61)

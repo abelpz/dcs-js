@@ -16,12 +16,12 @@ EditPullRequestOption options when modify pull request
 - [assignees](EditPullRequestOption.md#assignees)
 - [base](EditPullRequestOption.md#base)
 - [body](EditPullRequestOption.md#body)
-- [dueDate](EditPullRequestOption.md#duedate)
+- [due\_date](EditPullRequestOption.md#due_date)
 - [labels](EditPullRequestOption.md#labels)
 - [milestone](EditPullRequestOption.md#milestone)
 - [state](EditPullRequestOption.md#state)
 - [title](EditPullRequestOption.md#title)
-- [unsetDueDate](EditPullRequestOption.md#unsetduedate)
+- [unset\_due\_date](EditPullRequestOption.md#unset_due_date)
 
 ## Properties
 
@@ -33,7 +33,7 @@ EditPullRequestOption options when modify pull request
 
 #### Defined in
 
-[models/edit-pull-request-option.ts:25](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-pull-request-option.ts#L25)
+[models/edit-pull-request-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-pull-request-option.ts#L28)
 
 ___
 
@@ -45,7 +45,7 @@ ___
 
 #### Defined in
 
-[models/edit-pull-request-option.ts:31](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-pull-request-option.ts#L31)
+[models/edit-pull-request-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-pull-request-option.ts#L34)
 
 ___
 
@@ -57,7 +57,7 @@ ___
 
 #### Defined in
 
-[models/edit-pull-request-option.ts:37](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-pull-request-option.ts#L37)
+[models/edit-pull-request-option.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-pull-request-option.ts#L40)
 
 ___
 
@@ -69,19 +69,19 @@ ___
 
 #### Defined in
 
-[models/edit-pull-request-option.ts:43](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-pull-request-option.ts#L43)
+[models/edit-pull-request-option.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-pull-request-option.ts#L46)
 
 ___
 
-### <a id="duedate" name="duedate"></a> dueDate
+### <a id="due_date" name="due_date"></a> due\_date
 
-• `Optional` **dueDate**: `Date`
+• `Optional` **due\_date**: `string`
 
 **`memberof`** EditPullRequestOption
 
 #### Defined in
 
-[models/edit-pull-request-option.ts:49](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-pull-request-option.ts#L49)
+[models/edit-pull-request-option.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-pull-request-option.ts#L52)
 
 ___
 
@@ -93,7 +93,7 @@ ___
 
 #### Defined in
 
-[models/edit-pull-request-option.ts:55](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-pull-request-option.ts#L55)
+[models/edit-pull-request-option.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-pull-request-option.ts#L58)
 
 ___
 
@@ -105,7 +105,7 @@ ___
 
 #### Defined in
 
-[models/edit-pull-request-option.ts:61](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-pull-request-option.ts#L61)
+[models/edit-pull-request-option.ts:64](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-pull-request-option.ts#L64)
 
 ___
 
@@ -117,7 +117,7 @@ ___
 
 #### Defined in
 
-[models/edit-pull-request-option.ts:67](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-pull-request-option.ts#L67)
+[models/edit-pull-request-option.ts:70](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-pull-request-option.ts#L70)
 
 ___
 
@@ -129,16 +129,16 @@ ___
 
 #### Defined in
 
-[models/edit-pull-request-option.ts:73](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-pull-request-option.ts#L73)
+[models/edit-pull-request-option.ts:76](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-pull-request-option.ts#L76)
 
 ___
 
-### <a id="unsetduedate" name="unsetduedate"></a> unsetDueDate
+### <a id="unset_due_date" name="unset_due_date"></a> unset\_due\_date
 
-• `Optional` **unsetDueDate**: `boolean`
+• `Optional` **unset\_due\_date**: `boolean`
 
 **`memberof`** EditPullRequestOption
 
 #### Defined in
 
-[models/edit-pull-request-option.ts:79](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-pull-request-option.ts#L79)
+[models/edit-pull-request-option.ts:82](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-pull-request-option.ts#L82)

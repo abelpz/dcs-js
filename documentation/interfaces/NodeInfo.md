@@ -24,13 +24,13 @@ NodeInfo contains standardized way of exposing metadata about a server running o
 
 ### <a id="metadata" name="metadata"></a> metadata
 
-• `Optional` **metadata**: `any`
+• `Optional` **metadata**: `object`
 
 **`memberof`** NodeInfo
 
 #### Defined in
 
-[models/node-info.ts:28](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/node-info.ts#L28)
+[models/node-info.ts:37](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/node-info.ts#L37)
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 #### Defined in
 
-[models/node-info.ts:34](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/node-info.ts#L34)
+[models/node-info.ts:43](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/node-info.ts#L43)
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 #### Defined in
 
-[models/node-info.ts:40](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/node-info.ts#L40)
+[models/node-info.ts:49](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/node-info.ts#L49)
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 #### Defined in
 
-[models/node-info.ts:46](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/node-info.ts#L46)
+[models/node-info.ts:55](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/node-info.ts#L55)
 
 ___
 
@@ -78,7 +78,7 @@ ___
 
 #### Defined in
 
-[models/node-info.ts:52](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/node-info.ts#L52)
+[models/node-info.ts:61](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/node-info.ts#L61)
 
 ___
 
@@ -90,7 +90,7 @@ ___
 
 #### Defined in
 
-[models/node-info.ts:58](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/node-info.ts#L58)
+[models/node-info.ts:67](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/node-info.ts#L67)
 
 ___
 
@@ -102,4 +102,4 @@ ___
 
 #### Defined in
 
-[models/node-info.ts:64](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/node-info.ts#L64)
+[models/node-info.ts:73](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/node-info.ts#L73)

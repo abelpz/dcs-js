@@ -15,24 +15,24 @@ Issue represents an issue in a repository
 - [assignee](Issue.md#assignee)
 - [assignees](Issue.md#assignees)
 - [body](Issue.md#body)
-- [closedAt](Issue.md#closedat)
+- [closed\_at](Issue.md#closed_at)
 - [comments](Issue.md#comments)
-- [createdAt](Issue.md#createdat)
-- [dueDate](Issue.md#duedate)
-- [htmlUrl](Issue.md#htmlurl)
+- [created\_at](Issue.md#created_at)
+- [due\_date](Issue.md#due_date)
+- [html\_url](Issue.md#html_url)
 - [id](Issue.md#id)
-- [isLocked](Issue.md#islocked)
+- [is\_locked](Issue.md#is_locked)
 - [labels](Issue.md#labels)
 - [milestone](Issue.md#milestone)
 - [number](Issue.md#number)
-- [originalAuthor](Issue.md#originalauthor)
-- [originalAuthorId](Issue.md#originalauthorid)
-- [pullRequest](Issue.md#pullrequest)
+- [original\_author](Issue.md#original_author)
+- [original\_author\_id](Issue.md#original_author_id)
+- [pull\_request](Issue.md#pull_request)
 - [ref](Issue.md#ref)
 - [repository](Issue.md#repository)
 - [state](Issue.md#state)
 - [title](Issue.md#title)
-- [updatedAt](Issue.md#updatedat)
+- [updated\_at](Issue.md#updated_at)
 - [url](Issue.md#url)
 - [user](Issue.md#user)
 
@@ -46,7 +46,7 @@ Issue represents an issue in a repository
 
 #### Defined in
 
-[models/issue.ts:31](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/issue.ts#L31)
+[models/issue.ts:43](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/issue.ts#L43)
 
 ___
 
@@ -58,7 +58,7 @@ ___
 
 #### Defined in
 
-[models/issue.ts:37](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/issue.ts#L37)
+[models/issue.ts:49](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/issue.ts#L49)
 
 ___
 
@@ -70,19 +70,19 @@ ___
 
 #### Defined in
 
-[models/issue.ts:43](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/issue.ts#L43)
+[models/issue.ts:55](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/issue.ts#L55)
 
 ___
 
-### <a id="closedat" name="closedat"></a> closedAt
+### <a id="closed_at" name="closed_at"></a> closed\_at
 
-• `Optional` **closedAt**: `Date`
+• `Optional` **closed\_at**: `string`
 
 **`memberof`** Issue
 
 #### Defined in
 
-[models/issue.ts:49](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/issue.ts#L49)
+[models/issue.ts:61](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/issue.ts#L61)
 
 ___
 
@@ -94,43 +94,43 @@ ___
 
 #### Defined in
 
-[models/issue.ts:55](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/issue.ts#L55)
+[models/issue.ts:67](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/issue.ts#L67)
 
 ___
 
-### <a id="createdat" name="createdat"></a> createdAt
+### <a id="created_at" name="created_at"></a> created\_at
 
-• `Optional` **createdAt**: `Date`
+• `Optional` **created\_at**: `string`
 
 **`memberof`** Issue
 
 #### Defined in
 
-[models/issue.ts:61](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/issue.ts#L61)
+[models/issue.ts:73](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/issue.ts#L73)
 
 ___
 
-### <a id="duedate" name="duedate"></a> dueDate
+### <a id="due_date" name="due_date"></a> due\_date
 
-• `Optional` **dueDate**: `Date`
+• `Optional` **due\_date**: `string`
 
 **`memberof`** Issue
 
 #### Defined in
 
-[models/issue.ts:67](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/issue.ts#L67)
+[models/issue.ts:79](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/issue.ts#L79)
 
 ___
 
-### <a id="htmlurl" name="htmlurl"></a> htmlUrl
+### <a id="html_url" name="html_url"></a> html\_url
 
-• `Optional` **htmlUrl**: `string`
+• `Optional` **html\_url**: `string`
 
 **`memberof`** Issue
 
 #### Defined in
 
-[models/issue.ts:73](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/issue.ts#L73)
+[models/issue.ts:85](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/issue.ts#L85)
 
 ___
 
@@ -142,19 +142,19 @@ ___
 
 #### Defined in
 
-[models/issue.ts:79](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/issue.ts#L79)
+[models/issue.ts:91](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/issue.ts#L91)
 
 ___
 
-### <a id="islocked" name="islocked"></a> isLocked
+### <a id="is_locked" name="is_locked"></a> is\_locked
 
-• `Optional` **isLocked**: `boolean`
+• `Optional` **is\_locked**: `boolean`
 
 **`memberof`** Issue
 
 #### Defined in
 
-[models/issue.ts:85](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/issue.ts#L85)
+[models/issue.ts:97](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/issue.ts#L97)
 
 ___
 
@@ -166,7 +166,7 @@ ___
 
 #### Defined in
 
-[models/issue.ts:91](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/issue.ts#L91)
+[models/issue.ts:103](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/issue.ts#L103)
 
 ___
 
@@ -178,7 +178,7 @@ ___
 
 #### Defined in
 
-[models/issue.ts:97](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/issue.ts#L97)
+[models/issue.ts:109](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/issue.ts#L109)
 
 ___
 
@@ -190,43 +190,43 @@ ___
 
 #### Defined in
 
-[models/issue.ts:103](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/issue.ts#L103)
+[models/issue.ts:115](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/issue.ts#L115)
 
 ___
 
-### <a id="originalauthor" name="originalauthor"></a> originalAuthor
+### <a id="original_author" name="original_author"></a> original\_author
 
-• `Optional` **originalAuthor**: `string`
+• `Optional` **original\_author**: `string`
 
 **`memberof`** Issue
 
 #### Defined in
 
-[models/issue.ts:109](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/issue.ts#L109)
+[models/issue.ts:121](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/issue.ts#L121)
 
 ___
 
-### <a id="originalauthorid" name="originalauthorid"></a> originalAuthorId
+### <a id="original_author_id" name="original_author_id"></a> original\_author\_id
 
-• `Optional` **originalAuthorId**: `number`
+• `Optional` **original\_author\_id**: `number`
 
 **`memberof`** Issue
 
 #### Defined in
 
-[models/issue.ts:115](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/issue.ts#L115)
+[models/issue.ts:127](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/issue.ts#L127)
 
 ___
 
-### <a id="pullrequest" name="pullrequest"></a> pullRequest
+### <a id="pull_request" name="pull_request"></a> pull\_request
 
-• `Optional` **pullRequest**: [`PullRequestMeta`](PullRequestMeta.md)
+• `Optional` **pull\_request**: [`PullRequestMeta`](PullRequestMeta.md)
 
 **`memberof`** Issue
 
 #### Defined in
 
-[models/issue.ts:121](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/issue.ts#L121)
+[models/issue.ts:133](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/issue.ts#L133)
 
 ___
 
@@ -238,7 +238,7 @@ ___
 
 #### Defined in
 
-[models/issue.ts:127](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/issue.ts#L127)
+[models/issue.ts:139](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/issue.ts#L139)
 
 ___
 
@@ -250,19 +250,21 @@ ___
 
 #### Defined in
 
-[models/issue.ts:133](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/issue.ts#L133)
+[models/issue.ts:145](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/issue.ts#L145)
 
 ___
 
 ### <a id="state" name="state"></a> state
 
-• `Optional` **state**: [`StateType`](StateType.md)
+• `Optional` **state**: `string`
+
+StateType issue state type
 
 **`memberof`** Issue
 
 #### Defined in
 
-[models/issue.ts:139](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/issue.ts#L139)
+[models/issue.ts:151](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/issue.ts#L151)
 
 ___
 
@@ -274,19 +276,19 @@ ___
 
 #### Defined in
 
-[models/issue.ts:145](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/issue.ts#L145)
+[models/issue.ts:157](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/issue.ts#L157)
 
 ___
 
-### <a id="updatedat" name="updatedat"></a> updatedAt
+### <a id="updated_at" name="updated_at"></a> updated\_at
 
-• `Optional` **updatedAt**: `Date`
+• `Optional` **updated\_at**: `string`
 
 **`memberof`** Issue
 
 #### Defined in
 
-[models/issue.ts:151](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/issue.ts#L151)
+[models/issue.ts:163](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/issue.ts#L163)
 
 ___
 
@@ -298,7 +300,7 @@ ___
 
 #### Defined in
 
-[models/issue.ts:157](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/issue.ts#L157)
+[models/issue.ts:169](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/issue.ts#L169)
 
 ___
 
@@ -310,4 +312,4 @@ ___
 
 #### Defined in
 
-[models/issue.ts:163](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/issue.ts#L163)
+[models/issue.ts:175](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/issue.ts#L175)

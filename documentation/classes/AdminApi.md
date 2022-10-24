@@ -61,7 +61,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[base.ts:50](https://github.com/unfoldingWord/dcs-js/blob/c677a54/base.ts#L50)
+[base.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/base.ts#L52)
 
 ## Properties
 
@@ -95,7 +95,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[base.ts:48](https://github.com/unfoldingWord/dcs-js/blob/c677a54/base.ts#L48)
+[base.ts:50](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/base.ts#L50)
 
 ## Methods
 
@@ -123,13 +123,13 @@ BaseAPI.configuration
 
 #### Defined in
 
-[apis/admin-api.ts:1814](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/admin-api.ts#L1814)
+[apis/admin-api.ts:1265](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/admin-api.ts#L1265)
 
 ___
 
 ### <a id="admincreateorg" name="admincreateorg"></a> adminCreateOrg
 
-▸ **adminCreateOrg**(`body`, `username`, `options?`): `Promise`<`AxiosResponse`<[`Organization`](../interfaces/Organization.md)\>\>
+▸ **adminCreateOrg**(`username`, `organization`, `options?`): `Promise`<`AxiosResponse`<[`Organization`](../interfaces/Organization.md)\>\>
 
 **`summary`** Create an organization
 
@@ -141,8 +141,8 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `body` | [`CreateOrgOption`](../interfaces/CreateOrgOption.md) |  |
 | `username` | `string` | username of the user that will own the created organization |
+| `organization` | [`CreateOrgOption`](../interfaces/CreateOrgOption.md) |  |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -151,13 +151,13 @@ ___
 
 #### Defined in
 
-[apis/admin-api.ts:1826](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/admin-api.ts#L1826)
+[apis/admin-api.ts:1278](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/admin-api.ts#L1278)
 
 ___
 
 ### <a id="admincreatepublickey" name="admincreatepublickey"></a> adminCreatePublicKey
 
-▸ **adminCreatePublicKey**(`username`, `body?`, `options?`): `Promise`<`AxiosResponse`<[`PublicKey`](../interfaces/PublicKey.md)\>\>
+▸ **adminCreatePublicKey**(`username`, `key?`, `options?`): `Promise`<`AxiosResponse`<[`PublicKey`](../interfaces/PublicKey.md)\>\>
 
 **`summary`** Add a public key on behalf of a user
 
@@ -170,7 +170,7 @@ ___
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `username` | `string` | username of the user |
-| `body?` | [`CreateKeyOption`](../interfaces/CreateKeyOption.md) | - |
+| `key?` | [`CreateKeyOption`](../interfaces/CreateKeyOption.md) | - |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -179,13 +179,13 @@ ___
 
 #### Defined in
 
-[apis/admin-api.ts:1838](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/admin-api.ts#L1838)
+[apis/admin-api.ts:1291](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/admin-api.ts#L1291)
 
 ___
 
 ### <a id="admincreaterepo" name="admincreaterepo"></a> adminCreateRepo
 
-▸ **adminCreateRepo**(`body`, `username`, `options?`): `Promise`<`AxiosResponse`<[`Repository`](../interfaces/Repository.md)\>\>
+▸ **adminCreateRepo**(`username`, `repository`, `options?`): `Promise`<`AxiosResponse`<[`Repository`](../interfaces/Repository.md)\>\>
 
 **`summary`** Create a repository on behalf of a user
 
@@ -197,8 +197,8 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `body` | [`CreateRepoOption`](../interfaces/CreateRepoOption.md) |  |
 | `username` | `string` | username of the user. This user will own the created repository |
+| `repository` | [`CreateRepoOption`](../interfaces/CreateRepoOption.md) |  |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -207,7 +207,7 @@ ___
 
 #### Defined in
 
-[apis/admin-api.ts:1850](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/admin-api.ts#L1850)
+[apis/admin-api.ts:1304](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/admin-api.ts#L1304)
 
 ___
 
@@ -234,7 +234,7 @@ ___
 
 #### Defined in
 
-[apis/admin-api.ts:1861](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/admin-api.ts#L1861)
+[apis/admin-api.ts:1316](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/admin-api.ts#L1316)
 
 ___
 
@@ -262,7 +262,7 @@ ___
 
 #### Defined in
 
-[apis/admin-api.ts:1873](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/admin-api.ts#L1873)
+[apis/admin-api.ts:1329](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/admin-api.ts#L1329)
 
 ___
 
@@ -289,7 +289,7 @@ ___
 
 #### Defined in
 
-[apis/admin-api.ts:1884](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/admin-api.ts#L1884)
+[apis/admin-api.ts:1341](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/admin-api.ts#L1341)
 
 ___
 
@@ -317,7 +317,7 @@ ___
 
 #### Defined in
 
-[apis/admin-api.ts:1896](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/admin-api.ts#L1896)
+[apis/admin-api.ts:1354](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/admin-api.ts#L1354)
 
 ___
 
@@ -344,7 +344,7 @@ ___
 
 #### Defined in
 
-[apis/admin-api.ts:1907](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/admin-api.ts#L1907)
+[apis/admin-api.ts:1366](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/admin-api.ts#L1366)
 
 ___
 
@@ -352,7 +352,7 @@ ___
 
 ▸ **adminDeleteUserPublicKey**(`username`, `id`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
-**`summary`** Delete a user's public key
+**`summary`** Delete a user\'s public key
 
 **`throws`** {RequiredError}
 
@@ -372,7 +372,7 @@ ___
 
 #### Defined in
 
-[apis/admin-api.ts:1919](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/admin-api.ts#L1919)
+[apis/admin-api.ts:1379](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/admin-api.ts#L1379)
 
 ___
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-[apis/admin-api.ts:1931](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/admin-api.ts#L1931)
+[apis/admin-api.ts:1392](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/admin-api.ts#L1392)
 
 ___
 
@@ -429,7 +429,7 @@ ___
 
 #### Defined in
 
-[apis/admin-api.ts:1944](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/admin-api.ts#L1944)
+[apis/admin-api.ts:1406](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/admin-api.ts#L1406)
 
 ___
 
@@ -458,7 +458,7 @@ ___
 
 #### Defined in
 
-[apis/admin-api.ts:1957](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/admin-api.ts#L1957)
+[apis/admin-api.ts:1420](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/admin-api.ts#L1420)
 
 ___
 
@@ -487,4 +487,4 @@ ___
 
 #### Defined in
 
-[apis/admin-api.ts:1970](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/admin-api.ts#L1970)
+[apis/admin-api.ts:1434](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/admin-api.ts#L1434)

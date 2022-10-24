@@ -14,11 +14,11 @@ Hook a hook is a web hook when one repository changed
 
 - [active](Hook.md#active)
 - [config](Hook.md#config)
-- [createdAt](Hook.md#createdat)
+- [created\_at](Hook.md#created_at)
 - [events](Hook.md#events)
 - [id](Hook.md#id)
 - [type](Hook.md#type)
-- [updatedAt](Hook.md#updatedat)
+- [updated\_at](Hook.md#updated_at)
 
 ## Properties
 
@@ -30,7 +30,7 @@ Hook a hook is a web hook when one repository changed
 
 #### Defined in
 
-[models/hook.ts:25](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/hook.ts#L25)
+[models/hook.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/hook.ts#L28)
 
 ___
 
@@ -46,19 +46,19 @@ ___
 
 #### Defined in
 
-[models/hook.ts:31](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/hook.ts#L31)
+[models/hook.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/hook.ts#L34)
 
 ___
 
-### <a id="createdat" name="createdat"></a> createdAt
+### <a id="created_at" name="created_at"></a> created\_at
 
-• `Optional` **createdAt**: `Date`
+• `Optional` **created\_at**: `string`
 
 **`memberof`** Hook
 
 #### Defined in
 
-[models/hook.ts:37](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/hook.ts#L37)
+[models/hook.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/hook.ts#L40)
 
 ___
 
@@ -70,7 +70,7 @@ ___
 
 #### Defined in
 
-[models/hook.ts:43](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/hook.ts#L43)
+[models/hook.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/hook.ts#L46)
 
 ___
 
@@ -82,7 +82,7 @@ ___
 
 #### Defined in
 
-[models/hook.ts:49](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/hook.ts#L49)
+[models/hook.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/hook.ts#L52)
 
 ___
 
@@ -94,16 +94,16 @@ ___
 
 #### Defined in
 
-[models/hook.ts:55](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/hook.ts#L55)
+[models/hook.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/hook.ts#L58)
 
 ___
 
-### <a id="updatedat" name="updatedat"></a> updatedAt
+### <a id="updated_at" name="updated_at"></a> updated\_at
 
-• `Optional` **updatedAt**: `Date`
+• `Optional` **updated\_at**: `string`
 
 **`memberof`** Hook
 
 #### Defined in
 
-[models/hook.ts:61](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/hook.ts#L61)
+[models/hook.ts:64](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/hook.ts#L64)

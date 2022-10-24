@@ -15,22 +15,22 @@ TrackedTime worked time for an issue / pr
 - [created](TrackedTime.md#created)
 - [id](TrackedTime.md#id)
 - [issue](TrackedTime.md#issue)
-- [issueId](TrackedTime.md#issueid)
+- [issue\_id](TrackedTime.md#issue_id)
 - [time](TrackedTime.md#time)
-- [userId](TrackedTime.md#userid)
-- [userName](TrackedTime.md#username)
+- [user\_id](TrackedTime.md#user_id)
+- [user\_name](TrackedTime.md#user_name)
 
 ## Properties
 
 ### <a id="created" name="created"></a> created
 
-• `Optional` **created**: `Date`
+• `Optional` **created**: `string`
 
 **`memberof`** TrackedTime
 
 #### Defined in
 
-[models/tracked-time.ts:26](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/tracked-time.ts#L26)
+[models/tracked-time.ts:31](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/tracked-time.ts#L31)
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 #### Defined in
 
-[models/tracked-time.ts:32](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/tracked-time.ts#L32)
+[models/tracked-time.ts:37](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/tracked-time.ts#L37)
 
 ___
 
@@ -54,13 +54,13 @@ ___
 
 #### Defined in
 
-[models/tracked-time.ts:38](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/tracked-time.ts#L38)
+[models/tracked-time.ts:43](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/tracked-time.ts#L43)
 
 ___
 
-### <a id="issueid" name="issueid"></a> issueId
+### <a id="issue_id" name="issue_id"></a> issue\_id
 
-• `Optional` **issueId**: `number`
+• `Optional` **issue\_id**: `number`
 
 deprecated (only for backwards compatibility)
 
@@ -68,7 +68,7 @@ deprecated (only for backwards compatibility)
 
 #### Defined in
 
-[models/tracked-time.ts:44](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/tracked-time.ts#L44)
+[models/tracked-time.ts:49](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/tracked-time.ts#L49)
 
 ___
 
@@ -82,13 +82,13 @@ Time in seconds
 
 #### Defined in
 
-[models/tracked-time.ts:50](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/tracked-time.ts#L50)
+[models/tracked-time.ts:55](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/tracked-time.ts#L55)
 
 ___
 
-### <a id="userid" name="userid"></a> userId
+### <a id="user_id" name="user_id"></a> user\_id
 
-• `Optional` **userId**: `number`
+• `Optional` **user\_id**: `number`
 
 deprecated (only for backwards compatibility)
 
@@ -96,16 +96,16 @@ deprecated (only for backwards compatibility)
 
 #### Defined in
 
-[models/tracked-time.ts:56](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/tracked-time.ts#L56)
+[models/tracked-time.ts:61](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/tracked-time.ts#L61)
 
 ___
 
-### <a id="username" name="username"></a> userName
+### <a id="user_name" name="user_name"></a> user\_name
 
-• `Optional` **userName**: `string`
+• `Optional` **user\_name**: `string`
 
 **`memberof`** TrackedTime
 
 #### Defined in
 
-[models/tracked-time.ts:62](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/tracked-time.ts#L62)
+[models/tracked-time.ts:67](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/tracked-time.ts#L67)

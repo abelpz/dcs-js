@@ -12,42 +12,42 @@ GeneralUISettings contains global ui settings exposed by API
 
 ### Properties
 
-- [allowedReactions](GeneralUISettings.md#allowedreactions)
-- [customEmojis](GeneralUISettings.md#customemojis)
-- [defaultTheme](GeneralUISettings.md#defaulttheme)
+- [allowed\_reactions](GeneralUISettings.md#allowed_reactions)
+- [custom\_emojis](GeneralUISettings.md#custom_emojis)
+- [default\_theme](GeneralUISettings.md#default_theme)
 
 ## Properties
 
-### <a id="allowedreactions" name="allowedreactions"></a> allowedReactions
+### <a id="allowed_reactions" name="allowed_reactions"></a> allowed\_reactions
 
-• `Optional` **allowedReactions**: `string`[]
+• `Optional` **allowed\_reactions**: `string`[]
 
 **`memberof`** GeneralUISettings
 
 #### Defined in
 
-[models/general-uisettings.ts:25](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/general-uisettings.ts#L25)
+[models/general-uisettings.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/general-uisettings.ts#L28)
 
 ___
 
-### <a id="customemojis" name="customemojis"></a> customEmojis
+### <a id="custom_emojis" name="custom_emojis"></a> custom\_emojis
 
-• `Optional` **customEmojis**: `string`[]
+• `Optional` **custom\_emojis**: `string`[]
 
 **`memberof`** GeneralUISettings
 
 #### Defined in
 
-[models/general-uisettings.ts:31](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/general-uisettings.ts#L31)
+[models/general-uisettings.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/general-uisettings.ts#L34)
 
 ___
 
-### <a id="defaulttheme" name="defaulttheme"></a> defaultTheme
+### <a id="default_theme" name="default_theme"></a> default\_theme
 
-• `Optional` **defaultTheme**: `string`
+• `Optional` **default\_theme**: `string`
 
 **`memberof`** GeneralUISettings
 
 #### Defined in
 
-[models/general-uisettings.ts:37](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/general-uisettings.ts#L37)
+[models/general-uisettings.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/general-uisettings.ts#L40)

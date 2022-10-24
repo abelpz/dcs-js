@@ -13,16 +13,16 @@ PullReview represents a pull request review
 ### Properties
 
 - [body](PullReview.md#body)
-- [commentsCount](PullReview.md#commentscount)
-- [commitId](PullReview.md#commitid)
+- [comments\_count](PullReview.md#comments_count)
+- [commit\_id](PullReview.md#commit_id)
 - [dismissed](PullReview.md#dismissed)
-- [htmlUrl](PullReview.md#htmlurl)
+- [html\_url](PullReview.md#html_url)
 - [id](PullReview.md#id)
 - [official](PullReview.md#official)
-- [pullRequestUrl](PullReview.md#pullrequesturl)
+- [pull\_request\_url](PullReview.md#pull_request_url)
 - [stale](PullReview.md#stale)
 - [state](PullReview.md#state)
-- [submittedAt](PullReview.md#submittedat)
+- [submitted\_at](PullReview.md#submitted_at)
 - [team](PullReview.md#team)
 - [user](PullReview.md#user)
 
@@ -36,31 +36,31 @@ PullReview represents a pull request review
 
 #### Defined in
 
-[models/pull-review.ts:28](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/pull-review.ts#L28)
+[models/pull-review.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-review.ts#L34)
 
 ___
 
-### <a id="commentscount" name="commentscount"></a> commentsCount
+### <a id="comments_count" name="comments_count"></a> comments\_count
 
-• `Optional` **commentsCount**: `number`
+• `Optional` **comments\_count**: `number`
 
 **`memberof`** PullReview
 
 #### Defined in
 
-[models/pull-review.ts:34](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/pull-review.ts#L34)
+[models/pull-review.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-review.ts#L40)
 
 ___
 
-### <a id="commitid" name="commitid"></a> commitId
+### <a id="commit_id" name="commit_id"></a> commit\_id
 
-• `Optional` **commitId**: `string`
+• `Optional` **commit\_id**: `string`
 
 **`memberof`** PullReview
 
 #### Defined in
 
-[models/pull-review.ts:40](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/pull-review.ts#L40)
+[models/pull-review.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-review.ts#L46)
 
 ___
 
@@ -72,19 +72,19 @@ ___
 
 #### Defined in
 
-[models/pull-review.ts:46](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/pull-review.ts#L46)
+[models/pull-review.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-review.ts#L52)
 
 ___
 
-### <a id="htmlurl" name="htmlurl"></a> htmlUrl
+### <a id="html_url" name="html_url"></a> html\_url
 
-• `Optional` **htmlUrl**: `string`
+• `Optional` **html\_url**: `string`
 
 **`memberof`** PullReview
 
 #### Defined in
 
-[models/pull-review.ts:52](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/pull-review.ts#L52)
+[models/pull-review.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-review.ts#L58)
 
 ___
 
@@ -96,7 +96,7 @@ ___
 
 #### Defined in
 
-[models/pull-review.ts:58](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/pull-review.ts#L58)
+[models/pull-review.ts:64](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-review.ts#L64)
 
 ___
 
@@ -108,19 +108,19 @@ ___
 
 #### Defined in
 
-[models/pull-review.ts:64](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/pull-review.ts#L64)
+[models/pull-review.ts:70](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-review.ts#L70)
 
 ___
 
-### <a id="pullrequesturl" name="pullrequesturl"></a> pullRequestUrl
+### <a id="pull_request_url" name="pull_request_url"></a> pull\_request\_url
 
-• `Optional` **pullRequestUrl**: `string`
+• `Optional` **pull\_request\_url**: `string`
 
 **`memberof`** PullReview
 
 #### Defined in
 
-[models/pull-review.ts:70](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/pull-review.ts#L70)
+[models/pull-review.ts:76](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-review.ts#L76)
 
 ___
 
@@ -132,31 +132,33 @@ ___
 
 #### Defined in
 
-[models/pull-review.ts:76](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/pull-review.ts#L76)
+[models/pull-review.ts:82](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-review.ts#L82)
 
 ___
 
 ### <a id="state" name="state"></a> state
 
-• `Optional` **state**: [`ReviewStateType`](ReviewStateType.md)
+• `Optional` **state**: `string`
+
+ReviewStateType review state type
 
 **`memberof`** PullReview
 
 #### Defined in
 
-[models/pull-review.ts:82](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/pull-review.ts#L82)
+[models/pull-review.ts:88](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-review.ts#L88)
 
 ___
 
-### <a id="submittedat" name="submittedat"></a> submittedAt
+### <a id="submitted_at" name="submitted_at"></a> submitted\_at
 
-• `Optional` **submittedAt**: `Date`
+• `Optional` **submitted\_at**: `string`
 
 **`memberof`** PullReview
 
 #### Defined in
 
-[models/pull-review.ts:88](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/pull-review.ts#L88)
+[models/pull-review.ts:94](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-review.ts#L94)
 
 ___
 
@@ -168,7 +170,7 @@ ___
 
 #### Defined in
 
-[models/pull-review.ts:94](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/pull-review.ts#L94)
+[models/pull-review.ts:100](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-review.ts#L100)
 
 ___
 
@@ -180,4 +182,4 @@ ___
 
 #### Defined in
 
-[models/pull-review.ts:100](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/pull-review.ts#L100)
+[models/pull-review.ts:106](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-review.ts#L106)

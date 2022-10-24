@@ -26,7 +26,7 @@ PayloadUser represents the author or committer of a commit
 
 #### Defined in
 
-[models/payload-user.ts:25](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/payload-user.ts#L25)
+[models/payload-user.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/payload-user.ts#L28)
 
 ___
 
@@ -40,7 +40,7 @@ Full name of the commit author
 
 #### Defined in
 
-[models/payload-user.ts:31](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/payload-user.ts#L31)
+[models/payload-user.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/payload-user.ts#L34)
 
 ___
 
@@ -52,4 +52,4 @@ ___
 
 #### Defined in
 
-[models/payload-user.ts:37](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/payload-user.ts#L37)
+[models/payload-user.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/payload-user.ts#L40)

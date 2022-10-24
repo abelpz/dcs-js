@@ -25,7 +25,7 @@ NodeInfoServices contains the third party sites this server can connect to via t
 
 #### Defined in
 
-[models/node-info-services.ts:25](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/node-info-services.ts#L25)
+[models/node-info-services.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/node-info-services.ts#L28)
 
 ___
 
@@ -37,4 +37,4 @@ ___
 
 #### Defined in
 
-[models/node-info-services.ts:31](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/node-info-services.ts#L31)
+[models/node-info-services.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/node-info-services.ts#L34)

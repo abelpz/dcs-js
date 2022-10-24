@@ -88,7 +88,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[base.ts:50](https://github.com/unfoldingWord/dcs-js/blob/c677a54/base.ts#L50)
+[base.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/base.ts#L52)
 
 ## Properties
 
@@ -122,7 +122,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[base.ts:48](https://github.com/unfoldingWord/dcs-js/blob/c677a54/base.ts#L48)
+[base.ts:50](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/base.ts#L50)
 
 ## Methods
 
@@ -150,7 +150,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[apis/organization-api.ts:5275](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/organization-api.ts#L5275)
+[apis/organization-api.ts:3613](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3613)
 
 ___
 
@@ -159,6 +159,8 @@ ___
 ▸ **createOrgRepoDeprecated**(`org`, `body?`, `options?`): `Promise`<`AxiosResponse`<[`Repository`](../interfaces/Repository.md)\>\>
 
 **`summary`** Create a repository in an organization
+
+**`deprecated`**
 
 **`throws`** {RequiredError}
 
@@ -178,7 +180,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:5287](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/organization-api.ts#L5287)
+[apis/organization-api.ts:3627](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3627)
 
 ___
 
@@ -206,7 +208,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:5299](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/organization-api.ts#L5299)
+[apis/organization-api.ts:3640](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3640)
 
 ___
 
@@ -235,7 +237,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:5312](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/organization-api.ts#L5312)
+[apis/organization-api.ts:3654](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3654)
 
 ___
 
@@ -243,7 +245,7 @@ ___
 
 ▸ **orgConcealMember**(`org`, `username`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
-**`summary`** Conceal a user's membership
+**`summary`** Conceal a user\'s membership
 
 **`throws`** {RequiredError}
 
@@ -263,13 +265,13 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:5324](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/organization-api.ts#L5324)
+[apis/organization-api.ts:3667](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3667)
 
 ___
 
 ### <a id="orgcreate" name="orgcreate"></a> orgCreate
 
-▸ **orgCreate**(`body`, `options?`): `Promise`<`AxiosResponse`<[`Organization`](../interfaces/Organization.md)\>\>
+▸ **orgCreate**(`organization`, `options?`): `Promise`<`AxiosResponse`<[`Organization`](../interfaces/Organization.md)\>\>
 
 **`summary`** Create an organization
 
@@ -281,7 +283,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `body` | [`CreateOrgOption`](../interfaces/CreateOrgOption.md) |
+| `organization` | [`CreateOrgOption`](../interfaces/CreateOrgOption.md) |
 | `options?` | `AxiosRequestConfig` |
 
 #### Returns
@@ -290,13 +292,13 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:5335](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/organization-api.ts#L5335)
+[apis/organization-api.ts:3679](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3679)
 
 ___
 
 ### <a id="orgcreatehook" name="orgcreatehook"></a> orgCreateHook
 
-▸ **orgCreateHook**(`body`, `org`, `options?`): `Promise`<`AxiosResponse`<[`Hook`](../interfaces/Hook.md)\>\>
+▸ **orgCreateHook**(`org`, `body`, `options?`): `Promise`<`AxiosResponse`<[`Hook`](../interfaces/Hook.md)\>\>
 
 **`summary`** Create a hook
 
@@ -308,8 +310,8 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `body` | [`CreateHookOption`](../interfaces/CreateHookOption.md) |  |
 | `org` | `string` | name of the organization |
+| `body` | [`CreateHookOption`](../interfaces/CreateHookOption.md) |  |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -318,7 +320,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:5347](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/organization-api.ts#L5347)
+[apis/organization-api.ts:3692](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3692)
 
 ___
 
@@ -346,7 +348,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:5359](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/organization-api.ts#L5359)
+[apis/organization-api.ts:3705](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3705)
 
 ___
 
@@ -374,7 +376,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:5371](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/organization-api.ts#L5371)
+[apis/organization-api.ts:3718](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3718)
 
 ___
 
@@ -401,7 +403,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:5382](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/organization-api.ts#L5382)
+[apis/organization-api.ts:3730](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3730)
 
 ___
 
@@ -429,7 +431,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:5394](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/organization-api.ts#L5394)
+[apis/organization-api.ts:3743](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3743)
 
 ___
 
@@ -457,7 +459,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:5406](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/organization-api.ts#L5406)
+[apis/organization-api.ts:3756](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3756)
 
 ___
 
@@ -485,7 +487,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:5418](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/organization-api.ts#L5418)
+[apis/organization-api.ts:3769](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3769)
 
 ___
 
@@ -512,13 +514,13 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:5429](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/organization-api.ts#L5429)
+[apis/organization-api.ts:3781](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3781)
 
 ___
 
 ### <a id="orgedit" name="orgedit"></a> orgEdit
 
-▸ **orgEdit**(`body`, `org`, `options?`): `Promise`<`AxiosResponse`<[`Organization`](../interfaces/Organization.md)\>\>
+▸ **orgEdit**(`org`, `body`, `options?`): `Promise`<`AxiosResponse`<[`Organization`](../interfaces/Organization.md)\>\>
 
 **`summary`** Edit an organization
 
@@ -530,8 +532,8 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `body` | [`EditOrgOption`](../interfaces/EditOrgOption.md) |  |
 | `org` | `string` | name of the organization to edit |
+| `body` | [`EditOrgOption`](../interfaces/EditOrgOption.md) |  |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -540,7 +542,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:5441](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/organization-api.ts#L5441)
+[apis/organization-api.ts:3794](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3794)
 
 ___
 
@@ -569,7 +571,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:5454](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/organization-api.ts#L5454)
+[apis/organization-api.ts:3808](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3808)
 
 ___
 
@@ -598,7 +600,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:5467](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/organization-api.ts#L5467)
+[apis/organization-api.ts:3822](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3822)
 
 ___
 
@@ -626,7 +628,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:5479](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/organization-api.ts#L5479)
+[apis/organization-api.ts:3835](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3835)
 
 ___
 
@@ -653,7 +655,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:5490](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/organization-api.ts#L5490)
+[apis/organization-api.ts:3847](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3847)
 
 ___
 
@@ -682,7 +684,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:5503](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/organization-api.ts#L5503)
+[apis/organization-api.ts:3861](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3861)
 
 ___
 
@@ -710,7 +712,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:5515](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/organization-api.ts#L5515)
+[apis/organization-api.ts:3874](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3874)
 
 ___
 
@@ -738,7 +740,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:5527](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/organization-api.ts#L5527)
+[apis/organization-api.ts:3887](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3887)
 
 ___
 
@@ -765,7 +767,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:5538](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/organization-api.ts#L5538)
+[apis/organization-api.ts:3899](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3899)
 
 ___
 
@@ -793,7 +795,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:5550](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/organization-api.ts#L5550)
+[apis/organization-api.ts:3912](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3912)
 
 ___
 
@@ -821,7 +823,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:5562](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/organization-api.ts#L5562)
+[apis/organization-api.ts:3925](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3925)
 
 ___
 
@@ -849,7 +851,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:5574](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/organization-api.ts#L5574)
+[apis/organization-api.ts:3938](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3938)
 
 ___
 
@@ -857,7 +859,7 @@ ___
 
 ▸ **orgListCurrentUserOrgs**(`page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`Organization`](../interfaces/Organization.md)[]\>\>
 
-**`summary`** List the current user's organizations
+**`summary`** List the current user\'s organizations
 
 **`throws`** {RequiredError}
 
@@ -877,7 +879,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:5586](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/organization-api.ts#L5586)
+[apis/organization-api.ts:3951](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3951)
 
 ___
 
@@ -885,7 +887,7 @@ ___
 
 ▸ **orgListHooks**(`org`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`Hook`](../interfaces/Hook.md)[]\>\>
 
-**`summary`** List an organization's webhooks
+**`summary`** List an organization\'s webhooks
 
 **`throws`** {RequiredError}
 
@@ -906,7 +908,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:5599](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/organization-api.ts#L5599)
+[apis/organization-api.ts:3965](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3965)
 
 ___
 
@@ -914,7 +916,7 @@ ___
 
 ▸ **orgListLabels**(`org`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`Label`](../interfaces/Label.md)[]\>\>
 
-**`summary`** List an organization's labels
+**`summary`** List an organization\'s labels
 
 **`throws`** {RequiredError}
 
@@ -935,7 +937,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:5612](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/organization-api.ts#L5612)
+[apis/organization-api.ts:3979](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3979)
 
 ___
 
@@ -943,7 +945,7 @@ ___
 
 ▸ **orgListMembers**(`org`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`User`](../interfaces/User.md)[]\>\>
 
-**`summary`** List an organization's members
+**`summary`** List an organization\'s members
 
 **`throws`** {RequiredError}
 
@@ -964,7 +966,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:5625](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/organization-api.ts#L5625)
+[apis/organization-api.ts:3993](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3993)
 
 ___
 
@@ -972,7 +974,7 @@ ___
 
 ▸ **orgListPublicMembers**(`org`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`User`](../interfaces/User.md)[]\>\>
 
-**`summary`** List an organization's public members
+**`summary`** List an organization\'s public members
 
 **`throws`** {RequiredError}
 
@@ -993,7 +995,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:5638](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/organization-api.ts#L5638)
+[apis/organization-api.ts:4007](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L4007)
 
 ___
 
@@ -1001,7 +1003,7 @@ ___
 
 ▸ **orgListRepos**(`org`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`Repository`](../interfaces/Repository.md)[]\>\>
 
-**`summary`** List an organization's repos
+**`summary`** List an organization\'s repos
 
 **`throws`** {RequiredError}
 
@@ -1022,7 +1024,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:5651](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/organization-api.ts#L5651)
+[apis/organization-api.ts:4021](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L4021)
 
 ___
 
@@ -1050,7 +1052,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:5663](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/organization-api.ts#L5663)
+[apis/organization-api.ts:4034](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L4034)
 
 ___
 
@@ -1058,7 +1060,7 @@ ___
 
 ▸ **orgListTeamMembers**(`id`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`User`](../interfaces/User.md)[]\>\>
 
-**`summary`** List a team's members
+**`summary`** List a team\'s members
 
 **`throws`** {RequiredError}
 
@@ -1079,7 +1081,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:5676](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/organization-api.ts#L5676)
+[apis/organization-api.ts:4048](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L4048)
 
 ___
 
@@ -1087,7 +1089,7 @@ ___
 
 ▸ **orgListTeamRepos**(`id`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`Repository`](../interfaces/Repository.md)[]\>\>
 
-**`summary`** List a team's repos
+**`summary`** List a team\'s repos
 
 **`throws`** {RequiredError}
 
@@ -1108,7 +1110,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:5689](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/organization-api.ts#L5689)
+[apis/organization-api.ts:4062](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L4062)
 
 ___
 
@@ -1116,7 +1118,7 @@ ___
 
 ▸ **orgListTeams**(`org`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`Team`](../interfaces/Team.md)[]\>\>
 
-**`summary`** List an organization's teams
+**`summary`** List an organization\'s teams
 
 **`throws`** {RequiredError}
 
@@ -1137,7 +1139,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:5702](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/organization-api.ts#L5702)
+[apis/organization-api.ts:4076](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L4076)
 
 ___
 
@@ -1145,7 +1147,7 @@ ___
 
 ▸ **orgListUserOrgs**(`username`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`Organization`](../interfaces/Organization.md)[]\>\>
 
-**`summary`** List a user's organizations
+**`summary`** List a user\'s organizations
 
 **`throws`** {RequiredError}
 
@@ -1166,7 +1168,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:5715](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/organization-api.ts#L5715)
+[apis/organization-api.ts:4090](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L4090)
 
 ___
 
@@ -1174,7 +1176,7 @@ ___
 
 ▸ **orgPublicizeMember**(`org`, `username`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
-**`summary`** Publicize a user's membership
+**`summary`** Publicize a user\'s membership
 
 **`throws`** {RequiredError}
 
@@ -1194,7 +1196,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:5727](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/organization-api.ts#L5727)
+[apis/organization-api.ts:4103](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L4103)
 
 ___
 
@@ -1222,7 +1224,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:5739](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/organization-api.ts#L5739)
+[apis/organization-api.ts:4116](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L4116)
 
 ___
 
@@ -1253,13 +1255,13 @@ This does not delete the repository, it only removes the repository from the tea
 
 #### Defined in
 
-[apis/organization-api.ts:5752](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/organization-api.ts#L5752)
+[apis/organization-api.ts:4130](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L4130)
 
 ___
 
 ### <a id="teamsearch" name="teamsearch"></a> teamSearch
 
-▸ **teamSearch**(`org`, `q?`, `includeDesc?`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`InlineResponse200`](../interfaces/InlineResponse200.md)\>\>
+▸ **teamSearch**(`org`, `q?`, `includeDesc?`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`TeamSearch200Response`](../interfaces/TeamSearch200Response.md)\>\>
 
 **`summary`** Search for teams within an organization
 
@@ -1280,8 +1282,8 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`InlineResponse200`](../interfaces/InlineResponse200.md)\>\>
+`Promise`<`AxiosResponse`<[`TeamSearch200Response`](../interfaces/TeamSearch200Response.md)\>\>
 
 #### Defined in
 
-[apis/organization-api.ts:5767](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/organization-api.ts#L5767)
+[apis/organization-api.ts:4146](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L4146)

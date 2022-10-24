@@ -10,48 +10,48 @@
 
 ### Properties
 
-- [clientId](OAuth2Application.md#clientid)
-- [clientSecret](OAuth2Application.md#clientsecret)
+- [client\_id](OAuth2Application.md#client_id)
+- [client\_secret](OAuth2Application.md#client_secret)
 - [created](OAuth2Application.md#created)
 - [id](OAuth2Application.md#id)
 - [name](OAuth2Application.md#name)
-- [redirectUris](OAuth2Application.md#redirecturis)
+- [redirect\_uris](OAuth2Application.md#redirect_uris)
 
 ## Properties
 
-### <a id="clientid" name="clientid"></a> clientId
+### <a id="client_id" name="client_id"></a> client\_id
 
-• `Optional` **clientId**: `string`
+• `Optional` **client\_id**: `string`
 
 **`memberof`** OAuth2Application
 
 #### Defined in
 
-[models/oauth2-application.ts:25](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/oauth2-application.ts#L25)
+[models/oauth2-application.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/oauth2-application.ts#L28)
 
 ___
 
-### <a id="clientsecret" name="clientsecret"></a> clientSecret
+### <a id="client_secret" name="client_secret"></a> client\_secret
 
-• `Optional` **clientSecret**: `string`
+• `Optional` **client\_secret**: `string`
 
 **`memberof`** OAuth2Application
 
 #### Defined in
 
-[models/oauth2-application.ts:31](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/oauth2-application.ts#L31)
+[models/oauth2-application.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/oauth2-application.ts#L34)
 
 ___
 
 ### <a id="created" name="created"></a> created
 
-• `Optional` **created**: `Date`
+• `Optional` **created**: `string`
 
 **`memberof`** OAuth2Application
 
 #### Defined in
 
-[models/oauth2-application.ts:37](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/oauth2-application.ts#L37)
+[models/oauth2-application.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/oauth2-application.ts#L40)
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 #### Defined in
 
-[models/oauth2-application.ts:43](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/oauth2-application.ts#L43)
+[models/oauth2-application.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/oauth2-application.ts#L46)
 
 ___
 
@@ -75,16 +75,16 @@ ___
 
 #### Defined in
 
-[models/oauth2-application.ts:49](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/oauth2-application.ts#L49)
+[models/oauth2-application.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/oauth2-application.ts#L52)
 
 ___
 
-### <a id="redirecturis" name="redirecturis"></a> redirectUris
+### <a id="redirect_uris" name="redirect_uris"></a> redirect\_uris
 
-• `Optional` **redirectUris**: `string`[]
+• `Optional` **redirect\_uris**: `string`[]
 
 **`memberof`** OAuth2Application
 
 #### Defined in
 
-[models/oauth2-application.ts:55](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/oauth2-application.ts#L55)
+[models/oauth2-application.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/oauth2-application.ts#L58)

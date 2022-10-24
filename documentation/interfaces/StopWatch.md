@@ -14,23 +14,23 @@ StopWatch represent a running stopwatch
 
 - [created](StopWatch.md#created)
 - [duration](StopWatch.md#duration)
-- [issueIndex](StopWatch.md#issueindex)
-- [issueTitle](StopWatch.md#issuetitle)
-- [repoName](StopWatch.md#reponame)
-- [repoOwnerName](StopWatch.md#repoownername)
+- [issue\_index](StopWatch.md#issue_index)
+- [issue\_title](StopWatch.md#issue_title)
+- [repo\_name](StopWatch.md#repo_name)
+- [repo\_owner\_name](StopWatch.md#repo_owner_name)
 - [seconds](StopWatch.md#seconds)
 
 ## Properties
 
 ### <a id="created" name="created"></a> created
 
-• `Optional` **created**: `Date`
+• `Optional` **created**: `string`
 
 **`memberof`** StopWatch
 
 #### Defined in
 
-[models/stop-watch.ts:25](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/stop-watch.ts#L25)
+[models/stop-watch.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/stop-watch.ts#L28)
 
 ___
 
@@ -42,55 +42,55 @@ ___
 
 #### Defined in
 
-[models/stop-watch.ts:31](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/stop-watch.ts#L31)
+[models/stop-watch.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/stop-watch.ts#L34)
 
 ___
 
-### <a id="issueindex" name="issueindex"></a> issueIndex
+### <a id="issue_index" name="issue_index"></a> issue\_index
 
-• `Optional` **issueIndex**: `number`
+• `Optional` **issue\_index**: `number`
 
 **`memberof`** StopWatch
 
 #### Defined in
 
-[models/stop-watch.ts:37](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/stop-watch.ts#L37)
+[models/stop-watch.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/stop-watch.ts#L40)
 
 ___
 
-### <a id="issuetitle" name="issuetitle"></a> issueTitle
+### <a id="issue_title" name="issue_title"></a> issue\_title
 
-• `Optional` **issueTitle**: `string`
+• `Optional` **issue\_title**: `string`
 
 **`memberof`** StopWatch
 
 #### Defined in
 
-[models/stop-watch.ts:43](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/stop-watch.ts#L43)
+[models/stop-watch.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/stop-watch.ts#L46)
 
 ___
 
-### <a id="reponame" name="reponame"></a> repoName
+### <a id="repo_name" name="repo_name"></a> repo\_name
 
-• `Optional` **repoName**: `string`
+• `Optional` **repo\_name**: `string`
 
 **`memberof`** StopWatch
 
 #### Defined in
 
-[models/stop-watch.ts:49](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/stop-watch.ts#L49)
+[models/stop-watch.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/stop-watch.ts#L52)
 
 ___
 
-### <a id="repoownername" name="repoownername"></a> repoOwnerName
+### <a id="repo_owner_name" name="repo_owner_name"></a> repo\_owner\_name
 
-• `Optional` **repoOwnerName**: `string`
+• `Optional` **repo\_owner\_name**: `string`
 
 **`memberof`** StopWatch
 
 #### Defined in
 
-[models/stop-watch.ts:55](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/stop-watch.ts#L55)
+[models/stop-watch.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/stop-watch.ts#L58)
 
 ___
 
@@ -102,4 +102,4 @@ ___
 
 #### Defined in
 
-[models/stop-watch.ts:61](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/stop-watch.ts#L61)
+[models/stop-watch.ts:64](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/stop-watch.ts#L64)

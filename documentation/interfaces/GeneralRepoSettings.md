@@ -12,81 +12,81 @@ GeneralRepoSettings contains global repository settings exposed by API
 
 ### Properties
 
-- [httpGitDisabled](GeneralRepoSettings.md#httpgitdisabled)
-- [lfsDisabled](GeneralRepoSettings.md#lfsdisabled)
-- [migrationsDisabled](GeneralRepoSettings.md#migrationsdisabled)
-- [mirrorsDisabled](GeneralRepoSettings.md#mirrorsdisabled)
-- [starsDisabled](GeneralRepoSettings.md#starsdisabled)
-- [timeTrackingDisabled](GeneralRepoSettings.md#timetrackingdisabled)
+- [http\_git\_disabled](GeneralRepoSettings.md#http_git_disabled)
+- [lfs\_disabled](GeneralRepoSettings.md#lfs_disabled)
+- [migrations\_disabled](GeneralRepoSettings.md#migrations_disabled)
+- [mirrors\_disabled](GeneralRepoSettings.md#mirrors_disabled)
+- [stars\_disabled](GeneralRepoSettings.md#stars_disabled)
+- [time\_tracking\_disabled](GeneralRepoSettings.md#time_tracking_disabled)
 
 ## Properties
 
-### <a id="httpgitdisabled" name="httpgitdisabled"></a> httpGitDisabled
+### <a id="http_git_disabled" name="http_git_disabled"></a> http\_git\_disabled
 
-• `Optional` **httpGitDisabled**: `boolean`
+• `Optional` **http\_git\_disabled**: `boolean`
 
 **`memberof`** GeneralRepoSettings
 
 #### Defined in
 
-[models/general-repo-settings.ts:25](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/general-repo-settings.ts#L25)
+[models/general-repo-settings.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/general-repo-settings.ts#L28)
 
 ___
 
-### <a id="lfsdisabled" name="lfsdisabled"></a> lfsDisabled
+### <a id="lfs_disabled" name="lfs_disabled"></a> lfs\_disabled
 
-• `Optional` **lfsDisabled**: `boolean`
+• `Optional` **lfs\_disabled**: `boolean`
 
 **`memberof`** GeneralRepoSettings
 
 #### Defined in
 
-[models/general-repo-settings.ts:31](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/general-repo-settings.ts#L31)
+[models/general-repo-settings.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/general-repo-settings.ts#L34)
 
 ___
 
-### <a id="migrationsdisabled" name="migrationsdisabled"></a> migrationsDisabled
+### <a id="migrations_disabled" name="migrations_disabled"></a> migrations\_disabled
 
-• `Optional` **migrationsDisabled**: `boolean`
+• `Optional` **migrations\_disabled**: `boolean`
 
 **`memberof`** GeneralRepoSettings
 
 #### Defined in
 
-[models/general-repo-settings.ts:37](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/general-repo-settings.ts#L37)
+[models/general-repo-settings.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/general-repo-settings.ts#L40)
 
 ___
 
-### <a id="mirrorsdisabled" name="mirrorsdisabled"></a> mirrorsDisabled
+### <a id="mirrors_disabled" name="mirrors_disabled"></a> mirrors\_disabled
 
-• `Optional` **mirrorsDisabled**: `boolean`
+• `Optional` **mirrors\_disabled**: `boolean`
 
 **`memberof`** GeneralRepoSettings
 
 #### Defined in
 
-[models/general-repo-settings.ts:43](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/general-repo-settings.ts#L43)
+[models/general-repo-settings.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/general-repo-settings.ts#L46)
 
 ___
 
-### <a id="starsdisabled" name="starsdisabled"></a> starsDisabled
+### <a id="stars_disabled" name="stars_disabled"></a> stars\_disabled
 
-• `Optional` **starsDisabled**: `boolean`
+• `Optional` **stars\_disabled**: `boolean`
 
 **`memberof`** GeneralRepoSettings
 
 #### Defined in
 
-[models/general-repo-settings.ts:49](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/general-repo-settings.ts#L49)
+[models/general-repo-settings.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/general-repo-settings.ts#L52)
 
 ___
 
-### <a id="timetrackingdisabled" name="timetrackingdisabled"></a> timeTrackingDisabled
+### <a id="time_tracking_disabled" name="time_tracking_disabled"></a> time\_tracking\_disabled
 
-• `Optional` **timeTrackingDisabled**: `boolean`
+• `Optional` **time\_tracking\_disabled**: `boolean`
 
 **`memberof`** GeneralRepoSettings
 
 #### Defined in
 
-[models/general-repo-settings.ts:55](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/general-repo-settings.ts#L55)
+[models/general-repo-settings.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/general-repo-settings.ts#L58)

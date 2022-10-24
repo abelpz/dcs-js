@@ -14,7 +14,7 @@ GitTreeResponse returns a git tree
 
 - [page](GitTreeResponse.md#page)
 - [sha](GitTreeResponse.md#sha)
-- [totalCount](GitTreeResponse.md#totalcount)
+- [total\_count](GitTreeResponse.md#total_count)
 - [tree](GitTreeResponse.md#tree)
 - [truncated](GitTreeResponse.md#truncated)
 - [url](GitTreeResponse.md#url)
@@ -29,7 +29,7 @@ GitTreeResponse returns a git tree
 
 #### Defined in
 
-[models/git-tree-response.ts:26](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/git-tree-response.ts#L26)
+[models/git-tree-response.ts:31](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/git-tree-response.ts#L31)
 
 ___
 
@@ -41,19 +41,19 @@ ___
 
 #### Defined in
 
-[models/git-tree-response.ts:32](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/git-tree-response.ts#L32)
+[models/git-tree-response.ts:37](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/git-tree-response.ts#L37)
 
 ___
 
-### <a id="totalcount" name="totalcount"></a> totalCount
+### <a id="total_count" name="total_count"></a> total\_count
 
-• `Optional` **totalCount**: `number`
+• `Optional` **total\_count**: `number`
 
 **`memberof`** GitTreeResponse
 
 #### Defined in
 
-[models/git-tree-response.ts:38](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/git-tree-response.ts#L38)
+[models/git-tree-response.ts:43](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/git-tree-response.ts#L43)
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 #### Defined in
 
-[models/git-tree-response.ts:44](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/git-tree-response.ts#L44)
+[models/git-tree-response.ts:49](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/git-tree-response.ts#L49)
 
 ___
 
@@ -77,7 +77,7 @@ ___
 
 #### Defined in
 
-[models/git-tree-response.ts:50](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/git-tree-response.ts#L50)
+[models/git-tree-response.ts:55](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/git-tree-response.ts#L55)
 
 ___
 
@@ -89,4 +89,4 @@ ___
 
 #### Defined in
 
-[models/git-tree-response.ts:56](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/git-tree-response.ts#L56)
+[models/git-tree-response.ts:61](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/git-tree-response.ts#L61)

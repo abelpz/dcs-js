@@ -13,7 +13,7 @@ CreateOAuth2ApplicationOptions holds options to create an oauth2 application
 ### Properties
 
 - [name](CreateOAuth2ApplicationOptions.md#name)
-- [redirectUris](CreateOAuth2ApplicationOptions.md#redirecturis)
+- [redirect\_uris](CreateOAuth2ApplicationOptions.md#redirect_uris)
 
 ## Properties
 
@@ -25,16 +25,16 @@ CreateOAuth2ApplicationOptions holds options to create an oauth2 application
 
 #### Defined in
 
-[models/create-oauth2-application-options.ts:25](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-oauth2-application-options.ts#L25)
+[models/create-oauth2-application-options.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-oauth2-application-options.ts#L28)
 
 ___
 
-### <a id="redirecturis" name="redirecturis"></a> redirectUris
+### <a id="redirect_uris" name="redirect_uris"></a> redirect\_uris
 
-• `Optional` **redirectUris**: `string`[]
+• `Optional` **redirect\_uris**: `string`[]
 
 **`memberof`** CreateOAuth2ApplicationOptions
 
 #### Defined in
 
-[models/create-oauth2-application-options.ts:31](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-oauth2-application-options.ts#L31)
+[models/create-oauth2-application-options.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-oauth2-application-options.ts#L34)

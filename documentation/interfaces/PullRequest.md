@@ -16,28 +16,28 @@ PullRequest represents a pull request
 - [assignees](PullRequest.md#assignees)
 - [base](PullRequest.md#base)
 - [body](PullRequest.md#body)
-- [closedAt](PullRequest.md#closedat)
+- [closed\_at](PullRequest.md#closed_at)
 - [comments](PullRequest.md#comments)
-- [createdAt](PullRequest.md#createdat)
-- [diffUrl](PullRequest.md#diffurl)
-- [dueDate](PullRequest.md#duedate)
+- [created\_at](PullRequest.md#created_at)
+- [diff\_url](PullRequest.md#diff_url)
+- [due\_date](PullRequest.md#due_date)
 - [head](PullRequest.md#head)
-- [htmlUrl](PullRequest.md#htmlurl)
+- [html\_url](PullRequest.md#html_url)
 - [id](PullRequest.md#id)
-- [isLocked](PullRequest.md#islocked)
+- [is\_locked](PullRequest.md#is_locked)
 - [labels](PullRequest.md#labels)
-- [mergeBase](PullRequest.md#mergebase)
-- [mergeCommitSha](PullRequest.md#mergecommitsha)
+- [merge\_base](PullRequest.md#merge_base)
+- [merge\_commit\_sha](PullRequest.md#merge_commit_sha)
 - [mergeable](PullRequest.md#mergeable)
 - [merged](PullRequest.md#merged)
-- [mergedAt](PullRequest.md#mergedat)
-- [mergedBy](PullRequest.md#mergedby)
+- [merged\_at](PullRequest.md#merged_at)
+- [merged\_by](PullRequest.md#merged_by)
 - [milestone](PullRequest.md#milestone)
 - [number](PullRequest.md#number)
-- [patchUrl](PullRequest.md#patchurl)
+- [patch\_url](PullRequest.md#patch_url)
 - [state](PullRequest.md#state)
 - [title](PullRequest.md#title)
-- [updatedAt](PullRequest.md#updatedat)
+- [updated\_at](PullRequest.md#updated_at)
 - [url](PullRequest.md#url)
 - [user](PullRequest.md#user)
 
@@ -51,7 +51,7 @@ PullRequest represents a pull request
 
 #### Defined in
 
-[models/pull-request.ts:30](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/pull-request.ts#L30)
+[models/pull-request.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-request.ts#L40)
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 #### Defined in
 
-[models/pull-request.ts:36](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/pull-request.ts#L36)
+[models/pull-request.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-request.ts#L46)
 
 ___
 
@@ -75,7 +75,7 @@ ___
 
 #### Defined in
 
-[models/pull-request.ts:42](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/pull-request.ts#L42)
+[models/pull-request.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-request.ts#L52)
 
 ___
 
@@ -87,19 +87,19 @@ ___
 
 #### Defined in
 
-[models/pull-request.ts:48](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/pull-request.ts#L48)
+[models/pull-request.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-request.ts#L58)
 
 ___
 
-### <a id="closedat" name="closedat"></a> closedAt
+### <a id="closed_at" name="closed_at"></a> closed\_at
 
-• `Optional` **closedAt**: `Date`
+• `Optional` **closed\_at**: `string`
 
 **`memberof`** PullRequest
 
 #### Defined in
 
-[models/pull-request.ts:54](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/pull-request.ts#L54)
+[models/pull-request.ts:64](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-request.ts#L64)
 
 ___
 
@@ -111,43 +111,43 @@ ___
 
 #### Defined in
 
-[models/pull-request.ts:60](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/pull-request.ts#L60)
+[models/pull-request.ts:70](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-request.ts#L70)
 
 ___
 
-### <a id="createdat" name="createdat"></a> createdAt
+### <a id="created_at" name="created_at"></a> created\_at
 
-• `Optional` **createdAt**: `Date`
+• `Optional` **created\_at**: `string`
 
 **`memberof`** PullRequest
 
 #### Defined in
 
-[models/pull-request.ts:66](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/pull-request.ts#L66)
+[models/pull-request.ts:76](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-request.ts#L76)
 
 ___
 
-### <a id="diffurl" name="diffurl"></a> diffUrl
+### <a id="diff_url" name="diff_url"></a> diff\_url
 
-• `Optional` **diffUrl**: `string`
+• `Optional` **diff\_url**: `string`
 
 **`memberof`** PullRequest
 
 #### Defined in
 
-[models/pull-request.ts:72](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/pull-request.ts#L72)
+[models/pull-request.ts:82](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-request.ts#L82)
 
 ___
 
-### <a id="duedate" name="duedate"></a> dueDate
+### <a id="due_date" name="due_date"></a> due\_date
 
-• `Optional` **dueDate**: `Date`
+• `Optional` **due\_date**: `string`
 
 **`memberof`** PullRequest
 
 #### Defined in
 
-[models/pull-request.ts:78](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/pull-request.ts#L78)
+[models/pull-request.ts:88](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-request.ts#L88)
 
 ___
 
@@ -159,19 +159,19 @@ ___
 
 #### Defined in
 
-[models/pull-request.ts:84](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/pull-request.ts#L84)
+[models/pull-request.ts:94](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-request.ts#L94)
 
 ___
 
-### <a id="htmlurl" name="htmlurl"></a> htmlUrl
+### <a id="html_url" name="html_url"></a> html\_url
 
-• `Optional` **htmlUrl**: `string`
+• `Optional` **html\_url**: `string`
 
 **`memberof`** PullRequest
 
 #### Defined in
 
-[models/pull-request.ts:90](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/pull-request.ts#L90)
+[models/pull-request.ts:100](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-request.ts#L100)
 
 ___
 
@@ -183,19 +183,19 @@ ___
 
 #### Defined in
 
-[models/pull-request.ts:96](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/pull-request.ts#L96)
+[models/pull-request.ts:106](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-request.ts#L106)
 
 ___
 
-### <a id="islocked" name="islocked"></a> isLocked
+### <a id="is_locked" name="is_locked"></a> is\_locked
 
-• `Optional` **isLocked**: `boolean`
+• `Optional` **is\_locked**: `boolean`
 
 **`memberof`** PullRequest
 
 #### Defined in
 
-[models/pull-request.ts:102](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/pull-request.ts#L102)
+[models/pull-request.ts:112](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-request.ts#L112)
 
 ___
 
@@ -207,31 +207,31 @@ ___
 
 #### Defined in
 
-[models/pull-request.ts:108](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/pull-request.ts#L108)
+[models/pull-request.ts:118](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-request.ts#L118)
 
 ___
 
-### <a id="mergebase" name="mergebase"></a> mergeBase
+### <a id="merge_base" name="merge_base"></a> merge\_base
 
-• `Optional` **mergeBase**: `string`
+• `Optional` **merge\_base**: `string`
 
 **`memberof`** PullRequest
 
 #### Defined in
 
-[models/pull-request.ts:114](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/pull-request.ts#L114)
+[models/pull-request.ts:124](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-request.ts#L124)
 
 ___
 
-### <a id="mergecommitsha" name="mergecommitsha"></a> mergeCommitSha
+### <a id="merge_commit_sha" name="merge_commit_sha"></a> merge\_commit\_sha
 
-• `Optional` **mergeCommitSha**: `string`
+• `Optional` **merge\_commit\_sha**: `string`
 
 **`memberof`** PullRequest
 
 #### Defined in
 
-[models/pull-request.ts:120](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/pull-request.ts#L120)
+[models/pull-request.ts:130](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-request.ts#L130)
 
 ___
 
@@ -243,7 +243,7 @@ ___
 
 #### Defined in
 
-[models/pull-request.ts:126](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/pull-request.ts#L126)
+[models/pull-request.ts:136](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-request.ts#L136)
 
 ___
 
@@ -255,31 +255,31 @@ ___
 
 #### Defined in
 
-[models/pull-request.ts:132](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/pull-request.ts#L132)
+[models/pull-request.ts:142](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-request.ts#L142)
 
 ___
 
-### <a id="mergedat" name="mergedat"></a> mergedAt
+### <a id="merged_at" name="merged_at"></a> merged\_at
 
-• `Optional` **mergedAt**: `Date`
+• `Optional` **merged\_at**: `string`
 
 **`memberof`** PullRequest
 
 #### Defined in
 
-[models/pull-request.ts:138](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/pull-request.ts#L138)
+[models/pull-request.ts:148](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-request.ts#L148)
 
 ___
 
-### <a id="mergedby" name="mergedby"></a> mergedBy
+### <a id="merged_by" name="merged_by"></a> merged\_by
 
-• `Optional` **mergedBy**: [`User`](User.md)
+• `Optional` **merged\_by**: [`User`](User.md)
 
 **`memberof`** PullRequest
 
 #### Defined in
 
-[models/pull-request.ts:144](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/pull-request.ts#L144)
+[models/pull-request.ts:154](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-request.ts#L154)
 
 ___
 
@@ -291,7 +291,7 @@ ___
 
 #### Defined in
 
-[models/pull-request.ts:150](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/pull-request.ts#L150)
+[models/pull-request.ts:160](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-request.ts#L160)
 
 ___
 
@@ -303,31 +303,33 @@ ___
 
 #### Defined in
 
-[models/pull-request.ts:156](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/pull-request.ts#L156)
+[models/pull-request.ts:166](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-request.ts#L166)
 
 ___
 
-### <a id="patchurl" name="patchurl"></a> patchUrl
+### <a id="patch_url" name="patch_url"></a> patch\_url
 
-• `Optional` **patchUrl**: `string`
+• `Optional` **patch\_url**: `string`
 
 **`memberof`** PullRequest
 
 #### Defined in
 
-[models/pull-request.ts:162](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/pull-request.ts#L162)
+[models/pull-request.ts:172](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-request.ts#L172)
 
 ___
 
 ### <a id="state" name="state"></a> state
 
-• `Optional` **state**: [`StateType`](StateType.md)
+• `Optional` **state**: `string`
+
+StateType issue state type
 
 **`memberof`** PullRequest
 
 #### Defined in
 
-[models/pull-request.ts:168](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/pull-request.ts#L168)
+[models/pull-request.ts:178](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-request.ts#L178)
 
 ___
 
@@ -339,19 +341,19 @@ ___
 
 #### Defined in
 
-[models/pull-request.ts:174](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/pull-request.ts#L174)
+[models/pull-request.ts:184](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-request.ts#L184)
 
 ___
 
-### <a id="updatedat" name="updatedat"></a> updatedAt
+### <a id="updated_at" name="updated_at"></a> updated\_at
 
-• `Optional` **updatedAt**: `Date`
+• `Optional` **updated\_at**: `string`
 
 **`memberof`** PullRequest
 
 #### Defined in
 
-[models/pull-request.ts:180](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/pull-request.ts#L180)
+[models/pull-request.ts:190](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-request.ts#L190)
 
 ___
 
@@ -363,7 +365,7 @@ ___
 
 #### Defined in
 
-[models/pull-request.ts:186](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/pull-request.ts#L186)
+[models/pull-request.ts:196](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-request.ts#L196)
 
 ___
 
@@ -375,4 +377,4 @@ ___
 
 #### Defined in
 
-[models/pull-request.ts:192](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/pull-request.ts#L192)
+[models/pull-request.ts:202](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-request.ts#L202)

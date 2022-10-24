@@ -51,7 +51,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[base.ts:50](https://github.com/unfoldingWord/dcs-js/blob/c677a54/base.ts#L50)
+[base.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/base.ts#L52)
 
 ## Properties
 
@@ -85,7 +85,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[base.ts:48](https://github.com/unfoldingWord/dcs-js/blob/c677a54/base.ts#L48)
+[base.ts:50](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/base.ts#L50)
 
 ## Methods
 
@@ -93,7 +93,7 @@ BaseAPI.configuration
 
 ▸ **getGeneralAPISettings**(`options?`): `Promise`<`AxiosResponse`<[`GeneralAPISettings`](../interfaces/GeneralAPISettings.md)\>\>
 
-**`summary`** Get instance's global settings for api
+**`summary`** Get instance\'s global settings for api
 
 **`throws`** {RequiredError}
 
@@ -111,7 +111,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[apis/settings-api.ts:500](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/settings-api.ts#L500)
+[apis/settings-api.ts:358](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/settings-api.ts#L358)
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 ▸ **getGeneralAttachmentSettings**(`options?`): `Promise`<`AxiosResponse`<[`GeneralAttachmentSettings`](../interfaces/GeneralAttachmentSettings.md)\>\>
 
-**`summary`** Get instance's global settings for Attachment
+**`summary`** Get instance\'s global settings for Attachment
 
 **`throws`** {RequiredError}
 
@@ -137,7 +137,7 @@ ___
 
 #### Defined in
 
-[apis/settings-api.ts:510](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/settings-api.ts#L510)
+[apis/settings-api.ts:369](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/settings-api.ts#L369)
 
 ___
 
@@ -145,7 +145,7 @@ ___
 
 ▸ **getGeneralRepositorySettings**(`options?`): `Promise`<`AxiosResponse`<[`GeneralRepoSettings`](../interfaces/GeneralRepoSettings.md)\>\>
 
-**`summary`** Get instance's global settings for repositories
+**`summary`** Get instance\'s global settings for repositories
 
 **`throws`** {RequiredError}
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-[apis/settings-api.ts:520](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/settings-api.ts#L520)
+[apis/settings-api.ts:380](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/settings-api.ts#L380)
 
 ___
 
@@ -171,7 +171,7 @@ ___
 
 ▸ **getGeneralUISettings**(`options?`): `Promise`<`AxiosResponse`<[`GeneralUISettings`](../interfaces/GeneralUISettings.md)\>\>
 
-**`summary`** Get instance's global settings for ui
+**`summary`** Get instance\'s global settings for ui
 
 **`throws`** {RequiredError}
 
@@ -189,4 +189,4 @@ ___
 
 #### Defined in
 
-[apis/settings-api.ts:530](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/settings-api.ts#L530)
+[apis/settings-api.ts:391](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/settings-api.ts#L391)

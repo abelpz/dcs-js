@@ -12,16 +12,16 @@ EditDeadlineOption options for creating a deadline
 
 ### Properties
 
-- [dueDate](EditDeadlineOption.md#duedate)
+- [due\_date](EditDeadlineOption.md#due_date)
 
 ## Properties
 
-### <a id="duedate" name="duedate"></a> dueDate
+### <a id="due_date" name="due_date"></a> due\_date
 
-• **dueDate**: `Date`
+• **due\_date**: `string`
 
 **`memberof`** EditDeadlineOption
 
 #### Defined in
 
-[models/edit-deadline-option.ts:25](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-deadline-option.ts#L25)
+[models/edit-deadline-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-deadline-option.ts#L28)

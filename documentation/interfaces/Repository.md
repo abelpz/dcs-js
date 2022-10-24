@@ -12,120 +12,126 @@ Repository represents a repository
 
 ### Properties
 
-- [\_private](Repository.md#_private)
-- [allowMergeCommits](Repository.md#allowmergecommits)
-- [allowRebase](Repository.md#allowrebase)
-- [allowRebaseExplicit](Repository.md#allowrebaseexplicit)
-- [allowSquashMerge](Repository.md#allowsquashmerge)
+- [alignment\_counts](Repository.md#alignment_counts)
+- [allow\_merge\_commits](Repository.md#allow_merge_commits)
+- [allow\_rebase](Repository.md#allow_rebase)
+- [allow\_rebase\_explicit](Repository.md#allow_rebase_explicit)
+- [allow\_squash\_merge](Repository.md#allow_squash_merge)
 - [archived](Repository.md#archived)
-- [avatarUrl](Repository.md#avatarurl)
+- [avatar\_url](Repository.md#avatar_url)
 - [books](Repository.md#books)
 - [catalog](Repository.md#catalog)
-- [checkingLevel](Repository.md#checkinglevel)
-- [cloneUrl](Repository.md#cloneurl)
-- [createdAt](Repository.md#createdat)
-- [defaultBranch](Repository.md#defaultbranch)
-- [defaultMergeStyle](Repository.md#defaultmergestyle)
+- [checking\_level](Repository.md#checking_level)
+- [clone\_url](Repository.md#clone_url)
+- [created\_at](Repository.md#created_at)
+- [default\_branch](Repository.md#default_branch)
+- [default\_merge\_style](Repository.md#default_merge_style)
 - [description](Repository.md#description)
 - [empty](Repository.md#empty)
-- [externalTracker](Repository.md#externaltracker)
-- [externalWiki](Repository.md#externalwiki)
+- [external\_tracker](Repository.md#external_tracker)
+- [external\_wiki](Repository.md#external_wiki)
 - [fork](Repository.md#fork)
-- [forksCount](Repository.md#forkscount)
-- [fullName](Repository.md#fullname)
-- [hasIssues](Repository.md#hasissues)
-- [hasProjects](Repository.md#hasprojects)
-- [hasPullRequests](Repository.md#haspullrequests)
-- [hasWiki](Repository.md#haswiki)
-- [htmlUrl](Repository.md#htmlurl)
+- [forks\_count](Repository.md#forks_count)
+- [full\_name](Repository.md#full_name)
+- [has\_issues](Repository.md#has_issues)
+- [has\_projects](Repository.md#has_projects)
+- [has\_pull\_requests](Repository.md#has_pull_requests)
+- [has\_wiki](Repository.md#has_wiki)
+- [html\_url](Repository.md#html_url)
 - [id](Repository.md#id)
-- [ignoreWhitespaceConflicts](Repository.md#ignorewhitespaceconflicts)
+- [ignore\_whitespace\_conflicts](Repository.md#ignore_whitespace_conflicts)
 - [internal](Repository.md#internal)
-- [internalTracker](Repository.md#internaltracker)
+- [internal\_tracker](Repository.md#internal_tracker)
 - [language](Repository.md#language)
-- [languageDirection](Repository.md#languagedirection)
-- [languageTitle](Repository.md#languagetitle)
+- [language\_direction](Repository.md#language_direction)
+- [language\_is\_gl](Repository.md#language_is_gl)
+- [language\_title](Repository.md#language_title)
 - [mirror](Repository.md#mirror)
-- [mirrorInterval](Repository.md#mirrorinterval)
-- [mirrorUpdated](Repository.md#mirrorupdated)
+- [mirror\_interval](Repository.md#mirror_interval)
+- [mirror\_updated](Repository.md#mirror_updated)
 - [name](Repository.md#name)
-- [openIssuesCount](Repository.md#openissuescount)
-- [openPrCounter](Repository.md#openprcounter)
-- [originalUrl](Repository.md#originalurl)
+- [open\_issues\_count](Repository.md#open_issues_count)
+- [open\_pr\_counter](Repository.md#open_pr_counter)
+- [original\_url](Repository.md#original_url)
 - [owner](Repository.md#owner)
 - [parent](Repository.md#parent)
 - [permissions](Repository.md#permissions)
-- [releaseCounter](Repository.md#releasecounter)
-- [repoTransfer](Repository.md#repotransfer)
+- [private](Repository.md#private)
+- [release\_counter](Repository.md#release_counter)
+- [repo\_transfer](Repository.md#repo_transfer)
 - [size](Repository.md#size)
-- [sshUrl](Repository.md#sshurl)
-- [starsCount](Repository.md#starscount)
+- [ssh\_url](Repository.md#ssh_url)
+- [stars\_count](Repository.md#stars_count)
 - [subject](Repository.md#subject)
 - [template](Repository.md#template)
 - [title](Repository.md#title)
-- [updatedAt](Repository.md#updatedat)
-- [watchersCount](Repository.md#watcherscount)
+- [updated\_at](Repository.md#updated_at)
+- [watchers\_count](Repository.md#watchers_count)
 - [website](Repository.md#website)
 
 ## Properties
 
-### <a id="_private" name="_private"></a> \_private
+### <a id="alignment_counts" name="alignment_counts"></a> alignment\_counts
 
-• `Optional` **\_private**: `boolean`
+• `Optional` **alignment\_counts**: `Object`
 
 **`memberof`** Repository
 
+#### Index signature
+
+▪ [key: `string`]: `object`
+
 #### Defined in
 
-[models/repository.ts:284](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/repository.ts#L284)
+[models/repository.ts:49](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L49)
 
 ___
 
-### <a id="allowmergecommits" name="allowmergecommits"></a> allowMergeCommits
+### <a id="allow_merge_commits" name="allow_merge_commits"></a> allow\_merge\_commits
 
-• `Optional` **allowMergeCommits**: `boolean`
+• `Optional` **allow\_merge\_commits**: `boolean`
 
 **`memberof`** Repository
 
 #### Defined in
 
-[models/repository.ts:32](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/repository.ts#L32)
+[models/repository.ts:55](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L55)
 
 ___
 
-### <a id="allowrebase" name="allowrebase"></a> allowRebase
+### <a id="allow_rebase" name="allow_rebase"></a> allow\_rebase
 
-• `Optional` **allowRebase**: `boolean`
+• `Optional` **allow\_rebase**: `boolean`
 
 **`memberof`** Repository
 
 #### Defined in
 
-[models/repository.ts:38](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/repository.ts#L38)
+[models/repository.ts:61](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L61)
 
 ___
 
-### <a id="allowrebaseexplicit" name="allowrebaseexplicit"></a> allowRebaseExplicit
+### <a id="allow_rebase_explicit" name="allow_rebase_explicit"></a> allow\_rebase\_explicit
 
-• `Optional` **allowRebaseExplicit**: `boolean`
+• `Optional` **allow\_rebase\_explicit**: `boolean`
 
 **`memberof`** Repository
 
 #### Defined in
 
-[models/repository.ts:44](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/repository.ts#L44)
+[models/repository.ts:67](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L67)
 
 ___
 
-### <a id="allowsquashmerge" name="allowsquashmerge"></a> allowSquashMerge
+### <a id="allow_squash_merge" name="allow_squash_merge"></a> allow\_squash\_merge
 
-• `Optional` **allowSquashMerge**: `boolean`
+• `Optional` **allow\_squash\_merge**: `boolean`
 
 **`memberof`** Repository
 
 #### Defined in
 
-[models/repository.ts:50](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/repository.ts#L50)
+[models/repository.ts:73](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L73)
 
 ___
 
@@ -137,19 +143,19 @@ ___
 
 #### Defined in
 
-[models/repository.ts:56](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/repository.ts#L56)
+[models/repository.ts:79](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L79)
 
 ___
 
-### <a id="avatarurl" name="avatarurl"></a> avatarUrl
+### <a id="avatar_url" name="avatar_url"></a> avatar\_url
 
-• `Optional` **avatarUrl**: `string`
+• `Optional` **avatar\_url**: `string`
 
 **`memberof`** Repository
 
 #### Defined in
 
-[models/repository.ts:62](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/repository.ts#L62)
+[models/repository.ts:85](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L85)
 
 ___
 
@@ -161,7 +167,7 @@ ___
 
 #### Defined in
 
-[models/repository.ts:68](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/repository.ts#L68)
+[models/repository.ts:91](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L91)
 
 ___
 
@@ -173,67 +179,67 @@ ___
 
 #### Defined in
 
-[models/repository.ts:74](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/repository.ts#L74)
+[models/repository.ts:97](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L97)
 
 ___
 
-### <a id="checkinglevel" name="checkinglevel"></a> checkingLevel
+### <a id="checking_level" name="checking_level"></a> checking\_level
 
-• `Optional` **checkingLevel**: `string`
+• `Optional` **checking\_level**: `string`
 
 **`memberof`** Repository
 
 #### Defined in
 
-[models/repository.ts:80](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/repository.ts#L80)
+[models/repository.ts:103](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L103)
 
 ___
 
-### <a id="cloneurl" name="cloneurl"></a> cloneUrl
+### <a id="clone_url" name="clone_url"></a> clone\_url
 
-• `Optional` **cloneUrl**: `string`
+• `Optional` **clone\_url**: `string`
 
 **`memberof`** Repository
 
 #### Defined in
 
-[models/repository.ts:86](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/repository.ts#L86)
+[models/repository.ts:109](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L109)
 
 ___
 
-### <a id="createdat" name="createdat"></a> createdAt
+### <a id="created_at" name="created_at"></a> created\_at
 
-• `Optional` **createdAt**: `Date`
+• `Optional` **created\_at**: `string`
 
 **`memberof`** Repository
 
 #### Defined in
 
-[models/repository.ts:92](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/repository.ts#L92)
+[models/repository.ts:115](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L115)
 
 ___
 
-### <a id="defaultbranch" name="defaultbranch"></a> defaultBranch
+### <a id="default_branch" name="default_branch"></a> default\_branch
 
-• `Optional` **defaultBranch**: `string`
+• `Optional` **default\_branch**: `string`
 
 **`memberof`** Repository
 
 #### Defined in
 
-[models/repository.ts:98](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/repository.ts#L98)
+[models/repository.ts:121](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L121)
 
 ___
 
-### <a id="defaultmergestyle" name="defaultmergestyle"></a> defaultMergeStyle
+### <a id="default_merge_style" name="default_merge_style"></a> default\_merge\_style
 
-• `Optional` **defaultMergeStyle**: `string`
+• `Optional` **default\_merge\_style**: `string`
 
 **`memberof`** Repository
 
 #### Defined in
 
-[models/repository.ts:104](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/repository.ts#L104)
+[models/repository.ts:127](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L127)
 
 ___
 
@@ -245,7 +251,7 @@ ___
 
 #### Defined in
 
-[models/repository.ts:110](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/repository.ts#L110)
+[models/repository.ts:133](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L133)
 
 ___
 
@@ -257,31 +263,31 @@ ___
 
 #### Defined in
 
-[models/repository.ts:116](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/repository.ts#L116)
+[models/repository.ts:139](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L139)
 
 ___
 
-### <a id="externaltracker" name="externaltracker"></a> externalTracker
+### <a id="external_tracker" name="external_tracker"></a> external\_tracker
 
-• `Optional` **externalTracker**: [`ExternalTracker`](ExternalTracker.md)
+• `Optional` **external\_tracker**: [`ExternalTracker`](ExternalTracker.md)
 
 **`memberof`** Repository
 
 #### Defined in
 
-[models/repository.ts:122](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/repository.ts#L122)
+[models/repository.ts:145](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L145)
 
 ___
 
-### <a id="externalwiki" name="externalwiki"></a> externalWiki
+### <a id="external_wiki" name="external_wiki"></a> external\_wiki
 
-• `Optional` **externalWiki**: [`ExternalWiki`](ExternalWiki.md)
+• `Optional` **external\_wiki**: [`ExternalWiki`](ExternalWiki.md)
 
 **`memberof`** Repository
 
 #### Defined in
 
-[models/repository.ts:128](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/repository.ts#L128)
+[models/repository.ts:151](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L151)
 
 ___
 
@@ -293,91 +299,91 @@ ___
 
 #### Defined in
 
-[models/repository.ts:134](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/repository.ts#L134)
+[models/repository.ts:157](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L157)
 
 ___
 
-### <a id="forkscount" name="forkscount"></a> forksCount
+### <a id="forks_count" name="forks_count"></a> forks\_count
 
-• `Optional` **forksCount**: `number`
+• `Optional` **forks\_count**: `number`
 
 **`memberof`** Repository
 
 #### Defined in
 
-[models/repository.ts:140](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/repository.ts#L140)
+[models/repository.ts:163](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L163)
 
 ___
 
-### <a id="fullname" name="fullname"></a> fullName
+### <a id="full_name" name="full_name"></a> full\_name
 
-• `Optional` **fullName**: `string`
+• `Optional` **full\_name**: `string`
 
 **`memberof`** Repository
 
 #### Defined in
 
-[models/repository.ts:146](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/repository.ts#L146)
+[models/repository.ts:169](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L169)
 
 ___
 
-### <a id="hasissues" name="hasissues"></a> hasIssues
+### <a id="has_issues" name="has_issues"></a> has\_issues
 
-• `Optional` **hasIssues**: `boolean`
+• `Optional` **has\_issues**: `boolean`
 
 **`memberof`** Repository
 
 #### Defined in
 
-[models/repository.ts:152](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/repository.ts#L152)
+[models/repository.ts:175](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L175)
 
 ___
 
-### <a id="hasprojects" name="hasprojects"></a> hasProjects
+### <a id="has_projects" name="has_projects"></a> has\_projects
 
-• `Optional` **hasProjects**: `boolean`
+• `Optional` **has\_projects**: `boolean`
 
 **`memberof`** Repository
 
 #### Defined in
 
-[models/repository.ts:158](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/repository.ts#L158)
+[models/repository.ts:181](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L181)
 
 ___
 
-### <a id="haspullrequests" name="haspullrequests"></a> hasPullRequests
+### <a id="has_pull_requests" name="has_pull_requests"></a> has\_pull\_requests
 
-• `Optional` **hasPullRequests**: `boolean`
+• `Optional` **has\_pull\_requests**: `boolean`
 
 **`memberof`** Repository
 
 #### Defined in
 
-[models/repository.ts:164](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/repository.ts#L164)
+[models/repository.ts:187](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L187)
 
 ___
 
-### <a id="haswiki" name="haswiki"></a> hasWiki
+### <a id="has_wiki" name="has_wiki"></a> has\_wiki
 
-• `Optional` **hasWiki**: `boolean`
+• `Optional` **has\_wiki**: `boolean`
 
 **`memberof`** Repository
 
 #### Defined in
 
-[models/repository.ts:170](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/repository.ts#L170)
+[models/repository.ts:193](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L193)
 
 ___
 
-### <a id="htmlurl" name="htmlurl"></a> htmlUrl
+### <a id="html_url" name="html_url"></a> html\_url
 
-• `Optional` **htmlUrl**: `string`
+• `Optional` **html\_url**: `string`
 
 **`memberof`** Repository
 
 #### Defined in
 
-[models/repository.ts:176](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/repository.ts#L176)
+[models/repository.ts:199](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L199)
 
 ___
 
@@ -389,19 +395,19 @@ ___
 
 #### Defined in
 
-[models/repository.ts:182](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/repository.ts#L182)
+[models/repository.ts:205](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L205)
 
 ___
 
-### <a id="ignorewhitespaceconflicts" name="ignorewhitespaceconflicts"></a> ignoreWhitespaceConflicts
+### <a id="ignore_whitespace_conflicts" name="ignore_whitespace_conflicts"></a> ignore\_whitespace\_conflicts
 
-• `Optional` **ignoreWhitespaceConflicts**: `boolean`
+• `Optional` **ignore\_whitespace\_conflicts**: `boolean`
 
 **`memberof`** Repository
 
 #### Defined in
 
-[models/repository.ts:188](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/repository.ts#L188)
+[models/repository.ts:211](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L211)
 
 ___
 
@@ -413,19 +419,19 @@ ___
 
 #### Defined in
 
-[models/repository.ts:194](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/repository.ts#L194)
+[models/repository.ts:217](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L217)
 
 ___
 
-### <a id="internaltracker" name="internaltracker"></a> internalTracker
+### <a id="internal_tracker" name="internal_tracker"></a> internal\_tracker
 
-• `Optional` **internalTracker**: [`InternalTracker`](InternalTracker.md)
+• `Optional` **internal\_tracker**: [`InternalTracker`](InternalTracker.md)
 
 **`memberof`** Repository
 
 #### Defined in
 
-[models/repository.ts:200](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/repository.ts#L200)
+[models/repository.ts:223](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L223)
 
 ___
 
@@ -433,35 +439,49 @@ ___
 
 • `Optional` **language**: `string`
 
+DCS Customizations ***_/
+
 **`memberof`** Repository
 
 #### Defined in
 
-[models/repository.ts:206](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/repository.ts#L206)
+[models/repository.ts:229](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L229)
 
 ___
 
-### <a id="languagedirection" name="languagedirection"></a> languageDirection
+### <a id="language_direction" name="language_direction"></a> language\_direction
 
-• `Optional` **languageDirection**: `string`
+• `Optional` **language\_direction**: `string`
 
 **`memberof`** Repository
 
 #### Defined in
 
-[models/repository.ts:212](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/repository.ts#L212)
+[models/repository.ts:235](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L235)
 
 ___
 
-### <a id="languagetitle" name="languagetitle"></a> languageTitle
+### <a id="language_is_gl" name="language_is_gl"></a> language\_is\_gl
 
-• `Optional` **languageTitle**: `string`
+• `Optional` **language\_is\_gl**: `boolean`
 
 **`memberof`** Repository
 
 #### Defined in
 
-[models/repository.ts:218](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/repository.ts#L218)
+[models/repository.ts:241](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L241)
+
+___
+
+### <a id="language_title" name="language_title"></a> language\_title
+
+• `Optional` **language\_title**: `string`
+
+**`memberof`** Repository
+
+#### Defined in
+
+[models/repository.ts:247](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L247)
 
 ___
 
@@ -473,31 +493,31 @@ ___
 
 #### Defined in
 
-[models/repository.ts:224](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/repository.ts#L224)
+[models/repository.ts:253](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L253)
 
 ___
 
-### <a id="mirrorinterval" name="mirrorinterval"></a> mirrorInterval
+### <a id="mirror_interval" name="mirror_interval"></a> mirror\_interval
 
-• `Optional` **mirrorInterval**: `string`
+• `Optional` **mirror\_interval**: `string`
 
 **`memberof`** Repository
 
 #### Defined in
 
-[models/repository.ts:230](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/repository.ts#L230)
+[models/repository.ts:259](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L259)
 
 ___
 
-### <a id="mirrorupdated" name="mirrorupdated"></a> mirrorUpdated
+### <a id="mirror_updated" name="mirror_updated"></a> mirror\_updated
 
-• `Optional` **mirrorUpdated**: `Date`
+• `Optional` **mirror\_updated**: `string`
 
 **`memberof`** Repository
 
 #### Defined in
 
-[models/repository.ts:236](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/repository.ts#L236)
+[models/repository.ts:265](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L265)
 
 ___
 
@@ -509,43 +529,43 @@ ___
 
 #### Defined in
 
-[models/repository.ts:242](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/repository.ts#L242)
+[models/repository.ts:271](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L271)
 
 ___
 
-### <a id="openissuescount" name="openissuescount"></a> openIssuesCount
+### <a id="open_issues_count" name="open_issues_count"></a> open\_issues\_count
 
-• `Optional` **openIssuesCount**: `number`
+• `Optional` **open\_issues\_count**: `number`
 
 **`memberof`** Repository
 
 #### Defined in
 
-[models/repository.ts:248](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/repository.ts#L248)
+[models/repository.ts:277](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L277)
 
 ___
 
-### <a id="openprcounter" name="openprcounter"></a> openPrCounter
+### <a id="open_pr_counter" name="open_pr_counter"></a> open\_pr\_counter
 
-• `Optional` **openPrCounter**: `number`
+• `Optional` **open\_pr\_counter**: `number`
 
 **`memberof`** Repository
 
 #### Defined in
 
-[models/repository.ts:254](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/repository.ts#L254)
+[models/repository.ts:283](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L283)
 
 ___
 
-### <a id="originalurl" name="originalurl"></a> originalUrl
+### <a id="original_url" name="original_url"></a> original\_url
 
-• `Optional` **originalUrl**: `string`
+• `Optional` **original\_url**: `string`
 
 **`memberof`** Repository
 
 #### Defined in
 
-[models/repository.ts:260](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/repository.ts#L260)
+[models/repository.ts:289](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L289)
 
 ___
 
@@ -557,7 +577,7 @@ ___
 
 #### Defined in
 
-[models/repository.ts:266](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/repository.ts#L266)
+[models/repository.ts:295](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L295)
 
 ___
 
@@ -569,7 +589,7 @@ ___
 
 #### Defined in
 
-[models/repository.ts:272](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/repository.ts#L272)
+[models/repository.ts:301](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L301)
 
 ___
 
@@ -581,31 +601,43 @@ ___
 
 #### Defined in
 
-[models/repository.ts:278](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/repository.ts#L278)
+[models/repository.ts:307](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L307)
 
 ___
 
-### <a id="releasecounter" name="releasecounter"></a> releaseCounter
+### <a id="private" name="private"></a> private
 
-• `Optional` **releaseCounter**: `number`
+• `Optional` **private**: `boolean`
 
 **`memberof`** Repository
 
 #### Defined in
 
-[models/repository.ts:290](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/repository.ts#L290)
+[models/repository.ts:313](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L313)
 
 ___
 
-### <a id="repotransfer" name="repotransfer"></a> repoTransfer
+### <a id="release_counter" name="release_counter"></a> release\_counter
 
-• `Optional` **repoTransfer**: [`RepoTransfer`](RepoTransfer.md)
+• `Optional` **release\_counter**: `number`
 
 **`memberof`** Repository
 
 #### Defined in
 
-[models/repository.ts:296](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/repository.ts#L296)
+[models/repository.ts:319](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L319)
+
+___
+
+### <a id="repo_transfer" name="repo_transfer"></a> repo\_transfer
+
+• `Optional` **repo\_transfer**: [`RepoTransfer`](RepoTransfer.md)
+
+**`memberof`** Repository
+
+#### Defined in
+
+[models/repository.ts:325](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L325)
 
 ___
 
@@ -617,31 +649,31 @@ ___
 
 #### Defined in
 
-[models/repository.ts:302](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/repository.ts#L302)
+[models/repository.ts:331](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L331)
 
 ___
 
-### <a id="sshurl" name="sshurl"></a> sshUrl
+### <a id="ssh_url" name="ssh_url"></a> ssh\_url
 
-• `Optional` **sshUrl**: `string`
+• `Optional` **ssh\_url**: `string`
 
 **`memberof`** Repository
 
 #### Defined in
 
-[models/repository.ts:308](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/repository.ts#L308)
+[models/repository.ts:337](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L337)
 
 ___
 
-### <a id="starscount" name="starscount"></a> starsCount
+### <a id="stars_count" name="stars_count"></a> stars\_count
 
-• `Optional` **starsCount**: `number`
+• `Optional` **stars\_count**: `number`
 
 **`memberof`** Repository
 
 #### Defined in
 
-[models/repository.ts:314](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/repository.ts#L314)
+[models/repository.ts:343](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L343)
 
 ___
 
@@ -653,7 +685,7 @@ ___
 
 #### Defined in
 
-[models/repository.ts:320](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/repository.ts#L320)
+[models/repository.ts:349](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L349)
 
 ___
 
@@ -665,7 +697,7 @@ ___
 
 #### Defined in
 
-[models/repository.ts:326](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/repository.ts#L326)
+[models/repository.ts:355](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L355)
 
 ___
 
@@ -677,31 +709,31 @@ ___
 
 #### Defined in
 
-[models/repository.ts:332](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/repository.ts#L332)
+[models/repository.ts:361](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L361)
 
 ___
 
-### <a id="updatedat" name="updatedat"></a> updatedAt
+### <a id="updated_at" name="updated_at"></a> updated\_at
 
-• `Optional` **updatedAt**: `Date`
+• `Optional` **updated\_at**: `string`
 
 **`memberof`** Repository
 
 #### Defined in
 
-[models/repository.ts:338](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/repository.ts#L338)
+[models/repository.ts:367](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L367)
 
 ___
 
-### <a id="watcherscount" name="watcherscount"></a> watchersCount
+### <a id="watchers_count" name="watchers_count"></a> watchers\_count
 
-• `Optional` **watchersCount**: `number`
+• `Optional` **watchers\_count**: `number`
 
 **`memberof`** Repository
 
 #### Defined in
 
-[models/repository.ts:344](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/repository.ts#L344)
+[models/repository.ts:373](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L373)
 
 ___
 
@@ -713,4 +745,4 @@ ___
 
 #### Defined in
 
-[models/repository.ts:350](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/repository.ts#L350)
+[models/repository.ts:379](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L379)

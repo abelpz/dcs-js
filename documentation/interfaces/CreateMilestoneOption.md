@@ -13,7 +13,7 @@ CreateMilestoneOption options for creating a milestone
 ### Properties
 
 - [description](CreateMilestoneOption.md#description)
-- [dueOn](CreateMilestoneOption.md#dueon)
+- [due\_on](CreateMilestoneOption.md#due_on)
 - [state](CreateMilestoneOption.md#state)
 - [title](CreateMilestoneOption.md#title)
 
@@ -27,31 +27,31 @@ CreateMilestoneOption options for creating a milestone
 
 #### Defined in
 
-[models/create-milestone-option.ts:25](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-milestone-option.ts#L25)
+[models/create-milestone-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-milestone-option.ts#L28)
 
 ___
 
-### <a id="dueon" name="dueon"></a> dueOn
+### <a id="due_on" name="due_on"></a> due\_on
 
-• `Optional` **dueOn**: `Date`
+• `Optional` **due\_on**: `string`
 
 **`memberof`** CreateMilestoneOption
 
 #### Defined in
 
-[models/create-milestone-option.ts:31](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-milestone-option.ts#L31)
+[models/create-milestone-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-milestone-option.ts#L34)
 
 ___
 
 ### <a id="state" name="state"></a> state
 
-• `Optional` **state**: [`CreateMilestoneOptionStateEnum`](../enums/CreateMilestoneOptionStateEnum.md)
+• `Optional` **state**: [`CreateMilestoneOptionStateEnum`](../modules.md#createmilestoneoptionstateenum-1)
 
 **`memberof`** CreateMilestoneOption
 
 #### Defined in
 
-[models/create-milestone-option.ts:37](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-milestone-option.ts#L37)
+[models/create-milestone-option.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-milestone-option.ts#L40)
 
 ___
 
@@ -63,4 +63,4 @@ ___
 
 #### Defined in
 
-[models/create-milestone-option.ts:43](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-milestone-option.ts#L43)
+[models/create-milestone-option.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-milestone-option.ts#L46)

@@ -49,7 +49,7 @@ RepositoryApi - object-oriented interface
 - [repoCreatePullReview](RepositoryApi.md#repocreatepullreview)
 - [repoCreatePullReviewRequests](RepositoryApi.md#repocreatepullreviewrequests)
 - [repoCreateRelease](RepositoryApi.md#repocreaterelease)
-- [repoCreateReleaseAttachmentForm](RepositoryApi.md#repocreatereleaseattachmentform)
+- [repoCreateReleaseAttachment](RepositoryApi.md#repocreatereleaseattachment)
 - [repoCreateStatus](RepositoryApi.md#repocreatestatus)
 - [repoCreateTag](RepositoryApi.md#repocreatetag)
 - [repoCreateWikiPage](RepositoryApi.md#repocreatewikipage)
@@ -171,7 +171,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[base.ts:50](https://github.com/unfoldingWord/dcs-js/blob/c677a54/base.ts#L50)
+[base.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/base.ts#L52)
 
 ## Properties
 
@@ -205,7 +205,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[base.ts:48](https://github.com/unfoldingWord/dcs-js/blob/c677a54/base.ts#L48)
+[base.ts:50](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/base.ts#L50)
 
 ## Methods
 
@@ -233,7 +233,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[apis/repository-api.ts:17170](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L17170)
+[apis/repository-api.ts:11830](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L11830)
 
 ___
 
@@ -260,7 +260,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:17181](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L17181)
+[apis/repository-api.ts:11842](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L11842)
 
 ___
 
@@ -289,7 +289,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:17194](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L17194)
+[apis/repository-api.ts:11856](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L11856)
 
 ___
 
@@ -318,7 +318,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:17207](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L17207)
+[apis/repository-api.ts:11870](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L11870)
 
 ___
 
@@ -347,7 +347,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:17220](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L17220)
+[apis/repository-api.ts:11884](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L11884)
 
 ___
 
@@ -376,7 +376,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:17233](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L17233)
+[apis/repository-api.ts:11898](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L11898)
 
 ___
 
@@ -408,7 +408,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:17249](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L17249)
+[apis/repository-api.ts:11915](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L11915)
 
 ___
 
@@ -416,7 +416,7 @@ ___
 
 ▸ **listForks**(`owner`, `repo`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`Repository`](../interfaces/Repository.md)[]\>\>
 
-**`summary`** List a repository's forks
+**`summary`** List a repository\'s forks
 
 **`throws`** {RequiredError}
 
@@ -438,7 +438,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:17263](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L17263)
+[apis/repository-api.ts:11930](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L11930)
 
 ___
 
@@ -466,7 +466,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:17275](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L17275)
+[apis/repository-api.ts:11943](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L11943)
 
 ___
 
@@ -496,7 +496,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:17289](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L17289)
+[apis/repository-api.ts:11958](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L11958)
 
 ___
 
@@ -525,7 +525,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:17302](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L17302)
+[apis/repository-api.ts:11972](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L11972)
 
 ___
 
@@ -554,7 +554,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:17315](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L17315)
+[apis/repository-api.ts:11986](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L11986)
 
 ___
 
@@ -583,7 +583,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:17328](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L17328)
+[apis/repository-api.ts:12000](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12000)
 
 ___
 
@@ -612,7 +612,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:17341](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L17341)
+[apis/repository-api.ts:12014](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12014)
 
 ___
 
@@ -641,7 +641,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:17354](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L17354)
+[apis/repository-api.ts:12028](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12028)
 
 ___
 
@@ -670,13 +670,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:17367](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L17367)
+[apis/repository-api.ts:12042](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12042)
 
 ___
 
 ### <a id="repocreatefile" name="repocreatefile"></a> repoCreateFile
 
-▸ **repoCreateFile**(`body`, `owner`, `repo`, `filepath`, `options?`): `Promise`<`AxiosResponse`<[`FileResponse`](../interfaces/FileResponse.md)\>\>
+▸ **repoCreateFile**(`owner`, `repo`, `filepath`, `body`, `options?`): `Promise`<`AxiosResponse`<[`FileResponse`](../interfaces/FileResponse.md)\>\>
 
 **`summary`** Create a file in a repository
 
@@ -688,10 +688,10 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `body` | [`CreateFileOptions`](../interfaces/CreateFileOptions.md) |  |
 | `owner` | `string` | owner of the repo |
 | `repo` | `string` | name of the repo |
 | `filepath` | `string` | path of the file to create |
+| `body` | [`CreateFileOptions`](../interfaces/CreateFileOptions.md) |  |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -700,7 +700,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:17381](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L17381)
+[apis/repository-api.ts:12057](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12057)
 
 ___
 
@@ -729,7 +729,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:17394](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L17394)
+[apis/repository-api.ts:12071](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12071)
 
 ___
 
@@ -758,7 +758,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:17407](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L17407)
+[apis/repository-api.ts:12085](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12085)
 
 ___
 
@@ -787,13 +787,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:17420](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L17420)
+[apis/repository-api.ts:12099](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12099)
 
 ___
 
 ### <a id="repocreatepullreview" name="repocreatepullreview"></a> repoCreatePullReview
 
-▸ **repoCreatePullReview**(`body`, `owner`, `repo`, `index`, `options?`): `Promise`<`AxiosResponse`<[`PullReview`](../interfaces/PullReview.md)\>\>
+▸ **repoCreatePullReview**(`owner`, `repo`, `index`, `body`, `options?`): `Promise`<`AxiosResponse`<[`PullReview`](../interfaces/PullReview.md)\>\>
 
 **`summary`** Create a review to an pull request
 
@@ -805,10 +805,10 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `body` | [`CreatePullReviewOptions`](../interfaces/CreatePullReviewOptions.md) |  |
 | `owner` | `string` | owner of the repo |
 | `repo` | `string` | name of the repo |
 | `index` | `number` | index of the pull request |
+| `body` | [`CreatePullReviewOptions`](../interfaces/CreatePullReviewOptions.md) |  |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -817,13 +817,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:17434](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L17434)
+[apis/repository-api.ts:12114](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12114)
 
 ___
 
 ### <a id="repocreatepullreviewrequests" name="repocreatepullreviewrequests"></a> repoCreatePullReviewRequests
 
-▸ **repoCreatePullReviewRequests**(`body`, `owner`, `repo`, `index`, `options?`): `Promise`<`AxiosResponse`<[`PullReview`](../interfaces/PullReview.md)[]\>\>
+▸ **repoCreatePullReviewRequests**(`owner`, `repo`, `index`, `body`, `options?`): `Promise`<`AxiosResponse`<[`PullReview`](../interfaces/PullReview.md)[]\>\>
 
 **`summary`** create review requests for a pull request
 
@@ -835,10 +835,10 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `body` | [`PullReviewRequestOptions`](../interfaces/PullReviewRequestOptions.md) |  |
 | `owner` | `string` | owner of the repo |
 | `repo` | `string` | name of the repo |
 | `index` | `number` | index of the pull request |
+| `body` | [`PullReviewRequestOptions`](../interfaces/PullReviewRequestOptions.md) |  |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -847,7 +847,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:17448](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L17448)
+[apis/repository-api.ts:12129](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12129)
 
 ___
 
@@ -876,13 +876,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:17461](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L17461)
+[apis/repository-api.ts:12143](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12143)
 
 ___
 
-### <a id="repocreatereleaseattachmentform" name="repocreatereleaseattachmentform"></a> repoCreateReleaseAttachmentForm
+### <a id="repocreatereleaseattachment" name="repocreatereleaseattachment"></a> repoCreateReleaseAttachment
 
-▸ **repoCreateReleaseAttachmentForm**(`attachment`, `owner`, `repo`, `id`, `name?`, `options?`): `Promise`<`AxiosResponse`<[`Attachment`](../interfaces/Attachment.md)\>\>
+▸ **repoCreateReleaseAttachment**(`owner`, `repo`, `id`, `attachment`, `name?`, `options?`): `Promise`<`AxiosResponse`<[`Attachment`](../interfaces/Attachment.md)\>\>
 
 **`summary`** Create a release attachment
 
@@ -894,10 +894,10 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `attachment` | `Blob` |  |
 | `owner` | `string` | owner of the repo |
 | `repo` | `string` | name of the repo |
 | `id` | `number` | id of the release |
+| `attachment` | `File` | attachment to upload |
 | `name?` | `string` | - |
 | `options?` | `AxiosRequestConfig` | - |
 
@@ -907,7 +907,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:17476](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L17476)
+[apis/repository-api.ts:12159](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12159)
 
 ___
 
@@ -937,7 +937,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:17490](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L17490)
+[apis/repository-api.ts:12174](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12174)
 
 ___
 
@@ -966,7 +966,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:17503](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L17503)
+[apis/repository-api.ts:12188](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12188)
 
 ___
 
@@ -995,7 +995,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:17516](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L17516)
+[apis/repository-api.ts:12202](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12202)
 
 ___
 
@@ -1023,7 +1023,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:17528](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L17528)
+[apis/repository-api.ts:12215](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12215)
 
 ___
 
@@ -1052,7 +1052,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:17541](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L17541)
+[apis/repository-api.ts:12229](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12229)
 
 ___
 
@@ -1081,7 +1081,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:17554](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L17554)
+[apis/repository-api.ts:12243](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12243)
 
 ___
 
@@ -1110,13 +1110,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:17567](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L17567)
+[apis/repository-api.ts:12257](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12257)
 
 ___
 
 ### <a id="repodeletefile" name="repodeletefile"></a> repoDeleteFile
 
-▸ **repoDeleteFile**(`body`, `owner`, `repo`, `filepath`, `options?`): `Promise`<`AxiosResponse`<[`FileDeleteResponse`](../interfaces/FileDeleteResponse.md)\>\>
+▸ **repoDeleteFile**(`owner`, `repo`, `filepath`, `body`, `options?`): `Promise`<`AxiosResponse`<[`FileDeleteResponse`](../interfaces/FileDeleteResponse.md)\>\>
 
 **`summary`** Delete a file in a repository
 
@@ -1128,10 +1128,10 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `body` | [`DeleteFileOptions`](../interfaces/DeleteFileOptions.md) |  |
 | `owner` | `string` | owner of the repo |
 | `repo` | `string` | name of the repo |
 | `filepath` | `string` | path of the file to delete |
+| `body` | [`DeleteFileOptions`](../interfaces/DeleteFileOptions.md) |  |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1140,7 +1140,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:17581](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L17581)
+[apis/repository-api.ts:12272](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12272)
 
 ___
 
@@ -1169,7 +1169,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:17594](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L17594)
+[apis/repository-api.ts:12286](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12286)
 
 ___
 
@@ -1198,7 +1198,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:17607](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L17607)
+[apis/repository-api.ts:12300](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12300)
 
 ___
 
@@ -1227,7 +1227,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:17620](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L17620)
+[apis/repository-api.ts:12314](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12314)
 
 ___
 
@@ -1257,13 +1257,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:17634](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L17634)
+[apis/repository-api.ts:12329](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12329)
 
 ___
 
 ### <a id="repodeletepullreviewrequests" name="repodeletepullreviewrequests"></a> repoDeletePullReviewRequests
 
-▸ **repoDeletePullReviewRequests**(`body`, `owner`, `repo`, `index`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **repoDeletePullReviewRequests**(`owner`, `repo`, `index`, `body`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** cancel review requests for a pull request
 
@@ -1275,10 +1275,10 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `body` | [`PullReviewRequestOptions`](../interfaces/PullReviewRequestOptions.md) |  |
 | `owner` | `string` | owner of the repo |
 | `repo` | `string` | name of the repo |
 | `index` | `number` | index of the pull request |
+| `body` | [`PullReviewRequestOptions`](../interfaces/PullReviewRequestOptions.md) |  |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1287,7 +1287,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:17648](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L17648)
+[apis/repository-api.ts:12344](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12344)
 
 ___
 
@@ -1316,7 +1316,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:17661](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L17661)
+[apis/repository-api.ts:12358](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12358)
 
 ___
 
@@ -1346,7 +1346,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:17675](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L17675)
+[apis/repository-api.ts:12373](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12373)
 
 ___
 
@@ -1375,7 +1375,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:17688](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L17688)
+[apis/repository-api.ts:12387](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12387)
 
 ___
 
@@ -1383,7 +1383,7 @@ ___
 
 ▸ **repoDeleteTag**(`owner`, `repo`, `tag`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
-**`summary`** Delete a repository's tag by name
+**`summary`** Delete a repository\'s tag by name
 
 **`throws`** {RequiredError}
 
@@ -1404,7 +1404,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:17701](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L17701)
+[apis/repository-api.ts:12401](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12401)
 
 ___
 
@@ -1433,7 +1433,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:17714](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L17714)
+[apis/repository-api.ts:12415](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12415)
 
 ___
 
@@ -1462,7 +1462,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:17727](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L17727)
+[apis/repository-api.ts:12429](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12429)
 
 ___
 
@@ -1491,13 +1491,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:17740](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L17740)
+[apis/repository-api.ts:12443](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12443)
 
 ___
 
 ### <a id="repodismisspullreview" name="repodismisspullreview"></a> repoDismissPullReview
 
-▸ **repoDismissPullReview**(`body`, `owner`, `repo`, `index`, `id`, `options?`): `Promise`<`AxiosResponse`<[`PullReview`](../interfaces/PullReview.md)\>\>
+▸ **repoDismissPullReview**(`owner`, `repo`, `index`, `id`, `body`, `options?`): `Promise`<`AxiosResponse`<[`PullReview`](../interfaces/PullReview.md)\>\>
 
 **`summary`** Dismiss a review for a pull request
 
@@ -1509,11 +1509,11 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `body` | [`DismissPullReviewOptions`](../interfaces/DismissPullReviewOptions.md) |  |
 | `owner` | `string` | owner of the repo |
 | `repo` | `string` | name of the repo |
 | `index` | `number` | index of the pull request |
 | `id` | `number` | id of the review |
+| `body` | [`DismissPullReviewOptions`](../interfaces/DismissPullReviewOptions.md) |  |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1522,7 +1522,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:17755](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L17755)
+[apis/repository-api.ts:12459](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12459)
 
 ___
 
@@ -1530,7 +1530,7 @@ ___
 
 ▸ **repoDownloadCommitDiffOrPatch**(`owner`, `repo`, `sha`, `diffType`, `options?`): `Promise`<`AxiosResponse`<`string`\>\>
 
-**`summary`** Get a commit's diff or patch
+**`summary`** Get a commit\'s diff or patch
 
 **`throws`** {RequiredError}
 
@@ -1543,7 +1543,7 @@ ___
 | `owner` | `string` | owner of the repo |
 | `repo` | `string` | name of the repo |
 | `sha` | `string` | SHA of the commit to get |
-| `diffType` | `string` | whether the output is diff or patch |
+| `diffType` | ``"patch"`` \| ``"diff"`` | whether the output is diff or patch |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1552,7 +1552,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:17769](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L17769)
+[apis/repository-api.ts:12474](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12474)
 
 ___
 
@@ -1573,7 +1573,7 @@ ___
 | `owner` | `string` | owner of the repo |
 | `repo` | `string` | name of the repo |
 | `index` | `number` | index of the pull request to get |
-| `diffType` | `string` | whether the output is diff or patch |
+| `diffType` | ``"patch"`` \| ``"diff"`` | whether the output is diff or patch |
 | `binary?` | `boolean` | - |
 | `options?` | `AxiosRequestConfig` | - |
 
@@ -1583,7 +1583,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:17784](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L17784)
+[apis/repository-api.ts:12490](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12490)
 
 ___
 
@@ -1591,7 +1591,7 @@ ___
 
 ▸ **repoEdit**(`owner`, `repo`, `body?`, `options?`): `Promise`<`AxiosResponse`<[`Repository`](../interfaces/Repository.md)\>\>
 
-**`summary`** Edit a repository's properties. Only fields that are set will be changed.
+**`summary`** Edit a repository\'s properties. Only fields that are set will be changed.
 
 **`throws`** {RequiredError}
 
@@ -1612,7 +1612,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:17797](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L17797)
+[apis/repository-api.ts:12504](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12504)
 
 ___
 
@@ -1642,7 +1642,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:17811](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L17811)
+[apis/repository-api.ts:12519](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12519)
 
 ___
 
@@ -1672,7 +1672,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:17825](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L17825)
+[apis/repository-api.ts:12534](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12534)
 
 ___
 
@@ -1702,7 +1702,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:17839](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L17839)
+[apis/repository-api.ts:12549](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12549)
 
 ___
 
@@ -1732,7 +1732,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:17853](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L17853)
+[apis/repository-api.ts:12564](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12564)
 
 ___
 
@@ -1762,7 +1762,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:17867](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L17867)
+[apis/repository-api.ts:12579](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12579)
 
 ___
 
@@ -1793,7 +1793,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:17882](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L17882)
+[apis/repository-api.ts:12595](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12595)
 
 ___
 
@@ -1823,7 +1823,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:17896](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L17896)
+[apis/repository-api.ts:12610](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12610)
 
 ___
 
@@ -1851,7 +1851,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:17908](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L17908)
+[apis/repository-api.ts:12623](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12623)
 
 ___
 
@@ -1883,7 +1883,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:17924](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L17924)
+[apis/repository-api.ts:12640](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12640)
 
 ___
 
@@ -1912,7 +1912,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:17937](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L17937)
+[apis/repository-api.ts:12654](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12654)
 
 ___
 
@@ -1940,7 +1940,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:17949](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L17949)
+[apis/repository-api.ts:12667](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12667)
 
 ___
 
@@ -1969,7 +1969,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:17962](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L17962)
+[apis/repository-api.ts:12681](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12681)
 
 ___
 
@@ -1998,7 +1998,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:17975](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L17975)
+[apis/repository-api.ts:12695](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12695)
 
 ___
 
@@ -2025,7 +2025,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:17986](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L17986)
+[apis/repository-api.ts:12707](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12707)
 
 ___
 
@@ -2033,7 +2033,7 @@ ___
 
 ▸ **repoGetCombinedStatusByRef**(`owner`, `repo`, `ref`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`CombinedStatus`](../interfaces/CombinedStatus.md)\>\>
 
-**`summary`** Get a commit's combined status, by branch/tag/commit reference
+**`summary`** Get a commit\'s combined status, by branch/tag/commit reference
 
 **`throws`** {RequiredError}
 
@@ -2056,7 +2056,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:18001](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L18001)
+[apis/repository-api.ts:12723](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12723)
 
 ___
 
@@ -2086,7 +2086,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:18015](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L18015)
+[apis/repository-api.ts:12738](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12738)
 
 ___
 
@@ -2115,7 +2115,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:18028](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L18028)
+[apis/repository-api.ts:12752](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12752)
 
 ___
 
@@ -2144,7 +2144,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:18041](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L18041)
+[apis/repository-api.ts:12766](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12766)
 
 ___
 
@@ -2173,7 +2173,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:18054](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L18054)
+[apis/repository-api.ts:12780](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12780)
 
 ___
 
@@ -2202,7 +2202,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:18067](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L18067)
+[apis/repository-api.ts:12794](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12794)
 
 ___
 
@@ -2230,7 +2230,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:18079](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L18079)
+[apis/repository-api.ts:12807](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12807)
 
 ___
 
@@ -2238,7 +2238,7 @@ ___
 
 ▸ **repoGetKey**(`owner`, `repo`, `id`, `options?`): `Promise`<`AxiosResponse`<[`DeployKey`](../interfaces/DeployKey.md)\>\>
 
-**`summary`** Get a repository's key by id
+**`summary`** Get a repository\'s key by id
 
 **`throws`** {RequiredError}
 
@@ -2259,7 +2259,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:18092](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L18092)
+[apis/repository-api.ts:12821](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12821)
 
 ___
 
@@ -2287,7 +2287,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:18104](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L18104)
+[apis/repository-api.ts:12834](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12834)
 
 ___
 
@@ -2316,7 +2316,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:18117](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L18117)
+[apis/repository-api.ts:12848](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12848)
 
 ___
 
@@ -2345,7 +2345,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:18130](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L18130)
+[apis/repository-api.ts:12862](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12862)
 
 ___
 
@@ -2376,7 +2376,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:18145](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L18145)
+[apis/repository-api.ts:12878](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12878)
 
 ___
 
@@ -2406,7 +2406,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:18159](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L18159)
+[apis/repository-api.ts:12893](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12893)
 
 ___
 
@@ -2436,7 +2436,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:18173](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L18173)
+[apis/repository-api.ts:12908](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12908)
 
 ___
 
@@ -2466,7 +2466,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:18187](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L18187)
+[apis/repository-api.ts:12923](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12923)
 
 ___
 
@@ -2495,7 +2495,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:18200](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L18200)
+[apis/repository-api.ts:12937](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12937)
 
 ___
 
@@ -2525,7 +2525,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:18214](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L18214)
+[apis/repository-api.ts:12952](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12952)
 
 ___
 
@@ -2554,7 +2554,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:18227](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L18227)
+[apis/repository-api.ts:12966](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12966)
 
 ___
 
@@ -2582,7 +2582,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:18239](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L18239)
+[apis/repository-api.ts:12979](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12979)
 
 ___
 
@@ -2611,7 +2611,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:18252](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L18252)
+[apis/repository-api.ts:12993](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12993)
 
 ___
 
@@ -2640,7 +2640,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:18265](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L18265)
+[apis/repository-api.ts:13007](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13007)
 
 ___
 
@@ -2669,7 +2669,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:18278](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L18278)
+[apis/repository-api.ts:13021](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13021)
 
 ___
 
@@ -2699,7 +2699,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:18292](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L18292)
+[apis/repository-api.ts:13036](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13036)
 
 ___
 
@@ -2729,7 +2729,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:18306](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L18306)
+[apis/repository-api.ts:13051](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13051)
 
 ___
 
@@ -2737,7 +2737,7 @@ ___
 
 ▸ **repoListAllGitRefs**(`owner`, `repo`, `options?`): `Promise`<`AxiosResponse`<[`Reference`](../interfaces/Reference.md)[]\>\>
 
-**`summary`** Get specified ref or filtered repository's refs
+**`summary`** Get specified ref or filtered repository\'s refs
 
 **`throws`** {RequiredError}
 
@@ -2757,7 +2757,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:18318](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L18318)
+[apis/repository-api.ts:13064](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13064)
 
 ___
 
@@ -2785,7 +2785,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:18330](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L18330)
+[apis/repository-api.ts:13077](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13077)
 
 ___
 
@@ -2793,7 +2793,7 @@ ___
 
 ▸ **repoListBranches**(`owner`, `repo`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`Branch`](../interfaces/Branch.md)[]\>\>
 
-**`summary`** List a repository's branches
+**`summary`** List a repository\'s branches
 
 **`throws`** {RequiredError}
 
@@ -2815,7 +2815,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:18344](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L18344)
+[apis/repository-api.ts:13092](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13092)
 
 ___
 
@@ -2823,7 +2823,7 @@ ___
 
 ▸ **repoListCollaborators**(`owner`, `repo`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`User`](../interfaces/User.md)[]\>\>
 
-**`summary`** List a repository's collaborators
+**`summary`** List a repository\'s collaborators
 
 **`throws`** {RequiredError}
 
@@ -2845,7 +2845,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:18358](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L18358)
+[apis/repository-api.ts:13107](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13107)
 
 ___
 
@@ -2873,7 +2873,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:18370](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L18370)
+[apis/repository-api.ts:13120](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13120)
 
 ___
 
@@ -2881,7 +2881,7 @@ ___
 
 ▸ **repoListGitRefs**(`owner`, `repo`, `ref`, `options?`): `Promise`<`AxiosResponse`<[`Reference`](../interfaces/Reference.md)[]\>\>
 
-**`summary`** Get specified ref or filtered repository's refs
+**`summary`** Get specified ref or filtered repository\'s refs
 
 **`throws`** {RequiredError}
 
@@ -2902,7 +2902,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:18383](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L18383)
+[apis/repository-api.ts:13134](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13134)
 
 ___
 
@@ -2932,7 +2932,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:18397](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L18397)
+[apis/repository-api.ts:13149](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13149)
 
 ___
 
@@ -2940,7 +2940,7 @@ ___
 
 ▸ **repoListKeys**(`owner`, `repo`, `keyId?`, `fingerprint?`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`DeployKey`](../interfaces/DeployKey.md)[]\>\>
 
-**`summary`** List a repository's keys
+**`summary`** List a repository\'s keys
 
 **`throws`** {RequiredError}
 
@@ -2964,7 +2964,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:18413](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L18413)
+[apis/repository-api.ts:13166](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13166)
 
 ___
 
@@ -2972,7 +2972,7 @@ ___
 
 ▸ **repoListPullRequests**(`owner`, `repo`, `state?`, `sort?`, `milestone?`, `labels?`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`PullRequest`](../interfaces/PullRequest.md)[]\>\>
 
-**`summary`** List a repo's pull requests
+**`summary`** List a repo\'s pull requests
 
 **`throws`** {RequiredError}
 
@@ -2984,8 +2984,8 @@ ___
 | :------ | :------ | :------ |
 | `owner` | `string` | owner of the repo |
 | `repo` | `string` | name of the repo |
-| `state?` | `string` | - |
-| `sort?` | `string` | - |
+| `state?` | ``"all"`` \| ``"closed"`` \| ``"open"`` | - |
+| `sort?` | ``"priority"`` \| ``"oldest"`` \| ``"recentupdate"`` \| ``"leastupdate"`` \| ``"mostcomment"`` \| ``"leastcomment"`` | - |
 | `milestone?` | `number` | - |
 | `labels?` | `number`[] | - |
 | `page?` | `number` | - |
@@ -2998,7 +2998,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:18431](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L18431)
+[apis/repository-api.ts:13185](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13185)
 
 ___
 
@@ -3029,7 +3029,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:18446](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L18446)
+[apis/repository-api.ts:13201](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13201)
 
 ___
 
@@ -3037,7 +3037,7 @@ ___
 
 ▸ **repoListReleaseAttachments**(`owner`, `repo`, `id`, `options?`): `Promise`<`AxiosResponse`<[`Attachment`](../interfaces/Attachment.md)[]\>\>
 
-**`summary`** List release's attachments
+**`summary`** List release\'s attachments
 
 **`throws`** {RequiredError}
 
@@ -3058,7 +3058,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:18459](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L18459)
+[apis/repository-api.ts:13215](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13215)
 
 ___
 
@@ -3066,7 +3066,7 @@ ___
 
 ▸ **repoListReleases**(`owner`, `repo`, `draft?`, `preRelease?`, `perPage?`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`Release`](../interfaces/Release.md)[]\>\>
 
-**`summary`** List a repo's releases
+**`summary`** List a repo\'s releases
 
 **`throws`** {RequiredError}
 
@@ -3091,7 +3091,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:18476](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L18476)
+[apis/repository-api.ts:13233](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13233)
 
 ___
 
@@ -3099,7 +3099,7 @@ ___
 
 ▸ **repoListStargazers**(`owner`, `repo`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`User`](../interfaces/User.md)[]\>\>
 
-**`summary`** List a repo's stargazers
+**`summary`** List a repo\'s stargazers
 
 **`throws`** {RequiredError}
 
@@ -3121,7 +3121,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:18490](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L18490)
+[apis/repository-api.ts:13248](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13248)
 
 ___
 
@@ -3129,7 +3129,7 @@ ___
 
 ▸ **repoListStatuses**(`owner`, `repo`, `sha`, `sort?`, `state?`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`CommitStatus`](../interfaces/CommitStatus.md)[]\>\>
 
-**`summary`** Get a commit's statuses
+**`summary`** Get a commit\'s statuses
 
 **`throws`** {RequiredError}
 
@@ -3142,8 +3142,8 @@ ___
 | `owner` | `string` | owner of the repo |
 | `repo` | `string` | name of the repo |
 | `sha` | `string` | sha of the commit |
-| `sort?` | `string` | - |
-| `state?` | `string` | - |
+| `sort?` | ``"oldest"`` \| ``"recentupdate"`` \| ``"leastupdate"`` \| ``"leastindex"`` \| ``"highestindex"`` | - |
+| `state?` | ``"error"`` \| ``"pending"`` \| ``"success"`` \| ``"failure"`` \| ``"warning"`` | - |
 | `page?` | `number` | - |
 | `limit?` | `number` | - |
 | `options?` | `AxiosRequestConfig` | - |
@@ -3154,7 +3154,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:18507](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L18507)
+[apis/repository-api.ts:13266](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13266)
 
 ___
 
@@ -3162,7 +3162,7 @@ ___
 
 ▸ **repoListStatusesByRef**(`owner`, `repo`, `ref`, `sort?`, `state?`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`CommitStatus`](../interfaces/CommitStatus.md)[]\>\>
 
-**`summary`** Get a commit's statuses, by branch/tag/commit reference
+**`summary`** Get a commit\'s statuses, by branch/tag/commit reference
 
 **`throws`** {RequiredError}
 
@@ -3175,8 +3175,8 @@ ___
 | `owner` | `string` | owner of the repo |
 | `repo` | `string` | name of the repo |
 | `ref` | `string` | name of branch/tag/commit |
-| `sort?` | `string` | - |
-| `state?` | `string` | - |
+| `sort?` | ``"oldest"`` \| ``"recentupdate"`` \| ``"leastupdate"`` \| ``"leastindex"`` \| ``"highestindex"`` | - |
+| `state?` | ``"error"`` \| ``"pending"`` \| ``"success"`` \| ``"failure"`` \| ``"warning"`` | - |
 | `page?` | `number` | - |
 | `limit?` | `number` | - |
 | `options?` | `AxiosRequestConfig` | - |
@@ -3187,7 +3187,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:18524](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L18524)
+[apis/repository-api.ts:13284](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13284)
 
 ___
 
@@ -3195,7 +3195,7 @@ ___
 
 ▸ **repoListSubscribers**(`owner`, `repo`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`User`](../interfaces/User.md)[]\>\>
 
-**`summary`** List a repo's watchers
+**`summary`** List a repo\'s watchers
 
 **`throws`** {RequiredError}
 
@@ -3217,7 +3217,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:18538](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L18538)
+[apis/repository-api.ts:13299](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13299)
 
 ___
 
@@ -3225,7 +3225,7 @@ ___
 
 ▸ **repoListTags**(`owner`, `repo`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`Tag`](../interfaces/Tag.md)[]\>\>
 
-**`summary`** List a repository's tags
+**`summary`** List a repository\'s tags
 
 **`throws`** {RequiredError}
 
@@ -3247,7 +3247,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:18552](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L18552)
+[apis/repository-api.ts:13314](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13314)
 
 ___
 
@@ -3255,7 +3255,7 @@ ___
 
 ▸ **repoListTeams**(`owner`, `repo`, `options?`): `Promise`<`AxiosResponse`<[`Team`](../interfaces/Team.md)[]\>\>
 
-**`summary`** List a repository's teams
+**`summary`** List a repository\'s teams
 
 **`throws`** {RequiredError}
 
@@ -3275,7 +3275,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:18564](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L18564)
+[apis/repository-api.ts:13327](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13327)
 
 ___
 
@@ -3305,7 +3305,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:18578](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L18578)
+[apis/repository-api.ts:13342](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13342)
 
 ___
 
@@ -3335,7 +3335,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:18592](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L18592)
+[apis/repository-api.ts:13357](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13357)
 
 ___
 
@@ -3362,7 +3362,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:18603](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L18603)
+[apis/repository-api.ts:13369](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13369)
 
 ___
 
@@ -3390,7 +3390,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:18615](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L18615)
+[apis/repository-api.ts:13382](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13382)
 
 ___
 
@@ -3419,7 +3419,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:18628](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L18628)
+[apis/repository-api.ts:13396](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13396)
 
 ___
 
@@ -3468,7 +3468,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:18661](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L18661)
+[apis/repository-api.ts:13430](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13430)
 
 ___
 
@@ -3496,13 +3496,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:18673](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L18673)
+[apis/repository-api.ts:13443](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13443)
 
 ___
 
 ### <a id="reposubmitpullreview" name="reposubmitpullreview"></a> repoSubmitPullReview
 
-▸ **repoSubmitPullReview**(`body`, `owner`, `repo`, `index`, `id`, `options?`): `Promise`<`AxiosResponse`<[`PullReview`](../interfaces/PullReview.md)\>\>
+▸ **repoSubmitPullReview**(`owner`, `repo`, `index`, `id`, `body`, `options?`): `Promise`<`AxiosResponse`<[`PullReview`](../interfaces/PullReview.md)\>\>
 
 **`summary`** Submit a pending review to an pull request
 
@@ -3514,11 +3514,11 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `body` | [`SubmitPullReviewOptions`](../interfaces/SubmitPullReviewOptions.md) |  |
 | `owner` | `string` | owner of the repo |
 | `repo` | `string` | name of the repo |
 | `index` | `number` | index of the pull request |
 | `id` | `number` | id of the review |
+| `body` | [`SubmitPullReviewOptions`](../interfaces/SubmitPullReviewOptions.md) |  |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -3527,7 +3527,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:18688](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L18688)
+[apis/repository-api.ts:13459](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13459)
 
 ___
 
@@ -3556,7 +3556,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:18701](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L18701)
+[apis/repository-api.ts:13473](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13473)
 
 ___
 
@@ -3564,7 +3564,7 @@ ___
 
 ▸ **repoTrackedTimes**(`owner`, `repo`, `user?`, `since?`, `before?`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`TrackedTime`](../interfaces/TrackedTime.md)[]\>\>
 
-**`summary`** List a repo's tracked times
+**`summary`** List a repo\'s tracked times
 
 **`throws`** {RequiredError}
 
@@ -3577,8 +3577,8 @@ ___
 | `owner` | `string` | owner of the repo |
 | `repo` | `string` | name of the repo |
 | `user?` | `string` | - |
-| `since?` | `Date` | - |
-| `before?` | `Date` | - |
+| `since?` | `string` | - |
+| `before?` | `string` | - |
 | `page?` | `number` | - |
 | `limit?` | `number` | - |
 | `options?` | `AxiosRequestConfig` | - |
@@ -3589,13 +3589,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:18718](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L18718)
+[apis/repository-api.ts:13491](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13491)
 
 ___
 
 ### <a id="repotransfer" name="repotransfer"></a> repoTransfer
 
-▸ **repoTransfer**(`body`, `owner`, `repo`, `options?`): `Promise`<`AxiosResponse`<[`Repository`](../interfaces/Repository.md)\>\>
+▸ **repoTransfer**(`owner`, `repo`, `body`, `options?`): `Promise`<`AxiosResponse`<[`Repository`](../interfaces/Repository.md)\>\>
 
 **`summary`** Transfer a repo ownership
 
@@ -3607,9 +3607,9 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `body` | [`TransferRepoOption`](../interfaces/TransferRepoOption.md) | Transfer Options |
 | `owner` | `string` | owner of the repo to transfer |
 | `repo` | `string` | name of the repo to transfer |
+| `body` | [`TransferRepoOption`](../interfaces/TransferRepoOption.md) | Transfer Options |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -3618,7 +3618,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:18731](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L18731)
+[apis/repository-api.ts:13505](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13505)
 
 ___
 
@@ -3648,13 +3648,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:18745](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L18745)
+[apis/repository-api.ts:13520](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13520)
 
 ___
 
 ### <a id="repoupdatefile" name="repoupdatefile"></a> repoUpdateFile
 
-▸ **repoUpdateFile**(`body`, `owner`, `repo`, `filepath`, `options?`): `Promise`<`AxiosResponse`<[`FileResponse`](../interfaces/FileResponse.md)\>\>
+▸ **repoUpdateFile**(`owner`, `repo`, `filepath`, `body`, `options?`): `Promise`<`AxiosResponse`<[`FileResponse`](../interfaces/FileResponse.md)\>\>
 
 **`summary`** Update a file in a repository
 
@@ -3666,10 +3666,10 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `body` | [`UpdateFileOptions`](../interfaces/UpdateFileOptions.md) |  |
 | `owner` | `string` | owner of the repo |
 | `repo` | `string` | name of the repo |
 | `filepath` | `string` | path of the file to update |
+| `body` | [`UpdateFileOptions`](../interfaces/UpdateFileOptions.md) |  |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -3678,7 +3678,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:18759](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L18759)
+[apis/repository-api.ts:13535](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13535)
 
 ___
 
@@ -3686,7 +3686,7 @@ ___
 
 ▸ **repoUpdatePullRequest**(`owner`, `repo`, `index`, `style?`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
-**`summary`** Merge PR's baseBranch into headBranch
+**`summary`** Merge PR\'s baseBranch into headBranch
 
 **`throws`** {RequiredError}
 
@@ -3699,7 +3699,7 @@ ___
 | `owner` | `string` | owner of the repo |
 | `repo` | `string` | name of the repo |
 | `index` | `number` | index of the pull request to get |
-| `style?` | `string` | - |
+| `style?` | ``"merge"`` \| ``"rebase"`` | - |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -3708,7 +3708,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:18773](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L18773)
+[apis/repository-api.ts:13550](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13550)
 
 ___
 
@@ -3737,7 +3737,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:18786](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L18786)
+[apis/repository-api.ts:13564](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13564)
 
 ___
 
@@ -3766,7 +3766,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:18799](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L18799)
+[apis/repository-api.ts:13578](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13578)
 
 ___
 
@@ -3794,7 +3794,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:18811](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L18811)
+[apis/repository-api.ts:13591](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13591)
 
 ___
 
@@ -3822,7 +3822,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:18823](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L18823)
+[apis/repository-api.ts:13604](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13604)
 
 ___
 
@@ -3850,7 +3850,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:18835](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L18835)
+[apis/repository-api.ts:13617](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13617)
 
 ___
 
@@ -3858,7 +3858,9 @@ ___
 
 ▸ **userTrackedTimes**(`owner`, `repo`, `user`, `options?`): `Promise`<`AxiosResponse`<[`TrackedTime`](../interfaces/TrackedTime.md)[]\>\>
 
-**`summary`** List a user's tracked times in a repo
+**`summary`** List a user\'s tracked times in a repo
+
+**`deprecated`**
 
 **`throws`** {RequiredError}
 
@@ -3879,4 +3881,4 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:18848](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L18848)
+[apis/repository-api.ts:13632](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13632)

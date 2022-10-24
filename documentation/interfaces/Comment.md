@@ -13,14 +13,14 @@ Comment represents a comment on a commit or issue
 ### Properties
 
 - [body](Comment.md#body)
-- [createdAt](Comment.md#createdat)
-- [htmlUrl](Comment.md#htmlurl)
+- [created\_at](Comment.md#created_at)
+- [html\_url](Comment.md#html_url)
 - [id](Comment.md#id)
-- [issueUrl](Comment.md#issueurl)
-- [originalAuthor](Comment.md#originalauthor)
-- [originalAuthorId](Comment.md#originalauthorid)
-- [pullRequestUrl](Comment.md#pullrequesturl)
-- [updatedAt](Comment.md#updatedat)
+- [issue\_url](Comment.md#issue_url)
+- [original\_author](Comment.md#original_author)
+- [original\_author\_id](Comment.md#original_author_id)
+- [pull\_request\_url](Comment.md#pull_request_url)
+- [updated\_at](Comment.md#updated_at)
 - [user](Comment.md#user)
 
 ## Properties
@@ -33,31 +33,31 @@ Comment represents a comment on a commit or issue
 
 #### Defined in
 
-[models/comment.ts:26](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/comment.ts#L26)
+[models/comment.ts:31](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/comment.ts#L31)
 
 ___
 
-### <a id="createdat" name="createdat"></a> createdAt
+### <a id="created_at" name="created_at"></a> created\_at
 
-• `Optional` **createdAt**: `Date`
+• `Optional` **created\_at**: `string`
 
 **`memberof`** Comment
 
 #### Defined in
 
-[models/comment.ts:32](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/comment.ts#L32)
+[models/comment.ts:37](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/comment.ts#L37)
 
 ___
 
-### <a id="htmlurl" name="htmlurl"></a> htmlUrl
+### <a id="html_url" name="html_url"></a> html\_url
 
-• `Optional` **htmlUrl**: `string`
+• `Optional` **html\_url**: `string`
 
 **`memberof`** Comment
 
 #### Defined in
 
-[models/comment.ts:38](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/comment.ts#L38)
+[models/comment.ts:43](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/comment.ts#L43)
 
 ___
 
@@ -69,67 +69,67 @@ ___
 
 #### Defined in
 
-[models/comment.ts:44](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/comment.ts#L44)
+[models/comment.ts:49](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/comment.ts#L49)
 
 ___
 
-### <a id="issueurl" name="issueurl"></a> issueUrl
+### <a id="issue_url" name="issue_url"></a> issue\_url
 
-• `Optional` **issueUrl**: `string`
+• `Optional` **issue\_url**: `string`
 
 **`memberof`** Comment
 
 #### Defined in
 
-[models/comment.ts:50](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/comment.ts#L50)
+[models/comment.ts:55](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/comment.ts#L55)
 
 ___
 
-### <a id="originalauthor" name="originalauthor"></a> originalAuthor
+### <a id="original_author" name="original_author"></a> original\_author
 
-• `Optional` **originalAuthor**: `string`
+• `Optional` **original\_author**: `string`
 
 **`memberof`** Comment
 
 #### Defined in
 
-[models/comment.ts:56](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/comment.ts#L56)
+[models/comment.ts:61](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/comment.ts#L61)
 
 ___
 
-### <a id="originalauthorid" name="originalauthorid"></a> originalAuthorId
+### <a id="original_author_id" name="original_author_id"></a> original\_author\_id
 
-• `Optional` **originalAuthorId**: `number`
+• `Optional` **original\_author\_id**: `number`
 
 **`memberof`** Comment
 
 #### Defined in
 
-[models/comment.ts:62](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/comment.ts#L62)
+[models/comment.ts:67](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/comment.ts#L67)
 
 ___
 
-### <a id="pullrequesturl" name="pullrequesturl"></a> pullRequestUrl
+### <a id="pull_request_url" name="pull_request_url"></a> pull\_request\_url
 
-• `Optional` **pullRequestUrl**: `string`
+• `Optional` **pull\_request\_url**: `string`
 
 **`memberof`** Comment
 
 #### Defined in
 
-[models/comment.ts:68](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/comment.ts#L68)
+[models/comment.ts:73](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/comment.ts#L73)
 
 ___
 
-### <a id="updatedat" name="updatedat"></a> updatedAt
+### <a id="updated_at" name="updated_at"></a> updated\_at
 
-• `Optional` **updatedAt**: `Date`
+• `Optional` **updated\_at**: `string`
 
 **`memberof`** Comment
 
 #### Defined in
 
-[models/comment.ts:74](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/comment.ts#L74)
+[models/comment.ts:79](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/comment.ts#L79)
 
 ___
 
@@ -141,4 +141,4 @@ ___
 
 #### Defined in
 
-[models/comment.ts:80](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/comment.ts#L80)
+[models/comment.ts:85](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/comment.ts#L85)

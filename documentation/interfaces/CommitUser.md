@@ -24,7 +24,7 @@
 
 #### Defined in
 
-[models/commit-user.ts:25](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/commit-user.ts#L25)
+[models/commit-user.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/commit-user.ts#L28)
 
 ___
 
@@ -36,7 +36,7 @@ ___
 
 #### Defined in
 
-[models/commit-user.ts:31](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/commit-user.ts#L31)
+[models/commit-user.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/commit-user.ts#L34)
 
 ___
 
@@ -48,4 +48,4 @@ ___
 
 #### Defined in
 
-[models/commit-user.ts:37](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/commit-user.ts#L37)
+[models/commit-user.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/commit-user.ts#L40)

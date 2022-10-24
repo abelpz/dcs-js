@@ -12,15 +12,15 @@ CreateWikiPageOptions form for creating wiki
 
 ### Properties
 
-- [contentBase64](CreateWikiPageOptions.md#contentbase64)
+- [content\_base64](CreateWikiPageOptions.md#content_base64)
 - [message](CreateWikiPageOptions.md#message)
 - [title](CreateWikiPageOptions.md#title)
 
 ## Properties
 
-### <a id="contentbase64" name="contentbase64"></a> contentBase64
+### <a id="content_base64" name="content_base64"></a> content\_base64
 
-• `Optional` **contentBase64**: `string`
+• `Optional` **content\_base64**: `string`
 
 content must be base64 encoded
 
@@ -28,7 +28,7 @@ content must be base64 encoded
 
 #### Defined in
 
-[models/create-wiki-page-options.ts:25](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-wiki-page-options.ts#L25)
+[models/create-wiki-page-options.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-wiki-page-options.ts#L28)
 
 ___
 
@@ -42,7 +42,7 @@ optional commit message summarizing the change
 
 #### Defined in
 
-[models/create-wiki-page-options.ts:31](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-wiki-page-options.ts#L31)
+[models/create-wiki-page-options.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-wiki-page-options.ts#L34)
 
 ___
 
@@ -56,4 +56,4 @@ page title. leave empty to keep unchanged
 
 #### Defined in
 
-[models/create-wiki-page-options.ts:37](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-wiki-page-options.ts#L37)
+[models/create-wiki-page-options.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-wiki-page-options.ts#L40)

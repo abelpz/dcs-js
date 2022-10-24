@@ -4,19 +4,6 @@
 
 ## Table of contents
 
-### Enumerations
-
-- [CreateHookOptionTypeEnum](enums/CreateHookOptionTypeEnum.md)
-- [CreateMilestoneOptionStateEnum](enums/CreateMilestoneOptionStateEnum.md)
-- [CreateOrgOptionVisibilityEnum](enums/CreateOrgOptionVisibilityEnum.md)
-- [CreateRepoOptionTrustModelEnum](enums/CreateRepoOptionTrustModelEnum.md)
-- [CreateTeamOptionPermissionEnum](enums/CreateTeamOptionPermissionEnum.md)
-- [EditOrgOptionVisibilityEnum](enums/EditOrgOptionVisibilityEnum.md)
-- [EditTeamOptionPermissionEnum](enums/EditTeamOptionPermissionEnum.md)
-- [MergePullRequestOptionDoEnum](enums/MergePullRequestOptionDoEnum.md)
-- [MigrateRepoOptionsServiceEnum](enums/MigrateRepoOptionsServiceEnum.md)
-- [TeamPermissionEnum](enums/TeamPermissionEnum.md)
-
 ### Classes
 
 - [AdminApi](classes/AdminApi.md)
@@ -49,7 +36,6 @@
 - [CommitDateOptions](interfaces/CommitDateOptions.md)
 - [CommitMeta](interfaces/CommitMeta.md)
 - [CommitStatus](interfaces/CommitStatus.md)
-- [CommitStatusState](interfaces/CommitStatusState.md)
 - [CommitUser](interfaces/CommitUser.md)
 - [ConfigurationParameters](interfaces/ConfigurationParameters.md)
 - [ContentsResponse](interfaces/ContentsResponse.md)
@@ -61,7 +47,6 @@
 - [CreateForkOption](interfaces/CreateForkOption.md)
 - [CreateGPGKeyOption](interfaces/CreateGPGKeyOption.md)
 - [CreateHookOption](interfaces/CreateHookOption.md)
-- [CreateHookOptionConfig](interfaces/CreateHookOptionConfig.md)
 - [CreateIssueCommentOption](interfaces/CreateIssueCommentOption.md)
 - [CreateIssueOption](interfaces/CreateIssueOption.md)
 - [CreateKeyOption](interfaces/CreateKeyOption.md)
@@ -118,13 +103,9 @@
 - [GitEntry](interfaces/GitEntry.md)
 - [GitHook](interfaces/GitHook.md)
 - [GitObject](interfaces/GitObject.md)
-- [GitServiceType](interfaces/GitServiceType.md)
 - [GitTreeResponse](interfaces/GitTreeResponse.md)
 - [Hook](interfaces/Hook.md)
-- [IdAssetsBody](interfaces/IdAssetsBody.md)
 - [Identity](interfaces/Identity.md)
-- [InlineResponse200](interfaces/InlineResponse200.md)
-- [InlineResponse2001](interfaces/InlineResponse2001.md)
 - [InternalTracker](interfaces/InternalTracker.md)
 - [Issue](interfaces/Issue.md)
 - [IssueDeadline](interfaces/IssueDeadline.md)
@@ -145,7 +126,6 @@
 - [NotificationCount](interfaces/NotificationCount.md)
 - [NotificationSubject](interfaces/NotificationSubject.md)
 - [NotificationThread](interfaces/NotificationThread.md)
-- [NotifySubjectType](interfaces/NotifySubjectType.md)
 - [OAuth2Application](interfaces/OAuth2Application.md)
 - [Organization](interfaces/Organization.md)
 - [OrganizationPermissions](interfaces/OrganizationPermissions.md)
@@ -168,15 +148,13 @@
 - [RepoTransfer](interfaces/RepoTransfer.md)
 - [Repository](interfaces/Repository.md)
 - [RepositoryMeta](interfaces/RepositoryMeta.md)
-- [ReviewStateType](interfaces/ReviewStateType.md)
 - [SearchResults](interfaces/SearchResults.md)
 - [ServerVersion](interfaces/ServerVersion.md)
-- [StateType](interfaces/StateType.md)
 - [StopWatch](interfaces/StopWatch.md)
 - [SubmitPullReviewOptions](interfaces/SubmitPullReviewOptions.md)
 - [Tag](interfaces/Tag.md)
 - [Team](interfaces/Team.md)
-- [TimeStamp](interfaces/TimeStamp.md)
+- [TeamSearch200Response](interfaces/TeamSearch200Response.md)
 - [TimelineComment](interfaces/TimelineComment.md)
 - [TopicName](interfaces/TopicName.md)
 - [TopicResponse](interfaces/TopicResponse.md)
@@ -185,6 +163,7 @@
 - [UpdateFileOptions](interfaces/UpdateFileOptions.md)
 - [User](interfaces/User.md)
 - [UserHeatmapData](interfaces/UserHeatmapData.md)
+- [UserSearch200Response](interfaces/UserSearch200Response.md)
 - [UserSettings](interfaces/UserSettings.md)
 - [UserSettingsOptions](interfaces/UserSettingsOptions.md)
 - [WatchInfo](interfaces/WatchInfo.md)
@@ -192,6 +171,32 @@
 - [WikiCommitList](interfaces/WikiCommitList.md)
 - [WikiPage](interfaces/WikiPage.md)
 - [WikiPageMetaData](interfaces/WikiPageMetaData.md)
+
+### Type Aliases
+
+- [CreateHookOptionTypeEnum](modules.md#createhookoptiontypeenum)
+- [CreateMilestoneOptionStateEnum](modules.md#createmilestoneoptionstateenum)
+- [CreateOrgOptionVisibilityEnum](modules.md#createorgoptionvisibilityenum)
+- [CreateRepoOptionTrustModelEnum](modules.md#createrepooptiontrustmodelenum)
+- [CreateTeamOptionPermissionEnum](modules.md#createteamoptionpermissionenum)
+- [EditOrgOptionVisibilityEnum](modules.md#editorgoptionvisibilityenum)
+- [EditTeamOptionPermissionEnum](modules.md#editteamoptionpermissionenum)
+- [MergePullRequestOptionDoEnum](modules.md#mergepullrequestoptiondoenum)
+- [MigrateRepoOptionsServiceEnum](modules.md#migraterepooptionsserviceenum)
+- [TeamPermissionEnum](modules.md#teampermissionenum)
+
+### Variables
+
+- [CreateHookOptionTypeEnum](modules.md#createhookoptiontypeenum-1)
+- [CreateMilestoneOptionStateEnum](modules.md#createmilestoneoptionstateenum-1)
+- [CreateOrgOptionVisibilityEnum](modules.md#createorgoptionvisibilityenum-1)
+- [CreateRepoOptionTrustModelEnum](modules.md#createrepooptiontrustmodelenum-1)
+- [CreateTeamOptionPermissionEnum](modules.md#createteamoptionpermissionenum-1)
+- [EditOrgOptionVisibilityEnum](modules.md#editorgoptionvisibilityenum-1)
+- [EditTeamOptionPermissionEnum](modules.md#editteamoptionpermissionenum-1)
+- [MergePullRequestOptionDoEnum](modules.md#mergepullrequestoptiondoenum-1)
+- [MigrateRepoOptionsServiceEnum](modules.md#migraterepooptionsserviceenum-1)
+- [TeamPermissionEnum](modules.md#teampermissionenum-1)
 
 ### Functions
 
@@ -220,6 +225,297 @@
 - [UserApiFactory](modules.md#userapifactory)
 - [UserApiFp](modules.md#userapifp)
 
+## Type Aliases
+
+### <a id="createhookoptiontypeenum" name="createhookoptiontypeenum"></a> CreateHookOptionTypeEnum
+
+Ƭ **CreateHookOptionTypeEnum**: typeof [`CreateHookOptionTypeEnum`](modules.md#createhookoptiontypeenum-1)[keyof typeof [`CreateHookOptionTypeEnum`](modules.md#createhookoptiontypeenum-1)]
+
+#### Defined in
+
+[models/create-hook-option.ts:67](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-hook-option.ts#L67)
+
+___
+
+### <a id="createmilestoneoptionstateenum" name="createmilestoneoptionstateenum"></a> CreateMilestoneOptionStateEnum
+
+Ƭ **CreateMilestoneOptionStateEnum**: typeof [`CreateMilestoneOptionStateEnum`](modules.md#createmilestoneoptionstateenum-1)[keyof typeof [`CreateMilestoneOptionStateEnum`](modules.md#createmilestoneoptionstateenum-1)]
+
+#### Defined in
+
+[models/create-milestone-option.ts:54](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-milestone-option.ts#L54)
+
+___
+
+### <a id="createorgoptionvisibilityenum" name="createorgoptionvisibilityenum"></a> CreateOrgOptionVisibilityEnum
+
+Ƭ **CreateOrgOptionVisibilityEnum**: typeof [`CreateOrgOptionVisibilityEnum`](modules.md#createorgoptionvisibilityenum-1)[keyof typeof [`CreateOrgOptionVisibilityEnum`](modules.md#createorgoptionvisibilityenum-1)]
+
+#### Defined in
+
+[models/create-org-option.ts:73](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-org-option.ts#L73)
+
+___
+
+### <a id="createrepooptiontrustmodelenum" name="createrepooptiontrustmodelenum"></a> CreateRepoOptionTrustModelEnum
+
+Ƭ **CreateRepoOptionTrustModelEnum**: typeof [`CreateRepoOptionTrustModelEnum`](modules.md#createrepooptiontrustmodelenum-1)[keyof typeof [`CreateRepoOptionTrustModelEnum`](modules.md#createrepooptiontrustmodelenum-1)]
+
+#### Defined in
+
+[models/create-repo-option.ts:98](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-repo-option.ts#L98)
+
+___
+
+### <a id="createteamoptionpermissionenum" name="createteamoptionpermissionenum"></a> CreateTeamOptionPermissionEnum
+
+Ƭ **CreateTeamOptionPermissionEnum**: typeof [`CreateTeamOptionPermissionEnum`](modules.md#createteamoptionpermissionenum-1)[keyof typeof [`CreateTeamOptionPermissionEnum`](modules.md#createteamoptionpermissionenum-1)]
+
+#### Defined in
+
+[models/create-team-option.ts:73](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-team-option.ts#L73)
+
+___
+
+### <a id="editorgoptionvisibilityenum" name="editorgoptionvisibilityenum"></a> EditOrgOptionVisibilityEnum
+
+Ƭ **EditOrgOptionVisibilityEnum**: typeof [`EditOrgOptionVisibilityEnum`](modules.md#editorgoptionvisibilityenum-1)[keyof typeof [`EditOrgOptionVisibilityEnum`](modules.md#editorgoptionvisibilityenum-1)]
+
+#### Defined in
+
+[models/edit-org-option.ts:67](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-org-option.ts#L67)
+
+___
+
+### <a id="editteamoptionpermissionenum" name="editteamoptionpermissionenum"></a> EditTeamOptionPermissionEnum
+
+Ƭ **EditTeamOptionPermissionEnum**: typeof [`EditTeamOptionPermissionEnum`](modules.md#editteamoptionpermissionenum-1)[keyof typeof [`EditTeamOptionPermissionEnum`](modules.md#editteamoptionpermissionenum-1)]
+
+#### Defined in
+
+[models/edit-team-option.ts:73](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-team-option.ts#L73)
+
+___
+
+### <a id="mergepullrequestoptiondoenum" name="mergepullrequestoptiondoenum"></a> MergePullRequestOptionDoEnum
+
+Ƭ **MergePullRequestOptionDoEnum**: typeof [`MergePullRequestOptionDoEnum`](modules.md#mergepullrequestoptiondoenum-1)[keyof typeof [`MergePullRequestOptionDoEnum`](modules.md#mergepullrequestoptiondoenum-1)]
+
+#### Defined in
+
+[models/merge-pull-request-option.ts:75](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/merge-pull-request-option.ts#L75)
+
+___
+
+### <a id="migraterepooptionsserviceenum" name="migraterepooptionsserviceenum"></a> MigrateRepoOptionsServiceEnum
+
+Ƭ **MigrateRepoOptionsServiceEnum**: typeof [`MigrateRepoOptionsServiceEnum`](modules.md#migraterepooptionsserviceenum-1)[keyof typeof [`MigrateRepoOptionsServiceEnum`](modules.md#migraterepooptionsserviceenum-1)]
+
+#### Defined in
+
+[models/migrate-repo-options.ts:152](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/migrate-repo-options.ts#L152)
+
+___
+
+### <a id="teampermissionenum" name="teampermissionenum"></a> TeamPermissionEnum
+
+Ƭ **TeamPermissionEnum**: typeof [`TeamPermissionEnum`](modules.md#teampermissionenum-1)[keyof typeof [`TeamPermissionEnum`](modules.md#teampermissionenum-1)]
+
+#### Defined in
+
+[models/team.ts:90](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/team.ts#L90)
+
+## Variables
+
+### <a id="createhookoptiontypeenum-1" name="createhookoptiontypeenum-1"></a> CreateHookOptionTypeEnum
+
+• `Const` **CreateHookOptionTypeEnum**: `Object`
+
+#### Type declaration
+
+| Name | Type |
+| :------ | :------ |
+| `Dingtalk` | ``"dingtalk"`` |
+| `Discord` | ``"discord"`` |
+| `Feishu` | ``"feishu"`` |
+| `Gitea` | ``"gitea"`` |
+| `Gogs` | ``"gogs"`` |
+| `Msteams` | ``"msteams"`` |
+| `Slack` | ``"slack"`` |
+| `Telegram` | ``"telegram"`` |
+| `Wechatwork` | ``"wechatwork"`` |
+
+#### Defined in
+
+[models/create-hook-option.ts:55](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-hook-option.ts#L55)
+
+___
+
+### <a id="createmilestoneoptionstateenum-1" name="createmilestoneoptionstateenum-1"></a> CreateMilestoneOptionStateEnum
+
+• `Const` **CreateMilestoneOptionStateEnum**: `Object`
+
+#### Type declaration
+
+| Name | Type |
+| :------ | :------ |
+| `Closed` | ``"closed"`` |
+| `Open` | ``"open"`` |
+
+#### Defined in
+
+[models/create-milestone-option.ts:49](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-milestone-option.ts#L49)
+
+___
+
+### <a id="createorgoptionvisibilityenum-1" name="createorgoptionvisibilityenum-1"></a> CreateOrgOptionVisibilityEnum
+
+• `Const` **CreateOrgOptionVisibilityEnum**: `Object`
+
+#### Type declaration
+
+| Name | Type |
+| :------ | :------ |
+| `Limited` | ``"limited"`` |
+| `Private` | ``"private"`` |
+| `Public` | ``"public"`` |
+
+#### Defined in
+
+[models/create-org-option.ts:67](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-org-option.ts#L67)
+
+___
+
+### <a id="createrepooptiontrustmodelenum-1" name="createrepooptiontrustmodelenum-1"></a> CreateRepoOptionTrustModelEnum
+
+• `Const` **CreateRepoOptionTrustModelEnum**: `Object`
+
+#### Type declaration
+
+| Name | Type |
+| :------ | :------ |
+| `Collaborator` | ``"collaborator"`` |
+| `Collaboratorcommitter` | ``"collaboratorcommitter"`` |
+| `Committer` | ``"committer"`` |
+| `Default` | ``"default"`` |
+
+#### Defined in
+
+[models/create-repo-option.ts:91](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-repo-option.ts#L91)
+
+___
+
+### <a id="createteamoptionpermissionenum-1" name="createteamoptionpermissionenum-1"></a> CreateTeamOptionPermissionEnum
+
+• `Const` **CreateTeamOptionPermissionEnum**: `Object`
+
+#### Type declaration
+
+| Name | Type |
+| :------ | :------ |
+| `Admin` | ``"admin"`` |
+| `Read` | ``"read"`` |
+| `Write` | ``"write"`` |
+
+#### Defined in
+
+[models/create-team-option.ts:67](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-team-option.ts#L67)
+
+___
+
+### <a id="editorgoptionvisibilityenum-1" name="editorgoptionvisibilityenum-1"></a> EditOrgOptionVisibilityEnum
+
+• `Const` **EditOrgOptionVisibilityEnum**: `Object`
+
+#### Type declaration
+
+| Name | Type |
+| :------ | :------ |
+| `Limited` | ``"limited"`` |
+| `Private` | ``"private"`` |
+| `Public` | ``"public"`` |
+
+#### Defined in
+
+[models/edit-org-option.ts:61](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-org-option.ts#L61)
+
+___
+
+### <a id="editteamoptionpermissionenum-1" name="editteamoptionpermissionenum-1"></a> EditTeamOptionPermissionEnum
+
+• `Const` **EditTeamOptionPermissionEnum**: `Object`
+
+#### Type declaration
+
+| Name | Type |
+| :------ | :------ |
+| `Admin` | ``"admin"`` |
+| `Read` | ``"read"`` |
+| `Write` | ``"write"`` |
+
+#### Defined in
+
+[models/edit-team-option.ts:67](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-team-option.ts#L67)
+
+___
+
+### <a id="mergepullrequestoptiondoenum-1" name="mergepullrequestoptiondoenum-1"></a> MergePullRequestOptionDoEnum
+
+• `Const` **MergePullRequestOptionDoEnum**: `Object`
+
+#### Type declaration
+
+| Name | Type |
+| :------ | :------ |
+| `ManuallyMerged` | ``"manually-merged"`` |
+| `Merge` | ``"merge"`` |
+| `Rebase` | ``"rebase"`` |
+| `RebaseMerge` | ``"rebase-merge"`` |
+| `Squash` | ``"squash"`` |
+
+#### Defined in
+
+[models/merge-pull-request-option.ts:67](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/merge-pull-request-option.ts#L67)
+
+___
+
+### <a id="migraterepooptionsserviceenum-1" name="migraterepooptionsserviceenum-1"></a> MigrateRepoOptionsServiceEnum
+
+• `Const` **MigrateRepoOptionsServiceEnum**: `Object`
+
+#### Type declaration
+
+| Name | Type |
+| :------ | :------ |
+| `Git` | ``"git"`` |
+| `Gitea` | ``"gitea"`` |
+| `Github` | ``"github"`` |
+| `Gitlab` | ``"gitlab"`` |
+
+#### Defined in
+
+[models/migrate-repo-options.ts:145](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/migrate-repo-options.ts#L145)
+
+___
+
+### <a id="teampermissionenum-1" name="teampermissionenum-1"></a> TeamPermissionEnum
+
+• `Const` **TeamPermissionEnum**: `Object`
+
+#### Type declaration
+
+| Name | Type |
+| :------ | :------ |
+| `Admin` | ``"admin"`` |
+| `None` | ``"none"`` |
+| `Owner` | ``"owner"`` |
+| `Read` | ``"read"`` |
+| `Write` | ``"write"`` |
+
+#### Defined in
+
+[models/team.ts:82](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/team.ts#L82)
+
 ## Functions
 
 ### <a id="adminapiaxiosparamcreator" name="adminapiaxiosparamcreator"></a> AdminApiAxiosParamCreator
@@ -243,9 +539,9 @@ AdminApi - axios parameter creator
 | Name | Type |
 | :------ | :------ |
 | `adminAdoptRepository` | (`owner`: `string`, `repo`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
-| `adminCreateOrg` | (`body`: [`CreateOrgOption`](interfaces/CreateOrgOption.md), `username`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
-| `adminCreatePublicKey` | (`username`: `string`, `body?`: [`CreateKeyOption`](interfaces/CreateKeyOption.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
-| `adminCreateRepo` | (`body`: [`CreateRepoOption`](interfaces/CreateRepoOption.md), `username`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
+| `adminCreateOrg` | (`username`: `string`, `organization`: [`CreateOrgOption`](interfaces/CreateOrgOption.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
+| `adminCreatePublicKey` | (`username`: `string`, `key?`: [`CreateKeyOption`](interfaces/CreateKeyOption.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
+| `adminCreateRepo` | (`username`: `string`, `repository`: [`CreateRepoOption`](interfaces/CreateRepoOption.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `adminCreateUser` | (`body?`: [`CreateUserOption`](interfaces/CreateUserOption.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `adminCronList` | (`page?`: `number`, `limit?`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `adminCronRun` | (`task`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
@@ -259,7 +555,7 @@ AdminApi - axios parameter creator
 
 #### Defined in
 
-[apis/admin-api.ts:33](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/admin-api.ts#L33)
+[apis/admin-api.ts:47](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/admin-api.ts#L47)
 
 ___
 
@@ -285,24 +581,24 @@ AdminApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `adminAdoptRepository` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `adminCreateOrg` | (`body`: [`CreateOrgOption`](interfaces/CreateOrgOption.md), `username`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Organization`](interfaces/Organization.md)\>\> |
-| `adminCreatePublicKey` | (`username`: `string`, `body?`: [`CreateKeyOption`](interfaces/CreateKeyOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`PublicKey`](interfaces/PublicKey.md)\>\> |
-| `adminCreateRepo` | (`body`: [`CreateRepoOption`](interfaces/CreateRepoOption.md), `username`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Repository`](interfaces/Repository.md)\>\> |
-| `adminCreateUser` | (`body?`: [`CreateUserOption`](interfaces/CreateUserOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`User`](interfaces/User.md)\>\> |
-| `adminCronList` | (`page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Cron`](interfaces/Cron.md)[]\>\> |
-| `adminCronRun` | (`task`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `adminDeleteUnadoptedRepository` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `adminDeleteUser` | (`username`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `adminDeleteUserPublicKey` | (`username`: `string`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `adminEditUser` | (`username`: `string`, `body?`: [`EditUserOption`](interfaces/EditUserOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`User`](interfaces/User.md)\>\> |
-| `adminGetAllOrgs` | (`lang?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Organization`](interfaces/Organization.md)[]\>\> |
-| `adminGetAllUsers` | (`lang?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`User`](interfaces/User.md)[]\>\> |
-| `adminUnadoptedList` | (`page?`: `number`, `limit?`: `number`, `pattern?`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`string`[]\>\> |
+| `adminAdoptRepository` | (`owner`: `string`, `repo`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `adminCreateOrg` | (`username`: `string`, `organization`: [`CreateOrgOption`](interfaces/CreateOrgOption.md), `options?`: `any`) => `AxiosPromise`<[`Organization`](interfaces/Organization.md)\> |
+| `adminCreatePublicKey` | (`username`: `string`, `key?`: [`CreateKeyOption`](interfaces/CreateKeyOption.md), `options?`: `any`) => `AxiosPromise`<[`PublicKey`](interfaces/PublicKey.md)\> |
+| `adminCreateRepo` | (`username`: `string`, `repository`: [`CreateRepoOption`](interfaces/CreateRepoOption.md), `options?`: `any`) => `AxiosPromise`<[`Repository`](interfaces/Repository.md)\> |
+| `adminCreateUser` | (`body?`: [`CreateUserOption`](interfaces/CreateUserOption.md), `options?`: `any`) => `AxiosPromise`<[`User`](interfaces/User.md)\> |
+| `adminCronList` | (`page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`Cron`](interfaces/Cron.md)[]\> |
+| `adminCronRun` | (`task`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `adminDeleteUnadoptedRepository` | (`owner`: `string`, `repo`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `adminDeleteUser` | (`username`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `adminDeleteUserPublicKey` | (`username`: `string`, `id`: `number`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `adminEditUser` | (`username`: `string`, `body?`: [`EditUserOption`](interfaces/EditUserOption.md), `options?`: `any`) => `AxiosPromise`<[`User`](interfaces/User.md)\> |
+| `adminGetAllOrgs` | (`lang?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`Organization`](interfaces/Organization.md)[]\> |
+| `adminGetAllUsers` | (`lang?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`User`](interfaces/User.md)[]\> |
+| `adminUnadoptedList` | (`page?`: `number`, `limit?`: `number`, `pattern?`: `string`, `options?`: `any`) => `AxiosPromise`<`string`[]\> |
 
 #### Defined in
 
-[apis/admin-api.ts:1639](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/admin-api.ts#L1639)
+[apis/admin-api.ts:1089](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/admin-api.ts#L1089)
 
 ___
 
@@ -326,24 +622,24 @@ AdminApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `adminAdoptRepository` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `adminCreateOrg` | (`body`: [`CreateOrgOption`](interfaces/CreateOrgOption.md), `username`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Organization`](interfaces/Organization.md)\>\>\> |
-| `adminCreatePublicKey` | (`username`: `string`, `body?`: [`CreateKeyOption`](interfaces/CreateKeyOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`PublicKey`](interfaces/PublicKey.md)\>\>\> |
-| `adminCreateRepo` | (`body`: [`CreateRepoOption`](interfaces/CreateRepoOption.md), `username`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Repository`](interfaces/Repository.md)\>\>\> |
-| `adminCreateUser` | (`body?`: [`CreateUserOption`](interfaces/CreateUserOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`User`](interfaces/User.md)\>\>\> |
-| `adminCronList` | (`page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Cron`](interfaces/Cron.md)[]\>\>\> |
-| `adminCronRun` | (`task`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `adminDeleteUnadoptedRepository` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `adminDeleteUser` | (`username`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `adminDeleteUserPublicKey` | (`username`: `string`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `adminEditUser` | (`username`: `string`, `body?`: [`EditUserOption`](interfaces/EditUserOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`User`](interfaces/User.md)\>\>\> |
-| `adminGetAllOrgs` | (`lang?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Organization`](interfaces/Organization.md)[]\>\>\> |
-| `adminGetAllUsers` | (`lang?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`User`](interfaces/User.md)[]\>\>\> |
-| `adminUnadoptedList` | (`page?`: `number`, `limit?`: `number`, `pattern?`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`string`[]\>\>\> |
+| `adminAdoptRepository` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `adminCreateOrg` | (`username`: `string`, `organization`: [`CreateOrgOption`](interfaces/CreateOrgOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Organization`](interfaces/Organization.md)\>\> |
+| `adminCreatePublicKey` | (`username`: `string`, `key?`: [`CreateKeyOption`](interfaces/CreateKeyOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`PublicKey`](interfaces/PublicKey.md)\>\> |
+| `adminCreateRepo` | (`username`: `string`, `repository`: [`CreateRepoOption`](interfaces/CreateRepoOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Repository`](interfaces/Repository.md)\>\> |
+| `adminCreateUser` | (`body?`: [`CreateUserOption`](interfaces/CreateUserOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`User`](interfaces/User.md)\>\> |
+| `adminCronList` | (`page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Cron`](interfaces/Cron.md)[]\>\> |
+| `adminCronRun` | (`task`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `adminDeleteUnadoptedRepository` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `adminDeleteUser` | (`username`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `adminDeleteUserPublicKey` | (`username`: `string`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `adminEditUser` | (`username`: `string`, `body?`: [`EditUserOption`](interfaces/EditUserOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`User`](interfaces/User.md)\>\> |
+| `adminGetAllOrgs` | (`lang?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Organization`](interfaces/Organization.md)[]\>\> |
+| `adminGetAllUsers` | (`lang?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`User`](interfaces/User.md)[]\>\> |
+| `adminUnadoptedList` | (`page?`: `number`, `limit?`: `number`, `pattern?`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`string`[]\>\> |
 
 #### Defined in
 
-[apis/admin-api.ts:1420](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/admin-api.ts#L1420)
+[apis/admin-api.ts:911](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/admin-api.ts#L911)
 
 ___
 
@@ -378,8 +674,8 @@ IssueApi - axios parameter creator
 | `issueCreateMilestone` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateMilestoneOption`](interfaces/CreateMilestoneOption.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `issueDeleteComment` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `issueDeleteCommentDeprecated` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `id`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
-| `issueDeleteCommentReaction` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `body?`: [`EditReactionOption`](interfaces/EditReactionOption.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
-| `issueDeleteIssueReaction` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `body?`: [`EditReactionOption`](interfaces/EditReactionOption.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
+| `issueDeleteCommentReaction` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `content?`: [`EditReactionOption`](interfaces/EditReactionOption.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
+| `issueDeleteIssueReaction` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `content?`: [`EditReactionOption`](interfaces/EditReactionOption.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `issueDeleteLabel` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `issueDeleteMilestone` | (`owner`: `string`, `repo`: `string`, `id`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `issueDeleteStopWatch` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
@@ -393,31 +689,31 @@ IssueApi - axios parameter creator
 | `issueEditMilestone` | (`owner`: `string`, `repo`: `string`, `id`: `string`, `body?`: [`EditMilestoneOption`](interfaces/EditMilestoneOption.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `issueGetComment` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `issueGetCommentReactions` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
-| `issueGetComments` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `since?`: `Date`, `before?`: `Date`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
-| `issueGetCommentsAndTimeline` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `since?`: `Date`, `page?`: `number`, `limit?`: `number`, `before?`: `Date`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
+| `issueGetComments` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `since?`: `string`, `before?`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
+| `issueGetCommentsAndTimeline` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `since?`: `string`, `page?`: `number`, `limit?`: `number`, `before?`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `issueGetIssue` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `issueGetIssueReactions` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `page?`: `number`, `limit?`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `issueGetLabel` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `issueGetLabels` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `issueGetMilestone` | (`owner`: `string`, `repo`: `string`, `id`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `issueGetMilestonesList` | (`owner`: `string`, `repo`: `string`, `state?`: `string`, `name?`: `string`, `page?`: `number`, `limit?`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
-| `issueGetRepoComments` | (`owner`: `string`, `repo`: `string`, `since?`: `Date`, `before?`: `Date`, `page?`: `number`, `limit?`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
-| `issueListIssues` | (`owner`: `string`, `repo`: `string`, `state?`: `string`, `labels?`: `string`, `q?`: `string`, `type?`: `string`, `milestones?`: `string`, `since?`: `Date`, `before?`: `Date`, `createdBy?`: `string`, `assignedBy?`: `string`, `mentionedBy?`: `string`, `page?`: `number`, `limit?`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
+| `issueGetRepoComments` | (`owner`: `string`, `repo`: `string`, `since?`: `string`, `before?`: `string`, `page?`: `number`, `limit?`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
+| `issueListIssues` | (`owner`: `string`, `repo`: `string`, `state?`: ``"all"`` \| ``"closed"`` \| ``"open"``, `labels?`: `string`, `q?`: `string`, `type?`: ``"issues"`` \| ``"pulls"``, `milestones?`: `string`, `since?`: `string`, `before?`: `string`, `createdBy?`: `string`, `assignedBy?`: `string`, `mentionedBy?`: `string`, `page?`: `number`, `limit?`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `issueListLabels` | (`owner`: `string`, `repo`: `string`, `page?`: `number`, `limit?`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
-| `issuePostCommentReaction` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `body?`: [`EditReactionOption`](interfaces/EditReactionOption.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
-| `issuePostIssueReaction` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `body?`: [`EditReactionOption`](interfaces/EditReactionOption.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
+| `issuePostCommentReaction` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `content?`: [`EditReactionOption`](interfaces/EditReactionOption.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
+| `issuePostIssueReaction` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `content?`: [`EditReactionOption`](interfaces/EditReactionOption.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `issueRemoveLabel` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `id`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `issueReplaceLabels` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `body?`: [`IssueLabelsOption`](interfaces/IssueLabelsOption.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `issueResetTime` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
-| `issueSearchIssues` | (`state?`: `string`, `labels?`: `string`, `milestones?`: `string`, `q?`: `string`, `priorityRepoId?`: `number`, `type?`: `string`, `since?`: `Date`, `before?`: `Date`, `assigned?`: `boolean`, `created?`: `boolean`, `mentioned?`: `boolean`, `reviewRequested?`: `boolean`, `owner?`: `string`, `team?`: `string`, `page?`: `number`, `limit?`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
+| `issueSearchIssues` | (`state?`: `string`, `labels?`: `string`, `milestones?`: `string`, `q?`: `string`, `priorityRepoId?`: `number`, `type?`: `string`, `since?`: `string`, `before?`: `string`, `assigned?`: `boolean`, `created?`: `boolean`, `mentioned?`: `boolean`, `reviewRequested?`: `boolean`, `owner?`: `string`, `team?`: `string`, `page?`: `number`, `limit?`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `issueStartStopWatch` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `issueStopStopWatch` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `issueSubscriptions` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `page?`: `number`, `limit?`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
-| `issueTrackedTimes` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `user?`: `string`, `since?`: `Date`, `before?`: `Date`, `page?`: `number`, `limit?`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
+| `issueTrackedTimes` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `user?`: `string`, `since?`: `string`, `before?`: `string`, `page?`: `number`, `limit?`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 
 #### Defined in
 
-[apis/issue-api.ts:45](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/issue-api.ts#L45)
+[apis/issue-api.ts:71](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L71)
 
 ___
 
@@ -443,57 +739,57 @@ IssueApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `issueAddLabel` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `body?`: [`IssueLabelsOption`](interfaces/IssueLabelsOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Label`](interfaces/Label.md)[]\>\> |
-| `issueAddSubscription` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `user`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `issueAddTime` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `body?`: [`AddTimeOption`](interfaces/AddTimeOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`TrackedTime`](interfaces/TrackedTime.md)\>\> |
-| `issueCheckSubscription` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`WatchInfo`](interfaces/WatchInfo.md)\>\> |
-| `issueClearLabels` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `issueCreateComment` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `body?`: [`CreateIssueCommentOption`](interfaces/CreateIssueCommentOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Comment`](interfaces/Comment.md)\>\> |
-| `issueCreateIssue` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateIssueOption`](interfaces/CreateIssueOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Issue`](interfaces/Issue.md)\>\> |
-| `issueCreateLabel` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateLabelOption`](interfaces/CreateLabelOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Label`](interfaces/Label.md)\>\> |
-| `issueCreateMilestone` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateMilestoneOption`](interfaces/CreateMilestoneOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Milestone`](interfaces/Milestone.md)\>\> |
-| `issueDeleteComment` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `issueDeleteCommentDeprecated` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `issueDeleteCommentReaction` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `body?`: [`EditReactionOption`](interfaces/EditReactionOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `issueDeleteIssueReaction` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `body?`: [`EditReactionOption`](interfaces/EditReactionOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `issueDeleteLabel` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `issueDeleteMilestone` | (`owner`: `string`, `repo`: `string`, `id`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `issueDeleteStopWatch` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `issueDeleteSubscription` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `user`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `issueDeleteTime` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `issueEditComment` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `body?`: [`EditIssueCommentOption`](interfaces/EditIssueCommentOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Comment`](interfaces/Comment.md)\>\> |
-| `issueEditCommentDeprecated` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `id`: `number`, `body?`: [`EditIssueCommentOption`](interfaces/EditIssueCommentOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Comment`](interfaces/Comment.md)\>\> |
-| `issueEditIssue` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `body?`: [`EditIssueOption`](interfaces/EditIssueOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Issue`](interfaces/Issue.md)\>\> |
-| `issueEditIssueDeadline` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `body?`: [`EditDeadlineOption`](interfaces/EditDeadlineOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`IssueDeadline`](interfaces/IssueDeadline.md)\>\> |
-| `issueEditLabel` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `body?`: [`EditLabelOption`](interfaces/EditLabelOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Label`](interfaces/Label.md)\>\> |
-| `issueEditMilestone` | (`owner`: `string`, `repo`: `string`, `id`: `string`, `body?`: [`EditMilestoneOption`](interfaces/EditMilestoneOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Milestone`](interfaces/Milestone.md)\>\> |
-| `issueGetComment` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Comment`](interfaces/Comment.md)\>\> |
-| `issueGetCommentReactions` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Reaction`](interfaces/Reaction.md)[]\>\> |
-| `issueGetComments` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `since?`: `Date`, `before?`: `Date`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Comment`](interfaces/Comment.md)[]\>\> |
-| `issueGetCommentsAndTimeline` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `since?`: `Date`, `page?`: `number`, `limit?`: `number`, `before?`: `Date`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`TimelineComment`](interfaces/TimelineComment.md)[]\>\> |
-| `issueGetIssue` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Issue`](interfaces/Issue.md)\>\> |
-| `issueGetIssueReactions` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Reaction`](interfaces/Reaction.md)[]\>\> |
-| `issueGetLabel` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Label`](interfaces/Label.md)\>\> |
-| `issueGetLabels` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Label`](interfaces/Label.md)[]\>\> |
-| `issueGetMilestone` | (`owner`: `string`, `repo`: `string`, `id`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Milestone`](interfaces/Milestone.md)\>\> |
-| `issueGetMilestonesList` | (`owner`: `string`, `repo`: `string`, `state?`: `string`, `name?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Milestone`](interfaces/Milestone.md)[]\>\> |
-| `issueGetRepoComments` | (`owner`: `string`, `repo`: `string`, `since?`: `Date`, `before?`: `Date`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Comment`](interfaces/Comment.md)[]\>\> |
-| `issueListIssues` | (`owner`: `string`, `repo`: `string`, `state?`: `string`, `labels?`: `string`, `q?`: `string`, `type?`: `string`, `milestones?`: `string`, `since?`: `Date`, `before?`: `Date`, `createdBy?`: `string`, `assignedBy?`: `string`, `mentionedBy?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Issue`](interfaces/Issue.md)[]\>\> |
-| `issueListLabels` | (`owner`: `string`, `repo`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Label`](interfaces/Label.md)[]\>\> |
-| `issuePostCommentReaction` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `body?`: [`EditReactionOption`](interfaces/EditReactionOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Reaction`](interfaces/Reaction.md)\>\> |
-| `issuePostIssueReaction` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `body?`: [`EditReactionOption`](interfaces/EditReactionOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Reaction`](interfaces/Reaction.md)\>\> |
-| `issueRemoveLabel` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `issueReplaceLabels` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `body?`: [`IssueLabelsOption`](interfaces/IssueLabelsOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Label`](interfaces/Label.md)[]\>\> |
-| `issueResetTime` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `issueSearchIssues` | (`state?`: `string`, `labels?`: `string`, `milestones?`: `string`, `q?`: `string`, `priorityRepoId?`: `number`, `type?`: `string`, `since?`: `Date`, `before?`: `Date`, `assigned?`: `boolean`, `created?`: `boolean`, `mentioned?`: `boolean`, `reviewRequested?`: `boolean`, `owner?`: `string`, `team?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Issue`](interfaces/Issue.md)[]\>\> |
-| `issueStartStopWatch` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `issueStopStopWatch` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `issueSubscriptions` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`User`](interfaces/User.md)[]\>\> |
-| `issueTrackedTimes` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `user?`: `string`, `since?`: `Date`, `before?`: `Date`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`TrackedTime`](interfaces/TrackedTime.md)[]\>\> |
+| `issueAddLabel` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `body?`: [`IssueLabelsOption`](interfaces/IssueLabelsOption.md), `options?`: `any`) => `AxiosPromise`<[`Label`](interfaces/Label.md)[]\> |
+| `issueAddSubscription` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `user`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `issueAddTime` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `body?`: [`AddTimeOption`](interfaces/AddTimeOption.md), `options?`: `any`) => `AxiosPromise`<[`TrackedTime`](interfaces/TrackedTime.md)\> |
+| `issueCheckSubscription` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `options?`: `any`) => `AxiosPromise`<[`WatchInfo`](interfaces/WatchInfo.md)\> |
+| `issueClearLabels` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `issueCreateComment` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `body?`: [`CreateIssueCommentOption`](interfaces/CreateIssueCommentOption.md), `options?`: `any`) => `AxiosPromise`<[`Comment`](interfaces/Comment.md)\> |
+| `issueCreateIssue` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateIssueOption`](interfaces/CreateIssueOption.md), `options?`: `any`) => `AxiosPromise`<[`Issue`](interfaces/Issue.md)\> |
+| `issueCreateLabel` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateLabelOption`](interfaces/CreateLabelOption.md), `options?`: `any`) => `AxiosPromise`<[`Label`](interfaces/Label.md)\> |
+| `issueCreateMilestone` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateMilestoneOption`](interfaces/CreateMilestoneOption.md), `options?`: `any`) => `AxiosPromise`<[`Milestone`](interfaces/Milestone.md)\> |
+| `issueDeleteComment` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `issueDeleteCommentDeprecated` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `id`: `number`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `issueDeleteCommentReaction` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `content?`: [`EditReactionOption`](interfaces/EditReactionOption.md), `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `issueDeleteIssueReaction` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `content?`: [`EditReactionOption`](interfaces/EditReactionOption.md), `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `issueDeleteLabel` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `issueDeleteMilestone` | (`owner`: `string`, `repo`: `string`, `id`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `issueDeleteStopWatch` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `issueDeleteSubscription` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `user`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `issueDeleteTime` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `id`: `number`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `issueEditComment` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `body?`: [`EditIssueCommentOption`](interfaces/EditIssueCommentOption.md), `options?`: `any`) => `AxiosPromise`<[`Comment`](interfaces/Comment.md)\> |
+| `issueEditCommentDeprecated` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `id`: `number`, `body?`: [`EditIssueCommentOption`](interfaces/EditIssueCommentOption.md), `options?`: `any`) => `AxiosPromise`<[`Comment`](interfaces/Comment.md)\> |
+| `issueEditIssue` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `body?`: [`EditIssueOption`](interfaces/EditIssueOption.md), `options?`: `any`) => `AxiosPromise`<[`Issue`](interfaces/Issue.md)\> |
+| `issueEditIssueDeadline` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `body?`: [`EditDeadlineOption`](interfaces/EditDeadlineOption.md), `options?`: `any`) => `AxiosPromise`<[`IssueDeadline`](interfaces/IssueDeadline.md)\> |
+| `issueEditLabel` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `body?`: [`EditLabelOption`](interfaces/EditLabelOption.md), `options?`: `any`) => `AxiosPromise`<[`Label`](interfaces/Label.md)\> |
+| `issueEditMilestone` | (`owner`: `string`, `repo`: `string`, `id`: `string`, `body?`: [`EditMilestoneOption`](interfaces/EditMilestoneOption.md), `options?`: `any`) => `AxiosPromise`<[`Milestone`](interfaces/Milestone.md)\> |
+| `issueGetComment` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options?`: `any`) => `AxiosPromise`<[`Comment`](interfaces/Comment.md)\> |
+| `issueGetCommentReactions` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options?`: `any`) => `AxiosPromise`<[`Reaction`](interfaces/Reaction.md)[]\> |
+| `issueGetComments` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `since?`: `string`, `before?`: `string`, `options?`: `any`) => `AxiosPromise`<[`Comment`](interfaces/Comment.md)[]\> |
+| `issueGetCommentsAndTimeline` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `since?`: `string`, `page?`: `number`, `limit?`: `number`, `before?`: `string`, `options?`: `any`) => `AxiosPromise`<[`TimelineComment`](interfaces/TimelineComment.md)[]\> |
+| `issueGetIssue` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `options?`: `any`) => `AxiosPromise`<[`Issue`](interfaces/Issue.md)\> |
+| `issueGetIssueReactions` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`Reaction`](interfaces/Reaction.md)[]\> |
+| `issueGetLabel` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options?`: `any`) => `AxiosPromise`<[`Label`](interfaces/Label.md)\> |
+| `issueGetLabels` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `options?`: `any`) => `AxiosPromise`<[`Label`](interfaces/Label.md)[]\> |
+| `issueGetMilestone` | (`owner`: `string`, `repo`: `string`, `id`: `string`, `options?`: `any`) => `AxiosPromise`<[`Milestone`](interfaces/Milestone.md)\> |
+| `issueGetMilestonesList` | (`owner`: `string`, `repo`: `string`, `state?`: `string`, `name?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`Milestone`](interfaces/Milestone.md)[]\> |
+| `issueGetRepoComments` | (`owner`: `string`, `repo`: `string`, `since?`: `string`, `before?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`Comment`](interfaces/Comment.md)[]\> |
+| `issueListIssues` | (`owner`: `string`, `repo`: `string`, `state?`: ``"all"`` \| ``"closed"`` \| ``"open"``, `labels?`: `string`, `q?`: `string`, `type?`: ``"issues"`` \| ``"pulls"``, `milestones?`: `string`, `since?`: `string`, `before?`: `string`, `createdBy?`: `string`, `assignedBy?`: `string`, `mentionedBy?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`Issue`](interfaces/Issue.md)[]\> |
+| `issueListLabels` | (`owner`: `string`, `repo`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`Label`](interfaces/Label.md)[]\> |
+| `issuePostCommentReaction` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `content?`: [`EditReactionOption`](interfaces/EditReactionOption.md), `options?`: `any`) => `AxiosPromise`<[`Reaction`](interfaces/Reaction.md)\> |
+| `issuePostIssueReaction` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `content?`: [`EditReactionOption`](interfaces/EditReactionOption.md), `options?`: `any`) => `AxiosPromise`<[`Reaction`](interfaces/Reaction.md)\> |
+| `issueRemoveLabel` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `id`: `number`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `issueReplaceLabels` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `body?`: [`IssueLabelsOption`](interfaces/IssueLabelsOption.md), `options?`: `any`) => `AxiosPromise`<[`Label`](interfaces/Label.md)[]\> |
+| `issueResetTime` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `issueSearchIssues` | (`state?`: `string`, `labels?`: `string`, `milestones?`: `string`, `q?`: `string`, `priorityRepoId?`: `number`, `type?`: `string`, `since?`: `string`, `before?`: `string`, `assigned?`: `boolean`, `created?`: `boolean`, `mentioned?`: `boolean`, `reviewRequested?`: `boolean`, `owner?`: `string`, `team?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`Issue`](interfaces/Issue.md)[]\> |
+| `issueStartStopWatch` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `issueStopStopWatch` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `issueSubscriptions` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`User`](interfaces/User.md)[]\> |
+| `issueTrackedTimes` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `user?`: `string`, `since?`: `string`, `before?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`TrackedTime`](interfaces/TrackedTime.md)[]\> |
 
 #### Defined in
 
-[apis/issue-api.ts:6166](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/issue-api.ts#L6166)
+[apis/issue-api.ts:4120](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L4120)
 
 ___
 
@@ -517,57 +813,57 @@ IssueApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `issueAddLabel` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `body?`: [`IssueLabelsOption`](interfaces/IssueLabelsOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Label`](interfaces/Label.md)[]\>\>\> |
-| `issueAddSubscription` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `user`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `issueAddTime` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `body?`: [`AddTimeOption`](interfaces/AddTimeOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`TrackedTime`](interfaces/TrackedTime.md)\>\>\> |
-| `issueCheckSubscription` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`WatchInfo`](interfaces/WatchInfo.md)\>\>\> |
-| `issueClearLabels` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `issueCreateComment` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `body?`: [`CreateIssueCommentOption`](interfaces/CreateIssueCommentOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Comment`](interfaces/Comment.md)\>\>\> |
-| `issueCreateIssue` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateIssueOption`](interfaces/CreateIssueOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Issue`](interfaces/Issue.md)\>\>\> |
-| `issueCreateLabel` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateLabelOption`](interfaces/CreateLabelOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Label`](interfaces/Label.md)\>\>\> |
-| `issueCreateMilestone` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateMilestoneOption`](interfaces/CreateMilestoneOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Milestone`](interfaces/Milestone.md)\>\>\> |
-| `issueDeleteComment` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `issueDeleteCommentDeprecated` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `issueDeleteCommentReaction` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `body?`: [`EditReactionOption`](interfaces/EditReactionOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `issueDeleteIssueReaction` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `body?`: [`EditReactionOption`](interfaces/EditReactionOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `issueDeleteLabel` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `issueDeleteMilestone` | (`owner`: `string`, `repo`: `string`, `id`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `issueDeleteStopWatch` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `issueDeleteSubscription` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `user`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `issueDeleteTime` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `issueEditComment` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `body?`: [`EditIssueCommentOption`](interfaces/EditIssueCommentOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Comment`](interfaces/Comment.md)\>\>\> |
-| `issueEditCommentDeprecated` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `id`: `number`, `body?`: [`EditIssueCommentOption`](interfaces/EditIssueCommentOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Comment`](interfaces/Comment.md)\>\>\> |
-| `issueEditIssue` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `body?`: [`EditIssueOption`](interfaces/EditIssueOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Issue`](interfaces/Issue.md)\>\>\> |
-| `issueEditIssueDeadline` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `body?`: [`EditDeadlineOption`](interfaces/EditDeadlineOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`IssueDeadline`](interfaces/IssueDeadline.md)\>\>\> |
-| `issueEditLabel` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `body?`: [`EditLabelOption`](interfaces/EditLabelOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Label`](interfaces/Label.md)\>\>\> |
-| `issueEditMilestone` | (`owner`: `string`, `repo`: `string`, `id`: `string`, `body?`: [`EditMilestoneOption`](interfaces/EditMilestoneOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Milestone`](interfaces/Milestone.md)\>\>\> |
-| `issueGetComment` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Comment`](interfaces/Comment.md)\>\>\> |
-| `issueGetCommentReactions` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Reaction`](interfaces/Reaction.md)[]\>\>\> |
-| `issueGetComments` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `since?`: `Date`, `before?`: `Date`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Comment`](interfaces/Comment.md)[]\>\>\> |
-| `issueGetCommentsAndTimeline` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `since?`: `Date`, `page?`: `number`, `limit?`: `number`, `before?`: `Date`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`TimelineComment`](interfaces/TimelineComment.md)[]\>\>\> |
-| `issueGetIssue` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Issue`](interfaces/Issue.md)\>\>\> |
-| `issueGetIssueReactions` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Reaction`](interfaces/Reaction.md)[]\>\>\> |
-| `issueGetLabel` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Label`](interfaces/Label.md)\>\>\> |
-| `issueGetLabels` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Label`](interfaces/Label.md)[]\>\>\> |
-| `issueGetMilestone` | (`owner`: `string`, `repo`: `string`, `id`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Milestone`](interfaces/Milestone.md)\>\>\> |
-| `issueGetMilestonesList` | (`owner`: `string`, `repo`: `string`, `state?`: `string`, `name?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Milestone`](interfaces/Milestone.md)[]\>\>\> |
-| `issueGetRepoComments` | (`owner`: `string`, `repo`: `string`, `since?`: `Date`, `before?`: `Date`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Comment`](interfaces/Comment.md)[]\>\>\> |
-| `issueListIssues` | (`owner`: `string`, `repo`: `string`, `state?`: `string`, `labels?`: `string`, `q?`: `string`, `type?`: `string`, `milestones?`: `string`, `since?`: `Date`, `before?`: `Date`, `createdBy?`: `string`, `assignedBy?`: `string`, `mentionedBy?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Issue`](interfaces/Issue.md)[]\>\>\> |
-| `issueListLabels` | (`owner`: `string`, `repo`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Label`](interfaces/Label.md)[]\>\>\> |
-| `issuePostCommentReaction` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `body?`: [`EditReactionOption`](interfaces/EditReactionOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Reaction`](interfaces/Reaction.md)\>\>\> |
-| `issuePostIssueReaction` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `body?`: [`EditReactionOption`](interfaces/EditReactionOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Reaction`](interfaces/Reaction.md)\>\>\> |
-| `issueRemoveLabel` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `issueReplaceLabels` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `body?`: [`IssueLabelsOption`](interfaces/IssueLabelsOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Label`](interfaces/Label.md)[]\>\>\> |
-| `issueResetTime` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `issueSearchIssues` | (`state?`: `string`, `labels?`: `string`, `milestones?`: `string`, `q?`: `string`, `priorityRepoId?`: `number`, `type?`: `string`, `since?`: `Date`, `before?`: `Date`, `assigned?`: `boolean`, `created?`: `boolean`, `mentioned?`: `boolean`, `reviewRequested?`: `boolean`, `owner?`: `string`, `team?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Issue`](interfaces/Issue.md)[]\>\>\> |
-| `issueStartStopWatch` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `issueStopStopWatch` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `issueSubscriptions` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`User`](interfaces/User.md)[]\>\>\> |
-| `issueTrackedTimes` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `user?`: `string`, `since?`: `Date`, `before?`: `Date`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`TrackedTime`](interfaces/TrackedTime.md)[]\>\>\> |
+| `issueAddLabel` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `body?`: [`IssueLabelsOption`](interfaces/IssueLabelsOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Label`](interfaces/Label.md)[]\>\> |
+| `issueAddSubscription` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `user`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `issueAddTime` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `body?`: [`AddTimeOption`](interfaces/AddTimeOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`TrackedTime`](interfaces/TrackedTime.md)\>\> |
+| `issueCheckSubscription` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`WatchInfo`](interfaces/WatchInfo.md)\>\> |
+| `issueClearLabels` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `issueCreateComment` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `body?`: [`CreateIssueCommentOption`](interfaces/CreateIssueCommentOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Comment`](interfaces/Comment.md)\>\> |
+| `issueCreateIssue` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateIssueOption`](interfaces/CreateIssueOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Issue`](interfaces/Issue.md)\>\> |
+| `issueCreateLabel` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateLabelOption`](interfaces/CreateLabelOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Label`](interfaces/Label.md)\>\> |
+| `issueCreateMilestone` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateMilestoneOption`](interfaces/CreateMilestoneOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Milestone`](interfaces/Milestone.md)\>\> |
+| `issueDeleteComment` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `issueDeleteCommentDeprecated` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `issueDeleteCommentReaction` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `content?`: [`EditReactionOption`](interfaces/EditReactionOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `issueDeleteIssueReaction` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `content?`: [`EditReactionOption`](interfaces/EditReactionOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `issueDeleteLabel` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `issueDeleteMilestone` | (`owner`: `string`, `repo`: `string`, `id`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `issueDeleteStopWatch` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `issueDeleteSubscription` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `user`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `issueDeleteTime` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `issueEditComment` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `body?`: [`EditIssueCommentOption`](interfaces/EditIssueCommentOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Comment`](interfaces/Comment.md)\>\> |
+| `issueEditCommentDeprecated` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `id`: `number`, `body?`: [`EditIssueCommentOption`](interfaces/EditIssueCommentOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Comment`](interfaces/Comment.md)\>\> |
+| `issueEditIssue` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `body?`: [`EditIssueOption`](interfaces/EditIssueOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Issue`](interfaces/Issue.md)\>\> |
+| `issueEditIssueDeadline` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `body?`: [`EditDeadlineOption`](interfaces/EditDeadlineOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`IssueDeadline`](interfaces/IssueDeadline.md)\>\> |
+| `issueEditLabel` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `body?`: [`EditLabelOption`](interfaces/EditLabelOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Label`](interfaces/Label.md)\>\> |
+| `issueEditMilestone` | (`owner`: `string`, `repo`: `string`, `id`: `string`, `body?`: [`EditMilestoneOption`](interfaces/EditMilestoneOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Milestone`](interfaces/Milestone.md)\>\> |
+| `issueGetComment` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Comment`](interfaces/Comment.md)\>\> |
+| `issueGetCommentReactions` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Reaction`](interfaces/Reaction.md)[]\>\> |
+| `issueGetComments` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `since?`: `string`, `before?`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Comment`](interfaces/Comment.md)[]\>\> |
+| `issueGetCommentsAndTimeline` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `since?`: `string`, `page?`: `number`, `limit?`: `number`, `before?`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`TimelineComment`](interfaces/TimelineComment.md)[]\>\> |
+| `issueGetIssue` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Issue`](interfaces/Issue.md)\>\> |
+| `issueGetIssueReactions` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Reaction`](interfaces/Reaction.md)[]\>\> |
+| `issueGetLabel` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Label`](interfaces/Label.md)\>\> |
+| `issueGetLabels` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Label`](interfaces/Label.md)[]\>\> |
+| `issueGetMilestone` | (`owner`: `string`, `repo`: `string`, `id`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Milestone`](interfaces/Milestone.md)\>\> |
+| `issueGetMilestonesList` | (`owner`: `string`, `repo`: `string`, `state?`: `string`, `name?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Milestone`](interfaces/Milestone.md)[]\>\> |
+| `issueGetRepoComments` | (`owner`: `string`, `repo`: `string`, `since?`: `string`, `before?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Comment`](interfaces/Comment.md)[]\>\> |
+| `issueListIssues` | (`owner`: `string`, `repo`: `string`, `state?`: ``"all"`` \| ``"closed"`` \| ``"open"``, `labels?`: `string`, `q?`: `string`, `type?`: ``"issues"`` \| ``"pulls"``, `milestones?`: `string`, `since?`: `string`, `before?`: `string`, `createdBy?`: `string`, `assignedBy?`: `string`, `mentionedBy?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Issue`](interfaces/Issue.md)[]\>\> |
+| `issueListLabels` | (`owner`: `string`, `repo`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Label`](interfaces/Label.md)[]\>\> |
+| `issuePostCommentReaction` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `content?`: [`EditReactionOption`](interfaces/EditReactionOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Reaction`](interfaces/Reaction.md)\>\> |
+| `issuePostIssueReaction` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `content?`: [`EditReactionOption`](interfaces/EditReactionOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Reaction`](interfaces/Reaction.md)\>\> |
+| `issueRemoveLabel` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `issueReplaceLabels` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `body?`: [`IssueLabelsOption`](interfaces/IssueLabelsOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Label`](interfaces/Label.md)[]\>\> |
+| `issueResetTime` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `issueSearchIssues` | (`state?`: `string`, `labels?`: `string`, `milestones?`: `string`, `q?`: `string`, `priorityRepoId?`: `number`, `type?`: `string`, `since?`: `string`, `before?`: `string`, `assigned?`: `boolean`, `created?`: `boolean`, `mentioned?`: `boolean`, `reviewRequested?`: `boolean`, `owner?`: `string`, `team?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Issue`](interfaces/Issue.md)[]\>\> |
+| `issueStartStopWatch` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `issueStopStopWatch` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `issueSubscriptions` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`User`](interfaces/User.md)[]\>\> |
+| `issueTrackedTimes` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `user?`: `string`, `since?`: `string`, `before?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`TrackedTime`](interfaces/TrackedTime.md)[]\>\> |
 
 #### Defined in
 
-[apis/issue-api.ts:5339](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/issue-api.ts#L5339)
+[apis/issue-api.ts:3431](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L3431)
 
 ___
 
@@ -599,7 +895,7 @@ MiscellaneousApi - axios parameter creator
 
 #### Defined in
 
-[apis/miscellaneous-api.ts:26](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/miscellaneous-api.ts#L26)
+[apis/miscellaneous-api.ts:33](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/miscellaneous-api.ts#L33)
 
 ___
 
@@ -625,15 +921,15 @@ MiscellaneousApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `getNodeInfo` | (`options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`NodeInfo`](interfaces/NodeInfo.md)\>\> |
-| `getSigningKey` | (`options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`string`\>\> |
-| `getVersion` | (`options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`ServerVersion`](interfaces/ServerVersion.md)\>\> |
-| `renderMarkdown` | (`body?`: [`MarkdownOption`](interfaces/MarkdownOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`string`\>\> |
-| `renderMarkdownRaw` | (`body`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`string`\>\> |
+| `getNodeInfo` | (`options?`: `any`) => `AxiosPromise`<[`NodeInfo`](interfaces/NodeInfo.md)\> |
+| `getSigningKey` | (`options?`: `any`) => `AxiosPromise`<`string`\> |
+| `getVersion` | (`options?`: `any`) => `AxiosPromise`<[`ServerVersion`](interfaces/ServerVersion.md)\> |
+| `renderMarkdown` | (`body?`: [`MarkdownOption`](interfaces/MarkdownOption.md), `options?`: `any`) => `AxiosPromise`<`string`\> |
+| `renderMarkdownRaw` | (`body`: `string`, `options?`: `any`) => `AxiosPromise`<`string`\> |
 
 #### Defined in
 
-[apis/miscellaneous-api.ts:560](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/miscellaneous-api.ts#L560)
+[apis/miscellaneous-api.ts:374](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/miscellaneous-api.ts#L374)
 
 ___
 
@@ -657,15 +953,15 @@ MiscellaneousApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `getNodeInfo` | (`options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`NodeInfo`](interfaces/NodeInfo.md)\>\>\> |
-| `getSigningKey` | (`options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`string`\>\>\> |
-| `getVersion` | (`options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`ServerVersion`](interfaces/ServerVersion.md)\>\>\> |
-| `renderMarkdown` | (`body?`: [`MarkdownOption`](interfaces/MarkdownOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`string`\>\>\> |
-| `renderMarkdownRaw` | (`body`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`string`\>\>\> |
+| `getNodeInfo` | (`options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`NodeInfo`](interfaces/NodeInfo.md)\>\> |
+| `getSigningKey` | (`options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`string`\>\> |
+| `getVersion` | (`options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`ServerVersion`](interfaces/ServerVersion.md)\>\> |
+| `renderMarkdown` | (`body?`: [`MarkdownOption`](interfaces/MarkdownOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`string`\>\> |
+| `renderMarkdownRaw` | (`body`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`string`\>\> |
 
 #### Defined in
 
-[apis/miscellaneous-api.ts:484](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/miscellaneous-api.ts#L484)
+[apis/miscellaneous-api.ts:312](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/miscellaneous-api.ts#L312)
 
 ___
 
@@ -689,17 +985,17 @@ NotificationApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `notifyGetList` | (`all?`: `boolean`, `statusTypes?`: `string`[], `subjectType?`: `string`[], `since?`: `Date`, `before?`: `Date`, `page?`: `number`, `limit?`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
-| `notifyGetRepoList` | (`owner`: `string`, `repo`: `string`, `all?`: `boolean`, `statusTypes?`: `string`[], `subjectType?`: `string`[], `since?`: `Date`, `before?`: `Date`, `page?`: `number`, `limit?`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
+| `notifyGetList` | (`all?`: `boolean`, `statusTypes?`: `string`[], `subjectType?`: (``"repository"`` \| ``"issue"`` \| ``"pull"`` \| ``"commit"``)[], `since?`: `string`, `before?`: `string`, `page?`: `number`, `limit?`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
+| `notifyGetRepoList` | (`owner`: `string`, `repo`: `string`, `all?`: `boolean`, `statusTypes?`: `string`[], `subjectType?`: (``"repository"`` \| ``"issue"`` \| ``"pull"`` \| ``"commit"``)[], `since?`: `string`, `before?`: `string`, `page?`: `number`, `limit?`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `notifyGetThread` | (`id`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `notifyNewAvailable` | (`options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
-| `notifyReadList` | (`lastReadAt?`: `Date`, `all?`: `string`, `statusTypes?`: `string`[], `toStatus?`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
-| `notifyReadRepoList` | (`owner`: `string`, `repo`: `string`, `all?`: `string`, `statusTypes?`: `string`[], `toStatus?`: `string`, `lastReadAt?`: `Date`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
+| `notifyReadList` | (`lastReadAt?`: `string`, `all?`: `string`, `statusTypes?`: `string`[], `toStatus?`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
+| `notifyReadRepoList` | (`owner`: `string`, `repo`: `string`, `all?`: `string`, `statusTypes?`: `string`[], `toStatus?`: `string`, `lastReadAt?`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `notifyReadThread` | (`id`: `string`, `toStatus?`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 
 #### Defined in
 
-[apis/notification-api.ts:25](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/notification-api.ts#L25)
+[apis/notification-api.ts:31](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/notification-api.ts#L31)
 
 ___
 
@@ -725,17 +1021,17 @@ NotificationApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `notifyGetList` | (`all?`: `boolean`, `statusTypes?`: `string`[], `subjectType?`: `string`[], `since?`: `Date`, `before?`: `Date`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`NotificationThread`](interfaces/NotificationThread.md)[]\>\> |
-| `notifyGetRepoList` | (`owner`: `string`, `repo`: `string`, `all?`: `boolean`, `statusTypes?`: `string`[], `subjectType?`: `string`[], `since?`: `Date`, `before?`: `Date`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`NotificationThread`](interfaces/NotificationThread.md)[]\>\> |
-| `notifyGetThread` | (`id`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`NotificationThread`](interfaces/NotificationThread.md)\>\> |
-| `notifyNewAvailable` | (`options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`NotificationCount`](interfaces/NotificationCount.md)\>\> |
-| `notifyReadList` | (`lastReadAt?`: `Date`, `all?`: `string`, `statusTypes?`: `string`[], `toStatus?`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`NotificationThread`](interfaces/NotificationThread.md)[]\>\> |
-| `notifyReadRepoList` | (`owner`: `string`, `repo`: `string`, `all?`: `string`, `statusTypes?`: `string`[], `toStatus?`: `string`, `lastReadAt?`: `Date`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`NotificationThread`](interfaces/NotificationThread.md)[]\>\> |
-| `notifyReadThread` | (`id`: `string`, `toStatus?`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`NotificationThread`](interfaces/NotificationThread.md)\>\> |
+| `notifyGetList` | (`all?`: `boolean`, `statusTypes?`: `string`[], `subjectType?`: (``"repository"`` \| ``"issue"`` \| ``"pull"`` \| ``"commit"``)[], `since?`: `string`, `before?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`NotificationThread`](interfaces/NotificationThread.md)[]\> |
+| `notifyGetRepoList` | (`owner`: `string`, `repo`: `string`, `all?`: `boolean`, `statusTypes?`: `string`[], `subjectType?`: (``"repository"`` \| ``"issue"`` \| ``"pull"`` \| ``"commit"``)[], `since?`: `string`, `before?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`NotificationThread`](interfaces/NotificationThread.md)[]\> |
+| `notifyGetThread` | (`id`: `string`, `options?`: `any`) => `AxiosPromise`<[`NotificationThread`](interfaces/NotificationThread.md)\> |
+| `notifyNewAvailable` | (`options?`: `any`) => `AxiosPromise`<[`NotificationCount`](interfaces/NotificationCount.md)\> |
+| `notifyReadList` | (`lastReadAt?`: `string`, `all?`: `string`, `statusTypes?`: `string`[], `toStatus?`: `string`, `options?`: `any`) => `AxiosPromise`<[`NotificationThread`](interfaces/NotificationThread.md)[]\> |
+| `notifyReadRepoList` | (`owner`: `string`, `repo`: `string`, `all?`: `string`, `statusTypes?`: `string`[], `toStatus?`: `string`, `lastReadAt?`: `string`, `options?`: `any`) => `AxiosPromise`<[`NotificationThread`](interfaces/NotificationThread.md)[]\> |
+| `notifyReadThread` | (`id`: `string`, `toStatus?`: `string`, `options?`: `any`) => `AxiosPromise`<[`NotificationThread`](interfaces/NotificationThread.md)\> |
 
 #### Defined in
 
-[apis/notification-api.ts:935](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/notification-api.ts#L935)
+[apis/notification-api.ts:664](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/notification-api.ts#L664)
 
 ___
 
@@ -759,17 +1055,17 @@ NotificationApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `notifyGetList` | (`all?`: `boolean`, `statusTypes?`: `string`[], `subjectType?`: `string`[], `since?`: `Date`, `before?`: `Date`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`NotificationThread`](interfaces/NotificationThread.md)[]\>\>\> |
-| `notifyGetRepoList` | (`owner`: `string`, `repo`: `string`, `all?`: `boolean`, `statusTypes?`: `string`[], `subjectType?`: `string`[], `since?`: `Date`, `before?`: `Date`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`NotificationThread`](interfaces/NotificationThread.md)[]\>\>\> |
-| `notifyGetThread` | (`id`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`NotificationThread`](interfaces/NotificationThread.md)\>\>\> |
-| `notifyNewAvailable` | (`options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`NotificationCount`](interfaces/NotificationCount.md)\>\>\> |
-| `notifyReadList` | (`lastReadAt?`: `Date`, `all?`: `string`, `statusTypes?`: `string`[], `toStatus?`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`NotificationThread`](interfaces/NotificationThread.md)[]\>\>\> |
-| `notifyReadRepoList` | (`owner`: `string`, `repo`: `string`, `all?`: `string`, `statusTypes?`: `string`[], `toStatus?`: `string`, `lastReadAt?`: `Date`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`NotificationThread`](interfaces/NotificationThread.md)[]\>\>\> |
-| `notifyReadThread` | (`id`: `string`, `toStatus?`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`NotificationThread`](interfaces/NotificationThread.md)\>\>\> |
+| `notifyGetList` | (`all?`: `boolean`, `statusTypes?`: `string`[], `subjectType?`: (``"repository"`` \| ``"issue"`` \| ``"pull"`` \| ``"commit"``)[], `since?`: `string`, `before?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`NotificationThread`](interfaces/NotificationThread.md)[]\>\> |
+| `notifyGetRepoList` | (`owner`: `string`, `repo`: `string`, `all?`: `boolean`, `statusTypes?`: `string`[], `subjectType?`: (``"repository"`` \| ``"issue"`` \| ``"pull"`` \| ``"commit"``)[], `since?`: `string`, `before?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`NotificationThread`](interfaces/NotificationThread.md)[]\>\> |
+| `notifyGetThread` | (`id`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`NotificationThread`](interfaces/NotificationThread.md)\>\> |
+| `notifyNewAvailable` | (`options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`NotificationCount`](interfaces/NotificationCount.md)\>\> |
+| `notifyReadList` | (`lastReadAt?`: `string`, `all?`: `string`, `statusTypes?`: `string`[], `toStatus?`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`NotificationThread`](interfaces/NotificationThread.md)[]\>\> |
+| `notifyReadRepoList` | (`owner`: `string`, `repo`: `string`, `all?`: `string`, `statusTypes?`: `string`[], `toStatus?`: `string`, `lastReadAt?`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`NotificationThread`](interfaces/NotificationThread.md)[]\>\> |
+| `notifyReadThread` | (`id`: `string`, `toStatus?`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`NotificationThread`](interfaces/NotificationThread.md)\>\> |
 
 #### Defined in
 
-[apis/notification-api.ts:806](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/notification-api.ts#L806)
+[apis/notification-api.ts:555](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/notification-api.ts#L555)
 
 ___
 
@@ -798,8 +1094,8 @@ OrganizationApi - axios parameter creator
 | `orgAddTeamMember` | (`id`: `number`, `username`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `orgAddTeamRepository` | (`id`: `number`, `org`: `string`, `repo`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `orgConcealMember` | (`org`: `string`, `username`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
-| `orgCreate` | (`body`: [`CreateOrgOption`](interfaces/CreateOrgOption.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
-| `orgCreateHook` | (`body`: [`CreateHookOption`](interfaces/CreateHookOption.md), `org`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
+| `orgCreate` | (`organization`: [`CreateOrgOption`](interfaces/CreateOrgOption.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
+| `orgCreateHook` | (`org`: `string`, `body`: [`CreateHookOption`](interfaces/CreateHookOption.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `orgCreateLabel` | (`org`: `string`, `body?`: [`CreateLabelOption`](interfaces/CreateLabelOption.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `orgCreateTeam` | (`org`: `string`, `body?`: [`CreateTeamOption`](interfaces/CreateTeamOption.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `orgDelete` | (`org`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
@@ -807,7 +1103,7 @@ OrganizationApi - axios parameter creator
 | `orgDeleteLabel` | (`org`: `string`, `id`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `orgDeleteMember` | (`org`: `string`, `username`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `orgDeleteTeam` | (`id`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
-| `orgEdit` | (`body`: [`EditOrgOption`](interfaces/EditOrgOption.md), `org`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
+| `orgEdit` | (`org`: `string`, `body`: [`EditOrgOption`](interfaces/EditOrgOption.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `orgEditHook` | (`org`: `string`, `id`: `number`, `body?`: [`EditHookOption`](interfaces/EditHookOption.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `orgEditLabel` | (`org`: `string`, `id`: `number`, `body?`: [`EditLabelOption`](interfaces/EditLabelOption.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `orgEditTeam` | (`id`: `number`, `body?`: [`EditTeamOption`](interfaces/EditTeamOption.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
@@ -837,7 +1133,7 @@ OrganizationApi - axios parameter creator
 
 #### Defined in
 
-[apis/organization-api.ts:40](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/organization-api.ts#L40)
+[apis/organization-api.ts:61](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L61)
 
 ___
 
@@ -863,51 +1159,51 @@ OrganizationApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `createOrgRepo` | (`org`: `string`, `body?`: [`CreateRepoOption`](interfaces/CreateRepoOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Repository`](interfaces/Repository.md)\>\> |
-| `createOrgRepoDeprecated` | (`org`: `string`, `body?`: [`CreateRepoOption`](interfaces/CreateRepoOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Repository`](interfaces/Repository.md)\>\> |
-| `orgAddTeamMember` | (`id`: `number`, `username`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `orgAddTeamRepository` | (`id`: `number`, `org`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `orgConcealMember` | (`org`: `string`, `username`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `orgCreate` | (`body`: [`CreateOrgOption`](interfaces/CreateOrgOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Organization`](interfaces/Organization.md)\>\> |
-| `orgCreateHook` | (`body`: [`CreateHookOption`](interfaces/CreateHookOption.md), `org`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Hook`](interfaces/Hook.md)\>\> |
-| `orgCreateLabel` | (`org`: `string`, `body?`: [`CreateLabelOption`](interfaces/CreateLabelOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Label`](interfaces/Label.md)\>\> |
-| `orgCreateTeam` | (`org`: `string`, `body?`: [`CreateTeamOption`](interfaces/CreateTeamOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Team`](interfaces/Team.md)\>\> |
-| `orgDelete` | (`org`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `orgDeleteHook` | (`org`: `string`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `orgDeleteLabel` | (`org`: `string`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `orgDeleteMember` | (`org`: `string`, `username`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `orgDeleteTeam` | (`id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `orgEdit` | (`body`: [`EditOrgOption`](interfaces/EditOrgOption.md), `org`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Organization`](interfaces/Organization.md)\>\> |
-| `orgEditHook` | (`org`: `string`, `id`: `number`, `body?`: [`EditHookOption`](interfaces/EditHookOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Hook`](interfaces/Hook.md)\>\> |
-| `orgEditLabel` | (`org`: `string`, `id`: `number`, `body?`: [`EditLabelOption`](interfaces/EditLabelOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Label`](interfaces/Label.md)\>\> |
-| `orgEditTeam` | (`id`: `number`, `body?`: [`EditTeamOption`](interfaces/EditTeamOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Team`](interfaces/Team.md)\>\> |
-| `orgGet` | (`org`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Organization`](interfaces/Organization.md)\>\> |
-| `orgGetAll` | (`lang?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Organization`](interfaces/Organization.md)[]\>\> |
-| `orgGetHook` | (`org`: `string`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Hook`](interfaces/Hook.md)\>\> |
-| `orgGetLabel` | (`org`: `string`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Label`](interfaces/Label.md)\>\> |
-| `orgGetTeam` | (`id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Team`](interfaces/Team.md)\>\> |
-| `orgGetUserPermissions` | (`username`: `string`, `org`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`OrganizationPermissions`](interfaces/OrganizationPermissions.md)\>\> |
-| `orgIsMember` | (`org`: `string`, `username`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `orgIsPublicMember` | (`org`: `string`, `username`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `orgListCurrentUserOrgs` | (`page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Organization`](interfaces/Organization.md)[]\>\> |
-| `orgListHooks` | (`org`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Hook`](interfaces/Hook.md)[]\>\> |
-| `orgListLabels` | (`org`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Label`](interfaces/Label.md)[]\>\> |
-| `orgListMembers` | (`org`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`User`](interfaces/User.md)[]\>\> |
-| `orgListPublicMembers` | (`org`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`User`](interfaces/User.md)[]\>\> |
-| `orgListRepos` | (`org`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Repository`](interfaces/Repository.md)[]\>\> |
-| `orgListTeamMember` | (`id`: `number`, `username`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`User`](interfaces/User.md)\>\> |
-| `orgListTeamMembers` | (`id`: `number`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`User`](interfaces/User.md)[]\>\> |
-| `orgListTeamRepos` | (`id`: `number`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Repository`](interfaces/Repository.md)[]\>\> |
-| `orgListTeams` | (`org`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Team`](interfaces/Team.md)[]\>\> |
-| `orgListUserOrgs` | (`username`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Organization`](interfaces/Organization.md)[]\>\> |
-| `orgPublicizeMember` | (`org`: `string`, `username`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `orgRemoveTeamMember` | (`id`: `number`, `username`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `orgRemoveTeamRepository` | (`id`: `number`, `org`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `teamSearch` | (`org`: `string`, `q?`: `string`, `includeDesc?`: `boolean`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`InlineResponse200`](interfaces/InlineResponse200.md)\>\> |
+| `createOrgRepo` | (`org`: `string`, `body?`: [`CreateRepoOption`](interfaces/CreateRepoOption.md), `options?`: `any`) => `AxiosPromise`<[`Repository`](interfaces/Repository.md)\> |
+| `createOrgRepoDeprecated` | (`org`: `string`, `body?`: [`CreateRepoOption`](interfaces/CreateRepoOption.md), `options?`: `any`) => `AxiosPromise`<[`Repository`](interfaces/Repository.md)\> |
+| `orgAddTeamMember` | (`id`: `number`, `username`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `orgAddTeamRepository` | (`id`: `number`, `org`: `string`, `repo`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `orgConcealMember` | (`org`: `string`, `username`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `orgCreate` | (`organization`: [`CreateOrgOption`](interfaces/CreateOrgOption.md), `options?`: `any`) => `AxiosPromise`<[`Organization`](interfaces/Organization.md)\> |
+| `orgCreateHook` | (`org`: `string`, `body`: [`CreateHookOption`](interfaces/CreateHookOption.md), `options?`: `any`) => `AxiosPromise`<[`Hook`](interfaces/Hook.md)\> |
+| `orgCreateLabel` | (`org`: `string`, `body?`: [`CreateLabelOption`](interfaces/CreateLabelOption.md), `options?`: `any`) => `AxiosPromise`<[`Label`](interfaces/Label.md)\> |
+| `orgCreateTeam` | (`org`: `string`, `body?`: [`CreateTeamOption`](interfaces/CreateTeamOption.md), `options?`: `any`) => `AxiosPromise`<[`Team`](interfaces/Team.md)\> |
+| `orgDelete` | (`org`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `orgDeleteHook` | (`org`: `string`, `id`: `number`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `orgDeleteLabel` | (`org`: `string`, `id`: `number`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `orgDeleteMember` | (`org`: `string`, `username`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `orgDeleteTeam` | (`id`: `number`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `orgEdit` | (`org`: `string`, `body`: [`EditOrgOption`](interfaces/EditOrgOption.md), `options?`: `any`) => `AxiosPromise`<[`Organization`](interfaces/Organization.md)\> |
+| `orgEditHook` | (`org`: `string`, `id`: `number`, `body?`: [`EditHookOption`](interfaces/EditHookOption.md), `options?`: `any`) => `AxiosPromise`<[`Hook`](interfaces/Hook.md)\> |
+| `orgEditLabel` | (`org`: `string`, `id`: `number`, `body?`: [`EditLabelOption`](interfaces/EditLabelOption.md), `options?`: `any`) => `AxiosPromise`<[`Label`](interfaces/Label.md)\> |
+| `orgEditTeam` | (`id`: `number`, `body?`: [`EditTeamOption`](interfaces/EditTeamOption.md), `options?`: `any`) => `AxiosPromise`<[`Team`](interfaces/Team.md)\> |
+| `orgGet` | (`org`: `string`, `options?`: `any`) => `AxiosPromise`<[`Organization`](interfaces/Organization.md)\> |
+| `orgGetAll` | (`lang?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`Organization`](interfaces/Organization.md)[]\> |
+| `orgGetHook` | (`org`: `string`, `id`: `number`, `options?`: `any`) => `AxiosPromise`<[`Hook`](interfaces/Hook.md)\> |
+| `orgGetLabel` | (`org`: `string`, `id`: `number`, `options?`: `any`) => `AxiosPromise`<[`Label`](interfaces/Label.md)\> |
+| `orgGetTeam` | (`id`: `number`, `options?`: `any`) => `AxiosPromise`<[`Team`](interfaces/Team.md)\> |
+| `orgGetUserPermissions` | (`username`: `string`, `org`: `string`, `options?`: `any`) => `AxiosPromise`<[`OrganizationPermissions`](interfaces/OrganizationPermissions.md)\> |
+| `orgIsMember` | (`org`: `string`, `username`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `orgIsPublicMember` | (`org`: `string`, `username`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `orgListCurrentUserOrgs` | (`page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`Organization`](interfaces/Organization.md)[]\> |
+| `orgListHooks` | (`org`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`Hook`](interfaces/Hook.md)[]\> |
+| `orgListLabels` | (`org`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`Label`](interfaces/Label.md)[]\> |
+| `orgListMembers` | (`org`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`User`](interfaces/User.md)[]\> |
+| `orgListPublicMembers` | (`org`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`User`](interfaces/User.md)[]\> |
+| `orgListRepos` | (`org`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`Repository`](interfaces/Repository.md)[]\> |
+| `orgListTeamMember` | (`id`: `number`, `username`: `string`, `options?`: `any`) => `AxiosPromise`<[`User`](interfaces/User.md)\> |
+| `orgListTeamMembers` | (`id`: `number`, `page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`User`](interfaces/User.md)[]\> |
+| `orgListTeamRepos` | (`id`: `number`, `page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`Repository`](interfaces/Repository.md)[]\> |
+| `orgListTeams` | (`org`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`Team`](interfaces/Team.md)[]\> |
+| `orgListUserOrgs` | (`username`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`Organization`](interfaces/Organization.md)[]\> |
+| `orgPublicizeMember` | (`org`: `string`, `username`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `orgRemoveTeamMember` | (`id`: `number`, `username`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `orgRemoveTeamRepository` | (`id`: `number`, `org`: `string`, `repo`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `teamSearch` | (`org`: `string`, `q?`: `string`, `includeDesc?`: `boolean`, `page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`TeamSearch200Response`](interfaces/TeamSearch200Response.md)\> |
 
 #### Defined in
 
-[apis/organization-api.ts:4791](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/organization-api.ts#L4791)
+[apis/organization-api.ts:3127](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3127)
 
 ___
 
@@ -931,51 +1227,51 @@ OrganizationApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `createOrgRepo` | (`org`: `string`, `body?`: [`CreateRepoOption`](interfaces/CreateRepoOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Repository`](interfaces/Repository.md)\>\>\> |
-| `createOrgRepoDeprecated` | (`org`: `string`, `body?`: [`CreateRepoOption`](interfaces/CreateRepoOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Repository`](interfaces/Repository.md)\>\>\> |
-| `orgAddTeamMember` | (`id`: `number`, `username`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `orgAddTeamRepository` | (`id`: `number`, `org`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `orgConcealMember` | (`org`: `string`, `username`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `orgCreate` | (`body`: [`CreateOrgOption`](interfaces/CreateOrgOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Organization`](interfaces/Organization.md)\>\>\> |
-| `orgCreateHook` | (`body`: [`CreateHookOption`](interfaces/CreateHookOption.md), `org`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Hook`](interfaces/Hook.md)\>\>\> |
-| `orgCreateLabel` | (`org`: `string`, `body?`: [`CreateLabelOption`](interfaces/CreateLabelOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Label`](interfaces/Label.md)\>\>\> |
-| `orgCreateTeam` | (`org`: `string`, `body?`: [`CreateTeamOption`](interfaces/CreateTeamOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Team`](interfaces/Team.md)\>\>\> |
-| `orgDelete` | (`org`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `orgDeleteHook` | (`org`: `string`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `orgDeleteLabel` | (`org`: `string`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `orgDeleteMember` | (`org`: `string`, `username`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `orgDeleteTeam` | (`id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `orgEdit` | (`body`: [`EditOrgOption`](interfaces/EditOrgOption.md), `org`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Organization`](interfaces/Organization.md)\>\>\> |
-| `orgEditHook` | (`org`: `string`, `id`: `number`, `body?`: [`EditHookOption`](interfaces/EditHookOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Hook`](interfaces/Hook.md)\>\>\> |
-| `orgEditLabel` | (`org`: `string`, `id`: `number`, `body?`: [`EditLabelOption`](interfaces/EditLabelOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Label`](interfaces/Label.md)\>\>\> |
-| `orgEditTeam` | (`id`: `number`, `body?`: [`EditTeamOption`](interfaces/EditTeamOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Team`](interfaces/Team.md)\>\>\> |
-| `orgGet` | (`org`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Organization`](interfaces/Organization.md)\>\>\> |
-| `orgGetAll` | (`lang?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Organization`](interfaces/Organization.md)[]\>\>\> |
-| `orgGetHook` | (`org`: `string`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Hook`](interfaces/Hook.md)\>\>\> |
-| `orgGetLabel` | (`org`: `string`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Label`](interfaces/Label.md)\>\>\> |
-| `orgGetTeam` | (`id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Team`](interfaces/Team.md)\>\>\> |
-| `orgGetUserPermissions` | (`username`: `string`, `org`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`OrganizationPermissions`](interfaces/OrganizationPermissions.md)\>\>\> |
-| `orgIsMember` | (`org`: `string`, `username`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `orgIsPublicMember` | (`org`: `string`, `username`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `orgListCurrentUserOrgs` | (`page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Organization`](interfaces/Organization.md)[]\>\>\> |
-| `orgListHooks` | (`org`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Hook`](interfaces/Hook.md)[]\>\>\> |
-| `orgListLabels` | (`org`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Label`](interfaces/Label.md)[]\>\>\> |
-| `orgListMembers` | (`org`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`User`](interfaces/User.md)[]\>\>\> |
-| `orgListPublicMembers` | (`org`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`User`](interfaces/User.md)[]\>\>\> |
-| `orgListRepos` | (`org`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Repository`](interfaces/Repository.md)[]\>\>\> |
-| `orgListTeamMember` | (`id`: `number`, `username`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`User`](interfaces/User.md)\>\>\> |
-| `orgListTeamMembers` | (`id`: `number`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`User`](interfaces/User.md)[]\>\>\> |
-| `orgListTeamRepos` | (`id`: `number`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Repository`](interfaces/Repository.md)[]\>\>\> |
-| `orgListTeams` | (`org`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Team`](interfaces/Team.md)[]\>\>\> |
-| `orgListUserOrgs` | (`username`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Organization`](interfaces/Organization.md)[]\>\>\> |
-| `orgPublicizeMember` | (`org`: `string`, `username`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `orgRemoveTeamMember` | (`id`: `number`, `username`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `orgRemoveTeamRepository` | (`id`: `number`, `org`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `teamSearch` | (`org`: `string`, `q?`: `string`, `includeDesc?`: `boolean`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`InlineResponse200`](interfaces/InlineResponse200.md)\>\>\> |
+| `createOrgRepo` | (`org`: `string`, `body?`: [`CreateRepoOption`](interfaces/CreateRepoOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Repository`](interfaces/Repository.md)\>\> |
+| `createOrgRepoDeprecated` | (`org`: `string`, `body?`: [`CreateRepoOption`](interfaces/CreateRepoOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Repository`](interfaces/Repository.md)\>\> |
+| `orgAddTeamMember` | (`id`: `number`, `username`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `orgAddTeamRepository` | (`id`: `number`, `org`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `orgConcealMember` | (`org`: `string`, `username`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `orgCreate` | (`organization`: [`CreateOrgOption`](interfaces/CreateOrgOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Organization`](interfaces/Organization.md)\>\> |
+| `orgCreateHook` | (`org`: `string`, `body`: [`CreateHookOption`](interfaces/CreateHookOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Hook`](interfaces/Hook.md)\>\> |
+| `orgCreateLabel` | (`org`: `string`, `body?`: [`CreateLabelOption`](interfaces/CreateLabelOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Label`](interfaces/Label.md)\>\> |
+| `orgCreateTeam` | (`org`: `string`, `body?`: [`CreateTeamOption`](interfaces/CreateTeamOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Team`](interfaces/Team.md)\>\> |
+| `orgDelete` | (`org`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `orgDeleteHook` | (`org`: `string`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `orgDeleteLabel` | (`org`: `string`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `orgDeleteMember` | (`org`: `string`, `username`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `orgDeleteTeam` | (`id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `orgEdit` | (`org`: `string`, `body`: [`EditOrgOption`](interfaces/EditOrgOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Organization`](interfaces/Organization.md)\>\> |
+| `orgEditHook` | (`org`: `string`, `id`: `number`, `body?`: [`EditHookOption`](interfaces/EditHookOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Hook`](interfaces/Hook.md)\>\> |
+| `orgEditLabel` | (`org`: `string`, `id`: `number`, `body?`: [`EditLabelOption`](interfaces/EditLabelOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Label`](interfaces/Label.md)\>\> |
+| `orgEditTeam` | (`id`: `number`, `body?`: [`EditTeamOption`](interfaces/EditTeamOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Team`](interfaces/Team.md)\>\> |
+| `orgGet` | (`org`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Organization`](interfaces/Organization.md)\>\> |
+| `orgGetAll` | (`lang?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Organization`](interfaces/Organization.md)[]\>\> |
+| `orgGetHook` | (`org`: `string`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Hook`](interfaces/Hook.md)\>\> |
+| `orgGetLabel` | (`org`: `string`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Label`](interfaces/Label.md)\>\> |
+| `orgGetTeam` | (`id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Team`](interfaces/Team.md)\>\> |
+| `orgGetUserPermissions` | (`username`: `string`, `org`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`OrganizationPermissions`](interfaces/OrganizationPermissions.md)\>\> |
+| `orgIsMember` | (`org`: `string`, `username`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `orgIsPublicMember` | (`org`: `string`, `username`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `orgListCurrentUserOrgs` | (`page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Organization`](interfaces/Organization.md)[]\>\> |
+| `orgListHooks` | (`org`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Hook`](interfaces/Hook.md)[]\>\> |
+| `orgListLabels` | (`org`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Label`](interfaces/Label.md)[]\>\> |
+| `orgListMembers` | (`org`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`User`](interfaces/User.md)[]\>\> |
+| `orgListPublicMembers` | (`org`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`User`](interfaces/User.md)[]\>\> |
+| `orgListRepos` | (`org`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Repository`](interfaces/Repository.md)[]\>\> |
+| `orgListTeamMember` | (`id`: `number`, `username`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`User`](interfaces/User.md)\>\> |
+| `orgListTeamMembers` | (`id`: `number`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`User`](interfaces/User.md)[]\>\> |
+| `orgListTeamRepos` | (`id`: `number`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Repository`](interfaces/Repository.md)[]\>\> |
+| `orgListTeams` | (`org`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Team`](interfaces/Team.md)[]\>\> |
+| `orgListUserOrgs` | (`username`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Organization`](interfaces/Organization.md)[]\>\> |
+| `orgPublicizeMember` | (`org`: `string`, `username`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `orgRemoveTeamMember` | (`id`: `number`, `username`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `orgRemoveTeamRepository` | (`id`: `number`, `org`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `teamSearch` | (`org`: `string`, `q?`: `string`, `includeDesc?`: `boolean`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`TeamSearch200Response`](interfaces/TeamSearch200Response.md)\>\> |
 
 #### Defined in
 
-[apis/organization-api.ts:4155](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/organization-api.ts#L4155)
+[apis/organization-api.ts:2612](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L2612)
 
 ___
 
@@ -1015,14 +1311,14 @@ RepositoryApi - axios parameter creator
 | `repoCheckTeam` | (`owner`: `string`, `repo`: `string`, `team`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoCreateBranch` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateBranchRepoOption`](interfaces/CreateBranchRepoOption.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoCreateBranchProtection` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateBranchProtectionOption`](interfaces/CreateBranchProtectionOption.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
-| `repoCreateFile` | (`body`: [`CreateFileOptions`](interfaces/CreateFileOptions.md), `owner`: `string`, `repo`: `string`, `filepath`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
+| `repoCreateFile` | (`owner`: `string`, `repo`: `string`, `filepath`: `string`, `body`: [`CreateFileOptions`](interfaces/CreateFileOptions.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoCreateHook` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateHookOption`](interfaces/CreateHookOption.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoCreateKey` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateKeyOption`](interfaces/CreateKeyOption.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoCreatePullRequest` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreatePullRequestOption`](interfaces/CreatePullRequestOption.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
-| `repoCreatePullReview` | (`body`: [`CreatePullReviewOptions`](interfaces/CreatePullReviewOptions.md), `owner`: `string`, `repo`: `string`, `index`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
-| `repoCreatePullReviewRequests` | (`body`: [`PullReviewRequestOptions`](interfaces/PullReviewRequestOptions.md), `owner`: `string`, `repo`: `string`, `index`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
+| `repoCreatePullReview` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `body`: [`CreatePullReviewOptions`](interfaces/CreatePullReviewOptions.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
+| `repoCreatePullReviewRequests` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `body`: [`PullReviewRequestOptions`](interfaces/PullReviewRequestOptions.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoCreateRelease` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateReleaseOption`](interfaces/CreateReleaseOption.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
-| `repoCreateReleaseAttachmentForm` | (`attachment`: `Blob`, `owner`: `string`, `repo`: `string`, `id`: `number`, `name?`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
+| `repoCreateReleaseAttachment` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `attachment`: `File`, `name?`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoCreateStatus` | (`owner`: `string`, `repo`: `string`, `sha`: `string`, `body?`: [`CreateStatusOption`](interfaces/CreateStatusOption.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoCreateTag` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateTagOption`](interfaces/CreateTagOption.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoCreateWikiPage` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateWikiPageOptions`](interfaces/CreateWikiPageOptions.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
@@ -1030,12 +1326,12 @@ RepositoryApi - axios parameter creator
 | `repoDeleteBranch` | (`owner`: `string`, `repo`: `string`, `branch`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoDeleteBranchProtection` | (`owner`: `string`, `repo`: `string`, `name`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoDeleteCollaborator` | (`owner`: `string`, `repo`: `string`, `collaborator`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
-| `repoDeleteFile` | (`body`: [`DeleteFileOptions`](interfaces/DeleteFileOptions.md), `owner`: `string`, `repo`: `string`, `filepath`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
+| `repoDeleteFile` | (`owner`: `string`, `repo`: `string`, `filepath`: `string`, `body`: [`DeleteFileOptions`](interfaces/DeleteFileOptions.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoDeleteGitHook` | (`owner`: `string`, `repo`: `string`, `id`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoDeleteHook` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoDeleteKey` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoDeletePullReview` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `id`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
-| `repoDeletePullReviewRequests` | (`body`: [`PullReviewRequestOptions`](interfaces/PullReviewRequestOptions.md), `owner`: `string`, `repo`: `string`, `index`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
+| `repoDeletePullReviewRequests` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `body`: [`PullReviewRequestOptions`](interfaces/PullReviewRequestOptions.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoDeleteRelease` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoDeleteReleaseAttachment` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `attachmentId`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoDeleteReleaseByTag` | (`owner`: `string`, `repo`: `string`, `tag`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
@@ -1043,9 +1339,9 @@ RepositoryApi - axios parameter creator
 | `repoDeleteTeam` | (`owner`: `string`, `repo`: `string`, `team`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoDeleteTopic` | (`owner`: `string`, `repo`: `string`, `topic`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoDeleteWikiPage` | (`owner`: `string`, `repo`: `string`, `pageName`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
-| `repoDismissPullReview` | (`body`: [`DismissPullReviewOptions`](interfaces/DismissPullReviewOptions.md), `owner`: `string`, `repo`: `string`, `index`: `number`, `id`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
-| `repoDownloadCommitDiffOrPatch` | (`owner`: `string`, `repo`: `string`, `sha`: `string`, `diffType`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
-| `repoDownloadPullDiffOrPatch` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `diffType`: `string`, `binary?`: `boolean`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
+| `repoDismissPullReview` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `id`: `number`, `body`: [`DismissPullReviewOptions`](interfaces/DismissPullReviewOptions.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
+| `repoDownloadCommitDiffOrPatch` | (`owner`: `string`, `repo`: `string`, `sha`: `string`, `diffType`: ``"patch"`` \| ``"diff"``, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
+| `repoDownloadPullDiffOrPatch` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `diffType`: ``"patch"`` \| ``"diff"``, `binary?`: `boolean`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoEdit` | (`owner`: `string`, `repo`: `string`, `body?`: [`EditRepoOption`](interfaces/EditRepoOption.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoEditBranchProtection` | (`owner`: `string`, `repo`: `string`, `name`: `string`, `body?`: [`EditBranchProtectionOption`](interfaces/EditBranchProtectionOption.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoEditGitHook` | (`owner`: `string`, `repo`: `string`, `id`: `string`, `body?`: [`EditGitHookOption`](interfaces/EditGitHookOption.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
@@ -1093,13 +1389,13 @@ RepositoryApi - axios parameter creator
 | `repoListGitRefs` | (`owner`: `string`, `repo`: `string`, `ref`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoListHooks` | (`owner`: `string`, `repo`: `string`, `page?`: `number`, `limit?`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoListKeys` | (`owner`: `string`, `repo`: `string`, `keyId?`: `number`, `fingerprint?`: `string`, `page?`: `number`, `limit?`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
-| `repoListPullRequests` | (`owner`: `string`, `repo`: `string`, `state?`: `string`, `sort?`: `string`, `milestone?`: `number`, `labels?`: `number`[], `page?`: `number`, `limit?`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
+| `repoListPullRequests` | (`owner`: `string`, `repo`: `string`, `state?`: ``"all"`` \| ``"closed"`` \| ``"open"``, `sort?`: ``"priority"`` \| ``"oldest"`` \| ``"recentupdate"`` \| ``"leastupdate"`` \| ``"mostcomment"`` \| ``"leastcomment"``, `milestone?`: `number`, `labels?`: `number`[], `page?`: `number`, `limit?`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoListPullReviews` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `page?`: `number`, `limit?`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoListReleaseAttachments` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoListReleases` | (`owner`: `string`, `repo`: `string`, `draft?`: `boolean`, `preRelease?`: `boolean`, `perPage?`: `number`, `page?`: `number`, `limit?`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoListStargazers` | (`owner`: `string`, `repo`: `string`, `page?`: `number`, `limit?`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
-| `repoListStatuses` | (`owner`: `string`, `repo`: `string`, `sha`: `string`, `sort?`: `string`, `state?`: `string`, `page?`: `number`, `limit?`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
-| `repoListStatusesByRef` | (`owner`: `string`, `repo`: `string`, `ref`: `string`, `sort?`: `string`, `state?`: `string`, `page?`: `number`, `limit?`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
+| `repoListStatuses` | (`owner`: `string`, `repo`: `string`, `sha`: `string`, `sort?`: ``"oldest"`` \| ``"recentupdate"`` \| ``"leastupdate"`` \| ``"leastindex"`` \| ``"highestindex"``, `state?`: ``"error"`` \| ``"pending"`` \| ``"success"`` \| ``"failure"`` \| ``"warning"``, `page?`: `number`, `limit?`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
+| `repoListStatusesByRef` | (`owner`: `string`, `repo`: `string`, `ref`: `string`, `sort?`: ``"oldest"`` \| ``"recentupdate"`` \| ``"leastupdate"`` \| ``"leastindex"`` \| ``"highestindex"``, `state?`: ``"error"`` \| ``"pending"`` \| ``"success"`` \| ``"failure"`` \| ``"warning"``, `page?`: `number`, `limit?`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoListSubscribers` | (`owner`: `string`, `repo`: `string`, `page?`: `number`, `limit?`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoListTags` | (`owner`: `string`, `repo`: `string`, `page?`: `number`, `limit?`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoListTeams` | (`owner`: `string`, `repo`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
@@ -1110,13 +1406,13 @@ RepositoryApi - axios parameter creator
 | `repoPullRequestIsMerged` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoSearch` | (`q?`: `string`, `topic?`: `boolean`, `includeDesc?`: `boolean`, `uid?`: `number`, `priorityOwnerId?`: `number`, `teamId?`: `number`, `starredBy?`: `number`, `_private?`: `boolean`, `isPrivate?`: `boolean`, `template?`: `boolean`, `archived?`: `boolean`, `mode?`: `string`, `exclusive?`: `boolean`, `repo?`: `string`, `owner?`: `string`, `lang?`: `string`, `subject?`: `string`, `book?`: `string`, `includeMetadata?`: `boolean`, `sort?`: `string`, `order?`: `string`, `page?`: `number`, `limit?`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoSigningKey` | (`owner`: `string`, `repo`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
-| `repoSubmitPullReview` | (`body`: [`SubmitPullReviewOptions`](interfaces/SubmitPullReviewOptions.md), `owner`: `string`, `repo`: `string`, `index`: `number`, `id`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
+| `repoSubmitPullReview` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `id`: `number`, `body`: [`SubmitPullReviewOptions`](interfaces/SubmitPullReviewOptions.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoTestHook` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
-| `repoTrackedTimes` | (`owner`: `string`, `repo`: `string`, `user?`: `string`, `since?`: `Date`, `before?`: `Date`, `page?`: `number`, `limit?`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
-| `repoTransfer` | (`body`: [`TransferRepoOption`](interfaces/TransferRepoOption.md), `owner`: `string`, `repo`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
+| `repoTrackedTimes` | (`owner`: `string`, `repo`: `string`, `user?`: `string`, `since?`: `string`, `before?`: `string`, `page?`: `number`, `limit?`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
+| `repoTransfer` | (`owner`: `string`, `repo`: `string`, `body`: [`TransferRepoOption`](interfaces/TransferRepoOption.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoUnDismissPullReview` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `id`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
-| `repoUpdateFile` | (`body`: [`UpdateFileOptions`](interfaces/UpdateFileOptions.md), `owner`: `string`, `repo`: `string`, `filepath`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
-| `repoUpdatePullRequest` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `style?`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
+| `repoUpdateFile` | (`owner`: `string`, `repo`: `string`, `filepath`: `string`, `body`: [`UpdateFileOptions`](interfaces/UpdateFileOptions.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
+| `repoUpdatePullRequest` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `style?`: ``"merge"`` \| ``"rebase"``, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoUpdateTopics` | (`owner`: `string`, `repo`: `string`, `body?`: [`RepoTopicOptions`](interfaces/RepoTopicOptions.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `topicSearch` | (`q`: `string`, `page?`: `number`, `limit?`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `userCurrentCheckSubscription` | (`owner`: `string`, `repo`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
@@ -1126,7 +1422,7 @@ RepositoryApi - axios parameter creator
 
 #### Defined in
 
-[apis/repository-api.ts:89](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L89)
+[apis/repository-api.ts:159](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L159)
 
 ___
 
@@ -1152,134 +1448,134 @@ RepositoryApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `acceptRepoTransfer` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Repository`](interfaces/Repository.md)\>\> |
-| `createCurrentUserRepo` | (`body?`: [`CreateRepoOption`](interfaces/CreateRepoOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Repository`](interfaces/Repository.md)\>\> |
-| `createFork` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateForkOption`](interfaces/CreateForkOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Repository`](interfaces/Repository.md)\>\> |
-| `generateRepo` | (`templateOwner`: `string`, `templateRepo`: `string`, `body?`: [`GenerateRepoOption`](interfaces/GenerateRepoOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Repository`](interfaces/Repository.md)\>\> |
-| `getAnnotatedTag` | (`owner`: `string`, `repo`: `string`, `sha`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`AnnotatedTag`](interfaces/AnnotatedTag.md)\>\> |
-| `getBlob` | (`owner`: `string`, `repo`: `string`, `sha`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`GitBlobResponse`](interfaces/GitBlobResponse.md)\>\> |
-| `getTree` | (`owner`: `string`, `repo`: `string`, `sha`: `string`, `recursive?`: `boolean`, `page?`: `number`, `perPage?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`GitTreeResponse`](interfaces/GitTreeResponse.md)\>\> |
-| `listForks` | (`owner`: `string`, `repo`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Repository`](interfaces/Repository.md)[]\>\> |
-| `rejectRepoTransfer` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Repository`](interfaces/Repository.md)\>\> |
-| `repoAddCollaborator` | (`owner`: `string`, `repo`: `string`, `collaborator`: `string`, `body?`: [`AddCollaboratorOption`](interfaces/AddCollaboratorOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `repoAddTeam` | (`owner`: `string`, `repo`: `string`, `team`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `repoAddTopic` | (`owner`: `string`, `repo`: `string`, `topic`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `repoCheckCollaborator` | (`owner`: `string`, `repo`: `string`, `collaborator`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `repoCheckTeam` | (`owner`: `string`, `repo`: `string`, `team`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Team`](interfaces/Team.md)\>\> |
-| `repoCreateBranch` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateBranchRepoOption`](interfaces/CreateBranchRepoOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Branch`](interfaces/Branch.md)\>\> |
-| `repoCreateBranchProtection` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateBranchProtectionOption`](interfaces/CreateBranchProtectionOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`BranchProtection`](interfaces/BranchProtection.md)\>\> |
-| `repoCreateFile` | (`body`: [`CreateFileOptions`](interfaces/CreateFileOptions.md), `owner`: `string`, `repo`: `string`, `filepath`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`FileResponse`](interfaces/FileResponse.md)\>\> |
-| `repoCreateHook` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateHookOption`](interfaces/CreateHookOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Hook`](interfaces/Hook.md)\>\> |
-| `repoCreateKey` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateKeyOption`](interfaces/CreateKeyOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`DeployKey`](interfaces/DeployKey.md)\>\> |
-| `repoCreatePullRequest` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreatePullRequestOption`](interfaces/CreatePullRequestOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`PullRequest`](interfaces/PullRequest.md)\>\> |
-| `repoCreatePullReview` | (`body`: [`CreatePullReviewOptions`](interfaces/CreatePullReviewOptions.md), `owner`: `string`, `repo`: `string`, `index`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`PullReview`](interfaces/PullReview.md)\>\> |
-| `repoCreatePullReviewRequests` | (`body`: [`PullReviewRequestOptions`](interfaces/PullReviewRequestOptions.md), `owner`: `string`, `repo`: `string`, `index`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`PullReview`](interfaces/PullReview.md)[]\>\> |
-| `repoCreateRelease` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateReleaseOption`](interfaces/CreateReleaseOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Release`](interfaces/Release.md)\>\> |
-| `repoCreateReleaseAttachmentForm` | (`attachment`: `Blob`, `owner`: `string`, `repo`: `string`, `id`: `number`, `name?`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Attachment`](interfaces/Attachment.md)\>\> |
-| `repoCreateStatus` | (`owner`: `string`, `repo`: `string`, `sha`: `string`, `body?`: [`CreateStatusOption`](interfaces/CreateStatusOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`CommitStatus`](interfaces/CommitStatus.md)\>\> |
-| `repoCreateTag` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateTagOption`](interfaces/CreateTagOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Tag`](interfaces/Tag.md)\>\> |
-| `repoCreateWikiPage` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateWikiPageOptions`](interfaces/CreateWikiPageOptions.md), `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`WikiPage`](interfaces/WikiPage.md)\>\> |
-| `repoDelete` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `repoDeleteBranch` | (`owner`: `string`, `repo`: `string`, `branch`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `repoDeleteBranchProtection` | (`owner`: `string`, `repo`: `string`, `name`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `repoDeleteCollaborator` | (`owner`: `string`, `repo`: `string`, `collaborator`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `repoDeleteFile` | (`body`: [`DeleteFileOptions`](interfaces/DeleteFileOptions.md), `owner`: `string`, `repo`: `string`, `filepath`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`FileDeleteResponse`](interfaces/FileDeleteResponse.md)\>\> |
-| `repoDeleteGitHook` | (`owner`: `string`, `repo`: `string`, `id`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `repoDeleteHook` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `repoDeleteKey` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `repoDeletePullReview` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `repoDeletePullReviewRequests` | (`body`: [`PullReviewRequestOptions`](interfaces/PullReviewRequestOptions.md), `owner`: `string`, `repo`: `string`, `index`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `repoDeleteRelease` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `repoDeleteReleaseAttachment` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `attachmentId`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `repoDeleteReleaseByTag` | (`owner`: `string`, `repo`: `string`, `tag`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `repoDeleteTag` | (`owner`: `string`, `repo`: `string`, `tag`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `repoDeleteTeam` | (`owner`: `string`, `repo`: `string`, `team`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `repoDeleteTopic` | (`owner`: `string`, `repo`: `string`, `topic`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `repoDeleteWikiPage` | (`owner`: `string`, `repo`: `string`, `pageName`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `repoDismissPullReview` | (`body`: [`DismissPullReviewOptions`](interfaces/DismissPullReviewOptions.md), `owner`: `string`, `repo`: `string`, `index`: `number`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`PullReview`](interfaces/PullReview.md)\>\> |
-| `repoDownloadCommitDiffOrPatch` | (`owner`: `string`, `repo`: `string`, `sha`: `string`, `diffType`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`string`\>\> |
-| `repoDownloadPullDiffOrPatch` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `diffType`: `string`, `binary?`: `boolean`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`string`\>\> |
-| `repoEdit` | (`owner`: `string`, `repo`: `string`, `body?`: [`EditRepoOption`](interfaces/EditRepoOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Repository`](interfaces/Repository.md)\>\> |
-| `repoEditBranchProtection` | (`owner`: `string`, `repo`: `string`, `name`: `string`, `body?`: [`EditBranchProtectionOption`](interfaces/EditBranchProtectionOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`BranchProtection`](interfaces/BranchProtection.md)\>\> |
-| `repoEditGitHook` | (`owner`: `string`, `repo`: `string`, `id`: `string`, `body?`: [`EditGitHookOption`](interfaces/EditGitHookOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`GitHook`](interfaces/GitHook.md)\>\> |
-| `repoEditHook` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `body?`: [`EditHookOption`](interfaces/EditHookOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Hook`](interfaces/Hook.md)\>\> |
-| `repoEditPullRequest` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `body?`: [`EditPullRequestOption`](interfaces/EditPullRequestOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`PullRequest`](interfaces/PullRequest.md)\>\> |
-| `repoEditRelease` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `body?`: [`EditReleaseOption`](interfaces/EditReleaseOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Release`](interfaces/Release.md)\>\> |
-| `repoEditReleaseAttachment` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `attachmentId`: `number`, `body?`: [`EditAttachmentOptions`](interfaces/EditAttachmentOptions.md), `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Attachment`](interfaces/Attachment.md)\>\> |
-| `repoEditWikiPage` | (`owner`: `string`, `repo`: `string`, `pageName`: `string`, `body?`: [`CreateWikiPageOptions`](interfaces/CreateWikiPageOptions.md), `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`WikiPage`](interfaces/WikiPage.md)\>\> |
-| `repoGet` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Repository`](interfaces/Repository.md)\>\> |
-| `repoGetAllCommits` | (`owner`: `string`, `repo`: `string`, `sha?`: `string`, `path?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Commit`](interfaces/Commit.md)[]\>\> |
-| `repoGetArchive` | (`owner`: `string`, `repo`: `string`, `archive`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `repoGetAssignees` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`User`](interfaces/User.md)[]\>\> |
-| `repoGetBranch` | (`owner`: `string`, `repo`: `string`, `branch`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Branch`](interfaces/Branch.md)\>\> |
-| `repoGetBranchProtection` | (`owner`: `string`, `repo`: `string`, `name`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`BranchProtection`](interfaces/BranchProtection.md)\>\> |
-| `repoGetByID` | (`id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Repository`](interfaces/Repository.md)\>\> |
-| `repoGetCombinedStatusByRef` | (`owner`: `string`, `repo`: `string`, `ref`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`CombinedStatus`](interfaces/CombinedStatus.md)\>\> |
-| `repoGetContents` | (`owner`: `string`, `repo`: `string`, `filepath`: `string`, `ref?`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`ContentsResponse`](interfaces/ContentsResponse.md)\>\> |
-| `repoGetContentsList` | (`owner`: `string`, `repo`: `string`, `ref?`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`ContentsResponse`](interfaces/ContentsResponse.md)[]\>\> |
-| `repoGetEditorConfig` | (`owner`: `string`, `repo`: `string`, `filepath`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `repoGetGitHook` | (`owner`: `string`, `repo`: `string`, `id`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`GitHook`](interfaces/GitHook.md)\>\> |
-| `repoGetHook` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Hook`](interfaces/Hook.md)\>\> |
-| `repoGetIssueTemplates` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`IssueTemplate`](interfaces/IssueTemplate.md)[]\>\> |
-| `repoGetKey` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`DeployKey`](interfaces/DeployKey.md)\>\> |
-| `repoGetLanguages` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<{ `[key: string]`: `number`;  }\>\> |
-| `repoGetNote` | (`owner`: `string`, `repo`: `string`, `sha`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Note`](interfaces/Note.md)\>\> |
-| `repoGetPullRequest` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`PullRequest`](interfaces/PullRequest.md)\>\> |
-| `repoGetPullRequestCommits` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Commit`](interfaces/Commit.md)[]\>\> |
-| `repoGetPullReview` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`PullReview`](interfaces/PullReview.md)\>\> |
-| `repoGetPullReviewComments` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`PullReviewComment`](interfaces/PullReviewComment.md)[]\>\> |
-| `repoGetRawFile` | (`owner`: `string`, `repo`: `string`, `filepath`: `string`, `ref?`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `repoGetRelease` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Release`](interfaces/Release.md)\>\> |
-| `repoGetReleaseAttachment` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `attachmentId`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Attachment`](interfaces/Attachment.md)\>\> |
-| `repoGetReleaseByTag` | (`owner`: `string`, `repo`: `string`, `tag`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Release`](interfaces/Release.md)\>\> |
-| `repoGetReviewers` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`User`](interfaces/User.md)[]\>\> |
-| `repoGetSingleCommit` | (`owner`: `string`, `repo`: `string`, `sha`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Commit`](interfaces/Commit.md)\>\> |
-| `repoGetTag` | (`owner`: `string`, `repo`: `string`, `tag`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Tag`](interfaces/Tag.md)\>\> |
-| `repoGetWikiPage` | (`owner`: `string`, `repo`: `string`, `pageName`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`WikiPage`](interfaces/WikiPage.md)\>\> |
-| `repoGetWikiPageRevisions` | (`owner`: `string`, `repo`: `string`, `pageName`: `string`, `page?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`WikiCommitList`](interfaces/WikiCommitList.md)\>\> |
-| `repoGetWikiPages` | (`owner`: `string`, `repo`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`WikiPageMetaData`](interfaces/WikiPageMetaData.md)[]\>\> |
-| `repoListAllGitRefs` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Reference`](interfaces/Reference.md)[]\>\> |
-| `repoListBranchProtection` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`BranchProtection`](interfaces/BranchProtection.md)[]\>\> |
-| `repoListBranches` | (`owner`: `string`, `repo`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Branch`](interfaces/Branch.md)[]\>\> |
-| `repoListCollaborators` | (`owner`: `string`, `repo`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`User`](interfaces/User.md)[]\>\> |
-| `repoListGitHooks` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`GitHook`](interfaces/GitHook.md)[]\>\> |
-| `repoListGitRefs` | (`owner`: `string`, `repo`: `string`, `ref`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Reference`](interfaces/Reference.md)[]\>\> |
-| `repoListHooks` | (`owner`: `string`, `repo`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Hook`](interfaces/Hook.md)[]\>\> |
-| `repoListKeys` | (`owner`: `string`, `repo`: `string`, `keyId?`: `number`, `fingerprint?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`DeployKey`](interfaces/DeployKey.md)[]\>\> |
-| `repoListPullRequests` | (`owner`: `string`, `repo`: `string`, `state?`: `string`, `sort?`: `string`, `milestone?`: `number`, `labels?`: `number`[], `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`PullRequest`](interfaces/PullRequest.md)[]\>\> |
-| `repoListPullReviews` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`PullReview`](interfaces/PullReview.md)[]\>\> |
-| `repoListReleaseAttachments` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Attachment`](interfaces/Attachment.md)[]\>\> |
-| `repoListReleases` | (`owner`: `string`, `repo`: `string`, `draft?`: `boolean`, `preRelease?`: `boolean`, `perPage?`: `number`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Release`](interfaces/Release.md)[]\>\> |
-| `repoListStargazers` | (`owner`: `string`, `repo`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`User`](interfaces/User.md)[]\>\> |
-| `repoListStatuses` | (`owner`: `string`, `repo`: `string`, `sha`: `string`, `sort?`: `string`, `state?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`CommitStatus`](interfaces/CommitStatus.md)[]\>\> |
-| `repoListStatusesByRef` | (`owner`: `string`, `repo`: `string`, `ref`: `string`, `sort?`: `string`, `state?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`CommitStatus`](interfaces/CommitStatus.md)[]\>\> |
-| `repoListSubscribers` | (`owner`: `string`, `repo`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`User`](interfaces/User.md)[]\>\> |
-| `repoListTags` | (`owner`: `string`, `repo`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Tag`](interfaces/Tag.md)[]\>\> |
-| `repoListTeams` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Team`](interfaces/Team.md)[]\>\> |
-| `repoListTopics` | (`owner`: `string`, `repo`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`TopicName`](interfaces/TopicName.md)\>\> |
-| `repoMergePullRequest` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `body?`: [`MergePullRequestOption`](interfaces/MergePullRequestOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `repoMigrate` | (`body?`: [`MigrateRepoOptions`](interfaces/MigrateRepoOptions.md), `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Repository`](interfaces/Repository.md)\>\> |
-| `repoMirrorSync` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `repoPullRequestIsMerged` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `repoSearch` | (`q?`: `string`, `topic?`: `boolean`, `includeDesc?`: `boolean`, `uid?`: `number`, `priorityOwnerId?`: `number`, `teamId?`: `number`, `starredBy?`: `number`, `_private?`: `boolean`, `isPrivate?`: `boolean`, `template?`: `boolean`, `archived?`: `boolean`, `mode?`: `string`, `exclusive?`: `boolean`, `repo?`: `string`, `owner?`: `string`, `lang?`: `string`, `subject?`: `string`, `book?`: `string`, `includeMetadata?`: `boolean`, `sort?`: `string`, `order?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`SearchResults`](interfaces/SearchResults.md)\>\> |
-| `repoSigningKey` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`string`\>\> |
-| `repoSubmitPullReview` | (`body`: [`SubmitPullReviewOptions`](interfaces/SubmitPullReviewOptions.md), `owner`: `string`, `repo`: `string`, `index`: `number`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`PullReview`](interfaces/PullReview.md)\>\> |
-| `repoTestHook` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `repoTrackedTimes` | (`owner`: `string`, `repo`: `string`, `user?`: `string`, `since?`: `Date`, `before?`: `Date`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`TrackedTime`](interfaces/TrackedTime.md)[]\>\> |
-| `repoTransfer` | (`body`: [`TransferRepoOption`](interfaces/TransferRepoOption.md), `owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Repository`](interfaces/Repository.md)\>\> |
-| `repoUnDismissPullReview` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`PullReview`](interfaces/PullReview.md)\>\> |
-| `repoUpdateFile` | (`body`: [`UpdateFileOptions`](interfaces/UpdateFileOptions.md), `owner`: `string`, `repo`: `string`, `filepath`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`FileResponse`](interfaces/FileResponse.md)\>\> |
-| `repoUpdatePullRequest` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `style?`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `repoUpdateTopics` | (`owner`: `string`, `repo`: `string`, `body?`: [`RepoTopicOptions`](interfaces/RepoTopicOptions.md), `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `topicSearch` | (`q`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`TopicResponse`](interfaces/TopicResponse.md)[]\>\> |
-| `userCurrentCheckSubscription` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`WatchInfo`](interfaces/WatchInfo.md)\>\> |
-| `userCurrentDeleteSubscription` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `userCurrentPutSubscription` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`WatchInfo`](interfaces/WatchInfo.md)\>\> |
-| `userTrackedTimes` | (`owner`: `string`, `repo`: `string`, `user`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`TrackedTime`](interfaces/TrackedTime.md)[]\>\> |
+| `acceptRepoTransfer` | (`owner`: `string`, `repo`: `string`, `options?`: `any`) => `AxiosPromise`<[`Repository`](interfaces/Repository.md)\> |
+| `createCurrentUserRepo` | (`body?`: [`CreateRepoOption`](interfaces/CreateRepoOption.md), `options?`: `any`) => `AxiosPromise`<[`Repository`](interfaces/Repository.md)\> |
+| `createFork` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateForkOption`](interfaces/CreateForkOption.md), `options?`: `any`) => `AxiosPromise`<[`Repository`](interfaces/Repository.md)\> |
+| `generateRepo` | (`templateOwner`: `string`, `templateRepo`: `string`, `body?`: [`GenerateRepoOption`](interfaces/GenerateRepoOption.md), `options?`: `any`) => `AxiosPromise`<[`Repository`](interfaces/Repository.md)\> |
+| `getAnnotatedTag` | (`owner`: `string`, `repo`: `string`, `sha`: `string`, `options?`: `any`) => `AxiosPromise`<[`AnnotatedTag`](interfaces/AnnotatedTag.md)\> |
+| `getBlob` | (`owner`: `string`, `repo`: `string`, `sha`: `string`, `options?`: `any`) => `AxiosPromise`<[`GitBlobResponse`](interfaces/GitBlobResponse.md)\> |
+| `getTree` | (`owner`: `string`, `repo`: `string`, `sha`: `string`, `recursive?`: `boolean`, `page?`: `number`, `perPage?`: `number`, `options?`: `any`) => `AxiosPromise`<[`GitTreeResponse`](interfaces/GitTreeResponse.md)\> |
+| `listForks` | (`owner`: `string`, `repo`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`Repository`](interfaces/Repository.md)[]\> |
+| `rejectRepoTransfer` | (`owner`: `string`, `repo`: `string`, `options?`: `any`) => `AxiosPromise`<[`Repository`](interfaces/Repository.md)\> |
+| `repoAddCollaborator` | (`owner`: `string`, `repo`: `string`, `collaborator`: `string`, `body?`: [`AddCollaboratorOption`](interfaces/AddCollaboratorOption.md), `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `repoAddTeam` | (`owner`: `string`, `repo`: `string`, `team`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `repoAddTopic` | (`owner`: `string`, `repo`: `string`, `topic`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `repoCheckCollaborator` | (`owner`: `string`, `repo`: `string`, `collaborator`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `repoCheckTeam` | (`owner`: `string`, `repo`: `string`, `team`: `string`, `options?`: `any`) => `AxiosPromise`<[`Team`](interfaces/Team.md)\> |
+| `repoCreateBranch` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateBranchRepoOption`](interfaces/CreateBranchRepoOption.md), `options?`: `any`) => `AxiosPromise`<[`Branch`](interfaces/Branch.md)\> |
+| `repoCreateBranchProtection` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateBranchProtectionOption`](interfaces/CreateBranchProtectionOption.md), `options?`: `any`) => `AxiosPromise`<[`BranchProtection`](interfaces/BranchProtection.md)\> |
+| `repoCreateFile` | (`owner`: `string`, `repo`: `string`, `filepath`: `string`, `body`: [`CreateFileOptions`](interfaces/CreateFileOptions.md), `options?`: `any`) => `AxiosPromise`<[`FileResponse`](interfaces/FileResponse.md)\> |
+| `repoCreateHook` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateHookOption`](interfaces/CreateHookOption.md), `options?`: `any`) => `AxiosPromise`<[`Hook`](interfaces/Hook.md)\> |
+| `repoCreateKey` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateKeyOption`](interfaces/CreateKeyOption.md), `options?`: `any`) => `AxiosPromise`<[`DeployKey`](interfaces/DeployKey.md)\> |
+| `repoCreatePullRequest` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreatePullRequestOption`](interfaces/CreatePullRequestOption.md), `options?`: `any`) => `AxiosPromise`<[`PullRequest`](interfaces/PullRequest.md)\> |
+| `repoCreatePullReview` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `body`: [`CreatePullReviewOptions`](interfaces/CreatePullReviewOptions.md), `options?`: `any`) => `AxiosPromise`<[`PullReview`](interfaces/PullReview.md)\> |
+| `repoCreatePullReviewRequests` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `body`: [`PullReviewRequestOptions`](interfaces/PullReviewRequestOptions.md), `options?`: `any`) => `AxiosPromise`<[`PullReview`](interfaces/PullReview.md)[]\> |
+| `repoCreateRelease` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateReleaseOption`](interfaces/CreateReleaseOption.md), `options?`: `any`) => `AxiosPromise`<[`Release`](interfaces/Release.md)\> |
+| `repoCreateReleaseAttachment` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `attachment`: `File`, `name?`: `string`, `options?`: `any`) => `AxiosPromise`<[`Attachment`](interfaces/Attachment.md)\> |
+| `repoCreateStatus` | (`owner`: `string`, `repo`: `string`, `sha`: `string`, `body?`: [`CreateStatusOption`](interfaces/CreateStatusOption.md), `options?`: `any`) => `AxiosPromise`<[`CommitStatus`](interfaces/CommitStatus.md)\> |
+| `repoCreateTag` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateTagOption`](interfaces/CreateTagOption.md), `options?`: `any`) => `AxiosPromise`<[`Tag`](interfaces/Tag.md)\> |
+| `repoCreateWikiPage` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateWikiPageOptions`](interfaces/CreateWikiPageOptions.md), `options?`: `any`) => `AxiosPromise`<[`WikiPage`](interfaces/WikiPage.md)\> |
+| `repoDelete` | (`owner`: `string`, `repo`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `repoDeleteBranch` | (`owner`: `string`, `repo`: `string`, `branch`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `repoDeleteBranchProtection` | (`owner`: `string`, `repo`: `string`, `name`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `repoDeleteCollaborator` | (`owner`: `string`, `repo`: `string`, `collaborator`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `repoDeleteFile` | (`owner`: `string`, `repo`: `string`, `filepath`: `string`, `body`: [`DeleteFileOptions`](interfaces/DeleteFileOptions.md), `options?`: `any`) => `AxiosPromise`<[`FileDeleteResponse`](interfaces/FileDeleteResponse.md)\> |
+| `repoDeleteGitHook` | (`owner`: `string`, `repo`: `string`, `id`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `repoDeleteHook` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `repoDeleteKey` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `repoDeletePullReview` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `id`: `number`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `repoDeletePullReviewRequests` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `body`: [`PullReviewRequestOptions`](interfaces/PullReviewRequestOptions.md), `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `repoDeleteRelease` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `repoDeleteReleaseAttachment` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `attachmentId`: `number`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `repoDeleteReleaseByTag` | (`owner`: `string`, `repo`: `string`, `tag`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `repoDeleteTag` | (`owner`: `string`, `repo`: `string`, `tag`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `repoDeleteTeam` | (`owner`: `string`, `repo`: `string`, `team`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `repoDeleteTopic` | (`owner`: `string`, `repo`: `string`, `topic`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `repoDeleteWikiPage` | (`owner`: `string`, `repo`: `string`, `pageName`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `repoDismissPullReview` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `id`: `number`, `body`: [`DismissPullReviewOptions`](interfaces/DismissPullReviewOptions.md), `options?`: `any`) => `AxiosPromise`<[`PullReview`](interfaces/PullReview.md)\> |
+| `repoDownloadCommitDiffOrPatch` | (`owner`: `string`, `repo`: `string`, `sha`: `string`, `diffType`: ``"patch"`` \| ``"diff"``, `options?`: `any`) => `AxiosPromise`<`string`\> |
+| `repoDownloadPullDiffOrPatch` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `diffType`: ``"patch"`` \| ``"diff"``, `binary?`: `boolean`, `options?`: `any`) => `AxiosPromise`<`string`\> |
+| `repoEdit` | (`owner`: `string`, `repo`: `string`, `body?`: [`EditRepoOption`](interfaces/EditRepoOption.md), `options?`: `any`) => `AxiosPromise`<[`Repository`](interfaces/Repository.md)\> |
+| `repoEditBranchProtection` | (`owner`: `string`, `repo`: `string`, `name`: `string`, `body?`: [`EditBranchProtectionOption`](interfaces/EditBranchProtectionOption.md), `options?`: `any`) => `AxiosPromise`<[`BranchProtection`](interfaces/BranchProtection.md)\> |
+| `repoEditGitHook` | (`owner`: `string`, `repo`: `string`, `id`: `string`, `body?`: [`EditGitHookOption`](interfaces/EditGitHookOption.md), `options?`: `any`) => `AxiosPromise`<[`GitHook`](interfaces/GitHook.md)\> |
+| `repoEditHook` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `body?`: [`EditHookOption`](interfaces/EditHookOption.md), `options?`: `any`) => `AxiosPromise`<[`Hook`](interfaces/Hook.md)\> |
+| `repoEditPullRequest` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `body?`: [`EditPullRequestOption`](interfaces/EditPullRequestOption.md), `options?`: `any`) => `AxiosPromise`<[`PullRequest`](interfaces/PullRequest.md)\> |
+| `repoEditRelease` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `body?`: [`EditReleaseOption`](interfaces/EditReleaseOption.md), `options?`: `any`) => `AxiosPromise`<[`Release`](interfaces/Release.md)\> |
+| `repoEditReleaseAttachment` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `attachmentId`: `number`, `body?`: [`EditAttachmentOptions`](interfaces/EditAttachmentOptions.md), `options?`: `any`) => `AxiosPromise`<[`Attachment`](interfaces/Attachment.md)\> |
+| `repoEditWikiPage` | (`owner`: `string`, `repo`: `string`, `pageName`: `string`, `body?`: [`CreateWikiPageOptions`](interfaces/CreateWikiPageOptions.md), `options?`: `any`) => `AxiosPromise`<[`WikiPage`](interfaces/WikiPage.md)\> |
+| `repoGet` | (`owner`: `string`, `repo`: `string`, `options?`: `any`) => `AxiosPromise`<[`Repository`](interfaces/Repository.md)\> |
+| `repoGetAllCommits` | (`owner`: `string`, `repo`: `string`, `sha?`: `string`, `path?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`Commit`](interfaces/Commit.md)[]\> |
+| `repoGetArchive` | (`owner`: `string`, `repo`: `string`, `archive`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `repoGetAssignees` | (`owner`: `string`, `repo`: `string`, `options?`: `any`) => `AxiosPromise`<[`User`](interfaces/User.md)[]\> |
+| `repoGetBranch` | (`owner`: `string`, `repo`: `string`, `branch`: `string`, `options?`: `any`) => `AxiosPromise`<[`Branch`](interfaces/Branch.md)\> |
+| `repoGetBranchProtection` | (`owner`: `string`, `repo`: `string`, `name`: `string`, `options?`: `any`) => `AxiosPromise`<[`BranchProtection`](interfaces/BranchProtection.md)\> |
+| `repoGetByID` | (`id`: `number`, `options?`: `any`) => `AxiosPromise`<[`Repository`](interfaces/Repository.md)\> |
+| `repoGetCombinedStatusByRef` | (`owner`: `string`, `repo`: `string`, `ref`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`CombinedStatus`](interfaces/CombinedStatus.md)\> |
+| `repoGetContents` | (`owner`: `string`, `repo`: `string`, `filepath`: `string`, `ref?`: `string`, `options?`: `any`) => `AxiosPromise`<[`ContentsResponse`](interfaces/ContentsResponse.md)\> |
+| `repoGetContentsList` | (`owner`: `string`, `repo`: `string`, `ref?`: `string`, `options?`: `any`) => `AxiosPromise`<[`ContentsResponse`](interfaces/ContentsResponse.md)[]\> |
+| `repoGetEditorConfig` | (`owner`: `string`, `repo`: `string`, `filepath`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `repoGetGitHook` | (`owner`: `string`, `repo`: `string`, `id`: `string`, `options?`: `any`) => `AxiosPromise`<[`GitHook`](interfaces/GitHook.md)\> |
+| `repoGetHook` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options?`: `any`) => `AxiosPromise`<[`Hook`](interfaces/Hook.md)\> |
+| `repoGetIssueTemplates` | (`owner`: `string`, `repo`: `string`, `options?`: `any`) => `AxiosPromise`<[`IssueTemplate`](interfaces/IssueTemplate.md)[]\> |
+| `repoGetKey` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options?`: `any`) => `AxiosPromise`<[`DeployKey`](interfaces/DeployKey.md)\> |
+| `repoGetLanguages` | (`owner`: `string`, `repo`: `string`, `options?`: `any`) => `AxiosPromise`<{ `[key: string]`: `number`;  }\> |
+| `repoGetNote` | (`owner`: `string`, `repo`: `string`, `sha`: `string`, `options?`: `any`) => `AxiosPromise`<[`Note`](interfaces/Note.md)\> |
+| `repoGetPullRequest` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `options?`: `any`) => `AxiosPromise`<[`PullRequest`](interfaces/PullRequest.md)\> |
+| `repoGetPullRequestCommits` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`Commit`](interfaces/Commit.md)[]\> |
+| `repoGetPullReview` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `id`: `number`, `options?`: `any`) => `AxiosPromise`<[`PullReview`](interfaces/PullReview.md)\> |
+| `repoGetPullReviewComments` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `id`: `number`, `options?`: `any`) => `AxiosPromise`<[`PullReviewComment`](interfaces/PullReviewComment.md)[]\> |
+| `repoGetRawFile` | (`owner`: `string`, `repo`: `string`, `filepath`: `string`, `ref?`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `repoGetRelease` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options?`: `any`) => `AxiosPromise`<[`Release`](interfaces/Release.md)\> |
+| `repoGetReleaseAttachment` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `attachmentId`: `number`, `options?`: `any`) => `AxiosPromise`<[`Attachment`](interfaces/Attachment.md)\> |
+| `repoGetReleaseByTag` | (`owner`: `string`, `repo`: `string`, `tag`: `string`, `options?`: `any`) => `AxiosPromise`<[`Release`](interfaces/Release.md)\> |
+| `repoGetReviewers` | (`owner`: `string`, `repo`: `string`, `options?`: `any`) => `AxiosPromise`<[`User`](interfaces/User.md)[]\> |
+| `repoGetSingleCommit` | (`owner`: `string`, `repo`: `string`, `sha`: `string`, `options?`: `any`) => `AxiosPromise`<[`Commit`](interfaces/Commit.md)\> |
+| `repoGetTag` | (`owner`: `string`, `repo`: `string`, `tag`: `string`, `options?`: `any`) => `AxiosPromise`<[`Tag`](interfaces/Tag.md)\> |
+| `repoGetWikiPage` | (`owner`: `string`, `repo`: `string`, `pageName`: `string`, `options?`: `any`) => `AxiosPromise`<[`WikiPage`](interfaces/WikiPage.md)\> |
+| `repoGetWikiPageRevisions` | (`owner`: `string`, `repo`: `string`, `pageName`: `string`, `page?`: `number`, `options?`: `any`) => `AxiosPromise`<[`WikiCommitList`](interfaces/WikiCommitList.md)\> |
+| `repoGetWikiPages` | (`owner`: `string`, `repo`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`WikiPageMetaData`](interfaces/WikiPageMetaData.md)[]\> |
+| `repoListAllGitRefs` | (`owner`: `string`, `repo`: `string`, `options?`: `any`) => `AxiosPromise`<[`Reference`](interfaces/Reference.md)[]\> |
+| `repoListBranchProtection` | (`owner`: `string`, `repo`: `string`, `options?`: `any`) => `AxiosPromise`<[`BranchProtection`](interfaces/BranchProtection.md)[]\> |
+| `repoListBranches` | (`owner`: `string`, `repo`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`Branch`](interfaces/Branch.md)[]\> |
+| `repoListCollaborators` | (`owner`: `string`, `repo`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`User`](interfaces/User.md)[]\> |
+| `repoListGitHooks` | (`owner`: `string`, `repo`: `string`, `options?`: `any`) => `AxiosPromise`<[`GitHook`](interfaces/GitHook.md)[]\> |
+| `repoListGitRefs` | (`owner`: `string`, `repo`: `string`, `ref`: `string`, `options?`: `any`) => `AxiosPromise`<[`Reference`](interfaces/Reference.md)[]\> |
+| `repoListHooks` | (`owner`: `string`, `repo`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`Hook`](interfaces/Hook.md)[]\> |
+| `repoListKeys` | (`owner`: `string`, `repo`: `string`, `keyId?`: `number`, `fingerprint?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`DeployKey`](interfaces/DeployKey.md)[]\> |
+| `repoListPullRequests` | (`owner`: `string`, `repo`: `string`, `state?`: ``"all"`` \| ``"closed"`` \| ``"open"``, `sort?`: ``"priority"`` \| ``"oldest"`` \| ``"recentupdate"`` \| ``"leastupdate"`` \| ``"mostcomment"`` \| ``"leastcomment"``, `milestone?`: `number`, `labels?`: `number`[], `page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`PullRequest`](interfaces/PullRequest.md)[]\> |
+| `repoListPullReviews` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`PullReview`](interfaces/PullReview.md)[]\> |
+| `repoListReleaseAttachments` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options?`: `any`) => `AxiosPromise`<[`Attachment`](interfaces/Attachment.md)[]\> |
+| `repoListReleases` | (`owner`: `string`, `repo`: `string`, `draft?`: `boolean`, `preRelease?`: `boolean`, `perPage?`: `number`, `page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`Release`](interfaces/Release.md)[]\> |
+| `repoListStargazers` | (`owner`: `string`, `repo`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`User`](interfaces/User.md)[]\> |
+| `repoListStatuses` | (`owner`: `string`, `repo`: `string`, `sha`: `string`, `sort?`: ``"oldest"`` \| ``"recentupdate"`` \| ``"leastupdate"`` \| ``"leastindex"`` \| ``"highestindex"``, `state?`: ``"error"`` \| ``"pending"`` \| ``"success"`` \| ``"failure"`` \| ``"warning"``, `page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`CommitStatus`](interfaces/CommitStatus.md)[]\> |
+| `repoListStatusesByRef` | (`owner`: `string`, `repo`: `string`, `ref`: `string`, `sort?`: ``"oldest"`` \| ``"recentupdate"`` \| ``"leastupdate"`` \| ``"leastindex"`` \| ``"highestindex"``, `state?`: ``"error"`` \| ``"pending"`` \| ``"success"`` \| ``"failure"`` \| ``"warning"``, `page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`CommitStatus`](interfaces/CommitStatus.md)[]\> |
+| `repoListSubscribers` | (`owner`: `string`, `repo`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`User`](interfaces/User.md)[]\> |
+| `repoListTags` | (`owner`: `string`, `repo`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`Tag`](interfaces/Tag.md)[]\> |
+| `repoListTeams` | (`owner`: `string`, `repo`: `string`, `options?`: `any`) => `AxiosPromise`<[`Team`](interfaces/Team.md)[]\> |
+| `repoListTopics` | (`owner`: `string`, `repo`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`TopicName`](interfaces/TopicName.md)\> |
+| `repoMergePullRequest` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `body?`: [`MergePullRequestOption`](interfaces/MergePullRequestOption.md), `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `repoMigrate` | (`body?`: [`MigrateRepoOptions`](interfaces/MigrateRepoOptions.md), `options?`: `any`) => `AxiosPromise`<[`Repository`](interfaces/Repository.md)\> |
+| `repoMirrorSync` | (`owner`: `string`, `repo`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `repoPullRequestIsMerged` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `repoSearch` | (`q?`: `string`, `topic?`: `boolean`, `includeDesc?`: `boolean`, `uid?`: `number`, `priorityOwnerId?`: `number`, `teamId?`: `number`, `starredBy?`: `number`, `_private?`: `boolean`, `isPrivate?`: `boolean`, `template?`: `boolean`, `archived?`: `boolean`, `mode?`: `string`, `exclusive?`: `boolean`, `repo?`: `string`, `owner?`: `string`, `lang?`: `string`, `subject?`: `string`, `book?`: `string`, `includeMetadata?`: `boolean`, `sort?`: `string`, `order?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`SearchResults`](interfaces/SearchResults.md)\> |
+| `repoSigningKey` | (`owner`: `string`, `repo`: `string`, `options?`: `any`) => `AxiosPromise`<`string`\> |
+| `repoSubmitPullReview` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `id`: `number`, `body`: [`SubmitPullReviewOptions`](interfaces/SubmitPullReviewOptions.md), `options?`: `any`) => `AxiosPromise`<[`PullReview`](interfaces/PullReview.md)\> |
+| `repoTestHook` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `repoTrackedTimes` | (`owner`: `string`, `repo`: `string`, `user?`: `string`, `since?`: `string`, `before?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`TrackedTime`](interfaces/TrackedTime.md)[]\> |
+| `repoTransfer` | (`owner`: `string`, `repo`: `string`, `body`: [`TransferRepoOption`](interfaces/TransferRepoOption.md), `options?`: `any`) => `AxiosPromise`<[`Repository`](interfaces/Repository.md)\> |
+| `repoUnDismissPullReview` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `id`: `number`, `options?`: `any`) => `AxiosPromise`<[`PullReview`](interfaces/PullReview.md)\> |
+| `repoUpdateFile` | (`owner`: `string`, `repo`: `string`, `filepath`: `string`, `body`: [`UpdateFileOptions`](interfaces/UpdateFileOptions.md), `options?`: `any`) => `AxiosPromise`<[`FileResponse`](interfaces/FileResponse.md)\> |
+| `repoUpdatePullRequest` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `style?`: ``"merge"`` \| ``"rebase"``, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `repoUpdateTopics` | (`owner`: `string`, `repo`: `string`, `body?`: [`RepoTopicOptions`](interfaces/RepoTopicOptions.md), `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `topicSearch` | (`q`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`TopicResponse`](interfaces/TopicResponse.md)[]\> |
+| `userCurrentCheckSubscription` | (`owner`: `string`, `repo`: `string`, `options?`: `any`) => `AxiosPromise`<[`WatchInfo`](interfaces/WatchInfo.md)\> |
+| `userCurrentDeleteSubscription` | (`owner`: `string`, `repo`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `userCurrentPutSubscription` | (`owner`: `string`, `repo`: `string`, `options?`: `any`) => `AxiosPromise`<[`WatchInfo`](interfaces/WatchInfo.md)\> |
+| `userTrackedTimes` | (`owner`: `string`, `repo`: `string`, `user`: `string`, `options?`: `any`) => `AxiosPromise`<[`TrackedTime`](interfaces/TrackedTime.md)[]\> |
 
 #### Defined in
 
-[apis/repository-api.ts:15583](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L15583)
+[apis/repository-api.ts:10241](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L10241)
 
 ___
 
@@ -1303,134 +1599,134 @@ RepositoryApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `acceptRepoTransfer` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Repository`](interfaces/Repository.md)\>\>\> |
-| `createCurrentUserRepo` | (`body?`: [`CreateRepoOption`](interfaces/CreateRepoOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Repository`](interfaces/Repository.md)\>\>\> |
-| `createFork` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateForkOption`](interfaces/CreateForkOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Repository`](interfaces/Repository.md)\>\>\> |
-| `generateRepo` | (`templateOwner`: `string`, `templateRepo`: `string`, `body?`: [`GenerateRepoOption`](interfaces/GenerateRepoOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Repository`](interfaces/Repository.md)\>\>\> |
-| `getAnnotatedTag` | (`owner`: `string`, `repo`: `string`, `sha`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`AnnotatedTag`](interfaces/AnnotatedTag.md)\>\>\> |
-| `getBlob` | (`owner`: `string`, `repo`: `string`, `sha`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`GitBlobResponse`](interfaces/GitBlobResponse.md)\>\>\> |
-| `getTree` | (`owner`: `string`, `repo`: `string`, `sha`: `string`, `recursive?`: `boolean`, `page?`: `number`, `perPage?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`GitTreeResponse`](interfaces/GitTreeResponse.md)\>\>\> |
-| `listForks` | (`owner`: `string`, `repo`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Repository`](interfaces/Repository.md)[]\>\>\> |
-| `rejectRepoTransfer` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Repository`](interfaces/Repository.md)\>\>\> |
-| `repoAddCollaborator` | (`owner`: `string`, `repo`: `string`, `collaborator`: `string`, `body?`: [`AddCollaboratorOption`](interfaces/AddCollaboratorOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `repoAddTeam` | (`owner`: `string`, `repo`: `string`, `team`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `repoAddTopic` | (`owner`: `string`, `repo`: `string`, `topic`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `repoCheckCollaborator` | (`owner`: `string`, `repo`: `string`, `collaborator`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `repoCheckTeam` | (`owner`: `string`, `repo`: `string`, `team`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Team`](interfaces/Team.md)\>\>\> |
-| `repoCreateBranch` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateBranchRepoOption`](interfaces/CreateBranchRepoOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Branch`](interfaces/Branch.md)\>\>\> |
-| `repoCreateBranchProtection` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateBranchProtectionOption`](interfaces/CreateBranchProtectionOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`BranchProtection`](interfaces/BranchProtection.md)\>\>\> |
-| `repoCreateFile` | (`body`: [`CreateFileOptions`](interfaces/CreateFileOptions.md), `owner`: `string`, `repo`: `string`, `filepath`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`FileResponse`](interfaces/FileResponse.md)\>\>\> |
-| `repoCreateHook` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateHookOption`](interfaces/CreateHookOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Hook`](interfaces/Hook.md)\>\>\> |
-| `repoCreateKey` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateKeyOption`](interfaces/CreateKeyOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`DeployKey`](interfaces/DeployKey.md)\>\>\> |
-| `repoCreatePullRequest` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreatePullRequestOption`](interfaces/CreatePullRequestOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`PullRequest`](interfaces/PullRequest.md)\>\>\> |
-| `repoCreatePullReview` | (`body`: [`CreatePullReviewOptions`](interfaces/CreatePullReviewOptions.md), `owner`: `string`, `repo`: `string`, `index`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`PullReview`](interfaces/PullReview.md)\>\>\> |
-| `repoCreatePullReviewRequests` | (`body`: [`PullReviewRequestOptions`](interfaces/PullReviewRequestOptions.md), `owner`: `string`, `repo`: `string`, `index`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`PullReview`](interfaces/PullReview.md)[]\>\>\> |
-| `repoCreateRelease` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateReleaseOption`](interfaces/CreateReleaseOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Release`](interfaces/Release.md)\>\>\> |
-| `repoCreateReleaseAttachmentForm` | (`attachment`: `Blob`, `owner`: `string`, `repo`: `string`, `id`: `number`, `name?`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Attachment`](interfaces/Attachment.md)\>\>\> |
-| `repoCreateStatus` | (`owner`: `string`, `repo`: `string`, `sha`: `string`, `body?`: [`CreateStatusOption`](interfaces/CreateStatusOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`CommitStatus`](interfaces/CommitStatus.md)\>\>\> |
-| `repoCreateTag` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateTagOption`](interfaces/CreateTagOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Tag`](interfaces/Tag.md)\>\>\> |
-| `repoCreateWikiPage` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateWikiPageOptions`](interfaces/CreateWikiPageOptions.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`WikiPage`](interfaces/WikiPage.md)\>\>\> |
-| `repoDelete` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `repoDeleteBranch` | (`owner`: `string`, `repo`: `string`, `branch`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `repoDeleteBranchProtection` | (`owner`: `string`, `repo`: `string`, `name`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `repoDeleteCollaborator` | (`owner`: `string`, `repo`: `string`, `collaborator`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `repoDeleteFile` | (`body`: [`DeleteFileOptions`](interfaces/DeleteFileOptions.md), `owner`: `string`, `repo`: `string`, `filepath`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`FileDeleteResponse`](interfaces/FileDeleteResponse.md)\>\>\> |
-| `repoDeleteGitHook` | (`owner`: `string`, `repo`: `string`, `id`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `repoDeleteHook` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `repoDeleteKey` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `repoDeletePullReview` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `repoDeletePullReviewRequests` | (`body`: [`PullReviewRequestOptions`](interfaces/PullReviewRequestOptions.md), `owner`: `string`, `repo`: `string`, `index`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `repoDeleteRelease` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `repoDeleteReleaseAttachment` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `attachmentId`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `repoDeleteReleaseByTag` | (`owner`: `string`, `repo`: `string`, `tag`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `repoDeleteTag` | (`owner`: `string`, `repo`: `string`, `tag`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `repoDeleteTeam` | (`owner`: `string`, `repo`: `string`, `team`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `repoDeleteTopic` | (`owner`: `string`, `repo`: `string`, `topic`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `repoDeleteWikiPage` | (`owner`: `string`, `repo`: `string`, `pageName`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `repoDismissPullReview` | (`body`: [`DismissPullReviewOptions`](interfaces/DismissPullReviewOptions.md), `owner`: `string`, `repo`: `string`, `index`: `number`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`PullReview`](interfaces/PullReview.md)\>\>\> |
-| `repoDownloadCommitDiffOrPatch` | (`owner`: `string`, `repo`: `string`, `sha`: `string`, `diffType`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`string`\>\>\> |
-| `repoDownloadPullDiffOrPatch` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `diffType`: `string`, `binary?`: `boolean`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`string`\>\>\> |
-| `repoEdit` | (`owner`: `string`, `repo`: `string`, `body?`: [`EditRepoOption`](interfaces/EditRepoOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Repository`](interfaces/Repository.md)\>\>\> |
-| `repoEditBranchProtection` | (`owner`: `string`, `repo`: `string`, `name`: `string`, `body?`: [`EditBranchProtectionOption`](interfaces/EditBranchProtectionOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`BranchProtection`](interfaces/BranchProtection.md)\>\>\> |
-| `repoEditGitHook` | (`owner`: `string`, `repo`: `string`, `id`: `string`, `body?`: [`EditGitHookOption`](interfaces/EditGitHookOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`GitHook`](interfaces/GitHook.md)\>\>\> |
-| `repoEditHook` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `body?`: [`EditHookOption`](interfaces/EditHookOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Hook`](interfaces/Hook.md)\>\>\> |
-| `repoEditPullRequest` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `body?`: [`EditPullRequestOption`](interfaces/EditPullRequestOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`PullRequest`](interfaces/PullRequest.md)\>\>\> |
-| `repoEditRelease` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `body?`: [`EditReleaseOption`](interfaces/EditReleaseOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Release`](interfaces/Release.md)\>\>\> |
-| `repoEditReleaseAttachment` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `attachmentId`: `number`, `body?`: [`EditAttachmentOptions`](interfaces/EditAttachmentOptions.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Attachment`](interfaces/Attachment.md)\>\>\> |
-| `repoEditWikiPage` | (`owner`: `string`, `repo`: `string`, `pageName`: `string`, `body?`: [`CreateWikiPageOptions`](interfaces/CreateWikiPageOptions.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`WikiPage`](interfaces/WikiPage.md)\>\>\> |
-| `repoGet` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Repository`](interfaces/Repository.md)\>\>\> |
-| `repoGetAllCommits` | (`owner`: `string`, `repo`: `string`, `sha?`: `string`, `path?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Commit`](interfaces/Commit.md)[]\>\>\> |
-| `repoGetArchive` | (`owner`: `string`, `repo`: `string`, `archive`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `repoGetAssignees` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`User`](interfaces/User.md)[]\>\>\> |
-| `repoGetBranch` | (`owner`: `string`, `repo`: `string`, `branch`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Branch`](interfaces/Branch.md)\>\>\> |
-| `repoGetBranchProtection` | (`owner`: `string`, `repo`: `string`, `name`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`BranchProtection`](interfaces/BranchProtection.md)\>\>\> |
-| `repoGetByID` | (`id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Repository`](interfaces/Repository.md)\>\>\> |
-| `repoGetCombinedStatusByRef` | (`owner`: `string`, `repo`: `string`, `ref`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`CombinedStatus`](interfaces/CombinedStatus.md)\>\>\> |
-| `repoGetContents` | (`owner`: `string`, `repo`: `string`, `filepath`: `string`, `ref?`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`ContentsResponse`](interfaces/ContentsResponse.md)\>\>\> |
-| `repoGetContentsList` | (`owner`: `string`, `repo`: `string`, `ref?`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`ContentsResponse`](interfaces/ContentsResponse.md)[]\>\>\> |
-| `repoGetEditorConfig` | (`owner`: `string`, `repo`: `string`, `filepath`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `repoGetGitHook` | (`owner`: `string`, `repo`: `string`, `id`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`GitHook`](interfaces/GitHook.md)\>\>\> |
-| `repoGetHook` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Hook`](interfaces/Hook.md)\>\>\> |
-| `repoGetIssueTemplates` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`IssueTemplate`](interfaces/IssueTemplate.md)[]\>\>\> |
-| `repoGetKey` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`DeployKey`](interfaces/DeployKey.md)\>\>\> |
-| `repoGetLanguages` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<{ `[key: string]`: `number`;  }\>\>\> |
-| `repoGetNote` | (`owner`: `string`, `repo`: `string`, `sha`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Note`](interfaces/Note.md)\>\>\> |
-| `repoGetPullRequest` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`PullRequest`](interfaces/PullRequest.md)\>\>\> |
-| `repoGetPullRequestCommits` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Commit`](interfaces/Commit.md)[]\>\>\> |
-| `repoGetPullReview` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`PullReview`](interfaces/PullReview.md)\>\>\> |
-| `repoGetPullReviewComments` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`PullReviewComment`](interfaces/PullReviewComment.md)[]\>\>\> |
-| `repoGetRawFile` | (`owner`: `string`, `repo`: `string`, `filepath`: `string`, `ref?`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `repoGetRelease` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Release`](interfaces/Release.md)\>\>\> |
-| `repoGetReleaseAttachment` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `attachmentId`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Attachment`](interfaces/Attachment.md)\>\>\> |
-| `repoGetReleaseByTag` | (`owner`: `string`, `repo`: `string`, `tag`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Release`](interfaces/Release.md)\>\>\> |
-| `repoGetReviewers` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`User`](interfaces/User.md)[]\>\>\> |
-| `repoGetSingleCommit` | (`owner`: `string`, `repo`: `string`, `sha`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Commit`](interfaces/Commit.md)\>\>\> |
-| `repoGetTag` | (`owner`: `string`, `repo`: `string`, `tag`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Tag`](interfaces/Tag.md)\>\>\> |
-| `repoGetWikiPage` | (`owner`: `string`, `repo`: `string`, `pageName`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`WikiPage`](interfaces/WikiPage.md)\>\>\> |
-| `repoGetWikiPageRevisions` | (`owner`: `string`, `repo`: `string`, `pageName`: `string`, `page?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`WikiCommitList`](interfaces/WikiCommitList.md)\>\>\> |
-| `repoGetWikiPages` | (`owner`: `string`, `repo`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`WikiPageMetaData`](interfaces/WikiPageMetaData.md)[]\>\>\> |
-| `repoListAllGitRefs` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Reference`](interfaces/Reference.md)[]\>\>\> |
-| `repoListBranchProtection` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`BranchProtection`](interfaces/BranchProtection.md)[]\>\>\> |
-| `repoListBranches` | (`owner`: `string`, `repo`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Branch`](interfaces/Branch.md)[]\>\>\> |
-| `repoListCollaborators` | (`owner`: `string`, `repo`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`User`](interfaces/User.md)[]\>\>\> |
-| `repoListGitHooks` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`GitHook`](interfaces/GitHook.md)[]\>\>\> |
-| `repoListGitRefs` | (`owner`: `string`, `repo`: `string`, `ref`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Reference`](interfaces/Reference.md)[]\>\>\> |
-| `repoListHooks` | (`owner`: `string`, `repo`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Hook`](interfaces/Hook.md)[]\>\>\> |
-| `repoListKeys` | (`owner`: `string`, `repo`: `string`, `keyId?`: `number`, `fingerprint?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`DeployKey`](interfaces/DeployKey.md)[]\>\>\> |
-| `repoListPullRequests` | (`owner`: `string`, `repo`: `string`, `state?`: `string`, `sort?`: `string`, `milestone?`: `number`, `labels?`: `number`[], `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`PullRequest`](interfaces/PullRequest.md)[]\>\>\> |
-| `repoListPullReviews` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`PullReview`](interfaces/PullReview.md)[]\>\>\> |
-| `repoListReleaseAttachments` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Attachment`](interfaces/Attachment.md)[]\>\>\> |
-| `repoListReleases` | (`owner`: `string`, `repo`: `string`, `draft?`: `boolean`, `preRelease?`: `boolean`, `perPage?`: `number`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Release`](interfaces/Release.md)[]\>\>\> |
-| `repoListStargazers` | (`owner`: `string`, `repo`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`User`](interfaces/User.md)[]\>\>\> |
-| `repoListStatuses` | (`owner`: `string`, `repo`: `string`, `sha`: `string`, `sort?`: `string`, `state?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`CommitStatus`](interfaces/CommitStatus.md)[]\>\>\> |
-| `repoListStatusesByRef` | (`owner`: `string`, `repo`: `string`, `ref`: `string`, `sort?`: `string`, `state?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`CommitStatus`](interfaces/CommitStatus.md)[]\>\>\> |
-| `repoListSubscribers` | (`owner`: `string`, `repo`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`User`](interfaces/User.md)[]\>\>\> |
-| `repoListTags` | (`owner`: `string`, `repo`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Tag`](interfaces/Tag.md)[]\>\>\> |
-| `repoListTeams` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Team`](interfaces/Team.md)[]\>\>\> |
-| `repoListTopics` | (`owner`: `string`, `repo`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`TopicName`](interfaces/TopicName.md)\>\>\> |
-| `repoMergePullRequest` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `body?`: [`MergePullRequestOption`](interfaces/MergePullRequestOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `repoMigrate` | (`body?`: [`MigrateRepoOptions`](interfaces/MigrateRepoOptions.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Repository`](interfaces/Repository.md)\>\>\> |
-| `repoMirrorSync` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `repoPullRequestIsMerged` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `repoSearch` | (`q?`: `string`, `topic?`: `boolean`, `includeDesc?`: `boolean`, `uid?`: `number`, `priorityOwnerId?`: `number`, `teamId?`: `number`, `starredBy?`: `number`, `_private?`: `boolean`, `isPrivate?`: `boolean`, `template?`: `boolean`, `archived?`: `boolean`, `mode?`: `string`, `exclusive?`: `boolean`, `repo?`: `string`, `owner?`: `string`, `lang?`: `string`, `subject?`: `string`, `book?`: `string`, `includeMetadata?`: `boolean`, `sort?`: `string`, `order?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`SearchResults`](interfaces/SearchResults.md)\>\>\> |
-| `repoSigningKey` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`string`\>\>\> |
-| `repoSubmitPullReview` | (`body`: [`SubmitPullReviewOptions`](interfaces/SubmitPullReviewOptions.md), `owner`: `string`, `repo`: `string`, `index`: `number`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`PullReview`](interfaces/PullReview.md)\>\>\> |
-| `repoTestHook` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `repoTrackedTimes` | (`owner`: `string`, `repo`: `string`, `user?`: `string`, `since?`: `Date`, `before?`: `Date`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`TrackedTime`](interfaces/TrackedTime.md)[]\>\>\> |
-| `repoTransfer` | (`body`: [`TransferRepoOption`](interfaces/TransferRepoOption.md), `owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Repository`](interfaces/Repository.md)\>\>\> |
-| `repoUnDismissPullReview` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`PullReview`](interfaces/PullReview.md)\>\>\> |
-| `repoUpdateFile` | (`body`: [`UpdateFileOptions`](interfaces/UpdateFileOptions.md), `owner`: `string`, `repo`: `string`, `filepath`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`FileResponse`](interfaces/FileResponse.md)\>\>\> |
-| `repoUpdatePullRequest` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `style?`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `repoUpdateTopics` | (`owner`: `string`, `repo`: `string`, `body?`: [`RepoTopicOptions`](interfaces/RepoTopicOptions.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `topicSearch` | (`q`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`TopicResponse`](interfaces/TopicResponse.md)[]\>\>\> |
-| `userCurrentCheckSubscription` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`WatchInfo`](interfaces/WatchInfo.md)\>\>\> |
-| `userCurrentDeleteSubscription` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `userCurrentPutSubscription` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`WatchInfo`](interfaces/WatchInfo.md)\>\>\> |
-| `userTrackedTimes` | (`owner`: `string`, `repo`: `string`, `user`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`TrackedTime`](interfaces/TrackedTime.md)[]\>\>\> |
+| `acceptRepoTransfer` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Repository`](interfaces/Repository.md)\>\> |
+| `createCurrentUserRepo` | (`body?`: [`CreateRepoOption`](interfaces/CreateRepoOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Repository`](interfaces/Repository.md)\>\> |
+| `createFork` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateForkOption`](interfaces/CreateForkOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Repository`](interfaces/Repository.md)\>\> |
+| `generateRepo` | (`templateOwner`: `string`, `templateRepo`: `string`, `body?`: [`GenerateRepoOption`](interfaces/GenerateRepoOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Repository`](interfaces/Repository.md)\>\> |
+| `getAnnotatedTag` | (`owner`: `string`, `repo`: `string`, `sha`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`AnnotatedTag`](interfaces/AnnotatedTag.md)\>\> |
+| `getBlob` | (`owner`: `string`, `repo`: `string`, `sha`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`GitBlobResponse`](interfaces/GitBlobResponse.md)\>\> |
+| `getTree` | (`owner`: `string`, `repo`: `string`, `sha`: `string`, `recursive?`: `boolean`, `page?`: `number`, `perPage?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`GitTreeResponse`](interfaces/GitTreeResponse.md)\>\> |
+| `listForks` | (`owner`: `string`, `repo`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Repository`](interfaces/Repository.md)[]\>\> |
+| `rejectRepoTransfer` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Repository`](interfaces/Repository.md)\>\> |
+| `repoAddCollaborator` | (`owner`: `string`, `repo`: `string`, `collaborator`: `string`, `body?`: [`AddCollaboratorOption`](interfaces/AddCollaboratorOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `repoAddTeam` | (`owner`: `string`, `repo`: `string`, `team`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `repoAddTopic` | (`owner`: `string`, `repo`: `string`, `topic`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `repoCheckCollaborator` | (`owner`: `string`, `repo`: `string`, `collaborator`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `repoCheckTeam` | (`owner`: `string`, `repo`: `string`, `team`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Team`](interfaces/Team.md)\>\> |
+| `repoCreateBranch` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateBranchRepoOption`](interfaces/CreateBranchRepoOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Branch`](interfaces/Branch.md)\>\> |
+| `repoCreateBranchProtection` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateBranchProtectionOption`](interfaces/CreateBranchProtectionOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`BranchProtection`](interfaces/BranchProtection.md)\>\> |
+| `repoCreateFile` | (`owner`: `string`, `repo`: `string`, `filepath`: `string`, `body`: [`CreateFileOptions`](interfaces/CreateFileOptions.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`FileResponse`](interfaces/FileResponse.md)\>\> |
+| `repoCreateHook` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateHookOption`](interfaces/CreateHookOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Hook`](interfaces/Hook.md)\>\> |
+| `repoCreateKey` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateKeyOption`](interfaces/CreateKeyOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`DeployKey`](interfaces/DeployKey.md)\>\> |
+| `repoCreatePullRequest` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreatePullRequestOption`](interfaces/CreatePullRequestOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`PullRequest`](interfaces/PullRequest.md)\>\> |
+| `repoCreatePullReview` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `body`: [`CreatePullReviewOptions`](interfaces/CreatePullReviewOptions.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`PullReview`](interfaces/PullReview.md)\>\> |
+| `repoCreatePullReviewRequests` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `body`: [`PullReviewRequestOptions`](interfaces/PullReviewRequestOptions.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`PullReview`](interfaces/PullReview.md)[]\>\> |
+| `repoCreateRelease` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateReleaseOption`](interfaces/CreateReleaseOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Release`](interfaces/Release.md)\>\> |
+| `repoCreateReleaseAttachment` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `attachment`: `File`, `name?`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Attachment`](interfaces/Attachment.md)\>\> |
+| `repoCreateStatus` | (`owner`: `string`, `repo`: `string`, `sha`: `string`, `body?`: [`CreateStatusOption`](interfaces/CreateStatusOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`CommitStatus`](interfaces/CommitStatus.md)\>\> |
+| `repoCreateTag` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateTagOption`](interfaces/CreateTagOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Tag`](interfaces/Tag.md)\>\> |
+| `repoCreateWikiPage` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateWikiPageOptions`](interfaces/CreateWikiPageOptions.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`WikiPage`](interfaces/WikiPage.md)\>\> |
+| `repoDelete` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `repoDeleteBranch` | (`owner`: `string`, `repo`: `string`, `branch`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `repoDeleteBranchProtection` | (`owner`: `string`, `repo`: `string`, `name`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `repoDeleteCollaborator` | (`owner`: `string`, `repo`: `string`, `collaborator`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `repoDeleteFile` | (`owner`: `string`, `repo`: `string`, `filepath`: `string`, `body`: [`DeleteFileOptions`](interfaces/DeleteFileOptions.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`FileDeleteResponse`](interfaces/FileDeleteResponse.md)\>\> |
+| `repoDeleteGitHook` | (`owner`: `string`, `repo`: `string`, `id`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `repoDeleteHook` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `repoDeleteKey` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `repoDeletePullReview` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `repoDeletePullReviewRequests` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `body`: [`PullReviewRequestOptions`](interfaces/PullReviewRequestOptions.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `repoDeleteRelease` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `repoDeleteReleaseAttachment` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `attachmentId`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `repoDeleteReleaseByTag` | (`owner`: `string`, `repo`: `string`, `tag`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `repoDeleteTag` | (`owner`: `string`, `repo`: `string`, `tag`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `repoDeleteTeam` | (`owner`: `string`, `repo`: `string`, `team`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `repoDeleteTopic` | (`owner`: `string`, `repo`: `string`, `topic`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `repoDeleteWikiPage` | (`owner`: `string`, `repo`: `string`, `pageName`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `repoDismissPullReview` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `id`: `number`, `body`: [`DismissPullReviewOptions`](interfaces/DismissPullReviewOptions.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`PullReview`](interfaces/PullReview.md)\>\> |
+| `repoDownloadCommitDiffOrPatch` | (`owner`: `string`, `repo`: `string`, `sha`: `string`, `diffType`: ``"patch"`` \| ``"diff"``, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`string`\>\> |
+| `repoDownloadPullDiffOrPatch` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `diffType`: ``"patch"`` \| ``"diff"``, `binary?`: `boolean`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`string`\>\> |
+| `repoEdit` | (`owner`: `string`, `repo`: `string`, `body?`: [`EditRepoOption`](interfaces/EditRepoOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Repository`](interfaces/Repository.md)\>\> |
+| `repoEditBranchProtection` | (`owner`: `string`, `repo`: `string`, `name`: `string`, `body?`: [`EditBranchProtectionOption`](interfaces/EditBranchProtectionOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`BranchProtection`](interfaces/BranchProtection.md)\>\> |
+| `repoEditGitHook` | (`owner`: `string`, `repo`: `string`, `id`: `string`, `body?`: [`EditGitHookOption`](interfaces/EditGitHookOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`GitHook`](interfaces/GitHook.md)\>\> |
+| `repoEditHook` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `body?`: [`EditHookOption`](interfaces/EditHookOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Hook`](interfaces/Hook.md)\>\> |
+| `repoEditPullRequest` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `body?`: [`EditPullRequestOption`](interfaces/EditPullRequestOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`PullRequest`](interfaces/PullRequest.md)\>\> |
+| `repoEditRelease` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `body?`: [`EditReleaseOption`](interfaces/EditReleaseOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Release`](interfaces/Release.md)\>\> |
+| `repoEditReleaseAttachment` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `attachmentId`: `number`, `body?`: [`EditAttachmentOptions`](interfaces/EditAttachmentOptions.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Attachment`](interfaces/Attachment.md)\>\> |
+| `repoEditWikiPage` | (`owner`: `string`, `repo`: `string`, `pageName`: `string`, `body?`: [`CreateWikiPageOptions`](interfaces/CreateWikiPageOptions.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`WikiPage`](interfaces/WikiPage.md)\>\> |
+| `repoGet` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Repository`](interfaces/Repository.md)\>\> |
+| `repoGetAllCommits` | (`owner`: `string`, `repo`: `string`, `sha?`: `string`, `path?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Commit`](interfaces/Commit.md)[]\>\> |
+| `repoGetArchive` | (`owner`: `string`, `repo`: `string`, `archive`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `repoGetAssignees` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`User`](interfaces/User.md)[]\>\> |
+| `repoGetBranch` | (`owner`: `string`, `repo`: `string`, `branch`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Branch`](interfaces/Branch.md)\>\> |
+| `repoGetBranchProtection` | (`owner`: `string`, `repo`: `string`, `name`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`BranchProtection`](interfaces/BranchProtection.md)\>\> |
+| `repoGetByID` | (`id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Repository`](interfaces/Repository.md)\>\> |
+| `repoGetCombinedStatusByRef` | (`owner`: `string`, `repo`: `string`, `ref`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`CombinedStatus`](interfaces/CombinedStatus.md)\>\> |
+| `repoGetContents` | (`owner`: `string`, `repo`: `string`, `filepath`: `string`, `ref?`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`ContentsResponse`](interfaces/ContentsResponse.md)\>\> |
+| `repoGetContentsList` | (`owner`: `string`, `repo`: `string`, `ref?`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`ContentsResponse`](interfaces/ContentsResponse.md)[]\>\> |
+| `repoGetEditorConfig` | (`owner`: `string`, `repo`: `string`, `filepath`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `repoGetGitHook` | (`owner`: `string`, `repo`: `string`, `id`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`GitHook`](interfaces/GitHook.md)\>\> |
+| `repoGetHook` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Hook`](interfaces/Hook.md)\>\> |
+| `repoGetIssueTemplates` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`IssueTemplate`](interfaces/IssueTemplate.md)[]\>\> |
+| `repoGetKey` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`DeployKey`](interfaces/DeployKey.md)\>\> |
+| `repoGetLanguages` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<{ `[key: string]`: `number`;  }\>\> |
+| `repoGetNote` | (`owner`: `string`, `repo`: `string`, `sha`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Note`](interfaces/Note.md)\>\> |
+| `repoGetPullRequest` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`PullRequest`](interfaces/PullRequest.md)\>\> |
+| `repoGetPullRequestCommits` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Commit`](interfaces/Commit.md)[]\>\> |
+| `repoGetPullReview` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`PullReview`](interfaces/PullReview.md)\>\> |
+| `repoGetPullReviewComments` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`PullReviewComment`](interfaces/PullReviewComment.md)[]\>\> |
+| `repoGetRawFile` | (`owner`: `string`, `repo`: `string`, `filepath`: `string`, `ref?`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `repoGetRelease` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Release`](interfaces/Release.md)\>\> |
+| `repoGetReleaseAttachment` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `attachmentId`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Attachment`](interfaces/Attachment.md)\>\> |
+| `repoGetReleaseByTag` | (`owner`: `string`, `repo`: `string`, `tag`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Release`](interfaces/Release.md)\>\> |
+| `repoGetReviewers` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`User`](interfaces/User.md)[]\>\> |
+| `repoGetSingleCommit` | (`owner`: `string`, `repo`: `string`, `sha`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Commit`](interfaces/Commit.md)\>\> |
+| `repoGetTag` | (`owner`: `string`, `repo`: `string`, `tag`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Tag`](interfaces/Tag.md)\>\> |
+| `repoGetWikiPage` | (`owner`: `string`, `repo`: `string`, `pageName`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`WikiPage`](interfaces/WikiPage.md)\>\> |
+| `repoGetWikiPageRevisions` | (`owner`: `string`, `repo`: `string`, `pageName`: `string`, `page?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`WikiCommitList`](interfaces/WikiCommitList.md)\>\> |
+| `repoGetWikiPages` | (`owner`: `string`, `repo`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`WikiPageMetaData`](interfaces/WikiPageMetaData.md)[]\>\> |
+| `repoListAllGitRefs` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Reference`](interfaces/Reference.md)[]\>\> |
+| `repoListBranchProtection` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`BranchProtection`](interfaces/BranchProtection.md)[]\>\> |
+| `repoListBranches` | (`owner`: `string`, `repo`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Branch`](interfaces/Branch.md)[]\>\> |
+| `repoListCollaborators` | (`owner`: `string`, `repo`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`User`](interfaces/User.md)[]\>\> |
+| `repoListGitHooks` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`GitHook`](interfaces/GitHook.md)[]\>\> |
+| `repoListGitRefs` | (`owner`: `string`, `repo`: `string`, `ref`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Reference`](interfaces/Reference.md)[]\>\> |
+| `repoListHooks` | (`owner`: `string`, `repo`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Hook`](interfaces/Hook.md)[]\>\> |
+| `repoListKeys` | (`owner`: `string`, `repo`: `string`, `keyId?`: `number`, `fingerprint?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`DeployKey`](interfaces/DeployKey.md)[]\>\> |
+| `repoListPullRequests` | (`owner`: `string`, `repo`: `string`, `state?`: ``"all"`` \| ``"closed"`` \| ``"open"``, `sort?`: ``"priority"`` \| ``"oldest"`` \| ``"recentupdate"`` \| ``"leastupdate"`` \| ``"mostcomment"`` \| ``"leastcomment"``, `milestone?`: `number`, `labels?`: `number`[], `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`PullRequest`](interfaces/PullRequest.md)[]\>\> |
+| `repoListPullReviews` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`PullReview`](interfaces/PullReview.md)[]\>\> |
+| `repoListReleaseAttachments` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Attachment`](interfaces/Attachment.md)[]\>\> |
+| `repoListReleases` | (`owner`: `string`, `repo`: `string`, `draft?`: `boolean`, `preRelease?`: `boolean`, `perPage?`: `number`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Release`](interfaces/Release.md)[]\>\> |
+| `repoListStargazers` | (`owner`: `string`, `repo`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`User`](interfaces/User.md)[]\>\> |
+| `repoListStatuses` | (`owner`: `string`, `repo`: `string`, `sha`: `string`, `sort?`: ``"oldest"`` \| ``"recentupdate"`` \| ``"leastupdate"`` \| ``"leastindex"`` \| ``"highestindex"``, `state?`: ``"error"`` \| ``"pending"`` \| ``"success"`` \| ``"failure"`` \| ``"warning"``, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`CommitStatus`](interfaces/CommitStatus.md)[]\>\> |
+| `repoListStatusesByRef` | (`owner`: `string`, `repo`: `string`, `ref`: `string`, `sort?`: ``"oldest"`` \| ``"recentupdate"`` \| ``"leastupdate"`` \| ``"leastindex"`` \| ``"highestindex"``, `state?`: ``"error"`` \| ``"pending"`` \| ``"success"`` \| ``"failure"`` \| ``"warning"``, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`CommitStatus`](interfaces/CommitStatus.md)[]\>\> |
+| `repoListSubscribers` | (`owner`: `string`, `repo`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`User`](interfaces/User.md)[]\>\> |
+| `repoListTags` | (`owner`: `string`, `repo`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Tag`](interfaces/Tag.md)[]\>\> |
+| `repoListTeams` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Team`](interfaces/Team.md)[]\>\> |
+| `repoListTopics` | (`owner`: `string`, `repo`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`TopicName`](interfaces/TopicName.md)\>\> |
+| `repoMergePullRequest` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `body?`: [`MergePullRequestOption`](interfaces/MergePullRequestOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `repoMigrate` | (`body?`: [`MigrateRepoOptions`](interfaces/MigrateRepoOptions.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Repository`](interfaces/Repository.md)\>\> |
+| `repoMirrorSync` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `repoPullRequestIsMerged` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `repoSearch` | (`q?`: `string`, `topic?`: `boolean`, `includeDesc?`: `boolean`, `uid?`: `number`, `priorityOwnerId?`: `number`, `teamId?`: `number`, `starredBy?`: `number`, `_private?`: `boolean`, `isPrivate?`: `boolean`, `template?`: `boolean`, `archived?`: `boolean`, `mode?`: `string`, `exclusive?`: `boolean`, `repo?`: `string`, `owner?`: `string`, `lang?`: `string`, `subject?`: `string`, `book?`: `string`, `includeMetadata?`: `boolean`, `sort?`: `string`, `order?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`SearchResults`](interfaces/SearchResults.md)\>\> |
+| `repoSigningKey` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`string`\>\> |
+| `repoSubmitPullReview` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `id`: `number`, `body`: [`SubmitPullReviewOptions`](interfaces/SubmitPullReviewOptions.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`PullReview`](interfaces/PullReview.md)\>\> |
+| `repoTestHook` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `repoTrackedTimes` | (`owner`: `string`, `repo`: `string`, `user?`: `string`, `since?`: `string`, `before?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`TrackedTime`](interfaces/TrackedTime.md)[]\>\> |
+| `repoTransfer` | (`owner`: `string`, `repo`: `string`, `body`: [`TransferRepoOption`](interfaces/TransferRepoOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Repository`](interfaces/Repository.md)\>\> |
+| `repoUnDismissPullReview` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`PullReview`](interfaces/PullReview.md)\>\> |
+| `repoUpdateFile` | (`owner`: `string`, `repo`: `string`, `filepath`: `string`, `body`: [`UpdateFileOptions`](interfaces/UpdateFileOptions.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`FileResponse`](interfaces/FileResponse.md)\>\> |
+| `repoUpdatePullRequest` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `style?`: ``"merge"`` \| ``"rebase"``, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `repoUpdateTopics` | (`owner`: `string`, `repo`: `string`, `body?`: [`RepoTopicOptions`](interfaces/RepoTopicOptions.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `topicSearch` | (`q`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`TopicResponse`](interfaces/TopicResponse.md)[]\>\> |
+| `userCurrentCheckSubscription` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`WatchInfo`](interfaces/WatchInfo.md)\>\> |
+| `userCurrentDeleteSubscription` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `userCurrentPutSubscription` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`WatchInfo`](interfaces/WatchInfo.md)\>\> |
+| `userTrackedTimes` | (`owner`: `string`, `repo`: `string`, `user`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`TrackedTime`](interfaces/TrackedTime.md)[]\>\> |
 
 #### Defined in
 
-[apis/repository-api.ts:13512](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/repository-api.ts#L13512)
+[apis/repository-api.ts:8540](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L8540)
 
 ___
 
@@ -1461,7 +1757,7 @@ SettingsApi - axios parameter creator
 
 #### Defined in
 
-[apis/settings-api.ts:27](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/settings-api.ts#L27)
+[apis/settings-api.ts:35](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/settings-api.ts#L35)
 
 ___
 
@@ -1487,14 +1783,14 @@ SettingsApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `getGeneralAPISettings` | (`options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`GeneralAPISettings`](interfaces/GeneralAPISettings.md)\>\> |
-| `getGeneralAttachmentSettings` | (`options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`GeneralAttachmentSettings`](interfaces/GeneralAttachmentSettings.md)\>\> |
-| `getGeneralRepositorySettings` | (`options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`GeneralRepoSettings`](interfaces/GeneralRepoSettings.md)\>\> |
-| `getGeneralUISettings` | (`options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`GeneralUISettings`](interfaces/GeneralUISettings.md)\>\> |
+| `getGeneralAPISettings` | (`options?`: `any`) => `AxiosPromise`<[`GeneralAPISettings`](interfaces/GeneralAPISettings.md)\> |
+| `getGeneralAttachmentSettings` | (`options?`: `any`) => `AxiosPromise`<[`GeneralAttachmentSettings`](interfaces/GeneralAttachmentSettings.md)\> |
+| `getGeneralRepositorySettings` | (`options?`: `any`) => `AxiosPromise`<[`GeneralRepoSettings`](interfaces/GeneralRepoSettings.md)\> |
+| `getGeneralUISettings` | (`options?`: `any`) => `AxiosPromise`<[`GeneralUISettings`](interfaces/GeneralUISettings.md)\> |
 
 #### Defined in
 
-[apis/settings-api.ts:445](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/settings-api.ts#L445)
+[apis/settings-api.ts:302](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/settings-api.ts#L302)
 
 ___
 
@@ -1518,14 +1814,14 @@ SettingsApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `getGeneralAPISettings` | (`options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`GeneralAPISettings`](interfaces/GeneralAPISettings.md)\>\>\> |
-| `getGeneralAttachmentSettings` | (`options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`GeneralAttachmentSettings`](interfaces/GeneralAttachmentSettings.md)\>\>\> |
-| `getGeneralRepositorySettings` | (`options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`GeneralRepoSettings`](interfaces/GeneralRepoSettings.md)\>\>\> |
-| `getGeneralUISettings` | (`options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`GeneralUISettings`](interfaces/GeneralUISettings.md)\>\>\> |
+| `getGeneralAPISettings` | (`options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`GeneralAPISettings`](interfaces/GeneralAPISettings.md)\>\> |
+| `getGeneralAttachmentSettings` | (`options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`GeneralAttachmentSettings`](interfaces/GeneralAttachmentSettings.md)\>\> |
+| `getGeneralRepositorySettings` | (`options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`GeneralRepoSettings`](interfaces/GeneralRepoSettings.md)\>\> |
+| `getGeneralUISettings` | (`options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`GeneralUISettings`](interfaces/GeneralUISettings.md)\>\> |
 
 #### Defined in
 
-[apis/settings-api.ts:384](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/settings-api.ts#L384)
+[apis/settings-api.ts:252](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/settings-api.ts#L252)
 
 ___
 
@@ -1556,7 +1852,7 @@ UserApi - axios parameter creator
 | `userAddEmail` | (`body?`: [`CreateEmailOption`](interfaces/CreateEmailOption.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `userCheckFollowing` | (`follower`: `string`, `followee`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `userCreateOAuth2Application` | (`body`: [`CreateOAuth2ApplicationOptions`](interfaces/CreateOAuth2ApplicationOptions.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
-| `userCreateToken` | (`username`: `string`, `body?`: [`CreateAccessTokenOption`](interfaces/CreateAccessTokenOption.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
+| `userCreateToken` | (`username`: `string`, `userCreateToken?`: [`CreateAccessTokenOption`](interfaces/CreateAccessTokenOption.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `userCurrentCheckFollowing` | (`username`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `userCurrentCheckStarring` | (`owner`: `string`, `repo`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `userCurrentDeleteFollow` | (`username`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
@@ -1572,11 +1868,11 @@ UserApi - axios parameter creator
 | `userCurrentListRepos` | (`page?`: `number`, `limit?`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `userCurrentListStarred` | (`page?`: `number`, `limit?`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `userCurrentListSubscriptions` | (`page?`: `number`, `limit?`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
-| `userCurrentPostGPGKey` | (`body?`: [`CreateGPGKeyOption`](interfaces/CreateGPGKeyOption.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
+| `userCurrentPostGPGKey` | (`form?`: [`CreateGPGKeyOption`](interfaces/CreateGPGKeyOption.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `userCurrentPostKey` | (`body?`: [`CreateKeyOption`](interfaces/CreateKeyOption.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `userCurrentPutFollow` | (`username`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `userCurrentPutStar` | (`owner`: `string`, `repo`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
-| `userCurrentTrackedTimes` | (`since?`: `Date`, `before?`: `Date`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
+| `userCurrentTrackedTimes` | (`since?`: `string`, `before?`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `userDeleteAccessToken` | (`username`: `string`, `token`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `userDeleteEmail` | (`body?`: [`DeleteEmailOption`](interfaces/DeleteEmailOption.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `userDeleteOAuth2Application` | (`id`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
@@ -1597,12 +1893,12 @@ UserApi - axios parameter creator
 | `userListSubscriptions` | (`username`: `string`, `page?`: `number`, `limit?`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `userListTeams` | (`page?`: `number`, `limit?`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `userSearch` | (`q?`: `string`, `uid?`: `number`, `lang?`: `string`, `page?`: `number`, `limit?`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
-| `userUpdateOAuth2Application` | (`body`: [`CreateOAuth2ApplicationOptions`](interfaces/CreateOAuth2ApplicationOptions.md), `id`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
+| `userUpdateOAuth2Application` | (`id`: `number`, `body`: [`CreateOAuth2ApplicationOptions`](interfaces/CreateOAuth2ApplicationOptions.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `userVerifyGPGKey` | (`options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 
 #### Defined in
 
-[apis/user-api.ts:44](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/user-api.ts#L44)
+[apis/user-api.ts:69](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L69)
 
 ___
 
@@ -1628,60 +1924,60 @@ UserApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `createCurrentUserRepo` | (`body?`: [`CreateRepoOption`](interfaces/CreateRepoOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Repository`](interfaces/Repository.md)\>\> |
-| `getUserSettings` | (`options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`UserSettings`](interfaces/UserSettings.md)[]\>\> |
-| `getVerificationToken` | (`options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`string`\>\> |
-| `updateUserSettings` | (`body?`: [`UserSettingsOptions`](interfaces/UserSettingsOptions.md), `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`UserSettings`](interfaces/UserSettings.md)[]\>\> |
-| `userAddEmail` | (`body?`: [`CreateEmailOption`](interfaces/CreateEmailOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Email`](interfaces/Email.md)[]\>\> |
-| `userCheckFollowing` | (`follower`: `string`, `followee`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `userCreateOAuth2Application` | (`body`: [`CreateOAuth2ApplicationOptions`](interfaces/CreateOAuth2ApplicationOptions.md), `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`OAuth2Application`](interfaces/OAuth2Application.md)\>\> |
-| `userCreateToken` | (`username`: `string`, `body?`: [`CreateAccessTokenOption`](interfaces/CreateAccessTokenOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`AccessToken`](interfaces/AccessToken.md)\>\> |
-| `userCurrentCheckFollowing` | (`username`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `userCurrentCheckStarring` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `userCurrentDeleteFollow` | (`username`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `userCurrentDeleteGPGKey` | (`id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `userCurrentDeleteKey` | (`id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `userCurrentDeleteStar` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `userCurrentGetGPGKey` | (`id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`GPGKey`](interfaces/GPGKey.md)\>\> |
-| `userCurrentGetKey` | (`id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`PublicKey`](interfaces/PublicKey.md)\>\> |
-| `userCurrentListFollowers` | (`page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`User`](interfaces/User.md)[]\>\> |
-| `userCurrentListFollowing` | (`page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`User`](interfaces/User.md)[]\>\> |
-| `userCurrentListGPGKeys` | (`page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`GPGKey`](interfaces/GPGKey.md)[]\>\> |
-| `userCurrentListKeys` | (`fingerprint?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`PublicKey`](interfaces/PublicKey.md)[]\>\> |
-| `userCurrentListRepos` | (`page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Repository`](interfaces/Repository.md)[]\>\> |
-| `userCurrentListStarred` | (`page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Repository`](interfaces/Repository.md)[]\>\> |
-| `userCurrentListSubscriptions` | (`page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Repository`](interfaces/Repository.md)[]\>\> |
-| `userCurrentPostGPGKey` | (`body?`: [`CreateGPGKeyOption`](interfaces/CreateGPGKeyOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`GPGKey`](interfaces/GPGKey.md)\>\> |
-| `userCurrentPostKey` | (`body?`: [`CreateKeyOption`](interfaces/CreateKeyOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`PublicKey`](interfaces/PublicKey.md)\>\> |
-| `userCurrentPutFollow` | (`username`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `userCurrentPutStar` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `userCurrentTrackedTimes` | (`since?`: `Date`, `before?`: `Date`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`TrackedTime`](interfaces/TrackedTime.md)[]\>\> |
-| `userDeleteAccessToken` | (`username`: `string`, `token`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `userDeleteEmail` | (`body?`: [`DeleteEmailOption`](interfaces/DeleteEmailOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `userDeleteOAuth2Application` | (`id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<`void`\>\> |
-| `userGet` | (`username`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`User`](interfaces/User.md)\>\> |
-| `userGetCurrent` | (`options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`User`](interfaces/User.md)\>\> |
-| `userGetHeatmapData` | (`username`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`UserHeatmapData`](interfaces/UserHeatmapData.md)[]\>\> |
-| `userGetOAuth2Application` | (`id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`OAuth2Application`](interfaces/OAuth2Application.md)\>\> |
-| `userGetOauth2Application` | (`page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`OAuth2Application`](interfaces/OAuth2Application.md)[]\>\> |
-| `userGetStopWatches` | (`page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`StopWatch`](interfaces/StopWatch.md)[]\>\> |
-| `userGetTokens` | (`username`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`AccessToken`](interfaces/AccessToken.md)[]\>\> |
-| `userListEmails` | (`options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Email`](interfaces/Email.md)[]\>\> |
-| `userListFollowers` | (`username`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`User`](interfaces/User.md)[]\>\> |
-| `userListFollowing` | (`username`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`User`](interfaces/User.md)[]\>\> |
-| `userListGPGKeys` | (`username`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`GPGKey`](interfaces/GPGKey.md)[]\>\> |
-| `userListKeys` | (`username`: `string`, `fingerprint?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`PublicKey`](interfaces/PublicKey.md)[]\>\> |
-| `userListRepos` | (`username`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Repository`](interfaces/Repository.md)[]\>\> |
-| `userListStarred` | (`username`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Repository`](interfaces/Repository.md)[]\>\> |
-| `userListSubscriptions` | (`username`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Repository`](interfaces/Repository.md)[]\>\> |
-| `userListTeams` | (`page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`Team`](interfaces/Team.md)[]\>\> |
-| `userSearch` | (`q?`: `string`, `uid?`: `number`, `lang?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`InlineResponse2001`](interfaces/InlineResponse2001.md)\>\> |
-| `userUpdateOAuth2Application` | (`body`: [`CreateOAuth2ApplicationOptions`](interfaces/CreateOAuth2ApplicationOptions.md), `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`OAuth2Application`](interfaces/OAuth2Application.md)\>\> |
-| `userVerifyGPGKey` | (`options?`: `AxiosRequestConfig`) => `Promise`<`AxiosResponse`<[`GPGKey`](interfaces/GPGKey.md)\>\> |
+| `createCurrentUserRepo` | (`body?`: [`CreateRepoOption`](interfaces/CreateRepoOption.md), `options?`: `any`) => `AxiosPromise`<[`Repository`](interfaces/Repository.md)\> |
+| `getUserSettings` | (`options?`: `any`) => `AxiosPromise`<[`UserSettings`](interfaces/UserSettings.md)[]\> |
+| `getVerificationToken` | (`options?`: `any`) => `AxiosPromise`<`string`\> |
+| `updateUserSettings` | (`body?`: [`UserSettingsOptions`](interfaces/UserSettingsOptions.md), `options?`: `any`) => `AxiosPromise`<[`UserSettings`](interfaces/UserSettings.md)[]\> |
+| `userAddEmail` | (`body?`: [`CreateEmailOption`](interfaces/CreateEmailOption.md), `options?`: `any`) => `AxiosPromise`<[`Email`](interfaces/Email.md)[]\> |
+| `userCheckFollowing` | (`follower`: `string`, `followee`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `userCreateOAuth2Application` | (`body`: [`CreateOAuth2ApplicationOptions`](interfaces/CreateOAuth2ApplicationOptions.md), `options?`: `any`) => `AxiosPromise`<[`OAuth2Application`](interfaces/OAuth2Application.md)\> |
+| `userCreateToken` | (`username`: `string`, `userCreateToken?`: [`CreateAccessTokenOption`](interfaces/CreateAccessTokenOption.md), `options?`: `any`) => `AxiosPromise`<[`AccessToken`](interfaces/AccessToken.md)\> |
+| `userCurrentCheckFollowing` | (`username`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `userCurrentCheckStarring` | (`owner`: `string`, `repo`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `userCurrentDeleteFollow` | (`username`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `userCurrentDeleteGPGKey` | (`id`: `number`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `userCurrentDeleteKey` | (`id`: `number`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `userCurrentDeleteStar` | (`owner`: `string`, `repo`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `userCurrentGetGPGKey` | (`id`: `number`, `options?`: `any`) => `AxiosPromise`<[`GPGKey`](interfaces/GPGKey.md)\> |
+| `userCurrentGetKey` | (`id`: `number`, `options?`: `any`) => `AxiosPromise`<[`PublicKey`](interfaces/PublicKey.md)\> |
+| `userCurrentListFollowers` | (`page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`User`](interfaces/User.md)[]\> |
+| `userCurrentListFollowing` | (`page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`User`](interfaces/User.md)[]\> |
+| `userCurrentListGPGKeys` | (`page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`GPGKey`](interfaces/GPGKey.md)[]\> |
+| `userCurrentListKeys` | (`fingerprint?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`PublicKey`](interfaces/PublicKey.md)[]\> |
+| `userCurrentListRepos` | (`page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`Repository`](interfaces/Repository.md)[]\> |
+| `userCurrentListStarred` | (`page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`Repository`](interfaces/Repository.md)[]\> |
+| `userCurrentListSubscriptions` | (`page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`Repository`](interfaces/Repository.md)[]\> |
+| `userCurrentPostGPGKey` | (`form?`: [`CreateGPGKeyOption`](interfaces/CreateGPGKeyOption.md), `options?`: `any`) => `AxiosPromise`<[`GPGKey`](interfaces/GPGKey.md)\> |
+| `userCurrentPostKey` | (`body?`: [`CreateKeyOption`](interfaces/CreateKeyOption.md), `options?`: `any`) => `AxiosPromise`<[`PublicKey`](interfaces/PublicKey.md)\> |
+| `userCurrentPutFollow` | (`username`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `userCurrentPutStar` | (`owner`: `string`, `repo`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `userCurrentTrackedTimes` | (`since?`: `string`, `before?`: `string`, `options?`: `any`) => `AxiosPromise`<[`TrackedTime`](interfaces/TrackedTime.md)[]\> |
+| `userDeleteAccessToken` | (`username`: `string`, `token`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `userDeleteEmail` | (`body?`: [`DeleteEmailOption`](interfaces/DeleteEmailOption.md), `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `userDeleteOAuth2Application` | (`id`: `number`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `userGet` | (`username`: `string`, `options?`: `any`) => `AxiosPromise`<[`User`](interfaces/User.md)\> |
+| `userGetCurrent` | (`options?`: `any`) => `AxiosPromise`<[`User`](interfaces/User.md)\> |
+| `userGetHeatmapData` | (`username`: `string`, `options?`: `any`) => `AxiosPromise`<[`UserHeatmapData`](interfaces/UserHeatmapData.md)[]\> |
+| `userGetOAuth2Application` | (`id`: `number`, `options?`: `any`) => `AxiosPromise`<[`OAuth2Application`](interfaces/OAuth2Application.md)\> |
+| `userGetOauth2Application` | (`page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`OAuth2Application`](interfaces/OAuth2Application.md)[]\> |
+| `userGetStopWatches` | (`page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`StopWatch`](interfaces/StopWatch.md)[]\> |
+| `userGetTokens` | (`username`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`AccessToken`](interfaces/AccessToken.md)[]\> |
+| `userListEmails` | (`options?`: `any`) => `AxiosPromise`<[`Email`](interfaces/Email.md)[]\> |
+| `userListFollowers` | (`username`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`User`](interfaces/User.md)[]\> |
+| `userListFollowing` | (`username`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`User`](interfaces/User.md)[]\> |
+| `userListGPGKeys` | (`username`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`GPGKey`](interfaces/GPGKey.md)[]\> |
+| `userListKeys` | (`username`: `string`, `fingerprint?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`PublicKey`](interfaces/PublicKey.md)[]\> |
+| `userListRepos` | (`username`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`Repository`](interfaces/Repository.md)[]\> |
+| `userListStarred` | (`username`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`Repository`](interfaces/Repository.md)[]\> |
+| `userListSubscriptions` | (`username`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`Repository`](interfaces/Repository.md)[]\> |
+| `userListTeams` | (`page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`Team`](interfaces/Team.md)[]\> |
+| `userSearch` | (`q?`: `string`, `uid?`: `number`, `lang?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`UserSearch200Response`](interfaces/UserSearch200Response.md)\> |
+| `userUpdateOAuth2Application` | (`id`: `number`, `body`: [`CreateOAuth2ApplicationOptions`](interfaces/CreateOAuth2ApplicationOptions.md), `options?`: `any`) => `AxiosPromise`<[`OAuth2Application`](interfaces/OAuth2Application.md)\> |
+| `userVerifyGPGKey` | (`options?`: `any`) => `AxiosPromise`<[`GPGKey`](interfaces/GPGKey.md)\> |
 
 #### Defined in
 
-[apis/user-api.ts:5615](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/user-api.ts#L5615)
+[apis/user-api.ts:3666](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L3666)
 
 ___
 
@@ -1705,57 +2001,57 @@ UserApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `createCurrentUserRepo` | (`body?`: [`CreateRepoOption`](interfaces/CreateRepoOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Repository`](interfaces/Repository.md)\>\>\> |
-| `getUserSettings` | (`options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`UserSettings`](interfaces/UserSettings.md)[]\>\>\> |
-| `getVerificationToken` | (`options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`string`\>\>\> |
-| `updateUserSettings` | (`body?`: [`UserSettingsOptions`](interfaces/UserSettingsOptions.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`UserSettings`](interfaces/UserSettings.md)[]\>\>\> |
-| `userAddEmail` | (`body?`: [`CreateEmailOption`](interfaces/CreateEmailOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Email`](interfaces/Email.md)[]\>\>\> |
-| `userCheckFollowing` | (`follower`: `string`, `followee`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `userCreateOAuth2Application` | (`body`: [`CreateOAuth2ApplicationOptions`](interfaces/CreateOAuth2ApplicationOptions.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`OAuth2Application`](interfaces/OAuth2Application.md)\>\>\> |
-| `userCreateToken` | (`username`: `string`, `body?`: [`CreateAccessTokenOption`](interfaces/CreateAccessTokenOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`AccessToken`](interfaces/AccessToken.md)\>\>\> |
-| `userCurrentCheckFollowing` | (`username`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `userCurrentCheckStarring` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `userCurrentDeleteFollow` | (`username`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `userCurrentDeleteGPGKey` | (`id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `userCurrentDeleteKey` | (`id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `userCurrentDeleteStar` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `userCurrentGetGPGKey` | (`id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`GPGKey`](interfaces/GPGKey.md)\>\>\> |
-| `userCurrentGetKey` | (`id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`PublicKey`](interfaces/PublicKey.md)\>\>\> |
-| `userCurrentListFollowers` | (`page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`User`](interfaces/User.md)[]\>\>\> |
-| `userCurrentListFollowing` | (`page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`User`](interfaces/User.md)[]\>\>\> |
-| `userCurrentListGPGKeys` | (`page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`GPGKey`](interfaces/GPGKey.md)[]\>\>\> |
-| `userCurrentListKeys` | (`fingerprint?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`PublicKey`](interfaces/PublicKey.md)[]\>\>\> |
-| `userCurrentListRepos` | (`page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Repository`](interfaces/Repository.md)[]\>\>\> |
-| `userCurrentListStarred` | (`page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Repository`](interfaces/Repository.md)[]\>\>\> |
-| `userCurrentListSubscriptions` | (`page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Repository`](interfaces/Repository.md)[]\>\>\> |
-| `userCurrentPostGPGKey` | (`body?`: [`CreateGPGKeyOption`](interfaces/CreateGPGKeyOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`GPGKey`](interfaces/GPGKey.md)\>\>\> |
-| `userCurrentPostKey` | (`body?`: [`CreateKeyOption`](interfaces/CreateKeyOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`PublicKey`](interfaces/PublicKey.md)\>\>\> |
-| `userCurrentPutFollow` | (`username`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `userCurrentPutStar` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `userCurrentTrackedTimes` | (`since?`: `Date`, `before?`: `Date`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`TrackedTime`](interfaces/TrackedTime.md)[]\>\>\> |
-| `userDeleteAccessToken` | (`username`: `string`, `token`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `userDeleteEmail` | (`body?`: [`DeleteEmailOption`](interfaces/DeleteEmailOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `userDeleteOAuth2Application` | (`id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<`void`\>\>\> |
-| `userGet` | (`username`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`User`](interfaces/User.md)\>\>\> |
-| `userGetCurrent` | (`options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`User`](interfaces/User.md)\>\>\> |
-| `userGetHeatmapData` | (`username`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`UserHeatmapData`](interfaces/UserHeatmapData.md)[]\>\>\> |
-| `userGetOAuth2Application` | (`id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`OAuth2Application`](interfaces/OAuth2Application.md)\>\>\> |
-| `userGetOauth2Application` | (`page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`OAuth2Application`](interfaces/OAuth2Application.md)[]\>\>\> |
-| `userGetStopWatches` | (`page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`StopWatch`](interfaces/StopWatch.md)[]\>\>\> |
-| `userGetTokens` | (`username`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`AccessToken`](interfaces/AccessToken.md)[]\>\>\> |
-| `userListEmails` | (`options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Email`](interfaces/Email.md)[]\>\>\> |
-| `userListFollowers` | (`username`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`User`](interfaces/User.md)[]\>\>\> |
-| `userListFollowing` | (`username`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`User`](interfaces/User.md)[]\>\>\> |
-| `userListGPGKeys` | (`username`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`GPGKey`](interfaces/GPGKey.md)[]\>\>\> |
-| `userListKeys` | (`username`: `string`, `fingerprint?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`PublicKey`](interfaces/PublicKey.md)[]\>\>\> |
-| `userListRepos` | (`username`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Repository`](interfaces/Repository.md)[]\>\>\> |
-| `userListStarred` | (`username`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Repository`](interfaces/Repository.md)[]\>\>\> |
-| `userListSubscriptions` | (`username`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Repository`](interfaces/Repository.md)[]\>\>\> |
-| `userListTeams` | (`page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`Team`](interfaces/Team.md)[]\>\>\> |
-| `userSearch` | (`q?`: `string`, `uid?`: `number`, `lang?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`InlineResponse2001`](interfaces/InlineResponse2001.md)\>\>\> |
-| `userUpdateOAuth2Application` | (`body`: [`CreateOAuth2ApplicationOptions`](interfaces/CreateOAuth2ApplicationOptions.md), `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`OAuth2Application`](interfaces/OAuth2Application.md)\>\>\> |
-| `userVerifyGPGKey` | (`options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `Promise`<`AxiosResponse`<[`GPGKey`](interfaces/GPGKey.md)\>\>\> |
+| `createCurrentUserRepo` | (`body?`: [`CreateRepoOption`](interfaces/CreateRepoOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Repository`](interfaces/Repository.md)\>\> |
+| `getUserSettings` | (`options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`UserSettings`](interfaces/UserSettings.md)[]\>\> |
+| `getVerificationToken` | (`options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`string`\>\> |
+| `updateUserSettings` | (`body?`: [`UserSettingsOptions`](interfaces/UserSettingsOptions.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`UserSettings`](interfaces/UserSettings.md)[]\>\> |
+| `userAddEmail` | (`body?`: [`CreateEmailOption`](interfaces/CreateEmailOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Email`](interfaces/Email.md)[]\>\> |
+| `userCheckFollowing` | (`follower`: `string`, `followee`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `userCreateOAuth2Application` | (`body`: [`CreateOAuth2ApplicationOptions`](interfaces/CreateOAuth2ApplicationOptions.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`OAuth2Application`](interfaces/OAuth2Application.md)\>\> |
+| `userCreateToken` | (`username`: `string`, `userCreateToken?`: [`CreateAccessTokenOption`](interfaces/CreateAccessTokenOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`AccessToken`](interfaces/AccessToken.md)\>\> |
+| `userCurrentCheckFollowing` | (`username`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `userCurrentCheckStarring` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `userCurrentDeleteFollow` | (`username`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `userCurrentDeleteGPGKey` | (`id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `userCurrentDeleteKey` | (`id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `userCurrentDeleteStar` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `userCurrentGetGPGKey` | (`id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`GPGKey`](interfaces/GPGKey.md)\>\> |
+| `userCurrentGetKey` | (`id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`PublicKey`](interfaces/PublicKey.md)\>\> |
+| `userCurrentListFollowers` | (`page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`User`](interfaces/User.md)[]\>\> |
+| `userCurrentListFollowing` | (`page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`User`](interfaces/User.md)[]\>\> |
+| `userCurrentListGPGKeys` | (`page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`GPGKey`](interfaces/GPGKey.md)[]\>\> |
+| `userCurrentListKeys` | (`fingerprint?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`PublicKey`](interfaces/PublicKey.md)[]\>\> |
+| `userCurrentListRepos` | (`page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Repository`](interfaces/Repository.md)[]\>\> |
+| `userCurrentListStarred` | (`page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Repository`](interfaces/Repository.md)[]\>\> |
+| `userCurrentListSubscriptions` | (`page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Repository`](interfaces/Repository.md)[]\>\> |
+| `userCurrentPostGPGKey` | (`form?`: [`CreateGPGKeyOption`](interfaces/CreateGPGKeyOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`GPGKey`](interfaces/GPGKey.md)\>\> |
+| `userCurrentPostKey` | (`body?`: [`CreateKeyOption`](interfaces/CreateKeyOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`PublicKey`](interfaces/PublicKey.md)\>\> |
+| `userCurrentPutFollow` | (`username`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `userCurrentPutStar` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `userCurrentTrackedTimes` | (`since?`: `string`, `before?`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`TrackedTime`](interfaces/TrackedTime.md)[]\>\> |
+| `userDeleteAccessToken` | (`username`: `string`, `token`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `userDeleteEmail` | (`body?`: [`DeleteEmailOption`](interfaces/DeleteEmailOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `userDeleteOAuth2Application` | (`id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `userGet` | (`username`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`User`](interfaces/User.md)\>\> |
+| `userGetCurrent` | (`options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`User`](interfaces/User.md)\>\> |
+| `userGetHeatmapData` | (`username`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`UserHeatmapData`](interfaces/UserHeatmapData.md)[]\>\> |
+| `userGetOAuth2Application` | (`id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`OAuth2Application`](interfaces/OAuth2Application.md)\>\> |
+| `userGetOauth2Application` | (`page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`OAuth2Application`](interfaces/OAuth2Application.md)[]\>\> |
+| `userGetStopWatches` | (`page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`StopWatch`](interfaces/StopWatch.md)[]\>\> |
+| `userGetTokens` | (`username`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`AccessToken`](interfaces/AccessToken.md)[]\>\> |
+| `userListEmails` | (`options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Email`](interfaces/Email.md)[]\>\> |
+| `userListFollowers` | (`username`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`User`](interfaces/User.md)[]\>\> |
+| `userListFollowing` | (`username`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`User`](interfaces/User.md)[]\>\> |
+| `userListGPGKeys` | (`username`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`GPGKey`](interfaces/GPGKey.md)[]\>\> |
+| `userListKeys` | (`username`: `string`, `fingerprint?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`PublicKey`](interfaces/PublicKey.md)[]\>\> |
+| `userListRepos` | (`username`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Repository`](interfaces/Repository.md)[]\>\> |
+| `userListStarred` | (`username`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Repository`](interfaces/Repository.md)[]\>\> |
+| `userListSubscriptions` | (`username`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Repository`](interfaces/Repository.md)[]\>\> |
+| `userListTeams` | (`page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Team`](interfaces/Team.md)[]\>\> |
+| `userSearch` | (`q?`: `string`, `uid?`: `number`, `lang?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`UserSearch200Response`](interfaces/UserSearch200Response.md)\>\> |
+| `userUpdateOAuth2Application` | (`id`: `number`, `body`: [`CreateOAuth2ApplicationOptions`](interfaces/CreateOAuth2ApplicationOptions.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`OAuth2Application`](interfaces/OAuth2Application.md)\>\> |
+| `userVerifyGPGKey` | (`options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`GPGKey`](interfaces/GPGKey.md)\>\> |
 
 #### Defined in
 
-[apis/user-api.ts:4871](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/user-api.ts#L4871)
+[apis/user-api.ts:3071](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L3071)

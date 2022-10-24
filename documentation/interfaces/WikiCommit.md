@@ -27,7 +27,7 @@ WikiCommit page commit/revision
 
 #### Defined in
 
-[models/wiki-commit.ts:26](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/wiki-commit.ts#L26)
+[models/wiki-commit.ts:31](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/wiki-commit.ts#L31)
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 #### Defined in
 
-[models/wiki-commit.ts:32](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/wiki-commit.ts#L32)
+[models/wiki-commit.ts:37](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/wiki-commit.ts#L37)
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 #### Defined in
 
-[models/wiki-commit.ts:38](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/wiki-commit.ts#L38)
+[models/wiki-commit.ts:43](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/wiki-commit.ts#L43)
 
 ___
 
@@ -63,4 +63,4 @@ ___
 
 #### Defined in
 
-[models/wiki-commit.ts:44](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/wiki-commit.ts#L44)
+[models/wiki-commit.ts:49](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/wiki-commit.ts#L49)

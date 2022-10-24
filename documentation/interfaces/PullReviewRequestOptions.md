@@ -13,7 +13,7 @@ PullReviewRequestOptions are options to add or remove pull review requests
 ### Properties
 
 - [reviewers](PullReviewRequestOptions.md#reviewers)
-- [teamReviewers](PullReviewRequestOptions.md#teamreviewers)
+- [team\_reviewers](PullReviewRequestOptions.md#team_reviewers)
 
 ## Properties
 
@@ -25,16 +25,16 @@ PullReviewRequestOptions are options to add or remove pull review requests
 
 #### Defined in
 
-[models/pull-review-request-options.ts:25](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/pull-review-request-options.ts#L25)
+[models/pull-review-request-options.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-review-request-options.ts#L28)
 
 ___
 
-### <a id="teamreviewers" name="teamreviewers"></a> teamReviewers
+### <a id="team_reviewers" name="team_reviewers"></a> team\_reviewers
 
-• `Optional` **teamReviewers**: `string`[]
+• `Optional` **team\_reviewers**: `string`[]
 
 **`memberof`** PullReviewRequestOptions
 
 #### Defined in
 
-[models/pull-review-request-options.ts:31](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/pull-review-request-options.ts#L31)
+[models/pull-review-request-options.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-review-request-options.ts#L34)

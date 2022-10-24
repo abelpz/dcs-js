@@ -13,7 +13,7 @@ CreateKeyOption options when creating a key
 ### Properties
 
 - [key](CreateKeyOption.md#key)
-- [readOnly](CreateKeyOption.md#readonly)
+- [read\_only](CreateKeyOption.md#read_only)
 - [title](CreateKeyOption.md#title)
 
 ## Properties
@@ -28,13 +28,13 @@ An armored SSH key to add
 
 #### Defined in
 
-[models/create-key-option.ts:25](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-key-option.ts#L25)
+[models/create-key-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-key-option.ts#L28)
 
 ___
 
-### <a id="readonly" name="readonly"></a> readOnly
+### <a id="read_only" name="read_only"></a> read\_only
 
-• `Optional` **readOnly**: `boolean`
+• `Optional` **read\_only**: `boolean`
 
 Describe if the key has only read access or read/write
 
@@ -42,7 +42,7 @@ Describe if the key has only read access or read/write
 
 #### Defined in
 
-[models/create-key-option.ts:31](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-key-option.ts#L31)
+[models/create-key-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-key-option.ts#L34)
 
 ___
 
@@ -56,4 +56,4 @@ Title of the key to add
 
 #### Defined in
 
-[models/create-key-option.ts:37](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-key-option.ts#L37)
+[models/create-key-option.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-key-option.ts#L40)
