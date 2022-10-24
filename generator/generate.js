@@ -94,21 +94,26 @@ const parser = new OpenAPIParser();
   };
 
   const handleType = (schema) => {
-    const handlers = {
-      object: () => ({
-        type: schema.type,
-        properties: getProperties(schema),
-      }),
-      array: () => ({ type: getArrayType(schema) }),
-    };
-    const handle = handlers[schema.type];
-    return typeof handle === "function"
-      ? handle()
-      : {
-          type:
-            safeType(schema.type) ??
-            (schema.$ref ? getRefTarget(schema.$ref) : "unknown"),
-        };
+    try {
+      const handlers = {
+        object: () => ({
+          type: schema.type,
+          properties: getProperties(schema),
+        }),
+        array: () => ({ type: getArrayType(schema) }),
+      };
+      const handle = handlers[schema.type];
+      return typeof handle === "function"
+        ? handle()
+        : {
+            type:
+              safeType(schema.type) ??
+              (schema.$ref ? getRefTarget(schema.$ref) : "unknown"),
+          };
+    } catch (err) {
+      console.error(err);
+      console.log(`On:`, schema);
+    }
   };
 
   function prepareModel(model) {

@@ -9,8 +9,8 @@ export function safeType(type) {
 }
 
 export function getRefTarget(ref) {
-  const cleanRef = ref.replaceAll(/\/?#\//g, "").split("/");
-  return pascalCase(cleanRef[cleanRef.length - 1]);
+  const cleanRef = ref?.replaceAll(/\/?#\//g, "").split("/");
+  return cleanRef ? pascalCase(cleanRef[cleanRef.length - 1]) : "unknown";
 }
 export function cleanText(text) {
   return text.replaceAll(/\**\/\**/g, "");
