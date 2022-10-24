@@ -29,7 +29,7 @@ GeneralRepoSettings contains global repository settings exposed by API
 
 #### Defined in
 
-[models/general-repo-settings.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/general-repo-settings.ts#L28)
+[models/general-repo-settings.ts:28](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/general-repo-settings.ts#L28)
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 #### Defined in
 
-[models/general-repo-settings.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/general-repo-settings.ts#L34)
+[models/general-repo-settings.ts:34](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/general-repo-settings.ts#L34)
 
 ___
 
@@ -53,7 +53,7 @@ ___
 
 #### Defined in
 
-[models/general-repo-settings.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/general-repo-settings.ts#L40)
+[models/general-repo-settings.ts:40](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/general-repo-settings.ts#L40)
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 #### Defined in
 
-[models/general-repo-settings.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/general-repo-settings.ts#L46)
+[models/general-repo-settings.ts:46](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/general-repo-settings.ts#L46)
 
 ___
 
@@ -77,7 +77,7 @@ ___
 
 #### Defined in
 
-[models/general-repo-settings.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/general-repo-settings.ts#L52)
+[models/general-repo-settings.ts:52](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/general-repo-settings.ts#L52)
 
 ___
 
@@ -89,4 +89,4 @@ ___
 
 #### Defined in
 
-[models/general-repo-settings.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/general-repo-settings.ts#L58)
+[models/general-repo-settings.ts:58](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/general-repo-settings.ts#L58)

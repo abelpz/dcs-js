@@ -27,7 +27,7 @@ WikiPageMetaData wiki page meta information
 
 #### Defined in
 
-[models/wiki-page-meta-data.ts:31](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/wiki-page-meta-data.ts#L31)
+[models/wiki-page-meta-data.ts:31](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/wiki-page-meta-data.ts#L31)
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 #### Defined in
 
-[models/wiki-page-meta-data.ts:37](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/wiki-page-meta-data.ts#L37)
+[models/wiki-page-meta-data.ts:37](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/wiki-page-meta-data.ts#L37)
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 #### Defined in
 
-[models/wiki-page-meta-data.ts:43](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/wiki-page-meta-data.ts#L43)
+[models/wiki-page-meta-data.ts:43](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/wiki-page-meta-data.ts#L43)
 
 ___
 
@@ -63,4 +63,4 @@ ___
 
 #### Defined in
 
-[models/wiki-page-meta-data.ts:49](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/wiki-page-meta-data.ts#L49)
+[models/wiki-page-meta-data.ts:49](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/wiki-page-meta-data.ts#L49)

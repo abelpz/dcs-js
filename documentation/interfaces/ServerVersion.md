@@ -24,4 +24,4 @@ ServerVersion wraps the version of the server
 
 #### Defined in
 
-[models/server-version.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/server-version.ts#L28)
+[models/server-version.ts:28](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/server-version.ts#L28)

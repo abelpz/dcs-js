@@ -27,7 +27,7 @@ CreateStatusOption holds the information needed to create a new CommitStatus for
 
 #### Defined in
 
-[models/create-status-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-status-option.ts#L28)
+[models/create-status-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/create-status-option.ts#L28)
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 #### Defined in
 
-[models/create-status-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-status-option.ts#L34)
+[models/create-status-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/create-status-option.ts#L34)
 
 ___
 
@@ -53,7 +53,7 @@ CommitStatusState holds the state of a CommitStatus It can be \"pending\", \"suc
 
 #### Defined in
 
-[models/create-status-option.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-status-option.ts#L40)
+[models/create-status-option.ts:40](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/create-status-option.ts#L40)
 
 ___
 
@@ -65,4 +65,4 @@ ___
 
 #### Defined in
 
-[models/create-status-option.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-status-option.ts#L46)
+[models/create-status-option.ts:46](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/create-status-option.ts#L46)

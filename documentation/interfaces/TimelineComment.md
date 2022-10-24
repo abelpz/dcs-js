@@ -52,7 +52,7 @@ TimelineComment represents a timeline comment (comment of any type) on a commit 
 
 #### Defined in
 
-[models/timeline-comment.ts:49](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/timeline-comment.ts#L49)
+[models/timeline-comment.ts:49](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/timeline-comment.ts#L49)
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 #### Defined in
 
-[models/timeline-comment.ts:55](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/timeline-comment.ts#L55)
+[models/timeline-comment.ts:55](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/timeline-comment.ts#L55)
 
 ___
 
@@ -76,7 +76,7 @@ ___
 
 #### Defined in
 
-[models/timeline-comment.ts:61](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/timeline-comment.ts#L61)
+[models/timeline-comment.ts:61](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/timeline-comment.ts#L61)
 
 ___
 
@@ -88,7 +88,7 @@ ___
 
 #### Defined in
 
-[models/timeline-comment.ts:67](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/timeline-comment.ts#L67)
+[models/timeline-comment.ts:67](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/timeline-comment.ts#L67)
 
 ___
 
@@ -100,7 +100,7 @@ ___
 
 #### Defined in
 
-[models/timeline-comment.ts:73](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/timeline-comment.ts#L73)
+[models/timeline-comment.ts:73](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/timeline-comment.ts#L73)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-[models/timeline-comment.ts:79](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/timeline-comment.ts#L79)
+[models/timeline-comment.ts:79](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/timeline-comment.ts#L79)
 
 ___
 
@@ -124,7 +124,7 @@ ___
 
 #### Defined in
 
-[models/timeline-comment.ts:85](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/timeline-comment.ts#L85)
+[models/timeline-comment.ts:85](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/timeline-comment.ts#L85)
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-[models/timeline-comment.ts:91](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/timeline-comment.ts#L91)
+[models/timeline-comment.ts:91](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/timeline-comment.ts#L91)
 
 ___
 
@@ -148,7 +148,7 @@ ___
 
 #### Defined in
 
-[models/timeline-comment.ts:97](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/timeline-comment.ts#L97)
+[models/timeline-comment.ts:97](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/timeline-comment.ts#L97)
 
 ___
 
@@ -160,7 +160,7 @@ ___
 
 #### Defined in
 
-[models/timeline-comment.ts:103](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/timeline-comment.ts#L103)
+[models/timeline-comment.ts:103](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/timeline-comment.ts#L103)
 
 ___
 
@@ -172,7 +172,7 @@ ___
 
 #### Defined in
 
-[models/timeline-comment.ts:109](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/timeline-comment.ts#L109)
+[models/timeline-comment.ts:109](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/timeline-comment.ts#L109)
 
 ___
 
@@ -184,7 +184,7 @@ ___
 
 #### Defined in
 
-[models/timeline-comment.ts:115](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/timeline-comment.ts#L115)
+[models/timeline-comment.ts:115](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/timeline-comment.ts#L115)
 
 ___
 
@@ -196,7 +196,7 @@ ___
 
 #### Defined in
 
-[models/timeline-comment.ts:121](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/timeline-comment.ts#L121)
+[models/timeline-comment.ts:121](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/timeline-comment.ts#L121)
 
 ___
 
@@ -208,7 +208,7 @@ ___
 
 #### Defined in
 
-[models/timeline-comment.ts:127](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/timeline-comment.ts#L127)
+[models/timeline-comment.ts:127](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/timeline-comment.ts#L127)
 
 ___
 
@@ -220,7 +220,7 @@ ___
 
 #### Defined in
 
-[models/timeline-comment.ts:133](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/timeline-comment.ts#L133)
+[models/timeline-comment.ts:133](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/timeline-comment.ts#L133)
 
 ___
 
@@ -232,7 +232,7 @@ ___
 
 #### Defined in
 
-[models/timeline-comment.ts:139](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/timeline-comment.ts#L139)
+[models/timeline-comment.ts:139](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/timeline-comment.ts#L139)
 
 ___
 
@@ -244,7 +244,7 @@ ___
 
 #### Defined in
 
-[models/timeline-comment.ts:145](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/timeline-comment.ts#L145)
+[models/timeline-comment.ts:145](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/timeline-comment.ts#L145)
 
 ___
 
@@ -256,7 +256,7 @@ ___
 
 #### Defined in
 
-[models/timeline-comment.ts:151](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/timeline-comment.ts#L151)
+[models/timeline-comment.ts:151](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/timeline-comment.ts#L151)
 
 ___
 
@@ -268,7 +268,7 @@ ___
 
 #### Defined in
 
-[models/timeline-comment.ts:157](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/timeline-comment.ts#L157)
+[models/timeline-comment.ts:157](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/timeline-comment.ts#L157)
 
 ___
 
@@ -280,7 +280,7 @@ ___
 
 #### Defined in
 
-[models/timeline-comment.ts:163](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/timeline-comment.ts#L163)
+[models/timeline-comment.ts:163](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/timeline-comment.ts#L163)
 
 ___
 
@@ -294,7 +294,7 @@ commit SHA where issue/PR was referenced
 
 #### Defined in
 
-[models/timeline-comment.ts:169](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/timeline-comment.ts#L169)
+[models/timeline-comment.ts:169](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/timeline-comment.ts#L169)
 
 ___
 
@@ -306,7 +306,7 @@ ___
 
 #### Defined in
 
-[models/timeline-comment.ts:175](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/timeline-comment.ts#L175)
+[models/timeline-comment.ts:175](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/timeline-comment.ts#L175)
 
 ___
 
@@ -320,7 +320,7 @@ whether the assignees were removed or added
 
 #### Defined in
 
-[models/timeline-comment.ts:181](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/timeline-comment.ts#L181)
+[models/timeline-comment.ts:181](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/timeline-comment.ts#L181)
 
 ___
 
@@ -332,7 +332,7 @@ ___
 
 #### Defined in
 
-[models/timeline-comment.ts:187](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/timeline-comment.ts#L187)
+[models/timeline-comment.ts:187](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/timeline-comment.ts#L187)
 
 ___
 
@@ -344,7 +344,7 @@ ___
 
 #### Defined in
 
-[models/timeline-comment.ts:193](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/timeline-comment.ts#L193)
+[models/timeline-comment.ts:193](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/timeline-comment.ts#L193)
 
 ___
 
@@ -356,7 +356,7 @@ ___
 
 #### Defined in
 
-[models/timeline-comment.ts:199](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/timeline-comment.ts#L199)
+[models/timeline-comment.ts:199](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/timeline-comment.ts#L199)
 
 ___
 
@@ -368,7 +368,7 @@ ___
 
 #### Defined in
 
-[models/timeline-comment.ts:205](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/timeline-comment.ts#L205)
+[models/timeline-comment.ts:205](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/timeline-comment.ts#L205)
 
 ___
 
@@ -380,7 +380,7 @@ ___
 
 #### Defined in
 
-[models/timeline-comment.ts:211](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/timeline-comment.ts#L211)
+[models/timeline-comment.ts:211](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/timeline-comment.ts#L211)
 
 ___
 
@@ -392,4 +392,4 @@ ___
 
 #### Defined in
 
-[models/timeline-comment.ts:217](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/timeline-comment.ts#L217)
+[models/timeline-comment.ts:217](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/timeline-comment.ts#L217)

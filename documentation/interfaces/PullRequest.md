@@ -12,6 +12,7 @@ PullRequest represents a pull request
 
 ### Properties
 
+- [allow\_maintainer\_edit](PullRequest.md#allow_maintainer_edit)
 - [assignee](PullRequest.md#assignee)
 - [assignees](PullRequest.md#assignees)
 - [base](PullRequest.md#base)
@@ -43,6 +44,18 @@ PullRequest represents a pull request
 
 ## Properties
 
+### <a id="allow_maintainer_edit" name="allow_maintainer_edit"></a> allow\_maintainer\_edit
+
+• `Optional` **allow\_maintainer\_edit**: `boolean`
+
+**`memberof`** PullRequest
+
+#### Defined in
+
+[models/pull-request.ts:40](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/pull-request.ts#L40)
+
+___
+
 ### <a id="assignee" name="assignee"></a> assignee
 
 • `Optional` **assignee**: [`User`](User.md)
@@ -51,7 +64,7 @@ PullRequest represents a pull request
 
 #### Defined in
 
-[models/pull-request.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-request.ts#L40)
+[models/pull-request.ts:46](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/pull-request.ts#L46)
 
 ___
 
@@ -63,7 +76,7 @@ ___
 
 #### Defined in
 
-[models/pull-request.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-request.ts#L46)
+[models/pull-request.ts:52](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/pull-request.ts#L52)
 
 ___
 
@@ -75,7 +88,7 @@ ___
 
 #### Defined in
 
-[models/pull-request.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-request.ts#L52)
+[models/pull-request.ts:58](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/pull-request.ts#L58)
 
 ___
 
@@ -87,7 +100,7 @@ ___
 
 #### Defined in
 
-[models/pull-request.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-request.ts#L58)
+[models/pull-request.ts:64](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/pull-request.ts#L64)
 
 ___
 
@@ -99,7 +112,7 @@ ___
 
 #### Defined in
 
-[models/pull-request.ts:64](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-request.ts#L64)
+[models/pull-request.ts:70](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/pull-request.ts#L70)
 
 ___
 
@@ -111,7 +124,7 @@ ___
 
 #### Defined in
 
-[models/pull-request.ts:70](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-request.ts#L70)
+[models/pull-request.ts:76](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/pull-request.ts#L76)
 
 ___
 
@@ -123,7 +136,7 @@ ___
 
 #### Defined in
 
-[models/pull-request.ts:76](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-request.ts#L76)
+[models/pull-request.ts:82](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/pull-request.ts#L82)
 
 ___
 
@@ -135,7 +148,7 @@ ___
 
 #### Defined in
 
-[models/pull-request.ts:82](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-request.ts#L82)
+[models/pull-request.ts:88](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/pull-request.ts#L88)
 
 ___
 
@@ -147,7 +160,7 @@ ___
 
 #### Defined in
 
-[models/pull-request.ts:88](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-request.ts#L88)
+[models/pull-request.ts:94](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/pull-request.ts#L94)
 
 ___
 
@@ -159,7 +172,7 @@ ___
 
 #### Defined in
 
-[models/pull-request.ts:94](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-request.ts#L94)
+[models/pull-request.ts:100](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/pull-request.ts#L100)
 
 ___
 
@@ -171,7 +184,7 @@ ___
 
 #### Defined in
 
-[models/pull-request.ts:100](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-request.ts#L100)
+[models/pull-request.ts:106](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/pull-request.ts#L106)
 
 ___
 
@@ -183,7 +196,7 @@ ___
 
 #### Defined in
 
-[models/pull-request.ts:106](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-request.ts#L106)
+[models/pull-request.ts:112](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/pull-request.ts#L112)
 
 ___
 
@@ -195,7 +208,7 @@ ___
 
 #### Defined in
 
-[models/pull-request.ts:112](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-request.ts#L112)
+[models/pull-request.ts:118](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/pull-request.ts#L118)
 
 ___
 
@@ -207,7 +220,7 @@ ___
 
 #### Defined in
 
-[models/pull-request.ts:118](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-request.ts#L118)
+[models/pull-request.ts:124](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/pull-request.ts#L124)
 
 ___
 
@@ -219,7 +232,7 @@ ___
 
 #### Defined in
 
-[models/pull-request.ts:124](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-request.ts#L124)
+[models/pull-request.ts:130](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/pull-request.ts#L130)
 
 ___
 
@@ -231,7 +244,7 @@ ___
 
 #### Defined in
 
-[models/pull-request.ts:130](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-request.ts#L130)
+[models/pull-request.ts:136](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/pull-request.ts#L136)
 
 ___
 
@@ -243,7 +256,7 @@ ___
 
 #### Defined in
 
-[models/pull-request.ts:136](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-request.ts#L136)
+[models/pull-request.ts:142](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/pull-request.ts#L142)
 
 ___
 
@@ -255,7 +268,7 @@ ___
 
 #### Defined in
 
-[models/pull-request.ts:142](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-request.ts#L142)
+[models/pull-request.ts:148](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/pull-request.ts#L148)
 
 ___
 
@@ -267,7 +280,7 @@ ___
 
 #### Defined in
 
-[models/pull-request.ts:148](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-request.ts#L148)
+[models/pull-request.ts:154](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/pull-request.ts#L154)
 
 ___
 
@@ -279,7 +292,7 @@ ___
 
 #### Defined in
 
-[models/pull-request.ts:154](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-request.ts#L154)
+[models/pull-request.ts:160](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/pull-request.ts#L160)
 
 ___
 
@@ -291,7 +304,7 @@ ___
 
 #### Defined in
 
-[models/pull-request.ts:160](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-request.ts#L160)
+[models/pull-request.ts:166](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/pull-request.ts#L166)
 
 ___
 
@@ -303,7 +316,7 @@ ___
 
 #### Defined in
 
-[models/pull-request.ts:166](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-request.ts#L166)
+[models/pull-request.ts:172](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/pull-request.ts#L172)
 
 ___
 
@@ -315,7 +328,7 @@ ___
 
 #### Defined in
 
-[models/pull-request.ts:172](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-request.ts#L172)
+[models/pull-request.ts:178](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/pull-request.ts#L178)
 
 ___
 
@@ -329,7 +342,7 @@ StateType issue state type
 
 #### Defined in
 
-[models/pull-request.ts:178](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-request.ts#L178)
+[models/pull-request.ts:184](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/pull-request.ts#L184)
 
 ___
 
@@ -341,7 +354,7 @@ ___
 
 #### Defined in
 
-[models/pull-request.ts:184](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-request.ts#L184)
+[models/pull-request.ts:190](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/pull-request.ts#L190)
 
 ___
 
@@ -353,7 +366,7 @@ ___
 
 #### Defined in
 
-[models/pull-request.ts:190](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-request.ts#L190)
+[models/pull-request.ts:196](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/pull-request.ts#L196)
 
 ___
 
@@ -365,7 +378,7 @@ ___
 
 #### Defined in
 
-[models/pull-request.ts:196](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-request.ts#L196)
+[models/pull-request.ts:202](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/pull-request.ts#L202)
 
 ___
 
@@ -377,4 +390,4 @@ ___
 
 #### Defined in
 
-[models/pull-request.ts:202](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-request.ts#L202)
+[models/pull-request.ts:208](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/pull-request.ts#L208)

@@ -41,7 +41,7 @@ EditUserOption edit user options
 
 #### Defined in
 
-[models/edit-user-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-user-option.ts#L28)
+[models/edit-user-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/edit-user-option.ts#L28)
 
 ___
 
@@ -53,7 +53,7 @@ ___
 
 #### Defined in
 
-[models/edit-user-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-user-option.ts#L34)
+[models/edit-user-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/edit-user-option.ts#L34)
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 #### Defined in
 
-[models/edit-user-option.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-user-option.ts#L40)
+[models/edit-user-option.ts:40](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/edit-user-option.ts#L40)
 
 ___
 
@@ -77,7 +77,7 @@ ___
 
 #### Defined in
 
-[models/edit-user-option.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-user-option.ts#L46)
+[models/edit-user-option.ts:46](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/edit-user-option.ts#L46)
 
 ___
 
@@ -89,7 +89,7 @@ ___
 
 #### Defined in
 
-[models/edit-user-option.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-user-option.ts#L52)
+[models/edit-user-option.ts:52](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/edit-user-option.ts#L52)
 
 ___
 
@@ -101,7 +101,7 @@ ___
 
 #### Defined in
 
-[models/edit-user-option.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-user-option.ts#L58)
+[models/edit-user-option.ts:58](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/edit-user-option.ts#L58)
 
 ___
 
@@ -113,7 +113,7 @@ ___
 
 #### Defined in
 
-[models/edit-user-option.ts:64](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-user-option.ts#L64)
+[models/edit-user-option.ts:64](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/edit-user-option.ts#L64)
 
 ___
 
@@ -125,7 +125,7 @@ ___
 
 #### Defined in
 
-[models/edit-user-option.ts:70](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-user-option.ts#L70)
+[models/edit-user-option.ts:70](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/edit-user-option.ts#L70)
 
 ___
 
@@ -137,7 +137,7 @@ ___
 
 #### Defined in
 
-[models/edit-user-option.ts:76](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-user-option.ts#L76)
+[models/edit-user-option.ts:76](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/edit-user-option.ts#L76)
 
 ___
 
@@ -149,7 +149,7 @@ ___
 
 #### Defined in
 
-[models/edit-user-option.ts:82](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-user-option.ts#L82)
+[models/edit-user-option.ts:82](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/edit-user-option.ts#L82)
 
 ___
 
@@ -161,7 +161,7 @@ ___
 
 #### Defined in
 
-[models/edit-user-option.ts:88](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-user-option.ts#L88)
+[models/edit-user-option.ts:88](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/edit-user-option.ts#L88)
 
 ___
 
@@ -173,7 +173,7 @@ ___
 
 #### Defined in
 
-[models/edit-user-option.ts:94](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-user-option.ts#L94)
+[models/edit-user-option.ts:94](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/edit-user-option.ts#L94)
 
 ___
 
@@ -185,7 +185,7 @@ ___
 
 #### Defined in
 
-[models/edit-user-option.ts:100](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-user-option.ts#L100)
+[models/edit-user-option.ts:100](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/edit-user-option.ts#L100)
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-[models/edit-user-option.ts:106](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-user-option.ts#L106)
+[models/edit-user-option.ts:106](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/edit-user-option.ts#L106)
 
 ___
 
@@ -209,7 +209,7 @@ ___
 
 #### Defined in
 
-[models/edit-user-option.ts:112](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-user-option.ts#L112)
+[models/edit-user-option.ts:112](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/edit-user-option.ts#L112)
 
 ___
 
@@ -221,7 +221,7 @@ ___
 
 #### Defined in
 
-[models/edit-user-option.ts:118](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-user-option.ts#L118)
+[models/edit-user-option.ts:118](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/edit-user-option.ts#L118)
 
 ___
 
@@ -233,7 +233,7 @@ ___
 
 #### Defined in
 
-[models/edit-user-option.ts:124](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-user-option.ts#L124)
+[models/edit-user-option.ts:124](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/edit-user-option.ts#L124)
 
 ___
 
@@ -245,4 +245,4 @@ ___
 
 #### Defined in
 
-[models/edit-user-option.ts:130](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-user-option.ts#L130)
+[models/edit-user-option.ts:130](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/edit-user-option.ts#L130)

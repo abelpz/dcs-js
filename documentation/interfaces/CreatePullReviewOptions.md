@@ -27,7 +27,7 @@ CreatePullReviewOptions are options to create a pull review
 
 #### Defined in
 
-[models/create-pull-review-options.ts:31](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-pull-review-options.ts#L31)
+[models/create-pull-review-options.ts:31](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/create-pull-review-options.ts#L31)
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 #### Defined in
 
-[models/create-pull-review-options.ts:37](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-pull-review-options.ts#L37)
+[models/create-pull-review-options.ts:37](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/create-pull-review-options.ts#L37)
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 #### Defined in
 
-[models/create-pull-review-options.ts:43](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-pull-review-options.ts#L43)
+[models/create-pull-review-options.ts:43](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/create-pull-review-options.ts#L43)
 
 ___
 
@@ -65,4 +65,4 @@ ReviewStateType review state type
 
 #### Defined in
 
-[models/create-pull-review-options.ts:49](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-pull-review-options.ts#L49)
+[models/create-pull-review-options.ts:49](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/create-pull-review-options.ts#L49)

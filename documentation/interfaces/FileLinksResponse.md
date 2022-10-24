@@ -26,7 +26,7 @@ FileLinksResponse contains the links for a repo\'s file
 
 #### Defined in
 
-[models/file-links-response.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/file-links-response.ts#L28)
+[models/file-links-response.ts:28](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/file-links-response.ts#L28)
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 #### Defined in
 
-[models/file-links-response.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/file-links-response.ts#L34)
+[models/file-links-response.ts:34](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/file-links-response.ts#L34)
 
 ___
 
@@ -50,4 +50,4 @@ ___
 
 #### Defined in
 
-[models/file-links-response.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/file-links-response.ts#L40)
+[models/file-links-response.ts:40](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/file-links-response.ts#L40)

@@ -35,6 +35,7 @@ IssueApi - object-oriented interface
 - [issueCreateIssue](IssueApi.md#issuecreateissue)
 - [issueCreateLabel](IssueApi.md#issuecreatelabel)
 - [issueCreateMilestone](IssueApi.md#issuecreatemilestone)
+- [issueDelete](IssueApi.md#issuedelete)
 - [issueDeleteComment](IssueApi.md#issuedeletecomment)
 - [issueDeleteCommentDeprecated](IssueApi.md#issuedeletecommentdeprecated)
 - [issueDeleteCommentReaction](IssueApi.md#issuedeletecommentreaction)
@@ -94,7 +95,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[base.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/base.ts#L52)
+[base.ts:52](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/base.ts#L52)
 
 ## Properties
 
@@ -128,7 +129,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[base.ts:50](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/base.ts#L50)
+[base.ts:50](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/base.ts#L50)
 
 ## Methods
 
@@ -158,7 +159,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[apis/issue-api.ts:4776](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L4776)
+[apis/issue-api.ts:4865](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/issue-api.ts#L4865)
 
 ___
 
@@ -188,7 +189,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:4791](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L4791)
+[apis/issue-api.ts:4880](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/issue-api.ts#L4880)
 
 ___
 
@@ -218,7 +219,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:4806](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L4806)
+[apis/issue-api.ts:4895](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/issue-api.ts#L4895)
 
 ___
 
@@ -247,7 +248,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:4820](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L4820)
+[apis/issue-api.ts:4909](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/issue-api.ts#L4909)
 
 ___
 
@@ -276,7 +277,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:4834](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L4834)
+[apis/issue-api.ts:4923](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/issue-api.ts#L4923)
 
 ___
 
@@ -306,7 +307,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:4849](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L4849)
+[apis/issue-api.ts:4938](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/issue-api.ts#L4938)
 
 ___
 
@@ -335,7 +336,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:4863](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L4863)
+[apis/issue-api.ts:4952](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/issue-api.ts#L4952)
 
 ___
 
@@ -364,7 +365,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:4877](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L4877)
+[apis/issue-api.ts:4966](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/issue-api.ts#L4966)
 
 ___
 
@@ -393,7 +394,36 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:4891](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L4891)
+[apis/issue-api.ts:4980](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/issue-api.ts#L4980)
+
+___
+
+### <a id="issuedelete" name="issuedelete"></a> issueDelete
+
+▸ **issueDelete**(`owner`, `repo`, `index`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+
+**`summary`** Delete an issue
+
+**`throws`** {RequiredError}
+
+**`memberof`** IssueApi
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `owner` | `string` | owner of the repo |
+| `repo` | `string` | name of the repo |
+| `index` | `number` | index of issue to delete |
+| `options?` | `AxiosRequestConfig` | - |
+
+#### Returns
+
+`Promise`<`AxiosResponse`<`void`\>\>
+
+#### Defined in
+
+[apis/issue-api.ts:4994](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/issue-api.ts#L4994)
 
 ___
 
@@ -422,7 +452,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:4905](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L4905)
+[apis/issue-api.ts:5008](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/issue-api.ts#L5008)
 
 ___
 
@@ -454,7 +484,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:4921](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L4921)
+[apis/issue-api.ts:5024](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/issue-api.ts#L5024)
 
 ___
 
@@ -484,7 +514,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:4936](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L4936)
+[apis/issue-api.ts:5039](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/issue-api.ts#L5039)
 
 ___
 
@@ -514,7 +544,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:4951](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L4951)
+[apis/issue-api.ts:5054](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/issue-api.ts#L5054)
 
 ___
 
@@ -543,7 +573,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:4965](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L4965)
+[apis/issue-api.ts:5068](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/issue-api.ts#L5068)
 
 ___
 
@@ -572,7 +602,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:4979](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L4979)
+[apis/issue-api.ts:5082](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/issue-api.ts#L5082)
 
 ___
 
@@ -601,7 +631,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:4993](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L4993)
+[apis/issue-api.ts:5096](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/issue-api.ts#L5096)
 
 ___
 
@@ -631,7 +661,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:5008](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5008)
+[apis/issue-api.ts:5111](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/issue-api.ts#L5111)
 
 ___
 
@@ -661,7 +691,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:5023](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5023)
+[apis/issue-api.ts:5126](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/issue-api.ts#L5126)
 
 ___
 
@@ -691,7 +721,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:5038](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5038)
+[apis/issue-api.ts:5141](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/issue-api.ts#L5141)
 
 ___
 
@@ -724,7 +754,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:5055](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5055)
+[apis/issue-api.ts:5158](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/issue-api.ts#L5158)
 
 ___
 
@@ -754,7 +784,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:5070](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5070)
+[apis/issue-api.ts:5173](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/issue-api.ts#L5173)
 
 ___
 
@@ -784,7 +814,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:5085](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5085)
+[apis/issue-api.ts:5188](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/issue-api.ts#L5188)
 
 ___
 
@@ -814,7 +844,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:5100](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5100)
+[apis/issue-api.ts:5203](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/issue-api.ts#L5203)
 
 ___
 
@@ -844,7 +874,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:5115](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5115)
+[apis/issue-api.ts:5218](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/issue-api.ts#L5218)
 
 ___
 
@@ -873,7 +903,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:5129](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5129)
+[apis/issue-api.ts:5232](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/issue-api.ts#L5232)
 
 ___
 
@@ -902,7 +932,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:5143](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5143)
+[apis/issue-api.ts:5246](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/issue-api.ts#L5246)
 
 ___
 
@@ -933,7 +963,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:5159](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5159)
+[apis/issue-api.ts:5262](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/issue-api.ts#L5262)
 
 ___
 
@@ -966,7 +996,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:5177](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5177)
+[apis/issue-api.ts:5280](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/issue-api.ts#L5280)
 
 ___
 
@@ -995,7 +1025,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:5191](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5191)
+[apis/issue-api.ts:5294](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/issue-api.ts#L5294)
 
 ___
 
@@ -1026,7 +1056,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:5207](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5207)
+[apis/issue-api.ts:5310](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/issue-api.ts#L5310)
 
 ___
 
@@ -1055,7 +1085,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:5221](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5221)
+[apis/issue-api.ts:5324](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/issue-api.ts#L5324)
 
 ___
 
@@ -1084,7 +1114,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:5235](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5235)
+[apis/issue-api.ts:5338](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/issue-api.ts#L5338)
 
 ___
 
@@ -1113,7 +1143,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:5249](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5249)
+[apis/issue-api.ts:5352](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/issue-api.ts#L5352)
 
 ___
 
@@ -1145,7 +1175,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:5266](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5266)
+[apis/issue-api.ts:5369](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/issue-api.ts#L5369)
 
 ___
 
@@ -1177,7 +1207,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:5283](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5283)
+[apis/issue-api.ts:5386](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/issue-api.ts#L5386)
 
 ___
 
@@ -1217,7 +1247,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:5308](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5308)
+[apis/issue-api.ts:5411](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/issue-api.ts#L5411)
 
 ___
 
@@ -1247,7 +1277,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:5323](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5323)
+[apis/issue-api.ts:5426](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/issue-api.ts#L5426)
 
 ___
 
@@ -1277,7 +1307,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:5338](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5338)
+[apis/issue-api.ts:5441](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/issue-api.ts#L5441)
 
 ___
 
@@ -1307,7 +1337,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:5353](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5353)
+[apis/issue-api.ts:5456](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/issue-api.ts#L5456)
 
 ___
 
@@ -1337,7 +1367,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:5368](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5368)
+[apis/issue-api.ts:5471](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/issue-api.ts#L5471)
 
 ___
 
@@ -1367,7 +1397,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:5383](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5383)
+[apis/issue-api.ts:5486](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/issue-api.ts#L5486)
 
 ___
 
@@ -1396,7 +1426,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:5397](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5397)
+[apis/issue-api.ts:5500](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/issue-api.ts#L5500)
 
 ___
 
@@ -1438,7 +1468,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:5424](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5424)
+[apis/issue-api.ts:5527](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/issue-api.ts#L5527)
 
 ___
 
@@ -1467,7 +1497,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:5438](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5438)
+[apis/issue-api.ts:5541](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/issue-api.ts#L5541)
 
 ___
 
@@ -1496,7 +1526,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:5452](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5452)
+[apis/issue-api.ts:5555](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/issue-api.ts#L5555)
 
 ___
 
@@ -1527,7 +1557,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:5468](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5468)
+[apis/issue-api.ts:5571](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/issue-api.ts#L5571)
 
 ___
 
@@ -1561,4 +1591,4 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:5487](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5487)
+[apis/issue-api.ts:5590](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/issue-api.ts#L5590)

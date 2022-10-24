@@ -46,6 +46,7 @@ Repository represents a repository
 - [language\_direction](Repository.md#language_direction)
 - [language\_is\_gl](Repository.md#language_is_gl)
 - [language\_title](Repository.md#language_title)
+- [languages\_url](Repository.md#languages_url)
 - [mirror](Repository.md#mirror)
 - [mirror\_interval](Repository.md#mirror_interval)
 - [mirror\_updated](Repository.md#mirror_updated)
@@ -75,6 +76,8 @@ Repository represents a repository
 
 • `Optional` **alignment\_counts**: `Object`
 
+the count of alignments of each book
+
 **`memberof`** Repository
 
 #### Index signature
@@ -83,7 +86,7 @@ Repository represents a repository
 
 #### Defined in
 
-[models/repository.ts:49](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L49)
+[models/repository.ts:49](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/repository.ts#L49)
 
 ___
 
@@ -95,7 +98,7 @@ ___
 
 #### Defined in
 
-[models/repository.ts:55](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L55)
+[models/repository.ts:55](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/repository.ts#L55)
 
 ___
 
@@ -107,7 +110,7 @@ ___
 
 #### Defined in
 
-[models/repository.ts:61](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L61)
+[models/repository.ts:61](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/repository.ts#L61)
 
 ___
 
@@ -119,7 +122,7 @@ ___
 
 #### Defined in
 
-[models/repository.ts:67](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L67)
+[models/repository.ts:67](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/repository.ts#L67)
 
 ___
 
@@ -131,7 +134,7 @@ ___
 
 #### Defined in
 
-[models/repository.ts:73](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L73)
+[models/repository.ts:73](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/repository.ts#L73)
 
 ___
 
@@ -143,7 +146,7 @@ ___
 
 #### Defined in
 
-[models/repository.ts:79](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L79)
+[models/repository.ts:79](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/repository.ts#L79)
 
 ___
 
@@ -155,7 +158,7 @@ ___
 
 #### Defined in
 
-[models/repository.ts:85](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L85)
+[models/repository.ts:85](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/repository.ts#L85)
 
 ___
 
@@ -163,11 +166,13 @@ ___
 
 • `Optional` **books**: `string`[]
 
+project IDs from the manifest
+
 **`memberof`** Repository
 
 #### Defined in
 
-[models/repository.ts:91](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L91)
+[models/repository.ts:91](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/repository.ts#L91)
 
 ___
 
@@ -179,7 +184,7 @@ ___
 
 #### Defined in
 
-[models/repository.ts:97](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L97)
+[models/repository.ts:97](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/repository.ts#L97)
 
 ___
 
@@ -187,11 +192,13 @@ ___
 
 • `Optional` **checking\_level**: `string`
 
+checking level from the manifest
+
 **`memberof`** Repository
 
 #### Defined in
 
-[models/repository.ts:103](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L103)
+[models/repository.ts:103](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/repository.ts#L103)
 
 ___
 
@@ -203,7 +210,7 @@ ___
 
 #### Defined in
 
-[models/repository.ts:109](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L109)
+[models/repository.ts:109](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/repository.ts#L109)
 
 ___
 
@@ -215,7 +222,7 @@ ___
 
 #### Defined in
 
-[models/repository.ts:115](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L115)
+[models/repository.ts:115](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/repository.ts#L115)
 
 ___
 
@@ -227,7 +234,7 @@ ___
 
 #### Defined in
 
-[models/repository.ts:121](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L121)
+[models/repository.ts:121](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/repository.ts#L121)
 
 ___
 
@@ -239,7 +246,7 @@ ___
 
 #### Defined in
 
-[models/repository.ts:127](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L127)
+[models/repository.ts:127](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/repository.ts#L127)
 
 ___
 
@@ -251,7 +258,7 @@ ___
 
 #### Defined in
 
-[models/repository.ts:133](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L133)
+[models/repository.ts:133](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/repository.ts#L133)
 
 ___
 
@@ -263,7 +270,7 @@ ___
 
 #### Defined in
 
-[models/repository.ts:139](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L139)
+[models/repository.ts:139](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/repository.ts#L139)
 
 ___
 
@@ -275,7 +282,7 @@ ___
 
 #### Defined in
 
-[models/repository.ts:145](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L145)
+[models/repository.ts:145](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/repository.ts#L145)
 
 ___
 
@@ -287,7 +294,7 @@ ___
 
 #### Defined in
 
-[models/repository.ts:151](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L151)
+[models/repository.ts:151](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/repository.ts#L151)
 
 ___
 
@@ -299,7 +306,7 @@ ___
 
 #### Defined in
 
-[models/repository.ts:157](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L157)
+[models/repository.ts:157](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/repository.ts#L157)
 
 ___
 
@@ -311,7 +318,7 @@ ___
 
 #### Defined in
 
-[models/repository.ts:163](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L163)
+[models/repository.ts:163](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/repository.ts#L163)
 
 ___
 
@@ -323,7 +330,7 @@ ___
 
 #### Defined in
 
-[models/repository.ts:169](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L169)
+[models/repository.ts:169](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/repository.ts#L169)
 
 ___
 
@@ -335,7 +342,7 @@ ___
 
 #### Defined in
 
-[models/repository.ts:175](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L175)
+[models/repository.ts:175](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/repository.ts#L175)
 
 ___
 
@@ -347,7 +354,7 @@ ___
 
 #### Defined in
 
-[models/repository.ts:181](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L181)
+[models/repository.ts:181](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/repository.ts#L181)
 
 ___
 
@@ -359,7 +366,7 @@ ___
 
 #### Defined in
 
-[models/repository.ts:187](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L187)
+[models/repository.ts:187](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/repository.ts#L187)
 
 ___
 
@@ -371,7 +378,7 @@ ___
 
 #### Defined in
 
-[models/repository.ts:193](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L193)
+[models/repository.ts:193](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/repository.ts#L193)
 
 ___
 
@@ -383,7 +390,7 @@ ___
 
 #### Defined in
 
-[models/repository.ts:199](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L199)
+[models/repository.ts:199](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/repository.ts#L199)
 
 ___
 
@@ -395,7 +402,7 @@ ___
 
 #### Defined in
 
-[models/repository.ts:205](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L205)
+[models/repository.ts:205](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/repository.ts#L205)
 
 ___
 
@@ -407,7 +414,7 @@ ___
 
 #### Defined in
 
-[models/repository.ts:211](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L211)
+[models/repository.ts:211](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/repository.ts#L211)
 
 ___
 
@@ -419,7 +426,7 @@ ___
 
 #### Defined in
 
-[models/repository.ts:217](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L217)
+[models/repository.ts:217](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/repository.ts#L217)
 
 ___
 
@@ -431,7 +438,7 @@ ___
 
 #### Defined in
 
-[models/repository.ts:223](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L223)
+[models/repository.ts:223](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/repository.ts#L223)
 
 ___
 
@@ -439,13 +446,13 @@ ___
 
 • `Optional` **language**: `string`
 
-DCS Customizations ***_/
+language from the manifest
 
 **`memberof`** Repository
 
 #### Defined in
 
-[models/repository.ts:229](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L229)
+[models/repository.ts:229](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/repository.ts#L229)
 
 ___
 
@@ -453,11 +460,13 @@ ___
 
 • `Optional` **language\_direction**: `string`
 
+language direction from the manifest
+
 **`memberof`** Repository
 
 #### Defined in
 
-[models/repository.ts:235](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L235)
+[models/repository.ts:235](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/repository.ts#L235)
 
 ___
 
@@ -465,11 +474,13 @@ ___
 
 • `Optional` **language\_is\_gl**: `boolean`
 
+is the language a GL
+
 **`memberof`** Repository
 
 #### Defined in
 
-[models/repository.ts:241](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L241)
+[models/repository.ts:241](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/repository.ts#L241)
 
 ___
 
@@ -477,11 +488,25 @@ ___
 
 • `Optional` **language\_title**: `string`
 
+language title from the manifest
+
 **`memberof`** Repository
 
 #### Defined in
 
-[models/repository.ts:247](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L247)
+[models/repository.ts:247](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/repository.ts#L247)
+
+___
+
+### <a id="languages_url" name="languages_url"></a> languages\_url
+
+• `Optional` **languages\_url**: `string`
+
+**`memberof`** Repository
+
+#### Defined in
+
+[models/repository.ts:253](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/repository.ts#L253)
 
 ___
 
@@ -493,7 +518,7 @@ ___
 
 #### Defined in
 
-[models/repository.ts:253](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L253)
+[models/repository.ts:259](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/repository.ts#L259)
 
 ___
 
@@ -505,7 +530,7 @@ ___
 
 #### Defined in
 
-[models/repository.ts:259](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L259)
+[models/repository.ts:265](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/repository.ts#L265)
 
 ___
 
@@ -517,7 +542,7 @@ ___
 
 #### Defined in
 
-[models/repository.ts:265](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L265)
+[models/repository.ts:271](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/repository.ts#L271)
 
 ___
 
@@ -529,7 +554,7 @@ ___
 
 #### Defined in
 
-[models/repository.ts:271](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L271)
+[models/repository.ts:277](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/repository.ts#L277)
 
 ___
 
@@ -541,7 +566,7 @@ ___
 
 #### Defined in
 
-[models/repository.ts:277](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L277)
+[models/repository.ts:283](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/repository.ts#L283)
 
 ___
 
@@ -553,7 +578,7 @@ ___
 
 #### Defined in
 
-[models/repository.ts:283](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L283)
+[models/repository.ts:289](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/repository.ts#L289)
 
 ___
 
@@ -565,7 +590,7 @@ ___
 
 #### Defined in
 
-[models/repository.ts:289](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L289)
+[models/repository.ts:295](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/repository.ts#L295)
 
 ___
 
@@ -577,7 +602,7 @@ ___
 
 #### Defined in
 
-[models/repository.ts:295](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L295)
+[models/repository.ts:301](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/repository.ts#L301)
 
 ___
 
@@ -589,7 +614,7 @@ ___
 
 #### Defined in
 
-[models/repository.ts:301](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L301)
+[models/repository.ts:307](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/repository.ts#L307)
 
 ___
 
@@ -601,7 +626,7 @@ ___
 
 #### Defined in
 
-[models/repository.ts:307](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L307)
+[models/repository.ts:313](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/repository.ts#L313)
 
 ___
 
@@ -613,7 +638,7 @@ ___
 
 #### Defined in
 
-[models/repository.ts:313](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L313)
+[models/repository.ts:319](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/repository.ts#L319)
 
 ___
 
@@ -625,7 +650,7 @@ ___
 
 #### Defined in
 
-[models/repository.ts:319](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L319)
+[models/repository.ts:325](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/repository.ts#L325)
 
 ___
 
@@ -637,7 +662,7 @@ ___
 
 #### Defined in
 
-[models/repository.ts:325](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L325)
+[models/repository.ts:331](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/repository.ts#L331)
 
 ___
 
@@ -649,7 +674,7 @@ ___
 
 #### Defined in
 
-[models/repository.ts:331](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L331)
+[models/repository.ts:337](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/repository.ts#L337)
 
 ___
 
@@ -661,7 +686,7 @@ ___
 
 #### Defined in
 
-[models/repository.ts:337](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L337)
+[models/repository.ts:343](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/repository.ts#L343)
 
 ___
 
@@ -673,7 +698,7 @@ ___
 
 #### Defined in
 
-[models/repository.ts:343](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L343)
+[models/repository.ts:349](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/repository.ts#L349)
 
 ___
 
@@ -681,11 +706,13 @@ ___
 
 • `Optional` **subject**: `string`
 
+subject from the manifest
+
 **`memberof`** Repository
 
 #### Defined in
 
-[models/repository.ts:349](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L349)
+[models/repository.ts:355](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/repository.ts#L355)
 
 ___
 
@@ -697,7 +724,7 @@ ___
 
 #### Defined in
 
-[models/repository.ts:355](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L355)
+[models/repository.ts:361](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/repository.ts#L361)
 
 ___
 
@@ -705,11 +732,13 @@ ___
 
 • `Optional` **title**: `string`
 
+title from the manifest
+
 **`memberof`** Repository
 
 #### Defined in
 
-[models/repository.ts:361](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L361)
+[models/repository.ts:367](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/repository.ts#L367)
 
 ___
 
@@ -721,7 +750,7 @@ ___
 
 #### Defined in
 
-[models/repository.ts:367](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L367)
+[models/repository.ts:373](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/repository.ts#L373)
 
 ___
 
@@ -733,7 +762,7 @@ ___
 
 #### Defined in
 
-[models/repository.ts:373](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L373)
+[models/repository.ts:379](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/repository.ts#L379)
 
 ___
 
@@ -745,4 +774,4 @@ ___
 
 #### Defined in
 
-[models/repository.ts:379](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository.ts#L379)
+[models/repository.ts:385](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/repository.ts#L385)

@@ -28,7 +28,7 @@ Let only contributors track time (Built-in issue tracker)
 
 #### Defined in
 
-[models/internal-tracker.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/internal-tracker.ts#L28)
+[models/internal-tracker.ts:28](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/internal-tracker.ts#L28)
 
 ___
 
@@ -42,7 +42,7 @@ Enable dependencies for issues and pull requests (Built-in issue tracker)
 
 #### Defined in
 
-[models/internal-tracker.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/internal-tracker.ts#L34)
+[models/internal-tracker.ts:34](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/internal-tracker.ts#L34)
 
 ___
 
@@ -56,4 +56,4 @@ Enable time tracking (Built-in issue tracker)
 
 #### Defined in
 
-[models/internal-tracker.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/internal-tracker.ts#L40)
+[models/internal-tracker.ts:40](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/internal-tracker.ts#L40)

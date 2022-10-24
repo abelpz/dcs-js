@@ -23,7 +23,7 @@
 
 #### Defined in
 
-[models/user-search200-response.ts:31](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/user-search200-response.ts#L31)
+[models/user-search200-response.ts:31](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/user-search200-response.ts#L31)
 
 ___
 
@@ -35,4 +35,4 @@ ___
 
 #### Defined in
 
-[models/user-search200-response.ts:37](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/user-search200-response.ts#L37)
+[models/user-search200-response.ts:37](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/user-search200-response.ts#L37)

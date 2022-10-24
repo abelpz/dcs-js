@@ -25,7 +25,7 @@ TransferRepoOption options when transfer a repository\'s ownership
 
 #### Defined in
 
-[models/transfer-repo-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/transfer-repo-option.ts#L28)
+[models/transfer-repo-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/transfer-repo-option.ts#L28)
 
 ___
 
@@ -39,4 +39,4 @@ ID of the team or teams to add to the repository. Teams can only be added to org
 
 #### Defined in
 
-[models/transfer-repo-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/transfer-repo-option.ts#L34)
+[models/transfer-repo-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/transfer-repo-option.ts#L34)

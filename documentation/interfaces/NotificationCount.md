@@ -24,4 +24,4 @@ NotificationCount number of unread notifications
 
 #### Defined in
 
-[models/notification-count.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/notification-count.ts#L28)
+[models/notification-count.ts:28](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/notification-count.ts#L28)

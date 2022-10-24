@@ -32,7 +32,7 @@ Branch represents a repository branch
 
 #### Defined in
 
-[models/branch.ts:31](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/branch.ts#L31)
+[models/branch.ts:31](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/branch.ts#L31)
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 #### Defined in
 
-[models/branch.ts:37](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/branch.ts#L37)
+[models/branch.ts:37](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/branch.ts#L37)
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 #### Defined in
 
-[models/branch.ts:43](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/branch.ts#L43)
+[models/branch.ts:43](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/branch.ts#L43)
 
 ___
 
@@ -68,7 +68,7 @@ ___
 
 #### Defined in
 
-[models/branch.ts:49](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/branch.ts#L49)
+[models/branch.ts:49](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/branch.ts#L49)
 
 ___
 
@@ -80,7 +80,7 @@ ___
 
 #### Defined in
 
-[models/branch.ts:55](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/branch.ts#L55)
+[models/branch.ts:55](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/branch.ts#L55)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[models/branch.ts:61](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/branch.ts#L61)
+[models/branch.ts:61](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/branch.ts#L61)
 
 ___
 
@@ -104,7 +104,7 @@ ___
 
 #### Defined in
 
-[models/branch.ts:67](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/branch.ts#L67)
+[models/branch.ts:67](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/branch.ts#L67)
 
 ___
 
@@ -116,7 +116,7 @@ ___
 
 #### Defined in
 
-[models/branch.ts:73](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/branch.ts#L73)
+[models/branch.ts:73](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/branch.ts#L73)
 
 ___
 
@@ -128,4 +128,4 @@ ___
 
 #### Defined in
 
-[models/branch.ts:79](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/branch.ts#L79)
+[models/branch.ts:79](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/branch.ts#L79)

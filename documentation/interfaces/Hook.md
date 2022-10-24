@@ -30,7 +30,7 @@ Hook a hook is a web hook when one repository changed
 
 #### Defined in
 
-[models/hook.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/hook.ts#L28)
+[models/hook.ts:28](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/hook.ts#L28)
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 #### Defined in
 
-[models/hook.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/hook.ts#L34)
+[models/hook.ts:34](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/hook.ts#L34)
 
 ___
 
@@ -58,7 +58,7 @@ ___
 
 #### Defined in
 
-[models/hook.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/hook.ts#L40)
+[models/hook.ts:40](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/hook.ts#L40)
 
 ___
 
@@ -70,7 +70,7 @@ ___
 
 #### Defined in
 
-[models/hook.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/hook.ts#L46)
+[models/hook.ts:46](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/hook.ts#L46)
 
 ___
 
@@ -82,7 +82,7 @@ ___
 
 #### Defined in
 
-[models/hook.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/hook.ts#L52)
+[models/hook.ts:52](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/hook.ts#L52)
 
 ___
 
@@ -94,7 +94,7 @@ ___
 
 #### Defined in
 
-[models/hook.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/hook.ts#L58)
+[models/hook.ts:58](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/hook.ts#L58)
 
 ___
 
@@ -106,4 +106,4 @@ ___
 
 #### Defined in
 
-[models/hook.ts:64](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/hook.ts#L64)
+[models/hook.ts:64](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/hook.ts#L64)

@@ -25,7 +25,7 @@ UserHeatmapData represents the data needed to create a heatmap
 
 #### Defined in
 
-[models/user-heatmap-data.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/user-heatmap-data.ts#L28)
+[models/user-heatmap-data.ts:28](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/user-heatmap-data.ts#L28)
 
 ___
 
@@ -39,4 +39,4 @@ TimeStamp defines a timestamp
 
 #### Defined in
 
-[models/user-heatmap-data.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/user-heatmap-data.ts#L34)
+[models/user-heatmap-data.ts:34](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/user-heatmap-data.ts#L34)

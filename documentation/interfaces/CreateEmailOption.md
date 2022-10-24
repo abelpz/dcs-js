@@ -26,4 +26,4 @@ email addresses to add
 
 #### Defined in
 
-[models/create-email-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-email-option.ts#L28)
+[models/create-email-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/create-email-option.ts#L28)

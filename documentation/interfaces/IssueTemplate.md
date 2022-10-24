@@ -30,7 +30,7 @@ IssueTemplate represents an issue template for a repository
 
 #### Defined in
 
-[models/issue-template.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/issue-template.ts#L28)
+[models/issue-template.ts:28](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/issue-template.ts#L28)
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 #### Defined in
 
-[models/issue-template.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/issue-template.ts#L34)
+[models/issue-template.ts:34](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/issue-template.ts#L34)
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 #### Defined in
 
-[models/issue-template.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/issue-template.ts#L40)
+[models/issue-template.ts:40](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/issue-template.ts#L40)
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 #### Defined in
 
-[models/issue-template.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/issue-template.ts#L46)
+[models/issue-template.ts:46](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/issue-template.ts#L46)
 
 ___
 
@@ -78,7 +78,7 @@ ___
 
 #### Defined in
 
-[models/issue-template.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/issue-template.ts#L52)
+[models/issue-template.ts:52](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/issue-template.ts#L52)
 
 ___
 
@@ -90,7 +90,7 @@ ___
 
 #### Defined in
 
-[models/issue-template.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/issue-template.ts#L58)
+[models/issue-template.ts:58](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/issue-template.ts#L58)
 
 ___
 
@@ -102,4 +102,4 @@ ___
 
 #### Defined in
 
-[models/issue-template.ts:64](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/issue-template.ts#L64)
+[models/issue-template.ts:64](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/issue-template.ts#L64)

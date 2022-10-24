@@ -97,7 +97,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[base.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/base.ts#L52)
+[base.ts:52](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/base.ts#L52)
 
 ## Properties
 
@@ -131,7 +131,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[base.ts:50](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/base.ts#L50)
+[base.ts:50](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/base.ts#L50)
 
 ## Methods
 
@@ -158,7 +158,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[apis/user-api.ts:4222](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4222)
+[apis/user-api.ts:4236](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/user-api.ts#L4236)
 
 ___
 
@@ -184,7 +184,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4233](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4233)
+[apis/user-api.ts:4247](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/user-api.ts#L4247)
 
 ___
 
@@ -210,7 +210,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4244](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4244)
+[apis/user-api.ts:4258](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/user-api.ts#L4258)
 
 ___
 
@@ -237,7 +237,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4256](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4256)
+[apis/user-api.ts:4270](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/user-api.ts#L4270)
 
 ___
 
@@ -264,13 +264,13 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4268](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4268)
+[apis/user-api.ts:4282](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/user-api.ts#L4282)
 
 ___
 
 ### <a id="usercheckfollowing" name="usercheckfollowing"></a> userCheckFollowing
 
-▸ **userCheckFollowing**(`follower`, `followee`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **userCheckFollowing**(`username`, `target`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Check if one user is following another user
 
@@ -282,8 +282,8 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `follower` | `string` | username of following user |
-| `followee` | `string` | username of followed user |
+| `username` | `string` | username of following user |
+| `target` | `string` | username of followed user |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -292,7 +292,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4281](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4281)
+[apis/user-api.ts:4295](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/user-api.ts#L4295)
 
 ___
 
@@ -319,7 +319,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4293](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4293)
+[apis/user-api.ts:4307](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/user-api.ts#L4307)
 
 ___
 
@@ -347,7 +347,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4306](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4306)
+[apis/user-api.ts:4320](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/user-api.ts#L4320)
 
 ___
 
@@ -374,7 +374,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4318](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4318)
+[apis/user-api.ts:4332](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/user-api.ts#L4332)
 
 ___
 
@@ -402,7 +402,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4331](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4331)
+[apis/user-api.ts:4345](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/user-api.ts#L4345)
 
 ___
 
@@ -429,7 +429,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4343](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4343)
+[apis/user-api.ts:4357](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/user-api.ts#L4357)
 
 ___
 
@@ -456,7 +456,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4355](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4355)
+[apis/user-api.ts:4369](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/user-api.ts#L4369)
 
 ___
 
@@ -483,7 +483,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4367](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4367)
+[apis/user-api.ts:4381](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/user-api.ts#L4381)
 
 ___
 
@@ -511,7 +511,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4380](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4380)
+[apis/user-api.ts:4394](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/user-api.ts#L4394)
 
 ___
 
@@ -538,7 +538,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4392](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4392)
+[apis/user-api.ts:4406](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/user-api.ts#L4406)
 
 ___
 
@@ -565,7 +565,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4404](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4404)
+[apis/user-api.ts:4418](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/user-api.ts#L4418)
 
 ___
 
@@ -593,7 +593,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4417](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4417)
+[apis/user-api.ts:4431](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/user-api.ts#L4431)
 
 ___
 
@@ -621,7 +621,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4430](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4430)
+[apis/user-api.ts:4444](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/user-api.ts#L4444)
 
 ___
 
@@ -649,7 +649,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4443](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4443)
+[apis/user-api.ts:4457](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/user-api.ts#L4457)
 
 ___
 
@@ -678,7 +678,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4457](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4457)
+[apis/user-api.ts:4471](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/user-api.ts#L4471)
 
 ___
 
@@ -706,7 +706,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4470](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4470)
+[apis/user-api.ts:4484](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/user-api.ts#L4484)
 
 ___
 
@@ -734,7 +734,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4483](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4483)
+[apis/user-api.ts:4497](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/user-api.ts#L4497)
 
 ___
 
@@ -762,7 +762,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4496](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4496)
+[apis/user-api.ts:4510](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/user-api.ts#L4510)
 
 ___
 
@@ -789,7 +789,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4508](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4508)
+[apis/user-api.ts:4522](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/user-api.ts#L4522)
 
 ___
 
@@ -816,7 +816,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4520](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4520)
+[apis/user-api.ts:4534](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/user-api.ts#L4534)
 
 ___
 
@@ -843,7 +843,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4532](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4532)
+[apis/user-api.ts:4546](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/user-api.ts#L4546)
 
 ___
 
@@ -871,13 +871,13 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4545](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4545)
+[apis/user-api.ts:4559](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/user-api.ts#L4559)
 
 ___
 
 ### <a id="usercurrenttrackedtimes" name="usercurrenttrackedtimes"></a> userCurrentTrackedTimes
 
-▸ **userCurrentTrackedTimes**(`since?`, `before?`, `options?`): `Promise`<`AxiosResponse`<[`TrackedTime`](../interfaces/TrackedTime.md)[]\>\>
+▸ **userCurrentTrackedTimes**(`page?`, `limit?`, `since?`, `before?`, `options?`): `Promise`<`AxiosResponse`<[`TrackedTime`](../interfaces/TrackedTime.md)[]\>\>
 
 **`summary`** List the current user\'s tracked times
 
@@ -889,6 +889,8 @@ ___
 
 | Name | Type |
 | :------ | :------ |
+| `page?` | `number` |
+| `limit?` | `number` |
 | `since?` | `string` |
 | `before?` | `string` |
 | `options?` | `AxiosRequestConfig` |
@@ -899,7 +901,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4558](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4558)
+[apis/user-api.ts:4574](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/user-api.ts#L4574)
 
 ___
 
@@ -927,7 +929,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4571](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4571)
+[apis/user-api.ts:4587](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/user-api.ts#L4587)
 
 ___
 
@@ -954,7 +956,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4583](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4583)
+[apis/user-api.ts:4599](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/user-api.ts#L4599)
 
 ___
 
@@ -981,7 +983,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4595](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4595)
+[apis/user-api.ts:4611](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/user-api.ts#L4611)
 
 ___
 
@@ -1008,7 +1010,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4607](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4607)
+[apis/user-api.ts:4623](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/user-api.ts#L4623)
 
 ___
 
@@ -1034,7 +1036,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4618](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4618)
+[apis/user-api.ts:4634](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/user-api.ts#L4634)
 
 ___
 
@@ -1061,7 +1063,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4630](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4630)
+[apis/user-api.ts:4646](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/user-api.ts#L4646)
 
 ___
 
@@ -1088,7 +1090,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4642](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4642)
+[apis/user-api.ts:4658](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/user-api.ts#L4658)
 
 ___
 
@@ -1116,7 +1118,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4655](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4655)
+[apis/user-api.ts:4671](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/user-api.ts#L4671)
 
 ___
 
@@ -1144,7 +1146,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4668](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4668)
+[apis/user-api.ts:4684](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/user-api.ts#L4684)
 
 ___
 
@@ -1173,7 +1175,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4682](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4682)
+[apis/user-api.ts:4698](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/user-api.ts#L4698)
 
 ___
 
@@ -1199,7 +1201,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4693](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4693)
+[apis/user-api.ts:4709](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/user-api.ts#L4709)
 
 ___
 
@@ -1228,7 +1230,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4707](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4707)
+[apis/user-api.ts:4723](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/user-api.ts#L4723)
 
 ___
 
@@ -1257,7 +1259,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4721](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4721)
+[apis/user-api.ts:4737](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/user-api.ts#L4737)
 
 ___
 
@@ -1286,7 +1288,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4735](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4735)
+[apis/user-api.ts:4751](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/user-api.ts#L4751)
 
 ___
 
@@ -1316,7 +1318,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4750](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4750)
+[apis/user-api.ts:4766](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/user-api.ts#L4766)
 
 ___
 
@@ -1345,7 +1347,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4764](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4764)
+[apis/user-api.ts:4780](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/user-api.ts#L4780)
 
 ___
 
@@ -1374,7 +1376,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4778](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4778)
+[apis/user-api.ts:4794](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/user-api.ts#L4794)
 
 ___
 
@@ -1403,7 +1405,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4792](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4792)
+[apis/user-api.ts:4808](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/user-api.ts#L4808)
 
 ___
 
@@ -1431,7 +1433,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4805](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4805)
+[apis/user-api.ts:4821](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/user-api.ts#L4821)
 
 ___
 
@@ -1462,7 +1464,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4821](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4821)
+[apis/user-api.ts:4837](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/user-api.ts#L4837)
 
 ___
 
@@ -1490,7 +1492,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4834](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4834)
+[apis/user-api.ts:4850](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/user-api.ts#L4850)
 
 ___
 
@@ -1516,4 +1518,4 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4845](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4845)
+[apis/user-api.ts:4861](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/user-api.ts#L4861)

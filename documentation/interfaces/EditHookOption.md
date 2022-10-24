@@ -27,7 +27,7 @@ EditHookOption options when modify one hook
 
 #### Defined in
 
-[models/edit-hook-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-hook-option.ts#L28)
+[models/edit-hook-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/edit-hook-option.ts#L28)
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 #### Defined in
 
-[models/edit-hook-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-hook-option.ts#L34)
+[models/edit-hook-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/edit-hook-option.ts#L34)
 
 ___
 
@@ -55,7 +55,7 @@ ___
 
 #### Defined in
 
-[models/edit-hook-option.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-hook-option.ts#L40)
+[models/edit-hook-option.ts:40](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/edit-hook-option.ts#L40)
 
 ___
 
@@ -67,4 +67,4 @@ ___
 
 #### Defined in
 
-[models/edit-hook-option.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-hook-option.ts#L46)
+[models/edit-hook-option.ts:46](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/edit-hook-option.ts#L46)

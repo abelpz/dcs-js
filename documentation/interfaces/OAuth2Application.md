@@ -27,7 +27,7 @@
 
 #### Defined in
 
-[models/oauth2-application.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/oauth2-application.ts#L28)
+[models/oauth2-application.ts:28](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/oauth2-application.ts#L28)
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 #### Defined in
 
-[models/oauth2-application.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/oauth2-application.ts#L34)
+[models/oauth2-application.ts:34](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/oauth2-application.ts#L34)
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 #### Defined in
 
-[models/oauth2-application.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/oauth2-application.ts#L40)
+[models/oauth2-application.ts:40](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/oauth2-application.ts#L40)
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 #### Defined in
 
-[models/oauth2-application.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/oauth2-application.ts#L46)
+[models/oauth2-application.ts:46](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/oauth2-application.ts#L46)
 
 ___
 
@@ -75,7 +75,7 @@ ___
 
 #### Defined in
 
-[models/oauth2-application.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/oauth2-application.ts#L52)
+[models/oauth2-application.ts:52](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/oauth2-application.ts#L52)
 
 ___
 
@@ -87,4 +87,4 @@ ___
 
 #### Defined in
 
-[models/oauth2-application.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/oauth2-application.ts#L58)
+[models/oauth2-application.ts:58](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/oauth2-application.ts#L58)

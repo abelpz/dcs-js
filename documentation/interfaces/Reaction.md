@@ -26,7 +26,7 @@ Reaction contain one reaction
 
 #### Defined in
 
-[models/reaction.ts:31](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/reaction.ts#L31)
+[models/reaction.ts:31](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/reaction.ts#L31)
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 #### Defined in
 
-[models/reaction.ts:37](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/reaction.ts#L37)
+[models/reaction.ts:37](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/reaction.ts#L37)
 
 ___
 
@@ -50,4 +50,4 @@ ___
 
 #### Defined in
 
-[models/reaction.ts:43](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/reaction.ts#L43)
+[models/reaction.ts:43](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/reaction.ts#L43)

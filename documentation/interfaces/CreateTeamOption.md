@@ -30,7 +30,7 @@ CreateTeamOption options for creating a team
 
 #### Defined in
 
-[models/create-team-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-team-option.ts#L28)
+[models/create-team-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/create-team-option.ts#L28)
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 #### Defined in
 
-[models/create-team-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-team-option.ts#L34)
+[models/create-team-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/create-team-option.ts#L34)
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 #### Defined in
 
-[models/create-team-option.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-team-option.ts#L40)
+[models/create-team-option.ts:40](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/create-team-option.ts#L40)
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 #### Defined in
 
-[models/create-team-option.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-team-option.ts#L46)
+[models/create-team-option.ts:46](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/create-team-option.ts#L46)
 
 ___
 
@@ -78,7 +78,7 @@ ___
 
 #### Defined in
 
-[models/create-team-option.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-team-option.ts#L52)
+[models/create-team-option.ts:52](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/create-team-option.ts#L52)
 
 ___
 
@@ -90,7 +90,7 @@ ___
 
 #### Defined in
 
-[models/create-team-option.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-team-option.ts#L58)
+[models/create-team-option.ts:58](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/create-team-option.ts#L58)
 
 ___
 
@@ -106,4 +106,4 @@ ___
 
 #### Defined in
 
-[models/create-team-option.ts:64](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-team-option.ts#L64)
+[models/create-team-option.ts:64](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/create-team-option.ts#L64)

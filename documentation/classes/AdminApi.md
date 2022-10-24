@@ -61,7 +61,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[base.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/base.ts#L52)
+[base.ts:52](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/base.ts#L52)
 
 ## Properties
 
@@ -95,7 +95,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[base.ts:50](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/base.ts#L50)
+[base.ts:50](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/base.ts#L50)
 
 ## Methods
 
@@ -123,7 +123,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[apis/admin-api.ts:1265](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/admin-api.ts#L1265)
+[apis/admin-api.ts:1265](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/admin-api.ts#L1265)
 
 ___
 
@@ -151,7 +151,7 @@ ___
 
 #### Defined in
 
-[apis/admin-api.ts:1278](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/admin-api.ts#L1278)
+[apis/admin-api.ts:1278](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/admin-api.ts#L1278)
 
 ___
 
@@ -179,7 +179,7 @@ ___
 
 #### Defined in
 
-[apis/admin-api.ts:1291](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/admin-api.ts#L1291)
+[apis/admin-api.ts:1291](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/admin-api.ts#L1291)
 
 ___
 
@@ -207,7 +207,7 @@ ___
 
 #### Defined in
 
-[apis/admin-api.ts:1304](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/admin-api.ts#L1304)
+[apis/admin-api.ts:1304](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/admin-api.ts#L1304)
 
 ___
 
@@ -234,7 +234,7 @@ ___
 
 #### Defined in
 
-[apis/admin-api.ts:1316](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/admin-api.ts#L1316)
+[apis/admin-api.ts:1316](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/admin-api.ts#L1316)
 
 ___
 
@@ -262,7 +262,7 @@ ___
 
 #### Defined in
 
-[apis/admin-api.ts:1329](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/admin-api.ts#L1329)
+[apis/admin-api.ts:1329](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/admin-api.ts#L1329)
 
 ___
 
@@ -289,7 +289,7 @@ ___
 
 #### Defined in
 
-[apis/admin-api.ts:1341](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/admin-api.ts#L1341)
+[apis/admin-api.ts:1341](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/admin-api.ts#L1341)
 
 ___
 
@@ -317,7 +317,7 @@ ___
 
 #### Defined in
 
-[apis/admin-api.ts:1354](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/admin-api.ts#L1354)
+[apis/admin-api.ts:1354](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/admin-api.ts#L1354)
 
 ___
 
@@ -344,7 +344,7 @@ ___
 
 #### Defined in
 
-[apis/admin-api.ts:1366](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/admin-api.ts#L1366)
+[apis/admin-api.ts:1366](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/admin-api.ts#L1366)
 
 ___
 
@@ -372,7 +372,7 @@ ___
 
 #### Defined in
 
-[apis/admin-api.ts:1379](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/admin-api.ts#L1379)
+[apis/admin-api.ts:1379](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/admin-api.ts#L1379)
 
 ___
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-[apis/admin-api.ts:1392](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/admin-api.ts#L1392)
+[apis/admin-api.ts:1392](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/admin-api.ts#L1392)
 
 ___
 
@@ -429,7 +429,7 @@ ___
 
 #### Defined in
 
-[apis/admin-api.ts:1406](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/admin-api.ts#L1406)
+[apis/admin-api.ts:1406](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/admin-api.ts#L1406)
 
 ___
 
@@ -458,7 +458,7 @@ ___
 
 #### Defined in
 
-[apis/admin-api.ts:1420](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/admin-api.ts#L1420)
+[apis/admin-api.ts:1420](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/admin-api.ts#L1420)
 
 ___
 
@@ -487,4 +487,4 @@ ___
 
 #### Defined in
 
-[apis/admin-api.ts:1434](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/admin-api.ts#L1434)
+[apis/admin-api.ts:1434](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/admin-api.ts#L1434)

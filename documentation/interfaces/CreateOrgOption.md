@@ -30,7 +30,7 @@ CreateOrgOption options for creating an organization
 
 #### Defined in
 
-[models/create-org-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-org-option.ts#L28)
+[models/create-org-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/create-org-option.ts#L28)
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 #### Defined in
 
-[models/create-org-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-org-option.ts#L34)
+[models/create-org-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/create-org-option.ts#L34)
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 #### Defined in
 
-[models/create-org-option.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-org-option.ts#L40)
+[models/create-org-option.ts:40](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/create-org-option.ts#L40)
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 #### Defined in
 
-[models/create-org-option.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-org-option.ts#L46)
+[models/create-org-option.ts:46](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/create-org-option.ts#L46)
 
 ___
 
@@ -78,7 +78,7 @@ ___
 
 #### Defined in
 
-[models/create-org-option.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-org-option.ts#L52)
+[models/create-org-option.ts:52](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/create-org-option.ts#L52)
 
 ___
 
@@ -92,7 +92,7 @@ possible values are `public` (default), `limited` or `private`
 
 #### Defined in
 
-[models/create-org-option.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-org-option.ts#L58)
+[models/create-org-option.ts:58](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/create-org-option.ts#L58)
 
 ___
 
@@ -104,4 +104,4 @@ ___
 
 #### Defined in
 
-[models/create-org-option.ts:64](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-org-option.ts#L64)
+[models/create-org-option.ts:64](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/create-org-option.ts#L64)

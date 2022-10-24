@@ -27,7 +27,7 @@ An armored GPG key to add
 
 #### Defined in
 
-[models/create-gpgkey-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-gpgkey-option.ts#L28)
+[models/create-gpgkey-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/create-gpgkey-option.ts#L28)
 
 ___
 
@@ -39,4 +39,4 @@ ___
 
 #### Defined in
 
-[models/create-gpgkey-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-gpgkey-option.ts#L34)
+[models/create-gpgkey-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/create-gpgkey-option.ts#L34)

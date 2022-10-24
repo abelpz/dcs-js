@@ -18,6 +18,7 @@
 - [html\_url](Commit.md#html_url)
 - [parents](Commit.md#parents)
 - [sha](Commit.md#sha)
+- [stats](Commit.md#stats)
 - [url](Commit.md#url)
 
 ## Properties
@@ -30,7 +31,7 @@
 
 #### Defined in
 
-[models/commit.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/commit.ts#L40)
+[models/commit.ts:43](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/commit.ts#L43)
 
 ___
 
@@ -42,7 +43,7 @@ ___
 
 #### Defined in
 
-[models/commit.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/commit.ts#L46)
+[models/commit.ts:49](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/commit.ts#L49)
 
 ___
 
@@ -54,7 +55,7 @@ ___
 
 #### Defined in
 
-[models/commit.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/commit.ts#L52)
+[models/commit.ts:55](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/commit.ts#L55)
 
 ___
 
@@ -66,7 +67,7 @@ ___
 
 #### Defined in
 
-[models/commit.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/commit.ts#L58)
+[models/commit.ts:61](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/commit.ts#L61)
 
 ___
 
@@ -78,7 +79,7 @@ ___
 
 #### Defined in
 
-[models/commit.ts:64](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/commit.ts#L64)
+[models/commit.ts:67](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/commit.ts#L67)
 
 ___
 
@@ -90,7 +91,7 @@ ___
 
 #### Defined in
 
-[models/commit.ts:70](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/commit.ts#L70)
+[models/commit.ts:73](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/commit.ts#L73)
 
 ___
 
@@ -102,7 +103,7 @@ ___
 
 #### Defined in
 
-[models/commit.ts:76](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/commit.ts#L76)
+[models/commit.ts:79](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/commit.ts#L79)
 
 ___
 
@@ -114,7 +115,19 @@ ___
 
 #### Defined in
 
-[models/commit.ts:82](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/commit.ts#L82)
+[models/commit.ts:85](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/commit.ts#L85)
+
+___
+
+### <a id="stats" name="stats"></a> stats
+
+• `Optional` **stats**: [`CommitStats`](CommitStats.md)
+
+**`memberof`** Commit
+
+#### Defined in
+
+[models/commit.ts:91](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/commit.ts#L91)
 
 ___
 
@@ -126,4 +139,4 @@ ___
 
 #### Defined in
 
-[models/commit.ts:88](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/commit.ts#L88)
+[models/commit.ts:97](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/commit.ts#L97)

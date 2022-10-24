@@ -26,7 +26,7 @@ GeneralUISettings contains global ui settings exposed by API
 
 #### Defined in
 
-[models/general-uisettings.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/general-uisettings.ts#L28)
+[models/general-uisettings.ts:28](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/general-uisettings.ts#L28)
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 #### Defined in
 
-[models/general-uisettings.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/general-uisettings.ts#L34)
+[models/general-uisettings.ts:34](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/general-uisettings.ts#L34)
 
 ___
 
@@ -50,4 +50,4 @@ ___
 
 #### Defined in
 
-[models/general-uisettings.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/general-uisettings.ts#L40)
+[models/general-uisettings.ts:40](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/general-uisettings.ts#L40)

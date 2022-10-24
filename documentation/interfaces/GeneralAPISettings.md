@@ -27,7 +27,7 @@ GeneralAPISettings contains global api settings exposed by it
 
 #### Defined in
 
-[models/general-apisettings.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/general-apisettings.ts#L28)
+[models/general-apisettings.ts:28](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/general-apisettings.ts#L28)
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 #### Defined in
 
-[models/general-apisettings.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/general-apisettings.ts#L34)
+[models/general-apisettings.ts:34](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/general-apisettings.ts#L34)
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 #### Defined in
 
-[models/general-apisettings.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/general-apisettings.ts#L40)
+[models/general-apisettings.ts:40](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/general-apisettings.ts#L40)
 
 ___
 
@@ -63,4 +63,4 @@ ___
 
 #### Defined in
 
-[models/general-apisettings.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/general-apisettings.ts#L46)
+[models/general-apisettings.ts:46](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/general-apisettings.ts#L46)

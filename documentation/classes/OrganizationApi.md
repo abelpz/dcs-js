@@ -60,6 +60,7 @@ OrganizationApi - object-oriented interface
 - [orgListRepos](OrganizationApi.md#orglistrepos)
 - [orgListTeamMember](OrganizationApi.md#orglistteammember)
 - [orgListTeamMembers](OrganizationApi.md#orglistteammembers)
+- [orgListTeamRepo](OrganizationApi.md#orglistteamrepo)
 - [orgListTeamRepos](OrganizationApi.md#orglistteamrepos)
 - [orgListTeams](OrganizationApi.md#orglistteams)
 - [orgListUserOrgs](OrganizationApi.md#orglistuserorgs)
@@ -88,7 +89,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[base.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/base.ts#L52)
+[base.ts:52](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/base.ts#L52)
 
 ## Properties
 
@@ -122,7 +123,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[base.ts:50](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/base.ts#L50)
+[base.ts:50](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/base.ts#L50)
 
 ## Methods
 
@@ -150,7 +151,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[apis/organization-api.ts:3613](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3613)
+[apis/organization-api.ts:3702](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/organization-api.ts#L3702)
 
 ___
 
@@ -180,7 +181,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:3627](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3627)
+[apis/organization-api.ts:3716](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/organization-api.ts#L3716)
 
 ___
 
@@ -208,7 +209,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:3640](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3640)
+[apis/organization-api.ts:3729](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/organization-api.ts#L3729)
 
 ___
 
@@ -237,7 +238,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:3654](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3654)
+[apis/organization-api.ts:3743](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/organization-api.ts#L3743)
 
 ___
 
@@ -265,7 +266,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:3667](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3667)
+[apis/organization-api.ts:3756](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/organization-api.ts#L3756)
 
 ___
 
@@ -292,7 +293,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:3679](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3679)
+[apis/organization-api.ts:3768](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/organization-api.ts#L3768)
 
 ___
 
@@ -320,7 +321,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:3692](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3692)
+[apis/organization-api.ts:3781](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/organization-api.ts#L3781)
 
 ___
 
@@ -348,7 +349,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:3705](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3705)
+[apis/organization-api.ts:3794](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/organization-api.ts#L3794)
 
 ___
 
@@ -376,7 +377,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:3718](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3718)
+[apis/organization-api.ts:3807](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/organization-api.ts#L3807)
 
 ___
 
@@ -403,7 +404,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:3730](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3730)
+[apis/organization-api.ts:3819](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/organization-api.ts#L3819)
 
 ___
 
@@ -431,7 +432,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:3743](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3743)
+[apis/organization-api.ts:3832](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/organization-api.ts#L3832)
 
 ___
 
@@ -459,7 +460,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:3756](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3756)
+[apis/organization-api.ts:3845](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/organization-api.ts#L3845)
 
 ___
 
@@ -487,7 +488,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:3769](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3769)
+[apis/organization-api.ts:3858](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/organization-api.ts#L3858)
 
 ___
 
@@ -514,7 +515,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:3781](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3781)
+[apis/organization-api.ts:3870](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/organization-api.ts#L3870)
 
 ___
 
@@ -542,7 +543,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:3794](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3794)
+[apis/organization-api.ts:3883](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/organization-api.ts#L3883)
 
 ___
 
@@ -571,7 +572,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:3808](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3808)
+[apis/organization-api.ts:3897](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/organization-api.ts#L3897)
 
 ___
 
@@ -600,7 +601,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:3822](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3822)
+[apis/organization-api.ts:3911](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/organization-api.ts#L3911)
 
 ___
 
@@ -628,7 +629,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:3835](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3835)
+[apis/organization-api.ts:3924](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/organization-api.ts#L3924)
 
 ___
 
@@ -655,7 +656,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:3847](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3847)
+[apis/organization-api.ts:3936](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/organization-api.ts#L3936)
 
 ___
 
@@ -684,7 +685,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:3861](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3861)
+[apis/organization-api.ts:3950](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/organization-api.ts#L3950)
 
 ___
 
@@ -712,7 +713,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:3874](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3874)
+[apis/organization-api.ts:3963](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/organization-api.ts#L3963)
 
 ___
 
@@ -740,7 +741,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:3887](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3887)
+[apis/organization-api.ts:3976](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/organization-api.ts#L3976)
 
 ___
 
@@ -767,7 +768,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:3899](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3899)
+[apis/organization-api.ts:3988](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/organization-api.ts#L3988)
 
 ___
 
@@ -795,7 +796,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:3912](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3912)
+[apis/organization-api.ts:4001](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/organization-api.ts#L4001)
 
 ___
 
@@ -823,7 +824,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:3925](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3925)
+[apis/organization-api.ts:4014](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/organization-api.ts#L4014)
 
 ___
 
@@ -851,7 +852,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:3938](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3938)
+[apis/organization-api.ts:4027](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/organization-api.ts#L4027)
 
 ___
 
@@ -879,7 +880,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:3951](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3951)
+[apis/organization-api.ts:4040](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/organization-api.ts#L4040)
 
 ___
 
@@ -908,7 +909,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:3965](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3965)
+[apis/organization-api.ts:4054](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/organization-api.ts#L4054)
 
 ___
 
@@ -937,7 +938,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:3979](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3979)
+[apis/organization-api.ts:4068](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/organization-api.ts#L4068)
 
 ___
 
@@ -966,7 +967,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:3993](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3993)
+[apis/organization-api.ts:4082](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/organization-api.ts#L4082)
 
 ___
 
@@ -995,7 +996,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:4007](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L4007)
+[apis/organization-api.ts:4096](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/organization-api.ts#L4096)
 
 ___
 
@@ -1024,7 +1025,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:4021](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L4021)
+[apis/organization-api.ts:4110](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/organization-api.ts#L4110)
 
 ___
 
@@ -1052,7 +1053,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:4034](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L4034)
+[apis/organization-api.ts:4123](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/organization-api.ts#L4123)
 
 ___
 
@@ -1081,7 +1082,36 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:4048](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L4048)
+[apis/organization-api.ts:4137](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/organization-api.ts#L4137)
+
+___
+
+### <a id="orglistteamrepo" name="orglistteamrepo"></a> orgListTeamRepo
+
+▸ **orgListTeamRepo**(`id`, `org`, `repo`, `options?`): `Promise`<`AxiosResponse`<[`Repository`](../interfaces/Repository.md)\>\>
+
+**`summary`** List a particular repo of team
+
+**`throws`** {RequiredError}
+
+**`memberof`** OrganizationApi
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `id` | `number` | id of the team |
+| `org` | `string` | organization that owns the repo to list |
+| `repo` | `string` | name of the repo to list |
+| `options?` | `AxiosRequestConfig` | - |
+
+#### Returns
+
+`Promise`<`AxiosResponse`<[`Repository`](../interfaces/Repository.md)\>\>
+
+#### Defined in
+
+[apis/organization-api.ts:4151](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/organization-api.ts#L4151)
 
 ___
 
@@ -1110,7 +1140,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:4062](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L4062)
+[apis/organization-api.ts:4165](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/organization-api.ts#L4165)
 
 ___
 
@@ -1139,7 +1169,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:4076](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L4076)
+[apis/organization-api.ts:4179](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/organization-api.ts#L4179)
 
 ___
 
@@ -1168,7 +1198,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:4090](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L4090)
+[apis/organization-api.ts:4193](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/organization-api.ts#L4193)
 
 ___
 
@@ -1196,7 +1226,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:4103](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L4103)
+[apis/organization-api.ts:4206](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/organization-api.ts#L4206)
 
 ___
 
@@ -1224,7 +1254,7 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:4116](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L4116)
+[apis/organization-api.ts:4219](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/organization-api.ts#L4219)
 
 ___
 
@@ -1255,7 +1285,7 @@ This does not delete the repository, it only removes the repository from the tea
 
 #### Defined in
 
-[apis/organization-api.ts:4130](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L4130)
+[apis/organization-api.ts:4233](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/organization-api.ts#L4233)
 
 ___
 
@@ -1286,4 +1316,4 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:4146](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L4146)
+[apis/organization-api.ts:4249](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/apis/organization-api.ts#L4249)

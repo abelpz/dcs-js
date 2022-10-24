@@ -32,7 +32,7 @@ CommitStatus holds a single status of a single Commit
 
 #### Defined in
 
-[models/commit-status.ts:31](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/commit-status.ts#L31)
+[models/commit-status.ts:31](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/commit-status.ts#L31)
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 #### Defined in
 
-[models/commit-status.ts:37](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/commit-status.ts#L37)
+[models/commit-status.ts:37](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/commit-status.ts#L37)
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 #### Defined in
 
-[models/commit-status.ts:43](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/commit-status.ts#L43)
+[models/commit-status.ts:43](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/commit-status.ts#L43)
 
 ___
 
@@ -68,7 +68,7 @@ ___
 
 #### Defined in
 
-[models/commit-status.ts:49](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/commit-status.ts#L49)
+[models/commit-status.ts:49](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/commit-status.ts#L49)
 
 ___
 
@@ -80,7 +80,7 @@ ___
 
 #### Defined in
 
-[models/commit-status.ts:55](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/commit-status.ts#L55)
+[models/commit-status.ts:55](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/commit-status.ts#L55)
 
 ___
 
@@ -94,7 +94,7 @@ CommitStatusState holds the state of a CommitStatus It can be \"pending\", \"suc
 
 #### Defined in
 
-[models/commit-status.ts:61](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/commit-status.ts#L61)
+[models/commit-status.ts:61](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/commit-status.ts#L61)
 
 ___
 
@@ -106,7 +106,7 @@ ___
 
 #### Defined in
 
-[models/commit-status.ts:67](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/commit-status.ts#L67)
+[models/commit-status.ts:67](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/commit-status.ts#L67)
 
 ___
 
@@ -118,7 +118,7 @@ ___
 
 #### Defined in
 
-[models/commit-status.ts:73](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/commit-status.ts#L73)
+[models/commit-status.ts:73](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/commit-status.ts#L73)
 
 ___
 
@@ -130,4 +130,4 @@ ___
 
 #### Defined in
 
-[models/commit-status.ts:79](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/commit-status.ts#L79)
+[models/commit-status.ts:79](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/commit-status.ts#L79)

@@ -28,7 +28,7 @@ Cron represents a Cron task
 
 #### Defined in
 
-[models/cron.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/cron.ts#L28)
+[models/cron.ts:28](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/cron.ts#L28)
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 #### Defined in
 
-[models/cron.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/cron.ts#L34)
+[models/cron.ts:34](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/cron.ts#L34)
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 #### Defined in
 
-[models/cron.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/cron.ts#L40)
+[models/cron.ts:40](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/cron.ts#L40)
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 #### Defined in
 
-[models/cron.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/cron.ts#L46)
+[models/cron.ts:46](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/cron.ts#L46)
 
 ___
 
@@ -76,4 +76,4 @@ ___
 
 #### Defined in
 
-[models/cron.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/cron.ts#L52)
+[models/cron.ts:52](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/cron.ts#L52)

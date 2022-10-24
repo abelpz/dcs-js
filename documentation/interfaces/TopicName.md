@@ -24,4 +24,4 @@ TopicName a list of repo topic names
 
 #### Defined in
 
-[models/topic-name.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/topic-name.ts#L28)
+[models/topic-name.ts:28](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/topic-name.ts#L28)

@@ -25,7 +25,7 @@ GPGKeyEmail an email attached to a GPGKey
 
 #### Defined in
 
-[models/gpgkey-email.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/gpgkey-email.ts#L28)
+[models/gpgkey-email.ts:28](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/gpgkey-email.ts#L28)
 
 ___
 
@@ -37,4 +37,4 @@ ___
 
 #### Defined in
 
-[models/gpgkey-email.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/gpgkey-email.ts#L34)
+[models/gpgkey-email.ts:34](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/gpgkey-email.ts#L34)

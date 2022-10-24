@@ -12,6 +12,7 @@ EditPullRequestOption options when modify pull request
 
 ### Properties
 
+- [allow\_maintainer\_edit](EditPullRequestOption.md#allow_maintainer_edit)
 - [assignee](EditPullRequestOption.md#assignee)
 - [assignees](EditPullRequestOption.md#assignees)
 - [base](EditPullRequestOption.md#base)
@@ -25,6 +26,18 @@ EditPullRequestOption options when modify pull request
 
 ## Properties
 
+### <a id="allow_maintainer_edit" name="allow_maintainer_edit"></a> allow\_maintainer\_edit
+
+• `Optional` **allow\_maintainer\_edit**: `boolean`
+
+**`memberof`** EditPullRequestOption
+
+#### Defined in
+
+[models/edit-pull-request-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/edit-pull-request-option.ts#L28)
+
+___
+
 ### <a id="assignee" name="assignee"></a> assignee
 
 • `Optional` **assignee**: `string`
@@ -33,7 +46,7 @@ EditPullRequestOption options when modify pull request
 
 #### Defined in
 
-[models/edit-pull-request-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-pull-request-option.ts#L28)
+[models/edit-pull-request-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/edit-pull-request-option.ts#L34)
 
 ___
 
@@ -45,7 +58,7 @@ ___
 
 #### Defined in
 
-[models/edit-pull-request-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-pull-request-option.ts#L34)
+[models/edit-pull-request-option.ts:40](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/edit-pull-request-option.ts#L40)
 
 ___
 
@@ -57,7 +70,7 @@ ___
 
 #### Defined in
 
-[models/edit-pull-request-option.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-pull-request-option.ts#L40)
+[models/edit-pull-request-option.ts:46](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/edit-pull-request-option.ts#L46)
 
 ___
 
@@ -69,7 +82,7 @@ ___
 
 #### Defined in
 
-[models/edit-pull-request-option.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-pull-request-option.ts#L46)
+[models/edit-pull-request-option.ts:52](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/edit-pull-request-option.ts#L52)
 
 ___
 
@@ -81,7 +94,7 @@ ___
 
 #### Defined in
 
-[models/edit-pull-request-option.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-pull-request-option.ts#L52)
+[models/edit-pull-request-option.ts:58](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/edit-pull-request-option.ts#L58)
 
 ___
 
@@ -93,7 +106,7 @@ ___
 
 #### Defined in
 
-[models/edit-pull-request-option.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-pull-request-option.ts#L58)
+[models/edit-pull-request-option.ts:64](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/edit-pull-request-option.ts#L64)
 
 ___
 
@@ -105,7 +118,7 @@ ___
 
 #### Defined in
 
-[models/edit-pull-request-option.ts:64](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-pull-request-option.ts#L64)
+[models/edit-pull-request-option.ts:70](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/edit-pull-request-option.ts#L70)
 
 ___
 
@@ -117,7 +130,7 @@ ___
 
 #### Defined in
 
-[models/edit-pull-request-option.ts:70](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-pull-request-option.ts#L70)
+[models/edit-pull-request-option.ts:76](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/edit-pull-request-option.ts#L76)
 
 ___
 
@@ -129,7 +142,7 @@ ___
 
 #### Defined in
 
-[models/edit-pull-request-option.ts:76](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-pull-request-option.ts#L76)
+[models/edit-pull-request-option.ts:82](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/edit-pull-request-option.ts#L82)
 
 ___
 
@@ -141,4 +154,4 @@ ___
 
 #### Defined in
 
-[models/edit-pull-request-option.ts:82](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-pull-request-option.ts#L82)
+[models/edit-pull-request-option.ts:88](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/edit-pull-request-option.ts#L88)

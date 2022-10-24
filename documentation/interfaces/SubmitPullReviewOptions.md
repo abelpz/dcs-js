@@ -25,7 +25,7 @@ SubmitPullReviewOptions are options to submit a pending pull review
 
 #### Defined in
 
-[models/submit-pull-review-options.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/submit-pull-review-options.ts#L28)
+[models/submit-pull-review-options.ts:28](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/submit-pull-review-options.ts#L28)
 
 ___
 
@@ -39,4 +39,4 @@ ReviewStateType review state type
 
 #### Defined in
 
-[models/submit-pull-review-options.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/submit-pull-review-options.ts#L34)
+[models/submit-pull-review-options.ts:34](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/submit-pull-review-options.ts#L34)

@@ -26,7 +26,7 @@ RepoTransfer represents a pending repo transfer
 
 #### Defined in
 
-[models/repo-transfer.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repo-transfer.ts#L34)
+[models/repo-transfer.ts:34](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/repo-transfer.ts#L34)
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 #### Defined in
 
-[models/repo-transfer.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repo-transfer.ts#L40)
+[models/repo-transfer.ts:40](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/repo-transfer.ts#L40)
 
 ___
 
@@ -50,4 +50,4 @@ ___
 
 #### Defined in
 
-[models/repo-transfer.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repo-transfer.ts#L46)
+[models/repo-transfer.ts:46](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/repo-transfer.ts#L46)

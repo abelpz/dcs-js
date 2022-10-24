@@ -13,6 +13,7 @@ GenerateRepoOption options when creating repository using a template
 ### Properties
 
 - [avatar](GenerateRepoOption.md#avatar)
+- [default\_branch](GenerateRepoOption.md#default_branch)
 - [description](GenerateRepoOption.md#description)
 - [git\_content](GenerateRepoOption.md#git_content)
 - [git\_hooks](GenerateRepoOption.md#git_hooks)
@@ -35,7 +36,21 @@ include avatar of the template repo
 
 #### Defined in
 
-[models/generate-repo-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/generate-repo-option.ts#L28)
+[models/generate-repo-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/generate-repo-option.ts#L28)
+
+___
+
+### <a id="default_branch" name="default_branch"></a> default\_branch
+
+• `Optional` **default\_branch**: `string`
+
+Default branch of the new repository
+
+**`memberof`** GenerateRepoOption
+
+#### Defined in
+
+[models/generate-repo-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/generate-repo-option.ts#L34)
 
 ___
 
@@ -49,7 +64,7 @@ Description of the repository to create
 
 #### Defined in
 
-[models/generate-repo-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/generate-repo-option.ts#L34)
+[models/generate-repo-option.ts:40](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/generate-repo-option.ts#L40)
 
 ___
 
@@ -63,7 +78,7 @@ include git content of default branch in template repo
 
 #### Defined in
 
-[models/generate-repo-option.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/generate-repo-option.ts#L40)
+[models/generate-repo-option.ts:46](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/generate-repo-option.ts#L46)
 
 ___
 
@@ -77,7 +92,7 @@ include git hooks in template repo
 
 #### Defined in
 
-[models/generate-repo-option.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/generate-repo-option.ts#L46)
+[models/generate-repo-option.ts:52](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/generate-repo-option.ts#L52)
 
 ___
 
@@ -91,7 +106,7 @@ include labels in template repo
 
 #### Defined in
 
-[models/generate-repo-option.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/generate-repo-option.ts#L52)
+[models/generate-repo-option.ts:58](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/generate-repo-option.ts#L58)
 
 ___
 
@@ -105,7 +120,7 @@ Name of the repository to create
 
 #### Defined in
 
-[models/generate-repo-option.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/generate-repo-option.ts#L58)
+[models/generate-repo-option.ts:64](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/generate-repo-option.ts#L64)
 
 ___
 
@@ -119,7 +134,7 @@ The organization or person who will own the new repository
 
 #### Defined in
 
-[models/generate-repo-option.ts:64](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/generate-repo-option.ts#L64)
+[models/generate-repo-option.ts:70](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/generate-repo-option.ts#L70)
 
 ___
 
@@ -133,7 +148,7 @@ Whether the repository is private
 
 #### Defined in
 
-[models/generate-repo-option.ts:70](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/generate-repo-option.ts#L70)
+[models/generate-repo-option.ts:76](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/generate-repo-option.ts#L76)
 
 ___
 
@@ -147,7 +162,7 @@ include topics in template repo
 
 #### Defined in
 
-[models/generate-repo-option.ts:76](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/generate-repo-option.ts#L76)
+[models/generate-repo-option.ts:82](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/generate-repo-option.ts#L82)
 
 ___
 
@@ -161,4 +176,4 @@ include webhooks in template repo
 
 #### Defined in
 
-[models/generate-repo-option.ts:82](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/generate-repo-option.ts#L82)
+[models/generate-repo-option.ts:88](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/generate-repo-option.ts#L88)

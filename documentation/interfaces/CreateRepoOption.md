@@ -36,7 +36,7 @@ Whether the repository should be auto-initialized?
 
 #### Defined in
 
-[models/create-repo-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-repo-option.ts#L28)
+[models/create-repo-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/create-repo-option.ts#L28)
 
 ___
 
@@ -50,7 +50,7 @@ DefaultBranch of the repository (used when initializes and in template)
 
 #### Defined in
 
-[models/create-repo-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-repo-option.ts#L34)
+[models/create-repo-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/create-repo-option.ts#L34)
 
 ___
 
@@ -64,7 +64,7 @@ Description of the repository to create
 
 #### Defined in
 
-[models/create-repo-option.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-repo-option.ts#L40)
+[models/create-repo-option.ts:40](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/create-repo-option.ts#L40)
 
 ___
 
@@ -78,7 +78,7 @@ Gitignores to use
 
 #### Defined in
 
-[models/create-repo-option.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-repo-option.ts#L46)
+[models/create-repo-option.ts:46](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/create-repo-option.ts#L46)
 
 ___
 
@@ -92,7 +92,7 @@ Label-Set to use
 
 #### Defined in
 
-[models/create-repo-option.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-repo-option.ts#L52)
+[models/create-repo-option.ts:52](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/create-repo-option.ts#L52)
 
 ___
 
@@ -106,7 +106,7 @@ License to use
 
 #### Defined in
 
-[models/create-repo-option.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-repo-option.ts#L58)
+[models/create-repo-option.ts:58](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/create-repo-option.ts#L58)
 
 ___
 
@@ -120,7 +120,7 @@ Name of the repository to create
 
 #### Defined in
 
-[models/create-repo-option.ts:64](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-repo-option.ts#L64)
+[models/create-repo-option.ts:64](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/create-repo-option.ts#L64)
 
 ___
 
@@ -134,7 +134,7 @@ Whether the repository is private
 
 #### Defined in
 
-[models/create-repo-option.ts:70](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-repo-option.ts#L70)
+[models/create-repo-option.ts:70](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/create-repo-option.ts#L70)
 
 ___
 
@@ -148,7 +148,7 @@ Readme of the repository to create
 
 #### Defined in
 
-[models/create-repo-option.ts:76](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-repo-option.ts#L76)
+[models/create-repo-option.ts:76](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/create-repo-option.ts#L76)
 
 ___
 
@@ -162,7 +162,7 @@ Whether the repository is template
 
 #### Defined in
 
-[models/create-repo-option.ts:82](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-repo-option.ts#L82)
+[models/create-repo-option.ts:82](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/create-repo-option.ts#L82)
 
 ___
 
@@ -176,4 +176,4 @@ TrustModel of the repository
 
 #### Defined in
 
-[models/create-repo-option.ts:88](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-repo-option.ts#L88)
+[models/create-repo-option.ts:88](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/create-repo-option.ts#L88)

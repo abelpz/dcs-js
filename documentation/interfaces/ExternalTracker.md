@@ -28,7 +28,7 @@ External Issue Tracker URL Format. Use the placeholders {user}, {repo} and {inde
 
 #### Defined in
 
-[models/external-tracker.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/external-tracker.ts#L28)
+[models/external-tracker.ts:28](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/external-tracker.ts#L28)
 
 ___
 
@@ -42,7 +42,7 @@ External Issue Tracker Number Format, either `numeric` or `alphanumeric`
 
 #### Defined in
 
-[models/external-tracker.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/external-tracker.ts#L34)
+[models/external-tracker.ts:34](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/external-tracker.ts#L34)
 
 ___
 
@@ -56,4 +56,4 @@ URL of external issue tracker.
 
 #### Defined in
 
-[models/external-tracker.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/external-tracker.ts#L40)
+[models/external-tracker.ts:40](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/external-tracker.ts#L40)

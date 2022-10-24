@@ -38,7 +38,7 @@ PullReviewComment represents a comment on a pull request review
 
 #### Defined in
 
-[models/pull-review-comment.ts:31](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-review-comment.ts#L31)
+[models/pull-review-comment.ts:31](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/pull-review-comment.ts#L31)
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 #### Defined in
 
-[models/pull-review-comment.ts:37](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-review-comment.ts#L37)
+[models/pull-review-comment.ts:37](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/pull-review-comment.ts#L37)
 
 ___
 
@@ -62,7 +62,7 @@ ___
 
 #### Defined in
 
-[models/pull-review-comment.ts:43](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-review-comment.ts#L43)
+[models/pull-review-comment.ts:43](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/pull-review-comment.ts#L43)
 
 ___
 
@@ -74,7 +74,7 @@ ___
 
 #### Defined in
 
-[models/pull-review-comment.ts:49](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-review-comment.ts#L49)
+[models/pull-review-comment.ts:49](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/pull-review-comment.ts#L49)
 
 ___
 
@@ -86,7 +86,7 @@ ___
 
 #### Defined in
 
-[models/pull-review-comment.ts:55](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-review-comment.ts#L55)
+[models/pull-review-comment.ts:55](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/pull-review-comment.ts#L55)
 
 ___
 
@@ -98,7 +98,7 @@ ___
 
 #### Defined in
 
-[models/pull-review-comment.ts:61](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-review-comment.ts#L61)
+[models/pull-review-comment.ts:61](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/pull-review-comment.ts#L61)
 
 ___
 
@@ -110,7 +110,7 @@ ___
 
 #### Defined in
 
-[models/pull-review-comment.ts:67](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-review-comment.ts#L67)
+[models/pull-review-comment.ts:67](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/pull-review-comment.ts#L67)
 
 ___
 
@@ -122,7 +122,7 @@ ___
 
 #### Defined in
 
-[models/pull-review-comment.ts:73](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-review-comment.ts#L73)
+[models/pull-review-comment.ts:73](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/pull-review-comment.ts#L73)
 
 ___
 
@@ -134,7 +134,7 @@ ___
 
 #### Defined in
 
-[models/pull-review-comment.ts:79](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-review-comment.ts#L79)
+[models/pull-review-comment.ts:79](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/pull-review-comment.ts#L79)
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-[models/pull-review-comment.ts:85](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-review-comment.ts#L85)
+[models/pull-review-comment.ts:85](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/pull-review-comment.ts#L85)
 
 ___
 
@@ -158,7 +158,7 @@ ___
 
 #### Defined in
 
-[models/pull-review-comment.ts:91](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-review-comment.ts#L91)
+[models/pull-review-comment.ts:91](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/pull-review-comment.ts#L91)
 
 ___
 
@@ -170,7 +170,7 @@ ___
 
 #### Defined in
 
-[models/pull-review-comment.ts:97](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-review-comment.ts#L97)
+[models/pull-review-comment.ts:97](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/pull-review-comment.ts#L97)
 
 ___
 
@@ -182,7 +182,7 @@ ___
 
 #### Defined in
 
-[models/pull-review-comment.ts:103](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-review-comment.ts#L103)
+[models/pull-review-comment.ts:103](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/pull-review-comment.ts#L103)
 
 ___
 
@@ -194,7 +194,7 @@ ___
 
 #### Defined in
 
-[models/pull-review-comment.ts:109](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-review-comment.ts#L109)
+[models/pull-review-comment.ts:109](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/pull-review-comment.ts#L109)
 
 ___
 
@@ -206,4 +206,4 @@ ___
 
 #### Defined in
 
-[models/pull-review-comment.ts:115](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-review-comment.ts#L115)
+[models/pull-review-comment.ts:115](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/pull-review-comment.ts#L115)

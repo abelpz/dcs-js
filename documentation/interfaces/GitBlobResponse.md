@@ -28,7 +28,7 @@ GitBlobResponse represents a git blob
 
 #### Defined in
 
-[models/git-blob-response.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/git-blob-response.ts#L28)
+[models/git-blob-response.ts:28](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/git-blob-response.ts#L28)
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 #### Defined in
 
-[models/git-blob-response.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/git-blob-response.ts#L34)
+[models/git-blob-response.ts:34](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/git-blob-response.ts#L34)
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 #### Defined in
 
-[models/git-blob-response.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/git-blob-response.ts#L40)
+[models/git-blob-response.ts:40](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/git-blob-response.ts#L40)
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 #### Defined in
 
-[models/git-blob-response.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/git-blob-response.ts#L46)
+[models/git-blob-response.ts:46](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/git-blob-response.ts#L46)
 
 ___
 
@@ -76,4 +76,4 @@ ___
 
 #### Defined in
 
-[models/git-blob-response.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/git-blob-response.ts#L52)
+[models/git-blob-response.ts:52](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/git-blob-response.ts#L52)

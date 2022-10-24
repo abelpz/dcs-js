@@ -27,7 +27,7 @@ RepositoryMeta basic repository information
 
 #### Defined in
 
-[models/repository-meta.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository-meta.ts#L28)
+[models/repository-meta.ts:28](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/repository-meta.ts#L28)
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 #### Defined in
 
-[models/repository-meta.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository-meta.ts#L34)
+[models/repository-meta.ts:34](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/repository-meta.ts#L34)
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 #### Defined in
 
-[models/repository-meta.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository-meta.ts#L40)
+[models/repository-meta.ts:40](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/repository-meta.ts#L40)
 
 ___
 
@@ -63,4 +63,4 @@ ___
 
 #### Defined in
 
-[models/repository-meta.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository-meta.ts#L46)
+[models/repository-meta.ts:46](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/repository-meta.ts#L46)

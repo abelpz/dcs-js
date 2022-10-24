@@ -32,7 +32,7 @@ Team represents a team in an organization
 
 #### Defined in
 
-[models/team.ts:31](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/team.ts#L31)
+[models/team.ts:31](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/team.ts#L31)
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 #### Defined in
 
-[models/team.ts:37](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/team.ts#L37)
+[models/team.ts:37](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/team.ts#L37)
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 #### Defined in
 
-[models/team.ts:43](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/team.ts#L43)
+[models/team.ts:43](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/team.ts#L43)
 
 ___
 
@@ -68,7 +68,7 @@ ___
 
 #### Defined in
 
-[models/team.ts:49](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/team.ts#L49)
+[models/team.ts:49](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/team.ts#L49)
 
 ___
 
@@ -80,7 +80,7 @@ ___
 
 #### Defined in
 
-[models/team.ts:55](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/team.ts#L55)
+[models/team.ts:55](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/team.ts#L55)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[models/team.ts:61](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/team.ts#L61)
+[models/team.ts:61](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/team.ts#L61)
 
 ___
 
@@ -104,7 +104,7 @@ ___
 
 #### Defined in
 
-[models/team.ts:67](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/team.ts#L67)
+[models/team.ts:67](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/team.ts#L67)
 
 ___
 
@@ -116,7 +116,7 @@ ___
 
 #### Defined in
 
-[models/team.ts:73](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/team.ts#L73)
+[models/team.ts:73](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/team.ts#L73)
 
 ___
 
@@ -132,4 +132,4 @@ ___
 
 #### Defined in
 
-[models/team.ts:79](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/team.ts#L79)
+[models/team.ts:79](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/team.ts#L79)

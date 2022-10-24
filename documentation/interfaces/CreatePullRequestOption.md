@@ -32,7 +32,7 @@ CreatePullRequestOption options when creating a pull request
 
 #### Defined in
 
-[models/create-pull-request-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-pull-request-option.ts#L28)
+[models/create-pull-request-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/create-pull-request-option.ts#L28)
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 #### Defined in
 
-[models/create-pull-request-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-pull-request-option.ts#L34)
+[models/create-pull-request-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/create-pull-request-option.ts#L34)
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 #### Defined in
 
-[models/create-pull-request-option.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-pull-request-option.ts#L40)
+[models/create-pull-request-option.ts:40](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/create-pull-request-option.ts#L40)
 
 ___
 
@@ -68,7 +68,7 @@ ___
 
 #### Defined in
 
-[models/create-pull-request-option.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-pull-request-option.ts#L46)
+[models/create-pull-request-option.ts:46](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/create-pull-request-option.ts#L46)
 
 ___
 
@@ -80,7 +80,7 @@ ___
 
 #### Defined in
 
-[models/create-pull-request-option.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-pull-request-option.ts#L52)
+[models/create-pull-request-option.ts:52](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/create-pull-request-option.ts#L52)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[models/create-pull-request-option.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-pull-request-option.ts#L58)
+[models/create-pull-request-option.ts:58](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/create-pull-request-option.ts#L58)
 
 ___
 
@@ -104,7 +104,7 @@ ___
 
 #### Defined in
 
-[models/create-pull-request-option.ts:64](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-pull-request-option.ts#L64)
+[models/create-pull-request-option.ts:64](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/create-pull-request-option.ts#L64)
 
 ___
 
@@ -116,7 +116,7 @@ ___
 
 #### Defined in
 
-[models/create-pull-request-option.ts:70](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-pull-request-option.ts#L70)
+[models/create-pull-request-option.ts:70](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/create-pull-request-option.ts#L70)
 
 ___
 
@@ -128,4 +128,4 @@ ___
 
 #### Defined in
 
-[models/create-pull-request-option.ts:76](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-pull-request-option.ts#L76)
+[models/create-pull-request-option.ts:76](https://github.com/unfoldingWord/dcs-js/blob/42a7ab5/models/create-pull-request-option.ts#L76)
