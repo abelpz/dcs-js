@@ -25,13 +25,24 @@ It can be used in both TypeScript and JavaScript. In TypeScript, the definition 
 To build and compile the typescript sources to javascript use:
 
 ```
-npm install
-npm run build
+yarn
+yarn build
 ```
 
 ### Publishing
 
-First build the package then run `npm publish`
+First build the package then run `yarn publish`
+
+For beta versions use the beta tag:
+`yarn publish --tag beta`
+
+**Other available tags:**
+
+- next: for release candidates
+
+> check: [How to work with npm tags](https://dev.to/andywer/how-to-use-npm-tags-4lla)
+
+> Create an issue on this repo to suggest new tags.
 
 ### Consuming
 
@@ -40,18 +51,18 @@ navigate to the folder of your consuming project and run one of the following co
 _published:_
 
 ```
-npm install dcs-js --save
+yarn add dcs-js --save
 ```
 
 _unPublished (not recommended):_
 
 ```
-npm install PATH_TO_GENERATED_PACKAGE --save
+yarn add PATH_TO_GENERATED_PACKAGE --save
 ```
 
-## Regenerate
+## Regenerate the library
 
-To regenerate the library run the generate script defined in `package.json`.
+To regenerate the library run the `generate` script defined in `package.json`.
 
 ```
 
@@ -65,4 +76,18 @@ To regenearate from a different source add the source url argument:
 
 yarn generate url.to/swagger-source.json
 
+```
+
+Then build the library.
+
+## Regenearate the documentation
+
+To regenerate docs use the `docmd` and `dochtml` scripts defined in `package.json`
+
+```
+yarn docmd
+```
+
+```
+yarn dochtml
 ```
