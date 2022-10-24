@@ -54,7 +54,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[base.ts:50](https://github.com/unfoldingWord/dcs-js/blob/c677a54/base.ts#L50)
+[base.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/base.ts#L52)
 
 ## Properties
 
@@ -88,7 +88,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[base.ts:48](https://github.com/unfoldingWord/dcs-js/blob/c677a54/base.ts#L48)
+[base.ts:50](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/base.ts#L50)
 
 ## Methods
 
@@ -96,7 +96,7 @@ BaseAPI.configuration
 
 ▸ **notifyGetList**(`all?`, `statusTypes?`, `subjectType?`, `since?`, `before?`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`NotificationThread`](../interfaces/NotificationThread.md)[]\>\>
 
-**`summary`** List users's notification threads
+**`summary`** List users\'s notification threads
 
 **`throws`** {RequiredError}
 
@@ -108,9 +108,9 @@ BaseAPI.configuration
 | :------ | :------ |
 | `all?` | `boolean` |
 | `statusTypes?` | `string`[] |
-| `subjectType?` | `string`[] |
-| `since?` | `Date` |
-| `before?` | `Date` |
+| `subjectType?` | (``"repository"`` \| ``"issue"`` \| ``"pull"`` \| ``"commit"``)[] |
+| `since?` | `string` |
+| `before?` | `string` |
 | `page?` | `number` |
 | `limit?` | `number` |
 | `options?` | `AxiosRequestConfig` |
@@ -121,7 +121,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[apis/notification-api.ts:1053](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/notification-api.ts#L1053)
+[apis/notification-api.ts:783](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/notification-api.ts#L783)
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 ▸ **notifyGetRepoList**(`owner`, `repo`, `all?`, `statusTypes?`, `subjectType?`, `since?`, `before?`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`NotificationThread`](../interfaces/NotificationThread.md)[]\>\>
 
-**`summary`** List users's notification threads on a specific repo
+**`summary`** List users\'s notification threads on a specific repo
 
 **`throws`** {RequiredError}
 
@@ -143,9 +143,9 @@ ___
 | `repo` | `string` | name of the repo |
 | `all?` | `boolean` | - |
 | `statusTypes?` | `string`[] | - |
-| `subjectType?` | `string`[] | - |
-| `since?` | `Date` | - |
-| `before?` | `Date` | - |
+| `subjectType?` | (``"repository"`` \| ``"issue"`` \| ``"pull"`` \| ``"commit"``)[] | - |
+| `since?` | `string` | - |
+| `before?` | `string` | - |
 | `page?` | `number` | - |
 | `limit?` | `number` | - |
 | `options?` | `AxiosRequestConfig` | - |
@@ -156,7 +156,7 @@ ___
 
 #### Defined in
 
-[apis/notification-api.ts:1072](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/notification-api.ts#L1072)
+[apis/notification-api.ts:803](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/notification-api.ts#L803)
 
 ___
 
@@ -183,7 +183,7 @@ ___
 
 #### Defined in
 
-[apis/notification-api.ts:1083](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/notification-api.ts#L1083)
+[apis/notification-api.ts:815](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/notification-api.ts#L815)
 
 ___
 
@@ -209,7 +209,7 @@ ___
 
 #### Defined in
 
-[apis/notification-api.ts:1093](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/notification-api.ts#L1093)
+[apis/notification-api.ts:826](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/notification-api.ts#L826)
 
 ___
 
@@ -227,7 +227,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `lastReadAt?` | `Date` |
+| `lastReadAt?` | `string` |
 | `all?` | `string` |
 | `statusTypes?` | `string`[] |
 | `toStatus?` | `string` |
@@ -239,7 +239,7 @@ ___
 
 #### Defined in
 
-[apis/notification-api.ts:1107](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/notification-api.ts#L1107)
+[apis/notification-api.ts:841](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/notification-api.ts#L841)
 
 ___
 
@@ -262,7 +262,7 @@ ___
 | `all?` | `string` | - |
 | `statusTypes?` | `string`[] | - |
 | `toStatus?` | `string` | - |
-| `lastReadAt?` | `Date` | - |
+| `lastReadAt?` | `string` | - |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -271,7 +271,7 @@ ___
 
 #### Defined in
 
-[apis/notification-api.ts:1123](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/notification-api.ts#L1123)
+[apis/notification-api.ts:858](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/notification-api.ts#L858)
 
 ___
 
@@ -299,4 +299,4 @@ ___
 
 #### Defined in
 
-[apis/notification-api.ts:1135](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/notification-api.ts#L1135)
+[apis/notification-api.ts:871](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/notification-api.ts#L871)

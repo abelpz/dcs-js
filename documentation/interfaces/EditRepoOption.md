@@ -2,7 +2,7 @@
 
 # Interface: EditRepoOption
 
-EditRepoOption options when editing a repository's properties
+EditRepoOption options when editing a repository\'s properties
 
 **`export`**
 
@@ -12,51 +12,37 @@ EditRepoOption options when editing a repository's properties
 
 ### Properties
 
-- [\_private](EditRepoOption.md#_private)
-- [allowManualMerge](EditRepoOption.md#allowmanualmerge)
-- [allowMergeCommits](EditRepoOption.md#allowmergecommits)
-- [allowRebase](EditRepoOption.md#allowrebase)
-- [allowRebaseExplicit](EditRepoOption.md#allowrebaseexplicit)
-- [allowSquashMerge](EditRepoOption.md#allowsquashmerge)
+- [allow\_manual\_merge](EditRepoOption.md#allow_manual_merge)
+- [allow\_merge\_commits](EditRepoOption.md#allow_merge_commits)
+- [allow\_rebase](EditRepoOption.md#allow_rebase)
+- [allow\_rebase\_explicit](EditRepoOption.md#allow_rebase_explicit)
+- [allow\_squash\_merge](EditRepoOption.md#allow_squash_merge)
 - [archived](EditRepoOption.md#archived)
-- [autodetectManualMerge](EditRepoOption.md#autodetectmanualmerge)
-- [defaultBranch](EditRepoOption.md#defaultbranch)
-- [defaultDeleteBranchAfterMerge](EditRepoOption.md#defaultdeletebranchaftermerge)
-- [defaultMergeStyle](EditRepoOption.md#defaultmergestyle)
+- [autodetect\_manual\_merge](EditRepoOption.md#autodetect_manual_merge)
+- [default\_branch](EditRepoOption.md#default_branch)
+- [default\_delete\_branch\_after\_merge](EditRepoOption.md#default_delete_branch_after_merge)
+- [default\_merge\_style](EditRepoOption.md#default_merge_style)
 - [description](EditRepoOption.md#description)
-- [enablePrune](EditRepoOption.md#enableprune)
-- [externalTracker](EditRepoOption.md#externaltracker)
-- [externalWiki](EditRepoOption.md#externalwiki)
-- [hasIssues](EditRepoOption.md#hasissues)
-- [hasProjects](EditRepoOption.md#hasprojects)
-- [hasPullRequests](EditRepoOption.md#haspullrequests)
-- [hasWiki](EditRepoOption.md#haswiki)
-- [ignoreWhitespaceConflicts](EditRepoOption.md#ignorewhitespaceconflicts)
-- [internalTracker](EditRepoOption.md#internaltracker)
-- [mirrorInterval](EditRepoOption.md#mirrorinterval)
+- [enable\_prune](EditRepoOption.md#enable_prune)
+- [external\_tracker](EditRepoOption.md#external_tracker)
+- [external\_wiki](EditRepoOption.md#external_wiki)
+- [has\_issues](EditRepoOption.md#has_issues)
+- [has\_projects](EditRepoOption.md#has_projects)
+- [has\_pull\_requests](EditRepoOption.md#has_pull_requests)
+- [has\_wiki](EditRepoOption.md#has_wiki)
+- [ignore\_whitespace\_conflicts](EditRepoOption.md#ignore_whitespace_conflicts)
+- [internal\_tracker](EditRepoOption.md#internal_tracker)
+- [mirror\_interval](EditRepoOption.md#mirror_interval)
 - [name](EditRepoOption.md#name)
+- [private](EditRepoOption.md#private)
 - [template](EditRepoOption.md#template)
 - [website](EditRepoOption.md#website)
 
 ## Properties
 
-### <a id="_private" name="_private"></a> \_private
+### <a id="allow_manual_merge" name="allow_manual_merge"></a> allow\_manual\_merge
 
-• `Optional` **\_private**: `boolean`
-
-either `true` to make the repository private or `false` to make it public. Note: you will get a 422 error if the organization restricts changing repository visibility to organization owners and a non-owner tries to change the value of private.
-
-**`memberof`** EditRepoOption
-
-#### Defined in
-
-[models/edit-repo-option.ts:160](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-repo-option.ts#L160)
-
-___
-
-### <a id="allowmanualmerge" name="allowmanualmerge"></a> allowManualMerge
-
-• `Optional` **allowManualMerge**: `boolean`
+• `Optional` **allow\_manual\_merge**: `boolean`
 
 either `true` to allow mark pr as merged manually, or `false` to prevent it. `has_pull_requests` must be `true`.
 
@@ -64,13 +50,13 @@ either `true` to allow mark pr as merged manually, or `false` to prevent it. `ha
 
 #### Defined in
 
-[models/edit-repo-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-repo-option.ts#L28)
+[models/edit-repo-option.ts:37](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-repo-option.ts#L37)
 
 ___
 
-### <a id="allowmergecommits" name="allowmergecommits"></a> allowMergeCommits
+### <a id="allow_merge_commits" name="allow_merge_commits"></a> allow\_merge\_commits
 
-• `Optional` **allowMergeCommits**: `boolean`
+• `Optional` **allow\_merge\_commits**: `boolean`
 
 either `true` to allow merging pull requests with a merge commit, or `false` to prevent merging pull requests with merge commits. `has_pull_requests` must be `true`.
 
@@ -78,13 +64,13 @@ either `true` to allow merging pull requests with a merge commit, or `false` to 
 
 #### Defined in
 
-[models/edit-repo-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-repo-option.ts#L34)
+[models/edit-repo-option.ts:43](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-repo-option.ts#L43)
 
 ___
 
-### <a id="allowrebase" name="allowrebase"></a> allowRebase
+### <a id="allow_rebase" name="allow_rebase"></a> allow\_rebase
 
-• `Optional` **allowRebase**: `boolean`
+• `Optional` **allow\_rebase**: `boolean`
 
 either `true` to allow rebase-merging pull requests, or `false` to prevent rebase-merging. `has_pull_requests` must be `true`.
 
@@ -92,13 +78,13 @@ either `true` to allow rebase-merging pull requests, or `false` to prevent rebas
 
 #### Defined in
 
-[models/edit-repo-option.ts:40](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-repo-option.ts#L40)
+[models/edit-repo-option.ts:49](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-repo-option.ts#L49)
 
 ___
 
-### <a id="allowrebaseexplicit" name="allowrebaseexplicit"></a> allowRebaseExplicit
+### <a id="allow_rebase_explicit" name="allow_rebase_explicit"></a> allow\_rebase\_explicit
 
-• `Optional` **allowRebaseExplicit**: `boolean`
+• `Optional` **allow\_rebase\_explicit**: `boolean`
 
 either `true` to allow rebase with explicit merge commits (--no-ff), or `false` to prevent rebase with explicit merge commits. `has_pull_requests` must be `true`.
 
@@ -106,13 +92,13 @@ either `true` to allow rebase with explicit merge commits (--no-ff), or `false` 
 
 #### Defined in
 
-[models/edit-repo-option.ts:46](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-repo-option.ts#L46)
+[models/edit-repo-option.ts:55](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-repo-option.ts#L55)
 
 ___
 
-### <a id="allowsquashmerge" name="allowsquashmerge"></a> allowSquashMerge
+### <a id="allow_squash_merge" name="allow_squash_merge"></a> allow\_squash\_merge
 
-• `Optional` **allowSquashMerge**: `boolean`
+• `Optional` **allow\_squash\_merge**: `boolean`
 
 either `true` to allow squash-merging pull requests, or `false` to prevent squash-merging. `has_pull_requests` must be `true`.
 
@@ -120,7 +106,7 @@ either `true` to allow squash-merging pull requests, or `false` to prevent squas
 
 #### Defined in
 
-[models/edit-repo-option.ts:52](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-repo-option.ts#L52)
+[models/edit-repo-option.ts:61](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-repo-option.ts#L61)
 
 ___
 
@@ -134,13 +120,13 @@ set to `true` to archive this repository.
 
 #### Defined in
 
-[models/edit-repo-option.ts:58](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-repo-option.ts#L58)
+[models/edit-repo-option.ts:67](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-repo-option.ts#L67)
 
 ___
 
-### <a id="autodetectmanualmerge" name="autodetectmanualmerge"></a> autodetectManualMerge
+### <a id="autodetect_manual_merge" name="autodetect_manual_merge"></a> autodetect\_manual\_merge
 
-• `Optional` **autodetectManualMerge**: `boolean`
+• `Optional` **autodetect\_manual\_merge**: `boolean`
 
 either `true` to enable AutodetectManualMerge, or `false` to prevent it. `has_pull_requests` must be `true`, Note: In some special cases, misjudgments can occur.
 
@@ -148,13 +134,13 @@ either `true` to enable AutodetectManualMerge, or `false` to prevent it. `has_pu
 
 #### Defined in
 
-[models/edit-repo-option.ts:64](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-repo-option.ts#L64)
+[models/edit-repo-option.ts:73](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-repo-option.ts#L73)
 
 ___
 
-### <a id="defaultbranch" name="defaultbranch"></a> defaultBranch
+### <a id="default_branch" name="default_branch"></a> default\_branch
 
-• `Optional` **defaultBranch**: `string`
+• `Optional` **default\_branch**: `string`
 
 sets the default branch for this repository.
 
@@ -162,13 +148,13 @@ sets the default branch for this repository.
 
 #### Defined in
 
-[models/edit-repo-option.ts:70](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-repo-option.ts#L70)
+[models/edit-repo-option.ts:79](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-repo-option.ts#L79)
 
 ___
 
-### <a id="defaultdeletebranchaftermerge" name="defaultdeletebranchaftermerge"></a> defaultDeleteBranchAfterMerge
+### <a id="default_delete_branch_after_merge" name="default_delete_branch_after_merge"></a> default\_delete\_branch\_after\_merge
 
-• `Optional` **defaultDeleteBranchAfterMerge**: `boolean`
+• `Optional` **default\_delete\_branch\_after\_merge**: `boolean`
 
 set to `true` to delete pr branch after merge by default
 
@@ -176,13 +162,13 @@ set to `true` to delete pr branch after merge by default
 
 #### Defined in
 
-[models/edit-repo-option.ts:76](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-repo-option.ts#L76)
+[models/edit-repo-option.ts:85](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-repo-option.ts#L85)
 
 ___
 
-### <a id="defaultmergestyle" name="defaultmergestyle"></a> defaultMergeStyle
+### <a id="default_merge_style" name="default_merge_style"></a> default\_merge\_style
 
-• `Optional` **defaultMergeStyle**: `string`
+• `Optional` **default\_merge\_style**: `string`
 
 set to a merge style to be used by this repository: \"merge\", \"rebase\", \"rebase-merge\", or \"squash\". `has_pull_requests` must be `true`.
 
@@ -190,7 +176,7 @@ set to a merge style to be used by this repository: \"merge\", \"rebase\", \"reb
 
 #### Defined in
 
-[models/edit-repo-option.ts:82](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-repo-option.ts#L82)
+[models/edit-repo-option.ts:91](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-repo-option.ts#L91)
 
 ___
 
@@ -204,13 +190,13 @@ a short description of the repository.
 
 #### Defined in
 
-[models/edit-repo-option.ts:88](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-repo-option.ts#L88)
+[models/edit-repo-option.ts:97](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-repo-option.ts#L97)
 
 ___
 
-### <a id="enableprune" name="enableprune"></a> enablePrune
+### <a id="enable_prune" name="enable_prune"></a> enable\_prune
 
-• `Optional` **enablePrune**: `boolean`
+• `Optional` **enable\_prune**: `boolean`
 
 enable prune - remove obsolete remote-tracking references
 
@@ -218,37 +204,37 @@ enable prune - remove obsolete remote-tracking references
 
 #### Defined in
 
-[models/edit-repo-option.ts:94](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-repo-option.ts#L94)
+[models/edit-repo-option.ts:103](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-repo-option.ts#L103)
 
 ___
 
-### <a id="externaltracker" name="externaltracker"></a> externalTracker
+### <a id="external_tracker" name="external_tracker"></a> external\_tracker
 
-• `Optional` **externalTracker**: [`ExternalTracker`](ExternalTracker.md)
+• `Optional` **external\_tracker**: [`ExternalTracker`](ExternalTracker.md)
 
 **`memberof`** EditRepoOption
 
 #### Defined in
 
-[models/edit-repo-option.ts:100](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-repo-option.ts#L100)
+[models/edit-repo-option.ts:109](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-repo-option.ts#L109)
 
 ___
 
-### <a id="externalwiki" name="externalwiki"></a> externalWiki
+### <a id="external_wiki" name="external_wiki"></a> external\_wiki
 
-• `Optional` **externalWiki**: [`ExternalWiki`](ExternalWiki.md)
+• `Optional` **external\_wiki**: [`ExternalWiki`](ExternalWiki.md)
 
 **`memberof`** EditRepoOption
 
 #### Defined in
 
-[models/edit-repo-option.ts:106](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-repo-option.ts#L106)
+[models/edit-repo-option.ts:115](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-repo-option.ts#L115)
 
 ___
 
-### <a id="hasissues" name="hasissues"></a> hasIssues
+### <a id="has_issues" name="has_issues"></a> has\_issues
 
-• `Optional` **hasIssues**: `boolean`
+• `Optional` **has\_issues**: `boolean`
 
 either `true` to enable issues for this repository or `false` to disable them.
 
@@ -256,13 +242,13 @@ either `true` to enable issues for this repository or `false` to disable them.
 
 #### Defined in
 
-[models/edit-repo-option.ts:112](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-repo-option.ts#L112)
+[models/edit-repo-option.ts:121](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-repo-option.ts#L121)
 
 ___
 
-### <a id="hasprojects" name="hasprojects"></a> hasProjects
+### <a id="has_projects" name="has_projects"></a> has\_projects
 
-• `Optional` **hasProjects**: `boolean`
+• `Optional` **has\_projects**: `boolean`
 
 either `true` to enable project unit, or `false` to disable them.
 
@@ -270,13 +256,13 @@ either `true` to enable project unit, or `false` to disable them.
 
 #### Defined in
 
-[models/edit-repo-option.ts:118](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-repo-option.ts#L118)
+[models/edit-repo-option.ts:127](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-repo-option.ts#L127)
 
 ___
 
-### <a id="haspullrequests" name="haspullrequests"></a> hasPullRequests
+### <a id="has_pull_requests" name="has_pull_requests"></a> has\_pull\_requests
 
-• `Optional` **hasPullRequests**: `boolean`
+• `Optional` **has\_pull\_requests**: `boolean`
 
 either `true` to allow pull requests, or `false` to prevent pull request.
 
@@ -284,13 +270,13 @@ either `true` to allow pull requests, or `false` to prevent pull request.
 
 #### Defined in
 
-[models/edit-repo-option.ts:124](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-repo-option.ts#L124)
+[models/edit-repo-option.ts:133](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-repo-option.ts#L133)
 
 ___
 
-### <a id="haswiki" name="haswiki"></a> hasWiki
+### <a id="has_wiki" name="has_wiki"></a> has\_wiki
 
-• `Optional` **hasWiki**: `boolean`
+• `Optional` **has\_wiki**: `boolean`
 
 either `true` to enable the wiki for this repository or `false` to disable it.
 
@@ -298,13 +284,13 @@ either `true` to enable the wiki for this repository or `false` to disable it.
 
 #### Defined in
 
-[models/edit-repo-option.ts:130](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-repo-option.ts#L130)
+[models/edit-repo-option.ts:139](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-repo-option.ts#L139)
 
 ___
 
-### <a id="ignorewhitespaceconflicts" name="ignorewhitespaceconflicts"></a> ignoreWhitespaceConflicts
+### <a id="ignore_whitespace_conflicts" name="ignore_whitespace_conflicts"></a> ignore\_whitespace\_conflicts
 
-• `Optional` **ignoreWhitespaceConflicts**: `boolean`
+• `Optional` **ignore\_whitespace\_conflicts**: `boolean`
 
 either `true` to ignore whitespace for conflicts, or `false` to not ignore whitespace. `has_pull_requests` must be `true`.
 
@@ -312,25 +298,25 @@ either `true` to ignore whitespace for conflicts, or `false` to not ignore white
 
 #### Defined in
 
-[models/edit-repo-option.ts:136](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-repo-option.ts#L136)
+[models/edit-repo-option.ts:145](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-repo-option.ts#L145)
 
 ___
 
-### <a id="internaltracker" name="internaltracker"></a> internalTracker
+### <a id="internal_tracker" name="internal_tracker"></a> internal\_tracker
 
-• `Optional` **internalTracker**: [`InternalTracker`](InternalTracker.md)
+• `Optional` **internal\_tracker**: [`InternalTracker`](InternalTracker.md)
 
 **`memberof`** EditRepoOption
 
 #### Defined in
 
-[models/edit-repo-option.ts:142](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-repo-option.ts#L142)
+[models/edit-repo-option.ts:151](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-repo-option.ts#L151)
 
 ___
 
-### <a id="mirrorinterval" name="mirrorinterval"></a> mirrorInterval
+### <a id="mirror_interval" name="mirror_interval"></a> mirror\_interval
 
-• `Optional` **mirrorInterval**: `string`
+• `Optional` **mirror\_interval**: `string`
 
 set to a string like `8h30m0s` to set the mirror interval time
 
@@ -338,7 +324,7 @@ set to a string like `8h30m0s` to set the mirror interval time
 
 #### Defined in
 
-[models/edit-repo-option.ts:148](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-repo-option.ts#L148)
+[models/edit-repo-option.ts:157](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-repo-option.ts#L157)
 
 ___
 
@@ -352,7 +338,21 @@ name of the repository
 
 #### Defined in
 
-[models/edit-repo-option.ts:154](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-repo-option.ts#L154)
+[models/edit-repo-option.ts:163](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-repo-option.ts#L163)
+
+___
+
+### <a id="private" name="private"></a> private
+
+• `Optional` **private**: `boolean`
+
+either `true` to make the repository private or `false` to make it public. Note: you will get a 422 error if the organization restricts changing repository visibility to organization owners and a non-owner tries to change the value of private.
+
+**`memberof`** EditRepoOption
+
+#### Defined in
+
+[models/edit-repo-option.ts:169](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-repo-option.ts#L169)
 
 ___
 
@@ -366,7 +366,7 @@ either `true` to make this repository a template or `false` to make it a normal 
 
 #### Defined in
 
-[models/edit-repo-option.ts:166](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-repo-option.ts#L166)
+[models/edit-repo-option.ts:175](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-repo-option.ts#L175)
 
 ___
 
@@ -380,4 +380,4 @@ a URL with more information about the repository.
 
 #### Defined in
 
-[models/edit-repo-option.ts:172](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-repo-option.ts#L172)
+[models/edit-repo-option.ts:181](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-repo-option.ts#L181)

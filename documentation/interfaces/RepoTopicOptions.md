@@ -26,4 +26,4 @@ list of topic names
 
 #### Defined in
 
-[models/repo-topic-options.ts:25](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/repo-topic-options.ts#L25)
+[models/repo-topic-options.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repo-topic-options.ts#L28)

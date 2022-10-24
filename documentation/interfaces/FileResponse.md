@@ -2,7 +2,7 @@
 
 # Interface: FileResponse
 
-FileResponse contains information about a repo's file
+FileResponse contains information about a repo\'s file
 
 **`export`**
 
@@ -26,7 +26,7 @@ FileResponse contains information about a repo's file
 
 #### Defined in
 
-[models/file-response.ts:28](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/file-response.ts#L28)
+[models/file-response.ts:37](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/file-response.ts#L37)
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 #### Defined in
 
-[models/file-response.ts:34](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/file-response.ts#L34)
+[models/file-response.ts:43](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/file-response.ts#L43)
 
 ___
 
@@ -50,4 +50,4 @@ ___
 
 #### Defined in
 
-[models/file-response.ts:40](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/file-response.ts#L40)
+[models/file-response.ts:49](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/file-response.ts#L49)

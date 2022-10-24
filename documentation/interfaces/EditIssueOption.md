@@ -15,12 +15,12 @@ EditIssueOption options for editing an issue
 - [assignee](EditIssueOption.md#assignee)
 - [assignees](EditIssueOption.md#assignees)
 - [body](EditIssueOption.md#body)
-- [dueDate](EditIssueOption.md#duedate)
+- [due\_date](EditIssueOption.md#due_date)
 - [milestone](EditIssueOption.md#milestone)
 - [ref](EditIssueOption.md#ref)
 - [state](EditIssueOption.md#state)
 - [title](EditIssueOption.md#title)
-- [unsetDueDate](EditIssueOption.md#unsetduedate)
+- [unset\_due\_date](EditIssueOption.md#unset_due_date)
 
 ## Properties
 
@@ -34,7 +34,7 @@ deprecated
 
 #### Defined in
 
-[models/edit-issue-option.ts:25](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-issue-option.ts#L25)
+[models/edit-issue-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-issue-option.ts#L28)
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 #### Defined in
 
-[models/edit-issue-option.ts:31](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-issue-option.ts#L31)
+[models/edit-issue-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-issue-option.ts#L34)
 
 ___
 
@@ -58,19 +58,19 @@ ___
 
 #### Defined in
 
-[models/edit-issue-option.ts:37](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-issue-option.ts#L37)
+[models/edit-issue-option.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-issue-option.ts#L40)
 
 ___
 
-### <a id="duedate" name="duedate"></a> dueDate
+### <a id="due_date" name="due_date"></a> due\_date
 
-• `Optional` **dueDate**: `Date`
+• `Optional` **due\_date**: `string`
 
 **`memberof`** EditIssueOption
 
 #### Defined in
 
-[models/edit-issue-option.ts:43](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-issue-option.ts#L43)
+[models/edit-issue-option.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-issue-option.ts#L46)
 
 ___
 
@@ -82,7 +82,7 @@ ___
 
 #### Defined in
 
-[models/edit-issue-option.ts:49](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-issue-option.ts#L49)
+[models/edit-issue-option.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-issue-option.ts#L52)
 
 ___
 
@@ -94,7 +94,7 @@ ___
 
 #### Defined in
 
-[models/edit-issue-option.ts:55](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-issue-option.ts#L55)
+[models/edit-issue-option.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-issue-option.ts#L58)
 
 ___
 
@@ -106,7 +106,7 @@ ___
 
 #### Defined in
 
-[models/edit-issue-option.ts:61](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-issue-option.ts#L61)
+[models/edit-issue-option.ts:64](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-issue-option.ts#L64)
 
 ___
 
@@ -118,16 +118,16 @@ ___
 
 #### Defined in
 
-[models/edit-issue-option.ts:67](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-issue-option.ts#L67)
+[models/edit-issue-option.ts:70](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-issue-option.ts#L70)
 
 ___
 
-### <a id="unsetduedate" name="unsetduedate"></a> unsetDueDate
+### <a id="unset_due_date" name="unset_due_date"></a> unset\_due\_date
 
-• `Optional` **unsetDueDate**: `boolean`
+• `Optional` **unset\_due\_date**: `boolean`
 
 **`memberof`** EditIssueOption
 
 #### Defined in
 
-[models/edit-issue-option.ts:73](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-issue-option.ts#L73)
+[models/edit-issue-option.ts:76](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-issue-option.ts#L76)

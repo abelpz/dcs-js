@@ -2,7 +2,7 @@
 
 # Interface: FileDeleteResponse
 
-FileDeleteResponse contains information about a repo's file that was deleted
+FileDeleteResponse contains information about a repo\'s file that was deleted
 
 **`export`**
 
@@ -26,19 +26,19 @@ FileDeleteResponse contains information about a repo's file that was deleted
 
 #### Defined in
 
-[models/file-delete-response.ts:27](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/file-delete-response.ts#L27)
+[models/file-delete-response.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/file-delete-response.ts#L34)
 
 ___
 
 ### <a id="content" name="content"></a> content
 
-• `Optional` **content**: `any`
+• `Optional` **content**: `object`
 
 **`memberof`** FileDeleteResponse
 
 #### Defined in
 
-[models/file-delete-response.ts:33](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/file-delete-response.ts#L33)
+[models/file-delete-response.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/file-delete-response.ts#L40)
 
 ___
 
@@ -50,4 +50,4 @@ ___
 
 #### Defined in
 
-[models/file-delete-response.ts:39](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/file-delete-response.ts#L39)
+[models/file-delete-response.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/file-delete-response.ts#L46)

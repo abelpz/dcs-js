@@ -12,16 +12,16 @@ IssueDeadline represents an issue deadline
 
 ### Properties
 
-- [dueDate](IssueDeadline.md#duedate)
+- [due\_date](IssueDeadline.md#due_date)
 
 ## Properties
 
-### <a id="duedate" name="duedate"></a> dueDate
+### <a id="due_date" name="due_date"></a> due\_date
 
-• `Optional` **dueDate**: `Date`
+• `Optional` **due\_date**: `string`
 
 **`memberof`** IssueDeadline
 
 #### Defined in
 
-[models/issue-deadline.ts:25](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/issue-deadline.ts#L25)
+[models/issue-deadline.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/issue-deadline.ts#L28)

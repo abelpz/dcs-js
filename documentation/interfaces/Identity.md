@@ -2,7 +2,7 @@
 
 # Interface: Identity
 
-Identity for a person's identity like an author or committer
+Identity for a person\'s identity like an author or committer
 
 **`export`**
 
@@ -25,7 +25,7 @@ Identity for a person's identity like an author or committer
 
 #### Defined in
 
-[models/identity.ts:25](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/identity.ts#L25)
+[models/identity.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/identity.ts#L28)
 
 ___
 
@@ -37,4 +37,4 @@ ___
 
 #### Defined in
 
-[models/identity.ts:31](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/identity.ts#L31)
+[models/identity.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/identity.ts#L34)

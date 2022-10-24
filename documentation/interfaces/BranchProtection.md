@@ -12,315 +12,315 @@ BranchProtection represents a branch protection for a repository
 
 ### Properties
 
-- [approvalsWhitelistTeams](BranchProtection.md#approvalswhitelistteams)
-- [approvalsWhitelistUsername](BranchProtection.md#approvalswhitelistusername)
-- [blockOnOfficialReviewRequests](BranchProtection.md#blockonofficialreviewrequests)
-- [blockOnOutdatedBranch](BranchProtection.md#blockonoutdatedbranch)
-- [blockOnRejectedReviews](BranchProtection.md#blockonrejectedreviews)
-- [branchName](BranchProtection.md#branchname)
-- [createdAt](BranchProtection.md#createdat)
-- [dismissStaleApprovals](BranchProtection.md#dismissstaleapprovals)
-- [enableApprovalsWhitelist](BranchProtection.md#enableapprovalswhitelist)
-- [enableMergeWhitelist](BranchProtection.md#enablemergewhitelist)
-- [enablePush](BranchProtection.md#enablepush)
-- [enablePushWhitelist](BranchProtection.md#enablepushwhitelist)
-- [enableStatusCheck](BranchProtection.md#enablestatuscheck)
-- [mergeWhitelistTeams](BranchProtection.md#mergewhitelistteams)
-- [mergeWhitelistUsernames](BranchProtection.md#mergewhitelistusernames)
-- [protectedFilePatterns](BranchProtection.md#protectedfilepatterns)
-- [pushWhitelistDeployKeys](BranchProtection.md#pushwhitelistdeploykeys)
-- [pushWhitelistTeams](BranchProtection.md#pushwhitelistteams)
-- [pushWhitelistUsernames](BranchProtection.md#pushwhitelistusernames)
-- [requireSignedCommits](BranchProtection.md#requiresignedcommits)
-- [requiredApprovals](BranchProtection.md#requiredapprovals)
-- [statusCheckContexts](BranchProtection.md#statuscheckcontexts)
-- [unprotectedFilePatterns](BranchProtection.md#unprotectedfilepatterns)
-- [updatedAt](BranchProtection.md#updatedat)
+- [approvals\_whitelist\_teams](BranchProtection.md#approvals_whitelist_teams)
+- [approvals\_whitelist\_username](BranchProtection.md#approvals_whitelist_username)
+- [block\_on\_official\_review\_requests](BranchProtection.md#block_on_official_review_requests)
+- [block\_on\_outdated\_branch](BranchProtection.md#block_on_outdated_branch)
+- [block\_on\_rejected\_reviews](BranchProtection.md#block_on_rejected_reviews)
+- [branch\_name](BranchProtection.md#branch_name)
+- [created\_at](BranchProtection.md#created_at)
+- [dismiss\_stale\_approvals](BranchProtection.md#dismiss_stale_approvals)
+- [enable\_approvals\_whitelist](BranchProtection.md#enable_approvals_whitelist)
+- [enable\_merge\_whitelist](BranchProtection.md#enable_merge_whitelist)
+- [enable\_push](BranchProtection.md#enable_push)
+- [enable\_push\_whitelist](BranchProtection.md#enable_push_whitelist)
+- [enable\_status\_check](BranchProtection.md#enable_status_check)
+- [merge\_whitelist\_teams](BranchProtection.md#merge_whitelist_teams)
+- [merge\_whitelist\_usernames](BranchProtection.md#merge_whitelist_usernames)
+- [protected\_file\_patterns](BranchProtection.md#protected_file_patterns)
+- [push\_whitelist\_deploy\_keys](BranchProtection.md#push_whitelist_deploy_keys)
+- [push\_whitelist\_teams](BranchProtection.md#push_whitelist_teams)
+- [push\_whitelist\_usernames](BranchProtection.md#push_whitelist_usernames)
+- [require\_signed\_commits](BranchProtection.md#require_signed_commits)
+- [required\_approvals](BranchProtection.md#required_approvals)
+- [status\_check\_contexts](BranchProtection.md#status_check_contexts)
+- [unprotected\_file\_patterns](BranchProtection.md#unprotected_file_patterns)
+- [updated\_at](BranchProtection.md#updated_at)
 
 ## Properties
 
-### <a id="approvalswhitelistteams" name="approvalswhitelistteams"></a> approvalsWhitelistTeams
+### <a id="approvals_whitelist_teams" name="approvals_whitelist_teams"></a> approvals\_whitelist\_teams
 
-• `Optional` **approvalsWhitelistTeams**: `string`[]
+• `Optional` **approvals\_whitelist\_teams**: `string`[]
 
 **`memberof`** BranchProtection
 
 #### Defined in
 
-[models/branch-protection.ts:25](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/branch-protection.ts#L25)
+[models/branch-protection.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/branch-protection.ts#L28)
 
 ___
 
-### <a id="approvalswhitelistusername" name="approvalswhitelistusername"></a> approvalsWhitelistUsername
+### <a id="approvals_whitelist_username" name="approvals_whitelist_username"></a> approvals\_whitelist\_username
 
-• `Optional` **approvalsWhitelistUsername**: `string`[]
+• `Optional` **approvals\_whitelist\_username**: `string`[]
 
 **`memberof`** BranchProtection
 
 #### Defined in
 
-[models/branch-protection.ts:31](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/branch-protection.ts#L31)
+[models/branch-protection.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/branch-protection.ts#L34)
 
 ___
 
-### <a id="blockonofficialreviewrequests" name="blockonofficialreviewrequests"></a> blockOnOfficialReviewRequests
+### <a id="block_on_official_review_requests" name="block_on_official_review_requests"></a> block\_on\_official\_review\_requests
 
-• `Optional` **blockOnOfficialReviewRequests**: `boolean`
+• `Optional` **block\_on\_official\_review\_requests**: `boolean`
 
 **`memberof`** BranchProtection
 
 #### Defined in
 
-[models/branch-protection.ts:37](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/branch-protection.ts#L37)
+[models/branch-protection.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/branch-protection.ts#L40)
 
 ___
 
-### <a id="blockonoutdatedbranch" name="blockonoutdatedbranch"></a> blockOnOutdatedBranch
+### <a id="block_on_outdated_branch" name="block_on_outdated_branch"></a> block\_on\_outdated\_branch
 
-• `Optional` **blockOnOutdatedBranch**: `boolean`
+• `Optional` **block\_on\_outdated\_branch**: `boolean`
 
 **`memberof`** BranchProtection
 
 #### Defined in
 
-[models/branch-protection.ts:43](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/branch-protection.ts#L43)
+[models/branch-protection.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/branch-protection.ts#L46)
 
 ___
 
-### <a id="blockonrejectedreviews" name="blockonrejectedreviews"></a> blockOnRejectedReviews
+### <a id="block_on_rejected_reviews" name="block_on_rejected_reviews"></a> block\_on\_rejected\_reviews
 
-• `Optional` **blockOnRejectedReviews**: `boolean`
+• `Optional` **block\_on\_rejected\_reviews**: `boolean`
 
 **`memberof`** BranchProtection
 
 #### Defined in
 
-[models/branch-protection.ts:49](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/branch-protection.ts#L49)
+[models/branch-protection.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/branch-protection.ts#L52)
 
 ___
 
-### <a id="branchname" name="branchname"></a> branchName
+### <a id="branch_name" name="branch_name"></a> branch\_name
 
-• `Optional` **branchName**: `string`
+• `Optional` **branch\_name**: `string`
 
 **`memberof`** BranchProtection
 
 #### Defined in
 
-[models/branch-protection.ts:55](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/branch-protection.ts#L55)
+[models/branch-protection.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/branch-protection.ts#L58)
 
 ___
 
-### <a id="createdat" name="createdat"></a> createdAt
+### <a id="created_at" name="created_at"></a> created\_at
 
-• `Optional` **createdAt**: `Date`
+• `Optional` **created\_at**: `string`
 
 **`memberof`** BranchProtection
 
 #### Defined in
 
-[models/branch-protection.ts:61](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/branch-protection.ts#L61)
+[models/branch-protection.ts:64](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/branch-protection.ts#L64)
 
 ___
 
-### <a id="dismissstaleapprovals" name="dismissstaleapprovals"></a> dismissStaleApprovals
+### <a id="dismiss_stale_approvals" name="dismiss_stale_approvals"></a> dismiss\_stale\_approvals
 
-• `Optional` **dismissStaleApprovals**: `boolean`
+• `Optional` **dismiss\_stale\_approvals**: `boolean`
 
 **`memberof`** BranchProtection
 
 #### Defined in
 
-[models/branch-protection.ts:67](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/branch-protection.ts#L67)
+[models/branch-protection.ts:70](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/branch-protection.ts#L70)
 
 ___
 
-### <a id="enableapprovalswhitelist" name="enableapprovalswhitelist"></a> enableApprovalsWhitelist
+### <a id="enable_approvals_whitelist" name="enable_approvals_whitelist"></a> enable\_approvals\_whitelist
 
-• `Optional` **enableApprovalsWhitelist**: `boolean`
+• `Optional` **enable\_approvals\_whitelist**: `boolean`
 
 **`memberof`** BranchProtection
 
 #### Defined in
 
-[models/branch-protection.ts:73](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/branch-protection.ts#L73)
+[models/branch-protection.ts:76](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/branch-protection.ts#L76)
 
 ___
 
-### <a id="enablemergewhitelist" name="enablemergewhitelist"></a> enableMergeWhitelist
+### <a id="enable_merge_whitelist" name="enable_merge_whitelist"></a> enable\_merge\_whitelist
 
-• `Optional` **enableMergeWhitelist**: `boolean`
+• `Optional` **enable\_merge\_whitelist**: `boolean`
 
 **`memberof`** BranchProtection
 
 #### Defined in
 
-[models/branch-protection.ts:79](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/branch-protection.ts#L79)
+[models/branch-protection.ts:82](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/branch-protection.ts#L82)
 
 ___
 
-### <a id="enablepush" name="enablepush"></a> enablePush
+### <a id="enable_push" name="enable_push"></a> enable\_push
 
-• `Optional` **enablePush**: `boolean`
+• `Optional` **enable\_push**: `boolean`
 
 **`memberof`** BranchProtection
 
 #### Defined in
 
-[models/branch-protection.ts:85](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/branch-protection.ts#L85)
+[models/branch-protection.ts:88](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/branch-protection.ts#L88)
 
 ___
 
-### <a id="enablepushwhitelist" name="enablepushwhitelist"></a> enablePushWhitelist
+### <a id="enable_push_whitelist" name="enable_push_whitelist"></a> enable\_push\_whitelist
 
-• `Optional` **enablePushWhitelist**: `boolean`
+• `Optional` **enable\_push\_whitelist**: `boolean`
 
 **`memberof`** BranchProtection
 
 #### Defined in
 
-[models/branch-protection.ts:91](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/branch-protection.ts#L91)
+[models/branch-protection.ts:94](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/branch-protection.ts#L94)
 
 ___
 
-### <a id="enablestatuscheck" name="enablestatuscheck"></a> enableStatusCheck
+### <a id="enable_status_check" name="enable_status_check"></a> enable\_status\_check
 
-• `Optional` **enableStatusCheck**: `boolean`
+• `Optional` **enable\_status\_check**: `boolean`
 
 **`memberof`** BranchProtection
 
 #### Defined in
 
-[models/branch-protection.ts:97](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/branch-protection.ts#L97)
+[models/branch-protection.ts:100](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/branch-protection.ts#L100)
 
 ___
 
-### <a id="mergewhitelistteams" name="mergewhitelistteams"></a> mergeWhitelistTeams
+### <a id="merge_whitelist_teams" name="merge_whitelist_teams"></a> merge\_whitelist\_teams
 
-• `Optional` **mergeWhitelistTeams**: `string`[]
+• `Optional` **merge\_whitelist\_teams**: `string`[]
 
 **`memberof`** BranchProtection
 
 #### Defined in
 
-[models/branch-protection.ts:103](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/branch-protection.ts#L103)
+[models/branch-protection.ts:106](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/branch-protection.ts#L106)
 
 ___
 
-### <a id="mergewhitelistusernames" name="mergewhitelistusernames"></a> mergeWhitelistUsernames
+### <a id="merge_whitelist_usernames" name="merge_whitelist_usernames"></a> merge\_whitelist\_usernames
 
-• `Optional` **mergeWhitelistUsernames**: `string`[]
+• `Optional` **merge\_whitelist\_usernames**: `string`[]
 
 **`memberof`** BranchProtection
 
 #### Defined in
 
-[models/branch-protection.ts:109](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/branch-protection.ts#L109)
+[models/branch-protection.ts:112](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/branch-protection.ts#L112)
 
 ___
 
-### <a id="protectedfilepatterns" name="protectedfilepatterns"></a> protectedFilePatterns
+### <a id="protected_file_patterns" name="protected_file_patterns"></a> protected\_file\_patterns
 
-• `Optional` **protectedFilePatterns**: `string`
+• `Optional` **protected\_file\_patterns**: `string`
 
 **`memberof`** BranchProtection
 
 #### Defined in
 
-[models/branch-protection.ts:115](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/branch-protection.ts#L115)
+[models/branch-protection.ts:118](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/branch-protection.ts#L118)
 
 ___
 
-### <a id="pushwhitelistdeploykeys" name="pushwhitelistdeploykeys"></a> pushWhitelistDeployKeys
+### <a id="push_whitelist_deploy_keys" name="push_whitelist_deploy_keys"></a> push\_whitelist\_deploy\_keys
 
-• `Optional` **pushWhitelistDeployKeys**: `boolean`
+• `Optional` **push\_whitelist\_deploy\_keys**: `boolean`
 
 **`memberof`** BranchProtection
 
 #### Defined in
 
-[models/branch-protection.ts:121](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/branch-protection.ts#L121)
+[models/branch-protection.ts:124](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/branch-protection.ts#L124)
 
 ___
 
-### <a id="pushwhitelistteams" name="pushwhitelistteams"></a> pushWhitelistTeams
+### <a id="push_whitelist_teams" name="push_whitelist_teams"></a> push\_whitelist\_teams
 
-• `Optional` **pushWhitelistTeams**: `string`[]
+• `Optional` **push\_whitelist\_teams**: `string`[]
 
 **`memberof`** BranchProtection
 
 #### Defined in
 
-[models/branch-protection.ts:127](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/branch-protection.ts#L127)
+[models/branch-protection.ts:130](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/branch-protection.ts#L130)
 
 ___
 
-### <a id="pushwhitelistusernames" name="pushwhitelistusernames"></a> pushWhitelistUsernames
+### <a id="push_whitelist_usernames" name="push_whitelist_usernames"></a> push\_whitelist\_usernames
 
-• `Optional` **pushWhitelistUsernames**: `string`[]
+• `Optional` **push\_whitelist\_usernames**: `string`[]
 
 **`memberof`** BranchProtection
 
 #### Defined in
 
-[models/branch-protection.ts:133](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/branch-protection.ts#L133)
+[models/branch-protection.ts:136](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/branch-protection.ts#L136)
 
 ___
 
-### <a id="requiresignedcommits" name="requiresignedcommits"></a> requireSignedCommits
+### <a id="require_signed_commits" name="require_signed_commits"></a> require\_signed\_commits
 
-• `Optional` **requireSignedCommits**: `boolean`
+• `Optional` **require\_signed\_commits**: `boolean`
 
 **`memberof`** BranchProtection
 
 #### Defined in
 
-[models/branch-protection.ts:139](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/branch-protection.ts#L139)
+[models/branch-protection.ts:142](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/branch-protection.ts#L142)
 
 ___
 
-### <a id="requiredapprovals" name="requiredapprovals"></a> requiredApprovals
+### <a id="required_approvals" name="required_approvals"></a> required\_approvals
 
-• `Optional` **requiredApprovals**: `number`
+• `Optional` **required\_approvals**: `number`
 
 **`memberof`** BranchProtection
 
 #### Defined in
 
-[models/branch-protection.ts:145](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/branch-protection.ts#L145)
+[models/branch-protection.ts:148](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/branch-protection.ts#L148)
 
 ___
 
-### <a id="statuscheckcontexts" name="statuscheckcontexts"></a> statusCheckContexts
+### <a id="status_check_contexts" name="status_check_contexts"></a> status\_check\_contexts
 
-• `Optional` **statusCheckContexts**: `string`[]
+• `Optional` **status\_check\_contexts**: `string`[]
 
 **`memberof`** BranchProtection
 
 #### Defined in
 
-[models/branch-protection.ts:151](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/branch-protection.ts#L151)
+[models/branch-protection.ts:154](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/branch-protection.ts#L154)
 
 ___
 
-### <a id="unprotectedfilepatterns" name="unprotectedfilepatterns"></a> unprotectedFilePatterns
+### <a id="unprotected_file_patterns" name="unprotected_file_patterns"></a> unprotected\_file\_patterns
 
-• `Optional` **unprotectedFilePatterns**: `string`
+• `Optional` **unprotected\_file\_patterns**: `string`
 
 **`memberof`** BranchProtection
 
 #### Defined in
 
-[models/branch-protection.ts:157](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/branch-protection.ts#L157)
+[models/branch-protection.ts:160](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/branch-protection.ts#L160)
 
 ___
 
-### <a id="updatedat" name="updatedat"></a> updatedAt
+### <a id="updated_at" name="updated_at"></a> updated\_at
 
-• `Optional` **updatedAt**: `Date`
+• `Optional` **updated\_at**: `string`
 
 **`memberof`** BranchProtection
 
 #### Defined in
 
-[models/branch-protection.ts:163](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/branch-protection.ts#L163)
+[models/branch-protection.ts:166](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/branch-protection.ts#L166)

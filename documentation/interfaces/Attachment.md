@@ -12,9 +12,9 @@ Attachment a generic attachment
 
 ### Properties
 
-- [browserDownloadUrl](Attachment.md#browserdownloadurl)
-- [createdAt](Attachment.md#createdat)
-- [downloadCount](Attachment.md#downloadcount)
+- [browser\_download\_url](Attachment.md#browser_download_url)
+- [created\_at](Attachment.md#created_at)
+- [download\_count](Attachment.md#download_count)
 - [id](Attachment.md#id)
 - [name](Attachment.md#name)
 - [size](Attachment.md#size)
@@ -22,39 +22,39 @@ Attachment a generic attachment
 
 ## Properties
 
-### <a id="browserdownloadurl" name="browserdownloadurl"></a> browserDownloadUrl
+### <a id="browser_download_url" name="browser_download_url"></a> browser\_download\_url
 
-• `Optional` **browserDownloadUrl**: `string`
+• `Optional` **browser\_download\_url**: `string`
 
 **`memberof`** Attachment
 
 #### Defined in
 
-[models/attachment.ts:25](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/attachment.ts#L25)
+[models/attachment.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/attachment.ts#L28)
 
 ___
 
-### <a id="createdat" name="createdat"></a> createdAt
+### <a id="created_at" name="created_at"></a> created\_at
 
-• `Optional` **createdAt**: `Date`
+• `Optional` **created\_at**: `string`
 
 **`memberof`** Attachment
 
 #### Defined in
 
-[models/attachment.ts:31](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/attachment.ts#L31)
+[models/attachment.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/attachment.ts#L34)
 
 ___
 
-### <a id="downloadcount" name="downloadcount"></a> downloadCount
+### <a id="download_count" name="download_count"></a> download\_count
 
-• `Optional` **downloadCount**: `number`
+• `Optional` **download\_count**: `number`
 
 **`memberof`** Attachment
 
 #### Defined in
 
-[models/attachment.ts:37](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/attachment.ts#L37)
+[models/attachment.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/attachment.ts#L40)
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 #### Defined in
 
-[models/attachment.ts:43](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/attachment.ts#L43)
+[models/attachment.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/attachment.ts#L46)
 
 ___
 
@@ -78,7 +78,7 @@ ___
 
 #### Defined in
 
-[models/attachment.ts:49](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/attachment.ts#L49)
+[models/attachment.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/attachment.ts#L52)
 
 ___
 
@@ -90,7 +90,7 @@ ___
 
 #### Defined in
 
-[models/attachment.ts:55](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/attachment.ts#L55)
+[models/attachment.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/attachment.ts#L58)
 
 ___
 
@@ -102,4 +102,4 @@ ___
 
 #### Defined in
 
-[models/attachment.ts:61](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/attachment.ts#L61)
+[models/attachment.ts:64](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/attachment.ts#L64)

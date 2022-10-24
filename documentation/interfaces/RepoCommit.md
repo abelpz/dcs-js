@@ -26,7 +26,7 @@
 
 #### Defined in
 
-[models/repo-commit.ts:27](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/repo-commit.ts#L27)
+[models/repo-commit.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repo-commit.ts#L34)
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 #### Defined in
 
-[models/repo-commit.ts:33](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/repo-commit.ts#L33)
+[models/repo-commit.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repo-commit.ts#L40)
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 #### Defined in
 
-[models/repo-commit.ts:39](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/repo-commit.ts#L39)
+[models/repo-commit.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repo-commit.ts#L46)
 
 ___
 
@@ -62,7 +62,7 @@ ___
 
 #### Defined in
 
-[models/repo-commit.ts:45](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/repo-commit.ts#L45)
+[models/repo-commit.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repo-commit.ts#L52)
 
 ___
 
@@ -74,4 +74,4 @@ ___
 
 #### Defined in
 
-[models/repo-commit.ts:51](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/repo-commit.ts#L51)
+[models/repo-commit.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repo-commit.ts#L58)

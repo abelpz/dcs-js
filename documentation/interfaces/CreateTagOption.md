@@ -13,7 +13,7 @@ CreateTagOption options when creating a tag
 ### Properties
 
 - [message](CreateTagOption.md#message)
-- [tagName](CreateTagOption.md#tagname)
+- [tag\_name](CreateTagOption.md#tag_name)
 - [target](CreateTagOption.md#target)
 
 ## Properties
@@ -26,19 +26,19 @@ CreateTagOption options when creating a tag
 
 #### Defined in
 
-[models/create-tag-option.ts:25](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-tag-option.ts#L25)
+[models/create-tag-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-tag-option.ts#L28)
 
 ___
 
-### <a id="tagname" name="tagname"></a> tagName
+### <a id="tag_name" name="tag_name"></a> tag\_name
 
-• **tagName**: `string`
+• **tag\_name**: `string`
 
 **`memberof`** CreateTagOption
 
 #### Defined in
 
-[models/create-tag-option.ts:31](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-tag-option.ts#L31)
+[models/create-tag-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-tag-option.ts#L34)
 
 ___
 
@@ -50,4 +50,4 @@ ___
 
 #### Defined in
 
-[models/create-tag-option.ts:37](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-tag-option.ts#L37)
+[models/create-tag-option.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-tag-option.ts#L40)

@@ -26,7 +26,7 @@ Email an email address belonging to a user
 
 #### Defined in
 
-[models/email.ts:25](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/email.ts#L25)
+[models/email.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/email.ts#L28)
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 #### Defined in
 
-[models/email.ts:31](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/email.ts#L31)
+[models/email.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/email.ts#L34)
 
 ___
 
@@ -50,4 +50,4 @@ ___
 
 #### Defined in
 
-[models/email.ts:37](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/email.ts#L37)
+[models/email.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/email.ts#L40)

@@ -33,7 +33,7 @@ PayloadCommit represents a commit
 
 #### Defined in
 
-[models/payload-commit.ts:27](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/payload-commit.ts#L27)
+[models/payload-commit.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/payload-commit.ts#L34)
 
 ___
 
@@ -45,7 +45,7 @@ ___
 
 #### Defined in
 
-[models/payload-commit.ts:33](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/payload-commit.ts#L33)
+[models/payload-commit.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/payload-commit.ts#L40)
 
 ___
 
@@ -57,7 +57,7 @@ ___
 
 #### Defined in
 
-[models/payload-commit.ts:39](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/payload-commit.ts#L39)
+[models/payload-commit.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/payload-commit.ts#L46)
 
 ___
 
@@ -71,7 +71,7 @@ sha1 hash of the commit
 
 #### Defined in
 
-[models/payload-commit.ts:45](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/payload-commit.ts#L45)
+[models/payload-commit.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/payload-commit.ts#L52)
 
 ___
 
@@ -83,7 +83,7 @@ ___
 
 #### Defined in
 
-[models/payload-commit.ts:51](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/payload-commit.ts#L51)
+[models/payload-commit.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/payload-commit.ts#L58)
 
 ___
 
@@ -95,7 +95,7 @@ ___
 
 #### Defined in
 
-[models/payload-commit.ts:57](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/payload-commit.ts#L57)
+[models/payload-commit.ts:64](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/payload-commit.ts#L64)
 
 ___
 
@@ -107,19 +107,19 @@ ___
 
 #### Defined in
 
-[models/payload-commit.ts:63](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/payload-commit.ts#L63)
+[models/payload-commit.ts:70](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/payload-commit.ts#L70)
 
 ___
 
 ### <a id="timestamp" name="timestamp"></a> timestamp
 
-• `Optional` **timestamp**: `Date`
+• `Optional` **timestamp**: `string`
 
 **`memberof`** PayloadCommit
 
 #### Defined in
 
-[models/payload-commit.ts:69](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/payload-commit.ts#L69)
+[models/payload-commit.ts:76](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/payload-commit.ts#L76)
 
 ___
 
@@ -131,7 +131,7 @@ ___
 
 #### Defined in
 
-[models/payload-commit.ts:75](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/payload-commit.ts#L75)
+[models/payload-commit.ts:82](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/payload-commit.ts#L82)
 
 ___
 
@@ -143,4 +143,4 @@ ___
 
 #### Defined in
 
-[models/payload-commit.ts:81](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/payload-commit.ts#L81)
+[models/payload-commit.ts:88](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/payload-commit.ts#L88)

@@ -15,7 +15,7 @@ PRBranchInfo information about a branch
 - [label](PRBranchInfo.md#label)
 - [ref](PRBranchInfo.md#ref)
 - [repo](PRBranchInfo.md#repo)
-- [repoId](PRBranchInfo.md#repoid)
+- [repo\_id](PRBranchInfo.md#repo_id)
 - [sha](PRBranchInfo.md#sha)
 
 ## Properties
@@ -28,7 +28,7 @@ PRBranchInfo information about a branch
 
 #### Defined in
 
-[models/prbranch-info.ts:26](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/prbranch-info.ts#L26)
+[models/prbranch-info.ts:31](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/prbranch-info.ts#L31)
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 #### Defined in
 
-[models/prbranch-info.ts:32](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/prbranch-info.ts#L32)
+[models/prbranch-info.ts:37](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/prbranch-info.ts#L37)
 
 ___
 
@@ -52,19 +52,19 @@ ___
 
 #### Defined in
 
-[models/prbranch-info.ts:38](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/prbranch-info.ts#L38)
+[models/prbranch-info.ts:43](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/prbranch-info.ts#L43)
 
 ___
 
-### <a id="repoid" name="repoid"></a> repoId
+### <a id="repo_id" name="repo_id"></a> repo\_id
 
-• `Optional` **repoId**: `number`
+• `Optional` **repo\_id**: `number`
 
 **`memberof`** PRBranchInfo
 
 #### Defined in
 
-[models/prbranch-info.ts:44](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/prbranch-info.ts#L44)
+[models/prbranch-info.ts:49](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/prbranch-info.ts#L49)
 
 ___
 
@@ -76,4 +76,4 @@ ___
 
 #### Defined in
 
-[models/prbranch-info.ts:50](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/prbranch-info.ts#L50)
+[models/prbranch-info.ts:55](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/prbranch-info.ts#L55)

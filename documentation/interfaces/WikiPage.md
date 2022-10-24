@@ -12,32 +12,32 @@ WikiPage a wiki page
 
 ### Properties
 
-- [commitCount](WikiPage.md#commitcount)
-- [contentBase64](WikiPage.md#contentbase64)
+- [commit\_count](WikiPage.md#commit_count)
+- [content\_base64](WikiPage.md#content_base64)
 - [footer](WikiPage.md#footer)
-- [htmlUrl](WikiPage.md#htmlurl)
-- [lastCommit](WikiPage.md#lastcommit)
+- [html\_url](WikiPage.md#html_url)
+- [last\_commit](WikiPage.md#last_commit)
 - [sidebar](WikiPage.md#sidebar)
-- [subUrl](WikiPage.md#suburl)
+- [sub\_url](WikiPage.md#sub_url)
 - [title](WikiPage.md#title)
 
 ## Properties
 
-### <a id="commitcount" name="commitcount"></a> commitCount
+### <a id="commit_count" name="commit_count"></a> commit\_count
 
-• `Optional` **commitCount**: `number`
+• `Optional` **commit\_count**: `number`
 
 **`memberof`** WikiPage
 
 #### Defined in
 
-[models/wiki-page.ts:26](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/wiki-page.ts#L26)
+[models/wiki-page.ts:31](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/wiki-page.ts#L31)
 
 ___
 
-### <a id="contentbase64" name="contentbase64"></a> contentBase64
+### <a id="content_base64" name="content_base64"></a> content\_base64
 
-• `Optional` **contentBase64**: `string`
+• `Optional` **content\_base64**: `string`
 
 Page content, base64 encoded
 
@@ -45,7 +45,7 @@ Page content, base64 encoded
 
 #### Defined in
 
-[models/wiki-page.ts:32](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/wiki-page.ts#L32)
+[models/wiki-page.ts:37](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/wiki-page.ts#L37)
 
 ___
 
@@ -57,31 +57,31 @@ ___
 
 #### Defined in
 
-[models/wiki-page.ts:38](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/wiki-page.ts#L38)
+[models/wiki-page.ts:43](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/wiki-page.ts#L43)
 
 ___
 
-### <a id="htmlurl" name="htmlurl"></a> htmlUrl
+### <a id="html_url" name="html_url"></a> html\_url
 
-• `Optional` **htmlUrl**: `string`
+• `Optional` **html\_url**: `string`
 
 **`memberof`** WikiPage
 
 #### Defined in
 
-[models/wiki-page.ts:44](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/wiki-page.ts#L44)
+[models/wiki-page.ts:49](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/wiki-page.ts#L49)
 
 ___
 
-### <a id="lastcommit" name="lastcommit"></a> lastCommit
+### <a id="last_commit" name="last_commit"></a> last\_commit
 
-• `Optional` **lastCommit**: [`WikiCommit`](WikiCommit.md)
+• `Optional` **last\_commit**: [`WikiCommit`](WikiCommit.md)
 
 **`memberof`** WikiPage
 
 #### Defined in
 
-[models/wiki-page.ts:50](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/wiki-page.ts#L50)
+[models/wiki-page.ts:55](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/wiki-page.ts#L55)
 
 ___
 
@@ -93,19 +93,19 @@ ___
 
 #### Defined in
 
-[models/wiki-page.ts:56](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/wiki-page.ts#L56)
+[models/wiki-page.ts:61](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/wiki-page.ts#L61)
 
 ___
 
-### <a id="suburl" name="suburl"></a> subUrl
+### <a id="sub_url" name="sub_url"></a> sub\_url
 
-• `Optional` **subUrl**: `string`
+• `Optional` **sub\_url**: `string`
 
 **`memberof`** WikiPage
 
 #### Defined in
 
-[models/wiki-page.ts:62](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/wiki-page.ts#L62)
+[models/wiki-page.ts:67](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/wiki-page.ts#L67)
 
 ___
 
@@ -117,4 +117,4 @@ ___
 
 #### Defined in
 
-[models/wiki-page.ts:68](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/wiki-page.ts#L68)
+[models/wiki-page.ts:73](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/wiki-page.ts#L73)

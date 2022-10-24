@@ -13,7 +13,7 @@ Reaction contain one reaction
 ### Properties
 
 - [content](Reaction.md#content)
-- [createdAt](Reaction.md#createdat)
+- [created\_at](Reaction.md#created_at)
 - [user](Reaction.md#user)
 
 ## Properties
@@ -26,19 +26,19 @@ Reaction contain one reaction
 
 #### Defined in
 
-[models/reaction.ts:26](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/reaction.ts#L26)
+[models/reaction.ts:31](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/reaction.ts#L31)
 
 ___
 
-### <a id="createdat" name="createdat"></a> createdAt
+### <a id="created_at" name="created_at"></a> created\_at
 
-• `Optional` **createdAt**: `Date`
+• `Optional` **created\_at**: `string`
 
 **`memberof`** Reaction
 
 #### Defined in
 
-[models/reaction.ts:32](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/reaction.ts#L32)
+[models/reaction.ts:37](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/reaction.ts#L37)
 
 ___
 
@@ -50,4 +50,4 @@ ___
 
 #### Defined in
 
-[models/reaction.ts:38](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/reaction.ts#L38)
+[models/reaction.ts:43](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/reaction.ts#L43)

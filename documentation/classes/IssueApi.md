@@ -94,7 +94,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[base.ts:50](https://github.com/unfoldingWord/dcs-js/blob/c677a54/base.ts#L50)
+[base.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/base.ts#L52)
 
 ## Properties
 
@@ -128,7 +128,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[base.ts:48](https://github.com/unfoldingWord/dcs-js/blob/c677a54/base.ts#L48)
+[base.ts:50](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/base.ts#L50)
 
 ## Methods
 
@@ -158,7 +158,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[apis/issue-api.ts:6819](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/issue-api.ts#L6819)
+[apis/issue-api.ts:4776](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L4776)
 
 ___
 
@@ -188,7 +188,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:6833](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/issue-api.ts#L6833)
+[apis/issue-api.ts:4791](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L4791)
 
 ___
 
@@ -218,7 +218,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:6847](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/issue-api.ts#L6847)
+[apis/issue-api.ts:4806](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L4806)
 
 ___
 
@@ -247,7 +247,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:6860](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/issue-api.ts#L6860)
+[apis/issue-api.ts:4820](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L4820)
 
 ___
 
@@ -276,7 +276,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:6873](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/issue-api.ts#L6873)
+[apis/issue-api.ts:4834](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L4834)
 
 ___
 
@@ -306,7 +306,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:6887](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/issue-api.ts#L6887)
+[apis/issue-api.ts:4849](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L4849)
 
 ___
 
@@ -335,7 +335,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:6900](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/issue-api.ts#L6900)
+[apis/issue-api.ts:4863](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L4863)
 
 ___
 
@@ -364,7 +364,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:6913](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/issue-api.ts#L6913)
+[apis/issue-api.ts:4877](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L4877)
 
 ___
 
@@ -393,7 +393,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:6926](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/issue-api.ts#L6926)
+[apis/issue-api.ts:4891](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L4891)
 
 ___
 
@@ -422,7 +422,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:6939](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/issue-api.ts#L6939)
+[apis/issue-api.ts:4905](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L4905)
 
 ___
 
@@ -431,6 +431,8 @@ ___
 ▸ **issueDeleteCommentDeprecated**(`owner`, `repo`, `index`, `id`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Delete a comment
+
+**`deprecated`**
 
 **`throws`** {RequiredError}
 
@@ -452,13 +454,13 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:6953](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/issue-api.ts#L6953)
+[apis/issue-api.ts:4921](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L4921)
 
 ___
 
 ### <a id="issuedeletecommentreaction" name="issuedeletecommentreaction"></a> issueDeleteCommentReaction
 
-▸ **issueDeleteCommentReaction**(`owner`, `repo`, `id`, `body?`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **issueDeleteCommentReaction**(`owner`, `repo`, `id`, `content?`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Remove a reaction from a comment of an issue
 
@@ -473,7 +475,7 @@ ___
 | `owner` | `string` | owner of the repo |
 | `repo` | `string` | name of the repo |
 | `id` | `number` | id of the comment to edit |
-| `body?` | [`EditReactionOption`](../interfaces/EditReactionOption.md) | - |
+| `content?` | [`EditReactionOption`](../interfaces/EditReactionOption.md) | - |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -482,13 +484,13 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:6967](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/issue-api.ts#L6967)
+[apis/issue-api.ts:4936](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L4936)
 
 ___
 
 ### <a id="issuedeleteissuereaction" name="issuedeleteissuereaction"></a> issueDeleteIssueReaction
 
-▸ **issueDeleteIssueReaction**(`owner`, `repo`, `index`, `body?`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **issueDeleteIssueReaction**(`owner`, `repo`, `index`, `content?`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Remove a reaction from an issue
 
@@ -503,7 +505,7 @@ ___
 | `owner` | `string` | owner of the repo |
 | `repo` | `string` | name of the repo |
 | `index` | `number` | index of the issue |
-| `body?` | [`EditReactionOption`](../interfaces/EditReactionOption.md) | - |
+| `content?` | [`EditReactionOption`](../interfaces/EditReactionOption.md) | - |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -512,7 +514,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:6981](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/issue-api.ts#L6981)
+[apis/issue-api.ts:4951](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L4951)
 
 ___
 
@@ -541,7 +543,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:6994](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/issue-api.ts#L6994)
+[apis/issue-api.ts:4965](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L4965)
 
 ___
 
@@ -570,7 +572,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:7007](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/issue-api.ts#L7007)
+[apis/issue-api.ts:4979](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L4979)
 
 ___
 
@@ -578,7 +580,7 @@ ___
 
 ▸ **issueDeleteStopWatch**(`owner`, `repo`, `index`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
-**`summary`** Delete an issue's existing stopwatch.
+**`summary`** Delete an issue\'s existing stopwatch.
 
 **`throws`** {RequiredError}
 
@@ -599,7 +601,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:7020](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/issue-api.ts#L7020)
+[apis/issue-api.ts:4993](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L4993)
 
 ___
 
@@ -629,7 +631,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:7034](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/issue-api.ts#L7034)
+[apis/issue-api.ts:5008](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5008)
 
 ___
 
@@ -659,7 +661,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:7048](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/issue-api.ts#L7048)
+[apis/issue-api.ts:5023](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5023)
 
 ___
 
@@ -689,7 +691,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:7062](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/issue-api.ts#L7062)
+[apis/issue-api.ts:5038](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5038)
 
 ___
 
@@ -698,6 +700,8 @@ ___
 ▸ **issueEditCommentDeprecated**(`owner`, `repo`, `index`, `id`, `body?`, `options?`): `Promise`<`AxiosResponse`<[`Comment`](../interfaces/Comment.md)\>\>
 
 **`summary`** Edit a comment
+
+**`deprecated`**
 
 **`throws`** {RequiredError}
 
@@ -720,7 +724,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:7077](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/issue-api.ts#L7077)
+[apis/issue-api.ts:5055](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5055)
 
 ___
 
@@ -750,7 +754,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:7091](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/issue-api.ts#L7091)
+[apis/issue-api.ts:5070](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5070)
 
 ___
 
@@ -780,7 +784,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:7105](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/issue-api.ts#L7105)
+[apis/issue-api.ts:5085](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5085)
 
 ___
 
@@ -810,7 +814,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:7119](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/issue-api.ts#L7119)
+[apis/issue-api.ts:5100](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5100)
 
 ___
 
@@ -840,7 +844,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:7133](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/issue-api.ts#L7133)
+[apis/issue-api.ts:5115](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5115)
 
 ___
 
@@ -869,7 +873,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:7146](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/issue-api.ts#L7146)
+[apis/issue-api.ts:5129](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5129)
 
 ___
 
@@ -898,7 +902,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:7159](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/issue-api.ts#L7159)
+[apis/issue-api.ts:5143](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5143)
 
 ___
 
@@ -919,8 +923,8 @@ ___
 | `owner` | `string` | owner of the repo |
 | `repo` | `string` | name of the repo |
 | `index` | `number` | index of the issue |
-| `since?` | `Date` | - |
-| `before?` | `Date` | - |
+| `since?` | `string` | - |
+| `before?` | `string` | - |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -929,7 +933,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:7174](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/issue-api.ts#L7174)
+[apis/issue-api.ts:5159](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5159)
 
 ___
 
@@ -950,10 +954,10 @@ ___
 | `owner` | `string` | owner of the repo |
 | `repo` | `string` | name of the repo |
 | `index` | `number` | index of the issue |
-| `since?` | `Date` | - |
+| `since?` | `string` | - |
 | `page?` | `number` | - |
 | `limit?` | `number` | - |
-| `before?` | `Date` | - |
+| `before?` | `string` | - |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -962,7 +966,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:7191](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/issue-api.ts#L7191)
+[apis/issue-api.ts:5177](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5177)
 
 ___
 
@@ -991,7 +995,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:7204](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/issue-api.ts#L7204)
+[apis/issue-api.ts:5191](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5191)
 
 ___
 
@@ -1022,7 +1026,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:7219](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/issue-api.ts#L7219)
+[apis/issue-api.ts:5207](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5207)
 
 ___
 
@@ -1051,7 +1055,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:7232](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/issue-api.ts#L7232)
+[apis/issue-api.ts:5221](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5221)
 
 ___
 
@@ -1059,7 +1063,7 @@ ___
 
 ▸ **issueGetLabels**(`owner`, `repo`, `index`, `options?`): `Promise`<`AxiosResponse`<[`Label`](../interfaces/Label.md)[]\>\>
 
-**`summary`** Get an issue's labels
+**`summary`** Get an issue\'s labels
 
 **`throws`** {RequiredError}
 
@@ -1080,7 +1084,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:7245](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/issue-api.ts#L7245)
+[apis/issue-api.ts:5235](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5235)
 
 ___
 
@@ -1109,7 +1113,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:7258](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/issue-api.ts#L7258)
+[apis/issue-api.ts:5249](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5249)
 
 ___
 
@@ -1117,7 +1121,7 @@ ___
 
 ▸ **issueGetMilestonesList**(`owner`, `repo`, `state?`, `name?`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`Milestone`](../interfaces/Milestone.md)[]\>\>
 
-**`summary`** Get all of a repository's opened milestones
+**`summary`** Get all of a repository\'s opened milestones
 
 **`throws`** {RequiredError}
 
@@ -1141,7 +1145,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:7274](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/issue-api.ts#L7274)
+[apis/issue-api.ts:5266](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5266)
 
 ___
 
@@ -1161,8 +1165,8 @@ ___
 | :------ | :------ | :------ |
 | `owner` | `string` | owner of the repo |
 | `repo` | `string` | name of the repo |
-| `since?` | `Date` | - |
-| `before?` | `Date` | - |
+| `since?` | `string` | - |
+| `before?` | `string` | - |
 | `page?` | `number` | - |
 | `limit?` | `number` | - |
 | `options?` | `AxiosRequestConfig` | - |
@@ -1173,7 +1177,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:7290](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/issue-api.ts#L7290)
+[apis/issue-api.ts:5283](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5283)
 
 ___
 
@@ -1181,7 +1185,7 @@ ___
 
 ▸ **issueListIssues**(`owner`, `repo`, `state?`, `labels?`, `q?`, `type?`, `milestones?`, `since?`, `before?`, `createdBy?`, `assignedBy?`, `mentionedBy?`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`Issue`](../interfaces/Issue.md)[]\>\>
 
-**`summary`** List a repository's issues
+**`summary`** List a repository\'s issues
 
 **`throws`** {RequiredError}
 
@@ -1193,13 +1197,13 @@ ___
 | :------ | :------ | :------ |
 | `owner` | `string` | owner of the repo |
 | `repo` | `string` | name of the repo |
-| `state?` | `string` | - |
+| `state?` | ``"all"`` \| ``"closed"`` \| ``"open"`` | - |
 | `labels?` | `string` | - |
 | `q?` | `string` | - |
-| `type?` | `string` | - |
+| `type?` | ``"issues"`` \| ``"pulls"`` | - |
 | `milestones?` | `string` | - |
-| `since?` | `Date` | - |
-| `before?` | `Date` | - |
+| `since?` | `string` | - |
+| `before?` | `string` | - |
 | `createdBy?` | `string` | - |
 | `assignedBy?` | `string` | - |
 | `mentionedBy?` | `string` | - |
@@ -1213,7 +1217,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:7314](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/issue-api.ts#L7314)
+[apis/issue-api.ts:5308](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5308)
 
 ___
 
@@ -1221,7 +1225,7 @@ ___
 
 ▸ **issueListLabels**(`owner`, `repo`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`Label`](../interfaces/Label.md)[]\>\>
 
-**`summary`** Get all of a repository's labels
+**`summary`** Get all of a repository\'s labels
 
 **`throws`** {RequiredError}
 
@@ -1243,13 +1247,13 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:7328](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/issue-api.ts#L7328)
+[apis/issue-api.ts:5323](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5323)
 
 ___
 
 ### <a id="issuepostcommentreaction" name="issuepostcommentreaction"></a> issuePostCommentReaction
 
-▸ **issuePostCommentReaction**(`owner`, `repo`, `id`, `body?`, `options?`): `Promise`<`AxiosResponse`<[`Reaction`](../interfaces/Reaction.md)\>\>
+▸ **issuePostCommentReaction**(`owner`, `repo`, `id`, `content?`, `options?`): `Promise`<`AxiosResponse`<[`Reaction`](../interfaces/Reaction.md)\>\>
 
 **`summary`** Add a reaction to a comment of an issue
 
@@ -1264,7 +1268,7 @@ ___
 | `owner` | `string` | owner of the repo |
 | `repo` | `string` | name of the repo |
 | `id` | `number` | id of the comment to edit |
-| `body?` | [`EditReactionOption`](../interfaces/EditReactionOption.md) | - |
+| `content?` | [`EditReactionOption`](../interfaces/EditReactionOption.md) | - |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1273,13 +1277,13 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:7342](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/issue-api.ts#L7342)
+[apis/issue-api.ts:5338](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5338)
 
 ___
 
 ### <a id="issuepostissuereaction" name="issuepostissuereaction"></a> issuePostIssueReaction
 
-▸ **issuePostIssueReaction**(`owner`, `repo`, `index`, `body?`, `options?`): `Promise`<`AxiosResponse`<[`Reaction`](../interfaces/Reaction.md)\>\>
+▸ **issuePostIssueReaction**(`owner`, `repo`, `index`, `content?`, `options?`): `Promise`<`AxiosResponse`<[`Reaction`](../interfaces/Reaction.md)\>\>
 
 **`summary`** Add a reaction to an issue
 
@@ -1294,7 +1298,7 @@ ___
 | `owner` | `string` | owner of the repo |
 | `repo` | `string` | name of the repo |
 | `index` | `number` | index of the issue |
-| `body?` | [`EditReactionOption`](../interfaces/EditReactionOption.md) | - |
+| `content?` | [`EditReactionOption`](../interfaces/EditReactionOption.md) | - |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1303,7 +1307,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:7356](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/issue-api.ts#L7356)
+[apis/issue-api.ts:5353](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5353)
 
 ___
 
@@ -1333,7 +1337,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:7370](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/issue-api.ts#L7370)
+[apis/issue-api.ts:5368](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5368)
 
 ___
 
@@ -1341,7 +1345,7 @@ ___
 
 ▸ **issueReplaceLabels**(`owner`, `repo`, `index`, `body?`, `options?`): `Promise`<`AxiosResponse`<[`Label`](../interfaces/Label.md)[]\>\>
 
-**`summary`** Replace an issue's labels
+**`summary`** Replace an issue\'s labels
 
 **`throws`** {RequiredError}
 
@@ -1363,7 +1367,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:7384](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/issue-api.ts#L7384)
+[apis/issue-api.ts:5383](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5383)
 
 ___
 
@@ -1392,7 +1396,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:7397](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/issue-api.ts#L7397)
+[apis/issue-api.ts:5397](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5397)
 
 ___
 
@@ -1416,8 +1420,8 @@ ___
 | `q?` | `string` |
 | `priorityRepoId?` | `number` |
 | `type?` | `string` |
-| `since?` | `Date` |
-| `before?` | `Date` |
+| `since?` | `string` |
+| `before?` | `string` |
 | `assigned?` | `boolean` |
 | `created?` | `boolean` |
 | `mentioned?` | `boolean` |
@@ -1434,7 +1438,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:7423](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/issue-api.ts#L7423)
+[apis/issue-api.ts:5424](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5424)
 
 ___
 
@@ -1463,7 +1467,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:7436](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/issue-api.ts#L7436)
+[apis/issue-api.ts:5438](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5438)
 
 ___
 
@@ -1471,7 +1475,7 @@ ___
 
 ▸ **issueStopStopWatch**(`owner`, `repo`, `index`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
-**`summary`** Stop an issue's existing stopwatch.
+**`summary`** Stop an issue\'s existing stopwatch.
 
 **`throws`** {RequiredError}
 
@@ -1492,7 +1496,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:7449](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/issue-api.ts#L7449)
+[apis/issue-api.ts:5452](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5452)
 
 ___
 
@@ -1523,7 +1527,7 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:7464](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/issue-api.ts#L7464)
+[apis/issue-api.ts:5468](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5468)
 
 ___
 
@@ -1531,7 +1535,7 @@ ___
 
 ▸ **issueTrackedTimes**(`owner`, `repo`, `index`, `user?`, `since?`, `before?`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`TrackedTime`](../interfaces/TrackedTime.md)[]\>\>
 
-**`summary`** List an issue's tracked times
+**`summary`** List an issue\'s tracked times
 
 **`throws`** {RequiredError}
 
@@ -1545,8 +1549,8 @@ ___
 | `repo` | `string` | name of the repo |
 | `index` | `number` | index of the issue |
 | `user?` | `string` | - |
-| `since?` | `Date` | - |
-| `before?` | `Date` | - |
+| `since?` | `string` | - |
+| `before?` | `string` | - |
 | `page?` | `number` | - |
 | `limit?` | `number` | - |
 | `options?` | `AxiosRequestConfig` | - |
@@ -1557,4 +1561,4 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:7482](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/issue-api.ts#L7482)
+[apis/issue-api.ts:5487](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5487)

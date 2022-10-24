@@ -14,8 +14,13 @@
 - [apiKey](Configuration.md#apikey)
 - [baseOptions](Configuration.md#baseoptions)
 - [basePath](Configuration.md#basepath)
+- [formDataCtor](Configuration.md#formdatactor)
 - [password](Configuration.md#password)
 - [username](Configuration.md#username)
+
+### Methods
+
+- [isJsonMime](Configuration.md#isjsonmime)
 
 ## Constructors
 
@@ -31,7 +36,7 @@
 
 #### Defined in
 
-[configuration.ts:66](https://github.com/unfoldingWord/dcs-js/blob/c677a54/configuration.ts#L66)
+[configuration.ts:77](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/configuration.ts#L77)
 
 ## Properties
 
@@ -49,7 +54,7 @@ parameter for oauth2 security
 
 #### Defined in
 
-[configuration.ts:50](https://github.com/unfoldingWord/dcs-js/blob/c677a54/configuration.ts#L50)
+[configuration.ts:53](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/configuration.ts#L53)
 
 ___
 
@@ -65,7 +70,7 @@ parameter for apiKey security
 
 #### Defined in
 
-[configuration.ts:29](https://github.com/unfoldingWord/dcs-js/blob/c677a54/configuration.ts#L29)
+[configuration.ts:32](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/configuration.ts#L32)
 
 ___
 
@@ -79,7 +84,7 @@ base options for axios calls
 
 #### Defined in
 
-[configuration.ts:64](https://github.com/unfoldingWord/dcs-js/blob/c677a54/configuration.ts#L64)
+[configuration.ts:67](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/configuration.ts#L67)
 
 ___
 
@@ -93,7 +98,25 @@ override base path
 
 #### Defined in
 
-[configuration.ts:57](https://github.com/unfoldingWord/dcs-js/blob/c677a54/configuration.ts#L57)
+[configuration.ts:60](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/configuration.ts#L60)
+
+___
+
+### <a id="formdatactor" name="formdatactor"></a> formDataCtor
+
+• `Optional` **formDataCtor**: () => `any`
+
+#### Type declaration
+
+• **new Configuration**()
+
+The FormData constructor that will be used to create multipart form data
+requests. You can inject this here so that execution environments that
+do not support the FormData class can still run the generated client.
+
+#### Defined in
+
+[configuration.ts:75](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/configuration.ts#L75)
 
 ___
 
@@ -107,7 +130,7 @@ parameter for basic security
 
 #### Defined in
 
-[configuration.ts:43](https://github.com/unfoldingWord/dcs-js/blob/c677a54/configuration.ts#L43)
+[configuration.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/configuration.ts#L46)
 
 ___
 
@@ -121,4 +144,33 @@ parameter for basic security
 
 #### Defined in
 
-[configuration.ts:36](https://github.com/unfoldingWord/dcs-js/blob/c677a54/configuration.ts#L36)
+[configuration.ts:39](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/configuration.ts#L39)
+
+## Methods
+
+### <a id="isjsonmime" name="isjsonmime"></a> isJsonMime
+
+▸ **isJsonMime**(`mime`): `boolean`
+
+Check if the given MIME is a JSON MIME.
+JSON MIME examples:
+  application/json
+  application/json; charset=UTF8
+  APPLICATION/JSON
+  application/vnd.company+json
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `mime` | `string` | MIME (Multipurpose Internet Mail Extensions) |
+
+#### Returns
+
+`boolean`
+
+True if the given MIME is JSON, false otherwise.
+
+#### Defined in
+
+[configuration.ts:97](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/configuration.ts#L97)

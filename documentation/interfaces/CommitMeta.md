@@ -18,13 +18,13 @@
 
 ### <a id="created" name="created"></a> created
 
-• `Optional` **created**: `Date`
+• `Optional` **created**: `string`
 
 **`memberof`** CommitMeta
 
 #### Defined in
 
-[models/commit-meta.ts:25](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/commit-meta.ts#L25)
+[models/commit-meta.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/commit-meta.ts#L28)
 
 ___
 
@@ -36,7 +36,7 @@ ___
 
 #### Defined in
 
-[models/commit-meta.ts:31](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/commit-meta.ts#L31)
+[models/commit-meta.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/commit-meta.ts#L34)
 
 ___
 
@@ -48,4 +48,4 @@ ___
 
 #### Defined in
 
-[models/commit-meta.ts:37](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/commit-meta.ts#L37)
+[models/commit-meta.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/commit-meta.ts#L40)

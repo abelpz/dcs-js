@@ -13,13 +13,13 @@ CreateUserOption create user options
 ### Properties
 
 - [email](CreateUserOption.md#email)
-- [fullName](CreateUserOption.md#fullname)
-- [loginName](CreateUserOption.md#loginname)
-- [mustChangePassword](CreateUserOption.md#mustchangepassword)
+- [full\_name](CreateUserOption.md#full_name)
+- [login\_name](CreateUserOption.md#login_name)
+- [must\_change\_password](CreateUserOption.md#must_change_password)
 - [password](CreateUserOption.md#password)
 - [restricted](CreateUserOption.md#restricted)
-- [sendNotify](CreateUserOption.md#sendnotify)
-- [sourceId](CreateUserOption.md#sourceid)
+- [send\_notify](CreateUserOption.md#send_notify)
+- [source\_id](CreateUserOption.md#source_id)
 - [username](CreateUserOption.md#username)
 - [visibility](CreateUserOption.md#visibility)
 
@@ -33,43 +33,43 @@ CreateUserOption create user options
 
 #### Defined in
 
-[models/create-user-option.ts:25](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-user-option.ts#L25)
+[models/create-user-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-user-option.ts#L28)
 
 ___
 
-### <a id="fullname" name="fullname"></a> fullName
+### <a id="full_name" name="full_name"></a> full\_name
 
-• `Optional` **fullName**: `string`
+• `Optional` **full\_name**: `string`
 
 **`memberof`** CreateUserOption
 
 #### Defined in
 
-[models/create-user-option.ts:31](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-user-option.ts#L31)
+[models/create-user-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-user-option.ts#L34)
 
 ___
 
-### <a id="loginname" name="loginname"></a> loginName
+### <a id="login_name" name="login_name"></a> login\_name
 
-• `Optional` **loginName**: `string`
+• `Optional` **login\_name**: `string`
 
 **`memberof`** CreateUserOption
 
 #### Defined in
 
-[models/create-user-option.ts:37](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-user-option.ts#L37)
+[models/create-user-option.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-user-option.ts#L40)
 
 ___
 
-### <a id="mustchangepassword" name="mustchangepassword"></a> mustChangePassword
+### <a id="must_change_password" name="must_change_password"></a> must\_change\_password
 
-• `Optional` **mustChangePassword**: `boolean`
+• `Optional` **must\_change\_password**: `boolean`
 
 **`memberof`** CreateUserOption
 
 #### Defined in
 
-[models/create-user-option.ts:43](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-user-option.ts#L43)
+[models/create-user-option.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-user-option.ts#L46)
 
 ___
 
@@ -81,7 +81,7 @@ ___
 
 #### Defined in
 
-[models/create-user-option.ts:49](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-user-option.ts#L49)
+[models/create-user-option.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-user-option.ts#L52)
 
 ___
 
@@ -93,31 +93,31 @@ ___
 
 #### Defined in
 
-[models/create-user-option.ts:55](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-user-option.ts#L55)
+[models/create-user-option.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-user-option.ts#L58)
 
 ___
 
-### <a id="sendnotify" name="sendnotify"></a> sendNotify
+### <a id="send_notify" name="send_notify"></a> send\_notify
 
-• `Optional` **sendNotify**: `boolean`
+• `Optional` **send\_notify**: `boolean`
 
 **`memberof`** CreateUserOption
 
 #### Defined in
 
-[models/create-user-option.ts:61](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-user-option.ts#L61)
+[models/create-user-option.ts:64](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-user-option.ts#L64)
 
 ___
 
-### <a id="sourceid" name="sourceid"></a> sourceId
+### <a id="source_id" name="source_id"></a> source\_id
 
-• `Optional` **sourceId**: `number`
+• `Optional` **source\_id**: `number`
 
 **`memberof`** CreateUserOption
 
 #### Defined in
 
-[models/create-user-option.ts:67](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-user-option.ts#L67)
+[models/create-user-option.ts:70](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-user-option.ts#L70)
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-[models/create-user-option.ts:73](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-user-option.ts#L73)
+[models/create-user-option.ts:76](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-user-option.ts#L76)
 
 ___
 
@@ -141,4 +141,4 @@ ___
 
 #### Defined in
 
-[models/create-user-option.ts:79](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-user-option.ts#L79)
+[models/create-user-option.ts:82](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-user-option.ts#L82)

@@ -14,19 +14,19 @@ AddTimeOption options for adding time to an issue
 
 - [created](AddTimeOption.md#created)
 - [time](AddTimeOption.md#time)
-- [userName](AddTimeOption.md#username)
+- [user\_name](AddTimeOption.md#user_name)
 
 ## Properties
 
 ### <a id="created" name="created"></a> created
 
-• `Optional` **created**: `Date`
+• `Optional` **created**: `string`
 
 **`memberof`** AddTimeOption
 
 #### Defined in
 
-[models/add-time-option.ts:25](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/add-time-option.ts#L25)
+[models/add-time-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/add-time-option.ts#L28)
 
 ___
 
@@ -40,13 +40,13 @@ time in seconds
 
 #### Defined in
 
-[models/add-time-option.ts:31](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/add-time-option.ts#L31)
+[models/add-time-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/add-time-option.ts#L34)
 
 ___
 
-### <a id="username" name="username"></a> userName
+### <a id="user_name" name="user_name"></a> user\_name
 
-• `Optional` **userName**: `string`
+• `Optional` **user\_name**: `string`
 
 User who spent the time (optional)
 
@@ -54,4 +54,4 @@ User who spent the time (optional)
 
 #### Defined in
 
-[models/add-time-option.ts:37](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/add-time-option.ts#L37)
+[models/add-time-option.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/add-time-option.ts#L40)

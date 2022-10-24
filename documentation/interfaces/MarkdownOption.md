@@ -12,16 +12,16 @@ MarkdownOption markdown options
 
 ### Properties
 
-- [context](MarkdownOption.md#context)
-- [mode](MarkdownOption.md#mode)
-- [text](MarkdownOption.md#text)
-- [wiki](MarkdownOption.md#wiki)
+- [Context](MarkdownOption.md#context)
+- [Mode](MarkdownOption.md#mode)
+- [Text](MarkdownOption.md#text)
+- [Wiki](MarkdownOption.md#wiki)
 
 ## Properties
 
-### <a id="context" name="context"></a> context
+### <a id="context" name="context"></a> Context
 
-• `Optional` **context**: `string`
+• `Optional` **Context**: `string`
 
 Context to render  in: body
 
@@ -29,13 +29,13 @@ Context to render  in: body
 
 #### Defined in
 
-[models/markdown-option.ts:25](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/markdown-option.ts#L25)
+[models/markdown-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/markdown-option.ts#L28)
 
 ___
 
-### <a id="mode" name="mode"></a> mode
+### <a id="mode" name="mode"></a> Mode
 
-• `Optional` **mode**: `string`
+• `Optional` **Mode**: `string`
 
 Mode to render  in: body
 
@@ -43,13 +43,13 @@ Mode to render  in: body
 
 #### Defined in
 
-[models/markdown-option.ts:31](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/markdown-option.ts#L31)
+[models/markdown-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/markdown-option.ts#L34)
 
 ___
 
-### <a id="text" name="text"></a> text
+### <a id="text" name="text"></a> Text
 
-• `Optional` **text**: `string`
+• `Optional` **Text**: `string`
 
 Text markdown to render  in: body
 
@@ -57,13 +57,13 @@ Text markdown to render  in: body
 
 #### Defined in
 
-[models/markdown-option.ts:37](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/markdown-option.ts#L37)
+[models/markdown-option.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/markdown-option.ts#L40)
 
 ___
 
-### <a id="wiki" name="wiki"></a> wiki
+### <a id="wiki" name="wiki"></a> Wiki
 
-• `Optional` **wiki**: `boolean`
+• `Optional` **Wiki**: `boolean`
 
 Is it a wiki page ?  in: body
 
@@ -71,4 +71,4 @@ Is it a wiki page ?  in: body
 
 #### Defined in
 
-[models/markdown-option.ts:43](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/markdown-option.ts#L43)
+[models/markdown-option.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/markdown-option.ts#L46)

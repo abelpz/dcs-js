@@ -13,7 +13,7 @@ EditMilestoneOption options for editing a milestone
 ### Properties
 
 - [description](EditMilestoneOption.md#description)
-- [dueOn](EditMilestoneOption.md#dueon)
+- [due\_on](EditMilestoneOption.md#due_on)
 - [state](EditMilestoneOption.md#state)
 - [title](EditMilestoneOption.md#title)
 
@@ -27,19 +27,19 @@ EditMilestoneOption options for editing a milestone
 
 #### Defined in
 
-[models/edit-milestone-option.ts:25](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-milestone-option.ts#L25)
+[models/edit-milestone-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-milestone-option.ts#L28)
 
 ___
 
-### <a id="dueon" name="dueon"></a> dueOn
+### <a id="due_on" name="due_on"></a> due\_on
 
-• `Optional` **dueOn**: `Date`
+• `Optional` **due\_on**: `string`
 
 **`memberof`** EditMilestoneOption
 
 #### Defined in
 
-[models/edit-milestone-option.ts:31](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-milestone-option.ts#L31)
+[models/edit-milestone-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-milestone-option.ts#L34)
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 #### Defined in
 
-[models/edit-milestone-option.ts:37](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-milestone-option.ts#L37)
+[models/edit-milestone-option.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-milestone-option.ts#L40)
 
 ___
 
@@ -63,4 +63,4 @@ ___
 
 #### Defined in
 
-[models/edit-milestone-option.ts:43](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-milestone-option.ts#L43)
+[models/edit-milestone-option.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-milestone-option.ts#L46)

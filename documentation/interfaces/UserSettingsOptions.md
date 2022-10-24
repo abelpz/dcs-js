@@ -13,10 +13,10 @@ UserSettingsOptions represents options to change user settings
 ### Properties
 
 - [description](UserSettingsOptions.md#description)
-- [diffViewStyle](UserSettingsOptions.md#diffviewstyle)
-- [fullName](UserSettingsOptions.md#fullname)
-- [hideActivity](UserSettingsOptions.md#hideactivity)
-- [hideEmail](UserSettingsOptions.md#hideemail)
+- [diff\_view\_style](UserSettingsOptions.md#diff_view_style)
+- [full\_name](UserSettingsOptions.md#full_name)
+- [hide\_activity](UserSettingsOptions.md#hide_activity)
+- [hide\_email](UserSettingsOptions.md#hide_email)
 - [language](UserSettingsOptions.md#language)
 - [location](UserSettingsOptions.md#location)
 - [theme](UserSettingsOptions.md#theme)
@@ -32,49 +32,49 @@ UserSettingsOptions represents options to change user settings
 
 #### Defined in
 
-[models/user-settings-options.ts:25](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/user-settings-options.ts#L25)
+[models/user-settings-options.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/user-settings-options.ts#L28)
 
 ___
 
-### <a id="diffviewstyle" name="diffviewstyle"></a> diffViewStyle
+### <a id="diff_view_style" name="diff_view_style"></a> diff\_view\_style
 
-• `Optional` **diffViewStyle**: `string`
+• `Optional` **diff\_view\_style**: `string`
 
 **`memberof`** UserSettingsOptions
 
 #### Defined in
 
-[models/user-settings-options.ts:31](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/user-settings-options.ts#L31)
+[models/user-settings-options.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/user-settings-options.ts#L34)
 
 ___
 
-### <a id="fullname" name="fullname"></a> fullName
+### <a id="full_name" name="full_name"></a> full\_name
 
-• `Optional` **fullName**: `string`
+• `Optional` **full\_name**: `string`
 
 **`memberof`** UserSettingsOptions
 
 #### Defined in
 
-[models/user-settings-options.ts:37](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/user-settings-options.ts#L37)
+[models/user-settings-options.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/user-settings-options.ts#L40)
 
 ___
 
-### <a id="hideactivity" name="hideactivity"></a> hideActivity
+### <a id="hide_activity" name="hide_activity"></a> hide\_activity
 
-• `Optional` **hideActivity**: `boolean`
+• `Optional` **hide\_activity**: `boolean`
 
 **`memberof`** UserSettingsOptions
 
 #### Defined in
 
-[models/user-settings-options.ts:43](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/user-settings-options.ts#L43)
+[models/user-settings-options.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/user-settings-options.ts#L46)
 
 ___
 
-### <a id="hideemail" name="hideemail"></a> hideEmail
+### <a id="hide_email" name="hide_email"></a> hide\_email
 
-• `Optional` **hideEmail**: `boolean`
+• `Optional` **hide\_email**: `boolean`
 
 Privacy
 
@@ -82,7 +82,7 @@ Privacy
 
 #### Defined in
 
-[models/user-settings-options.ts:49](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/user-settings-options.ts#L49)
+[models/user-settings-options.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/user-settings-options.ts#L52)
 
 ___
 
@@ -94,7 +94,7 @@ ___
 
 #### Defined in
 
-[models/user-settings-options.ts:55](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/user-settings-options.ts#L55)
+[models/user-settings-options.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/user-settings-options.ts#L58)
 
 ___
 
@@ -106,7 +106,7 @@ ___
 
 #### Defined in
 
-[models/user-settings-options.ts:61](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/user-settings-options.ts#L61)
+[models/user-settings-options.ts:64](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/user-settings-options.ts#L64)
 
 ___
 
@@ -118,7 +118,7 @@ ___
 
 #### Defined in
 
-[models/user-settings-options.ts:67](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/user-settings-options.ts#L67)
+[models/user-settings-options.ts:70](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/user-settings-options.ts#L70)
 
 ___
 
@@ -130,4 +130,4 @@ ___
 
 #### Defined in
 
-[models/user-settings-options.ts:73](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/user-settings-options.ts#L73)
+[models/user-settings-options.ts:76](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/user-settings-options.ts#L76)

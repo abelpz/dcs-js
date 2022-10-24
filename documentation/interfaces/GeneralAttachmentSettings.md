@@ -12,22 +12,22 @@ GeneralAttachmentSettings contains global Attachment settings exposed by API
 
 ### Properties
 
-- [allowedTypes](GeneralAttachmentSettings.md#allowedtypes)
+- [allowed\_types](GeneralAttachmentSettings.md#allowed_types)
 - [enabled](GeneralAttachmentSettings.md#enabled)
-- [maxFiles](GeneralAttachmentSettings.md#maxfiles)
-- [maxSize](GeneralAttachmentSettings.md#maxsize)
+- [max\_files](GeneralAttachmentSettings.md#max_files)
+- [max\_size](GeneralAttachmentSettings.md#max_size)
 
 ## Properties
 
-### <a id="allowedtypes" name="allowedtypes"></a> allowedTypes
+### <a id="allowed_types" name="allowed_types"></a> allowed\_types
 
-• `Optional` **allowedTypes**: `string`
+• `Optional` **allowed\_types**: `string`
 
 **`memberof`** GeneralAttachmentSettings
 
 #### Defined in
 
-[models/general-attachment-settings.ts:25](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/general-attachment-settings.ts#L25)
+[models/general-attachment-settings.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/general-attachment-settings.ts#L28)
 
 ___
 
@@ -39,28 +39,28 @@ ___
 
 #### Defined in
 
-[models/general-attachment-settings.ts:31](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/general-attachment-settings.ts#L31)
+[models/general-attachment-settings.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/general-attachment-settings.ts#L34)
 
 ___
 
-### <a id="maxfiles" name="maxfiles"></a> maxFiles
+### <a id="max_files" name="max_files"></a> max\_files
 
-• `Optional` **maxFiles**: `number`
+• `Optional` **max\_files**: `number`
 
 **`memberof`** GeneralAttachmentSettings
 
 #### Defined in
 
-[models/general-attachment-settings.ts:37](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/general-attachment-settings.ts#L37)
+[models/general-attachment-settings.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/general-attachment-settings.ts#L40)
 
 ___
 
-### <a id="maxsize" name="maxsize"></a> maxSize
+### <a id="max_size" name="max_size"></a> max\_size
 
-• `Optional` **maxSize**: `number`
+• `Optional` **max\_size**: `number`
 
 **`memberof`** GeneralAttachmentSettings
 
 #### Defined in
 
-[models/general-attachment-settings.ts:43](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/general-attachment-settings.ts#L43)
+[models/general-attachment-settings.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/general-attachment-settings.ts#L46)

@@ -12,27 +12,27 @@ PublicKey publickey is a user key to push code to repository
 
 ### Properties
 
-- [createdAt](PublicKey.md#createdat)
+- [created\_at](PublicKey.md#created_at)
 - [fingerprint](PublicKey.md#fingerprint)
 - [id](PublicKey.md#id)
 - [key](PublicKey.md#key)
-- [keyType](PublicKey.md#keytype)
-- [readOnly](PublicKey.md#readonly)
+- [key\_type](PublicKey.md#key_type)
+- [read\_only](PublicKey.md#read_only)
 - [title](PublicKey.md#title)
 - [url](PublicKey.md#url)
 - [user](PublicKey.md#user)
 
 ## Properties
 
-### <a id="createdat" name="createdat"></a> createdAt
+### <a id="created_at" name="created_at"></a> created\_at
 
-• `Optional` **createdAt**: `Date`
+• `Optional` **created\_at**: `string`
 
 **`memberof`** PublicKey
 
 #### Defined in
 
-[models/public-key.ts:26](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/public-key.ts#L26)
+[models/public-key.ts:31](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/public-key.ts#L31)
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 #### Defined in
 
-[models/public-key.ts:32](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/public-key.ts#L32)
+[models/public-key.ts:37](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/public-key.ts#L37)
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 #### Defined in
 
-[models/public-key.ts:38](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/public-key.ts#L38)
+[models/public-key.ts:43](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/public-key.ts#L43)
 
 ___
 
@@ -68,31 +68,31 @@ ___
 
 #### Defined in
 
-[models/public-key.ts:44](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/public-key.ts#L44)
+[models/public-key.ts:49](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/public-key.ts#L49)
 
 ___
 
-### <a id="keytype" name="keytype"></a> keyType
+### <a id="key_type" name="key_type"></a> key\_type
 
-• `Optional` **keyType**: `string`
+• `Optional` **key\_type**: `string`
 
 **`memberof`** PublicKey
 
 #### Defined in
 
-[models/public-key.ts:50](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/public-key.ts#L50)
+[models/public-key.ts:55](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/public-key.ts#L55)
 
 ___
 
-### <a id="readonly" name="readonly"></a> readOnly
+### <a id="read_only" name="read_only"></a> read\_only
 
-• `Optional` **readOnly**: `boolean`
+• `Optional` **read\_only**: `boolean`
 
 **`memberof`** PublicKey
 
 #### Defined in
 
-[models/public-key.ts:56](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/public-key.ts#L56)
+[models/public-key.ts:61](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/public-key.ts#L61)
 
 ___
 
@@ -104,7 +104,7 @@ ___
 
 #### Defined in
 
-[models/public-key.ts:62](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/public-key.ts#L62)
+[models/public-key.ts:67](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/public-key.ts#L67)
 
 ___
 
@@ -116,7 +116,7 @@ ___
 
 #### Defined in
 
-[models/public-key.ts:68](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/public-key.ts#L68)
+[models/public-key.ts:73](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/public-key.ts#L73)
 
 ___
 
@@ -128,4 +128,4 @@ ___
 
 #### Defined in
 
-[models/public-key.ts:74](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/public-key.ts#L74)
+[models/public-key.ts:79](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/public-key.ts#L79)

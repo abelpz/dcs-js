@@ -12,25 +12,25 @@ EditTeamOption options for editing a team
 
 ### Properties
 
-- [canCreateOrgRepo](EditTeamOption.md#cancreateorgrepo)
+- [can\_create\_org\_repo](EditTeamOption.md#can_create_org_repo)
 - [description](EditTeamOption.md#description)
-- [includesAllRepositories](EditTeamOption.md#includesallrepositories)
+- [includes\_all\_repositories](EditTeamOption.md#includes_all_repositories)
 - [name](EditTeamOption.md#name)
 - [permission](EditTeamOption.md#permission)
 - [units](EditTeamOption.md#units)
-- [unitsMap](EditTeamOption.md#unitsmap)
+- [units\_map](EditTeamOption.md#units_map)
 
 ## Properties
 
-### <a id="cancreateorgrepo" name="cancreateorgrepo"></a> canCreateOrgRepo
+### <a id="can_create_org_repo" name="can_create_org_repo"></a> can\_create\_org\_repo
 
-• `Optional` **canCreateOrgRepo**: `boolean`
+• `Optional` **can\_create\_org\_repo**: `boolean`
 
 **`memberof`** EditTeamOption
 
 #### Defined in
 
-[models/edit-team-option.ts:25](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-team-option.ts#L25)
+[models/edit-team-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-team-option.ts#L28)
 
 ___
 
@@ -42,19 +42,19 @@ ___
 
 #### Defined in
 
-[models/edit-team-option.ts:31](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-team-option.ts#L31)
+[models/edit-team-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-team-option.ts#L34)
 
 ___
 
-### <a id="includesallrepositories" name="includesallrepositories"></a> includesAllRepositories
+### <a id="includes_all_repositories" name="includes_all_repositories"></a> includes\_all\_repositories
 
-• `Optional` **includesAllRepositories**: `boolean`
+• `Optional` **includes\_all\_repositories**: `boolean`
 
 **`memberof`** EditTeamOption
 
 #### Defined in
 
-[models/edit-team-option.ts:37](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-team-option.ts#L37)
+[models/edit-team-option.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-team-option.ts#L40)
 
 ___
 
@@ -66,19 +66,19 @@ ___
 
 #### Defined in
 
-[models/edit-team-option.ts:43](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-team-option.ts#L43)
+[models/edit-team-option.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-team-option.ts#L46)
 
 ___
 
 ### <a id="permission" name="permission"></a> permission
 
-• `Optional` **permission**: [`EditTeamOptionPermissionEnum`](../enums/EditTeamOptionPermissionEnum.md)
+• `Optional` **permission**: [`EditTeamOptionPermissionEnum`](../modules.md#editteamoptionpermissionenum-1)
 
 **`memberof`** EditTeamOption
 
 #### Defined in
 
-[models/edit-team-option.ts:49](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-team-option.ts#L49)
+[models/edit-team-option.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-team-option.ts#L52)
 
 ___
 
@@ -90,13 +90,13 @@ ___
 
 #### Defined in
 
-[models/edit-team-option.ts:55](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-team-option.ts#L55)
+[models/edit-team-option.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-team-option.ts#L58)
 
 ___
 
-### <a id="unitsmap" name="unitsmap"></a> unitsMap
+### <a id="units_map" name="units_map"></a> units\_map
 
-• `Optional` **unitsMap**: `Object`
+• `Optional` **units\_map**: `Object`
 
 **`memberof`** EditTeamOption
 
@@ -106,4 +106,4 @@ ___
 
 #### Defined in
 
-[models/edit-team-option.ts:61](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-team-option.ts#L61)
+[models/edit-team-option.ts:64](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-team-option.ts#L64)

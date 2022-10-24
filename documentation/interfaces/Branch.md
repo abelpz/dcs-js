@@ -12,29 +12,17 @@ Branch represents a repository branch
 
 ### Properties
 
-- [\_protected](Branch.md#_protected)
 - [commit](Branch.md#commit)
-- [effectiveBranchProtectionName](Branch.md#effectivebranchprotectionname)
-- [enableStatusCheck](Branch.md#enablestatuscheck)
+- [effective\_branch\_protection\_name](Branch.md#effective_branch_protection_name)
+- [enable\_status\_check](Branch.md#enable_status_check)
 - [name](Branch.md#name)
-- [requiredApprovals](Branch.md#requiredapprovals)
-- [statusCheckContexts](Branch.md#statuscheckcontexts)
-- [userCanMerge](Branch.md#usercanmerge)
-- [userCanPush](Branch.md#usercanpush)
+- [protected](Branch.md#protected)
+- [required\_approvals](Branch.md#required_approvals)
+- [status\_check\_contexts](Branch.md#status_check_contexts)
+- [user\_can\_merge](Branch.md#user_can_merge)
+- [user\_can\_push](Branch.md#user_can_push)
 
 ## Properties
-
-### <a id="_protected" name="_protected"></a> \_protected
-
-• `Optional` **\_protected**: `boolean`
-
-**`memberof`** Branch
-
-#### Defined in
-
-[models/branch.ts:50](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/branch.ts#L50)
-
-___
 
 ### <a id="commit" name="commit"></a> commit
 
@@ -44,31 +32,31 @@ ___
 
 #### Defined in
 
-[models/branch.ts:26](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/branch.ts#L26)
+[models/branch.ts:31](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/branch.ts#L31)
 
 ___
 
-### <a id="effectivebranchprotectionname" name="effectivebranchprotectionname"></a> effectiveBranchProtectionName
+### <a id="effective_branch_protection_name" name="effective_branch_protection_name"></a> effective\_branch\_protection\_name
 
-• `Optional` **effectiveBranchProtectionName**: `string`
+• `Optional` **effective\_branch\_protection\_name**: `string`
 
 **`memberof`** Branch
 
 #### Defined in
 
-[models/branch.ts:32](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/branch.ts#L32)
+[models/branch.ts:37](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/branch.ts#L37)
 
 ___
 
-### <a id="enablestatuscheck" name="enablestatuscheck"></a> enableStatusCheck
+### <a id="enable_status_check" name="enable_status_check"></a> enable\_status\_check
 
-• `Optional` **enableStatusCheck**: `boolean`
+• `Optional` **enable\_status\_check**: `boolean`
 
 **`memberof`** Branch
 
 #### Defined in
 
-[models/branch.ts:38](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/branch.ts#L38)
+[models/branch.ts:43](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/branch.ts#L43)
 
 ___
 
@@ -80,52 +68,64 @@ ___
 
 #### Defined in
 
-[models/branch.ts:44](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/branch.ts#L44)
+[models/branch.ts:49](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/branch.ts#L49)
 
 ___
 
-### <a id="requiredapprovals" name="requiredapprovals"></a> requiredApprovals
+### <a id="protected" name="protected"></a> protected
 
-• `Optional` **requiredApprovals**: `number`
+• `Optional` **protected**: `boolean`
 
 **`memberof`** Branch
 
 #### Defined in
 
-[models/branch.ts:56](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/branch.ts#L56)
+[models/branch.ts:55](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/branch.ts#L55)
 
 ___
 
-### <a id="statuscheckcontexts" name="statuscheckcontexts"></a> statusCheckContexts
+### <a id="required_approvals" name="required_approvals"></a> required\_approvals
 
-• `Optional` **statusCheckContexts**: `string`[]
+• `Optional` **required\_approvals**: `number`
 
 **`memberof`** Branch
 
 #### Defined in
 
-[models/branch.ts:62](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/branch.ts#L62)
+[models/branch.ts:61](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/branch.ts#L61)
 
 ___
 
-### <a id="usercanmerge" name="usercanmerge"></a> userCanMerge
+### <a id="status_check_contexts" name="status_check_contexts"></a> status\_check\_contexts
 
-• `Optional` **userCanMerge**: `boolean`
+• `Optional` **status\_check\_contexts**: `string`[]
 
 **`memberof`** Branch
 
 #### Defined in
 
-[models/branch.ts:68](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/branch.ts#L68)
+[models/branch.ts:67](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/branch.ts#L67)
 
 ___
 
-### <a id="usercanpush" name="usercanpush"></a> userCanPush
+### <a id="user_can_merge" name="user_can_merge"></a> user\_can\_merge
 
-• `Optional` **userCanPush**: `boolean`
+• `Optional` **user\_can\_merge**: `boolean`
 
 **`memberof`** Branch
 
 #### Defined in
 
-[models/branch.ts:74](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/branch.ts#L74)
+[models/branch.ts:73](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/branch.ts#L73)
+
+___
+
+### <a id="user_can_push" name="user_can_push"></a> user\_can\_push
+
+• `Optional` **user\_can\_push**: `boolean`
+
+**`memberof`** Branch
+
+#### Defined in
+
+[models/branch.ts:79](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/branch.ts#L79)

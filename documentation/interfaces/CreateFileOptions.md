@@ -18,7 +18,7 @@ CreateFileOptions options for creating files Note: `author` and `committer` are 
 - [content](CreateFileOptions.md#content)
 - [dates](CreateFileOptions.md#dates)
 - [message](CreateFileOptions.md#message)
-- [newBranch](CreateFileOptions.md#newbranch)
+- [new\_branch](CreateFileOptions.md#new_branch)
 - [signoff](CreateFileOptions.md#signoff)
 
 ## Properties
@@ -31,7 +31,7 @@ CreateFileOptions options for creating files Note: `author` and `committer` are 
 
 #### Defined in
 
-[models/create-file-options.ts:27](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-file-options.ts#L27)
+[models/create-file-options.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-file-options.ts#L34)
 
 ___
 
@@ -45,7 +45,7 @@ branch (optional) to base this file from. if not given, the default branch is us
 
 #### Defined in
 
-[models/create-file-options.ts:33](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-file-options.ts#L33)
+[models/create-file-options.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-file-options.ts#L40)
 
 ___
 
@@ -57,7 +57,7 @@ ___
 
 #### Defined in
 
-[models/create-file-options.ts:39](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-file-options.ts#L39)
+[models/create-file-options.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-file-options.ts#L46)
 
 ___
 
@@ -71,7 +71,7 @@ content must be base64 encoded
 
 #### Defined in
 
-[models/create-file-options.ts:45](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-file-options.ts#L45)
+[models/create-file-options.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-file-options.ts#L52)
 
 ___
 
@@ -83,7 +83,7 @@ ___
 
 #### Defined in
 
-[models/create-file-options.ts:51](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-file-options.ts#L51)
+[models/create-file-options.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-file-options.ts#L58)
 
 ___
 
@@ -97,13 +97,13 @@ message (optional) for the commit of this file. if not supplied, a default messa
 
 #### Defined in
 
-[models/create-file-options.ts:57](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-file-options.ts#L57)
+[models/create-file-options.ts:64](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-file-options.ts#L64)
 
 ___
 
-### <a id="newbranch" name="newbranch"></a> newBranch
+### <a id="new_branch" name="new_branch"></a> new\_branch
 
-• `Optional` **newBranch**: `string`
+• `Optional` **new\_branch**: `string`
 
 new_branch (optional) will make a new branch from `branch` before creating the file
 
@@ -111,7 +111,7 @@ new_branch (optional) will make a new branch from `branch` before creating the f
 
 #### Defined in
 
-[models/create-file-options.ts:63](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-file-options.ts#L63)
+[models/create-file-options.ts:70](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-file-options.ts#L70)
 
 ___
 
@@ -125,4 +125,4 @@ Add a Signed-off-by trailer by the committer at the end of the commit log messag
 
 #### Defined in
 
-[models/create-file-options.ts:69](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-file-options.ts#L69)
+[models/create-file-options.ts:76](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-file-options.ts#L76)

@@ -12,94 +12,94 @@ MergePullRequestForm form for merging Pull Request
 
 ### Properties
 
-- [\_do](MergePullRequestOption.md#_do)
-- [deleteBranchAfterMerge](MergePullRequestOption.md#deletebranchaftermerge)
-- [forceMerge](MergePullRequestOption.md#forcemerge)
-- [headCommitId](MergePullRequestOption.md#headcommitid)
-- [mergeCommitID](MergePullRequestOption.md#mergecommitid)
-- [mergeMessageField](MergePullRequestOption.md#mergemessagefield)
-- [mergeTitleField](MergePullRequestOption.md#mergetitlefield)
+- [Do](MergePullRequestOption.md#do)
+- [MergeCommitID](MergePullRequestOption.md#mergecommitid)
+- [MergeMessageField](MergePullRequestOption.md#mergemessagefield)
+- [MergeTitleField](MergePullRequestOption.md#mergetitlefield)
+- [delete\_branch\_after\_merge](MergePullRequestOption.md#delete_branch_after_merge)
+- [force\_merge](MergePullRequestOption.md#force_merge)
+- [head\_commit\_id](MergePullRequestOption.md#head_commit_id)
 
 ## Properties
 
-### <a id="_do" name="_do"></a> \_do
+### <a id="do" name="do"></a> Do
 
-• **\_do**: [`MergePullRequestOptionDoEnum`](../enums/MergePullRequestOptionDoEnum.md)
+• **Do**: [`MergePullRequestOptionDoEnum`](../modules.md#mergepullrequestoptiondoenum-1)
 
 **`memberof`** MergePullRequestOption
 
 #### Defined in
 
-[models/merge-pull-request-option.ts:25](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/merge-pull-request-option.ts#L25)
+[models/merge-pull-request-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/merge-pull-request-option.ts#L28)
 
 ___
 
-### <a id="deletebranchaftermerge" name="deletebranchaftermerge"></a> deleteBranchAfterMerge
+### <a id="mergecommitid" name="mergecommitid"></a> MergeCommitID
 
-• `Optional` **deleteBranchAfterMerge**: `boolean`
+• `Optional` **MergeCommitID**: `string`
 
 **`memberof`** MergePullRequestOption
 
 #### Defined in
 
-[models/merge-pull-request-option.ts:49](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/merge-pull-request-option.ts#L49)
+[models/merge-pull-request-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/merge-pull-request-option.ts#L34)
 
 ___
 
-### <a id="forcemerge" name="forcemerge"></a> forceMerge
+### <a id="mergemessagefield" name="mergemessagefield"></a> MergeMessageField
 
-• `Optional` **forceMerge**: `boolean`
+• `Optional` **MergeMessageField**: `string`
 
 **`memberof`** MergePullRequestOption
 
 #### Defined in
 
-[models/merge-pull-request-option.ts:55](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/merge-pull-request-option.ts#L55)
+[models/merge-pull-request-option.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/merge-pull-request-option.ts#L40)
 
 ___
 
-### <a id="headcommitid" name="headcommitid"></a> headCommitId
+### <a id="mergetitlefield" name="mergetitlefield"></a> MergeTitleField
 
-• `Optional` **headCommitId**: `string`
+• `Optional` **MergeTitleField**: `string`
 
 **`memberof`** MergePullRequestOption
 
 #### Defined in
 
-[models/merge-pull-request-option.ts:61](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/merge-pull-request-option.ts#L61)
+[models/merge-pull-request-option.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/merge-pull-request-option.ts#L46)
 
 ___
 
-### <a id="mergecommitid" name="mergecommitid"></a> mergeCommitID
+### <a id="delete_branch_after_merge" name="delete_branch_after_merge"></a> delete\_branch\_after\_merge
 
-• `Optional` **mergeCommitID**: `string`
+• `Optional` **delete\_branch\_after\_merge**: `boolean`
 
 **`memberof`** MergePullRequestOption
 
 #### Defined in
 
-[models/merge-pull-request-option.ts:31](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/merge-pull-request-option.ts#L31)
+[models/merge-pull-request-option.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/merge-pull-request-option.ts#L52)
 
 ___
 
-### <a id="mergemessagefield" name="mergemessagefield"></a> mergeMessageField
+### <a id="force_merge" name="force_merge"></a> force\_merge
 
-• `Optional` **mergeMessageField**: `string`
+• `Optional` **force\_merge**: `boolean`
 
 **`memberof`** MergePullRequestOption
 
 #### Defined in
 
-[models/merge-pull-request-option.ts:37](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/merge-pull-request-option.ts#L37)
+[models/merge-pull-request-option.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/merge-pull-request-option.ts#L58)
 
 ___
 
-### <a id="mergetitlefield" name="mergetitlefield"></a> mergeTitleField
+### <a id="head_commit_id" name="head_commit_id"></a> head\_commit\_id
 
-• `Optional` **mergeTitleField**: `string`
+• `Optional` **head\_commit\_id**: `string`
 
 **`memberof`** MergePullRequestOption
 
 #### Defined in
 
-[models/merge-pull-request-option.ts:43](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/merge-pull-request-option.ts#L43)
+[models/merge-pull-request-option.ts:64](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/merge-pull-request-option.ts#L64)

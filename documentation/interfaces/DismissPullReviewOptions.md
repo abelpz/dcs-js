@@ -24,4 +24,4 @@ DismissPullReviewOptions are options to dismiss a pull review
 
 #### Defined in
 
-[models/dismiss-pull-review-options.ts:25](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/dismiss-pull-review-options.ts#L25)
+[models/dismiss-pull-review-options.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/dismiss-pull-review-options.ts#L28)

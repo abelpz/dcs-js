@@ -12,46 +12,46 @@ WikiPageMetaData wiki page meta information
 
 ### Properties
 
-- [htmlUrl](WikiPageMetaData.md#htmlurl)
-- [lastCommit](WikiPageMetaData.md#lastcommit)
-- [subUrl](WikiPageMetaData.md#suburl)
+- [html\_url](WikiPageMetaData.md#html_url)
+- [last\_commit](WikiPageMetaData.md#last_commit)
+- [sub\_url](WikiPageMetaData.md#sub_url)
 - [title](WikiPageMetaData.md#title)
 
 ## Properties
 
-### <a id="htmlurl" name="htmlurl"></a> htmlUrl
+### <a id="html_url" name="html_url"></a> html\_url
 
-• `Optional` **htmlUrl**: `string`
+• `Optional` **html\_url**: `string`
 
 **`memberof`** WikiPageMetaData
 
 #### Defined in
 
-[models/wiki-page-meta-data.ts:26](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/wiki-page-meta-data.ts#L26)
+[models/wiki-page-meta-data.ts:31](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/wiki-page-meta-data.ts#L31)
 
 ___
 
-### <a id="lastcommit" name="lastcommit"></a> lastCommit
+### <a id="last_commit" name="last_commit"></a> last\_commit
 
-• `Optional` **lastCommit**: [`WikiCommit`](WikiCommit.md)
+• `Optional` **last\_commit**: [`WikiCommit`](WikiCommit.md)
 
 **`memberof`** WikiPageMetaData
 
 #### Defined in
 
-[models/wiki-page-meta-data.ts:32](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/wiki-page-meta-data.ts#L32)
+[models/wiki-page-meta-data.ts:37](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/wiki-page-meta-data.ts#L37)
 
 ___
 
-### <a id="suburl" name="suburl"></a> subUrl
+### <a id="sub_url" name="sub_url"></a> sub\_url
 
-• `Optional` **subUrl**: `string`
+• `Optional` **sub\_url**: `string`
 
 **`memberof`** WikiPageMetaData
 
 #### Defined in
 
-[models/wiki-page-meta-data.ts:38](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/wiki-page-meta-data.ts#L38)
+[models/wiki-page-meta-data.ts:43](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/wiki-page-meta-data.ts#L43)
 
 ___
 
@@ -63,4 +63,4 @@ ___
 
 #### Defined in
 
-[models/wiki-page-meta-data.ts:44](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/wiki-page-meta-data.ts#L44)
+[models/wiki-page-meta-data.ts:49](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/wiki-page-meta-data.ts#L49)

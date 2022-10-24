@@ -26,4 +26,4 @@ list of label IDs
 
 #### Defined in
 
-[models/issue-labels-option.ts:25](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/issue-labels-option.ts#L25)
+[models/issue-labels-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/issue-labels-option.ts#L28)

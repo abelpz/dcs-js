@@ -12,22 +12,22 @@ RepositoryMeta basic repository information
 
 ### Properties
 
-- [fullName](RepositoryMeta.md#fullname)
+- [full\_name](RepositoryMeta.md#full_name)
 - [id](RepositoryMeta.md#id)
 - [name](RepositoryMeta.md#name)
 - [owner](RepositoryMeta.md#owner)
 
 ## Properties
 
-### <a id="fullname" name="fullname"></a> fullName
+### <a id="full_name" name="full_name"></a> full\_name
 
-• `Optional` **fullName**: `string`
+• `Optional` **full\_name**: `string`
 
 **`memberof`** RepositoryMeta
 
 #### Defined in
 
-[models/repository-meta.ts:25](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/repository-meta.ts#L25)
+[models/repository-meta.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository-meta.ts#L28)
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 #### Defined in
 
-[models/repository-meta.ts:31](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/repository-meta.ts#L31)
+[models/repository-meta.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository-meta.ts#L34)
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 #### Defined in
 
-[models/repository-meta.ts:37](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/repository-meta.ts#L37)
+[models/repository-meta.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository-meta.ts#L40)
 
 ___
 
@@ -63,4 +63,4 @@ ___
 
 #### Defined in
 
-[models/repository-meta.ts:43](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/repository-meta.ts#L43)
+[models/repository-meta.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repository-meta.ts#L46)

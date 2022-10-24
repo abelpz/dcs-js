@@ -16,8 +16,8 @@ EditReleaseOption options when editing a release
 - [draft](EditReleaseOption.md#draft)
 - [name](EditReleaseOption.md#name)
 - [prerelease](EditReleaseOption.md#prerelease)
-- [tagName](EditReleaseOption.md#tagname)
-- [targetCommitish](EditReleaseOption.md#targetcommitish)
+- [tag\_name](EditReleaseOption.md#tag_name)
+- [target\_commitish](EditReleaseOption.md#target_commitish)
 
 ## Properties
 
@@ -29,7 +29,7 @@ EditReleaseOption options when editing a release
 
 #### Defined in
 
-[models/edit-release-option.ts:25](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-release-option.ts#L25)
+[models/edit-release-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-release-option.ts#L28)
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 #### Defined in
 
-[models/edit-release-option.ts:31](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-release-option.ts#L31)
+[models/edit-release-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-release-option.ts#L34)
 
 ___
 
@@ -53,7 +53,7 @@ ___
 
 #### Defined in
 
-[models/edit-release-option.ts:37](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-release-option.ts#L37)
+[models/edit-release-option.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-release-option.ts#L40)
 
 ___
 
@@ -65,28 +65,28 @@ ___
 
 #### Defined in
 
-[models/edit-release-option.ts:43](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-release-option.ts#L43)
+[models/edit-release-option.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-release-option.ts#L46)
 
 ___
 
-### <a id="tagname" name="tagname"></a> tagName
+### <a id="tag_name" name="tag_name"></a> tag\_name
 
-• `Optional` **tagName**: `string`
+• `Optional` **tag\_name**: `string`
 
 **`memberof`** EditReleaseOption
 
 #### Defined in
 
-[models/edit-release-option.ts:49](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-release-option.ts#L49)
+[models/edit-release-option.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-release-option.ts#L52)
 
 ___
 
-### <a id="targetcommitish" name="targetcommitish"></a> targetCommitish
+### <a id="target_commitish" name="target_commitish"></a> target\_commitish
 
-• `Optional` **targetCommitish**: `string`
+• `Optional` **target\_commitish**: `string`
 
 **`memberof`** EditReleaseOption
 
 #### Defined in
 
-[models/edit-release-option.ts:55](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-release-option.ts#L55)
+[models/edit-release-option.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-release-option.ts#L58)

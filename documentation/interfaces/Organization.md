@@ -12,29 +12,29 @@ Organization represents an organization
 
 ### Properties
 
-- [avatarUrl](Organization.md#avatarurl)
+- [avatar\_url](Organization.md#avatar_url)
 - [description](Organization.md#description)
-- [fullName](Organization.md#fullname)
+- [full\_name](Organization.md#full_name)
 - [id](Organization.md#id)
 - [location](Organization.md#location)
-- [repoAdminChangeTeamAccess](Organization.md#repoadminchangeteamaccess)
-- [repoLanguages](Organization.md#repolanguages)
-- [repoSubjects](Organization.md#reposubjects)
+- [repo\_admin\_change\_team\_access](Organization.md#repo_admin_change_team_access)
+- [repo\_languages](Organization.md#repo_languages)
+- [repo\_subjects](Organization.md#repo_subjects)
 - [username](Organization.md#username)
 - [visibility](Organization.md#visibility)
 - [website](Organization.md#website)
 
 ## Properties
 
-### <a id="avatarurl" name="avatarurl"></a> avatarUrl
+### <a id="avatar_url" name="avatar_url"></a> avatar\_url
 
-• `Optional` **avatarUrl**: `string`
+• `Optional` **avatar\_url**: `string`
 
 **`memberof`** Organization
 
 #### Defined in
 
-[models/organization.ts:25](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/organization.ts#L25)
+[models/organization.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/organization.ts#L28)
 
 ___
 
@@ -46,19 +46,19 @@ ___
 
 #### Defined in
 
-[models/organization.ts:31](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/organization.ts#L31)
+[models/organization.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/organization.ts#L34)
 
 ___
 
-### <a id="fullname" name="fullname"></a> fullName
+### <a id="full_name" name="full_name"></a> full\_name
 
-• `Optional` **fullName**: `string`
+• `Optional` **full\_name**: `string`
 
 **`memberof`** Organization
 
 #### Defined in
 
-[models/organization.ts:37](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/organization.ts#L37)
+[models/organization.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/organization.ts#L40)
 
 ___
 
@@ -70,7 +70,7 @@ ___
 
 #### Defined in
 
-[models/organization.ts:43](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/organization.ts#L43)
+[models/organization.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/organization.ts#L46)
 
 ___
 
@@ -82,25 +82,25 @@ ___
 
 #### Defined in
 
-[models/organization.ts:49](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/organization.ts#L49)
+[models/organization.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/organization.ts#L52)
 
 ___
 
-### <a id="repoadminchangeteamaccess" name="repoadminchangeteamaccess"></a> repoAdminChangeTeamAccess
+### <a id="repo_admin_change_team_access" name="repo_admin_change_team_access"></a> repo\_admin\_change\_team\_access
 
-• `Optional` **repoAdminChangeTeamAccess**: `boolean`
+• `Optional` **repo\_admin\_change\_team\_access**: `boolean`
 
 **`memberof`** Organization
 
 #### Defined in
 
-[models/organization.ts:55](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/organization.ts#L55)
+[models/organization.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/organization.ts#L58)
 
 ___
 
-### <a id="repolanguages" name="repolanguages"></a> repoLanguages
+### <a id="repo_languages" name="repo_languages"></a> repo\_languages
 
-• `Optional` **repoLanguages**: `string`[]
+• `Optional` **repo\_languages**: `string`[]
 
 DCS Customizations ***_/
 
@@ -108,19 +108,19 @@ DCS Customizations ***_/
 
 #### Defined in
 
-[models/organization.ts:61](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/organization.ts#L61)
+[models/organization.ts:64](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/organization.ts#L64)
 
 ___
 
-### <a id="reposubjects" name="reposubjects"></a> repoSubjects
+### <a id="repo_subjects" name="repo_subjects"></a> repo\_subjects
 
-• `Optional` **repoSubjects**: `string`[]
+• `Optional` **repo\_subjects**: `string`[]
 
 **`memberof`** Organization
 
 #### Defined in
 
-[models/organization.ts:67](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/organization.ts#L67)
+[models/organization.ts:70](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/organization.ts#L70)
 
 ___
 
@@ -132,7 +132,7 @@ ___
 
 #### Defined in
 
-[models/organization.ts:73](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/organization.ts#L73)
+[models/organization.ts:76](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/organization.ts#L76)
 
 ___
 
@@ -144,7 +144,7 @@ ___
 
 #### Defined in
 
-[models/organization.ts:79](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/organization.ts#L79)
+[models/organization.ts:82](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/organization.ts#L82)
 
 ___
 
@@ -156,4 +156,4 @@ ___
 
 #### Defined in
 
-[models/organization.ts:85](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/organization.ts#L85)
+[models/organization.ts:88](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/organization.ts#L88)

@@ -13,9 +13,9 @@ EditOrgOption options for editing an organization
 ### Properties
 
 - [description](EditOrgOption.md#description)
-- [fullName](EditOrgOption.md#fullname)
+- [full\_name](EditOrgOption.md#full_name)
 - [location](EditOrgOption.md#location)
-- [repoAdminChangeTeamAccess](EditOrgOption.md#repoadminchangeteamaccess)
+- [repo\_admin\_change\_team\_access](EditOrgOption.md#repo_admin_change_team_access)
 - [visibility](EditOrgOption.md#visibility)
 - [website](EditOrgOption.md#website)
 
@@ -29,19 +29,19 @@ EditOrgOption options for editing an organization
 
 #### Defined in
 
-[models/edit-org-option.ts:25](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-org-option.ts#L25)
+[models/edit-org-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-org-option.ts#L28)
 
 ___
 
-### <a id="fullname" name="fullname"></a> fullName
+### <a id="full_name" name="full_name"></a> full\_name
 
-• `Optional` **fullName**: `string`
+• `Optional` **full\_name**: `string`
 
 **`memberof`** EditOrgOption
 
 #### Defined in
 
-[models/edit-org-option.ts:31](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-org-option.ts#L31)
+[models/edit-org-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-org-option.ts#L34)
 
 ___
 
@@ -53,25 +53,25 @@ ___
 
 #### Defined in
 
-[models/edit-org-option.ts:37](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-org-option.ts#L37)
+[models/edit-org-option.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-org-option.ts#L40)
 
 ___
 
-### <a id="repoadminchangeteamaccess" name="repoadminchangeteamaccess"></a> repoAdminChangeTeamAccess
+### <a id="repo_admin_change_team_access" name="repo_admin_change_team_access"></a> repo\_admin\_change\_team\_access
 
-• `Optional` **repoAdminChangeTeamAccess**: `boolean`
+• `Optional` **repo\_admin\_change\_team\_access**: `boolean`
 
 **`memberof`** EditOrgOption
 
 #### Defined in
 
-[models/edit-org-option.ts:43](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-org-option.ts#L43)
+[models/edit-org-option.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-org-option.ts#L46)
 
 ___
 
 ### <a id="visibility" name="visibility"></a> visibility
 
-• `Optional` **visibility**: [`EditOrgOptionVisibilityEnum`](../enums/EditOrgOptionVisibilityEnum.md)
+• `Optional` **visibility**: [`EditOrgOptionVisibilityEnum`](../modules.md#editorgoptionvisibilityenum-1)
 
 possible values are `public`, `limited` or `private`
 
@@ -79,7 +79,7 @@ possible values are `public`, `limited` or `private`
 
 #### Defined in
 
-[models/edit-org-option.ts:49](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-org-option.ts#L49)
+[models/edit-org-option.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-org-option.ts#L52)
 
 ___
 
@@ -91,4 +91,4 @@ ___
 
 #### Defined in
 
-[models/edit-org-option.ts:55](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-org-option.ts#L55)
+[models/edit-org-option.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-org-option.ts#L58)

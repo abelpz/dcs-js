@@ -12,7 +12,7 @@ Cron represents a Cron task
 
 ### Properties
 
-- [execTimes](Cron.md#exectimes)
+- [exec\_times](Cron.md#exec_times)
 - [name](Cron.md#name)
 - [next](Cron.md#next)
 - [prev](Cron.md#prev)
@@ -20,15 +20,15 @@ Cron represents a Cron task
 
 ## Properties
 
-### <a id="exectimes" name="exectimes"></a> execTimes
+### <a id="exec_times" name="exec_times"></a> exec\_times
 
-• `Optional` **execTimes**: `number`
+• `Optional` **exec\_times**: `number`
 
 **`memberof`** Cron
 
 #### Defined in
 
-[models/cron.ts:25](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/cron.ts#L25)
+[models/cron.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/cron.ts#L28)
 
 ___
 
@@ -40,31 +40,31 @@ ___
 
 #### Defined in
 
-[models/cron.ts:31](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/cron.ts#L31)
+[models/cron.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/cron.ts#L34)
 
 ___
 
 ### <a id="next" name="next"></a> next
 
-• `Optional` **next**: `Date`
+• `Optional` **next**: `string`
 
 **`memberof`** Cron
 
 #### Defined in
 
-[models/cron.ts:37](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/cron.ts#L37)
+[models/cron.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/cron.ts#L40)
 
 ___
 
 ### <a id="prev" name="prev"></a> prev
 
-• `Optional` **prev**: `Date`
+• `Optional` **prev**: `string`
 
 **`memberof`** Cron
 
 #### Defined in
 
-[models/cron.ts:43](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/cron.ts#L43)
+[models/cron.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/cron.ts#L46)
 
 ___
 
@@ -76,4 +76,4 @@ ___
 
 #### Defined in
 
-[models/cron.ts:49](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/cron.ts#L49)
+[models/cron.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/cron.ts#L52)

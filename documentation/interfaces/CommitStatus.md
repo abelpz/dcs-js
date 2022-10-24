@@ -13,13 +13,13 @@ CommitStatus holds a single status of a single Commit
 ### Properties
 
 - [context](CommitStatus.md#context)
-- [createdAt](CommitStatus.md#createdat)
+- [created\_at](CommitStatus.md#created_at)
 - [creator](CommitStatus.md#creator)
 - [description](CommitStatus.md#description)
 - [id](CommitStatus.md#id)
 - [status](CommitStatus.md#status)
-- [targetUrl](CommitStatus.md#targeturl)
-- [updatedAt](CommitStatus.md#updatedat)
+- [target\_url](CommitStatus.md#target_url)
+- [updated\_at](CommitStatus.md#updated_at)
 - [url](CommitStatus.md#url)
 
 ## Properties
@@ -32,19 +32,19 @@ CommitStatus holds a single status of a single Commit
 
 #### Defined in
 
-[models/commit-status.ts:27](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/commit-status.ts#L27)
+[models/commit-status.ts:31](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/commit-status.ts#L31)
 
 ___
 
-### <a id="createdat" name="createdat"></a> createdAt
+### <a id="created_at" name="created_at"></a> created\_at
 
-• `Optional` **createdAt**: `Date`
+• `Optional` **created\_at**: `string`
 
 **`memberof`** CommitStatus
 
 #### Defined in
 
-[models/commit-status.ts:33](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/commit-status.ts#L33)
+[models/commit-status.ts:37](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/commit-status.ts#L37)
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 #### Defined in
 
-[models/commit-status.ts:39](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/commit-status.ts#L39)
+[models/commit-status.ts:43](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/commit-status.ts#L43)
 
 ___
 
@@ -68,7 +68,7 @@ ___
 
 #### Defined in
 
-[models/commit-status.ts:45](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/commit-status.ts#L45)
+[models/commit-status.ts:49](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/commit-status.ts#L49)
 
 ___
 
@@ -80,43 +80,45 @@ ___
 
 #### Defined in
 
-[models/commit-status.ts:51](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/commit-status.ts#L51)
+[models/commit-status.ts:55](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/commit-status.ts#L55)
 
 ___
 
 ### <a id="status" name="status"></a> status
 
-• `Optional` **status**: [`CommitStatusState`](CommitStatusState.md)
+• `Optional` **status**: `string`
+
+CommitStatusState holds the state of a CommitStatus It can be \"pending\", \"success\", \"error\", \"failure\", and \"warning\"
 
 **`memberof`** CommitStatus
 
 #### Defined in
 
-[models/commit-status.ts:57](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/commit-status.ts#L57)
+[models/commit-status.ts:61](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/commit-status.ts#L61)
 
 ___
 
-### <a id="targeturl" name="targeturl"></a> targetUrl
+### <a id="target_url" name="target_url"></a> target\_url
 
-• `Optional` **targetUrl**: `string`
+• `Optional` **target\_url**: `string`
 
 **`memberof`** CommitStatus
 
 #### Defined in
 
-[models/commit-status.ts:63](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/commit-status.ts#L63)
+[models/commit-status.ts:67](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/commit-status.ts#L67)
 
 ___
 
-### <a id="updatedat" name="updatedat"></a> updatedAt
+### <a id="updated_at" name="updated_at"></a> updated\_at
 
-• `Optional` **updatedAt**: `Date`
+• `Optional` **updated\_at**: `string`
 
 **`memberof`** CommitStatus
 
 #### Defined in
 
-[models/commit-status.ts:69](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/commit-status.ts#L69)
+[models/commit-status.ts:73](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/commit-status.ts#L73)
 
 ___
 
@@ -128,4 +130,4 @@ ___
 
 #### Defined in
 
-[models/commit-status.ts:75](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/commit-status.ts#L75)
+[models/commit-status.ts:79](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/commit-status.ts#L79)

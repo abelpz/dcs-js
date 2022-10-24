@@ -12,79 +12,79 @@ GPGKey a user GPG key to sign commit and tag in repository
 
 ### Properties
 
-- [canCertify](GPGKey.md#cancertify)
-- [canEncryptComms](GPGKey.md#canencryptcomms)
-- [canEncryptStorage](GPGKey.md#canencryptstorage)
-- [canSign](GPGKey.md#cansign)
-- [createdAt](GPGKey.md#createdat)
+- [can\_certify](GPGKey.md#can_certify)
+- [can\_encrypt\_comms](GPGKey.md#can_encrypt_comms)
+- [can\_encrypt\_storage](GPGKey.md#can_encrypt_storage)
+- [can\_sign](GPGKey.md#can_sign)
+- [created\_at](GPGKey.md#created_at)
 - [emails](GPGKey.md#emails)
-- [expiresAt](GPGKey.md#expiresat)
+- [expires\_at](GPGKey.md#expires_at)
 - [id](GPGKey.md#id)
-- [keyId](GPGKey.md#keyid)
-- [primaryKeyId](GPGKey.md#primarykeyid)
-- [publicKey](GPGKey.md#publickey)
+- [key\_id](GPGKey.md#key_id)
+- [primary\_key\_id](GPGKey.md#primary_key_id)
+- [public\_key](GPGKey.md#public_key)
 - [subkeys](GPGKey.md#subkeys)
 - [verified](GPGKey.md#verified)
 
 ## Properties
 
-### <a id="cancertify" name="cancertify"></a> canCertify
+### <a id="can_certify" name="can_certify"></a> can\_certify
 
-• `Optional` **canCertify**: `boolean`
+• `Optional` **can\_certify**: `boolean`
 
 **`memberof`** GPGKey
 
 #### Defined in
 
-[models/gpgkey.ts:26](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/gpgkey.ts#L26)
+[models/gpgkey.ts:31](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/gpgkey.ts#L31)
 
 ___
 
-### <a id="canencryptcomms" name="canencryptcomms"></a> canEncryptComms
+### <a id="can_encrypt_comms" name="can_encrypt_comms"></a> can\_encrypt\_comms
 
-• `Optional` **canEncryptComms**: `boolean`
+• `Optional` **can\_encrypt\_comms**: `boolean`
 
 **`memberof`** GPGKey
 
 #### Defined in
 
-[models/gpgkey.ts:32](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/gpgkey.ts#L32)
+[models/gpgkey.ts:37](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/gpgkey.ts#L37)
 
 ___
 
-### <a id="canencryptstorage" name="canencryptstorage"></a> canEncryptStorage
+### <a id="can_encrypt_storage" name="can_encrypt_storage"></a> can\_encrypt\_storage
 
-• `Optional` **canEncryptStorage**: `boolean`
+• `Optional` **can\_encrypt\_storage**: `boolean`
 
 **`memberof`** GPGKey
 
 #### Defined in
 
-[models/gpgkey.ts:38](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/gpgkey.ts#L38)
+[models/gpgkey.ts:43](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/gpgkey.ts#L43)
 
 ___
 
-### <a id="cansign" name="cansign"></a> canSign
+### <a id="can_sign" name="can_sign"></a> can\_sign
 
-• `Optional` **canSign**: `boolean`
+• `Optional` **can\_sign**: `boolean`
 
 **`memberof`** GPGKey
 
 #### Defined in
 
-[models/gpgkey.ts:44](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/gpgkey.ts#L44)
+[models/gpgkey.ts:49](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/gpgkey.ts#L49)
 
 ___
 
-### <a id="createdat" name="createdat"></a> createdAt
+### <a id="created_at" name="created_at"></a> created\_at
 
-• `Optional` **createdAt**: `Date`
+• `Optional` **created\_at**: `string`
 
 **`memberof`** GPGKey
 
 #### Defined in
 
-[models/gpgkey.ts:50](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/gpgkey.ts#L50)
+[models/gpgkey.ts:55](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/gpgkey.ts#L55)
 
 ___
 
@@ -96,19 +96,19 @@ ___
 
 #### Defined in
 
-[models/gpgkey.ts:56](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/gpgkey.ts#L56)
+[models/gpgkey.ts:61](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/gpgkey.ts#L61)
 
 ___
 
-### <a id="expiresat" name="expiresat"></a> expiresAt
+### <a id="expires_at" name="expires_at"></a> expires\_at
 
-• `Optional` **expiresAt**: `Date`
+• `Optional` **expires\_at**: `string`
 
 **`memberof`** GPGKey
 
 #### Defined in
 
-[models/gpgkey.ts:62](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/gpgkey.ts#L62)
+[models/gpgkey.ts:67](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/gpgkey.ts#L67)
 
 ___
 
@@ -120,43 +120,43 @@ ___
 
 #### Defined in
 
-[models/gpgkey.ts:68](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/gpgkey.ts#L68)
+[models/gpgkey.ts:73](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/gpgkey.ts#L73)
 
 ___
 
-### <a id="keyid" name="keyid"></a> keyId
+### <a id="key_id" name="key_id"></a> key\_id
 
-• `Optional` **keyId**: `string`
+• `Optional` **key\_id**: `string`
 
 **`memberof`** GPGKey
 
 #### Defined in
 
-[models/gpgkey.ts:74](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/gpgkey.ts#L74)
+[models/gpgkey.ts:79](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/gpgkey.ts#L79)
 
 ___
 
-### <a id="primarykeyid" name="primarykeyid"></a> primaryKeyId
+### <a id="primary_key_id" name="primary_key_id"></a> primary\_key\_id
 
-• `Optional` **primaryKeyId**: `string`
+• `Optional` **primary\_key\_id**: `string`
 
 **`memberof`** GPGKey
 
 #### Defined in
 
-[models/gpgkey.ts:80](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/gpgkey.ts#L80)
+[models/gpgkey.ts:85](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/gpgkey.ts#L85)
 
 ___
 
-### <a id="publickey" name="publickey"></a> publicKey
+### <a id="public_key" name="public_key"></a> public\_key
 
-• `Optional` **publicKey**: `string`
+• `Optional` **public\_key**: `string`
 
 **`memberof`** GPGKey
 
 #### Defined in
 
-[models/gpgkey.ts:86](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/gpgkey.ts#L86)
+[models/gpgkey.ts:91](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/gpgkey.ts#L91)
 
 ___
 
@@ -168,7 +168,7 @@ ___
 
 #### Defined in
 
-[models/gpgkey.ts:92](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/gpgkey.ts#L92)
+[models/gpgkey.ts:97](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/gpgkey.ts#L97)
 
 ___
 
@@ -180,4 +180,4 @@ ___
 
 #### Defined in
 
-[models/gpgkey.ts:98](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/gpgkey.ts#L98)
+[models/gpgkey.ts:103](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/gpgkey.ts#L103)

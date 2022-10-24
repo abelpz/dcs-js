@@ -15,7 +15,7 @@
 - [committer](Commit.md#committer)
 - [created](Commit.md#created)
 - [files](Commit.md#files)
-- [htmlUrl](Commit.md#htmlurl)
+- [html\_url](Commit.md#html_url)
 - [parents](Commit.md#parents)
 - [sha](Commit.md#sha)
 - [url](Commit.md#url)
@@ -30,7 +30,7 @@
 
 #### Defined in
 
-[models/commit.ts:29](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/commit.ts#L29)
+[models/commit.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/commit.ts#L40)
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 #### Defined in
 
-[models/commit.ts:35](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/commit.ts#L35)
+[models/commit.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/commit.ts#L46)
 
 ___
 
@@ -54,19 +54,19 @@ ___
 
 #### Defined in
 
-[models/commit.ts:41](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/commit.ts#L41)
+[models/commit.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/commit.ts#L52)
 
 ___
 
 ### <a id="created" name="created"></a> created
 
-• `Optional` **created**: `Date`
+• `Optional` **created**: `string`
 
 **`memberof`** Commit
 
 #### Defined in
 
-[models/commit.ts:47](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/commit.ts#L47)
+[models/commit.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/commit.ts#L58)
 
 ___
 
@@ -78,19 +78,19 @@ ___
 
 #### Defined in
 
-[models/commit.ts:53](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/commit.ts#L53)
+[models/commit.ts:64](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/commit.ts#L64)
 
 ___
 
-### <a id="htmlurl" name="htmlurl"></a> htmlUrl
+### <a id="html_url" name="html_url"></a> html\_url
 
-• `Optional` **htmlUrl**: `string`
+• `Optional` **html\_url**: `string`
 
 **`memberof`** Commit
 
 #### Defined in
 
-[models/commit.ts:59](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/commit.ts#L59)
+[models/commit.ts:70](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/commit.ts#L70)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-[models/commit.ts:65](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/commit.ts#L65)
+[models/commit.ts:76](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/commit.ts#L76)
 
 ___
 
@@ -114,7 +114,7 @@ ___
 
 #### Defined in
 
-[models/commit.ts:71](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/commit.ts#L71)
+[models/commit.ts:82](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/commit.ts#L82)
 
 ___
 
@@ -126,4 +126,4 @@ ___
 
 #### Defined in
 
-[models/commit.ts:77](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/commit.ts#L77)
+[models/commit.ts:88](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/commit.ts#L88)

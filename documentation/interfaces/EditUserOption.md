@@ -14,20 +14,20 @@ EditUserOption edit user options
 
 - [active](EditUserOption.md#active)
 - [admin](EditUserOption.md#admin)
-- [allowCreateOrganization](EditUserOption.md#allowcreateorganization)
-- [allowGitHook](EditUserOption.md#allowgithook)
-- [allowImportLocal](EditUserOption.md#allowimportlocal)
+- [allow\_create\_organization](EditUserOption.md#allow_create_organization)
+- [allow\_git\_hook](EditUserOption.md#allow_git_hook)
+- [allow\_import\_local](EditUserOption.md#allow_import_local)
 - [description](EditUserOption.md#description)
 - [email](EditUserOption.md#email)
-- [fullName](EditUserOption.md#fullname)
+- [full\_name](EditUserOption.md#full_name)
 - [location](EditUserOption.md#location)
-- [loginName](EditUserOption.md#loginname)
-- [maxRepoCreation](EditUserOption.md#maxrepocreation)
-- [mustChangePassword](EditUserOption.md#mustchangepassword)
+- [login\_name](EditUserOption.md#login_name)
+- [max\_repo\_creation](EditUserOption.md#max_repo_creation)
+- [must\_change\_password](EditUserOption.md#must_change_password)
 - [password](EditUserOption.md#password)
-- [prohibitLogin](EditUserOption.md#prohibitlogin)
+- [prohibit\_login](EditUserOption.md#prohibit_login)
 - [restricted](EditUserOption.md#restricted)
-- [sourceId](EditUserOption.md#sourceid)
+- [source\_id](EditUserOption.md#source_id)
 - [visibility](EditUserOption.md#visibility)
 - [website](EditUserOption.md#website)
 
@@ -41,7 +41,7 @@ EditUserOption edit user options
 
 #### Defined in
 
-[models/edit-user-option.ts:25](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-user-option.ts#L25)
+[models/edit-user-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-user-option.ts#L28)
 
 ___
 
@@ -53,43 +53,43 @@ ___
 
 #### Defined in
 
-[models/edit-user-option.ts:31](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-user-option.ts#L31)
+[models/edit-user-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-user-option.ts#L34)
 
 ___
 
-### <a id="allowcreateorganization" name="allowcreateorganization"></a> allowCreateOrganization
+### <a id="allow_create_organization" name="allow_create_organization"></a> allow\_create\_organization
 
-• `Optional` **allowCreateOrganization**: `boolean`
+• `Optional` **allow\_create\_organization**: `boolean`
 
 **`memberof`** EditUserOption
 
 #### Defined in
 
-[models/edit-user-option.ts:37](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-user-option.ts#L37)
+[models/edit-user-option.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-user-option.ts#L40)
 
 ___
 
-### <a id="allowgithook" name="allowgithook"></a> allowGitHook
+### <a id="allow_git_hook" name="allow_git_hook"></a> allow\_git\_hook
 
-• `Optional` **allowGitHook**: `boolean`
+• `Optional` **allow\_git\_hook**: `boolean`
 
 **`memberof`** EditUserOption
 
 #### Defined in
 
-[models/edit-user-option.ts:43](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-user-option.ts#L43)
+[models/edit-user-option.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-user-option.ts#L46)
 
 ___
 
-### <a id="allowimportlocal" name="allowimportlocal"></a> allowImportLocal
+### <a id="allow_import_local" name="allow_import_local"></a> allow\_import\_local
 
-• `Optional` **allowImportLocal**: `boolean`
+• `Optional` **allow\_import\_local**: `boolean`
 
 **`memberof`** EditUserOption
 
 #### Defined in
 
-[models/edit-user-option.ts:49](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-user-option.ts#L49)
+[models/edit-user-option.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-user-option.ts#L52)
 
 ___
 
@@ -101,7 +101,7 @@ ___
 
 #### Defined in
 
-[models/edit-user-option.ts:55](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-user-option.ts#L55)
+[models/edit-user-option.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-user-option.ts#L58)
 
 ___
 
@@ -113,19 +113,19 @@ ___
 
 #### Defined in
 
-[models/edit-user-option.ts:61](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-user-option.ts#L61)
+[models/edit-user-option.ts:64](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-user-option.ts#L64)
 
 ___
 
-### <a id="fullname" name="fullname"></a> fullName
+### <a id="full_name" name="full_name"></a> full\_name
 
-• `Optional` **fullName**: `string`
+• `Optional` **full\_name**: `string`
 
 **`memberof`** EditUserOption
 
 #### Defined in
 
-[models/edit-user-option.ts:67](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-user-option.ts#L67)
+[models/edit-user-option.ts:70](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-user-option.ts#L70)
 
 ___
 
@@ -137,43 +137,43 @@ ___
 
 #### Defined in
 
-[models/edit-user-option.ts:73](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-user-option.ts#L73)
+[models/edit-user-option.ts:76](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-user-option.ts#L76)
 
 ___
 
-### <a id="loginname" name="loginname"></a> loginName
+### <a id="login_name" name="login_name"></a> login\_name
 
-• **loginName**: `string`
+• **login\_name**: `string`
 
 **`memberof`** EditUserOption
 
 #### Defined in
 
-[models/edit-user-option.ts:79](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-user-option.ts#L79)
+[models/edit-user-option.ts:82](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-user-option.ts#L82)
 
 ___
 
-### <a id="maxrepocreation" name="maxrepocreation"></a> maxRepoCreation
+### <a id="max_repo_creation" name="max_repo_creation"></a> max\_repo\_creation
 
-• `Optional` **maxRepoCreation**: `number`
+• `Optional` **max\_repo\_creation**: `number`
 
 **`memberof`** EditUserOption
 
 #### Defined in
 
-[models/edit-user-option.ts:85](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-user-option.ts#L85)
+[models/edit-user-option.ts:88](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-user-option.ts#L88)
 
 ___
 
-### <a id="mustchangepassword" name="mustchangepassword"></a> mustChangePassword
+### <a id="must_change_password" name="must_change_password"></a> must\_change\_password
 
-• `Optional` **mustChangePassword**: `boolean`
+• `Optional` **must\_change\_password**: `boolean`
 
 **`memberof`** EditUserOption
 
 #### Defined in
 
-[models/edit-user-option.ts:91](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-user-option.ts#L91)
+[models/edit-user-option.ts:94](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-user-option.ts#L94)
 
 ___
 
@@ -185,19 +185,19 @@ ___
 
 #### Defined in
 
-[models/edit-user-option.ts:97](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-user-option.ts#L97)
+[models/edit-user-option.ts:100](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-user-option.ts#L100)
 
 ___
 
-### <a id="prohibitlogin" name="prohibitlogin"></a> prohibitLogin
+### <a id="prohibit_login" name="prohibit_login"></a> prohibit\_login
 
-• `Optional` **prohibitLogin**: `boolean`
+• `Optional` **prohibit\_login**: `boolean`
 
 **`memberof`** EditUserOption
 
 #### Defined in
 
-[models/edit-user-option.ts:103](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-user-option.ts#L103)
+[models/edit-user-option.ts:106](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-user-option.ts#L106)
 
 ___
 
@@ -209,19 +209,19 @@ ___
 
 #### Defined in
 
-[models/edit-user-option.ts:109](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-user-option.ts#L109)
+[models/edit-user-option.ts:112](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-user-option.ts#L112)
 
 ___
 
-### <a id="sourceid" name="sourceid"></a> sourceId
+### <a id="source_id" name="source_id"></a> source\_id
 
-• **sourceId**: `number`
+• **source\_id**: `number`
 
 **`memberof`** EditUserOption
 
 #### Defined in
 
-[models/edit-user-option.ts:115](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-user-option.ts#L115)
+[models/edit-user-option.ts:118](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-user-option.ts#L118)
 
 ___
 
@@ -233,7 +233,7 @@ ___
 
 #### Defined in
 
-[models/edit-user-option.ts:121](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-user-option.ts#L121)
+[models/edit-user-option.ts:124](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-user-option.ts#L124)
 
 ___
 
@@ -245,4 +245,4 @@ ___
 
 #### Defined in
 
-[models/edit-user-option.ts:127](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/edit-user-option.ts#L127)
+[models/edit-user-option.ts:130](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-user-option.ts#L130)

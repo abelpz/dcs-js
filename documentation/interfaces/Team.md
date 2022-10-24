@@ -12,27 +12,27 @@ Team represents a team in an organization
 
 ### Properties
 
-- [canCreateOrgRepo](Team.md#cancreateorgrepo)
+- [can\_create\_org\_repo](Team.md#can_create_org_repo)
 - [description](Team.md#description)
 - [id](Team.md#id)
-- [includesAllRepositories](Team.md#includesallrepositories)
+- [includes\_all\_repositories](Team.md#includes_all_repositories)
 - [name](Team.md#name)
 - [organization](Team.md#organization)
 - [permission](Team.md#permission)
 - [units](Team.md#units)
-- [unitsMap](Team.md#unitsmap)
+- [units\_map](Team.md#units_map)
 
 ## Properties
 
-### <a id="cancreateorgrepo" name="cancreateorgrepo"></a> canCreateOrgRepo
+### <a id="can_create_org_repo" name="can_create_org_repo"></a> can\_create\_org\_repo
 
-• `Optional` **canCreateOrgRepo**: `boolean`
+• `Optional` **can\_create\_org\_repo**: `boolean`
 
 **`memberof`** Team
 
 #### Defined in
 
-[models/team.ts:26](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/team.ts#L26)
+[models/team.ts:31](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/team.ts#L31)
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 #### Defined in
 
-[models/team.ts:32](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/team.ts#L32)
+[models/team.ts:37](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/team.ts#L37)
 
 ___
 
@@ -56,19 +56,19 @@ ___
 
 #### Defined in
 
-[models/team.ts:38](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/team.ts#L38)
+[models/team.ts:43](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/team.ts#L43)
 
 ___
 
-### <a id="includesallrepositories" name="includesallrepositories"></a> includesAllRepositories
+### <a id="includes_all_repositories" name="includes_all_repositories"></a> includes\_all\_repositories
 
-• `Optional` **includesAllRepositories**: `boolean`
+• `Optional` **includes\_all\_repositories**: `boolean`
 
 **`memberof`** Team
 
 #### Defined in
 
-[models/team.ts:44](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/team.ts#L44)
+[models/team.ts:49](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/team.ts#L49)
 
 ___
 
@@ -80,7 +80,7 @@ ___
 
 #### Defined in
 
-[models/team.ts:50](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/team.ts#L50)
+[models/team.ts:55](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/team.ts#L55)
 
 ___
 
@@ -92,19 +92,19 @@ ___
 
 #### Defined in
 
-[models/team.ts:56](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/team.ts#L56)
+[models/team.ts:61](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/team.ts#L61)
 
 ___
 
 ### <a id="permission" name="permission"></a> permission
 
-• `Optional` **permission**: [`TeamPermissionEnum`](../enums/TeamPermissionEnum.md)
+• `Optional` **permission**: [`TeamPermissionEnum`](../modules.md#teampermissionenum-1)
 
 **`memberof`** Team
 
 #### Defined in
 
-[models/team.ts:62](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/team.ts#L62)
+[models/team.ts:67](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/team.ts#L67)
 
 ___
 
@@ -116,13 +116,13 @@ ___
 
 #### Defined in
 
-[models/team.ts:68](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/team.ts#L68)
+[models/team.ts:73](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/team.ts#L73)
 
 ___
 
-### <a id="unitsmap" name="unitsmap"></a> unitsMap
+### <a id="units_map" name="units_map"></a> units\_map
 
-• `Optional` **unitsMap**: `Object`
+• `Optional` **units\_map**: `Object`
 
 **`memberof`** Team
 
@@ -132,4 +132,4 @@ ___
 
 #### Defined in
 
-[models/team.ts:74](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/team.ts#L74)
+[models/team.ts:79](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/team.ts#L79)

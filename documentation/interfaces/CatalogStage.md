@@ -2,7 +2,7 @@
 
 # Interface: CatalogStage
 
-CatalogStage a repo's catalog stage metadata
+CatalogStage a repo\'s catalog stage metadata
 
 **`export`**
 
@@ -12,94 +12,94 @@ CatalogStage a repo's catalog stage metadata
 
 ### Properties
 
-- [branchOrTagName](CatalogStage.md#branchortagname)
-- [contentsUrl](CatalogStage.md#contentsurl)
-- [gitTreesUrl](CatalogStage.md#gittreesurl)
-- [releaseUrl](CatalogStage.md#releaseurl)
+- [branch\_or\_tag\_name](CatalogStage.md#branch_or_tag_name)
+- [contents\_url](CatalogStage.md#contents_url)
+- [git\_trees\_url](CatalogStage.md#git_trees_url)
+- [release\_url](CatalogStage.md#release_url)
 - [released](CatalogStage.md#released)
-- [tarballUrl](CatalogStage.md#tarballurl)
-- [zipballUrl](CatalogStage.md#zipballurl)
+- [tarball\_url](CatalogStage.md#tarball_url)
+- [zipball\_url](CatalogStage.md#zipball_url)
 
 ## Properties
 
-### <a id="branchortagname" name="branchortagname"></a> branchOrTagName
+### <a id="branch_or_tag_name" name="branch_or_tag_name"></a> branch\_or\_tag\_name
 
-• `Optional` **branchOrTagName**: `string`
+• `Optional` **branch\_or\_tag\_name**: `string`
 
 **`memberof`** CatalogStage
 
 #### Defined in
 
-[models/catalog-stage.ts:25](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/catalog-stage.ts#L25)
+[models/catalog-stage.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/catalog-stage.ts#L28)
 
 ___
 
-### <a id="contentsurl" name="contentsurl"></a> contentsUrl
+### <a id="contents_url" name="contents_url"></a> contents\_url
 
-• `Optional` **contentsUrl**: `string`
+• `Optional` **contents\_url**: `string`
 
 **`memberof`** CatalogStage
 
 #### Defined in
 
-[models/catalog-stage.ts:31](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/catalog-stage.ts#L31)
+[models/catalog-stage.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/catalog-stage.ts#L34)
 
 ___
 
-### <a id="gittreesurl" name="gittreesurl"></a> gitTreesUrl
+### <a id="git_trees_url" name="git_trees_url"></a> git\_trees\_url
 
-• `Optional` **gitTreesUrl**: `string`
+• `Optional` **git\_trees\_url**: `string`
 
 **`memberof`** CatalogStage
 
 #### Defined in
 
-[models/catalog-stage.ts:37](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/catalog-stage.ts#L37)
+[models/catalog-stage.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/catalog-stage.ts#L40)
 
 ___
 
-### <a id="releaseurl" name="releaseurl"></a> releaseUrl
+### <a id="release_url" name="release_url"></a> release\_url
 
-• `Optional` **releaseUrl**: `string`
+• `Optional` **release\_url**: `string`
 
 **`memberof`** CatalogStage
 
 #### Defined in
 
-[models/catalog-stage.ts:43](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/catalog-stage.ts#L43)
+[models/catalog-stage.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/catalog-stage.ts#L46)
 
 ___
 
 ### <a id="released" name="released"></a> released
 
-• `Optional` **released**: `Date`
+• `Optional` **released**: `string`
 
 **`memberof`** CatalogStage
 
 #### Defined in
 
-[models/catalog-stage.ts:49](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/catalog-stage.ts#L49)
+[models/catalog-stage.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/catalog-stage.ts#L52)
 
 ___
 
-### <a id="tarballurl" name="tarballurl"></a> tarballUrl
+### <a id="tarball_url" name="tarball_url"></a> tarball\_url
 
-• `Optional` **tarballUrl**: `string`
+• `Optional` **tarball\_url**: `string`
 
 **`memberof`** CatalogStage
 
 #### Defined in
 
-[models/catalog-stage.ts:55](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/catalog-stage.ts#L55)
+[models/catalog-stage.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/catalog-stage.ts#L58)
 
 ___
 
-### <a id="zipballurl" name="zipballurl"></a> zipballUrl
+### <a id="zipball_url" name="zipball_url"></a> zipball\_url
 
-• `Optional` **zipballUrl**: `string`
+• `Optional` **zipball\_url**: `string`
 
 **`memberof`** CatalogStage
 
 #### Defined in
 
-[models/catalog-stage.ts:61](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/catalog-stage.ts#L61)
+[models/catalog-stage.ts:64](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/catalog-stage.ts#L64)

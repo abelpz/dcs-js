@@ -13,7 +13,7 @@
 - [author](FileCommitResponse.md#author)
 - [committer](FileCommitResponse.md#committer)
 - [created](FileCommitResponse.md#created)
-- [htmlUrl](FileCommitResponse.md#htmlurl)
+- [html\_url](FileCommitResponse.md#html_url)
 - [message](FileCommitResponse.md#message)
 - [parents](FileCommitResponse.md#parents)
 - [sha](FileCommitResponse.md#sha)
@@ -30,7 +30,7 @@
 
 #### Defined in
 
-[models/file-commit-response.ts:27](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/file-commit-response.ts#L27)
+[models/file-commit-response.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/file-commit-response.ts#L34)
 
 ___
 
@@ -42,31 +42,31 @@ ___
 
 #### Defined in
 
-[models/file-commit-response.ts:33](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/file-commit-response.ts#L33)
+[models/file-commit-response.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/file-commit-response.ts#L40)
 
 ___
 
 ### <a id="created" name="created"></a> created
 
-• `Optional` **created**: `Date`
+• `Optional` **created**: `string`
 
 **`memberof`** FileCommitResponse
 
 #### Defined in
 
-[models/file-commit-response.ts:39](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/file-commit-response.ts#L39)
+[models/file-commit-response.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/file-commit-response.ts#L46)
 
 ___
 
-### <a id="htmlurl" name="htmlurl"></a> htmlUrl
+### <a id="html_url" name="html_url"></a> html\_url
 
-• `Optional` **htmlUrl**: `string`
+• `Optional` **html\_url**: `string`
 
 **`memberof`** FileCommitResponse
 
 #### Defined in
 
-[models/file-commit-response.ts:45](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/file-commit-response.ts#L45)
+[models/file-commit-response.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/file-commit-response.ts#L52)
 
 ___
 
@@ -78,7 +78,7 @@ ___
 
 #### Defined in
 
-[models/file-commit-response.ts:51](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/file-commit-response.ts#L51)
+[models/file-commit-response.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/file-commit-response.ts#L58)
 
 ___
 
@@ -90,7 +90,7 @@ ___
 
 #### Defined in
 
-[models/file-commit-response.ts:57](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/file-commit-response.ts#L57)
+[models/file-commit-response.ts:64](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/file-commit-response.ts#L64)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-[models/file-commit-response.ts:63](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/file-commit-response.ts#L63)
+[models/file-commit-response.ts:70](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/file-commit-response.ts#L70)
 
 ___
 
@@ -114,7 +114,7 @@ ___
 
 #### Defined in
 
-[models/file-commit-response.ts:69](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/file-commit-response.ts#L69)
+[models/file-commit-response.ts:76](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/file-commit-response.ts#L76)
 
 ___
 
@@ -126,4 +126,4 @@ ___
 
 #### Defined in
 
-[models/file-commit-response.ts:75](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/file-commit-response.ts#L75)
+[models/file-commit-response.ts:82](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/file-commit-response.ts#L82)

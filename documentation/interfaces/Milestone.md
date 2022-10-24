@@ -12,52 +12,52 @@ Milestone milestone is a collection of issues on one repository
 
 ### Properties
 
-- [closedAt](Milestone.md#closedat)
-- [closedIssues](Milestone.md#closedissues)
-- [createdAt](Milestone.md#createdat)
+- [closed\_at](Milestone.md#closed_at)
+- [closed\_issues](Milestone.md#closed_issues)
+- [created\_at](Milestone.md#created_at)
 - [description](Milestone.md#description)
-- [dueOn](Milestone.md#dueon)
+- [due\_on](Milestone.md#due_on)
 - [id](Milestone.md#id)
-- [openIssues](Milestone.md#openissues)
+- [open\_issues](Milestone.md#open_issues)
 - [state](Milestone.md#state)
 - [title](Milestone.md#title)
-- [updatedAt](Milestone.md#updatedat)
+- [updated\_at](Milestone.md#updated_at)
 
 ## Properties
 
-### <a id="closedat" name="closedat"></a> closedAt
+### <a id="closed_at" name="closed_at"></a> closed\_at
 
-• `Optional` **closedAt**: `Date`
+• `Optional` **closed\_at**: `string`
 
 **`memberof`** Milestone
 
 #### Defined in
 
-[models/milestone.ts:26](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/milestone.ts#L26)
+[models/milestone.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/milestone.ts#L28)
 
 ___
 
-### <a id="closedissues" name="closedissues"></a> closedIssues
+### <a id="closed_issues" name="closed_issues"></a> closed\_issues
 
-• `Optional` **closedIssues**: `number`
+• `Optional` **closed\_issues**: `number`
 
 **`memberof`** Milestone
 
 #### Defined in
 
-[models/milestone.ts:32](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/milestone.ts#L32)
+[models/milestone.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/milestone.ts#L34)
 
 ___
 
-### <a id="createdat" name="createdat"></a> createdAt
+### <a id="created_at" name="created_at"></a> created\_at
 
-• `Optional` **createdAt**: `Date`
+• `Optional` **created\_at**: `string`
 
 **`memberof`** Milestone
 
 #### Defined in
 
-[models/milestone.ts:38](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/milestone.ts#L38)
+[models/milestone.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/milestone.ts#L40)
 
 ___
 
@@ -69,19 +69,19 @@ ___
 
 #### Defined in
 
-[models/milestone.ts:44](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/milestone.ts#L44)
+[models/milestone.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/milestone.ts#L46)
 
 ___
 
-### <a id="dueon" name="dueon"></a> dueOn
+### <a id="due_on" name="due_on"></a> due\_on
 
-• `Optional` **dueOn**: `Date`
+• `Optional` **due\_on**: `string`
 
 **`memberof`** Milestone
 
 #### Defined in
 
-[models/milestone.ts:50](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/milestone.ts#L50)
+[models/milestone.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/milestone.ts#L52)
 
 ___
 
@@ -93,31 +93,33 @@ ___
 
 #### Defined in
 
-[models/milestone.ts:56](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/milestone.ts#L56)
+[models/milestone.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/milestone.ts#L58)
 
 ___
 
-### <a id="openissues" name="openissues"></a> openIssues
+### <a id="open_issues" name="open_issues"></a> open\_issues
 
-• `Optional` **openIssues**: `number`
+• `Optional` **open\_issues**: `number`
 
 **`memberof`** Milestone
 
 #### Defined in
 
-[models/milestone.ts:62](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/milestone.ts#L62)
+[models/milestone.ts:64](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/milestone.ts#L64)
 
 ___
 
 ### <a id="state" name="state"></a> state
 
-• `Optional` **state**: [`StateType`](StateType.md)
+• `Optional` **state**: `string`
+
+StateType issue state type
 
 **`memberof`** Milestone
 
 #### Defined in
 
-[models/milestone.ts:68](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/milestone.ts#L68)
+[models/milestone.ts:70](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/milestone.ts#L70)
 
 ___
 
@@ -129,16 +131,16 @@ ___
 
 #### Defined in
 
-[models/milestone.ts:74](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/milestone.ts#L74)
+[models/milestone.ts:76](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/milestone.ts#L76)
 
 ___
 
-### <a id="updatedat" name="updatedat"></a> updatedAt
+### <a id="updated_at" name="updated_at"></a> updated\_at
 
-• `Optional` **updatedAt**: `Date`
+• `Optional` **updated\_at**: `string`
 
 **`memberof`** Milestone
 
 #### Defined in
 
-[models/milestone.ts:80](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/milestone.ts#L80)
+[models/milestone.ts:82](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/milestone.ts#L82)

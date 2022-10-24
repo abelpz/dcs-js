@@ -15,18 +15,18 @@ Release represents a repository release
 - [assets](Release.md#assets)
 - [author](Release.md#author)
 - [body](Release.md#body)
-- [createdAt](Release.md#createdat)
+- [created\_at](Release.md#created_at)
 - [draft](Release.md#draft)
-- [htmlUrl](Release.md#htmlurl)
+- [html\_url](Release.md#html_url)
 - [id](Release.md#id)
 - [name](Release.md#name)
 - [prerelease](Release.md#prerelease)
-- [publishedAt](Release.md#publishedat)
-- [tagName](Release.md#tagname)
-- [tarballUrl](Release.md#tarballurl)
-- [targetCommitish](Release.md#targetcommitish)
+- [published\_at](Release.md#published_at)
+- [tag\_name](Release.md#tag_name)
+- [tarball\_url](Release.md#tarball_url)
+- [target\_commitish](Release.md#target_commitish)
 - [url](Release.md#url)
-- [zipballUrl](Release.md#zipballurl)
+- [zipball\_url](Release.md#zipball_url)
 
 ## Properties
 
@@ -38,7 +38,7 @@ Release represents a repository release
 
 #### Defined in
 
-[models/release.ts:27](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/release.ts#L27)
+[models/release.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/release.ts#L34)
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 #### Defined in
 
-[models/release.ts:33](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/release.ts#L33)
+[models/release.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/release.ts#L40)
 
 ___
 
@@ -62,19 +62,19 @@ ___
 
 #### Defined in
 
-[models/release.ts:39](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/release.ts#L39)
+[models/release.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/release.ts#L46)
 
 ___
 
-### <a id="createdat" name="createdat"></a> createdAt
+### <a id="created_at" name="created_at"></a> created\_at
 
-• `Optional` **createdAt**: `Date`
+• `Optional` **created\_at**: `string`
 
 **`memberof`** Release
 
 #### Defined in
 
-[models/release.ts:45](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/release.ts#L45)
+[models/release.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/release.ts#L52)
 
 ___
 
@@ -86,19 +86,19 @@ ___
 
 #### Defined in
 
-[models/release.ts:51](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/release.ts#L51)
+[models/release.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/release.ts#L58)
 
 ___
 
-### <a id="htmlurl" name="htmlurl"></a> htmlUrl
+### <a id="html_url" name="html_url"></a> html\_url
 
-• `Optional` **htmlUrl**: `string`
+• `Optional` **html\_url**: `string`
 
 **`memberof`** Release
 
 #### Defined in
 
-[models/release.ts:57](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/release.ts#L57)
+[models/release.ts:64](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/release.ts#L64)
 
 ___
 
@@ -110,7 +110,7 @@ ___
 
 #### Defined in
 
-[models/release.ts:63](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/release.ts#L63)
+[models/release.ts:70](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/release.ts#L70)
 
 ___
 
@@ -122,7 +122,7 @@ ___
 
 #### Defined in
 
-[models/release.ts:69](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/release.ts#L69)
+[models/release.ts:76](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/release.ts#L76)
 
 ___
 
@@ -134,55 +134,55 @@ ___
 
 #### Defined in
 
-[models/release.ts:75](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/release.ts#L75)
+[models/release.ts:82](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/release.ts#L82)
 
 ___
 
-### <a id="publishedat" name="publishedat"></a> publishedAt
+### <a id="published_at" name="published_at"></a> published\_at
 
-• `Optional` **publishedAt**: `Date`
+• `Optional` **published\_at**: `string`
 
 **`memberof`** Release
 
 #### Defined in
 
-[models/release.ts:81](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/release.ts#L81)
+[models/release.ts:88](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/release.ts#L88)
 
 ___
 
-### <a id="tagname" name="tagname"></a> tagName
+### <a id="tag_name" name="tag_name"></a> tag\_name
 
-• `Optional` **tagName**: `string`
+• `Optional` **tag\_name**: `string`
 
 **`memberof`** Release
 
 #### Defined in
 
-[models/release.ts:87](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/release.ts#L87)
+[models/release.ts:94](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/release.ts#L94)
 
 ___
 
-### <a id="tarballurl" name="tarballurl"></a> tarballUrl
+### <a id="tarball_url" name="tarball_url"></a> tarball\_url
 
-• `Optional` **tarballUrl**: `string`
+• `Optional` **tarball\_url**: `string`
 
 **`memberof`** Release
 
 #### Defined in
 
-[models/release.ts:93](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/release.ts#L93)
+[models/release.ts:100](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/release.ts#L100)
 
 ___
 
-### <a id="targetcommitish" name="targetcommitish"></a> targetCommitish
+### <a id="target_commitish" name="target_commitish"></a> target\_commitish
 
-• `Optional` **targetCommitish**: `string`
+• `Optional` **target\_commitish**: `string`
 
 **`memberof`** Release
 
 #### Defined in
 
-[models/release.ts:99](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/release.ts#L99)
+[models/release.ts:106](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/release.ts#L106)
 
 ___
 
@@ -194,16 +194,16 @@ ___
 
 #### Defined in
 
-[models/release.ts:105](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/release.ts#L105)
+[models/release.ts:112](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/release.ts#L112)
 
 ___
 
-### <a id="zipballurl" name="zipballurl"></a> zipballUrl
+### <a id="zipball_url" name="zipball_url"></a> zipball\_url
 
-• `Optional` **zipballUrl**: `string`
+• `Optional` **zipball\_url**: `string`
 
 **`memberof`** Release
 
 #### Defined in
 
-[models/release.ts:111](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/release.ts#L111)
+[models/release.ts:118](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/release.ts#L118)

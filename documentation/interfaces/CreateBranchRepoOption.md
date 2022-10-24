@@ -12,14 +12,14 @@ CreateBranchRepoOption options when creating a branch in a repository
 
 ### Properties
 
-- [newBranchName](CreateBranchRepoOption.md#newbranchname)
-- [oldBranchName](CreateBranchRepoOption.md#oldbranchname)
+- [new\_branch\_name](CreateBranchRepoOption.md#new_branch_name)
+- [old\_branch\_name](CreateBranchRepoOption.md#old_branch_name)
 
 ## Properties
 
-### <a id="newbranchname" name="newbranchname"></a> newBranchName
+### <a id="new_branch_name" name="new_branch_name"></a> new\_branch\_name
 
-• **newBranchName**: `string`
+• **new\_branch\_name**: `string`
 
 Name of the branch to create
 
@@ -27,13 +27,13 @@ Name of the branch to create
 
 #### Defined in
 
-[models/create-branch-repo-option.ts:25](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-branch-repo-option.ts#L25)
+[models/create-branch-repo-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-branch-repo-option.ts#L28)
 
 ___
 
-### <a id="oldbranchname" name="oldbranchname"></a> oldBranchName
+### <a id="old_branch_name" name="old_branch_name"></a> old\_branch\_name
 
-• `Optional` **oldBranchName**: `string`
+• `Optional` **old\_branch\_name**: `string`
 
 Name of the old branch to create from
 
@@ -41,4 +41,4 @@ Name of the old branch to create from
 
 #### Defined in
 
-[models/create-branch-repo-option.ts:31](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-branch-repo-option.ts#L31)
+[models/create-branch-repo-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-branch-repo-option.ts#L34)

@@ -25,7 +25,7 @@ Note contains information related to a git note
 
 #### Defined in
 
-[models/note.ts:26](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/note.ts#L26)
+[models/note.ts:31](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/note.ts#L31)
 
 ___
 
@@ -37,4 +37,4 @@ ___
 
 #### Defined in
 
-[models/note.ts:32](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/note.ts#L32)
+[models/note.ts:37](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/note.ts#L37)

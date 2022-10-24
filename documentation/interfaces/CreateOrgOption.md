@@ -13,9 +13,9 @@ CreateOrgOption options for creating an organization
 ### Properties
 
 - [description](CreateOrgOption.md#description)
-- [fullName](CreateOrgOption.md#fullname)
+- [full\_name](CreateOrgOption.md#full_name)
 - [location](CreateOrgOption.md#location)
-- [repoAdminChangeTeamAccess](CreateOrgOption.md#repoadminchangeteamaccess)
+- [repo\_admin\_change\_team\_access](CreateOrgOption.md#repo_admin_change_team_access)
 - [username](CreateOrgOption.md#username)
 - [visibility](CreateOrgOption.md#visibility)
 - [website](CreateOrgOption.md#website)
@@ -30,19 +30,19 @@ CreateOrgOption options for creating an organization
 
 #### Defined in
 
-[models/create-org-option.ts:25](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-org-option.ts#L25)
+[models/create-org-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-org-option.ts#L28)
 
 ___
 
-### <a id="fullname" name="fullname"></a> fullName
+### <a id="full_name" name="full_name"></a> full\_name
 
-• `Optional` **fullName**: `string`
+• `Optional` **full\_name**: `string`
 
 **`memberof`** CreateOrgOption
 
 #### Defined in
 
-[models/create-org-option.ts:31](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-org-option.ts#L31)
+[models/create-org-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-org-option.ts#L34)
 
 ___
 
@@ -54,19 +54,19 @@ ___
 
 #### Defined in
 
-[models/create-org-option.ts:37](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-org-option.ts#L37)
+[models/create-org-option.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-org-option.ts#L40)
 
 ___
 
-### <a id="repoadminchangeteamaccess" name="repoadminchangeteamaccess"></a> repoAdminChangeTeamAccess
+### <a id="repo_admin_change_team_access" name="repo_admin_change_team_access"></a> repo\_admin\_change\_team\_access
 
-• `Optional` **repoAdminChangeTeamAccess**: `boolean`
+• `Optional` **repo\_admin\_change\_team\_access**: `boolean`
 
 **`memberof`** CreateOrgOption
 
 #### Defined in
 
-[models/create-org-option.ts:43](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-org-option.ts#L43)
+[models/create-org-option.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-org-option.ts#L46)
 
 ___
 
@@ -78,13 +78,13 @@ ___
 
 #### Defined in
 
-[models/create-org-option.ts:49](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-org-option.ts#L49)
+[models/create-org-option.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-org-option.ts#L52)
 
 ___
 
 ### <a id="visibility" name="visibility"></a> visibility
 
-• `Optional` **visibility**: [`CreateOrgOptionVisibilityEnum`](../enums/CreateOrgOptionVisibilityEnum.md)
+• `Optional` **visibility**: [`CreateOrgOptionVisibilityEnum`](../modules.md#createorgoptionvisibilityenum-1)
 
 possible values are `public` (default), `limited` or `private`
 
@@ -92,7 +92,7 @@ possible values are `public` (default), `limited` or `private`
 
 #### Defined in
 
-[models/create-org-option.ts:55](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-org-option.ts#L55)
+[models/create-org-option.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-org-option.ts#L58)
 
 ___
 
@@ -104,4 +104,4 @@ ___
 
 #### Defined in
 
-[models/create-org-option.ts:61](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-org-option.ts#L61)
+[models/create-org-option.ts:64](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-org-option.ts#L64)

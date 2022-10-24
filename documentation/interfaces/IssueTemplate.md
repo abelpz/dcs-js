@@ -14,7 +14,7 @@ IssueTemplate represents an issue template for a repository
 
 - [about](IssueTemplate.md#about)
 - [content](IssueTemplate.md#content)
-- [fileName](IssueTemplate.md#filename)
+- [file\_name](IssueTemplate.md#file_name)
 - [labels](IssueTemplate.md#labels)
 - [name](IssueTemplate.md#name)
 - [ref](IssueTemplate.md#ref)
@@ -30,7 +30,7 @@ IssueTemplate represents an issue template for a repository
 
 #### Defined in
 
-[models/issue-template.ts:25](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/issue-template.ts#L25)
+[models/issue-template.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/issue-template.ts#L28)
 
 ___
 
@@ -42,19 +42,19 @@ ___
 
 #### Defined in
 
-[models/issue-template.ts:31](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/issue-template.ts#L31)
+[models/issue-template.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/issue-template.ts#L34)
 
 ___
 
-### <a id="filename" name="filename"></a> fileName
+### <a id="file_name" name="file_name"></a> file\_name
 
-• `Optional` **fileName**: `string`
+• `Optional` **file\_name**: `string`
 
 **`memberof`** IssueTemplate
 
 #### Defined in
 
-[models/issue-template.ts:37](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/issue-template.ts#L37)
+[models/issue-template.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/issue-template.ts#L40)
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 #### Defined in
 
-[models/issue-template.ts:43](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/issue-template.ts#L43)
+[models/issue-template.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/issue-template.ts#L46)
 
 ___
 
@@ -78,7 +78,7 @@ ___
 
 #### Defined in
 
-[models/issue-template.ts:49](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/issue-template.ts#L49)
+[models/issue-template.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/issue-template.ts#L52)
 
 ___
 
@@ -90,7 +90,7 @@ ___
 
 #### Defined in
 
-[models/issue-template.ts:55](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/issue-template.ts#L55)
+[models/issue-template.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/issue-template.ts#L58)
 
 ___
 
@@ -102,4 +102,4 @@ ___
 
 #### Defined in
 
-[models/issue-template.ts:61](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/issue-template.ts#L61)
+[models/issue-template.ts:64](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/issue-template.ts#L64)

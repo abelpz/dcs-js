@@ -15,7 +15,7 @@ CreateStatusOption holds the information needed to create a new CommitStatus for
 - [context](CreateStatusOption.md#context)
 - [description](CreateStatusOption.md#description)
 - [state](CreateStatusOption.md#state)
-- [targetUrl](CreateStatusOption.md#targeturl)
+- [target\_url](CreateStatusOption.md#target_url)
 
 ## Properties
 
@@ -27,7 +27,7 @@ CreateStatusOption holds the information needed to create a new CommitStatus for
 
 #### Defined in
 
-[models/create-status-option.ts:26](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-status-option.ts#L26)
+[models/create-status-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-status-option.ts#L28)
 
 ___
 
@@ -39,28 +39,30 @@ ___
 
 #### Defined in
 
-[models/create-status-option.ts:32](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-status-option.ts#L32)
+[models/create-status-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-status-option.ts#L34)
 
 ___
 
 ### <a id="state" name="state"></a> state
 
-• `Optional` **state**: [`CommitStatusState`](CommitStatusState.md)
+• `Optional` **state**: `string`
+
+CommitStatusState holds the state of a CommitStatus It can be \"pending\", \"success\", \"error\", \"failure\", and \"warning\"
 
 **`memberof`** CreateStatusOption
 
 #### Defined in
 
-[models/create-status-option.ts:38](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-status-option.ts#L38)
+[models/create-status-option.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-status-option.ts#L40)
 
 ___
 
-### <a id="targeturl" name="targeturl"></a> targetUrl
+### <a id="target_url" name="target_url"></a> target\_url
 
-• `Optional` **targetUrl**: `string`
+• `Optional` **target\_url**: `string`
 
 **`memberof`** CreateStatusOption
 
 #### Defined in
 
-[models/create-status-option.ts:44](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-status-option.ts#L44)
+[models/create-status-option.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-status-option.ts#L46)

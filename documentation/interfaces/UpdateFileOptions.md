@@ -17,9 +17,9 @@ UpdateFileOptions options for updating files Note: `author` and `committer` are 
 - [committer](UpdateFileOptions.md#committer)
 - [content](UpdateFileOptions.md#content)
 - [dates](UpdateFileOptions.md#dates)
-- [fromPath](UpdateFileOptions.md#frompath)
+- [from\_path](UpdateFileOptions.md#from_path)
 - [message](UpdateFileOptions.md#message)
-- [newBranch](UpdateFileOptions.md#newbranch)
+- [new\_branch](UpdateFileOptions.md#new_branch)
 - [sha](UpdateFileOptions.md#sha)
 - [signoff](UpdateFileOptions.md#signoff)
 
@@ -33,7 +33,7 @@ UpdateFileOptions options for updating files Note: `author` and `committer` are 
 
 #### Defined in
 
-[models/update-file-options.ts:27](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/update-file-options.ts#L27)
+[models/update-file-options.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/update-file-options.ts#L34)
 
 ___
 
@@ -47,7 +47,7 @@ branch (optional) to base this file from. if not given, the default branch is us
 
 #### Defined in
 
-[models/update-file-options.ts:33](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/update-file-options.ts#L33)
+[models/update-file-options.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/update-file-options.ts#L40)
 
 ___
 
@@ -59,7 +59,7 @@ ___
 
 #### Defined in
 
-[models/update-file-options.ts:39](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/update-file-options.ts#L39)
+[models/update-file-options.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/update-file-options.ts#L46)
 
 ___
 
@@ -73,7 +73,7 @@ content must be base64 encoded
 
 #### Defined in
 
-[models/update-file-options.ts:45](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/update-file-options.ts#L45)
+[models/update-file-options.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/update-file-options.ts#L52)
 
 ___
 
@@ -85,13 +85,13 @@ ___
 
 #### Defined in
 
-[models/update-file-options.ts:51](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/update-file-options.ts#L51)
+[models/update-file-options.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/update-file-options.ts#L58)
 
 ___
 
-### <a id="frompath" name="frompath"></a> fromPath
+### <a id="from_path" name="from_path"></a> from\_path
 
-• `Optional` **fromPath**: `string`
+• `Optional` **from\_path**: `string`
 
 from_path (optional) is the path of the original file which will be moved/renamed to the path in the URL
 
@@ -99,7 +99,7 @@ from_path (optional) is the path of the original file which will be moved/rename
 
 #### Defined in
 
-[models/update-file-options.ts:57](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/update-file-options.ts#L57)
+[models/update-file-options.ts:64](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/update-file-options.ts#L64)
 
 ___
 
@@ -113,13 +113,13 @@ message (optional) for the commit of this file. if not supplied, a default messa
 
 #### Defined in
 
-[models/update-file-options.ts:63](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/update-file-options.ts#L63)
+[models/update-file-options.ts:70](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/update-file-options.ts#L70)
 
 ___
 
-### <a id="newbranch" name="newbranch"></a> newBranch
+### <a id="new_branch" name="new_branch"></a> new\_branch
 
-• `Optional` **newBranch**: `string`
+• `Optional` **new\_branch**: `string`
 
 new_branch (optional) will make a new branch from `branch` before creating the file
 
@@ -127,7 +127,7 @@ new_branch (optional) will make a new branch from `branch` before creating the f
 
 #### Defined in
 
-[models/update-file-options.ts:69](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/update-file-options.ts#L69)
+[models/update-file-options.ts:76](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/update-file-options.ts#L76)
 
 ___
 
@@ -141,7 +141,7 @@ sha is the SHA for the file that already exists
 
 #### Defined in
 
-[models/update-file-options.ts:75](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/update-file-options.ts#L75)
+[models/update-file-options.ts:82](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/update-file-options.ts#L82)
 
 ___
 
@@ -155,4 +155,4 @@ Add a Signed-off-by trailer by the committer at the end of the commit log messag
 
 #### Defined in
 
-[models/update-file-options.ts:81](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/update-file-options.ts#L81)
+[models/update-file-options.ts:88](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/update-file-options.ts#L88)

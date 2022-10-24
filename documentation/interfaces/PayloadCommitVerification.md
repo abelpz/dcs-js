@@ -28,7 +28,7 @@ PayloadCommitVerification represents the GPG verification of a commit
 
 #### Defined in
 
-[models/payload-commit-verification.ts:26](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/payload-commit-verification.ts#L26)
+[models/payload-commit-verification.ts:31](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/payload-commit-verification.ts#L31)
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 #### Defined in
 
-[models/payload-commit-verification.ts:32](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/payload-commit-verification.ts#L32)
+[models/payload-commit-verification.ts:37](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/payload-commit-verification.ts#L37)
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 #### Defined in
 
-[models/payload-commit-verification.ts:38](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/payload-commit-verification.ts#L38)
+[models/payload-commit-verification.ts:43](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/payload-commit-verification.ts#L43)
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 #### Defined in
 
-[models/payload-commit-verification.ts:44](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/payload-commit-verification.ts#L44)
+[models/payload-commit-verification.ts:49](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/payload-commit-verification.ts#L49)
 
 ___
 
@@ -76,4 +76,4 @@ ___
 
 #### Defined in
 
-[models/payload-commit-verification.ts:50](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/payload-commit-verification.ts#L50)
+[models/payload-commit-verification.ts:55](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/payload-commit-verification.ts#L55)

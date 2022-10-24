@@ -12,32 +12,18 @@ GenerateRepoOption options when creating repository using a template
 
 ### Properties
 
-- [\_private](GenerateRepoOption.md#_private)
 - [avatar](GenerateRepoOption.md#avatar)
 - [description](GenerateRepoOption.md#description)
-- [gitContent](GenerateRepoOption.md#gitcontent)
-- [gitHooks](GenerateRepoOption.md#githooks)
+- [git\_content](GenerateRepoOption.md#git_content)
+- [git\_hooks](GenerateRepoOption.md#git_hooks)
 - [labels](GenerateRepoOption.md#labels)
 - [name](GenerateRepoOption.md#name)
 - [owner](GenerateRepoOption.md#owner)
+- [private](GenerateRepoOption.md#private)
 - [topics](GenerateRepoOption.md#topics)
 - [webhooks](GenerateRepoOption.md#webhooks)
 
 ## Properties
-
-### <a id="_private" name="_private"></a> \_private
-
-• `Optional` **\_private**: `boolean`
-
-Whether the repository is private
-
-**`memberof`** GenerateRepoOption
-
-#### Defined in
-
-[models/generate-repo-option.ts:67](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/generate-repo-option.ts#L67)
-
-___
 
 ### <a id="avatar" name="avatar"></a> avatar
 
@@ -49,7 +35,7 @@ include avatar of the template repo
 
 #### Defined in
 
-[models/generate-repo-option.ts:25](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/generate-repo-option.ts#L25)
+[models/generate-repo-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/generate-repo-option.ts#L28)
 
 ___
 
@@ -63,13 +49,13 @@ Description of the repository to create
 
 #### Defined in
 
-[models/generate-repo-option.ts:31](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/generate-repo-option.ts#L31)
+[models/generate-repo-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/generate-repo-option.ts#L34)
 
 ___
 
-### <a id="gitcontent" name="gitcontent"></a> gitContent
+### <a id="git_content" name="git_content"></a> git\_content
 
-• `Optional` **gitContent**: `boolean`
+• `Optional` **git\_content**: `boolean`
 
 include git content of default branch in template repo
 
@@ -77,13 +63,13 @@ include git content of default branch in template repo
 
 #### Defined in
 
-[models/generate-repo-option.ts:37](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/generate-repo-option.ts#L37)
+[models/generate-repo-option.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/generate-repo-option.ts#L40)
 
 ___
 
-### <a id="githooks" name="githooks"></a> gitHooks
+### <a id="git_hooks" name="git_hooks"></a> git\_hooks
 
-• `Optional` **gitHooks**: `boolean`
+• `Optional` **git\_hooks**: `boolean`
 
 include git hooks in template repo
 
@@ -91,7 +77,7 @@ include git hooks in template repo
 
 #### Defined in
 
-[models/generate-repo-option.ts:43](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/generate-repo-option.ts#L43)
+[models/generate-repo-option.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/generate-repo-option.ts#L46)
 
 ___
 
@@ -105,7 +91,7 @@ include labels in template repo
 
 #### Defined in
 
-[models/generate-repo-option.ts:49](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/generate-repo-option.ts#L49)
+[models/generate-repo-option.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/generate-repo-option.ts#L52)
 
 ___
 
@@ -119,7 +105,7 @@ Name of the repository to create
 
 #### Defined in
 
-[models/generate-repo-option.ts:55](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/generate-repo-option.ts#L55)
+[models/generate-repo-option.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/generate-repo-option.ts#L58)
 
 ___
 
@@ -133,7 +119,21 @@ The organization or person who will own the new repository
 
 #### Defined in
 
-[models/generate-repo-option.ts:61](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/generate-repo-option.ts#L61)
+[models/generate-repo-option.ts:64](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/generate-repo-option.ts#L64)
+
+___
+
+### <a id="private" name="private"></a> private
+
+• `Optional` **private**: `boolean`
+
+Whether the repository is private
+
+**`memberof`** GenerateRepoOption
+
+#### Defined in
+
+[models/generate-repo-option.ts:70](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/generate-repo-option.ts#L70)
 
 ___
 
@@ -147,7 +147,7 @@ include topics in template repo
 
 #### Defined in
 
-[models/generate-repo-option.ts:73](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/generate-repo-option.ts#L73)
+[models/generate-repo-option.ts:76](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/generate-repo-option.ts#L76)
 
 ___
 
@@ -161,4 +161,4 @@ include webhooks in template repo
 
 #### Defined in
 
-[models/generate-repo-option.ts:79](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/generate-repo-option.ts#L79)
+[models/generate-repo-option.ts:82](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/generate-repo-option.ts#L82)

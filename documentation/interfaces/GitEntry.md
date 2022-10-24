@@ -29,7 +29,7 @@ GitEntry represents a git tree
 
 #### Defined in
 
-[models/git-entry.ts:25](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/git-entry.ts#L25)
+[models/git-entry.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/git-entry.ts#L28)
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 #### Defined in
 
-[models/git-entry.ts:31](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/git-entry.ts#L31)
+[models/git-entry.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/git-entry.ts#L34)
 
 ___
 
@@ -53,7 +53,7 @@ ___
 
 #### Defined in
 
-[models/git-entry.ts:37](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/git-entry.ts#L37)
+[models/git-entry.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/git-entry.ts#L40)
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 #### Defined in
 
-[models/git-entry.ts:43](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/git-entry.ts#L43)
+[models/git-entry.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/git-entry.ts#L46)
 
 ___
 
@@ -77,7 +77,7 @@ ___
 
 #### Defined in
 
-[models/git-entry.ts:49](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/git-entry.ts#L49)
+[models/git-entry.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/git-entry.ts#L52)
 
 ___
 
@@ -89,4 +89,4 @@ ___
 
 #### Defined in
 
-[models/git-entry.ts:55](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/git-entry.ts#L55)
+[models/git-entry.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/git-entry.ts#L58)

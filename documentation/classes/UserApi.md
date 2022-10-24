@@ -97,7 +97,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[base.ts:50](https://github.com/unfoldingWord/dcs-js/blob/c677a54/base.ts#L50)
+[base.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/base.ts#L52)
 
 ## Properties
 
@@ -131,7 +131,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[base.ts:48](https://github.com/unfoldingWord/dcs-js/blob/c677a54/base.ts#L48)
+[base.ts:50](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/base.ts#L50)
 
 ## Methods
 
@@ -158,7 +158,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[apis/user-api.ts:6170](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/user-api.ts#L6170)
+[apis/user-api.ts:4222](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4222)
 
 ___
 
@@ -184,7 +184,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:6180](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/user-api.ts#L6180)
+[apis/user-api.ts:4233](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4233)
 
 ___
 
@@ -210,7 +210,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:6190](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/user-api.ts#L6190)
+[apis/user-api.ts:4244](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4244)
 
 ___
 
@@ -237,7 +237,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:6201](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/user-api.ts#L6201)
+[apis/user-api.ts:4256](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4256)
 
 ___
 
@@ -264,7 +264,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:6212](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/user-api.ts#L6212)
+[apis/user-api.ts:4268](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4268)
 
 ___
 
@@ -292,7 +292,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:6224](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/user-api.ts#L6224)
+[apis/user-api.ts:4281](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4281)
 
 ___
 
@@ -319,13 +319,13 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:6235](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/user-api.ts#L6235)
+[apis/user-api.ts:4293](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4293)
 
 ___
 
 ### <a id="usercreatetoken" name="usercreatetoken"></a> userCreateToken
 
-▸ **userCreateToken**(`username`, `body?`, `options?`): `Promise`<`AxiosResponse`<[`AccessToken`](../interfaces/AccessToken.md)\>\>
+▸ **userCreateToken**(`username`, `userCreateToken?`, `options?`): `Promise`<`AxiosResponse`<[`AccessToken`](../interfaces/AccessToken.md)\>\>
 
 **`summary`** Create an access token
 
@@ -338,7 +338,7 @@ ___
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `username` | `string` | username of user |
-| `body?` | [`CreateAccessTokenOption`](../interfaces/CreateAccessTokenOption.md) | - |
+| `userCreateToken?` | [`CreateAccessTokenOption`](../interfaces/CreateAccessTokenOption.md) | - |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -347,7 +347,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:6247](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/user-api.ts#L6247)
+[apis/user-api.ts:4306](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4306)
 
 ___
 
@@ -374,7 +374,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:6258](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/user-api.ts#L6258)
+[apis/user-api.ts:4318](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4318)
 
 ___
 
@@ -402,7 +402,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:6270](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/user-api.ts#L6270)
+[apis/user-api.ts:4331](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4331)
 
 ___
 
@@ -429,7 +429,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:6281](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/user-api.ts#L6281)
+[apis/user-api.ts:4343](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4343)
 
 ___
 
@@ -456,7 +456,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:6292](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/user-api.ts#L6292)
+[apis/user-api.ts:4355](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4355)
 
 ___
 
@@ -483,7 +483,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:6303](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/user-api.ts#L6303)
+[apis/user-api.ts:4367](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4367)
 
 ___
 
@@ -511,7 +511,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:6315](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/user-api.ts#L6315)
+[apis/user-api.ts:4380](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4380)
 
 ___
 
@@ -538,7 +538,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:6326](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/user-api.ts#L6326)
+[apis/user-api.ts:4392](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4392)
 
 ___
 
@@ -565,7 +565,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:6337](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/user-api.ts#L6337)
+[apis/user-api.ts:4404](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4404)
 
 ___
 
@@ -573,7 +573,7 @@ ___
 
 ▸ **userCurrentListFollowers**(`page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`User`](../interfaces/User.md)[]\>\>
 
-**`summary`** List the authenticated user's followers
+**`summary`** List the authenticated user\'s followers
 
 **`throws`** {RequiredError}
 
@@ -593,7 +593,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:6349](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/user-api.ts#L6349)
+[apis/user-api.ts:4417](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4417)
 
 ___
 
@@ -621,7 +621,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:6361](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/user-api.ts#L6361)
+[apis/user-api.ts:4430](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4430)
 
 ___
 
@@ -629,7 +629,7 @@ ___
 
 ▸ **userCurrentListGPGKeys**(`page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`GPGKey`](../interfaces/GPGKey.md)[]\>\>
 
-**`summary`** List the authenticated user's GPG keys
+**`summary`** List the authenticated user\'s GPG keys
 
 **`throws`** {RequiredError}
 
@@ -649,7 +649,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:6373](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/user-api.ts#L6373)
+[apis/user-api.ts:4443](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4443)
 
 ___
 
@@ -657,7 +657,7 @@ ___
 
 ▸ **userCurrentListKeys**(`fingerprint?`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`PublicKey`](../interfaces/PublicKey.md)[]\>\>
 
-**`summary`** List the authenticated user's public keys
+**`summary`** List the authenticated user\'s public keys
 
 **`throws`** {RequiredError}
 
@@ -678,7 +678,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:6386](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/user-api.ts#L6386)
+[apis/user-api.ts:4457](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4457)
 
 ___
 
@@ -706,7 +706,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:6398](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/user-api.ts#L6398)
+[apis/user-api.ts:4470](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4470)
 
 ___
 
@@ -734,7 +734,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:6410](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/user-api.ts#L6410)
+[apis/user-api.ts:4483](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4483)
 
 ___
 
@@ -762,13 +762,13 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:6422](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/user-api.ts#L6422)
+[apis/user-api.ts:4496](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4496)
 
 ___
 
 ### <a id="usercurrentpostgpgkey" name="usercurrentpostgpgkey"></a> userCurrentPostGPGKey
 
-▸ **userCurrentPostGPGKey**(`body?`, `options?`): `Promise`<`AxiosResponse`<[`GPGKey`](../interfaces/GPGKey.md)\>\>
+▸ **userCurrentPostGPGKey**(`form?`, `options?`): `Promise`<`AxiosResponse`<[`GPGKey`](../interfaces/GPGKey.md)\>\>
 
 **`summary`** Create a GPG key
 
@@ -780,7 +780,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `body?` | [`CreateGPGKeyOption`](../interfaces/CreateGPGKeyOption.md) |
+| `form?` | [`CreateGPGKeyOption`](../interfaces/CreateGPGKeyOption.md) |
 | `options?` | `AxiosRequestConfig` |
 
 #### Returns
@@ -789,7 +789,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:6433](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/user-api.ts#L6433)
+[apis/user-api.ts:4508](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4508)
 
 ___
 
@@ -816,7 +816,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:6444](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/user-api.ts#L6444)
+[apis/user-api.ts:4520](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4520)
 
 ___
 
@@ -843,7 +843,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:6455](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/user-api.ts#L6455)
+[apis/user-api.ts:4532](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4532)
 
 ___
 
@@ -871,7 +871,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:6467](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/user-api.ts#L6467)
+[apis/user-api.ts:4545](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4545)
 
 ___
 
@@ -879,7 +879,7 @@ ___
 
 ▸ **userCurrentTrackedTimes**(`since?`, `before?`, `options?`): `Promise`<`AxiosResponse`<[`TrackedTime`](../interfaces/TrackedTime.md)[]\>\>
 
-**`summary`** List the current user's tracked times
+**`summary`** List the current user\'s tracked times
 
 **`throws`** {RequiredError}
 
@@ -889,8 +889,8 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `since?` | `Date` |
-| `before?` | `Date` |
+| `since?` | `string` |
+| `before?` | `string` |
 | `options?` | `AxiosRequestConfig` |
 
 #### Returns
@@ -899,7 +899,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:6479](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/user-api.ts#L6479)
+[apis/user-api.ts:4558](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4558)
 
 ___
 
@@ -927,7 +927,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:6491](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/user-api.ts#L6491)
+[apis/user-api.ts:4571](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4571)
 
 ___
 
@@ -954,7 +954,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:6502](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/user-api.ts#L6502)
+[apis/user-api.ts:4583](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4583)
 
 ___
 
@@ -981,7 +981,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:6513](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/user-api.ts#L6513)
+[apis/user-api.ts:4595](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4595)
 
 ___
 
@@ -1008,7 +1008,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:6524](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/user-api.ts#L6524)
+[apis/user-api.ts:4607](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4607)
 
 ___
 
@@ -1034,7 +1034,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:6534](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/user-api.ts#L6534)
+[apis/user-api.ts:4618](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4618)
 
 ___
 
@@ -1042,7 +1042,7 @@ ___
 
 ▸ **userGetHeatmapData**(`username`, `options?`): `Promise`<`AxiosResponse`<[`UserHeatmapData`](../interfaces/UserHeatmapData.md)[]\>\>
 
-**`summary`** Get a user's heatmap
+**`summary`** Get a user\'s heatmap
 
 **`throws`** {RequiredError}
 
@@ -1061,7 +1061,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:6545](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/user-api.ts#L6545)
+[apis/user-api.ts:4630](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4630)
 
 ___
 
@@ -1088,7 +1088,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:6556](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/user-api.ts#L6556)
+[apis/user-api.ts:4642](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4642)
 
 ___
 
@@ -1096,7 +1096,7 @@ ___
 
 ▸ **userGetOauth2Application**(`page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`OAuth2Application`](../interfaces/OAuth2Application.md)[]\>\>
 
-**`summary`** List the authenticated user's oauth2 applications
+**`summary`** List the authenticated user\'s oauth2 applications
 
 **`throws`** {RequiredError}
 
@@ -1116,7 +1116,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:6568](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/user-api.ts#L6568)
+[apis/user-api.ts:4655](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4655)
 
 ___
 
@@ -1144,7 +1144,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:6580](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/user-api.ts#L6580)
+[apis/user-api.ts:4668](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4668)
 
 ___
 
@@ -1152,7 +1152,7 @@ ___
 
 ▸ **userGetTokens**(`username`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`AccessToken`](../interfaces/AccessToken.md)[]\>\>
 
-**`summary`** List the authenticated user's access tokens
+**`summary`** List the authenticated user\'s access tokens
 
 **`throws`** {RequiredError}
 
@@ -1173,7 +1173,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:6593](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/user-api.ts#L6593)
+[apis/user-api.ts:4682](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4682)
 
 ___
 
@@ -1181,7 +1181,7 @@ ___
 
 ▸ **userListEmails**(`options?`): `Promise`<`AxiosResponse`<[`Email`](../interfaces/Email.md)[]\>\>
 
-**`summary`** List the authenticated user's email addresses
+**`summary`** List the authenticated user\'s email addresses
 
 **`throws`** {RequiredError}
 
@@ -1199,7 +1199,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:6603](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/user-api.ts#L6603)
+[apis/user-api.ts:4693](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4693)
 
 ___
 
@@ -1207,7 +1207,7 @@ ___
 
 ▸ **userListFollowers**(`username`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`User`](../interfaces/User.md)[]\>\>
 
-**`summary`** List the given user's followers
+**`summary`** List the given user\'s followers
 
 **`throws`** {RequiredError}
 
@@ -1228,7 +1228,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:6616](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/user-api.ts#L6616)
+[apis/user-api.ts:4707](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4707)
 
 ___
 
@@ -1257,7 +1257,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:6629](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/user-api.ts#L6629)
+[apis/user-api.ts:4721](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4721)
 
 ___
 
@@ -1265,7 +1265,7 @@ ___
 
 ▸ **userListGPGKeys**(`username`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`GPGKey`](../interfaces/GPGKey.md)[]\>\>
 
-**`summary`** List the given user's GPG keys
+**`summary`** List the given user\'s GPG keys
 
 **`throws`** {RequiredError}
 
@@ -1286,7 +1286,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:6642](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/user-api.ts#L6642)
+[apis/user-api.ts:4735](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4735)
 
 ___
 
@@ -1294,7 +1294,7 @@ ___
 
 ▸ **userListKeys**(`username`, `fingerprint?`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`PublicKey`](../interfaces/PublicKey.md)[]\>\>
 
-**`summary`** List the given user's public keys
+**`summary`** List the given user\'s public keys
 
 **`throws`** {RequiredError}
 
@@ -1316,7 +1316,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:6656](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/user-api.ts#L6656)
+[apis/user-api.ts:4750](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4750)
 
 ___
 
@@ -1345,7 +1345,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:6669](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/user-api.ts#L6669)
+[apis/user-api.ts:4764](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4764)
 
 ___
 
@@ -1374,7 +1374,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:6682](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/user-api.ts#L6682)
+[apis/user-api.ts:4778](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4778)
 
 ___
 
@@ -1403,7 +1403,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:6695](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/user-api.ts#L6695)
+[apis/user-api.ts:4792](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4792)
 
 ___
 
@@ -1431,13 +1431,13 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:6707](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/user-api.ts#L6707)
+[apis/user-api.ts:4805](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4805)
 
 ___
 
 ### <a id="usersearch" name="usersearch"></a> userSearch
 
-▸ **userSearch**(`q?`, `uid?`, `lang?`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`InlineResponse2001`](../interfaces/InlineResponse2001.md)\>\>
+▸ **userSearch**(`q?`, `uid?`, `lang?`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`UserSearch200Response`](../interfaces/UserSearch200Response.md)\>\>
 
 **`summary`** Search for users
 
@@ -1458,17 +1458,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`InlineResponse2001`](../interfaces/InlineResponse2001.md)\>\>
+`Promise`<`AxiosResponse`<[`UserSearch200Response`](../interfaces/UserSearch200Response.md)\>\>
 
 #### Defined in
 
-[apis/user-api.ts:6722](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/user-api.ts#L6722)
+[apis/user-api.ts:4821](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4821)
 
 ___
 
 ### <a id="userupdateoauth2application" name="userupdateoauth2application"></a> userUpdateOAuth2Application
 
-▸ **userUpdateOAuth2Application**(`body`, `id`, `options?`): `Promise`<`AxiosResponse`<[`OAuth2Application`](../interfaces/OAuth2Application.md)\>\>
+▸ **userUpdateOAuth2Application**(`id`, `body`, `options?`): `Promise`<`AxiosResponse`<[`OAuth2Application`](../interfaces/OAuth2Application.md)\>\>
 
 **`summary`** update an OAuth2 Application, this includes regenerating the client secret
 
@@ -1480,8 +1480,8 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `body` | [`CreateOAuth2ApplicationOptions`](../interfaces/CreateOAuth2ApplicationOptions.md) |  |
 | `id` | `number` | application to be updated |
+| `body` | [`CreateOAuth2ApplicationOptions`](../interfaces/CreateOAuth2ApplicationOptions.md) |  |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1490,7 +1490,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:6734](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/user-api.ts#L6734)
+[apis/user-api.ts:4834](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4834)
 
 ___
 
@@ -1516,4 +1516,4 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:6744](https://github.com/unfoldingWord/dcs-js/blob/c677a54/apis/user-api.ts#L6744)
+[apis/user-api.ts:4845](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4845)

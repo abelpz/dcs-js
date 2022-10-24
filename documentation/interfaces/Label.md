@@ -28,7 +28,7 @@ Label a label to an issue or a pr
 
 #### Defined in
 
-[models/label.ts:25](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/label.ts#L25)
+[models/label.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/label.ts#L28)
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 #### Defined in
 
-[models/label.ts:31](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/label.ts#L31)
+[models/label.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/label.ts#L34)
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 #### Defined in
 
-[models/label.ts:37](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/label.ts#L37)
+[models/label.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/label.ts#L40)
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 #### Defined in
 
-[models/label.ts:43](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/label.ts#L43)
+[models/label.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/label.ts#L46)
 
 ___
 
@@ -76,4 +76,4 @@ ___
 
 #### Defined in
 
-[models/label.ts:49](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/label.ts#L49)
+[models/label.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/label.ts#L52)

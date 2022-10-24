@@ -12,37 +12,23 @@ CreateRepoOption options when creating repository
 
 ### Properties
 
-- [\_private](CreateRepoOption.md#_private)
-- [autoInit](CreateRepoOption.md#autoinit)
-- [defaultBranch](CreateRepoOption.md#defaultbranch)
+- [auto\_init](CreateRepoOption.md#auto_init)
+- [default\_branch](CreateRepoOption.md#default_branch)
 - [description](CreateRepoOption.md#description)
 - [gitignores](CreateRepoOption.md#gitignores)
-- [issueLabels](CreateRepoOption.md#issuelabels)
+- [issue\_labels](CreateRepoOption.md#issue_labels)
 - [license](CreateRepoOption.md#license)
 - [name](CreateRepoOption.md#name)
+- [private](CreateRepoOption.md#private)
 - [readme](CreateRepoOption.md#readme)
 - [template](CreateRepoOption.md#template)
-- [trustModel](CreateRepoOption.md#trustmodel)
+- [trust\_model](CreateRepoOption.md#trust_model)
 
 ## Properties
 
-### <a id="_private" name="_private"></a> \_private
+### <a id="auto_init" name="auto_init"></a> auto\_init
 
-• `Optional` **\_private**: `boolean`
-
-Whether the repository is private
-
-**`memberof`** CreateRepoOption
-
-#### Defined in
-
-[models/create-repo-option.ts:67](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-repo-option.ts#L67)
-
-___
-
-### <a id="autoinit" name="autoinit"></a> autoInit
-
-• `Optional` **autoInit**: `boolean`
+• `Optional` **auto\_init**: `boolean`
 
 Whether the repository should be auto-initialized?
 
@@ -50,13 +36,13 @@ Whether the repository should be auto-initialized?
 
 #### Defined in
 
-[models/create-repo-option.ts:25](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-repo-option.ts#L25)
+[models/create-repo-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-repo-option.ts#L28)
 
 ___
 
-### <a id="defaultbranch" name="defaultbranch"></a> defaultBranch
+### <a id="default_branch" name="default_branch"></a> default\_branch
 
-• `Optional` **defaultBranch**: `string`
+• `Optional` **default\_branch**: `string`
 
 DefaultBranch of the repository (used when initializes and in template)
 
@@ -64,7 +50,7 @@ DefaultBranch of the repository (used when initializes and in template)
 
 #### Defined in
 
-[models/create-repo-option.ts:31](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-repo-option.ts#L31)
+[models/create-repo-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-repo-option.ts#L34)
 
 ___
 
@@ -78,7 +64,7 @@ Description of the repository to create
 
 #### Defined in
 
-[models/create-repo-option.ts:37](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-repo-option.ts#L37)
+[models/create-repo-option.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-repo-option.ts#L40)
 
 ___
 
@@ -92,13 +78,13 @@ Gitignores to use
 
 #### Defined in
 
-[models/create-repo-option.ts:43](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-repo-option.ts#L43)
+[models/create-repo-option.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-repo-option.ts#L46)
 
 ___
 
-### <a id="issuelabels" name="issuelabels"></a> issueLabels
+### <a id="issue_labels" name="issue_labels"></a> issue\_labels
 
-• `Optional` **issueLabels**: `string`
+• `Optional` **issue\_labels**: `string`
 
 Label-Set to use
 
@@ -106,7 +92,7 @@ Label-Set to use
 
 #### Defined in
 
-[models/create-repo-option.ts:49](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-repo-option.ts#L49)
+[models/create-repo-option.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-repo-option.ts#L52)
 
 ___
 
@@ -120,7 +106,7 @@ License to use
 
 #### Defined in
 
-[models/create-repo-option.ts:55](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-repo-option.ts#L55)
+[models/create-repo-option.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-repo-option.ts#L58)
 
 ___
 
@@ -134,7 +120,21 @@ Name of the repository to create
 
 #### Defined in
 
-[models/create-repo-option.ts:61](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-repo-option.ts#L61)
+[models/create-repo-option.ts:64](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-repo-option.ts#L64)
+
+___
+
+### <a id="private" name="private"></a> private
+
+• `Optional` **private**: `boolean`
+
+Whether the repository is private
+
+**`memberof`** CreateRepoOption
+
+#### Defined in
+
+[models/create-repo-option.ts:70](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-repo-option.ts#L70)
 
 ___
 
@@ -148,7 +148,7 @@ Readme of the repository to create
 
 #### Defined in
 
-[models/create-repo-option.ts:73](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-repo-option.ts#L73)
+[models/create-repo-option.ts:76](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-repo-option.ts#L76)
 
 ___
 
@@ -162,13 +162,13 @@ Whether the repository is template
 
 #### Defined in
 
-[models/create-repo-option.ts:79](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-repo-option.ts#L79)
+[models/create-repo-option.ts:82](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-repo-option.ts#L82)
 
 ___
 
-### <a id="trustmodel" name="trustmodel"></a> trustModel
+### <a id="trust_model" name="trust_model"></a> trust\_model
 
-• `Optional` **trustModel**: [`CreateRepoOptionTrustModelEnum`](../enums/CreateRepoOptionTrustModelEnum.md)
+• `Optional` **trust\_model**: [`CreateRepoOptionTrustModelEnum`](../modules.md#createrepooptiontrustmodelenum-1)
 
 TrustModel of the repository
 
@@ -176,4 +176,4 @@ TrustModel of the repository
 
 #### Defined in
 
-[models/create-repo-option.ts:85](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-repo-option.ts#L85)
+[models/create-repo-option.ts:88](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-repo-option.ts#L88)

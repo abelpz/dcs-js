@@ -13,7 +13,7 @@ GitHook represents a Git repository hook
 ### Properties
 
 - [content](GitHook.md#content)
-- [isActive](GitHook.md#isactive)
+- [is\_active](GitHook.md#is_active)
 - [name](GitHook.md#name)
 
 ## Properties
@@ -26,19 +26,19 @@ GitHook represents a Git repository hook
 
 #### Defined in
 
-[models/git-hook.ts:25](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/git-hook.ts#L25)
+[models/git-hook.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/git-hook.ts#L28)
 
 ___
 
-### <a id="isactive" name="isactive"></a> isActive
+### <a id="is_active" name="is_active"></a> is\_active
 
-• `Optional` **isActive**: `boolean`
+• `Optional` **is\_active**: `boolean`
 
 **`memberof`** GitHook
 
 #### Defined in
 
-[models/git-hook.ts:31](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/git-hook.ts#L31)
+[models/git-hook.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/git-hook.ts#L34)
 
 ___
 
@@ -50,4 +50,4 @@ ___
 
 #### Defined in
 
-[models/git-hook.ts:37](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/git-hook.ts#L37)
+[models/git-hook.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/git-hook.ts#L40)

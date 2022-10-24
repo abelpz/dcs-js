@@ -13,7 +13,7 @@ CreateHookOption options when create a hook
 ### Properties
 
 - [active](CreateHookOption.md#active)
-- [branchFilter](CreateHookOption.md#branchfilter)
+- [branch\_filter](CreateHookOption.md#branch_filter)
 - [config](CreateHookOption.md#config)
 - [events](CreateHookOption.md#events)
 - [type](CreateHookOption.md#type)
@@ -28,31 +28,37 @@ CreateHookOption options when create a hook
 
 #### Defined in
 
-[models/create-hook-option.ts:26](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-hook-option.ts#L26)
+[models/create-hook-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-hook-option.ts#L28)
 
 ___
 
-### <a id="branchfilter" name="branchfilter"></a> branchFilter
+### <a id="branch_filter" name="branch_filter"></a> branch\_filter
 
-• `Optional` **branchFilter**: `string`
+• `Optional` **branch\_filter**: `string`
 
 **`memberof`** CreateHookOption
 
 #### Defined in
 
-[models/create-hook-option.ts:32](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-hook-option.ts#L32)
+[models/create-hook-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-hook-option.ts#L34)
 
 ___
 
 ### <a id="config" name="config"></a> config
 
-• **config**: [`CreateHookOptionConfig`](CreateHookOptionConfig.md)
+• **config**: `Object`
+
+CreateHookOptionConfig has all config options in it required are \"content_type\" and \"url\" Required
 
 **`memberof`** CreateHookOption
 
+#### Index signature
+
+▪ [key: `string`]: `string`
+
 #### Defined in
 
-[models/create-hook-option.ts:38](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-hook-option.ts#L38)
+[models/create-hook-option.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-hook-option.ts#L40)
 
 ___
 
@@ -64,16 +70,16 @@ ___
 
 #### Defined in
 
-[models/create-hook-option.ts:44](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-hook-option.ts#L44)
+[models/create-hook-option.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-hook-option.ts#L46)
 
 ___
 
 ### <a id="type" name="type"></a> type
 
-• **type**: [`CreateHookOptionTypeEnum`](../enums/CreateHookOptionTypeEnum.md)
+• **type**: [`CreateHookOptionTypeEnum`](../modules.md#createhookoptiontypeenum-1)
 
 **`memberof`** CreateHookOption
 
 #### Defined in
 
-[models/create-hook-option.ts:50](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/create-hook-option.ts#L50)
+[models/create-hook-option.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-hook-option.ts#L52)

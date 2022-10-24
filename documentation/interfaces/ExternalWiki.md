@@ -12,13 +12,13 @@ ExternalWiki represents setting for external wiki
 
 ### Properties
 
-- [externalWikiUrl](ExternalWiki.md#externalwikiurl)
+- [external\_wiki\_url](ExternalWiki.md#external_wiki_url)
 
 ## Properties
 
-### <a id="externalwikiurl" name="externalwikiurl"></a> externalWikiUrl
+### <a id="external_wiki_url" name="external_wiki_url"></a> external\_wiki\_url
 
-• `Optional` **externalWikiUrl**: `string`
+• `Optional` **external\_wiki\_url**: `string`
 
 URL of external wiki.
 
@@ -26,4 +26,4 @@ URL of external wiki.
 
 #### Defined in
 
-[models/external-wiki.ts:25](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/external-wiki.ts#L25)
+[models/external-wiki.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/external-wiki.ts#L28)

@@ -17,7 +17,7 @@ NotificationThread expose Notification on API
 - [repository](NotificationThread.md#repository)
 - [subject](NotificationThread.md#subject)
 - [unread](NotificationThread.md#unread)
-- [updatedAt](NotificationThread.md#updatedat)
+- [updated\_at](NotificationThread.md#updated_at)
 - [url](NotificationThread.md#url)
 
 ## Properties
@@ -30,7 +30,7 @@ NotificationThread expose Notification on API
 
 #### Defined in
 
-[models/notification-thread.ts:27](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/notification-thread.ts#L27)
+[models/notification-thread.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/notification-thread.ts#L34)
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 #### Defined in
 
-[models/notification-thread.ts:33](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/notification-thread.ts#L33)
+[models/notification-thread.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/notification-thread.ts#L40)
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 #### Defined in
 
-[models/notification-thread.ts:39](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/notification-thread.ts#L39)
+[models/notification-thread.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/notification-thread.ts#L46)
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 #### Defined in
 
-[models/notification-thread.ts:45](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/notification-thread.ts#L45)
+[models/notification-thread.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/notification-thread.ts#L52)
 
 ___
 
@@ -78,19 +78,19 @@ ___
 
 #### Defined in
 
-[models/notification-thread.ts:51](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/notification-thread.ts#L51)
+[models/notification-thread.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/notification-thread.ts#L58)
 
 ___
 
-### <a id="updatedat" name="updatedat"></a> updatedAt
+### <a id="updated_at" name="updated_at"></a> updated\_at
 
-• `Optional` **updatedAt**: `Date`
+• `Optional` **updated\_at**: `string`
 
 **`memberof`** NotificationThread
 
 #### Defined in
 
-[models/notification-thread.ts:57](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/notification-thread.ts#L57)
+[models/notification-thread.ts:64](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/notification-thread.ts#L64)
 
 ___
 
@@ -102,4 +102,4 @@ ___
 
 #### Defined in
 
-[models/notification-thread.ts:63](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/notification-thread.ts#L63)
+[models/notification-thread.ts:70](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/notification-thread.ts#L70)

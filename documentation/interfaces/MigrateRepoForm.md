@@ -12,85 +12,73 @@ MigrateRepoForm form for migrating repository this is used to interact with web 
 
 ### Properties
 
-- [\_private](MigrateRepoForm.md#_private)
-- [authPassword](MigrateRepoForm.md#authpassword)
-- [authToken](MigrateRepoForm.md#authtoken)
-- [authUsername](MigrateRepoForm.md#authusername)
-- [cloneAddr](MigrateRepoForm.md#cloneaddr)
+- [auth\_password](MigrateRepoForm.md#auth_password)
+- [auth\_token](MigrateRepoForm.md#auth_token)
+- [auth\_username](MigrateRepoForm.md#auth_username)
+- [clone\_addr](MigrateRepoForm.md#clone_addr)
 - [description](MigrateRepoForm.md#description)
 - [issues](MigrateRepoForm.md#issues)
 - [labels](MigrateRepoForm.md#labels)
 - [lfs](MigrateRepoForm.md#lfs)
-- [lfsEndpoint](MigrateRepoForm.md#lfsendpoint)
+- [lfs\_endpoint](MigrateRepoForm.md#lfs_endpoint)
 - [milestones](MigrateRepoForm.md#milestones)
 - [mirror](MigrateRepoForm.md#mirror)
-- [mirrorInterval](MigrateRepoForm.md#mirrorinterval)
-- [pullRequests](MigrateRepoForm.md#pullrequests)
+- [mirror\_interval](MigrateRepoForm.md#mirror_interval)
+- [private](MigrateRepoForm.md#private)
+- [pull\_requests](MigrateRepoForm.md#pull_requests)
 - [releases](MigrateRepoForm.md#releases)
-- [repoName](MigrateRepoForm.md#reponame)
+- [repo\_name](MigrateRepoForm.md#repo_name)
 - [service](MigrateRepoForm.md#service)
 - [uid](MigrateRepoForm.md#uid)
 - [wiki](MigrateRepoForm.md#wiki)
 
 ## Properties
 
-### <a id="_private" name="_private"></a> \_private
+### <a id="auth_password" name="auth_password"></a> auth\_password
 
-• `Optional` **\_private**: `boolean`
+• `Optional` **auth\_password**: `string`
 
 **`memberof`** MigrateRepoForm
 
 #### Defined in
 
-[models/migrate-repo-form.ts:98](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/migrate-repo-form.ts#L98)
+[models/migrate-repo-form.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/migrate-repo-form.ts#L28)
 
 ___
 
-### <a id="authpassword" name="authpassword"></a> authPassword
+### <a id="auth_token" name="auth_token"></a> auth\_token
 
-• `Optional` **authPassword**: `string`
+• `Optional` **auth\_token**: `string`
 
 **`memberof`** MigrateRepoForm
 
 #### Defined in
 
-[models/migrate-repo-form.ts:26](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/migrate-repo-form.ts#L26)
+[models/migrate-repo-form.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/migrate-repo-form.ts#L34)
 
 ___
 
-### <a id="authtoken" name="authtoken"></a> authToken
+### <a id="auth_username" name="auth_username"></a> auth\_username
 
-• `Optional` **authToken**: `string`
+• `Optional` **auth\_username**: `string`
 
 **`memberof`** MigrateRepoForm
 
 #### Defined in
 
-[models/migrate-repo-form.ts:32](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/migrate-repo-form.ts#L32)
+[models/migrate-repo-form.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/migrate-repo-form.ts#L40)
 
 ___
 
-### <a id="authusername" name="authusername"></a> authUsername
+### <a id="clone_addr" name="clone_addr"></a> clone\_addr
 
-• `Optional` **authUsername**: `string`
-
-**`memberof`** MigrateRepoForm
-
-#### Defined in
-
-[models/migrate-repo-form.ts:38](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/migrate-repo-form.ts#L38)
-
-___
-
-### <a id="cloneaddr" name="cloneaddr"></a> cloneAddr
-
-• **cloneAddr**: `string`
+• **clone\_addr**: `string`
 
 **`memberof`** MigrateRepoForm
 
 #### Defined in
 
-[models/migrate-repo-form.ts:44](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/migrate-repo-form.ts#L44)
+[models/migrate-repo-form.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/migrate-repo-form.ts#L46)
 
 ___
 
@@ -102,7 +90,7 @@ ___
 
 #### Defined in
 
-[models/migrate-repo-form.ts:50](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/migrate-repo-form.ts#L50)
+[models/migrate-repo-form.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/migrate-repo-form.ts#L52)
 
 ___
 
@@ -114,7 +102,7 @@ ___
 
 #### Defined in
 
-[models/migrate-repo-form.ts:56](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/migrate-repo-form.ts#L56)
+[models/migrate-repo-form.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/migrate-repo-form.ts#L58)
 
 ___
 
@@ -126,7 +114,7 @@ ___
 
 #### Defined in
 
-[models/migrate-repo-form.ts:62](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/migrate-repo-form.ts#L62)
+[models/migrate-repo-form.ts:64](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/migrate-repo-form.ts#L64)
 
 ___
 
@@ -138,19 +126,19 @@ ___
 
 #### Defined in
 
-[models/migrate-repo-form.ts:68](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/migrate-repo-form.ts#L68)
+[models/migrate-repo-form.ts:70](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/migrate-repo-form.ts#L70)
 
 ___
 
-### <a id="lfsendpoint" name="lfsendpoint"></a> lfsEndpoint
+### <a id="lfs_endpoint" name="lfs_endpoint"></a> lfs\_endpoint
 
-• `Optional` **lfsEndpoint**: `string`
+• `Optional` **lfs\_endpoint**: `string`
 
 **`memberof`** MigrateRepoForm
 
 #### Defined in
 
-[models/migrate-repo-form.ts:74](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/migrate-repo-form.ts#L74)
+[models/migrate-repo-form.ts:76](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/migrate-repo-form.ts#L76)
 
 ___
 
@@ -162,7 +150,7 @@ ___
 
 #### Defined in
 
-[models/migrate-repo-form.ts:80](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/migrate-repo-form.ts#L80)
+[models/migrate-repo-form.ts:82](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/migrate-repo-form.ts#L82)
 
 ___
 
@@ -174,31 +162,43 @@ ___
 
 #### Defined in
 
-[models/migrate-repo-form.ts:86](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/migrate-repo-form.ts#L86)
+[models/migrate-repo-form.ts:88](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/migrate-repo-form.ts#L88)
 
 ___
 
-### <a id="mirrorinterval" name="mirrorinterval"></a> mirrorInterval
+### <a id="mirror_interval" name="mirror_interval"></a> mirror\_interval
 
-• `Optional` **mirrorInterval**: `string`
+• `Optional` **mirror\_interval**: `string`
 
 **`memberof`** MigrateRepoForm
 
 #### Defined in
 
-[models/migrate-repo-form.ts:92](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/migrate-repo-form.ts#L92)
+[models/migrate-repo-form.ts:94](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/migrate-repo-form.ts#L94)
 
 ___
 
-### <a id="pullrequests" name="pullrequests"></a> pullRequests
+### <a id="private" name="private"></a> private
 
-• `Optional` **pullRequests**: `boolean`
+• `Optional` **private**: `boolean`
 
 **`memberof`** MigrateRepoForm
 
 #### Defined in
 
-[models/migrate-repo-form.ts:104](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/migrate-repo-form.ts#L104)
+[models/migrate-repo-form.ts:100](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/migrate-repo-form.ts#L100)
+
+___
+
+### <a id="pull_requests" name="pull_requests"></a> pull\_requests
+
+• `Optional` **pull\_requests**: `boolean`
+
+**`memberof`** MigrateRepoForm
+
+#### Defined in
+
+[models/migrate-repo-form.ts:106](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/migrate-repo-form.ts#L106)
 
 ___
 
@@ -210,31 +210,33 @@ ___
 
 #### Defined in
 
-[models/migrate-repo-form.ts:110](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/migrate-repo-form.ts#L110)
+[models/migrate-repo-form.ts:112](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/migrate-repo-form.ts#L112)
 
 ___
 
-### <a id="reponame" name="reponame"></a> repoName
+### <a id="repo_name" name="repo_name"></a> repo\_name
 
-• **repoName**: `string`
+• **repo\_name**: `string`
 
 **`memberof`** MigrateRepoForm
 
 #### Defined in
 
-[models/migrate-repo-form.ts:116](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/migrate-repo-form.ts#L116)
+[models/migrate-repo-form.ts:118](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/migrate-repo-form.ts#L118)
 
 ___
 
 ### <a id="service" name="service"></a> service
 
-• `Optional` **service**: [`GitServiceType`](GitServiceType.md)
+• `Optional` **service**: `number`
+
+GitServiceType represents a git service
 
 **`memberof`** MigrateRepoForm
 
 #### Defined in
 
-[models/migrate-repo-form.ts:122](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/migrate-repo-form.ts#L122)
+[models/migrate-repo-form.ts:124](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/migrate-repo-form.ts#L124)
 
 ___
 
@@ -246,7 +248,7 @@ ___
 
 #### Defined in
 
-[models/migrate-repo-form.ts:128](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/migrate-repo-form.ts#L128)
+[models/migrate-repo-form.ts:130](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/migrate-repo-form.ts#L130)
 
 ___
 
@@ -258,4 +260,4 @@ ___
 
 #### Defined in
 
-[models/migrate-repo-form.ts:134](https://github.com/unfoldingWord/dcs-js/blob/c677a54/models/migrate-repo-form.ts#L134)
+[models/migrate-repo-form.ts:136](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/migrate-repo-form.ts#L136)
