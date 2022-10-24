@@ -18,7 +18,8 @@
     "build": "tsc --outDir dist/",
     "prepublishOnly": "npm run build",
     "docmd": "npx typedoc --plugin typedoc-plugin-markdown --out documentation/ ./ --name dcs-js --namedAnchors true",
-    "dochtml": "npx typedoc --plugin none --out typedoc/ ./ --name dcs-js"
+    "dochtml": "npx typedoc --plugin none --out typedoc/ ./ --name dcs-js",
+    "generate": "node generator/generate.js"
   },
   "devDependencies": {
     "@readme/openapi-parser": "^2.3.0",
