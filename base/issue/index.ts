@@ -31,6 +31,9 @@ export * from './issue-delete-comment-reaction';
 export { default as issueGetIssue } from './issue-get-issue';
 export * from './issue-get-issue';
 
+export { default as issueDelete } from './issue-delete';
+export * from './issue-delete';
+
 export { default as issueEditIssue } from './issue-edit-issue';
 export * from './issue-edit-issue';
 

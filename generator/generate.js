@@ -22,7 +22,7 @@ const targetDir = "base";
 const rootDir = path.join(__dirname, "..", targetDir);
 
 const args = process.argv.slice(2);
-const DEFAULT_SOURCE = "https://git.door43.org/swagger.v1.json";
+const DEFAULT_SOURCE = "https://qa.door43.org/swagger.v1.json";
 const sourceUrl = args[0] || DEFAULT_SOURCE;
 
 const parser = new OpenAPIParser();

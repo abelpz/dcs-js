@@ -96,11 +96,10 @@ export interface User {
    */
   prohibit_login: boolean;
   /**
-  * DCS Customizations 
-Repo languages
-  * @type {string[]}
-  * @memberof User
-  */
+   * Repo languages
+   * @type {string[]}
+   * @memberof User
+   */
   repo_languages: string[];
   /**
    * Repo subjects
@@ -109,11 +108,10 @@ Repo languages
    */
   repo_subjects: string[];
   /**
-  * END DCS Customizations 
-Is user restricted
-  * @type {boolean}
-  * @memberof User
-  */
+   * Is user restricted
+   * @type {boolean}
+   * @memberof User
+   */
   restricted: boolean;
   /**
    *

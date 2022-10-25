@@ -14,7 +14,7 @@ import { RepoTransfer } from "./repo-transfer";
 
 export interface Repository {
   /**
-   *
+   * the count of alignments of each book
    * @type {object}
    * @memberof Repository
    */
@@ -56,7 +56,7 @@ export interface Repository {
    */
   avatar_url: string;
   /**
-   *
+   * project IDs from the manifest
    * @type {string[]}
    * @memberof Repository
    */
@@ -68,7 +68,7 @@ export interface Repository {
    */
   catalog: CatalogStages;
   /**
-   *
+   * checking level from the manifest
    * @type {string}
    * @memberof Repository
    */
@@ -194,29 +194,35 @@ export interface Repository {
    */
   internal_tracker: InternalTracker;
   /**
-   * DCS Customizations
+   * language from the manifest
    * @type {string}
    * @memberof Repository
    */
   language: string;
   /**
-   *
+   * language direction from the manifest
    * @type {string}
    * @memberof Repository
    */
   language_direction: string;
   /**
-   *
+   * is the language a GL
    * @type {boolean}
    * @memberof Repository
    */
   language_is_gl: boolean;
   /**
-   *
+   * language title from the manifest
    * @type {string}
    * @memberof Repository
    */
   language_title: string;
+  /**
+   *
+   * @type {string}
+   * @memberof Repository
+   */
+  languages_url: string;
   /**
    *
    * @type {boolean}
@@ -314,7 +320,7 @@ export interface Repository {
    */
   stars_count: number;
   /**
-   *
+   * subject from the manifest
    * @type {string}
    * @memberof Repository
    */
@@ -326,7 +332,7 @@ export interface Repository {
    */
   template: boolean;
   /**
-   *
+   * title from the manifest
    * @type {string}
    * @memberof Repository
    */

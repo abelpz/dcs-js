@@ -1,9 +1,9 @@
-import { CreateWikiPageOptions } from "./create-wiki-page-options";
+import { UpdateGitRefOption } from "./update-git-ref-option";
 
 /**
  * parameterBodies
  * @export
- * @type {CreateWikiPageOptions} ParameterBodies
+ * @type {UpdateGitRefOption} ParameterBodies
  */
 
-export type ParameterBodies = CreateWikiPageOptions;
+export type ParameterBodies = UpdateGitRefOption;

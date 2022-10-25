@@ -106,6 +106,9 @@ export * from './org-remove-team-member';
 export { default as orgListTeamRepos } from './org-list-team-repos';
 export * from './org-list-team-repos';
 
+export { default as orgListTeamRepo } from './org-list-team-repo';
+export * from './org-list-team-repo';
+
 export { default as orgAddTeamRepository } from './org-add-team-repository';
 export * from './org-add-team-repository';
 

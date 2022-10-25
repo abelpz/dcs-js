@@ -19,10 +19,10 @@ export interface WatchInfo {
   ignored: boolean;
   /**
    *
-   * @type {object}
+   * @type {unknown}
    * @memberof WatchInfo
    */
-  reason: object;
+  reason: unknown;
   /**
    *
    * @type {string}

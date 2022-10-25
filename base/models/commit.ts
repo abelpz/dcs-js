@@ -2,6 +2,7 @@ import { User } from "./user";
 import { RepoCommit } from "./repo-commit";
 import { CommitAffectedFiles } from "./commit-affected-files";
 import { CommitMeta } from "./commit-meta";
+import { CommitStats } from "./commit-stats";
 
 /**
  * Commit contains information generated from a Git commit.
@@ -58,6 +59,12 @@ export interface Commit {
    * @memberof Commit
    */
   sha: string;
+  /**
+   *
+   * @type {CommitStats}
+   * @memberof Commit
+   */
+  stats: CommitStats;
   /**
    *
    * @type {string}

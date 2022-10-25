@@ -12,6 +12,12 @@ export interface GenerateRepoOption {
    */
   avatar: boolean;
   /**
+   * Default branch of the new repository
+   * @type {string}
+   * @memberof GenerateRepoOption
+   */
+  default_branch: string;
+  /**
    * Description of the repository to create
    * @type {string}
    * @memberof GenerateRepoOption

@@ -11,4 +11,10 @@ export interface DismissPullReviewOptions {
    * @memberof DismissPullReviewOptions
    */
   message: string;
+  /**
+   *
+   * @type {boolean}
+   * @memberof DismissPullReviewOptions
+   */
+  priors: boolean;
 }

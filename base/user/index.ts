@@ -106,9 +106,6 @@ export * from './user-current-tracked-times';
 export { default as userSearch } from './user-search';
 export * from './user-search';
 
-export { default as userCheckFollowing } from './user-check-following';
-export * from './user-check-following';
-
 export { default as userGet } from './user-get';
 export * from './user-get';
 
@@ -117,6 +114,9 @@ export * from './user-list-followers';
 
 export { default as userListFollowing } from './user-list-following';
 export * from './user-list-following';
+
+export { default as userCheckFollowing } from './user-check-following';
+export * from './user-check-following';
 
 export { default as userListGPGKeys } from './user-list-gpg-keys';
 export * from './user-list-gpg-keys';

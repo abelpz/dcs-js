@@ -42,13 +42,13 @@ export interface Organization {
    */
   repo_admin_change_team_access: boolean;
   /**
-   * DCS Customizations
+   * All languages of the repos the org owns
    * @type {string[]}
    * @memberof Organization
    */
   repo_languages: string[];
   /**
-   *
+   * All subjects of the repos the org owns
    * @type {string[]}
    * @memberof Organization
    */

@@ -1,10 +1,14 @@
 export * from './admin';
 
+export * from './catalog';
+
 export * from './miscellaneous';
 
 export * from './notification';
 
 export * from './organization';
+
+export * from './package';
 
 export * from './issue';
 

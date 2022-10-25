@@ -4,23 +4,23 @@ import { NotFound } from "../models/not-found";
 
 export interface userCheckFollowingParams extends baseParams {
   /** username of following user */
-  follower: string;
+  username: string;
   /** username of followed user */
-  followee: string;
+  target: string;
 }
 /**
  * Check if one user is following another user
  */
 export default function userCheckFollowing({
-  follower,
-  followee,
+  username,
+  target,
   auth,
   options,
 }: userCheckFollowingParams): Promise<Empty> {
   const requestParams = {
     method: "GET",
     basePath: options?.basePath,
-    path: `/users/${follower}/following/${followee}`,
+    path: `/users/${username}/following/${target}`,
     query: {
       ...options?.query,
     },

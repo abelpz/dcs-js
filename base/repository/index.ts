@@ -58,6 +58,9 @@ export * from './repo-add-collaborator';
 export { default as repoDeleteCollaborator } from './repo-delete-collaborator';
 export * from './repo-delete-collaborator';
 
+export { default as repoGetRepoPermissions } from './repo-get-repo-permissions';
+export * from './repo-get-repo-permissions';
+
 export { default as repoGetAllCommits } from './repo-get-all-commits';
 export * from './repo-get-all-commits';
 
@@ -81,6 +84,9 @@ export * from './repo-create-file';
 
 export { default as repoDeleteFile } from './repo-delete-file';
 export * from './repo-delete-file';
+
+export { default as repoApplyDiffPatch } from './repo-apply-diff-patch';
+export * from './repo-apply-diff-patch';
 
 export { default as repoGetEditorConfig } from './repo-get-editor-config';
 export * from './repo-get-editor-config';
@@ -106,8 +112,17 @@ export * from './repo-get-note';
 export { default as repoListAllGitRefs } from './repo-list-all-git-refs';
 export * from './repo-list-all-git-refs';
 
+export { default as repoCreateGitRef } from './repo-create-git-ref';
+export * from './repo-create-git-ref';
+
 export { default as repoListGitRefs } from './repo-list-git-refs';
 export * from './repo-list-git-refs';
+
+export { default as repoDeleteGitRef } from './repo-delete-git-ref';
+export * from './repo-delete-git-ref';
+
+export { default as repoUpdateGitRef } from './repo-update-git-ref';
+export * from './repo-update-git-ref';
 
 export { default as GetAnnotatedTag } from './get-annotated-tag';
 export * from './get-annotated-tag';
@@ -163,6 +178,9 @@ export * from './repo-delete-key';
 export { default as repoGetLanguages } from './repo-get-languages';
 export * from './repo-get-languages';
 
+export { default as repoGetRawFileOrLFS } from './repo-get-raw-file-or-lfs';
+export * from './repo-get-raw-file-or-lfs';
+
 export { default as repoMirrorSync } from './repo-mirror-sync';
 export * from './repo-mirror-sync';
 
@@ -189,6 +207,9 @@ export * from './repo-pull-request-is-merged';
 
 export { default as repoMergePullRequest } from './repo-merge-pull-request';
 export * from './repo-merge-pull-request';
+
+export { default as repoCancelScheduledAutoMerge } from './repo-cancel-scheduled-auto-merge';
+export * from './repo-cancel-scheduled-auto-merge';
 
 export { default as repoCreatePullReviewRequests } from './repo-create-pull-review-requests';
 export * from './repo-create-pull-review-requests';

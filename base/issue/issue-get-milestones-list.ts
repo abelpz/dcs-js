@@ -6,7 +6,7 @@ export interface issueGetMilestonesListParams extends baseParams {
   owner: string;
   /** name of the repo */
   repo: string;
-  /** Milestone state, Recognised values are open, closed and all. Defaults to &quot;open&quot; */
+  /** Milestone state, Recognized values are open, closed and all. Defaults to &quot;open&quot; */
   state?: string;
   /** filter by milestone name */
   name?: string;

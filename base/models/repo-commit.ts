@@ -1,5 +1,6 @@
 import { CommitUser } from "./commit-user";
 import { CommitMeta } from "./commit-meta";
+import { PayloadCommitVerification } from "./payload-commit-verification";
 
 /**
  * RepoCommit contains information of a commit in the context of a repository.
@@ -38,4 +39,10 @@ export interface RepoCommit {
    * @memberof RepoCommit
    */
   url: string;
+  /**
+   *
+   * @type {PayloadCommitVerification}
+   * @memberof RepoCommit
+   */
+  verification: PayloadCommitVerification;
 }

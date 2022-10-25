@@ -34,6 +34,12 @@ export interface EditRepoOption {
    */
   allow_rebase_explicit: boolean;
   /**
+   * either `true` to allow updating pull request branch by rebase, or `false` to prevent it. `has_pull_requests` must be `true`.
+   * @type {boolean}
+   * @memberof EditRepoOption
+   */
+  allow_rebase_update: boolean;
+  /**
    * either `true` to allow squash-merging pull requests, or `false` to prevent squash-merging. `has_pull_requests` must be `true`.
    * @type {boolean}
    * @memberof EditRepoOption

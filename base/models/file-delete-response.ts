@@ -16,10 +16,10 @@ export interface FileDeleteResponse {
   commit: FileCommitResponse;
   /**
    *
-   * @type {object}
+   * @type {unknown}
    * @memberof FileDeleteResponse
    */
-  content: object;
+  content: unknown;
   /**
    *
    * @type {PayloadCommitVerification}

@@ -7,6 +7,12 @@
 export interface EditPullRequestOption {
   /**
    *
+   * @type {boolean}
+   * @memberof EditPullRequestOption
+   */
+  allow_maintainer_edit: boolean;
+  /**
+   *
    * @type {string}
    * @memberof EditPullRequestOption
    */

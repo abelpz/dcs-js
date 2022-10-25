@@ -13,6 +13,12 @@ import { StateType } from "./state-type";
 export interface PullRequest {
   /**
    *
+   * @type {boolean}
+   * @memberof PullRequest
+   */
+  allow_maintainer_edit: boolean;
+  /**
+   *
    * @type {User}
    * @memberof PullRequest
    */

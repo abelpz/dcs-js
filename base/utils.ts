@@ -28,7 +28,7 @@ export async function request(params: RequestParams) {
   const { method, body, query, formData, path, basePath, headers, auth } =
     params;
   const { username, password }: basic = auth || {};
-  const defaultPath = "https://git.door43.org/api/v1";
+  const defaultPath = "https://qa.door43.org/api/v1";
   const urlObj = new URL((basePath || defaultPath) + path);
   console.log(urlObj.pathname);
   const queryObj = new URLSearchParams(urlObj.search);

@@ -47,4 +47,10 @@ export interface MergePullRequestOption {
    * @memberof MergePullRequestOption
    */
   head_commit_id: string;
+  /**
+   *
+   * @type {boolean}
+   * @memberof MergePullRequestOption
+   */
+  merge_when_checks_succeed: boolean;
 }

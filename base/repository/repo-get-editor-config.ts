@@ -8,6 +8,8 @@ export interface repoGetEditorConfigParams extends baseParams {
   repo: string;
   /** filepath of file to get */
   filepath: string;
+  /** The name of the commit/branch/tag. Default the repository’s default branch (usually master) */
+  ref?: string;
 }
 /**
  * Get the EditorConfig definitions of a file in a repository
@@ -16,6 +18,7 @@ export default function repoGetEditorConfig({
   owner,
   repo,
   filepath,
+  ref,
   auth,
   options,
 }: repoGetEditorConfigParams) {
@@ -24,6 +27,7 @@ export default function repoGetEditorConfig({
     basePath: options?.basePath,
     path: `/repos/${owner}/${repo}/editorconfig/${filepath}`,
     query: {
+      ref: ref,
       ...options?.query,
     },
     auth,

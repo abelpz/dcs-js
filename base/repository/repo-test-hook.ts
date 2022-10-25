@@ -8,6 +8,8 @@ export interface repoTestHookParams extends baseParams {
   repo: string;
   /** id of the hook to test */
   id: number;
+  /** The name of the commit/branch/tag, indicates which commit will be loaded to the webhook payload. */
+  ref?: string;
 }
 /**
  * Test a push webhook
@@ -16,6 +18,7 @@ export default function repoTestHook({
   owner,
   repo,
   id,
+  ref,
   auth,
   options,
 }: repoTestHookParams): Promise<Empty> {
@@ -24,6 +27,7 @@ export default function repoTestHook({
     basePath: options?.basePath,
     path: `/repos/${owner}/${repo}/hooks/${id}/tests`,
     query: {
+      ref: ref,
       ...options?.query,
     },
     auth,
