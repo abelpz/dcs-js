@@ -1,13 +1,12 @@
 {
   "name": "dcs-js",
-  "version": "1.2.3-beta.1",
+  "version": "1.2.4",
   "description": "OpenAPI client for DCS (Door43 Content Service)",
-  "author": "OpenAPI-Generator Contributors",
+  "author": "unfoldingWord",
   "keywords": [
     "axios",
     "typescript",
     "openapi-client",
-    "openapi-generator",
     "dcs"
   ],
   "license": "MIT",
