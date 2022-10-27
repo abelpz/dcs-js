@@ -1,24 +1,30 @@
+<img src="https://socialify.git.ci/unfoldingWord/dcs-js/image?description=1&descriptionEditable=A%20javascript%20client%20for%20Door43%20Content%20Service&font=Raleway&issues=1&language=1&logo=https%3A%2F%2Fgit.door43.org%2Fassets%2Fimg%2Flogo.svg&owner=1&pattern=Plus&pulls=1&theme=Light" alt="dcs-js" />
+
 ## dcs-js
 
-This generator creates TypeScript/JavaScript client that utilizes [axios](https://github.com/axios/axios). The generated Node module can be used in the following environments:
+A Door43 Content Service API client that makes it easier to use DCS API.
 
-Environment
+This library is generated using `@openapitools/openapi-generator-cli` package, which creates a _Door43 Content Service_ TypeScript/JavaScript client that utilizes [axios](https://github.com/axios/axios).
 
-- Node.js
-- Webpack
-- Browserify
+### Installation
 
-Language level
+dcs-js is available as an npm package.
 
-- ES5 - you must have a Promises/A+ library installed
-- ES6
+npm:
 
-Module system
+`npm install dcs-js`
+yarn:
 
-- CommonJS
-- ES6 module system
+`yarn add dcs-js`
+pnpm:
 
-It can be used in both TypeScript and JavaScript. In TypeScript, the definition should be automatically resolved via `package.json`. ([Reference](http://www.typescriptlang.org/docs/handbook/typings-for-npm-packages.html))
+`pnpm add dcs-js`
+
+### Usage
+
+dcs-js exposes a set of classes that should be instantiated to gain access to request methods.
+
+A list of these classes can be found in: [/docs/API.md](/docs/API.md)
 
 ### Building
 
