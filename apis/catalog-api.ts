@@ -813,6 +813,454 @@ export const CatalogApiFactory = function (configuration?: Configuration, basePa
 };
 
 /**
+ * Request parameters for catalogGetEntry operation in CatalogApi.
+ * @export
+ * @interface CatalogApiCatalogGetEntryRequest
+ */
+export interface CatalogApiCatalogGetEntryRequest {
+    /**
+     * name of the owner
+     * @type {string}
+     * @memberof CatalogApiCatalogGetEntry
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof CatalogApiCatalogGetEntry
+     */
+    readonly repo: string
+
+    /**
+     * release tag or default branch
+     * @type {string}
+     * @memberof CatalogApiCatalogGetEntry
+     */
+    readonly tag: string
+}
+
+/**
+ * Request parameters for catalogGetMetadata operation in CatalogApi.
+ * @export
+ * @interface CatalogApiCatalogGetMetadataRequest
+ */
+export interface CatalogApiCatalogGetMetadataRequest {
+    /**
+     * name of the owner
+     * @type {string}
+     * @memberof CatalogApiCatalogGetMetadata
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof CatalogApiCatalogGetMetadata
+     */
+    readonly repo: string
+
+    /**
+     * release tag or default branch
+     * @type {string}
+     * @memberof CatalogApiCatalogGetMetadata
+     */
+    readonly tag: string
+}
+
+/**
+ * Request parameters for catalogSearch operation in CatalogApi.
+ * @export
+ * @interface CatalogApiCatalogSearchRequest
+ */
+export interface CatalogApiCatalogSearchRequest {
+    /**
+     * keyword(s). Can use multiple &#x60;q&#x3D;&lt;keyword&gt;&#x60;s or a comma-delimited string for more than one keyword. Is case insensitive
+     * @type {string}
+     * @memberof CatalogApiCatalogSearch
+     */
+    readonly q?: string
+
+    /**
+     * search only for entries with the given owner name(s). Will perform an exact match (case insensitive) unlesss partialMatch&#x3D;true
+     * @type {string}
+     * @memberof CatalogApiCatalogSearch
+     */
+    readonly owner?: string
+
+    /**
+     * search only for entries with the given repo name(s). To match multiple, give the parameter multiple times or give a list comma delimited. Will perform an exact match (case insensitive) unlesss partialMatch&#x3D;true
+     * @type {string}
+     * @memberof CatalogApiCatalogSearch
+     */
+    readonly repo?: string
+
+    /**
+     * search only for entries with the given release tag(s). To match multiple, give the parameter multiple times or give a list comma delimited. Will perform an exact match (case insensitive)
+     * @type {string}
+     * @memberof CatalogApiCatalogSearch
+     */
+    readonly tag?: string
+
+    /**
+     * search only for entries with the given language(s). To match multiple, give the parameter multiple times or give a list comma delimited. Will perform an exact match (case insensitive) unlesss partialMatch&#x3D;true
+     * @type {string}
+     * @memberof CatalogApiCatalogSearch
+     */
+    readonly lang?: string
+
+    /**
+     * specifies which release stage to be return of these stages: \&quot;prod\&quot; - return only the production releases (default); \&quot;preprod\&quot; - return the pre-production release if it exists instead of the production release; \&quot;draft\&quot; - return the draft release if it exists instead of pre-production or production release; \&quot;latest\&quot; -return the default branch (e.g. master) if it is a valid RC instead of the above
+     * @type {string}
+     * @memberof CatalogApiCatalogSearch
+     */
+    readonly stage?: string
+
+    /**
+     * search only for entries with the given subject(s). To match multiple, give the parameter multiple times or give a list comma delimited. Will perform an exact match (case insensitive) unlesss partialMatch&#x3D;true
+     * @type {string}
+     * @memberof CatalogApiCatalogSearch
+     */
+    readonly subject?: string
+
+    /**
+     * search only for entries with the given checking level(s). Can be 1, 2 or 3
+     * @type {string}
+     * @memberof CatalogApiCatalogSearch
+     */
+    readonly checkingLevel?: string
+
+    /**
+     * search only for entries with the given book(s) (project ids). To match multiple, give the parameter multiple times or give a list comma delimited. Will perform an exact match (case insensitive)
+     * @type {string}
+     * @memberof CatalogApiCatalogSearch
+     */
+    readonly book?: string
+
+    /**
+     * if true, subject, owner and repo search fields will use partial match (LIKE) when querying the catalog. Default is false
+     * @type {boolean}
+     * @memberof CatalogApiCatalogSearch
+     */
+    readonly partialMatch?: boolean
+
+    /**
+     * if true, all releases, not just the latest, are included. Default is false
+     * @type {boolean}
+     * @memberof CatalogApiCatalogSearch
+     */
+    readonly includeHistory?: boolean
+
+    /**
+     * if false, only subject and title are searched with query terms, if true all metadata values are searched. Default is true
+     * @type {boolean}
+     * @memberof CatalogApiCatalogSearch
+     */
+    readonly includeMetadata?: boolean
+
+    /**
+     * if true, a list of the projects in the resource and their file paths will be listed for each entry. Default is false
+     * @type {boolean}
+     * @memberof CatalogApiCatalogSearch
+     */
+    readonly showIngredients?: boolean
+
+    /**
+     * sort repos alphanumerically by attribute. Supported values are \&quot;subject\&quot;, \&quot;title\&quot;, \&quot;reponame\&quot;, \&quot;tag\&quot;, \&quot;released\&quot;, \&quot;lang\&quot;, \&quot;releases\&quot;, \&quot;stars\&quot;, \&quot;forks\&quot;. Default is by \&quot;language\&quot;, \&quot;subject\&quot; and then \&quot;tag\&quot;
+     * @type {string}
+     * @memberof CatalogApiCatalogSearch
+     */
+    readonly sort?: string
+
+    /**
+     * sort order, either \&quot;asc\&quot; (ascending) or \&quot;desc\&quot; (descending). Default is \&quot;asc\&quot;, ignored if \&quot;sort\&quot; is not specified.
+     * @type {string}
+     * @memberof CatalogApiCatalogSearch
+     */
+    readonly order?: string
+
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof CatalogApiCatalogSearch
+     */
+    readonly page?: number
+
+    /**
+     * page size of results, defaults to no limit
+     * @type {number}
+     * @memberof CatalogApiCatalogSearch
+     */
+    readonly limit?: number
+}
+
+/**
+ * Request parameters for catalogSearchOwner operation in CatalogApi.
+ * @export
+ * @interface CatalogApiCatalogSearchOwnerRequest
+ */
+export interface CatalogApiCatalogSearchOwnerRequest {
+    /**
+     * owner of the returned entries
+     * @type {string}
+     * @memberof CatalogApiCatalogSearchOwner
+     */
+    readonly owner: string
+
+    /**
+     * keyword(s). Can use multiple &#x60;q&#x3D;&lt;keyword&gt;&#x60;s or a comma-delimited string for more than one keyword. Is case insensitive
+     * @type {string}
+     * @memberof CatalogApiCatalogSearchOwner
+     */
+    readonly q?: string
+
+    /**
+     * search only for entries with the given repo name(s). To match multiple, give the parameter multiple times or give a list comma delimited. Will perform an exact match (case insensitive) unlesss partialMatch&#x3D;true
+     * @type {string}
+     * @memberof CatalogApiCatalogSearchOwner
+     */
+    readonly repo?: string
+
+    /**
+     * search only for entries with the given release tag(s). To match multiple, give the parameter multiple times or give a list comma delimited. Will perform an exact match (case insensitive)
+     * @type {string}
+     * @memberof CatalogApiCatalogSearchOwner
+     */
+    readonly tag?: string
+
+    /**
+     * search only for entries with the given language(s). To match multiple, give the parameter multiple times or give a list comma delimited. Will perform an exact match (case insensitive) unlesss partialMatch&#x3D;true
+     * @type {string}
+     * @memberof CatalogApiCatalogSearchOwner
+     */
+    readonly lang?: string
+
+    /**
+     * specifies which release stage to be return of these stages: \&quot;prod\&quot; - return only the production releases (default); \&quot;preprod\&quot; - return the pre-production release if it exists instead of the production release; \&quot;draft\&quot; - return the draft release if it exists instead of pre-production or production release; \&quot;latest\&quot; -return the default branch (e.g. master) if it is a valid RC instead of the above
+     * @type {string}
+     * @memberof CatalogApiCatalogSearchOwner
+     */
+    readonly stage?: string
+
+    /**
+     * search only for entries with the given subject(s). To match multiple, give the parameter multiple times or give a list comma delimited. Will perform an exact match (case insensitive) unlesss partialMatch&#x3D;true
+     * @type {string}
+     * @memberof CatalogApiCatalogSearchOwner
+     */
+    readonly subject?: string
+
+    /**
+     * search only for entries with the given checking level(s). Can be 1, 2 or 3
+     * @type {string}
+     * @memberof CatalogApiCatalogSearchOwner
+     */
+    readonly checkingLevel?: string
+
+    /**
+     * search only for entries with the given book(s) (project ids). To match multiple, give the parameter multiple times or give a list comma delimited. Will perform an exact match (case insensitive)
+     * @type {string}
+     * @memberof CatalogApiCatalogSearchOwner
+     */
+    readonly book?: string
+
+    /**
+     * if true, subject, owner and repo search fields will use partial match (LIKE) when querying the catalog. Default is false
+     * @type {boolean}
+     * @memberof CatalogApiCatalogSearchOwner
+     */
+    readonly partialMatch?: boolean
+
+    /**
+     * if true, all releases, not just the latest, are included. Default is false
+     * @type {boolean}
+     * @memberof CatalogApiCatalogSearchOwner
+     */
+    readonly includeHistory?: boolean
+
+    /**
+     * if false, only subject and title are searched with query terms, if true all metadata values are searched. Default is true
+     * @type {boolean}
+     * @memberof CatalogApiCatalogSearchOwner
+     */
+    readonly includeMetadata?: boolean
+
+    /**
+     * if true, a list of the projects in the resource and their file paths will be listed for each entry. Default is false
+     * @type {boolean}
+     * @memberof CatalogApiCatalogSearchOwner
+     */
+    readonly showIngredients?: boolean
+
+    /**
+     * sort repos alphanumerically by attribute. Supported values are \&quot;subject\&quot;, \&quot;title\&quot;, \&quot;reponame\&quot;, \&quot;tag\&quot;, \&quot;released\&quot;, \&quot;lang\&quot;, \&quot;releases\&quot;, \&quot;stars\&quot;, \&quot;forks\&quot;. Default is by \&quot;language\&quot;, \&quot;subject\&quot; and then \&quot;tag\&quot;
+     * @type {string}
+     * @memberof CatalogApiCatalogSearchOwner
+     */
+    readonly sort?: string
+
+    /**
+     * sort order, either \&quot;asc\&quot; (ascending) or \&quot;desc\&quot; (descending). Default is \&quot;asc\&quot;, ignored if \&quot;sort\&quot; is not specified.
+     * @type {string}
+     * @memberof CatalogApiCatalogSearchOwner
+     */
+    readonly order?: string
+
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof CatalogApiCatalogSearchOwner
+     */
+    readonly page?: number
+
+    /**
+     * page size of results, defaults to no limit
+     * @type {number}
+     * @memberof CatalogApiCatalogSearchOwner
+     */
+    readonly limit?: number
+}
+
+/**
+ * Request parameters for catalogSearchRepo operation in CatalogApi.
+ * @export
+ * @interface CatalogApiCatalogSearchRepoRequest
+ */
+export interface CatalogApiCatalogSearchRepoRequest {
+    /**
+     * owner of the returned entries
+     * @type {string}
+     * @memberof CatalogApiCatalogSearchRepo
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo of the returned entries
+     * @type {string}
+     * @memberof CatalogApiCatalogSearchRepo
+     */
+    readonly repo: string
+
+    /**
+     * keyword(s). Can use multiple &#x60;q&#x3D;&lt;keyword&gt;&#x60;s or a comma-delimited string for more than one keyword. Is case insensitive
+     * @type {string}
+     * @memberof CatalogApiCatalogSearchRepo
+     */
+    readonly q?: string
+
+    /**
+     * search only for entries with the given owner name(s). Will perform an exact match (case insensitive) unlesss partialMatch&#x3D;true
+     * @type {string}
+     * @memberof CatalogApiCatalogSearchRepo
+     */
+    readonly owner2?: string
+
+    /**
+     * search only for entries with the given repo name(s). To match multiple, give the parameter multiple times or give a list comma delimited. Will perform an exact match (case insensitive) unlesss partialMatch&#x3D;true
+     * @type {string}
+     * @memberof CatalogApiCatalogSearchRepo
+     */
+    readonly repo2?: string
+
+    /**
+     * search only for entries with the given release tag(s). To match multiple, give the parameter multiple times or give a list comma delimited. Will perform an exact match (case insensitive)
+     * @type {string}
+     * @memberof CatalogApiCatalogSearchRepo
+     */
+    readonly tag?: string
+
+    /**
+     * search only for entries with the given language(s). To match multiple, give the parameter multiple times or give a list comma delimited. Will perform an exact match (case insensitive) unlesss partialMatch&#x3D;true
+     * @type {string}
+     * @memberof CatalogApiCatalogSearchRepo
+     */
+    readonly lang?: string
+
+    /**
+     * specifies which release stage to be return of these stages: \&quot;prod\&quot; - return only the production releases (default); \&quot;preprod\&quot; - return the pre-production release if it exists instead of the production release; \&quot;draft\&quot; - return the draft release if it exists instead of pre-production or production release; \&quot;latest\&quot; -return the default branch (e.g. master) if it is a valid RC instead of the above
+     * @type {string}
+     * @memberof CatalogApiCatalogSearchRepo
+     */
+    readonly stage?: string
+
+    /**
+     * search only for entries with the given subject(s). To match multiple, give the parameter multiple times or give a list comma delimited. Will perform an exact match (case insensitive) unlesss partialMatch&#x3D;true
+     * @type {string}
+     * @memberof CatalogApiCatalogSearchRepo
+     */
+    readonly subject?: string
+
+    /**
+     * search only for entries with the given checking level(s). Can be 1, 2 or 3
+     * @type {string}
+     * @memberof CatalogApiCatalogSearchRepo
+     */
+    readonly checkingLevel?: string
+
+    /**
+     * search only for entries with the given book(s) (project ids). To match multiple, give the parameter multiple times or give a list comma delimited. Will perform an exact match (case insensitive)
+     * @type {string}
+     * @memberof CatalogApiCatalogSearchRepo
+     */
+    readonly book?: string
+
+    /**
+     * if true, subject, owner and repo search fields will use partial match (LIKE) when querying the catalog. Default is false
+     * @type {boolean}
+     * @memberof CatalogApiCatalogSearchRepo
+     */
+    readonly partialMatch?: boolean
+
+    /**
+     * if true, all releases, not just the latest, are included. Default is false
+     * @type {boolean}
+     * @memberof CatalogApiCatalogSearchRepo
+     */
+    readonly includeHistory?: boolean
+
+    /**
+     * if false, only subject and title are searched with query terms, if true all metadata values are searched. Default is true
+     * @type {boolean}
+     * @memberof CatalogApiCatalogSearchRepo
+     */
+    readonly includeMetadata?: boolean
+
+    /**
+     * if true, a list of the projects in the resource and their file paths will be listed for each entry. Default is false
+     * @type {boolean}
+     * @memberof CatalogApiCatalogSearchRepo
+     */
+    readonly showIngredients?: boolean
+
+    /**
+     * sort repos alphanumerically by attribute. Supported values are \&quot;subject\&quot;, \&quot;title\&quot;, \&quot;reponame\&quot;, \&quot;tag\&quot;, \&quot;released\&quot;, \&quot;lang\&quot;, \&quot;releases\&quot;, \&quot;stars\&quot;, \&quot;forks\&quot;. Default is by \&quot;language\&quot;, \&quot;subject\&quot; and then \&quot;tag\&quot;
+     * @type {string}
+     * @memberof CatalogApiCatalogSearchRepo
+     */
+    readonly sort?: string
+
+    /**
+     * sort order, either \&quot;asc\&quot; (ascending) or \&quot;desc\&quot; (descending). Default is \&quot;asc\&quot;, ignored if \&quot;sort\&quot; is not specified.
+     * @type {string}
+     * @memberof CatalogApiCatalogSearchRepo
+     */
+    readonly order?: string
+
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof CatalogApiCatalogSearchRepo
+     */
+    readonly page?: number
+
+    /**
+     * page size of results, defaults to no limit
+     * @type {number}
+     * @memberof CatalogApiCatalogSearchRepo
+     */
+    readonly limit?: number
+}
+
+/**
  * CatalogApi - object-oriented interface
  * @export
  * @class CatalogApi
@@ -822,114 +1270,60 @@ export class CatalogApi extends BaseAPI {
     /**
      * 
      * @summary Catalog entry
-     * @param {string} owner name of the owner
-     * @param {string} repo name of the repo
-     * @param {string} tag release tag or default branch
+     * @param {CatalogApiCatalogGetEntryRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof CatalogApi
      */
-    public catalogGetEntry(owner: string, repo: string, tag: string, options?: AxiosRequestConfig) {
-        return CatalogApiFp(this.configuration).catalogGetEntry(owner, repo, tag, options).then((request) => request(this.axios, this.basePath));
+    public catalogGetEntry(requestParameters: CatalogApiCatalogGetEntryRequest, options?: AxiosRequestConfig) {
+        return CatalogApiFp(this.configuration).catalogGetEntry(requestParameters.owner, requestParameters.repo, requestParameters.tag, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Catalog entry metadata (manifest.yaml in JSON format)
-     * @param {string} owner name of the owner
-     * @param {string} repo name of the repo
-     * @param {string} tag release tag or default branch
+     * @param {CatalogApiCatalogGetMetadataRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof CatalogApi
      */
-    public catalogGetMetadata(owner: string, repo: string, tag: string, options?: AxiosRequestConfig) {
-        return CatalogApiFp(this.configuration).catalogGetMetadata(owner, repo, tag, options).then((request) => request(this.axios, this.basePath));
+    public catalogGetMetadata(requestParameters: CatalogApiCatalogGetMetadataRequest, options?: AxiosRequestConfig) {
+        return CatalogApiFp(this.configuration).catalogGetMetadata(requestParameters.owner, requestParameters.repo, requestParameters.tag, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Catalog search
-     * @param {string} [q] keyword(s). Can use multiple &#x60;q&#x3D;&lt;keyword&gt;&#x60;s or a comma-delimited string for more than one keyword. Is case insensitive
-     * @param {string} [owner] search only for entries with the given owner name(s). Will perform an exact match (case insensitive) unlesss partialMatch&#x3D;true
-     * @param {string} [repo] search only for entries with the given repo name(s). To match multiple, give the parameter multiple times or give a list comma delimited. Will perform an exact match (case insensitive) unlesss partialMatch&#x3D;true
-     * @param {string} [tag] search only for entries with the given release tag(s). To match multiple, give the parameter multiple times or give a list comma delimited. Will perform an exact match (case insensitive)
-     * @param {string} [lang] search only for entries with the given language(s). To match multiple, give the parameter multiple times or give a list comma delimited. Will perform an exact match (case insensitive) unlesss partialMatch&#x3D;true
-     * @param {string} [stage] specifies which release stage to be return of these stages: \&quot;prod\&quot; - return only the production releases (default); \&quot;preprod\&quot; - return the pre-production release if it exists instead of the production release; \&quot;draft\&quot; - return the draft release if it exists instead of pre-production or production release; \&quot;latest\&quot; -return the default branch (e.g. master) if it is a valid RC instead of the above
-     * @param {string} [subject] search only for entries with the given subject(s). To match multiple, give the parameter multiple times or give a list comma delimited. Will perform an exact match (case insensitive) unlesss partialMatch&#x3D;true
-     * @param {string} [checkingLevel] search only for entries with the given checking level(s). Can be 1, 2 or 3
-     * @param {string} [book] search only for entries with the given book(s) (project ids). To match multiple, give the parameter multiple times or give a list comma delimited. Will perform an exact match (case insensitive)
-     * @param {boolean} [partialMatch] if true, subject, owner and repo search fields will use partial match (LIKE) when querying the catalog. Default is false
-     * @param {boolean} [includeHistory] if true, all releases, not just the latest, are included. Default is false
-     * @param {boolean} [includeMetadata] if false, only subject and title are searched with query terms, if true all metadata values are searched. Default is true
-     * @param {boolean} [showIngredients] if true, a list of the projects in the resource and their file paths will be listed for each entry. Default is false
-     * @param {string} [sort] sort repos alphanumerically by attribute. Supported values are \&quot;subject\&quot;, \&quot;title\&quot;, \&quot;reponame\&quot;, \&quot;tag\&quot;, \&quot;released\&quot;, \&quot;lang\&quot;, \&quot;releases\&quot;, \&quot;stars\&quot;, \&quot;forks\&quot;. Default is by \&quot;language\&quot;, \&quot;subject\&quot; and then \&quot;tag\&quot;
-     * @param {string} [order] sort order, either \&quot;asc\&quot; (ascending) or \&quot;desc\&quot; (descending). Default is \&quot;asc\&quot;, ignored if \&quot;sort\&quot; is not specified.
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results, defaults to no limit
+     * @param {CatalogApiCatalogSearchRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof CatalogApi
      */
-    public catalogSearch(q?: string, owner?: string, repo?: string, tag?: string, lang?: string, stage?: string, subject?: string, checkingLevel?: string, book?: string, partialMatch?: boolean, includeHistory?: boolean, includeMetadata?: boolean, showIngredients?: boolean, sort?: string, order?: string, page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return CatalogApiFp(this.configuration).catalogSearch(q, owner, repo, tag, lang, stage, subject, checkingLevel, book, partialMatch, includeHistory, includeMetadata, showIngredients, sort, order, page, limit, options).then((request) => request(this.axios, this.basePath));
+    public catalogSearch(requestParameters: CatalogApiCatalogSearchRequest = {}, options?: AxiosRequestConfig) {
+        return CatalogApiFp(this.configuration).catalogSearch(requestParameters.q, requestParameters.owner, requestParameters.repo, requestParameters.tag, requestParameters.lang, requestParameters.stage, requestParameters.subject, requestParameters.checkingLevel, requestParameters.book, requestParameters.partialMatch, requestParameters.includeHistory, requestParameters.includeMetadata, requestParameters.showIngredients, requestParameters.sort, requestParameters.order, requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Catalog search by owner
-     * @param {string} owner owner of the returned entries
-     * @param {string} [q] keyword(s). Can use multiple &#x60;q&#x3D;&lt;keyword&gt;&#x60;s or a comma-delimited string for more than one keyword. Is case insensitive
-     * @param {string} [repo] search only for entries with the given repo name(s). To match multiple, give the parameter multiple times or give a list comma delimited. Will perform an exact match (case insensitive) unlesss partialMatch&#x3D;true
-     * @param {string} [tag] search only for entries with the given release tag(s). To match multiple, give the parameter multiple times or give a list comma delimited. Will perform an exact match (case insensitive)
-     * @param {string} [lang] search only for entries with the given language(s). To match multiple, give the parameter multiple times or give a list comma delimited. Will perform an exact match (case insensitive) unlesss partialMatch&#x3D;true
-     * @param {string} [stage] specifies which release stage to be return of these stages: \&quot;prod\&quot; - return only the production releases (default); \&quot;preprod\&quot; - return the pre-production release if it exists instead of the production release; \&quot;draft\&quot; - return the draft release if it exists instead of pre-production or production release; \&quot;latest\&quot; -return the default branch (e.g. master) if it is a valid RC instead of the above
-     * @param {string} [subject] search only for entries with the given subject(s). To match multiple, give the parameter multiple times or give a list comma delimited. Will perform an exact match (case insensitive) unlesss partialMatch&#x3D;true
-     * @param {string} [checkingLevel] search only for entries with the given checking level(s). Can be 1, 2 or 3
-     * @param {string} [book] search only for entries with the given book(s) (project ids). To match multiple, give the parameter multiple times or give a list comma delimited. Will perform an exact match (case insensitive)
-     * @param {boolean} [partialMatch] if true, subject, owner and repo search fields will use partial match (LIKE) when querying the catalog. Default is false
-     * @param {boolean} [includeHistory] if true, all releases, not just the latest, are included. Default is false
-     * @param {boolean} [includeMetadata] if false, only subject and title are searched with query terms, if true all metadata values are searched. Default is true
-     * @param {boolean} [showIngredients] if true, a list of the projects in the resource and their file paths will be listed for each entry. Default is false
-     * @param {string} [sort] sort repos alphanumerically by attribute. Supported values are \&quot;subject\&quot;, \&quot;title\&quot;, \&quot;reponame\&quot;, \&quot;tag\&quot;, \&quot;released\&quot;, \&quot;lang\&quot;, \&quot;releases\&quot;, \&quot;stars\&quot;, \&quot;forks\&quot;. Default is by \&quot;language\&quot;, \&quot;subject\&quot; and then \&quot;tag\&quot;
-     * @param {string} [order] sort order, either \&quot;asc\&quot; (ascending) or \&quot;desc\&quot; (descending). Default is \&quot;asc\&quot;, ignored if \&quot;sort\&quot; is not specified.
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results, defaults to no limit
+     * @param {CatalogApiCatalogSearchOwnerRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof CatalogApi
      */
-    public catalogSearchOwner(owner: string, q?: string, repo?: string, tag?: string, lang?: string, stage?: string, subject?: string, checkingLevel?: string, book?: string, partialMatch?: boolean, includeHistory?: boolean, includeMetadata?: boolean, showIngredients?: boolean, sort?: string, order?: string, page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return CatalogApiFp(this.configuration).catalogSearchOwner(owner, q, repo, tag, lang, stage, subject, checkingLevel, book, partialMatch, includeHistory, includeMetadata, showIngredients, sort, order, page, limit, options).then((request) => request(this.axios, this.basePath));
+    public catalogSearchOwner(requestParameters: CatalogApiCatalogSearchOwnerRequest, options?: AxiosRequestConfig) {
+        return CatalogApiFp(this.configuration).catalogSearchOwner(requestParameters.owner, requestParameters.q, requestParameters.repo, requestParameters.tag, requestParameters.lang, requestParameters.stage, requestParameters.subject, requestParameters.checkingLevel, requestParameters.book, requestParameters.partialMatch, requestParameters.includeHistory, requestParameters.includeMetadata, requestParameters.showIngredients, requestParameters.sort, requestParameters.order, requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Catalog search by repo
-     * @param {string} owner owner of the returned entries
-     * @param {string} repo name of the repo of the returned entries
-     * @param {string} [q] keyword(s). Can use multiple &#x60;q&#x3D;&lt;keyword&gt;&#x60;s or a comma-delimited string for more than one keyword. Is case insensitive
-     * @param {string} [owner2] search only for entries with the given owner name(s). Will perform an exact match (case insensitive) unlesss partialMatch&#x3D;true
-     * @param {string} [repo2] search only for entries with the given repo name(s). To match multiple, give the parameter multiple times or give a list comma delimited. Will perform an exact match (case insensitive) unlesss partialMatch&#x3D;true
-     * @param {string} [tag] search only for entries with the given release tag(s). To match multiple, give the parameter multiple times or give a list comma delimited. Will perform an exact match (case insensitive)
-     * @param {string} [lang] search only for entries with the given language(s). To match multiple, give the parameter multiple times or give a list comma delimited. Will perform an exact match (case insensitive) unlesss partialMatch&#x3D;true
-     * @param {string} [stage] specifies which release stage to be return of these stages: \&quot;prod\&quot; - return only the production releases (default); \&quot;preprod\&quot; - return the pre-production release if it exists instead of the production release; \&quot;draft\&quot; - return the draft release if it exists instead of pre-production or production release; \&quot;latest\&quot; -return the default branch (e.g. master) if it is a valid RC instead of the above
-     * @param {string} [subject] search only for entries with the given subject(s). To match multiple, give the parameter multiple times or give a list comma delimited. Will perform an exact match (case insensitive) unlesss partialMatch&#x3D;true
-     * @param {string} [checkingLevel] search only for entries with the given checking level(s). Can be 1, 2 or 3
-     * @param {string} [book] search only for entries with the given book(s) (project ids). To match multiple, give the parameter multiple times or give a list comma delimited. Will perform an exact match (case insensitive)
-     * @param {boolean} [partialMatch] if true, subject, owner and repo search fields will use partial match (LIKE) when querying the catalog. Default is false
-     * @param {boolean} [includeHistory] if true, all releases, not just the latest, are included. Default is false
-     * @param {boolean} [includeMetadata] if false, only subject and title are searched with query terms, if true all metadata values are searched. Default is true
-     * @param {boolean} [showIngredients] if true, a list of the projects in the resource and their file paths will be listed for each entry. Default is false
-     * @param {string} [sort] sort repos alphanumerically by attribute. Supported values are \&quot;subject\&quot;, \&quot;title\&quot;, \&quot;reponame\&quot;, \&quot;tag\&quot;, \&quot;released\&quot;, \&quot;lang\&quot;, \&quot;releases\&quot;, \&quot;stars\&quot;, \&quot;forks\&quot;. Default is by \&quot;language\&quot;, \&quot;subject\&quot; and then \&quot;tag\&quot;
-     * @param {string} [order] sort order, either \&quot;asc\&quot; (ascending) or \&quot;desc\&quot; (descending). Default is \&quot;asc\&quot;, ignored if \&quot;sort\&quot; is not specified.
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results, defaults to no limit
+     * @param {CatalogApiCatalogSearchRepoRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof CatalogApi
      */
-    public catalogSearchRepo(owner: string, repo: string, q?: string, owner2?: string, repo2?: string, tag?: string, lang?: string, stage?: string, subject?: string, checkingLevel?: string, book?: string, partialMatch?: boolean, includeHistory?: boolean, includeMetadata?: boolean, showIngredients?: boolean, sort?: string, order?: string, page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return CatalogApiFp(this.configuration).catalogSearchRepo(owner, repo, q, owner2, repo2, tag, lang, stage, subject, checkingLevel, book, partialMatch, includeHistory, includeMetadata, showIngredients, sort, order, page, limit, options).then((request) => request(this.axios, this.basePath));
+    public catalogSearchRepo(requestParameters: CatalogApiCatalogSearchRepoRequest, options?: AxiosRequestConfig) {
+        return CatalogApiFp(this.configuration).catalogSearchRepo(requestParameters.owner, requestParameters.repo, requestParameters.q, requestParameters.owner2, requestParameters.repo2, requestParameters.tag, requestParameters.lang, requestParameters.stage, requestParameters.subject, requestParameters.checkingLevel, requestParameters.book, requestParameters.partialMatch, requestParameters.includeHistory, requestParameters.includeMetadata, requestParameters.showIngredients, requestParameters.sort, requestParameters.order, requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 }

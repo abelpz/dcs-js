@@ -760,6 +760,251 @@ export const NotificationApiFactory = function (configuration?: Configuration, b
 };
 
 /**
+ * Request parameters for notifyGetList operation in NotificationApi.
+ * @export
+ * @interface NotificationApiNotifyGetListRequest
+ */
+export interface NotificationApiNotifyGetListRequest {
+    /**
+     * If true, show notifications marked as read. Default value is false
+     * @type {boolean}
+     * @memberof NotificationApiNotifyGetList
+     */
+    readonly all?: boolean
+
+    /**
+     * Show notifications with the provided status types. Options are: unread, read and/or pinned. Defaults to unread &amp; pinned.
+     * @type {Array<string>}
+     * @memberof NotificationApiNotifyGetList
+     */
+    readonly statusTypes?: Array<string>
+
+    /**
+     * filter notifications by subject type
+     * @type {Array<'issue' | 'pull' | 'commit' | 'repository'>}
+     * @memberof NotificationApiNotifyGetList
+     */
+    readonly subjectType?: Array<'issue' | 'pull' | 'commit' | 'repository'>
+
+    /**
+     * Only show notifications updated after the given time. This is a timestamp in RFC 3339 format
+     * @type {string}
+     * @memberof NotificationApiNotifyGetList
+     */
+    readonly since?: string
+
+    /**
+     * Only show notifications updated before the given time. This is a timestamp in RFC 3339 format
+     * @type {string}
+     * @memberof NotificationApiNotifyGetList
+     */
+    readonly before?: string
+
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof NotificationApiNotifyGetList
+     */
+    readonly page?: number
+
+    /**
+     * page size of results
+     * @type {number}
+     * @memberof NotificationApiNotifyGetList
+     */
+    readonly limit?: number
+}
+
+/**
+ * Request parameters for notifyGetRepoList operation in NotificationApi.
+ * @export
+ * @interface NotificationApiNotifyGetRepoListRequest
+ */
+export interface NotificationApiNotifyGetRepoListRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof NotificationApiNotifyGetRepoList
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof NotificationApiNotifyGetRepoList
+     */
+    readonly repo: string
+
+    /**
+     * If true, show notifications marked as read. Default value is false
+     * @type {boolean}
+     * @memberof NotificationApiNotifyGetRepoList
+     */
+    readonly all?: boolean
+
+    /**
+     * Show notifications with the provided status types. Options are: unread, read and/or pinned. Defaults to unread &amp; pinned
+     * @type {Array<string>}
+     * @memberof NotificationApiNotifyGetRepoList
+     */
+    readonly statusTypes?: Array<string>
+
+    /**
+     * filter notifications by subject type
+     * @type {Array<'issue' | 'pull' | 'commit' | 'repository'>}
+     * @memberof NotificationApiNotifyGetRepoList
+     */
+    readonly subjectType?: Array<'issue' | 'pull' | 'commit' | 'repository'>
+
+    /**
+     * Only show notifications updated after the given time. This is a timestamp in RFC 3339 format
+     * @type {string}
+     * @memberof NotificationApiNotifyGetRepoList
+     */
+    readonly since?: string
+
+    /**
+     * Only show notifications updated before the given time. This is a timestamp in RFC 3339 format
+     * @type {string}
+     * @memberof NotificationApiNotifyGetRepoList
+     */
+    readonly before?: string
+
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof NotificationApiNotifyGetRepoList
+     */
+    readonly page?: number
+
+    /**
+     * page size of results
+     * @type {number}
+     * @memberof NotificationApiNotifyGetRepoList
+     */
+    readonly limit?: number
+}
+
+/**
+ * Request parameters for notifyGetThread operation in NotificationApi.
+ * @export
+ * @interface NotificationApiNotifyGetThreadRequest
+ */
+export interface NotificationApiNotifyGetThreadRequest {
+    /**
+     * id of notification thread
+     * @type {string}
+     * @memberof NotificationApiNotifyGetThread
+     */
+    readonly id: string
+}
+
+/**
+ * Request parameters for notifyReadList operation in NotificationApi.
+ * @export
+ * @interface NotificationApiNotifyReadListRequest
+ */
+export interface NotificationApiNotifyReadListRequest {
+    /**
+     * Describes the last point that notifications were checked. Anything updated since this time will not be updated.
+     * @type {string}
+     * @memberof NotificationApiNotifyReadList
+     */
+    readonly lastReadAt?: string
+
+    /**
+     * If true, mark all notifications on this repo. Default value is false
+     * @type {string}
+     * @memberof NotificationApiNotifyReadList
+     */
+    readonly all?: string
+
+    /**
+     * Mark notifications with the provided status types. Options are: unread, read and/or pinned. Defaults to unread.
+     * @type {Array<string>}
+     * @memberof NotificationApiNotifyReadList
+     */
+    readonly statusTypes?: Array<string>
+
+    /**
+     * Status to mark notifications as, Defaults to read.
+     * @type {string}
+     * @memberof NotificationApiNotifyReadList
+     */
+    readonly toStatus?: string
+}
+
+/**
+ * Request parameters for notifyReadRepoList operation in NotificationApi.
+ * @export
+ * @interface NotificationApiNotifyReadRepoListRequest
+ */
+export interface NotificationApiNotifyReadRepoListRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof NotificationApiNotifyReadRepoList
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof NotificationApiNotifyReadRepoList
+     */
+    readonly repo: string
+
+    /**
+     * If true, mark all notifications on this repo. Default value is false
+     * @type {string}
+     * @memberof NotificationApiNotifyReadRepoList
+     */
+    readonly all?: string
+
+    /**
+     * Mark notifications with the provided status types. Options are: unread, read and/or pinned. Defaults to unread.
+     * @type {Array<string>}
+     * @memberof NotificationApiNotifyReadRepoList
+     */
+    readonly statusTypes?: Array<string>
+
+    /**
+     * Status to mark notifications as. Defaults to read.
+     * @type {string}
+     * @memberof NotificationApiNotifyReadRepoList
+     */
+    readonly toStatus?: string
+
+    /**
+     * Describes the last point that notifications were checked. Anything updated since this time will not be updated.
+     * @type {string}
+     * @memberof NotificationApiNotifyReadRepoList
+     */
+    readonly lastReadAt?: string
+}
+
+/**
+ * Request parameters for notifyReadThread operation in NotificationApi.
+ * @export
+ * @interface NotificationApiNotifyReadThreadRequest
+ */
+export interface NotificationApiNotifyReadThreadRequest {
+    /**
+     * id of notification thread
+     * @type {string}
+     * @memberof NotificationApiNotifyReadThread
+     */
+    readonly id: string
+
+    /**
+     * Status to mark notifications as
+     * @type {string}
+     * @memberof NotificationApiNotifyReadThread
+     */
+    readonly toStatus?: string
+}
+
+/**
  * NotificationApi - object-oriented interface
  * @export
  * @class NotificationApi
@@ -769,51 +1014,37 @@ export class NotificationApi extends BaseAPI {
     /**
      * 
      * @summary List users\'s notification threads
-     * @param {boolean} [all] If true, show notifications marked as read. Default value is false
-     * @param {Array<string>} [statusTypes] Show notifications with the provided status types. Options are: unread, read and/or pinned. Defaults to unread &amp; pinned.
-     * @param {Array<'issue' | 'pull' | 'commit' | 'repository'>} [subjectType] filter notifications by subject type
-     * @param {string} [since] Only show notifications updated after the given time. This is a timestamp in RFC 3339 format
-     * @param {string} [before] Only show notifications updated before the given time. This is a timestamp in RFC 3339 format
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results
+     * @param {NotificationApiNotifyGetListRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof NotificationApi
      */
-    public notifyGetList(all?: boolean, statusTypes?: Array<string>, subjectType?: Array<'issue' | 'pull' | 'commit' | 'repository'>, since?: string, before?: string, page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return NotificationApiFp(this.configuration).notifyGetList(all, statusTypes, subjectType, since, before, page, limit, options).then((request) => request(this.axios, this.basePath));
+    public notifyGetList(requestParameters: NotificationApiNotifyGetListRequest = {}, options?: AxiosRequestConfig) {
+        return NotificationApiFp(this.configuration).notifyGetList(requestParameters.all, requestParameters.statusTypes, requestParameters.subjectType, requestParameters.since, requestParameters.before, requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary List users\'s notification threads on a specific repo
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {boolean} [all] If true, show notifications marked as read. Default value is false
-     * @param {Array<string>} [statusTypes] Show notifications with the provided status types. Options are: unread, read and/or pinned. Defaults to unread &amp; pinned
-     * @param {Array<'issue' | 'pull' | 'commit' | 'repository'>} [subjectType] filter notifications by subject type
-     * @param {string} [since] Only show notifications updated after the given time. This is a timestamp in RFC 3339 format
-     * @param {string} [before] Only show notifications updated before the given time. This is a timestamp in RFC 3339 format
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results
+     * @param {NotificationApiNotifyGetRepoListRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof NotificationApi
      */
-    public notifyGetRepoList(owner: string, repo: string, all?: boolean, statusTypes?: Array<string>, subjectType?: Array<'issue' | 'pull' | 'commit' | 'repository'>, since?: string, before?: string, page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return NotificationApiFp(this.configuration).notifyGetRepoList(owner, repo, all, statusTypes, subjectType, since, before, page, limit, options).then((request) => request(this.axios, this.basePath));
+    public notifyGetRepoList(requestParameters: NotificationApiNotifyGetRepoListRequest, options?: AxiosRequestConfig) {
+        return NotificationApiFp(this.configuration).notifyGetRepoList(requestParameters.owner, requestParameters.repo, requestParameters.all, requestParameters.statusTypes, requestParameters.subjectType, requestParameters.since, requestParameters.before, requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Get notification thread by ID
-     * @param {string} id id of notification thread
+     * @param {NotificationApiNotifyGetThreadRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof NotificationApi
      */
-    public notifyGetThread(id: string, options?: AxiosRequestConfig) {
-        return NotificationApiFp(this.configuration).notifyGetThread(id, options).then((request) => request(this.axios, this.basePath));
+    public notifyGetThread(requestParameters: NotificationApiNotifyGetThreadRequest, options?: AxiosRequestConfig) {
+        return NotificationApiFp(this.configuration).notifyGetThread(requestParameters.id, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -830,45 +1061,36 @@ export class NotificationApi extends BaseAPI {
     /**
      * 
      * @summary Mark notification threads as read, pinned or unread
-     * @param {string} [lastReadAt] Describes the last point that notifications were checked. Anything updated since this time will not be updated.
-     * @param {string} [all] If true, mark all notifications on this repo. Default value is false
-     * @param {Array<string>} [statusTypes] Mark notifications with the provided status types. Options are: unread, read and/or pinned. Defaults to unread.
-     * @param {string} [toStatus] Status to mark notifications as, Defaults to read.
+     * @param {NotificationApiNotifyReadListRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof NotificationApi
      */
-    public notifyReadList(lastReadAt?: string, all?: string, statusTypes?: Array<string>, toStatus?: string, options?: AxiosRequestConfig) {
-        return NotificationApiFp(this.configuration).notifyReadList(lastReadAt, all, statusTypes, toStatus, options).then((request) => request(this.axios, this.basePath));
+    public notifyReadList(requestParameters: NotificationApiNotifyReadListRequest = {}, options?: AxiosRequestConfig) {
+        return NotificationApiFp(this.configuration).notifyReadList(requestParameters.lastReadAt, requestParameters.all, requestParameters.statusTypes, requestParameters.toStatus, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Mark notification threads as read, pinned or unread on a specific repo
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {string} [all] If true, mark all notifications on this repo. Default value is false
-     * @param {Array<string>} [statusTypes] Mark notifications with the provided status types. Options are: unread, read and/or pinned. Defaults to unread.
-     * @param {string} [toStatus] Status to mark notifications as. Defaults to read.
-     * @param {string} [lastReadAt] Describes the last point that notifications were checked. Anything updated since this time will not be updated.
+     * @param {NotificationApiNotifyReadRepoListRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof NotificationApi
      */
-    public notifyReadRepoList(owner: string, repo: string, all?: string, statusTypes?: Array<string>, toStatus?: string, lastReadAt?: string, options?: AxiosRequestConfig) {
-        return NotificationApiFp(this.configuration).notifyReadRepoList(owner, repo, all, statusTypes, toStatus, lastReadAt, options).then((request) => request(this.axios, this.basePath));
+    public notifyReadRepoList(requestParameters: NotificationApiNotifyReadRepoListRequest, options?: AxiosRequestConfig) {
+        return NotificationApiFp(this.configuration).notifyReadRepoList(requestParameters.owner, requestParameters.repo, requestParameters.all, requestParameters.statusTypes, requestParameters.toStatus, requestParameters.lastReadAt, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Mark notification thread as read by ID
-     * @param {string} id id of notification thread
-     * @param {string} [toStatus] Status to mark notifications as
+     * @param {NotificationApiNotifyReadThreadRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof NotificationApi
      */
-    public notifyReadThread(id: string, toStatus?: string, options?: AxiosRequestConfig) {
-        return NotificationApiFp(this.configuration).notifyReadThread(id, toStatus, options).then((request) => request(this.axios, this.basePath));
+    public notifyReadThread(requestParameters: NotificationApiNotifyReadThreadRequest, options?: AxiosRequestConfig) {
+        return NotificationApiFp(this.configuration).notifyReadThread(requestParameters.id, requestParameters.toStatus, options).then((request) => request(this.axios, this.basePath));
     }
 }

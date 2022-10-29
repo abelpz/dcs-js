@@ -1,6 +1,6 @@
 {
   "name": "dcs-js",
-  "version": "1.3.3",
+  "version": "1.3.4-beta.1",
   "description": "OpenAPI client for DCS (Door43 Content Service)",
   "author": "unfoldingWord",
   "keywords": [
