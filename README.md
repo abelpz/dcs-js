@@ -10,7 +10,7 @@ A Door43 Content Service API client that makes it easier to use DCS API.
 
 ## Usage
 
-### Installation
+### Consuming
 
 dcs-js is available as an npm package.
 
@@ -29,6 +29,37 @@ pnpm:
 dcs-js exposes a set of classes that should be instantiated to gain access to request methods.
 
 A list of these classes can be found in: [/docs/API.md](/docs/API.md)
+
+### Usage
+
+First import one of the exposed Classes
+
+```js
+import { OrganizationApi } from "dcs-js";
+```
+
+Then instantiate the class and call it's methods as required. Each method from this class will make a call to one of the DCS API endpoints operations.
+
+Example:
+
+```js
+import { OrganizationApi } from "dcs-js";
+import "./styles.css";
+
+async function dcsJsExample() {
+  /* Instantiate the required DCS client. */
+  const organizationClient = new OrganizationApi({
+    /* Set the desired DCS server path */
+    basePath: "https://qa.door43.org/api/v1",
+  });
+  /* Make a call to required client method */
+  const organization = await organizationClient.orgGet("test_org");
+}
+```
+
+[![Edit Button](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/dcs-js-playground-u26eyp)
+
+###
 
 ## Contributing
 

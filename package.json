@@ -12,6 +12,14 @@
   "license": "MIT",
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unfoldingWord/dcs-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/unfoldingWord/dcs-js/issues"
+  },
+  "homepage": "https://github.com/unfoldingWord/dcs-js#readme",
   "scripts": {
     "build": "tsc --outDir dist/",
     "prepublishOnly": "npm run build",
