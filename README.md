@@ -5,12 +5,12 @@
 </p>
 <h1 align="center">dcs-js</h1>
 <p align="center">
-A Door43 Content Service API client that makes it easier to use DCS API.
+A [Door43 Content Service](https://git.door43.org/) API client that makes it easier to use [DCS API](https://git.door43.org/api/swagger).
 </p>
 
-## Usage
+## Consuming
 
-### Consuming
+### Installation
 
 dcs-js is available as an npm package.
 
@@ -26,13 +26,17 @@ pnpm:
 
 ### API
 
-dcs-js exposes a set of classes that should be instantiated to gain access to request methods.
+dcs-js exposes a set of functions, factories and classes that should be instantiated to gain access to request methods.
 
-A list of these classes can be found in: [/documentation/modules.md](/documentation/modules.md) or [dcs-js.netlify.app](https://dcs-js.netlify.app)
+A list of these exported modules can be found in: [/documentation/modules.md](/documentation/modules.md) or [dcs-js.netlify.app](https://dcs-js.netlify.app)
 
 ### Usage
 
-First import one of the exposed Classes:
+#### Object-oriented interface
+
+dcs-js exposes each of the DCS API operations as methods organized into javascript classes.
+
+To use this object-oriented modules first import one of the exposed Classes:
 
 - AdminApi
 - CatalogApi
@@ -49,25 +53,130 @@ First import one of the exposed Classes:
 import { OrganizationApi } from "dcs-js";
 ```
 
-Then instantiate the class and call it's methods as required. Each method from this class will make a call to one of the DCS API endpoints operations.
+Then instantiate the class and call it's requester methods as required. Each method from this class will make a request to one of the DCS API endpoints operations.
 
 **Example:**
 
 ```js
+/* Import the required DCS client class. */
 import { OrganizationApi } from "dcs-js";
 
 async function dcsJsExample() {
-  /* Instantiate the required DCS client. */
+  /* Instantiate the required DCS client class. */
   const organizationClient = new OrganizationApi({
     /* Set the desired DCS server path */
     basePath: "https://qa.door43.org/api/v1",
   });
-  /* Make a call to required client method */
-  const organization = await organizationClient.orgGet("test_org");
+  /* Make a call to required client requester method */
+  const organizationRequest = await organizationClient.orgGet({
+    org: "test_org",
+  });
+
+  /* Use the results */
+  console.log(organizationRequest);
 }
 ```
 
-[![Edit Button](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/dcs-js-playground-u26eyp)
+[![Edit Button](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/dcs-js-classes-playground-u26eyp)
+
+#### Functional programming interface
+
+dcs-js also exposes each of the DCS API operations as functions organized in javascript function generators. User will be able to use a function for each specific request.
+
+To use this functional programming modules first import one of the exposed generators:
+
+- AdminApiFp
+- CatalogApiFp
+- IssueApiFp
+- MiscellaneousApiFp
+- NotificationApiFp
+- OrganizationApiFp
+- PackageApiFp
+- RepositoryApiFp
+- SettingsApiFp
+- UserApiFp
+
+```js
+import { OrganizationApiFp } from "dcs-js";
+```
+
+Then use the generator to generate the requester function generators. Each requester generator will generate a specific requester function that will allow the user to make a new request with the same params on each use.
+
+**Example:**
+
+```js
+/* Import the required DCS function generator. */
+import { OrganizationApiFp } from "dcs-js";
+
+async function dcsJsExample() {
+  /* Get required requester generator from dcs-js */
+  const { orgGet } = OrganizationApiFp({
+    /* Set the desired DCS server path */
+    basePath: "https://qa.door43.org/api/v1",
+  });
+
+  /* Generate a specific request function */
+  const getTestOrg = await orgGet("test_org");
+
+  /**
+   * Reuse this request function to make this same request
+   * to DCS API on each call as many times as needed.
+   */
+  console.log(await getTestOrg());
+  setTimeOut(() => console.log(await getTestOrg()), 2000);
+}
+```
+
+[![Edit Button](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/dcs-js-functional-playground-nsrlr5)
+
+#### Factory interface
+
+dcs-js also exposes each of the DCS API operations as functions organized in javascript factories. User will be able to use a function for each specific request.
+
+Unlike the functional programming interface, which generate functions that, given the needed params for a specific request,
+generate a function that makes that very specific request to DCS API o each call 😵‍💫; the factory interface generate functions that, given the needed params for a specific request, are able to make that request to DCS API.
+
+To use this factory modules first import one of the exposed generators:
+
+- AdminApiFactory
+- CatalogApiFactory
+- IssueApiFactory
+- MiscellaneousApiFactory
+- NotificationApiFactory
+- OrganizationApiFactory
+- PackageApiFactory
+- RepositoryApiFactory
+- SettingsApiFactory
+- UserApiFactory
+
+```js
+import { OrganizationApiFactory } from "dcs-js";
+```
+
+Then use the generator to generate the requester function. Each requester function will allow the user to make a new request.
+
+**Example:**
+
+```js
+/* Import the required DCS function generator. */
+import { OrganizationApiFp } from "dcs-js";
+
+async function dcsJsExample() {
+  /* Get required requester from a dcs-js factory */
+  const { orgGet } = OrganizationApiFactory({
+    /* Set the desired DCS server path */
+    basePath: "https://qa.door43.org/api/v1",
+  });
+
+  /* Make a call to the client requester */
+  const organizationRequest = await orgGet("test_org");
+
+  /* Use the results */
+  console.log(organizationRequest);
+}
+```
+
+[![Edit Button](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/dcs-js-factories-playground-xjkc2y)
 
 ## Contributing
 
