@@ -32,7 +32,18 @@ A list of these classes can be found in: [/docs/API.md](/docs/API.md)
 
 ### Usage
 
-First import one of the exposed Classes
+First import one of the exposed Classes:
+
+- AdminApi
+- CatalogApi
+- IssueApi
+- MiscellaneousApi
+- NotificationApi
+- OrganizationApi
+- PackageApi
+- RepositoryApi
+- SettingsApi
+- UserApi
 
 ```js
 import { OrganizationApi } from "dcs-js";
@@ -40,11 +51,10 @@ import { OrganizationApi } from "dcs-js";
 
 Then instantiate the class and call it's methods as required. Each method from this class will make a call to one of the DCS API endpoints operations.
 
-Example:
+**Example:**
 
 ```js
 import { OrganizationApi } from "dcs-js";
-import "./styles.css";
 
 async function dcsJsExample() {
   /* Instantiate the required DCS client. */
@@ -58,8 +68,6 @@ async function dcsJsExample() {
 ```
 
 [![Edit Button](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/dcs-js-playground-u26eyp)
-
-###
 
 ## Contributing
 
