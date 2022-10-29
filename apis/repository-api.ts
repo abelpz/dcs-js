@@ -12470,6 +12470,4248 @@ export const RepositoryApiFactory = function (configuration?: Configuration, bas
 };
 
 /**
+ * Request parameters for acceptRepoTransfer operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiAcceptRepoTransferRequest
+ */
+export interface RepositoryApiAcceptRepoTransferRequest {
+    /**
+     * owner of the repo to transfer
+     * @type {string}
+     * @memberof RepositoryApiAcceptRepoTransfer
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo to transfer
+     * @type {string}
+     * @memberof RepositoryApiAcceptRepoTransfer
+     */
+    readonly repo: string
+}
+
+/**
+ * Request parameters for createCurrentUserRepo operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiCreateCurrentUserRepoRequest
+ */
+export interface RepositoryApiCreateCurrentUserRepoRequest {
+    /**
+     * 
+     * @type {CreateRepoOption}
+     * @memberof RepositoryApiCreateCurrentUserRepo
+     */
+    readonly body?: CreateRepoOption
+}
+
+/**
+ * Request parameters for createFork operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiCreateForkRequest
+ */
+export interface RepositoryApiCreateForkRequest {
+    /**
+     * owner of the repo to fork
+     * @type {string}
+     * @memberof RepositoryApiCreateFork
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo to fork
+     * @type {string}
+     * @memberof RepositoryApiCreateFork
+     */
+    readonly repo: string
+
+    /**
+     * 
+     * @type {CreateForkOption}
+     * @memberof RepositoryApiCreateFork
+     */
+    readonly body?: CreateForkOption
+}
+
+/**
+ * Request parameters for generateRepo operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiGenerateRepoRequest
+ */
+export interface RepositoryApiGenerateRepoRequest {
+    /**
+     * name of the template repository owner
+     * @type {string}
+     * @memberof RepositoryApiGenerateRepo
+     */
+    readonly templateOwner: string
+
+    /**
+     * name of the template repository
+     * @type {string}
+     * @memberof RepositoryApiGenerateRepo
+     */
+    readonly templateRepo: string
+
+    /**
+     * 
+     * @type {GenerateRepoOption}
+     * @memberof RepositoryApiGenerateRepo
+     */
+    readonly body?: GenerateRepoOption
+}
+
+/**
+ * Request parameters for getAnnotatedTag operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiGetAnnotatedTagRequest
+ */
+export interface RepositoryApiGetAnnotatedTagRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiGetAnnotatedTag
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiGetAnnotatedTag
+     */
+    readonly repo: string
+
+    /**
+     * sha of the tag. The Git tags API only supports annotated tag objects, not lightweight tags.
+     * @type {string}
+     * @memberof RepositoryApiGetAnnotatedTag
+     */
+    readonly sha: string
+}
+
+/**
+ * Request parameters for getBlob operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiGetBlobRequest
+ */
+export interface RepositoryApiGetBlobRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiGetBlob
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiGetBlob
+     */
+    readonly repo: string
+
+    /**
+     * sha of the commit
+     * @type {string}
+     * @memberof RepositoryApiGetBlob
+     */
+    readonly sha: string
+}
+
+/**
+ * Request parameters for getTree operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiGetTreeRequest
+ */
+export interface RepositoryApiGetTreeRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiGetTree
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiGetTree
+     */
+    readonly repo: string
+
+    /**
+     * sha of the commit
+     * @type {string}
+     * @memberof RepositoryApiGetTree
+     */
+    readonly sha: string
+
+    /**
+     * show all directories and files
+     * @type {boolean}
+     * @memberof RepositoryApiGetTree
+     */
+    readonly recursive?: boolean
+
+    /**
+     * page number; the \&#39;truncated\&#39; field in the response will be true if there are still more items after this page, false if the last page
+     * @type {number}
+     * @memberof RepositoryApiGetTree
+     */
+    readonly page?: number
+
+    /**
+     * number of items per page
+     * @type {number}
+     * @memberof RepositoryApiGetTree
+     */
+    readonly perPage?: number
+}
+
+/**
+ * Request parameters for listForks operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiListForksRequest
+ */
+export interface RepositoryApiListForksRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiListForks
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiListForks
+     */
+    readonly repo: string
+
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof RepositoryApiListForks
+     */
+    readonly page?: number
+
+    /**
+     * page size of results
+     * @type {number}
+     * @memberof RepositoryApiListForks
+     */
+    readonly limit?: number
+}
+
+/**
+ * Request parameters for rejectRepoTransfer operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRejectRepoTransferRequest
+ */
+export interface RepositoryApiRejectRepoTransferRequest {
+    /**
+     * owner of the repo to transfer
+     * @type {string}
+     * @memberof RepositoryApiRejectRepoTransfer
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo to transfer
+     * @type {string}
+     * @memberof RepositoryApiRejectRepoTransfer
+     */
+    readonly repo: string
+}
+
+/**
+ * Request parameters for repoAddCollaborator operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoAddCollaboratorRequest
+ */
+export interface RepositoryApiRepoAddCollaboratorRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoAddCollaborator
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoAddCollaborator
+     */
+    readonly repo: string
+
+    /**
+     * username of the collaborator to add
+     * @type {string}
+     * @memberof RepositoryApiRepoAddCollaborator
+     */
+    readonly collaborator: string
+
+    /**
+     * 
+     * @type {AddCollaboratorOption}
+     * @memberof RepositoryApiRepoAddCollaborator
+     */
+    readonly body?: AddCollaboratorOption
+}
+
+/**
+ * Request parameters for repoAddTeam operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoAddTeamRequest
+ */
+export interface RepositoryApiRepoAddTeamRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoAddTeam
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoAddTeam
+     */
+    readonly repo: string
+
+    /**
+     * team name
+     * @type {string}
+     * @memberof RepositoryApiRepoAddTeam
+     */
+    readonly team: string
+}
+
+/**
+ * Request parameters for repoAddTopic operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoAddTopicRequest
+ */
+export interface RepositoryApiRepoAddTopicRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoAddTopic
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoAddTopic
+     */
+    readonly repo: string
+
+    /**
+     * name of the topic to add
+     * @type {string}
+     * @memberof RepositoryApiRepoAddTopic
+     */
+    readonly topic: string
+}
+
+/**
+ * Request parameters for repoApplyDiffPatch operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoApplyDiffPatchRequest
+ */
+export interface RepositoryApiRepoApplyDiffPatchRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoApplyDiffPatch
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoApplyDiffPatch
+     */
+    readonly repo: string
+
+    /**
+     * 
+     * @type {UpdateFileOptions}
+     * @memberof RepositoryApiRepoApplyDiffPatch
+     */
+    readonly body: UpdateFileOptions
+}
+
+/**
+ * Request parameters for repoCancelScheduledAutoMerge operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoCancelScheduledAutoMergeRequest
+ */
+export interface RepositoryApiRepoCancelScheduledAutoMergeRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoCancelScheduledAutoMerge
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoCancelScheduledAutoMerge
+     */
+    readonly repo: string
+
+    /**
+     * index of the pull request to merge
+     * @type {number}
+     * @memberof RepositoryApiRepoCancelScheduledAutoMerge
+     */
+    readonly index: number
+}
+
+/**
+ * Request parameters for repoCheckCollaborator operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoCheckCollaboratorRequest
+ */
+export interface RepositoryApiRepoCheckCollaboratorRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoCheckCollaborator
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoCheckCollaborator
+     */
+    readonly repo: string
+
+    /**
+     * username of the collaborator
+     * @type {string}
+     * @memberof RepositoryApiRepoCheckCollaborator
+     */
+    readonly collaborator: string
+}
+
+/**
+ * Request parameters for repoCheckTeam operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoCheckTeamRequest
+ */
+export interface RepositoryApiRepoCheckTeamRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoCheckTeam
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoCheckTeam
+     */
+    readonly repo: string
+
+    /**
+     * team name
+     * @type {string}
+     * @memberof RepositoryApiRepoCheckTeam
+     */
+    readonly team: string
+}
+
+/**
+ * Request parameters for repoCreateBranch operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoCreateBranchRequest
+ */
+export interface RepositoryApiRepoCreateBranchRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoCreateBranch
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoCreateBranch
+     */
+    readonly repo: string
+
+    /**
+     * 
+     * @type {CreateBranchRepoOption}
+     * @memberof RepositoryApiRepoCreateBranch
+     */
+    readonly body?: CreateBranchRepoOption
+}
+
+/**
+ * Request parameters for repoCreateBranchProtection operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoCreateBranchProtectionRequest
+ */
+export interface RepositoryApiRepoCreateBranchProtectionRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoCreateBranchProtection
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoCreateBranchProtection
+     */
+    readonly repo: string
+
+    /**
+     * 
+     * @type {CreateBranchProtectionOption}
+     * @memberof RepositoryApiRepoCreateBranchProtection
+     */
+    readonly body?: CreateBranchProtectionOption
+}
+
+/**
+ * Request parameters for repoCreateFile operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoCreateFileRequest
+ */
+export interface RepositoryApiRepoCreateFileRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoCreateFile
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoCreateFile
+     */
+    readonly repo: string
+
+    /**
+     * path of the file to create
+     * @type {string}
+     * @memberof RepositoryApiRepoCreateFile
+     */
+    readonly filepath: string
+
+    /**
+     * 
+     * @type {CreateFileOptions}
+     * @memberof RepositoryApiRepoCreateFile
+     */
+    readonly body: CreateFileOptions
+}
+
+/**
+ * Request parameters for repoCreateGitRef operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoCreateGitRefRequest
+ */
+export interface RepositoryApiRepoCreateGitRefRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoCreateGitRef
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoCreateGitRef
+     */
+    readonly repo: string
+
+    /**
+     * 
+     * @type {CreateGitRefOption}
+     * @memberof RepositoryApiRepoCreateGitRef
+     */
+    readonly body?: CreateGitRefOption
+}
+
+/**
+ * Request parameters for repoCreateHook operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoCreateHookRequest
+ */
+export interface RepositoryApiRepoCreateHookRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoCreateHook
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoCreateHook
+     */
+    readonly repo: string
+
+    /**
+     * 
+     * @type {CreateHookOption}
+     * @memberof RepositoryApiRepoCreateHook
+     */
+    readonly body?: CreateHookOption
+}
+
+/**
+ * Request parameters for repoCreateKey operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoCreateKeyRequest
+ */
+export interface RepositoryApiRepoCreateKeyRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoCreateKey
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoCreateKey
+     */
+    readonly repo: string
+
+    /**
+     * 
+     * @type {CreateKeyOption}
+     * @memberof RepositoryApiRepoCreateKey
+     */
+    readonly body?: CreateKeyOption
+}
+
+/**
+ * Request parameters for repoCreatePullRequest operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoCreatePullRequestRequest
+ */
+export interface RepositoryApiRepoCreatePullRequestRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoCreatePullRequest
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoCreatePullRequest
+     */
+    readonly repo: string
+
+    /**
+     * 
+     * @type {CreatePullRequestOption}
+     * @memberof RepositoryApiRepoCreatePullRequest
+     */
+    readonly body?: CreatePullRequestOption
+}
+
+/**
+ * Request parameters for repoCreatePullReview operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoCreatePullReviewRequest
+ */
+export interface RepositoryApiRepoCreatePullReviewRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoCreatePullReview
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoCreatePullReview
+     */
+    readonly repo: string
+
+    /**
+     * index of the pull request
+     * @type {number}
+     * @memberof RepositoryApiRepoCreatePullReview
+     */
+    readonly index: number
+
+    /**
+     * 
+     * @type {CreatePullReviewOptions}
+     * @memberof RepositoryApiRepoCreatePullReview
+     */
+    readonly body: CreatePullReviewOptions
+}
+
+/**
+ * Request parameters for repoCreatePullReviewRequests operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoCreatePullReviewRequestsRequest
+ */
+export interface RepositoryApiRepoCreatePullReviewRequestsRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoCreatePullReviewRequests
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoCreatePullReviewRequests
+     */
+    readonly repo: string
+
+    /**
+     * index of the pull request
+     * @type {number}
+     * @memberof RepositoryApiRepoCreatePullReviewRequests
+     */
+    readonly index: number
+
+    /**
+     * 
+     * @type {PullReviewRequestOptions}
+     * @memberof RepositoryApiRepoCreatePullReviewRequests
+     */
+    readonly body: PullReviewRequestOptions
+}
+
+/**
+ * Request parameters for repoCreateRelease operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoCreateReleaseRequest
+ */
+export interface RepositoryApiRepoCreateReleaseRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoCreateRelease
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoCreateRelease
+     */
+    readonly repo: string
+
+    /**
+     * 
+     * @type {CreateReleaseOption}
+     * @memberof RepositoryApiRepoCreateRelease
+     */
+    readonly body?: CreateReleaseOption
+}
+
+/**
+ * Request parameters for repoCreateReleaseAttachment operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoCreateReleaseAttachmentRequest
+ */
+export interface RepositoryApiRepoCreateReleaseAttachmentRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoCreateReleaseAttachment
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoCreateReleaseAttachment
+     */
+    readonly repo: string
+
+    /**
+     * id of the release
+     * @type {number}
+     * @memberof RepositoryApiRepoCreateReleaseAttachment
+     */
+    readonly id: number
+
+    /**
+     * attachment to upload
+     * @type {File}
+     * @memberof RepositoryApiRepoCreateReleaseAttachment
+     */
+    readonly attachment: File
+
+    /**
+     * name of the attachment
+     * @type {string}
+     * @memberof RepositoryApiRepoCreateReleaseAttachment
+     */
+    readonly name?: string
+}
+
+/**
+ * Request parameters for repoCreateStatus operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoCreateStatusRequest
+ */
+export interface RepositoryApiRepoCreateStatusRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoCreateStatus
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoCreateStatus
+     */
+    readonly repo: string
+
+    /**
+     * sha of the commit
+     * @type {string}
+     * @memberof RepositoryApiRepoCreateStatus
+     */
+    readonly sha: string
+
+    /**
+     * 
+     * @type {CreateStatusOption}
+     * @memberof RepositoryApiRepoCreateStatus
+     */
+    readonly body?: CreateStatusOption
+}
+
+/**
+ * Request parameters for repoCreateTag operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoCreateTagRequest
+ */
+export interface RepositoryApiRepoCreateTagRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoCreateTag
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoCreateTag
+     */
+    readonly repo: string
+
+    /**
+     * 
+     * @type {CreateTagOption}
+     * @memberof RepositoryApiRepoCreateTag
+     */
+    readonly body?: CreateTagOption
+}
+
+/**
+ * Request parameters for repoCreateWikiPage operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoCreateWikiPageRequest
+ */
+export interface RepositoryApiRepoCreateWikiPageRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoCreateWikiPage
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoCreateWikiPage
+     */
+    readonly repo: string
+
+    /**
+     * 
+     * @type {CreateWikiPageOptions}
+     * @memberof RepositoryApiRepoCreateWikiPage
+     */
+    readonly body?: CreateWikiPageOptions
+}
+
+/**
+ * Request parameters for repoDelete operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoDeleteRequest
+ */
+export interface RepositoryApiRepoDeleteRequest {
+    /**
+     * owner of the repo to delete
+     * @type {string}
+     * @memberof RepositoryApiRepoDelete
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo to delete
+     * @type {string}
+     * @memberof RepositoryApiRepoDelete
+     */
+    readonly repo: string
+}
+
+/**
+ * Request parameters for repoDeleteBranch operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoDeleteBranchRequest
+ */
+export interface RepositoryApiRepoDeleteBranchRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoDeleteBranch
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoDeleteBranch
+     */
+    readonly repo: string
+
+    /**
+     * branch to delete
+     * @type {string}
+     * @memberof RepositoryApiRepoDeleteBranch
+     */
+    readonly branch: string
+}
+
+/**
+ * Request parameters for repoDeleteBranchProtection operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoDeleteBranchProtectionRequest
+ */
+export interface RepositoryApiRepoDeleteBranchProtectionRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoDeleteBranchProtection
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoDeleteBranchProtection
+     */
+    readonly repo: string
+
+    /**
+     * name of protected branch
+     * @type {string}
+     * @memberof RepositoryApiRepoDeleteBranchProtection
+     */
+    readonly name: string
+}
+
+/**
+ * Request parameters for repoDeleteCollaborator operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoDeleteCollaboratorRequest
+ */
+export interface RepositoryApiRepoDeleteCollaboratorRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoDeleteCollaborator
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoDeleteCollaborator
+     */
+    readonly repo: string
+
+    /**
+     * username of the collaborator to delete
+     * @type {string}
+     * @memberof RepositoryApiRepoDeleteCollaborator
+     */
+    readonly collaborator: string
+}
+
+/**
+ * Request parameters for repoDeleteFile operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoDeleteFileRequest
+ */
+export interface RepositoryApiRepoDeleteFileRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoDeleteFile
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoDeleteFile
+     */
+    readonly repo: string
+
+    /**
+     * path of the file to delete
+     * @type {string}
+     * @memberof RepositoryApiRepoDeleteFile
+     */
+    readonly filepath: string
+
+    /**
+     * 
+     * @type {DeleteFileOptions}
+     * @memberof RepositoryApiRepoDeleteFile
+     */
+    readonly body: DeleteFileOptions
+}
+
+/**
+ * Request parameters for repoDeleteGitHook operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoDeleteGitHookRequest
+ */
+export interface RepositoryApiRepoDeleteGitHookRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoDeleteGitHook
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoDeleteGitHook
+     */
+    readonly repo: string
+
+    /**
+     * id of the hook to get
+     * @type {string}
+     * @memberof RepositoryApiRepoDeleteGitHook
+     */
+    readonly id: string
+}
+
+/**
+ * Request parameters for repoDeleteGitRef operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoDeleteGitRefRequest
+ */
+export interface RepositoryApiRepoDeleteGitRefRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoDeleteGitRef
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoDeleteGitRef
+     */
+    readonly repo: string
+
+    /**
+     * name of the ref to be deleted
+     * @type {string}
+     * @memberof RepositoryApiRepoDeleteGitRef
+     */
+    readonly ref: string
+}
+
+/**
+ * Request parameters for repoDeleteHook operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoDeleteHookRequest
+ */
+export interface RepositoryApiRepoDeleteHookRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoDeleteHook
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoDeleteHook
+     */
+    readonly repo: string
+
+    /**
+     * id of the hook to delete
+     * @type {number}
+     * @memberof RepositoryApiRepoDeleteHook
+     */
+    readonly id: number
+}
+
+/**
+ * Request parameters for repoDeleteKey operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoDeleteKeyRequest
+ */
+export interface RepositoryApiRepoDeleteKeyRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoDeleteKey
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoDeleteKey
+     */
+    readonly repo: string
+
+    /**
+     * id of the key to delete
+     * @type {number}
+     * @memberof RepositoryApiRepoDeleteKey
+     */
+    readonly id: number
+}
+
+/**
+ * Request parameters for repoDeletePullReview operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoDeletePullReviewRequest
+ */
+export interface RepositoryApiRepoDeletePullReviewRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoDeletePullReview
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoDeletePullReview
+     */
+    readonly repo: string
+
+    /**
+     * index of the pull request
+     * @type {number}
+     * @memberof RepositoryApiRepoDeletePullReview
+     */
+    readonly index: number
+
+    /**
+     * id of the review
+     * @type {number}
+     * @memberof RepositoryApiRepoDeletePullReview
+     */
+    readonly id: number
+}
+
+/**
+ * Request parameters for repoDeletePullReviewRequests operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoDeletePullReviewRequestsRequest
+ */
+export interface RepositoryApiRepoDeletePullReviewRequestsRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoDeletePullReviewRequests
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoDeletePullReviewRequests
+     */
+    readonly repo: string
+
+    /**
+     * index of the pull request
+     * @type {number}
+     * @memberof RepositoryApiRepoDeletePullReviewRequests
+     */
+    readonly index: number
+
+    /**
+     * 
+     * @type {PullReviewRequestOptions}
+     * @memberof RepositoryApiRepoDeletePullReviewRequests
+     */
+    readonly body: PullReviewRequestOptions
+}
+
+/**
+ * Request parameters for repoDeleteRelease operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoDeleteReleaseRequest
+ */
+export interface RepositoryApiRepoDeleteReleaseRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoDeleteRelease
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoDeleteRelease
+     */
+    readonly repo: string
+
+    /**
+     * id of the release to delete
+     * @type {number}
+     * @memberof RepositoryApiRepoDeleteRelease
+     */
+    readonly id: number
+}
+
+/**
+ * Request parameters for repoDeleteReleaseAttachment operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoDeleteReleaseAttachmentRequest
+ */
+export interface RepositoryApiRepoDeleteReleaseAttachmentRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoDeleteReleaseAttachment
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoDeleteReleaseAttachment
+     */
+    readonly repo: string
+
+    /**
+     * id of the release
+     * @type {number}
+     * @memberof RepositoryApiRepoDeleteReleaseAttachment
+     */
+    readonly id: number
+
+    /**
+     * id of the attachment to delete
+     * @type {number}
+     * @memberof RepositoryApiRepoDeleteReleaseAttachment
+     */
+    readonly attachmentId: number
+}
+
+/**
+ * Request parameters for repoDeleteReleaseByTag operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoDeleteReleaseByTagRequest
+ */
+export interface RepositoryApiRepoDeleteReleaseByTagRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoDeleteReleaseByTag
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoDeleteReleaseByTag
+     */
+    readonly repo: string
+
+    /**
+     * tag name of the release to delete
+     * @type {string}
+     * @memberof RepositoryApiRepoDeleteReleaseByTag
+     */
+    readonly tag: string
+}
+
+/**
+ * Request parameters for repoDeleteTag operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoDeleteTagRequest
+ */
+export interface RepositoryApiRepoDeleteTagRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoDeleteTag
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoDeleteTag
+     */
+    readonly repo: string
+
+    /**
+     * name of tag to delete
+     * @type {string}
+     * @memberof RepositoryApiRepoDeleteTag
+     */
+    readonly tag: string
+}
+
+/**
+ * Request parameters for repoDeleteTeam operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoDeleteTeamRequest
+ */
+export interface RepositoryApiRepoDeleteTeamRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoDeleteTeam
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoDeleteTeam
+     */
+    readonly repo: string
+
+    /**
+     * team name
+     * @type {string}
+     * @memberof RepositoryApiRepoDeleteTeam
+     */
+    readonly team: string
+}
+
+/**
+ * Request parameters for repoDeleteTopic operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoDeleteTopicRequest
+ */
+export interface RepositoryApiRepoDeleteTopicRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoDeleteTopic
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoDeleteTopic
+     */
+    readonly repo: string
+
+    /**
+     * name of the topic to delete
+     * @type {string}
+     * @memberof RepositoryApiRepoDeleteTopic
+     */
+    readonly topic: string
+}
+
+/**
+ * Request parameters for repoDeleteWikiPage operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoDeleteWikiPageRequest
+ */
+export interface RepositoryApiRepoDeleteWikiPageRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoDeleteWikiPage
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoDeleteWikiPage
+     */
+    readonly repo: string
+
+    /**
+     * name of the page
+     * @type {string}
+     * @memberof RepositoryApiRepoDeleteWikiPage
+     */
+    readonly pageName: string
+}
+
+/**
+ * Request parameters for repoDismissPullReview operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoDismissPullReviewRequest
+ */
+export interface RepositoryApiRepoDismissPullReviewRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoDismissPullReview
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoDismissPullReview
+     */
+    readonly repo: string
+
+    /**
+     * index of the pull request
+     * @type {number}
+     * @memberof RepositoryApiRepoDismissPullReview
+     */
+    readonly index: number
+
+    /**
+     * id of the review
+     * @type {number}
+     * @memberof RepositoryApiRepoDismissPullReview
+     */
+    readonly id: number
+
+    /**
+     * 
+     * @type {DismissPullReviewOptions}
+     * @memberof RepositoryApiRepoDismissPullReview
+     */
+    readonly body: DismissPullReviewOptions
+}
+
+/**
+ * Request parameters for repoDownloadCommitDiffOrPatch operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoDownloadCommitDiffOrPatchRequest
+ */
+export interface RepositoryApiRepoDownloadCommitDiffOrPatchRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoDownloadCommitDiffOrPatch
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoDownloadCommitDiffOrPatch
+     */
+    readonly repo: string
+
+    /**
+     * SHA of the commit to get
+     * @type {string}
+     * @memberof RepositoryApiRepoDownloadCommitDiffOrPatch
+     */
+    readonly sha: string
+
+    /**
+     * whether the output is diff or patch
+     * @type {'diff' | 'patch'}
+     * @memberof RepositoryApiRepoDownloadCommitDiffOrPatch
+     */
+    readonly diffType: 'diff' | 'patch'
+}
+
+/**
+ * Request parameters for repoDownloadPullDiffOrPatch operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoDownloadPullDiffOrPatchRequest
+ */
+export interface RepositoryApiRepoDownloadPullDiffOrPatchRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoDownloadPullDiffOrPatch
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoDownloadPullDiffOrPatch
+     */
+    readonly repo: string
+
+    /**
+     * index of the pull request to get
+     * @type {number}
+     * @memberof RepositoryApiRepoDownloadPullDiffOrPatch
+     */
+    readonly index: number
+
+    /**
+     * whether the output is diff or patch
+     * @type {'diff' | 'patch'}
+     * @memberof RepositoryApiRepoDownloadPullDiffOrPatch
+     */
+    readonly diffType: 'diff' | 'patch'
+
+    /**
+     * whether to include binary file changes. if true, the diff is applicable with &#x60;git apply&#x60;
+     * @type {boolean}
+     * @memberof RepositoryApiRepoDownloadPullDiffOrPatch
+     */
+    readonly binary?: boolean
+}
+
+/**
+ * Request parameters for repoEdit operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoEditRequest
+ */
+export interface RepositoryApiRepoEditRequest {
+    /**
+     * owner of the repo to edit
+     * @type {string}
+     * @memberof RepositoryApiRepoEdit
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo to edit
+     * @type {string}
+     * @memberof RepositoryApiRepoEdit
+     */
+    readonly repo: string
+
+    /**
+     * Properties of a repo that you can edit
+     * @type {EditRepoOption}
+     * @memberof RepositoryApiRepoEdit
+     */
+    readonly body?: EditRepoOption
+}
+
+/**
+ * Request parameters for repoEditBranchProtection operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoEditBranchProtectionRequest
+ */
+export interface RepositoryApiRepoEditBranchProtectionRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoEditBranchProtection
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoEditBranchProtection
+     */
+    readonly repo: string
+
+    /**
+     * name of protected branch
+     * @type {string}
+     * @memberof RepositoryApiRepoEditBranchProtection
+     */
+    readonly name: string
+
+    /**
+     * 
+     * @type {EditBranchProtectionOption}
+     * @memberof RepositoryApiRepoEditBranchProtection
+     */
+    readonly body?: EditBranchProtectionOption
+}
+
+/**
+ * Request parameters for repoEditGitHook operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoEditGitHookRequest
+ */
+export interface RepositoryApiRepoEditGitHookRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoEditGitHook
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoEditGitHook
+     */
+    readonly repo: string
+
+    /**
+     * id of the hook to get
+     * @type {string}
+     * @memberof RepositoryApiRepoEditGitHook
+     */
+    readonly id: string
+
+    /**
+     * 
+     * @type {EditGitHookOption}
+     * @memberof RepositoryApiRepoEditGitHook
+     */
+    readonly body?: EditGitHookOption
+}
+
+/**
+ * Request parameters for repoEditHook operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoEditHookRequest
+ */
+export interface RepositoryApiRepoEditHookRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoEditHook
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoEditHook
+     */
+    readonly repo: string
+
+    /**
+     * index of the hook
+     * @type {number}
+     * @memberof RepositoryApiRepoEditHook
+     */
+    readonly id: number
+
+    /**
+     * 
+     * @type {EditHookOption}
+     * @memberof RepositoryApiRepoEditHook
+     */
+    readonly body?: EditHookOption
+}
+
+/**
+ * Request parameters for repoEditPullRequest operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoEditPullRequestRequest
+ */
+export interface RepositoryApiRepoEditPullRequestRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoEditPullRequest
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoEditPullRequest
+     */
+    readonly repo: string
+
+    /**
+     * index of the pull request to edit
+     * @type {number}
+     * @memberof RepositoryApiRepoEditPullRequest
+     */
+    readonly index: number
+
+    /**
+     * 
+     * @type {EditPullRequestOption}
+     * @memberof RepositoryApiRepoEditPullRequest
+     */
+    readonly body?: EditPullRequestOption
+}
+
+/**
+ * Request parameters for repoEditRelease operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoEditReleaseRequest
+ */
+export interface RepositoryApiRepoEditReleaseRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoEditRelease
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoEditRelease
+     */
+    readonly repo: string
+
+    /**
+     * id of the release to edit
+     * @type {number}
+     * @memberof RepositoryApiRepoEditRelease
+     */
+    readonly id: number
+
+    /**
+     * 
+     * @type {EditReleaseOption}
+     * @memberof RepositoryApiRepoEditRelease
+     */
+    readonly body?: EditReleaseOption
+}
+
+/**
+ * Request parameters for repoEditReleaseAttachment operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoEditReleaseAttachmentRequest
+ */
+export interface RepositoryApiRepoEditReleaseAttachmentRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoEditReleaseAttachment
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoEditReleaseAttachment
+     */
+    readonly repo: string
+
+    /**
+     * id of the release
+     * @type {number}
+     * @memberof RepositoryApiRepoEditReleaseAttachment
+     */
+    readonly id: number
+
+    /**
+     * id of the attachment to edit
+     * @type {number}
+     * @memberof RepositoryApiRepoEditReleaseAttachment
+     */
+    readonly attachmentId: number
+
+    /**
+     * 
+     * @type {EditAttachmentOptions}
+     * @memberof RepositoryApiRepoEditReleaseAttachment
+     */
+    readonly body?: EditAttachmentOptions
+}
+
+/**
+ * Request parameters for repoEditWikiPage operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoEditWikiPageRequest
+ */
+export interface RepositoryApiRepoEditWikiPageRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoEditWikiPage
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoEditWikiPage
+     */
+    readonly repo: string
+
+    /**
+     * name of the page
+     * @type {string}
+     * @memberof RepositoryApiRepoEditWikiPage
+     */
+    readonly pageName: string
+
+    /**
+     * 
+     * @type {CreateWikiPageOptions}
+     * @memberof RepositoryApiRepoEditWikiPage
+     */
+    readonly body?: CreateWikiPageOptions
+}
+
+/**
+ * Request parameters for repoGet operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoGetRequest
+ */
+export interface RepositoryApiRepoGetRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoGet
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoGet
+     */
+    readonly repo: string
+}
+
+/**
+ * Request parameters for repoGetAllCommits operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoGetAllCommitsRequest
+ */
+export interface RepositoryApiRepoGetAllCommitsRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoGetAllCommits
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoGetAllCommits
+     */
+    readonly repo: string
+
+    /**
+     * SHA or branch to start listing commits from (usually \&#39;master\&#39;)
+     * @type {string}
+     * @memberof RepositoryApiRepoGetAllCommits
+     */
+    readonly sha?: string
+
+    /**
+     * filepath of a file/dir
+     * @type {string}
+     * @memberof RepositoryApiRepoGetAllCommits
+     */
+    readonly path?: string
+
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof RepositoryApiRepoGetAllCommits
+     */
+    readonly page?: number
+
+    /**
+     * page size of results (ignored if used with \&#39;path\&#39;)
+     * @type {number}
+     * @memberof RepositoryApiRepoGetAllCommits
+     */
+    readonly limit?: number
+}
+
+/**
+ * Request parameters for repoGetArchive operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoGetArchiveRequest
+ */
+export interface RepositoryApiRepoGetArchiveRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoGetArchive
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoGetArchive
+     */
+    readonly repo: string
+
+    /**
+     * the git reference for download with attached archive format (e.g. master.zip)
+     * @type {string}
+     * @memberof RepositoryApiRepoGetArchive
+     */
+    readonly archive: string
+}
+
+/**
+ * Request parameters for repoGetAssignees operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoGetAssigneesRequest
+ */
+export interface RepositoryApiRepoGetAssigneesRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoGetAssignees
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoGetAssignees
+     */
+    readonly repo: string
+}
+
+/**
+ * Request parameters for repoGetBranch operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoGetBranchRequest
+ */
+export interface RepositoryApiRepoGetBranchRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoGetBranch
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoGetBranch
+     */
+    readonly repo: string
+
+    /**
+     * branch to get
+     * @type {string}
+     * @memberof RepositoryApiRepoGetBranch
+     */
+    readonly branch: string
+}
+
+/**
+ * Request parameters for repoGetBranchProtection operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoGetBranchProtectionRequest
+ */
+export interface RepositoryApiRepoGetBranchProtectionRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoGetBranchProtection
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoGetBranchProtection
+     */
+    readonly repo: string
+
+    /**
+     * name of protected branch
+     * @type {string}
+     * @memberof RepositoryApiRepoGetBranchProtection
+     */
+    readonly name: string
+}
+
+/**
+ * Request parameters for repoGetByID operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoGetByIDRequest
+ */
+export interface RepositoryApiRepoGetByIDRequest {
+    /**
+     * id of the repo to get
+     * @type {number}
+     * @memberof RepositoryApiRepoGetByID
+     */
+    readonly id: number
+}
+
+/**
+ * Request parameters for repoGetCombinedStatusByRef operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoGetCombinedStatusByRefRequest
+ */
+export interface RepositoryApiRepoGetCombinedStatusByRefRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoGetCombinedStatusByRef
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoGetCombinedStatusByRef
+     */
+    readonly repo: string
+
+    /**
+     * name of branch/tag/commit
+     * @type {string}
+     * @memberof RepositoryApiRepoGetCombinedStatusByRef
+     */
+    readonly ref: string
+
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof RepositoryApiRepoGetCombinedStatusByRef
+     */
+    readonly page?: number
+
+    /**
+     * page size of results
+     * @type {number}
+     * @memberof RepositoryApiRepoGetCombinedStatusByRef
+     */
+    readonly limit?: number
+}
+
+/**
+ * Request parameters for repoGetContents operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoGetContentsRequest
+ */
+export interface RepositoryApiRepoGetContentsRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoGetContents
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoGetContents
+     */
+    readonly repo: string
+
+    /**
+     * path of the dir, file, symlink or submodule in the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoGetContents
+     */
+    readonly filepath: string
+
+    /**
+     * The name of the commit/branch/tag. Default the repository’s default branch (usually master)
+     * @type {string}
+     * @memberof RepositoryApiRepoGetContents
+     */
+    readonly ref?: string
+}
+
+/**
+ * Request parameters for repoGetContentsList operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoGetContentsListRequest
+ */
+export interface RepositoryApiRepoGetContentsListRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoGetContentsList
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoGetContentsList
+     */
+    readonly repo: string
+
+    /**
+     * The name of the commit/branch/tag. Default the repository’s default branch (usually master)
+     * @type {string}
+     * @memberof RepositoryApiRepoGetContentsList
+     */
+    readonly ref?: string
+}
+
+/**
+ * Request parameters for repoGetEditorConfig operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoGetEditorConfigRequest
+ */
+export interface RepositoryApiRepoGetEditorConfigRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoGetEditorConfig
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoGetEditorConfig
+     */
+    readonly repo: string
+
+    /**
+     * filepath of file to get
+     * @type {string}
+     * @memberof RepositoryApiRepoGetEditorConfig
+     */
+    readonly filepath: string
+
+    /**
+     * The name of the commit/branch/tag. Default the repository’s default branch (usually master)
+     * @type {string}
+     * @memberof RepositoryApiRepoGetEditorConfig
+     */
+    readonly ref?: string
+}
+
+/**
+ * Request parameters for repoGetGitHook operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoGetGitHookRequest
+ */
+export interface RepositoryApiRepoGetGitHookRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoGetGitHook
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoGetGitHook
+     */
+    readonly repo: string
+
+    /**
+     * id of the hook to get
+     * @type {string}
+     * @memberof RepositoryApiRepoGetGitHook
+     */
+    readonly id: string
+}
+
+/**
+ * Request parameters for repoGetHook operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoGetHookRequest
+ */
+export interface RepositoryApiRepoGetHookRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoGetHook
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoGetHook
+     */
+    readonly repo: string
+
+    /**
+     * id of the hook to get
+     * @type {number}
+     * @memberof RepositoryApiRepoGetHook
+     */
+    readonly id: number
+}
+
+/**
+ * Request parameters for repoGetIssueTemplates operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoGetIssueTemplatesRequest
+ */
+export interface RepositoryApiRepoGetIssueTemplatesRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoGetIssueTemplates
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoGetIssueTemplates
+     */
+    readonly repo: string
+}
+
+/**
+ * Request parameters for repoGetKey operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoGetKeyRequest
+ */
+export interface RepositoryApiRepoGetKeyRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoGetKey
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoGetKey
+     */
+    readonly repo: string
+
+    /**
+     * id of the key to get
+     * @type {number}
+     * @memberof RepositoryApiRepoGetKey
+     */
+    readonly id: number
+}
+
+/**
+ * Request parameters for repoGetLanguages operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoGetLanguagesRequest
+ */
+export interface RepositoryApiRepoGetLanguagesRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoGetLanguages
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoGetLanguages
+     */
+    readonly repo: string
+}
+
+/**
+ * Request parameters for repoGetNote operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoGetNoteRequest
+ */
+export interface RepositoryApiRepoGetNoteRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoGetNote
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoGetNote
+     */
+    readonly repo: string
+
+    /**
+     * a git ref or commit sha
+     * @type {string}
+     * @memberof RepositoryApiRepoGetNote
+     */
+    readonly sha: string
+}
+
+/**
+ * Request parameters for repoGetPullRequest operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoGetPullRequestRequest
+ */
+export interface RepositoryApiRepoGetPullRequestRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoGetPullRequest
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoGetPullRequest
+     */
+    readonly repo: string
+
+    /**
+     * index of the pull request to get
+     * @type {number}
+     * @memberof RepositoryApiRepoGetPullRequest
+     */
+    readonly index: number
+}
+
+/**
+ * Request parameters for repoGetPullRequestCommits operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoGetPullRequestCommitsRequest
+ */
+export interface RepositoryApiRepoGetPullRequestCommitsRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoGetPullRequestCommits
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoGetPullRequestCommits
+     */
+    readonly repo: string
+
+    /**
+     * index of the pull request to get
+     * @type {number}
+     * @memberof RepositoryApiRepoGetPullRequestCommits
+     */
+    readonly index: number
+
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof RepositoryApiRepoGetPullRequestCommits
+     */
+    readonly page?: number
+
+    /**
+     * page size of results
+     * @type {number}
+     * @memberof RepositoryApiRepoGetPullRequestCommits
+     */
+    readonly limit?: number
+}
+
+/**
+ * Request parameters for repoGetPullReview operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoGetPullReviewRequest
+ */
+export interface RepositoryApiRepoGetPullReviewRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoGetPullReview
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoGetPullReview
+     */
+    readonly repo: string
+
+    /**
+     * index of the pull request
+     * @type {number}
+     * @memberof RepositoryApiRepoGetPullReview
+     */
+    readonly index: number
+
+    /**
+     * id of the review
+     * @type {number}
+     * @memberof RepositoryApiRepoGetPullReview
+     */
+    readonly id: number
+}
+
+/**
+ * Request parameters for repoGetPullReviewComments operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoGetPullReviewCommentsRequest
+ */
+export interface RepositoryApiRepoGetPullReviewCommentsRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoGetPullReviewComments
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoGetPullReviewComments
+     */
+    readonly repo: string
+
+    /**
+     * index of the pull request
+     * @type {number}
+     * @memberof RepositoryApiRepoGetPullReviewComments
+     */
+    readonly index: number
+
+    /**
+     * id of the review
+     * @type {number}
+     * @memberof RepositoryApiRepoGetPullReviewComments
+     */
+    readonly id: number
+}
+
+/**
+ * Request parameters for repoGetRawFile operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoGetRawFileRequest
+ */
+export interface RepositoryApiRepoGetRawFileRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoGetRawFile
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoGetRawFile
+     */
+    readonly repo: string
+
+    /**
+     * filepath of the file to get
+     * @type {string}
+     * @memberof RepositoryApiRepoGetRawFile
+     */
+    readonly filepath: string
+
+    /**
+     * The name of the commit/branch/tag. Default the repository’s default branch (usually master)
+     * @type {string}
+     * @memberof RepositoryApiRepoGetRawFile
+     */
+    readonly ref?: string
+}
+
+/**
+ * Request parameters for repoGetRawFileOrLFS operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoGetRawFileOrLFSRequest
+ */
+export interface RepositoryApiRepoGetRawFileOrLFSRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoGetRawFileOrLFS
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoGetRawFileOrLFS
+     */
+    readonly repo: string
+
+    /**
+     * filepath of the file to get
+     * @type {string}
+     * @memberof RepositoryApiRepoGetRawFileOrLFS
+     */
+    readonly filepath: string
+
+    /**
+     * The name of the commit/branch/tag. Default the repository’s default branch (usually master)
+     * @type {string}
+     * @memberof RepositoryApiRepoGetRawFileOrLFS
+     */
+    readonly ref?: string
+}
+
+/**
+ * Request parameters for repoGetRelease operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoGetReleaseRequest
+ */
+export interface RepositoryApiRepoGetReleaseRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoGetRelease
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoGetRelease
+     */
+    readonly repo: string
+
+    /**
+     * id of the release to get
+     * @type {number}
+     * @memberof RepositoryApiRepoGetRelease
+     */
+    readonly id: number
+}
+
+/**
+ * Request parameters for repoGetReleaseAttachment operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoGetReleaseAttachmentRequest
+ */
+export interface RepositoryApiRepoGetReleaseAttachmentRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoGetReleaseAttachment
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoGetReleaseAttachment
+     */
+    readonly repo: string
+
+    /**
+     * id of the release
+     * @type {number}
+     * @memberof RepositoryApiRepoGetReleaseAttachment
+     */
+    readonly id: number
+
+    /**
+     * id of the attachment to get
+     * @type {number}
+     * @memberof RepositoryApiRepoGetReleaseAttachment
+     */
+    readonly attachmentId: number
+}
+
+/**
+ * Request parameters for repoGetReleaseByTag operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoGetReleaseByTagRequest
+ */
+export interface RepositoryApiRepoGetReleaseByTagRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoGetReleaseByTag
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoGetReleaseByTag
+     */
+    readonly repo: string
+
+    /**
+     * tag name of the release to get
+     * @type {string}
+     * @memberof RepositoryApiRepoGetReleaseByTag
+     */
+    readonly tag: string
+}
+
+/**
+ * Request parameters for repoGetRepoPermissions operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoGetRepoPermissionsRequest
+ */
+export interface RepositoryApiRepoGetRepoPermissionsRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoGetRepoPermissions
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoGetRepoPermissions
+     */
+    readonly repo: string
+
+    /**
+     * username of the collaborator
+     * @type {string}
+     * @memberof RepositoryApiRepoGetRepoPermissions
+     */
+    readonly collaborator: string
+}
+
+/**
+ * Request parameters for repoGetReviewers operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoGetReviewersRequest
+ */
+export interface RepositoryApiRepoGetReviewersRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoGetReviewers
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoGetReviewers
+     */
+    readonly repo: string
+}
+
+/**
+ * Request parameters for repoGetSingleCommit operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoGetSingleCommitRequest
+ */
+export interface RepositoryApiRepoGetSingleCommitRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoGetSingleCommit
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoGetSingleCommit
+     */
+    readonly repo: string
+
+    /**
+     * a git ref or commit sha
+     * @type {string}
+     * @memberof RepositoryApiRepoGetSingleCommit
+     */
+    readonly sha: string
+}
+
+/**
+ * Request parameters for repoGetTag operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoGetTagRequest
+ */
+export interface RepositoryApiRepoGetTagRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoGetTag
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoGetTag
+     */
+    readonly repo: string
+
+    /**
+     * name of tag
+     * @type {string}
+     * @memberof RepositoryApiRepoGetTag
+     */
+    readonly tag: string
+}
+
+/**
+ * Request parameters for repoGetWikiPage operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoGetWikiPageRequest
+ */
+export interface RepositoryApiRepoGetWikiPageRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoGetWikiPage
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoGetWikiPage
+     */
+    readonly repo: string
+
+    /**
+     * name of the page
+     * @type {string}
+     * @memberof RepositoryApiRepoGetWikiPage
+     */
+    readonly pageName: string
+}
+
+/**
+ * Request parameters for repoGetWikiPageRevisions operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoGetWikiPageRevisionsRequest
+ */
+export interface RepositoryApiRepoGetWikiPageRevisionsRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoGetWikiPageRevisions
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoGetWikiPageRevisions
+     */
+    readonly repo: string
+
+    /**
+     * name of the page
+     * @type {string}
+     * @memberof RepositoryApiRepoGetWikiPageRevisions
+     */
+    readonly pageName: string
+
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof RepositoryApiRepoGetWikiPageRevisions
+     */
+    readonly page?: number
+}
+
+/**
+ * Request parameters for repoGetWikiPages operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoGetWikiPagesRequest
+ */
+export interface RepositoryApiRepoGetWikiPagesRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoGetWikiPages
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoGetWikiPages
+     */
+    readonly repo: string
+
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof RepositoryApiRepoGetWikiPages
+     */
+    readonly page?: number
+
+    /**
+     * page size of results
+     * @type {number}
+     * @memberof RepositoryApiRepoGetWikiPages
+     */
+    readonly limit?: number
+}
+
+/**
+ * Request parameters for repoListAllGitRefs operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoListAllGitRefsRequest
+ */
+export interface RepositoryApiRepoListAllGitRefsRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoListAllGitRefs
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoListAllGitRefs
+     */
+    readonly repo: string
+}
+
+/**
+ * Request parameters for repoListBranchProtection operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoListBranchProtectionRequest
+ */
+export interface RepositoryApiRepoListBranchProtectionRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoListBranchProtection
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoListBranchProtection
+     */
+    readonly repo: string
+}
+
+/**
+ * Request parameters for repoListBranches operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoListBranchesRequest
+ */
+export interface RepositoryApiRepoListBranchesRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoListBranches
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoListBranches
+     */
+    readonly repo: string
+
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof RepositoryApiRepoListBranches
+     */
+    readonly page?: number
+
+    /**
+     * page size of results
+     * @type {number}
+     * @memberof RepositoryApiRepoListBranches
+     */
+    readonly limit?: number
+}
+
+/**
+ * Request parameters for repoListCollaborators operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoListCollaboratorsRequest
+ */
+export interface RepositoryApiRepoListCollaboratorsRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoListCollaborators
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoListCollaborators
+     */
+    readonly repo: string
+
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof RepositoryApiRepoListCollaborators
+     */
+    readonly page?: number
+
+    /**
+     * page size of results
+     * @type {number}
+     * @memberof RepositoryApiRepoListCollaborators
+     */
+    readonly limit?: number
+}
+
+/**
+ * Request parameters for repoListGitHooks operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoListGitHooksRequest
+ */
+export interface RepositoryApiRepoListGitHooksRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoListGitHooks
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoListGitHooks
+     */
+    readonly repo: string
+}
+
+/**
+ * Request parameters for repoListGitRefs operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoListGitRefsRequest
+ */
+export interface RepositoryApiRepoListGitRefsRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoListGitRefs
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoListGitRefs
+     */
+    readonly repo: string
+
+    /**
+     * part or full name of the ref
+     * @type {string}
+     * @memberof RepositoryApiRepoListGitRefs
+     */
+    readonly ref: string
+}
+
+/**
+ * Request parameters for repoListHooks operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoListHooksRequest
+ */
+export interface RepositoryApiRepoListHooksRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoListHooks
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoListHooks
+     */
+    readonly repo: string
+
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof RepositoryApiRepoListHooks
+     */
+    readonly page?: number
+
+    /**
+     * page size of results
+     * @type {number}
+     * @memberof RepositoryApiRepoListHooks
+     */
+    readonly limit?: number
+}
+
+/**
+ * Request parameters for repoListKeys operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoListKeysRequest
+ */
+export interface RepositoryApiRepoListKeysRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoListKeys
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoListKeys
+     */
+    readonly repo: string
+
+    /**
+     * the key_id to search for
+     * @type {number}
+     * @memberof RepositoryApiRepoListKeys
+     */
+    readonly keyId?: number
+
+    /**
+     * fingerprint of the key
+     * @type {string}
+     * @memberof RepositoryApiRepoListKeys
+     */
+    readonly fingerprint?: string
+
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof RepositoryApiRepoListKeys
+     */
+    readonly page?: number
+
+    /**
+     * page size of results
+     * @type {number}
+     * @memberof RepositoryApiRepoListKeys
+     */
+    readonly limit?: number
+}
+
+/**
+ * Request parameters for repoListPullRequests operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoListPullRequestsRequest
+ */
+export interface RepositoryApiRepoListPullRequestsRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoListPullRequests
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoListPullRequests
+     */
+    readonly repo: string
+
+    /**
+     * State of pull request: open or closed (optional)
+     * @type {'closed' | 'open' | 'all'}
+     * @memberof RepositoryApiRepoListPullRequests
+     */
+    readonly state?: 'closed' | 'open' | 'all'
+
+    /**
+     * Type of sort
+     * @type {'oldest' | 'recentupdate' | 'leastupdate' | 'mostcomment' | 'leastcomment' | 'priority'}
+     * @memberof RepositoryApiRepoListPullRequests
+     */
+    readonly sort?: 'oldest' | 'recentupdate' | 'leastupdate' | 'mostcomment' | 'leastcomment' | 'priority'
+
+    /**
+     * ID of the milestone
+     * @type {number}
+     * @memberof RepositoryApiRepoListPullRequests
+     */
+    readonly milestone?: number
+
+    /**
+     * Label IDs
+     * @type {Array<number>}
+     * @memberof RepositoryApiRepoListPullRequests
+     */
+    readonly labels?: Array<number>
+
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof RepositoryApiRepoListPullRequests
+     */
+    readonly page?: number
+
+    /**
+     * page size of results
+     * @type {number}
+     * @memberof RepositoryApiRepoListPullRequests
+     */
+    readonly limit?: number
+}
+
+/**
+ * Request parameters for repoListPullReviews operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoListPullReviewsRequest
+ */
+export interface RepositoryApiRepoListPullReviewsRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoListPullReviews
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoListPullReviews
+     */
+    readonly repo: string
+
+    /**
+     * index of the pull request
+     * @type {number}
+     * @memberof RepositoryApiRepoListPullReviews
+     */
+    readonly index: number
+
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof RepositoryApiRepoListPullReviews
+     */
+    readonly page?: number
+
+    /**
+     * page size of results
+     * @type {number}
+     * @memberof RepositoryApiRepoListPullReviews
+     */
+    readonly limit?: number
+}
+
+/**
+ * Request parameters for repoListReleaseAttachments operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoListReleaseAttachmentsRequest
+ */
+export interface RepositoryApiRepoListReleaseAttachmentsRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoListReleaseAttachments
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoListReleaseAttachments
+     */
+    readonly repo: string
+
+    /**
+     * id of the release
+     * @type {number}
+     * @memberof RepositoryApiRepoListReleaseAttachments
+     */
+    readonly id: number
+}
+
+/**
+ * Request parameters for repoListReleases operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoListReleasesRequest
+ */
+export interface RepositoryApiRepoListReleasesRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoListReleases
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoListReleases
+     */
+    readonly repo: string
+
+    /**
+     * filter (exclude / include) drafts, if you dont have repo write access none will show
+     * @type {boolean}
+     * @memberof RepositoryApiRepoListReleases
+     */
+    readonly draft?: boolean
+
+    /**
+     * filter (exclude / include) pre-releases
+     * @type {boolean}
+     * @memberof RepositoryApiRepoListReleases
+     */
+    readonly preRelease?: boolean
+
+    /**
+     * page size of results, deprecated - use limit
+     * @type {number}
+     * @memberof RepositoryApiRepoListReleases
+     */
+    readonly perPage?: number
+
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof RepositoryApiRepoListReleases
+     */
+    readonly page?: number
+
+    /**
+     * page size of results
+     * @type {number}
+     * @memberof RepositoryApiRepoListReleases
+     */
+    readonly limit?: number
+}
+
+/**
+ * Request parameters for repoListStargazers operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoListStargazersRequest
+ */
+export interface RepositoryApiRepoListStargazersRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoListStargazers
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoListStargazers
+     */
+    readonly repo: string
+
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof RepositoryApiRepoListStargazers
+     */
+    readonly page?: number
+
+    /**
+     * page size of results
+     * @type {number}
+     * @memberof RepositoryApiRepoListStargazers
+     */
+    readonly limit?: number
+}
+
+/**
+ * Request parameters for repoListStatuses operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoListStatusesRequest
+ */
+export interface RepositoryApiRepoListStatusesRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoListStatuses
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoListStatuses
+     */
+    readonly repo: string
+
+    /**
+     * sha of the commit
+     * @type {string}
+     * @memberof RepositoryApiRepoListStatuses
+     */
+    readonly sha: string
+
+    /**
+     * type of sort
+     * @type {'oldest' | 'recentupdate' | 'leastupdate' | 'leastindex' | 'highestindex'}
+     * @memberof RepositoryApiRepoListStatuses
+     */
+    readonly sort?: 'oldest' | 'recentupdate' | 'leastupdate' | 'leastindex' | 'highestindex'
+
+    /**
+     * type of state
+     * @type {'pending' | 'success' | 'error' | 'failure' | 'warning'}
+     * @memberof RepositoryApiRepoListStatuses
+     */
+    readonly state?: 'pending' | 'success' | 'error' | 'failure' | 'warning'
+
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof RepositoryApiRepoListStatuses
+     */
+    readonly page?: number
+
+    /**
+     * page size of results
+     * @type {number}
+     * @memberof RepositoryApiRepoListStatuses
+     */
+    readonly limit?: number
+}
+
+/**
+ * Request parameters for repoListStatusesByRef operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoListStatusesByRefRequest
+ */
+export interface RepositoryApiRepoListStatusesByRefRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoListStatusesByRef
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoListStatusesByRef
+     */
+    readonly repo: string
+
+    /**
+     * name of branch/tag/commit
+     * @type {string}
+     * @memberof RepositoryApiRepoListStatusesByRef
+     */
+    readonly ref: string
+
+    /**
+     * type of sort
+     * @type {'oldest' | 'recentupdate' | 'leastupdate' | 'leastindex' | 'highestindex'}
+     * @memberof RepositoryApiRepoListStatusesByRef
+     */
+    readonly sort?: 'oldest' | 'recentupdate' | 'leastupdate' | 'leastindex' | 'highestindex'
+
+    /**
+     * type of state
+     * @type {'pending' | 'success' | 'error' | 'failure' | 'warning'}
+     * @memberof RepositoryApiRepoListStatusesByRef
+     */
+    readonly state?: 'pending' | 'success' | 'error' | 'failure' | 'warning'
+
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof RepositoryApiRepoListStatusesByRef
+     */
+    readonly page?: number
+
+    /**
+     * page size of results
+     * @type {number}
+     * @memberof RepositoryApiRepoListStatusesByRef
+     */
+    readonly limit?: number
+}
+
+/**
+ * Request parameters for repoListSubscribers operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoListSubscribersRequest
+ */
+export interface RepositoryApiRepoListSubscribersRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoListSubscribers
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoListSubscribers
+     */
+    readonly repo: string
+
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof RepositoryApiRepoListSubscribers
+     */
+    readonly page?: number
+
+    /**
+     * page size of results
+     * @type {number}
+     * @memberof RepositoryApiRepoListSubscribers
+     */
+    readonly limit?: number
+}
+
+/**
+ * Request parameters for repoListTags operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoListTagsRequest
+ */
+export interface RepositoryApiRepoListTagsRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoListTags
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoListTags
+     */
+    readonly repo: string
+
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof RepositoryApiRepoListTags
+     */
+    readonly page?: number
+
+    /**
+     * page size of results, default maximum page size is 50
+     * @type {number}
+     * @memberof RepositoryApiRepoListTags
+     */
+    readonly limit?: number
+}
+
+/**
+ * Request parameters for repoListTeams operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoListTeamsRequest
+ */
+export interface RepositoryApiRepoListTeamsRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoListTeams
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoListTeams
+     */
+    readonly repo: string
+}
+
+/**
+ * Request parameters for repoListTopics operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoListTopicsRequest
+ */
+export interface RepositoryApiRepoListTopicsRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoListTopics
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoListTopics
+     */
+    readonly repo: string
+
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof RepositoryApiRepoListTopics
+     */
+    readonly page?: number
+
+    /**
+     * page size of results
+     * @type {number}
+     * @memberof RepositoryApiRepoListTopics
+     */
+    readonly limit?: number
+}
+
+/**
+ * Request parameters for repoMergePullRequest operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoMergePullRequestRequest
+ */
+export interface RepositoryApiRepoMergePullRequestRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoMergePullRequest
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoMergePullRequest
+     */
+    readonly repo: string
+
+    /**
+     * index of the pull request to merge
+     * @type {number}
+     * @memberof RepositoryApiRepoMergePullRequest
+     */
+    readonly index: number
+
+    /**
+     * 
+     * @type {MergePullRequestOption}
+     * @memberof RepositoryApiRepoMergePullRequest
+     */
+    readonly body?: MergePullRequestOption
+}
+
+/**
+ * Request parameters for repoMigrate operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoMigrateRequest
+ */
+export interface RepositoryApiRepoMigrateRequest {
+    /**
+     * 
+     * @type {MigrateRepoOptions}
+     * @memberof RepositoryApiRepoMigrate
+     */
+    readonly body?: MigrateRepoOptions
+}
+
+/**
+ * Request parameters for repoMirrorSync operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoMirrorSyncRequest
+ */
+export interface RepositoryApiRepoMirrorSyncRequest {
+    /**
+     * owner of the repo to sync
+     * @type {string}
+     * @memberof RepositoryApiRepoMirrorSync
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo to sync
+     * @type {string}
+     * @memberof RepositoryApiRepoMirrorSync
+     */
+    readonly repo: string
+}
+
+/**
+ * Request parameters for repoPullRequestIsMerged operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoPullRequestIsMergedRequest
+ */
+export interface RepositoryApiRepoPullRequestIsMergedRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoPullRequestIsMerged
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoPullRequestIsMerged
+     */
+    readonly repo: string
+
+    /**
+     * index of the pull request
+     * @type {number}
+     * @memberof RepositoryApiRepoPullRequestIsMerged
+     */
+    readonly index: number
+}
+
+/**
+ * Request parameters for repoSearch operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoSearchRequest
+ */
+export interface RepositoryApiRepoSearchRequest {
+    /**
+     * keyword
+     * @type {string}
+     * @memberof RepositoryApiRepoSearch
+     */
+    readonly q?: string
+
+    /**
+     * Limit search to repositories with keyword as topic
+     * @type {boolean}
+     * @memberof RepositoryApiRepoSearch
+     */
+    readonly topic?: boolean
+
+    /**
+     * include search of keyword within repository description (defaults to false)
+     * @type {boolean}
+     * @memberof RepositoryApiRepoSearch
+     */
+    readonly includeDesc?: boolean
+
+    /**
+     * search only for repos that the user with the given id owns or contributes to
+     * @type {number}
+     * @memberof RepositoryApiRepoSearch
+     */
+    readonly uid?: number
+
+    /**
+     * repo owner to prioritize in the results
+     * @type {number}
+     * @memberof RepositoryApiRepoSearch
+     */
+    readonly priorityOwnerId?: number
+
+    /**
+     * search only for repos that belong to the given team id
+     * @type {number}
+     * @memberof RepositoryApiRepoSearch
+     */
+    readonly teamId?: number
+
+    /**
+     * search only for repos that the user with the given id has starred
+     * @type {number}
+     * @memberof RepositoryApiRepoSearch
+     */
+    readonly starredBy?: number
+
+    /**
+     * include private repositories this user has access to (defaults to true)
+     * @type {boolean}
+     * @memberof RepositoryApiRepoSearch
+     */
+    readonly _private?: boolean
+
+    /**
+     * show only pubic, private or all repositories (defaults to all)
+     * @type {boolean}
+     * @memberof RepositoryApiRepoSearch
+     */
+    readonly isPrivate?: boolean
+
+    /**
+     * include template repositories this user has access to (defaults to true)
+     * @type {boolean}
+     * @memberof RepositoryApiRepoSearch
+     */
+    readonly template?: boolean
+
+    /**
+     * show only archived, non-archived or all repositories (defaults to all)
+     * @type {boolean}
+     * @memberof RepositoryApiRepoSearch
+     */
+    readonly archived?: boolean
+
+    /**
+     * type of repository to search for. Supported values are \&quot;fork\&quot;, \&quot;source\&quot;, \&quot;mirror\&quot; and \&quot;collaborative\&quot;
+     * @type {string}
+     * @memberof RepositoryApiRepoSearch
+     */
+    readonly mode?: string
+
+    /**
+     * if &#x60;uid&#x60; is given, search only for repos that the user owns
+     * @type {boolean}
+     * @memberof RepositoryApiRepoSearch
+     */
+    readonly exclusive?: boolean
+
+    /**
+     * name of the repo. Multiple repo\&#39;s are ORed.
+     * @type {string}
+     * @memberof RepositoryApiRepoSearch
+     */
+    readonly repo?: string
+
+    /**
+     * owner of the repo. Multiple owner\&#39;s are ORed.
+     * @type {string}
+     * @memberof RepositoryApiRepoSearch
+     */
+    readonly owner?: string
+
+    /**
+     * If the repo is a resource of the given language(s), the repo will be in the results. Multiple lang\&#39;s are ORed.
+     * @type {string}
+     * @memberof RepositoryApiRepoSearch
+     */
+    readonly lang?: string
+
+    /**
+     * resource subject. Multiple subject\&#39;s are ORed.
+     * @type {string}
+     * @memberof RepositoryApiRepoSearch
+     */
+    readonly subject?: string
+
+    /**
+     * book (project id) that exist in a resource. If the resource contains the the book, its repository will be included in the results. Multiple book\&#39;s are ORed.
+     * @type {string}
+     * @memberof RepositoryApiRepoSearch
+     */
+    readonly book?: string
+
+    /**
+     * if false, q value will only be searched for in the repo name, owner, description and title and subject; otherwise search all values of the manifest file. (defaults to false)
+     * @type {boolean}
+     * @memberof RepositoryApiRepoSearch
+     */
+    readonly includeMetadata?: boolean
+
+    /**
+     * sort repos by attribute. Supported values are \&quot;alpha\&quot;, \&quot;created\&quot;, \&quot;updated\&quot;, \&quot;size\&quot;, and \&quot;id\&quot;. Default is \&quot;alpha\&quot;
+     * @type {string}
+     * @memberof RepositoryApiRepoSearch
+     */
+    readonly sort?: string
+
+    /**
+     * sort order, either \&quot;asc\&quot; (ascending) or \&quot;desc\&quot; (descending). Default is \&quot;asc\&quot;, ignored if \&quot;sort\&quot; is not specified.
+     * @type {string}
+     * @memberof RepositoryApiRepoSearch
+     */
+    readonly order?: string
+
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof RepositoryApiRepoSearch
+     */
+    readonly page?: number
+
+    /**
+     * page size of results
+     * @type {number}
+     * @memberof RepositoryApiRepoSearch
+     */
+    readonly limit?: number
+}
+
+/**
+ * Request parameters for repoSigningKey operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoSigningKeyRequest
+ */
+export interface RepositoryApiRepoSigningKeyRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoSigningKey
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoSigningKey
+     */
+    readonly repo: string
+}
+
+/**
+ * Request parameters for repoSubmitPullReview operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoSubmitPullReviewRequest
+ */
+export interface RepositoryApiRepoSubmitPullReviewRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoSubmitPullReview
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoSubmitPullReview
+     */
+    readonly repo: string
+
+    /**
+     * index of the pull request
+     * @type {number}
+     * @memberof RepositoryApiRepoSubmitPullReview
+     */
+    readonly index: number
+
+    /**
+     * id of the review
+     * @type {number}
+     * @memberof RepositoryApiRepoSubmitPullReview
+     */
+    readonly id: number
+
+    /**
+     * 
+     * @type {SubmitPullReviewOptions}
+     * @memberof RepositoryApiRepoSubmitPullReview
+     */
+    readonly body: SubmitPullReviewOptions
+}
+
+/**
+ * Request parameters for repoTestHook operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoTestHookRequest
+ */
+export interface RepositoryApiRepoTestHookRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoTestHook
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoTestHook
+     */
+    readonly repo: string
+
+    /**
+     * id of the hook to test
+     * @type {number}
+     * @memberof RepositoryApiRepoTestHook
+     */
+    readonly id: number
+
+    /**
+     * The name of the commit/branch/tag, indicates which commit will be loaded to the webhook payload.
+     * @type {string}
+     * @memberof RepositoryApiRepoTestHook
+     */
+    readonly ref?: string
+}
+
+/**
+ * Request parameters for repoTrackedTimes operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoTrackedTimesRequest
+ */
+export interface RepositoryApiRepoTrackedTimesRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoTrackedTimes
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoTrackedTimes
+     */
+    readonly repo: string
+
+    /**
+     * optional filter by user (available for issue managers)
+     * @type {string}
+     * @memberof RepositoryApiRepoTrackedTimes
+     */
+    readonly user?: string
+
+    /**
+     * Only show times updated after the given time. This is a timestamp in RFC 3339 format
+     * @type {string}
+     * @memberof RepositoryApiRepoTrackedTimes
+     */
+    readonly since?: string
+
+    /**
+     * Only show times updated before the given time. This is a timestamp in RFC 3339 format
+     * @type {string}
+     * @memberof RepositoryApiRepoTrackedTimes
+     */
+    readonly before?: string
+
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof RepositoryApiRepoTrackedTimes
+     */
+    readonly page?: number
+
+    /**
+     * page size of results
+     * @type {number}
+     * @memberof RepositoryApiRepoTrackedTimes
+     */
+    readonly limit?: number
+}
+
+/**
+ * Request parameters for repoTransfer operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoTransferRequest
+ */
+export interface RepositoryApiRepoTransferRequest {
+    /**
+     * owner of the repo to transfer
+     * @type {string}
+     * @memberof RepositoryApiRepoTransfer
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo to transfer
+     * @type {string}
+     * @memberof RepositoryApiRepoTransfer
+     */
+    readonly repo: string
+
+    /**
+     * Transfer Options
+     * @type {TransferRepoOption}
+     * @memberof RepositoryApiRepoTransfer
+     */
+    readonly body: TransferRepoOption
+}
+
+/**
+ * Request parameters for repoUnDismissPullReview operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoUnDismissPullReviewRequest
+ */
+export interface RepositoryApiRepoUnDismissPullReviewRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoUnDismissPullReview
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoUnDismissPullReview
+     */
+    readonly repo: string
+
+    /**
+     * index of the pull request
+     * @type {number}
+     * @memberof RepositoryApiRepoUnDismissPullReview
+     */
+    readonly index: number
+
+    /**
+     * id of the review
+     * @type {number}
+     * @memberof RepositoryApiRepoUnDismissPullReview
+     */
+    readonly id: number
+}
+
+/**
+ * Request parameters for repoUpdateFile operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoUpdateFileRequest
+ */
+export interface RepositoryApiRepoUpdateFileRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoUpdateFile
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoUpdateFile
+     */
+    readonly repo: string
+
+    /**
+     * path of the file to update
+     * @type {string}
+     * @memberof RepositoryApiRepoUpdateFile
+     */
+    readonly filepath: string
+
+    /**
+     * 
+     * @type {UpdateFileOptions}
+     * @memberof RepositoryApiRepoUpdateFile
+     */
+    readonly body: UpdateFileOptions
+}
+
+/**
+ * Request parameters for repoUpdateGitRef operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoUpdateGitRefRequest
+ */
+export interface RepositoryApiRepoUpdateGitRefRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoUpdateGitRef
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoUpdateGitRef
+     */
+    readonly repo: string
+
+    /**
+     * name of the ref to update
+     * @type {string}
+     * @memberof RepositoryApiRepoUpdateGitRef
+     */
+    readonly ref: string
+
+    /**
+     * 
+     * @type {UpdateGitRefOption}
+     * @memberof RepositoryApiRepoUpdateGitRef
+     */
+    readonly body?: UpdateGitRefOption
+}
+
+/**
+ * Request parameters for repoUpdatePullRequest operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoUpdatePullRequestRequest
+ */
+export interface RepositoryApiRepoUpdatePullRequestRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoUpdatePullRequest
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoUpdatePullRequest
+     */
+    readonly repo: string
+
+    /**
+     * index of the pull request to get
+     * @type {number}
+     * @memberof RepositoryApiRepoUpdatePullRequest
+     */
+    readonly index: number
+
+    /**
+     * how to update pull request
+     * @type {'merge' | 'rebase'}
+     * @memberof RepositoryApiRepoUpdatePullRequest
+     */
+    readonly style?: 'merge' | 'rebase'
+}
+
+/**
+ * Request parameters for repoUpdateTopics operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiRepoUpdateTopicsRequest
+ */
+export interface RepositoryApiRepoUpdateTopicsRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoUpdateTopics
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiRepoUpdateTopics
+     */
+    readonly repo: string
+
+    /**
+     * 
+     * @type {RepoTopicOptions}
+     * @memberof RepositoryApiRepoUpdateTopics
+     */
+    readonly body?: RepoTopicOptions
+}
+
+/**
+ * Request parameters for topicSearch operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiTopicSearchRequest
+ */
+export interface RepositoryApiTopicSearchRequest {
+    /**
+     * keywords to search
+     * @type {string}
+     * @memberof RepositoryApiTopicSearch
+     */
+    readonly q: string
+
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof RepositoryApiTopicSearch
+     */
+    readonly page?: number
+
+    /**
+     * page size of results
+     * @type {number}
+     * @memberof RepositoryApiTopicSearch
+     */
+    readonly limit?: number
+}
+
+/**
+ * Request parameters for userCurrentCheckSubscription operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiUserCurrentCheckSubscriptionRequest
+ */
+export interface RepositoryApiUserCurrentCheckSubscriptionRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiUserCurrentCheckSubscription
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiUserCurrentCheckSubscription
+     */
+    readonly repo: string
+}
+
+/**
+ * Request parameters for userCurrentDeleteSubscription operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiUserCurrentDeleteSubscriptionRequest
+ */
+export interface RepositoryApiUserCurrentDeleteSubscriptionRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiUserCurrentDeleteSubscription
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiUserCurrentDeleteSubscription
+     */
+    readonly repo: string
+}
+
+/**
+ * Request parameters for userCurrentPutSubscription operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiUserCurrentPutSubscriptionRequest
+ */
+export interface RepositoryApiUserCurrentPutSubscriptionRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiUserCurrentPutSubscription
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiUserCurrentPutSubscription
+     */
+    readonly repo: string
+}
+
+/**
+ * Request parameters for userTrackedTimes operation in RepositoryApi.
+ * @export
+ * @interface RepositoryApiUserTrackedTimesRequest
+ */
+export interface RepositoryApiUserTrackedTimesRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof RepositoryApiUserTrackedTimes
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof RepositoryApiUserTrackedTimes
+     */
+    readonly repo: string
+
+    /**
+     * username of user
+     * @type {string}
+     * @memberof RepositoryApiUserTrackedTimes
+     */
+    readonly user: string
+}
+
+/**
  * RepositoryApi - object-oriented interface
  * @export
  * @class RepositoryApi
@@ -12479,1917 +16721,1573 @@ export class RepositoryApi extends BaseAPI {
     /**
      * 
      * @summary Accept a repo transfer
-     * @param {string} owner owner of the repo to transfer
-     * @param {string} repo name of the repo to transfer
+     * @param {RepositoryApiAcceptRepoTransferRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public acceptRepoTransfer(owner: string, repo: string, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).acceptRepoTransfer(owner, repo, options).then((request) => request(this.axios, this.basePath));
+    public acceptRepoTransfer(requestParameters: RepositoryApiAcceptRepoTransferRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).acceptRepoTransfer(requestParameters.owner, requestParameters.repo, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Create a repository
-     * @param {CreateRepoOption} [body] 
+     * @param {RepositoryApiCreateCurrentUserRepoRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public createCurrentUserRepo(body?: CreateRepoOption, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).createCurrentUserRepo(body, options).then((request) => request(this.axios, this.basePath));
+    public createCurrentUserRepo(requestParameters: RepositoryApiCreateCurrentUserRepoRequest = {}, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).createCurrentUserRepo(requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Fork a repository
-     * @param {string} owner owner of the repo to fork
-     * @param {string} repo name of the repo to fork
-     * @param {CreateForkOption} [body] 
+     * @param {RepositoryApiCreateForkRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public createFork(owner: string, repo: string, body?: CreateForkOption, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).createFork(owner, repo, body, options).then((request) => request(this.axios, this.basePath));
+    public createFork(requestParameters: RepositoryApiCreateForkRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).createFork(requestParameters.owner, requestParameters.repo, requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Create a repository using a template
-     * @param {string} templateOwner name of the template repository owner
-     * @param {string} templateRepo name of the template repository
-     * @param {GenerateRepoOption} [body] 
+     * @param {RepositoryApiGenerateRepoRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public generateRepo(templateOwner: string, templateRepo: string, body?: GenerateRepoOption, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).generateRepo(templateOwner, templateRepo, body, options).then((request) => request(this.axios, this.basePath));
+    public generateRepo(requestParameters: RepositoryApiGenerateRepoRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).generateRepo(requestParameters.templateOwner, requestParameters.templateRepo, requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Gets the tag object of an annotated tag (not lightweight tags)
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {string} sha sha of the tag. The Git tags API only supports annotated tag objects, not lightweight tags.
+     * @param {RepositoryApiGetAnnotatedTagRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public getAnnotatedTag(owner: string, repo: string, sha: string, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).getAnnotatedTag(owner, repo, sha, options).then((request) => request(this.axios, this.basePath));
+    public getAnnotatedTag(requestParameters: RepositoryApiGetAnnotatedTagRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).getAnnotatedTag(requestParameters.owner, requestParameters.repo, requestParameters.sha, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Gets the blob of a repository.
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {string} sha sha of the commit
+     * @param {RepositoryApiGetBlobRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public getBlob(owner: string, repo: string, sha: string, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).getBlob(owner, repo, sha, options).then((request) => request(this.axios, this.basePath));
+    public getBlob(requestParameters: RepositoryApiGetBlobRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).getBlob(requestParameters.owner, requestParameters.repo, requestParameters.sha, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Gets the tree of a repository.
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {string} sha sha of the commit
-     * @param {boolean} [recursive] show all directories and files
-     * @param {number} [page] page number; the \&#39;truncated\&#39; field in the response will be true if there are still more items after this page, false if the last page
-     * @param {number} [perPage] number of items per page
+     * @param {RepositoryApiGetTreeRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public getTree(owner: string, repo: string, sha: string, recursive?: boolean, page?: number, perPage?: number, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).getTree(owner, repo, sha, recursive, page, perPage, options).then((request) => request(this.axios, this.basePath));
+    public getTree(requestParameters: RepositoryApiGetTreeRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).getTree(requestParameters.owner, requestParameters.repo, requestParameters.sha, requestParameters.recursive, requestParameters.page, requestParameters.perPage, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary List a repository\'s forks
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results
+     * @param {RepositoryApiListForksRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public listForks(owner: string, repo: string, page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).listForks(owner, repo, page, limit, options).then((request) => request(this.axios, this.basePath));
+    public listForks(requestParameters: RepositoryApiListForksRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).listForks(requestParameters.owner, requestParameters.repo, requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Reject a repo transfer
-     * @param {string} owner owner of the repo to transfer
-     * @param {string} repo name of the repo to transfer
+     * @param {RepositoryApiRejectRepoTransferRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public rejectRepoTransfer(owner: string, repo: string, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).rejectRepoTransfer(owner, repo, options).then((request) => request(this.axios, this.basePath));
+    public rejectRepoTransfer(requestParameters: RepositoryApiRejectRepoTransferRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).rejectRepoTransfer(requestParameters.owner, requestParameters.repo, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Add a collaborator to a repository
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {string} collaborator username of the collaborator to add
-     * @param {AddCollaboratorOption} [body] 
+     * @param {RepositoryApiRepoAddCollaboratorRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoAddCollaborator(owner: string, repo: string, collaborator: string, body?: AddCollaboratorOption, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoAddCollaborator(owner, repo, collaborator, body, options).then((request) => request(this.axios, this.basePath));
+    public repoAddCollaborator(requestParameters: RepositoryApiRepoAddCollaboratorRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoAddCollaborator(requestParameters.owner, requestParameters.repo, requestParameters.collaborator, requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Add a team to a repository
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {string} team team name
+     * @param {RepositoryApiRepoAddTeamRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoAddTeam(owner: string, repo: string, team: string, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoAddTeam(owner, repo, team, options).then((request) => request(this.axios, this.basePath));
+    public repoAddTeam(requestParameters: RepositoryApiRepoAddTeamRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoAddTeam(requestParameters.owner, requestParameters.repo, requestParameters.team, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Add a topic to a repository
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {string} topic name of the topic to add
+     * @param {RepositoryApiRepoAddTopicRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoAddTopic(owner: string, repo: string, topic: string, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoAddTopic(owner, repo, topic, options).then((request) => request(this.axios, this.basePath));
+    public repoAddTopic(requestParameters: RepositoryApiRepoAddTopicRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoAddTopic(requestParameters.owner, requestParameters.repo, requestParameters.topic, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Apply diff patch to repository
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {UpdateFileOptions} body 
+     * @param {RepositoryApiRepoApplyDiffPatchRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoApplyDiffPatch(owner: string, repo: string, body: UpdateFileOptions, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoApplyDiffPatch(owner, repo, body, options).then((request) => request(this.axios, this.basePath));
+    public repoApplyDiffPatch(requestParameters: RepositoryApiRepoApplyDiffPatchRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoApplyDiffPatch(requestParameters.owner, requestParameters.repo, requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Cancel the scheduled auto merge for the given pull request
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} index index of the pull request to merge
+     * @param {RepositoryApiRepoCancelScheduledAutoMergeRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoCancelScheduledAutoMerge(owner: string, repo: string, index: number, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoCancelScheduledAutoMerge(owner, repo, index, options).then((request) => request(this.axios, this.basePath));
+    public repoCancelScheduledAutoMerge(requestParameters: RepositoryApiRepoCancelScheduledAutoMergeRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoCancelScheduledAutoMerge(requestParameters.owner, requestParameters.repo, requestParameters.index, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Check if a user is a collaborator of a repository
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {string} collaborator username of the collaborator
+     * @param {RepositoryApiRepoCheckCollaboratorRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoCheckCollaborator(owner: string, repo: string, collaborator: string, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoCheckCollaborator(owner, repo, collaborator, options).then((request) => request(this.axios, this.basePath));
+    public repoCheckCollaborator(requestParameters: RepositoryApiRepoCheckCollaboratorRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoCheckCollaborator(requestParameters.owner, requestParameters.repo, requestParameters.collaborator, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Check if a team is assigned to a repository
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {string} team team name
+     * @param {RepositoryApiRepoCheckTeamRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoCheckTeam(owner: string, repo: string, team: string, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoCheckTeam(owner, repo, team, options).then((request) => request(this.axios, this.basePath));
+    public repoCheckTeam(requestParameters: RepositoryApiRepoCheckTeamRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoCheckTeam(requestParameters.owner, requestParameters.repo, requestParameters.team, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Create a branch
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {CreateBranchRepoOption} [body] 
+     * @param {RepositoryApiRepoCreateBranchRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoCreateBranch(owner: string, repo: string, body?: CreateBranchRepoOption, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoCreateBranch(owner, repo, body, options).then((request) => request(this.axios, this.basePath));
+    public repoCreateBranch(requestParameters: RepositoryApiRepoCreateBranchRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoCreateBranch(requestParameters.owner, requestParameters.repo, requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Create a branch protections for a repository
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {CreateBranchProtectionOption} [body] 
+     * @param {RepositoryApiRepoCreateBranchProtectionRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoCreateBranchProtection(owner: string, repo: string, body?: CreateBranchProtectionOption, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoCreateBranchProtection(owner, repo, body, options).then((request) => request(this.axios, this.basePath));
+    public repoCreateBranchProtection(requestParameters: RepositoryApiRepoCreateBranchProtectionRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoCreateBranchProtection(requestParameters.owner, requestParameters.repo, requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Create a file in a repository
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {string} filepath path of the file to create
-     * @param {CreateFileOptions} body 
+     * @param {RepositoryApiRepoCreateFileRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoCreateFile(owner: string, repo: string, filepath: string, body: CreateFileOptions, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoCreateFile(owner, repo, filepath, body, options).then((request) => request(this.axios, this.basePath));
+    public repoCreateFile(requestParameters: RepositoryApiRepoCreateFileRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoCreateFile(requestParameters.owner, requestParameters.repo, requestParameters.filepath, requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * Creates a reference for your repository. You are unable to create new references for empty repositories, even if the commit SHA-1 hash used exists. Empty repositories are repositories without branches.
      * @summary Create a reference
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {CreateGitRefOption} [body] 
+     * @param {RepositoryApiRepoCreateGitRefRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoCreateGitRef(owner: string, repo: string, body?: CreateGitRefOption, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoCreateGitRef(owner, repo, body, options).then((request) => request(this.axios, this.basePath));
+    public repoCreateGitRef(requestParameters: RepositoryApiRepoCreateGitRefRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoCreateGitRef(requestParameters.owner, requestParameters.repo, requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Create a hook
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {CreateHookOption} [body] 
+     * @param {RepositoryApiRepoCreateHookRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoCreateHook(owner: string, repo: string, body?: CreateHookOption, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoCreateHook(owner, repo, body, options).then((request) => request(this.axios, this.basePath));
+    public repoCreateHook(requestParameters: RepositoryApiRepoCreateHookRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoCreateHook(requestParameters.owner, requestParameters.repo, requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Add a key to a repository
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {CreateKeyOption} [body] 
+     * @param {RepositoryApiRepoCreateKeyRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoCreateKey(owner: string, repo: string, body?: CreateKeyOption, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoCreateKey(owner, repo, body, options).then((request) => request(this.axios, this.basePath));
+    public repoCreateKey(requestParameters: RepositoryApiRepoCreateKeyRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoCreateKey(requestParameters.owner, requestParameters.repo, requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Create a pull request
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {CreatePullRequestOption} [body] 
+     * @param {RepositoryApiRepoCreatePullRequestRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoCreatePullRequest(owner: string, repo: string, body?: CreatePullRequestOption, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoCreatePullRequest(owner, repo, body, options).then((request) => request(this.axios, this.basePath));
+    public repoCreatePullRequest(requestParameters: RepositoryApiRepoCreatePullRequestRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoCreatePullRequest(requestParameters.owner, requestParameters.repo, requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Create a review to an pull request
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} index index of the pull request
-     * @param {CreatePullReviewOptions} body 
+     * @param {RepositoryApiRepoCreatePullReviewRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoCreatePullReview(owner: string, repo: string, index: number, body: CreatePullReviewOptions, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoCreatePullReview(owner, repo, index, body, options).then((request) => request(this.axios, this.basePath));
+    public repoCreatePullReview(requestParameters: RepositoryApiRepoCreatePullReviewRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoCreatePullReview(requestParameters.owner, requestParameters.repo, requestParameters.index, requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary create review requests for a pull request
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} index index of the pull request
-     * @param {PullReviewRequestOptions} body 
+     * @param {RepositoryApiRepoCreatePullReviewRequestsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoCreatePullReviewRequests(owner: string, repo: string, index: number, body: PullReviewRequestOptions, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoCreatePullReviewRequests(owner, repo, index, body, options).then((request) => request(this.axios, this.basePath));
+    public repoCreatePullReviewRequests(requestParameters: RepositoryApiRepoCreatePullReviewRequestsRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoCreatePullReviewRequests(requestParameters.owner, requestParameters.repo, requestParameters.index, requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Create a release
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {CreateReleaseOption} [body] 
+     * @param {RepositoryApiRepoCreateReleaseRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoCreateRelease(owner: string, repo: string, body?: CreateReleaseOption, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoCreateRelease(owner, repo, body, options).then((request) => request(this.axios, this.basePath));
+    public repoCreateRelease(requestParameters: RepositoryApiRepoCreateReleaseRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoCreateRelease(requestParameters.owner, requestParameters.repo, requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Create a release attachment
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} id id of the release
-     * @param {File} attachment attachment to upload
-     * @param {string} [name] name of the attachment
+     * @param {RepositoryApiRepoCreateReleaseAttachmentRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoCreateReleaseAttachment(owner: string, repo: string, id: number, attachment: File, name?: string, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoCreateReleaseAttachment(owner, repo, id, attachment, name, options).then((request) => request(this.axios, this.basePath));
+    public repoCreateReleaseAttachment(requestParameters: RepositoryApiRepoCreateReleaseAttachmentRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoCreateReleaseAttachment(requestParameters.owner, requestParameters.repo, requestParameters.id, requestParameters.attachment, requestParameters.name, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Create a commit status
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {string} sha sha of the commit
-     * @param {CreateStatusOption} [body] 
+     * @param {RepositoryApiRepoCreateStatusRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoCreateStatus(owner: string, repo: string, sha: string, body?: CreateStatusOption, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoCreateStatus(owner, repo, sha, body, options).then((request) => request(this.axios, this.basePath));
+    public repoCreateStatus(requestParameters: RepositoryApiRepoCreateStatusRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoCreateStatus(requestParameters.owner, requestParameters.repo, requestParameters.sha, requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Create a new git tag in a repository
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {CreateTagOption} [body] 
+     * @param {RepositoryApiRepoCreateTagRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoCreateTag(owner: string, repo: string, body?: CreateTagOption, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoCreateTag(owner, repo, body, options).then((request) => request(this.axios, this.basePath));
+    public repoCreateTag(requestParameters: RepositoryApiRepoCreateTagRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoCreateTag(requestParameters.owner, requestParameters.repo, requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Create a wiki page
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {CreateWikiPageOptions} [body] 
+     * @param {RepositoryApiRepoCreateWikiPageRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoCreateWikiPage(owner: string, repo: string, body?: CreateWikiPageOptions, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoCreateWikiPage(owner, repo, body, options).then((request) => request(this.axios, this.basePath));
+    public repoCreateWikiPage(requestParameters: RepositoryApiRepoCreateWikiPageRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoCreateWikiPage(requestParameters.owner, requestParameters.repo, requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Delete a repository
-     * @param {string} owner owner of the repo to delete
-     * @param {string} repo name of the repo to delete
+     * @param {RepositoryApiRepoDeleteRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoDelete(owner: string, repo: string, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoDelete(owner, repo, options).then((request) => request(this.axios, this.basePath));
+    public repoDelete(requestParameters: RepositoryApiRepoDeleteRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoDelete(requestParameters.owner, requestParameters.repo, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Delete a specific branch from a repository
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {string} branch branch to delete
+     * @param {RepositoryApiRepoDeleteBranchRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoDeleteBranch(owner: string, repo: string, branch: string, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoDeleteBranch(owner, repo, branch, options).then((request) => request(this.axios, this.basePath));
+    public repoDeleteBranch(requestParameters: RepositoryApiRepoDeleteBranchRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoDeleteBranch(requestParameters.owner, requestParameters.repo, requestParameters.branch, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Delete a specific branch protection for the repository
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {string} name name of protected branch
+     * @param {RepositoryApiRepoDeleteBranchProtectionRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoDeleteBranchProtection(owner: string, repo: string, name: string, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoDeleteBranchProtection(owner, repo, name, options).then((request) => request(this.axios, this.basePath));
+    public repoDeleteBranchProtection(requestParameters: RepositoryApiRepoDeleteBranchProtectionRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoDeleteBranchProtection(requestParameters.owner, requestParameters.repo, requestParameters.name, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Delete a collaborator from a repository
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {string} collaborator username of the collaborator to delete
+     * @param {RepositoryApiRepoDeleteCollaboratorRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoDeleteCollaborator(owner: string, repo: string, collaborator: string, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoDeleteCollaborator(owner, repo, collaborator, options).then((request) => request(this.axios, this.basePath));
+    public repoDeleteCollaborator(requestParameters: RepositoryApiRepoDeleteCollaboratorRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoDeleteCollaborator(requestParameters.owner, requestParameters.repo, requestParameters.collaborator, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Delete a file in a repository
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {string} filepath path of the file to delete
-     * @param {DeleteFileOptions} body 
+     * @param {RepositoryApiRepoDeleteFileRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoDeleteFile(owner: string, repo: string, filepath: string, body: DeleteFileOptions, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoDeleteFile(owner, repo, filepath, body, options).then((request) => request(this.axios, this.basePath));
+    public repoDeleteFile(requestParameters: RepositoryApiRepoDeleteFileRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoDeleteFile(requestParameters.owner, requestParameters.repo, requestParameters.filepath, requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Delete a Git hook in a repository
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {string} id id of the hook to get
+     * @param {RepositoryApiRepoDeleteGitHookRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoDeleteGitHook(owner: string, repo: string, id: string, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoDeleteGitHook(owner, repo, id, options).then((request) => request(this.axios, this.basePath));
+    public repoDeleteGitHook(requestParameters: RepositoryApiRepoDeleteGitHookRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoDeleteGitHook(requestParameters.owner, requestParameters.repo, requestParameters.id, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Delete a reference
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {string} ref name of the ref to be deleted
+     * @param {RepositoryApiRepoDeleteGitRefRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoDeleteGitRef(owner: string, repo: string, ref: string, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoDeleteGitRef(owner, repo, ref, options).then((request) => request(this.axios, this.basePath));
+    public repoDeleteGitRef(requestParameters: RepositoryApiRepoDeleteGitRefRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoDeleteGitRef(requestParameters.owner, requestParameters.repo, requestParameters.ref, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Delete a hook in a repository
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} id id of the hook to delete
+     * @param {RepositoryApiRepoDeleteHookRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoDeleteHook(owner: string, repo: string, id: number, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoDeleteHook(owner, repo, id, options).then((request) => request(this.axios, this.basePath));
+    public repoDeleteHook(requestParameters: RepositoryApiRepoDeleteHookRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoDeleteHook(requestParameters.owner, requestParameters.repo, requestParameters.id, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Delete a key from a repository
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} id id of the key to delete
+     * @param {RepositoryApiRepoDeleteKeyRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoDeleteKey(owner: string, repo: string, id: number, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoDeleteKey(owner, repo, id, options).then((request) => request(this.axios, this.basePath));
+    public repoDeleteKey(requestParameters: RepositoryApiRepoDeleteKeyRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoDeleteKey(requestParameters.owner, requestParameters.repo, requestParameters.id, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Delete a specific review from a pull request
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} index index of the pull request
-     * @param {number} id id of the review
+     * @param {RepositoryApiRepoDeletePullReviewRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoDeletePullReview(owner: string, repo: string, index: number, id: number, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoDeletePullReview(owner, repo, index, id, options).then((request) => request(this.axios, this.basePath));
+    public repoDeletePullReview(requestParameters: RepositoryApiRepoDeletePullReviewRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoDeletePullReview(requestParameters.owner, requestParameters.repo, requestParameters.index, requestParameters.id, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary cancel review requests for a pull request
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} index index of the pull request
-     * @param {PullReviewRequestOptions} body 
+     * @param {RepositoryApiRepoDeletePullReviewRequestsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoDeletePullReviewRequests(owner: string, repo: string, index: number, body: PullReviewRequestOptions, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoDeletePullReviewRequests(owner, repo, index, body, options).then((request) => request(this.axios, this.basePath));
+    public repoDeletePullReviewRequests(requestParameters: RepositoryApiRepoDeletePullReviewRequestsRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoDeletePullReviewRequests(requestParameters.owner, requestParameters.repo, requestParameters.index, requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Delete a release
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} id id of the release to delete
+     * @param {RepositoryApiRepoDeleteReleaseRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoDeleteRelease(owner: string, repo: string, id: number, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoDeleteRelease(owner, repo, id, options).then((request) => request(this.axios, this.basePath));
+    public repoDeleteRelease(requestParameters: RepositoryApiRepoDeleteReleaseRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoDeleteRelease(requestParameters.owner, requestParameters.repo, requestParameters.id, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Delete a release attachment
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} id id of the release
-     * @param {number} attachmentId id of the attachment to delete
+     * @param {RepositoryApiRepoDeleteReleaseAttachmentRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoDeleteReleaseAttachment(owner: string, repo: string, id: number, attachmentId: number, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoDeleteReleaseAttachment(owner, repo, id, attachmentId, options).then((request) => request(this.axios, this.basePath));
+    public repoDeleteReleaseAttachment(requestParameters: RepositoryApiRepoDeleteReleaseAttachmentRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoDeleteReleaseAttachment(requestParameters.owner, requestParameters.repo, requestParameters.id, requestParameters.attachmentId, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Delete a release by tag name
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {string} tag tag name of the release to delete
+     * @param {RepositoryApiRepoDeleteReleaseByTagRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoDeleteReleaseByTag(owner: string, repo: string, tag: string, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoDeleteReleaseByTag(owner, repo, tag, options).then((request) => request(this.axios, this.basePath));
+    public repoDeleteReleaseByTag(requestParameters: RepositoryApiRepoDeleteReleaseByTagRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoDeleteReleaseByTag(requestParameters.owner, requestParameters.repo, requestParameters.tag, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Delete a repository\'s tag by name
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {string} tag name of tag to delete
+     * @param {RepositoryApiRepoDeleteTagRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoDeleteTag(owner: string, repo: string, tag: string, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoDeleteTag(owner, repo, tag, options).then((request) => request(this.axios, this.basePath));
+    public repoDeleteTag(requestParameters: RepositoryApiRepoDeleteTagRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoDeleteTag(requestParameters.owner, requestParameters.repo, requestParameters.tag, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Delete a team from a repository
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {string} team team name
+     * @param {RepositoryApiRepoDeleteTeamRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoDeleteTeam(owner: string, repo: string, team: string, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoDeleteTeam(owner, repo, team, options).then((request) => request(this.axios, this.basePath));
+    public repoDeleteTeam(requestParameters: RepositoryApiRepoDeleteTeamRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoDeleteTeam(requestParameters.owner, requestParameters.repo, requestParameters.team, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Delete a topic from a repository
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {string} topic name of the topic to delete
+     * @param {RepositoryApiRepoDeleteTopicRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoDeleteTopic(owner: string, repo: string, topic: string, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoDeleteTopic(owner, repo, topic, options).then((request) => request(this.axios, this.basePath));
+    public repoDeleteTopic(requestParameters: RepositoryApiRepoDeleteTopicRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoDeleteTopic(requestParameters.owner, requestParameters.repo, requestParameters.topic, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Delete a wiki page
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {string} pageName name of the page
+     * @param {RepositoryApiRepoDeleteWikiPageRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoDeleteWikiPage(owner: string, repo: string, pageName: string, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoDeleteWikiPage(owner, repo, pageName, options).then((request) => request(this.axios, this.basePath));
+    public repoDeleteWikiPage(requestParameters: RepositoryApiRepoDeleteWikiPageRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoDeleteWikiPage(requestParameters.owner, requestParameters.repo, requestParameters.pageName, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Dismiss a review for a pull request
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} index index of the pull request
-     * @param {number} id id of the review
-     * @param {DismissPullReviewOptions} body 
+     * @param {RepositoryApiRepoDismissPullReviewRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoDismissPullReview(owner: string, repo: string, index: number, id: number, body: DismissPullReviewOptions, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoDismissPullReview(owner, repo, index, id, body, options).then((request) => request(this.axios, this.basePath));
+    public repoDismissPullReview(requestParameters: RepositoryApiRepoDismissPullReviewRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoDismissPullReview(requestParameters.owner, requestParameters.repo, requestParameters.index, requestParameters.id, requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Get a commit\'s diff or patch
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {string} sha SHA of the commit to get
-     * @param {'diff' | 'patch'} diffType whether the output is diff or patch
+     * @param {RepositoryApiRepoDownloadCommitDiffOrPatchRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoDownloadCommitDiffOrPatch(owner: string, repo: string, sha: string, diffType: 'diff' | 'patch', options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoDownloadCommitDiffOrPatch(owner, repo, sha, diffType, options).then((request) => request(this.axios, this.basePath));
+    public repoDownloadCommitDiffOrPatch(requestParameters: RepositoryApiRepoDownloadCommitDiffOrPatchRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoDownloadCommitDiffOrPatch(requestParameters.owner, requestParameters.repo, requestParameters.sha, requestParameters.diffType, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Get a pull request diff or patch
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} index index of the pull request to get
-     * @param {'diff' | 'patch'} diffType whether the output is diff or patch
-     * @param {boolean} [binary] whether to include binary file changes. if true, the diff is applicable with &#x60;git apply&#x60;
+     * @param {RepositoryApiRepoDownloadPullDiffOrPatchRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoDownloadPullDiffOrPatch(owner: string, repo: string, index: number, diffType: 'diff' | 'patch', binary?: boolean, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoDownloadPullDiffOrPatch(owner, repo, index, diffType, binary, options).then((request) => request(this.axios, this.basePath));
+    public repoDownloadPullDiffOrPatch(requestParameters: RepositoryApiRepoDownloadPullDiffOrPatchRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoDownloadPullDiffOrPatch(requestParameters.owner, requestParameters.repo, requestParameters.index, requestParameters.diffType, requestParameters.binary, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Edit a repository\'s properties. Only fields that are set will be changed.
-     * @param {string} owner owner of the repo to edit
-     * @param {string} repo name of the repo to edit
-     * @param {EditRepoOption} [body] Properties of a repo that you can edit
+     * @param {RepositoryApiRepoEditRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoEdit(owner: string, repo: string, body?: EditRepoOption, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoEdit(owner, repo, body, options).then((request) => request(this.axios, this.basePath));
+    public repoEdit(requestParameters: RepositoryApiRepoEditRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoEdit(requestParameters.owner, requestParameters.repo, requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Edit a branch protections for a repository. Only fields that are set will be changed
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {string} name name of protected branch
-     * @param {EditBranchProtectionOption} [body] 
+     * @param {RepositoryApiRepoEditBranchProtectionRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoEditBranchProtection(owner: string, repo: string, name: string, body?: EditBranchProtectionOption, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoEditBranchProtection(owner, repo, name, body, options).then((request) => request(this.axios, this.basePath));
+    public repoEditBranchProtection(requestParameters: RepositoryApiRepoEditBranchProtectionRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoEditBranchProtection(requestParameters.owner, requestParameters.repo, requestParameters.name, requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Edit a Git hook in a repository
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {string} id id of the hook to get
-     * @param {EditGitHookOption} [body] 
+     * @param {RepositoryApiRepoEditGitHookRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoEditGitHook(owner: string, repo: string, id: string, body?: EditGitHookOption, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoEditGitHook(owner, repo, id, body, options).then((request) => request(this.axios, this.basePath));
+    public repoEditGitHook(requestParameters: RepositoryApiRepoEditGitHookRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoEditGitHook(requestParameters.owner, requestParameters.repo, requestParameters.id, requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Edit a hook in a repository
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} id index of the hook
-     * @param {EditHookOption} [body] 
+     * @param {RepositoryApiRepoEditHookRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoEditHook(owner: string, repo: string, id: number, body?: EditHookOption, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoEditHook(owner, repo, id, body, options).then((request) => request(this.axios, this.basePath));
+    public repoEditHook(requestParameters: RepositoryApiRepoEditHookRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoEditHook(requestParameters.owner, requestParameters.repo, requestParameters.id, requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Update a pull request. If using deadline only the date will be taken into account, and time of day ignored.
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} index index of the pull request to edit
-     * @param {EditPullRequestOption} [body] 
+     * @param {RepositoryApiRepoEditPullRequestRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoEditPullRequest(owner: string, repo: string, index: number, body?: EditPullRequestOption, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoEditPullRequest(owner, repo, index, body, options).then((request) => request(this.axios, this.basePath));
+    public repoEditPullRequest(requestParameters: RepositoryApiRepoEditPullRequestRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoEditPullRequest(requestParameters.owner, requestParameters.repo, requestParameters.index, requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Update a release
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} id id of the release to edit
-     * @param {EditReleaseOption} [body] 
+     * @param {RepositoryApiRepoEditReleaseRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoEditRelease(owner: string, repo: string, id: number, body?: EditReleaseOption, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoEditRelease(owner, repo, id, body, options).then((request) => request(this.axios, this.basePath));
+    public repoEditRelease(requestParameters: RepositoryApiRepoEditReleaseRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoEditRelease(requestParameters.owner, requestParameters.repo, requestParameters.id, requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Edit a release attachment
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} id id of the release
-     * @param {number} attachmentId id of the attachment to edit
-     * @param {EditAttachmentOptions} [body] 
+     * @param {RepositoryApiRepoEditReleaseAttachmentRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoEditReleaseAttachment(owner: string, repo: string, id: number, attachmentId: number, body?: EditAttachmentOptions, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoEditReleaseAttachment(owner, repo, id, attachmentId, body, options).then((request) => request(this.axios, this.basePath));
+    public repoEditReleaseAttachment(requestParameters: RepositoryApiRepoEditReleaseAttachmentRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoEditReleaseAttachment(requestParameters.owner, requestParameters.repo, requestParameters.id, requestParameters.attachmentId, requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Edit a wiki page
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {string} pageName name of the page
-     * @param {CreateWikiPageOptions} [body] 
+     * @param {RepositoryApiRepoEditWikiPageRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoEditWikiPage(owner: string, repo: string, pageName: string, body?: CreateWikiPageOptions, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoEditWikiPage(owner, repo, pageName, body, options).then((request) => request(this.axios, this.basePath));
+    public repoEditWikiPage(requestParameters: RepositoryApiRepoEditWikiPageRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoEditWikiPage(requestParameters.owner, requestParameters.repo, requestParameters.pageName, requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Get a repository
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
+     * @param {RepositoryApiRepoGetRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoGet(owner: string, repo: string, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoGet(owner, repo, options).then((request) => request(this.axios, this.basePath));
+    public repoGet(requestParameters: RepositoryApiRepoGetRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoGet(requestParameters.owner, requestParameters.repo, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Get a list of all commits from a repository
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {string} [sha] SHA or branch to start listing commits from (usually \&#39;master\&#39;)
-     * @param {string} [path] filepath of a file/dir
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results (ignored if used with \&#39;path\&#39;)
+     * @param {RepositoryApiRepoGetAllCommitsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoGetAllCommits(owner: string, repo: string, sha?: string, path?: string, page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoGetAllCommits(owner, repo, sha, path, page, limit, options).then((request) => request(this.axios, this.basePath));
+    public repoGetAllCommits(requestParameters: RepositoryApiRepoGetAllCommitsRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoGetAllCommits(requestParameters.owner, requestParameters.repo, requestParameters.sha, requestParameters.path, requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Get an archive of a repository
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {string} archive the git reference for download with attached archive format (e.g. master.zip)
+     * @param {RepositoryApiRepoGetArchiveRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoGetArchive(owner: string, repo: string, archive: string, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoGetArchive(owner, repo, archive, options).then((request) => request(this.axios, this.basePath));
+    public repoGetArchive(requestParameters: RepositoryApiRepoGetArchiveRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoGetArchive(requestParameters.owner, requestParameters.repo, requestParameters.archive, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Return all users that have write access and can be assigned to issues
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
+     * @param {RepositoryApiRepoGetAssigneesRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoGetAssignees(owner: string, repo: string, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoGetAssignees(owner, repo, options).then((request) => request(this.axios, this.basePath));
+    public repoGetAssignees(requestParameters: RepositoryApiRepoGetAssigneesRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoGetAssignees(requestParameters.owner, requestParameters.repo, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Retrieve a specific branch from a repository, including its effective branch protection
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {string} branch branch to get
+     * @param {RepositoryApiRepoGetBranchRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoGetBranch(owner: string, repo: string, branch: string, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoGetBranch(owner, repo, branch, options).then((request) => request(this.axios, this.basePath));
+    public repoGetBranch(requestParameters: RepositoryApiRepoGetBranchRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoGetBranch(requestParameters.owner, requestParameters.repo, requestParameters.branch, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Get a specific branch protection for the repository
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {string} name name of protected branch
+     * @param {RepositoryApiRepoGetBranchProtectionRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoGetBranchProtection(owner: string, repo: string, name: string, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoGetBranchProtection(owner, repo, name, options).then((request) => request(this.axios, this.basePath));
+    public repoGetBranchProtection(requestParameters: RepositoryApiRepoGetBranchProtectionRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoGetBranchProtection(requestParameters.owner, requestParameters.repo, requestParameters.name, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Get a repository by id
-     * @param {number} id id of the repo to get
+     * @param {RepositoryApiRepoGetByIDRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoGetByID(id: number, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoGetByID(id, options).then((request) => request(this.axios, this.basePath));
+    public repoGetByID(requestParameters: RepositoryApiRepoGetByIDRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoGetByID(requestParameters.id, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Get a commit\'s combined status, by branch/tag/commit reference
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {string} ref name of branch/tag/commit
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results
+     * @param {RepositoryApiRepoGetCombinedStatusByRefRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoGetCombinedStatusByRef(owner: string, repo: string, ref: string, page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoGetCombinedStatusByRef(owner, repo, ref, page, limit, options).then((request) => request(this.axios, this.basePath));
+    public repoGetCombinedStatusByRef(requestParameters: RepositoryApiRepoGetCombinedStatusByRefRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoGetCombinedStatusByRef(requestParameters.owner, requestParameters.repo, requestParameters.ref, requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Gets the metadata and contents (if a file) of an entry in a repository, or a list of entries if a dir
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {string} filepath path of the dir, file, symlink or submodule in the repo
-     * @param {string} [ref] The name of the commit/branch/tag. Default the repository’s default branch (usually master)
+     * @param {RepositoryApiRepoGetContentsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoGetContents(owner: string, repo: string, filepath: string, ref?: string, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoGetContents(owner, repo, filepath, ref, options).then((request) => request(this.axios, this.basePath));
+    public repoGetContents(requestParameters: RepositoryApiRepoGetContentsRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoGetContents(requestParameters.owner, requestParameters.repo, requestParameters.filepath, requestParameters.ref, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Gets the metadata of all the entries of the root dir
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {string} [ref] The name of the commit/branch/tag. Default the repository’s default branch (usually master)
+     * @param {RepositoryApiRepoGetContentsListRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoGetContentsList(owner: string, repo: string, ref?: string, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoGetContentsList(owner, repo, ref, options).then((request) => request(this.axios, this.basePath));
+    public repoGetContentsList(requestParameters: RepositoryApiRepoGetContentsListRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoGetContentsList(requestParameters.owner, requestParameters.repo, requestParameters.ref, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Get the EditorConfig definitions of a file in a repository
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {string} filepath filepath of file to get
-     * @param {string} [ref] The name of the commit/branch/tag. Default the repository’s default branch (usually master)
+     * @param {RepositoryApiRepoGetEditorConfigRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoGetEditorConfig(owner: string, repo: string, filepath: string, ref?: string, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoGetEditorConfig(owner, repo, filepath, ref, options).then((request) => request(this.axios, this.basePath));
+    public repoGetEditorConfig(requestParameters: RepositoryApiRepoGetEditorConfigRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoGetEditorConfig(requestParameters.owner, requestParameters.repo, requestParameters.filepath, requestParameters.ref, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Get a Git hook
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {string} id id of the hook to get
+     * @param {RepositoryApiRepoGetGitHookRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoGetGitHook(owner: string, repo: string, id: string, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoGetGitHook(owner, repo, id, options).then((request) => request(this.axios, this.basePath));
+    public repoGetGitHook(requestParameters: RepositoryApiRepoGetGitHookRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoGetGitHook(requestParameters.owner, requestParameters.repo, requestParameters.id, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Get a hook
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} id id of the hook to get
+     * @param {RepositoryApiRepoGetHookRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoGetHook(owner: string, repo: string, id: number, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoGetHook(owner, repo, id, options).then((request) => request(this.axios, this.basePath));
+    public repoGetHook(requestParameters: RepositoryApiRepoGetHookRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoGetHook(requestParameters.owner, requestParameters.repo, requestParameters.id, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Get available issue templates for a repository
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
+     * @param {RepositoryApiRepoGetIssueTemplatesRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoGetIssueTemplates(owner: string, repo: string, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoGetIssueTemplates(owner, repo, options).then((request) => request(this.axios, this.basePath));
+    public repoGetIssueTemplates(requestParameters: RepositoryApiRepoGetIssueTemplatesRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoGetIssueTemplates(requestParameters.owner, requestParameters.repo, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Get a repository\'s key by id
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} id id of the key to get
+     * @param {RepositoryApiRepoGetKeyRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoGetKey(owner: string, repo: string, id: number, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoGetKey(owner, repo, id, options).then((request) => request(this.axios, this.basePath));
+    public repoGetKey(requestParameters: RepositoryApiRepoGetKeyRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoGetKey(requestParameters.owner, requestParameters.repo, requestParameters.id, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Get languages and number of bytes of code written
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
+     * @param {RepositoryApiRepoGetLanguagesRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoGetLanguages(owner: string, repo: string, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoGetLanguages(owner, repo, options).then((request) => request(this.axios, this.basePath));
+    public repoGetLanguages(requestParameters: RepositoryApiRepoGetLanguagesRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoGetLanguages(requestParameters.owner, requestParameters.repo, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Get a note corresponding to a single commit from a repository
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {string} sha a git ref or commit sha
+     * @param {RepositoryApiRepoGetNoteRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoGetNote(owner: string, repo: string, sha: string, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoGetNote(owner, repo, sha, options).then((request) => request(this.axios, this.basePath));
+    public repoGetNote(requestParameters: RepositoryApiRepoGetNoteRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoGetNote(requestParameters.owner, requestParameters.repo, requestParameters.sha, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Get a pull request
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} index index of the pull request to get
+     * @param {RepositoryApiRepoGetPullRequestRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoGetPullRequest(owner: string, repo: string, index: number, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoGetPullRequest(owner, repo, index, options).then((request) => request(this.axios, this.basePath));
+    public repoGetPullRequest(requestParameters: RepositoryApiRepoGetPullRequestRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoGetPullRequest(requestParameters.owner, requestParameters.repo, requestParameters.index, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Get commits for a pull request
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} index index of the pull request to get
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results
+     * @param {RepositoryApiRepoGetPullRequestCommitsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoGetPullRequestCommits(owner: string, repo: string, index: number, page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoGetPullRequestCommits(owner, repo, index, page, limit, options).then((request) => request(this.axios, this.basePath));
+    public repoGetPullRequestCommits(requestParameters: RepositoryApiRepoGetPullRequestCommitsRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoGetPullRequestCommits(requestParameters.owner, requestParameters.repo, requestParameters.index, requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Get a specific review for a pull request
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} index index of the pull request
-     * @param {number} id id of the review
+     * @param {RepositoryApiRepoGetPullReviewRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoGetPullReview(owner: string, repo: string, index: number, id: number, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoGetPullReview(owner, repo, index, id, options).then((request) => request(this.axios, this.basePath));
+    public repoGetPullReview(requestParameters: RepositoryApiRepoGetPullReviewRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoGetPullReview(requestParameters.owner, requestParameters.repo, requestParameters.index, requestParameters.id, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Get a specific review for a pull request
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} index index of the pull request
-     * @param {number} id id of the review
+     * @param {RepositoryApiRepoGetPullReviewCommentsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoGetPullReviewComments(owner: string, repo: string, index: number, id: number, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoGetPullReviewComments(owner, repo, index, id, options).then((request) => request(this.axios, this.basePath));
+    public repoGetPullReviewComments(requestParameters: RepositoryApiRepoGetPullReviewCommentsRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoGetPullReviewComments(requestParameters.owner, requestParameters.repo, requestParameters.index, requestParameters.id, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Get a file from a repository
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {string} filepath filepath of the file to get
-     * @param {string} [ref] The name of the commit/branch/tag. Default the repository’s default branch (usually master)
+     * @param {RepositoryApiRepoGetRawFileRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoGetRawFile(owner: string, repo: string, filepath: string, ref?: string, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoGetRawFile(owner, repo, filepath, ref, options).then((request) => request(this.axios, this.basePath));
+    public repoGetRawFile(requestParameters: RepositoryApiRepoGetRawFileRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoGetRawFile(requestParameters.owner, requestParameters.repo, requestParameters.filepath, requestParameters.ref, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Get a file or it\'s LFS object from a repository
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {string} filepath filepath of the file to get
-     * @param {string} [ref] The name of the commit/branch/tag. Default the repository’s default branch (usually master)
+     * @param {RepositoryApiRepoGetRawFileOrLFSRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoGetRawFileOrLFS(owner: string, repo: string, filepath: string, ref?: string, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoGetRawFileOrLFS(owner, repo, filepath, ref, options).then((request) => request(this.axios, this.basePath));
+    public repoGetRawFileOrLFS(requestParameters: RepositoryApiRepoGetRawFileOrLFSRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoGetRawFileOrLFS(requestParameters.owner, requestParameters.repo, requestParameters.filepath, requestParameters.ref, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Get a release
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} id id of the release to get
+     * @param {RepositoryApiRepoGetReleaseRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoGetRelease(owner: string, repo: string, id: number, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoGetRelease(owner, repo, id, options).then((request) => request(this.axios, this.basePath));
+    public repoGetRelease(requestParameters: RepositoryApiRepoGetReleaseRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoGetRelease(requestParameters.owner, requestParameters.repo, requestParameters.id, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Get a release attachment
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} id id of the release
-     * @param {number} attachmentId id of the attachment to get
+     * @param {RepositoryApiRepoGetReleaseAttachmentRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoGetReleaseAttachment(owner: string, repo: string, id: number, attachmentId: number, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoGetReleaseAttachment(owner, repo, id, attachmentId, options).then((request) => request(this.axios, this.basePath));
+    public repoGetReleaseAttachment(requestParameters: RepositoryApiRepoGetReleaseAttachmentRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoGetReleaseAttachment(requestParameters.owner, requestParameters.repo, requestParameters.id, requestParameters.attachmentId, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Get a release by tag name
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {string} tag tag name of the release to get
+     * @param {RepositoryApiRepoGetReleaseByTagRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoGetReleaseByTag(owner: string, repo: string, tag: string, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoGetReleaseByTag(owner, repo, tag, options).then((request) => request(this.axios, this.basePath));
+    public repoGetReleaseByTag(requestParameters: RepositoryApiRepoGetReleaseByTagRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoGetReleaseByTag(requestParameters.owner, requestParameters.repo, requestParameters.tag, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Get repository permissions for a user
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {string} collaborator username of the collaborator
+     * @param {RepositoryApiRepoGetRepoPermissionsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoGetRepoPermissions(owner: string, repo: string, collaborator: string, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoGetRepoPermissions(owner, repo, collaborator, options).then((request) => request(this.axios, this.basePath));
+    public repoGetRepoPermissions(requestParameters: RepositoryApiRepoGetRepoPermissionsRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoGetRepoPermissions(requestParameters.owner, requestParameters.repo, requestParameters.collaborator, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Return all users that can be requested to review in this repo
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
+     * @param {RepositoryApiRepoGetReviewersRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoGetReviewers(owner: string, repo: string, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoGetReviewers(owner, repo, options).then((request) => request(this.axios, this.basePath));
+    public repoGetReviewers(requestParameters: RepositoryApiRepoGetReviewersRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoGetReviewers(requestParameters.owner, requestParameters.repo, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Get a single commit from a repository
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {string} sha a git ref or commit sha
+     * @param {RepositoryApiRepoGetSingleCommitRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoGetSingleCommit(owner: string, repo: string, sha: string, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoGetSingleCommit(owner, repo, sha, options).then((request) => request(this.axios, this.basePath));
+    public repoGetSingleCommit(requestParameters: RepositoryApiRepoGetSingleCommitRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoGetSingleCommit(requestParameters.owner, requestParameters.repo, requestParameters.sha, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Get the tag of a repository by tag name
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {string} tag name of tag
+     * @param {RepositoryApiRepoGetTagRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoGetTag(owner: string, repo: string, tag: string, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoGetTag(owner, repo, tag, options).then((request) => request(this.axios, this.basePath));
+    public repoGetTag(requestParameters: RepositoryApiRepoGetTagRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoGetTag(requestParameters.owner, requestParameters.repo, requestParameters.tag, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Get a wiki page
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {string} pageName name of the page
+     * @param {RepositoryApiRepoGetWikiPageRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoGetWikiPage(owner: string, repo: string, pageName: string, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoGetWikiPage(owner, repo, pageName, options).then((request) => request(this.axios, this.basePath));
+    public repoGetWikiPage(requestParameters: RepositoryApiRepoGetWikiPageRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoGetWikiPage(requestParameters.owner, requestParameters.repo, requestParameters.pageName, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Get revisions of a wiki page
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {string} pageName name of the page
-     * @param {number} [page] page number of results to return (1-based)
+     * @param {RepositoryApiRepoGetWikiPageRevisionsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoGetWikiPageRevisions(owner: string, repo: string, pageName: string, page?: number, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoGetWikiPageRevisions(owner, repo, pageName, page, options).then((request) => request(this.axios, this.basePath));
+    public repoGetWikiPageRevisions(requestParameters: RepositoryApiRepoGetWikiPageRevisionsRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoGetWikiPageRevisions(requestParameters.owner, requestParameters.repo, requestParameters.pageName, requestParameters.page, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Get all wiki pages
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results
+     * @param {RepositoryApiRepoGetWikiPagesRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoGetWikiPages(owner: string, repo: string, page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoGetWikiPages(owner, repo, page, limit, options).then((request) => request(this.axios, this.basePath));
+    public repoGetWikiPages(requestParameters: RepositoryApiRepoGetWikiPagesRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoGetWikiPages(requestParameters.owner, requestParameters.repo, requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Get specified ref or filtered repository\'s refs
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
+     * @param {RepositoryApiRepoListAllGitRefsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoListAllGitRefs(owner: string, repo: string, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoListAllGitRefs(owner, repo, options).then((request) => request(this.axios, this.basePath));
+    public repoListAllGitRefs(requestParameters: RepositoryApiRepoListAllGitRefsRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoListAllGitRefs(requestParameters.owner, requestParameters.repo, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary List branch protections for a repository
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
+     * @param {RepositoryApiRepoListBranchProtectionRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoListBranchProtection(owner: string, repo: string, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoListBranchProtection(owner, repo, options).then((request) => request(this.axios, this.basePath));
+    public repoListBranchProtection(requestParameters: RepositoryApiRepoListBranchProtectionRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoListBranchProtection(requestParameters.owner, requestParameters.repo, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary List a repository\'s branches
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results
+     * @param {RepositoryApiRepoListBranchesRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoListBranches(owner: string, repo: string, page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoListBranches(owner, repo, page, limit, options).then((request) => request(this.axios, this.basePath));
+    public repoListBranches(requestParameters: RepositoryApiRepoListBranchesRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoListBranches(requestParameters.owner, requestParameters.repo, requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary List a repository\'s collaborators
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results
+     * @param {RepositoryApiRepoListCollaboratorsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoListCollaborators(owner: string, repo: string, page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoListCollaborators(owner, repo, page, limit, options).then((request) => request(this.axios, this.basePath));
+    public repoListCollaborators(requestParameters: RepositoryApiRepoListCollaboratorsRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoListCollaborators(requestParameters.owner, requestParameters.repo, requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary List the Git hooks in a repository
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
+     * @param {RepositoryApiRepoListGitHooksRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoListGitHooks(owner: string, repo: string, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoListGitHooks(owner, repo, options).then((request) => request(this.axios, this.basePath));
+    public repoListGitHooks(requestParameters: RepositoryApiRepoListGitHooksRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoListGitHooks(requestParameters.owner, requestParameters.repo, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Get specified ref or filtered repository\'s refs
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {string} ref part or full name of the ref
+     * @param {RepositoryApiRepoListGitRefsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoListGitRefs(owner: string, repo: string, ref: string, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoListGitRefs(owner, repo, ref, options).then((request) => request(this.axios, this.basePath));
+    public repoListGitRefs(requestParameters: RepositoryApiRepoListGitRefsRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoListGitRefs(requestParameters.owner, requestParameters.repo, requestParameters.ref, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary List the hooks in a repository
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results
+     * @param {RepositoryApiRepoListHooksRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoListHooks(owner: string, repo: string, page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoListHooks(owner, repo, page, limit, options).then((request) => request(this.axios, this.basePath));
+    public repoListHooks(requestParameters: RepositoryApiRepoListHooksRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoListHooks(requestParameters.owner, requestParameters.repo, requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary List a repository\'s keys
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} [keyId] the key_id to search for
-     * @param {string} [fingerprint] fingerprint of the key
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results
+     * @param {RepositoryApiRepoListKeysRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoListKeys(owner: string, repo: string, keyId?: number, fingerprint?: string, page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoListKeys(owner, repo, keyId, fingerprint, page, limit, options).then((request) => request(this.axios, this.basePath));
+    public repoListKeys(requestParameters: RepositoryApiRepoListKeysRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoListKeys(requestParameters.owner, requestParameters.repo, requestParameters.keyId, requestParameters.fingerprint, requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary List a repo\'s pull requests
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {'closed' | 'open' | 'all'} [state] State of pull request: open or closed (optional)
-     * @param {'oldest' | 'recentupdate' | 'leastupdate' | 'mostcomment' | 'leastcomment' | 'priority'} [sort] Type of sort
-     * @param {number} [milestone] ID of the milestone
-     * @param {Array<number>} [labels] Label IDs
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results
+     * @param {RepositoryApiRepoListPullRequestsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoListPullRequests(owner: string, repo: string, state?: 'closed' | 'open' | 'all', sort?: 'oldest' | 'recentupdate' | 'leastupdate' | 'mostcomment' | 'leastcomment' | 'priority', milestone?: number, labels?: Array<number>, page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoListPullRequests(owner, repo, state, sort, milestone, labels, page, limit, options).then((request) => request(this.axios, this.basePath));
+    public repoListPullRequests(requestParameters: RepositoryApiRepoListPullRequestsRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoListPullRequests(requestParameters.owner, requestParameters.repo, requestParameters.state, requestParameters.sort, requestParameters.milestone, requestParameters.labels, requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary List all reviews for a pull request
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} index index of the pull request
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results
+     * @param {RepositoryApiRepoListPullReviewsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoListPullReviews(owner: string, repo: string, index: number, page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoListPullReviews(owner, repo, index, page, limit, options).then((request) => request(this.axios, this.basePath));
+    public repoListPullReviews(requestParameters: RepositoryApiRepoListPullReviewsRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoListPullReviews(requestParameters.owner, requestParameters.repo, requestParameters.index, requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary List release\'s attachments
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} id id of the release
+     * @param {RepositoryApiRepoListReleaseAttachmentsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoListReleaseAttachments(owner: string, repo: string, id: number, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoListReleaseAttachments(owner, repo, id, options).then((request) => request(this.axios, this.basePath));
+    public repoListReleaseAttachments(requestParameters: RepositoryApiRepoListReleaseAttachmentsRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoListReleaseAttachments(requestParameters.owner, requestParameters.repo, requestParameters.id, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary List a repo\'s releases
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {boolean} [draft] filter (exclude / include) drafts, if you dont have repo write access none will show
-     * @param {boolean} [preRelease] filter (exclude / include) pre-releases
-     * @param {number} [perPage] page size of results, deprecated - use limit
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results
+     * @param {RepositoryApiRepoListReleasesRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoListReleases(owner: string, repo: string, draft?: boolean, preRelease?: boolean, perPage?: number, page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoListReleases(owner, repo, draft, preRelease, perPage, page, limit, options).then((request) => request(this.axios, this.basePath));
+    public repoListReleases(requestParameters: RepositoryApiRepoListReleasesRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoListReleases(requestParameters.owner, requestParameters.repo, requestParameters.draft, requestParameters.preRelease, requestParameters.perPage, requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary List a repo\'s stargazers
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results
+     * @param {RepositoryApiRepoListStargazersRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoListStargazers(owner: string, repo: string, page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoListStargazers(owner, repo, page, limit, options).then((request) => request(this.axios, this.basePath));
+    public repoListStargazers(requestParameters: RepositoryApiRepoListStargazersRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoListStargazers(requestParameters.owner, requestParameters.repo, requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Get a commit\'s statuses
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {string} sha sha of the commit
-     * @param {'oldest' | 'recentupdate' | 'leastupdate' | 'leastindex' | 'highestindex'} [sort] type of sort
-     * @param {'pending' | 'success' | 'error' | 'failure' | 'warning'} [state] type of state
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results
+     * @param {RepositoryApiRepoListStatusesRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoListStatuses(owner: string, repo: string, sha: string, sort?: 'oldest' | 'recentupdate' | 'leastupdate' | 'leastindex' | 'highestindex', state?: 'pending' | 'success' | 'error' | 'failure' | 'warning', page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoListStatuses(owner, repo, sha, sort, state, page, limit, options).then((request) => request(this.axios, this.basePath));
+    public repoListStatuses(requestParameters: RepositoryApiRepoListStatusesRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoListStatuses(requestParameters.owner, requestParameters.repo, requestParameters.sha, requestParameters.sort, requestParameters.state, requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Get a commit\'s statuses, by branch/tag/commit reference
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {string} ref name of branch/tag/commit
-     * @param {'oldest' | 'recentupdate' | 'leastupdate' | 'leastindex' | 'highestindex'} [sort] type of sort
-     * @param {'pending' | 'success' | 'error' | 'failure' | 'warning'} [state] type of state
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results
+     * @param {RepositoryApiRepoListStatusesByRefRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoListStatusesByRef(owner: string, repo: string, ref: string, sort?: 'oldest' | 'recentupdate' | 'leastupdate' | 'leastindex' | 'highestindex', state?: 'pending' | 'success' | 'error' | 'failure' | 'warning', page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoListStatusesByRef(owner, repo, ref, sort, state, page, limit, options).then((request) => request(this.axios, this.basePath));
+    public repoListStatusesByRef(requestParameters: RepositoryApiRepoListStatusesByRefRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoListStatusesByRef(requestParameters.owner, requestParameters.repo, requestParameters.ref, requestParameters.sort, requestParameters.state, requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary List a repo\'s watchers
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results
+     * @param {RepositoryApiRepoListSubscribersRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoListSubscribers(owner: string, repo: string, page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoListSubscribers(owner, repo, page, limit, options).then((request) => request(this.axios, this.basePath));
+    public repoListSubscribers(requestParameters: RepositoryApiRepoListSubscribersRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoListSubscribers(requestParameters.owner, requestParameters.repo, requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary List a repository\'s tags
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results, default maximum page size is 50
+     * @param {RepositoryApiRepoListTagsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoListTags(owner: string, repo: string, page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoListTags(owner, repo, page, limit, options).then((request) => request(this.axios, this.basePath));
+    public repoListTags(requestParameters: RepositoryApiRepoListTagsRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoListTags(requestParameters.owner, requestParameters.repo, requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary List a repository\'s teams
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
+     * @param {RepositoryApiRepoListTeamsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoListTeams(owner: string, repo: string, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoListTeams(owner, repo, options).then((request) => request(this.axios, this.basePath));
+    public repoListTeams(requestParameters: RepositoryApiRepoListTeamsRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoListTeams(requestParameters.owner, requestParameters.repo, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Get list of topics that a repository has
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results
+     * @param {RepositoryApiRepoListTopicsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoListTopics(owner: string, repo: string, page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoListTopics(owner, repo, page, limit, options).then((request) => request(this.axios, this.basePath));
+    public repoListTopics(requestParameters: RepositoryApiRepoListTopicsRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoListTopics(requestParameters.owner, requestParameters.repo, requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Merge a pull request
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} index index of the pull request to merge
-     * @param {MergePullRequestOption} [body] 
+     * @param {RepositoryApiRepoMergePullRequestRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoMergePullRequest(owner: string, repo: string, index: number, body?: MergePullRequestOption, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoMergePullRequest(owner, repo, index, body, options).then((request) => request(this.axios, this.basePath));
+    public repoMergePullRequest(requestParameters: RepositoryApiRepoMergePullRequestRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoMergePullRequest(requestParameters.owner, requestParameters.repo, requestParameters.index, requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Migrate a remote git repository
-     * @param {MigrateRepoOptions} [body] 
+     * @param {RepositoryApiRepoMigrateRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoMigrate(body?: MigrateRepoOptions, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoMigrate(body, options).then((request) => request(this.axios, this.basePath));
+    public repoMigrate(requestParameters: RepositoryApiRepoMigrateRequest = {}, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoMigrate(requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Sync a mirrored repository
-     * @param {string} owner owner of the repo to sync
-     * @param {string} repo name of the repo to sync
+     * @param {RepositoryApiRepoMirrorSyncRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoMirrorSync(owner: string, repo: string, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoMirrorSync(owner, repo, options).then((request) => request(this.axios, this.basePath));
+    public repoMirrorSync(requestParameters: RepositoryApiRepoMirrorSyncRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoMirrorSync(requestParameters.owner, requestParameters.repo, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Check if a pull request has been merged
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} index index of the pull request
+     * @param {RepositoryApiRepoPullRequestIsMergedRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoPullRequestIsMerged(owner: string, repo: string, index: number, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoPullRequestIsMerged(owner, repo, index, options).then((request) => request(this.axios, this.basePath));
+    public repoPullRequestIsMerged(requestParameters: RepositoryApiRepoPullRequestIsMergedRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoPullRequestIsMerged(requestParameters.owner, requestParameters.repo, requestParameters.index, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Search for repositories
-     * @param {string} [q] keyword
-     * @param {boolean} [topic] Limit search to repositories with keyword as topic
-     * @param {boolean} [includeDesc] include search of keyword within repository description (defaults to false)
-     * @param {number} [uid] search only for repos that the user with the given id owns or contributes to
-     * @param {number} [priorityOwnerId] repo owner to prioritize in the results
-     * @param {number} [teamId] search only for repos that belong to the given team id
-     * @param {number} [starredBy] search only for repos that the user with the given id has starred
-     * @param {boolean} [_private] include private repositories this user has access to (defaults to true)
-     * @param {boolean} [isPrivate] show only pubic, private or all repositories (defaults to all)
-     * @param {boolean} [template] include template repositories this user has access to (defaults to true)
-     * @param {boolean} [archived] show only archived, non-archived or all repositories (defaults to all)
-     * @param {string} [mode] type of repository to search for. Supported values are \&quot;fork\&quot;, \&quot;source\&quot;, \&quot;mirror\&quot; and \&quot;collaborative\&quot;
-     * @param {boolean} [exclusive] if &#x60;uid&#x60; is given, search only for repos that the user owns
-     * @param {string} [repo] name of the repo. Multiple repo\&#39;s are ORed.
-     * @param {string} [owner] owner of the repo. Multiple owner\&#39;s are ORed.
-     * @param {string} [lang] If the repo is a resource of the given language(s), the repo will be in the results. Multiple lang\&#39;s are ORed.
-     * @param {string} [subject] resource subject. Multiple subject\&#39;s are ORed.
-     * @param {string} [book] book (project id) that exist in a resource. If the resource contains the the book, its repository will be included in the results. Multiple book\&#39;s are ORed.
-     * @param {boolean} [includeMetadata] if false, q value will only be searched for in the repo name, owner, description and title and subject; otherwise search all values of the manifest file. (defaults to false)
-     * @param {string} [sort] sort repos by attribute. Supported values are \&quot;alpha\&quot;, \&quot;created\&quot;, \&quot;updated\&quot;, \&quot;size\&quot;, and \&quot;id\&quot;. Default is \&quot;alpha\&quot;
-     * @param {string} [order] sort order, either \&quot;asc\&quot; (ascending) or \&quot;desc\&quot; (descending). Default is \&quot;asc\&quot;, ignored if \&quot;sort\&quot; is not specified.
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results
+     * @param {RepositoryApiRepoSearchRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoSearch(q?: string, topic?: boolean, includeDesc?: boolean, uid?: number, priorityOwnerId?: number, teamId?: number, starredBy?: number, _private?: boolean, isPrivate?: boolean, template?: boolean, archived?: boolean, mode?: string, exclusive?: boolean, repo?: string, owner?: string, lang?: string, subject?: string, book?: string, includeMetadata?: boolean, sort?: string, order?: string, page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoSearch(q, topic, includeDesc, uid, priorityOwnerId, teamId, starredBy, _private, isPrivate, template, archived, mode, exclusive, repo, owner, lang, subject, book, includeMetadata, sort, order, page, limit, options).then((request) => request(this.axios, this.basePath));
+    public repoSearch(requestParameters: RepositoryApiRepoSearchRequest = {}, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoSearch(requestParameters.q, requestParameters.topic, requestParameters.includeDesc, requestParameters.uid, requestParameters.priorityOwnerId, requestParameters.teamId, requestParameters.starredBy, requestParameters._private, requestParameters.isPrivate, requestParameters.template, requestParameters.archived, requestParameters.mode, requestParameters.exclusive, requestParameters.repo, requestParameters.owner, requestParameters.lang, requestParameters.subject, requestParameters.book, requestParameters.includeMetadata, requestParameters.sort, requestParameters.order, requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Get signing-key.gpg for given repository
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
+     * @param {RepositoryApiRepoSigningKeyRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoSigningKey(owner: string, repo: string, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoSigningKey(owner, repo, options).then((request) => request(this.axios, this.basePath));
+    public repoSigningKey(requestParameters: RepositoryApiRepoSigningKeyRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoSigningKey(requestParameters.owner, requestParameters.repo, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Submit a pending review to an pull request
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} index index of the pull request
-     * @param {number} id id of the review
-     * @param {SubmitPullReviewOptions} body 
+     * @param {RepositoryApiRepoSubmitPullReviewRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoSubmitPullReview(owner: string, repo: string, index: number, id: number, body: SubmitPullReviewOptions, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoSubmitPullReview(owner, repo, index, id, body, options).then((request) => request(this.axios, this.basePath));
+    public repoSubmitPullReview(requestParameters: RepositoryApiRepoSubmitPullReviewRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoSubmitPullReview(requestParameters.owner, requestParameters.repo, requestParameters.index, requestParameters.id, requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Test a push webhook
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} id id of the hook to test
-     * @param {string} [ref] The name of the commit/branch/tag, indicates which commit will be loaded to the webhook payload.
+     * @param {RepositoryApiRepoTestHookRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoTestHook(owner: string, repo: string, id: number, ref?: string, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoTestHook(owner, repo, id, ref, options).then((request) => request(this.axios, this.basePath));
+    public repoTestHook(requestParameters: RepositoryApiRepoTestHookRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoTestHook(requestParameters.owner, requestParameters.repo, requestParameters.id, requestParameters.ref, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary List a repo\'s tracked times
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {string} [user] optional filter by user (available for issue managers)
-     * @param {string} [since] Only show times updated after the given time. This is a timestamp in RFC 3339 format
-     * @param {string} [before] Only show times updated before the given time. This is a timestamp in RFC 3339 format
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results
+     * @param {RepositoryApiRepoTrackedTimesRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoTrackedTimes(owner: string, repo: string, user?: string, since?: string, before?: string, page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoTrackedTimes(owner, repo, user, since, before, page, limit, options).then((request) => request(this.axios, this.basePath));
+    public repoTrackedTimes(requestParameters: RepositoryApiRepoTrackedTimesRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoTrackedTimes(requestParameters.owner, requestParameters.repo, requestParameters.user, requestParameters.since, requestParameters.before, requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Transfer a repo ownership
-     * @param {string} owner owner of the repo to transfer
-     * @param {string} repo name of the repo to transfer
-     * @param {TransferRepoOption} body Transfer Options
+     * @param {RepositoryApiRepoTransferRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoTransfer(owner: string, repo: string, body: TransferRepoOption, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoTransfer(owner, repo, body, options).then((request) => request(this.axios, this.basePath));
+    public repoTransfer(requestParameters: RepositoryApiRepoTransferRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoTransfer(requestParameters.owner, requestParameters.repo, requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Cancel to dismiss a review for a pull request
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} index index of the pull request
-     * @param {number} id id of the review
+     * @param {RepositoryApiRepoUnDismissPullReviewRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoUnDismissPullReview(owner: string, repo: string, index: number, id: number, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoUnDismissPullReview(owner, repo, index, id, options).then((request) => request(this.axios, this.basePath));
+    public repoUnDismissPullReview(requestParameters: RepositoryApiRepoUnDismissPullReviewRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoUnDismissPullReview(requestParameters.owner, requestParameters.repo, requestParameters.index, requestParameters.id, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Update a file in a repository
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {string} filepath path of the file to update
-     * @param {UpdateFileOptions} body 
+     * @param {RepositoryApiRepoUpdateFileRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoUpdateFile(owner: string, repo: string, filepath: string, body: UpdateFileOptions, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoUpdateFile(owner, repo, filepath, body, options).then((request) => request(this.axios, this.basePath));
+    public repoUpdateFile(requestParameters: RepositoryApiRepoUpdateFileRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoUpdateFile(requestParameters.owner, requestParameters.repo, requestParameters.filepath, requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Update a reference
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {string} ref name of the ref to update
-     * @param {UpdateGitRefOption} [body] 
+     * @param {RepositoryApiRepoUpdateGitRefRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoUpdateGitRef(owner: string, repo: string, ref: string, body?: UpdateGitRefOption, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoUpdateGitRef(owner, repo, ref, body, options).then((request) => request(this.axios, this.basePath));
+    public repoUpdateGitRef(requestParameters: RepositoryApiRepoUpdateGitRefRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoUpdateGitRef(requestParameters.owner, requestParameters.repo, requestParameters.ref, requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Merge PR\'s baseBranch into headBranch
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} index index of the pull request to get
-     * @param {'merge' | 'rebase'} [style] how to update pull request
+     * @param {RepositoryApiRepoUpdatePullRequestRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoUpdatePullRequest(owner: string, repo: string, index: number, style?: 'merge' | 'rebase', options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoUpdatePullRequest(owner, repo, index, style, options).then((request) => request(this.axios, this.basePath));
+    public repoUpdatePullRequest(requestParameters: RepositoryApiRepoUpdatePullRequestRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoUpdatePullRequest(requestParameters.owner, requestParameters.repo, requestParameters.index, requestParameters.style, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Replace list of topics for a repository
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {RepoTopicOptions} [body] 
+     * @param {RepositoryApiRepoUpdateTopicsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public repoUpdateTopics(owner: string, repo: string, body?: RepoTopicOptions, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).repoUpdateTopics(owner, repo, body, options).then((request) => request(this.axios, this.basePath));
+    public repoUpdateTopics(requestParameters: RepositoryApiRepoUpdateTopicsRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).repoUpdateTopics(requestParameters.owner, requestParameters.repo, requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary search topics via keyword
-     * @param {string} q keywords to search
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results
+     * @param {RepositoryApiTopicSearchRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public topicSearch(q: string, page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).topicSearch(q, page, limit, options).then((request) => request(this.axios, this.basePath));
+    public topicSearch(requestParameters: RepositoryApiTopicSearchRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).topicSearch(requestParameters.q, requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Check if the current user is watching a repo
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
+     * @param {RepositoryApiUserCurrentCheckSubscriptionRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public userCurrentCheckSubscription(owner: string, repo: string, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).userCurrentCheckSubscription(owner, repo, options).then((request) => request(this.axios, this.basePath));
+    public userCurrentCheckSubscription(requestParameters: RepositoryApiUserCurrentCheckSubscriptionRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).userCurrentCheckSubscription(requestParameters.owner, requestParameters.repo, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Unwatch a repo
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
+     * @param {RepositoryApiUserCurrentDeleteSubscriptionRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public userCurrentDeleteSubscription(owner: string, repo: string, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).userCurrentDeleteSubscription(owner, repo, options).then((request) => request(this.axios, this.basePath));
+    public userCurrentDeleteSubscription(requestParameters: RepositoryApiUserCurrentDeleteSubscriptionRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).userCurrentDeleteSubscription(requestParameters.owner, requestParameters.repo, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Watch a repo
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
+     * @param {RepositoryApiUserCurrentPutSubscriptionRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public userCurrentPutSubscription(owner: string, repo: string, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).userCurrentPutSubscription(owner, repo, options).then((request) => request(this.axios, this.basePath));
+    public userCurrentPutSubscription(requestParameters: RepositoryApiUserCurrentPutSubscriptionRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).userCurrentPutSubscription(requestParameters.owner, requestParameters.repo, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary List a user\'s tracked times in a repo
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {string} user username of user
+     * @param {RepositoryApiUserTrackedTimesRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @deprecated
      * @throws {RequiredError}
      * @memberof RepositoryApi
      */
-    public userTrackedTimes(owner: string, repo: string, user: string, options?: AxiosRequestConfig) {
-        return RepositoryApiFp(this.configuration).userTrackedTimes(owner, repo, user, options).then((request) => request(this.axios, this.basePath));
+    public userTrackedTimes(requestParameters: RepositoryApiUserTrackedTimesRequest, options?: AxiosRequestConfig) {
+        return RepositoryApiFp(this.configuration).userTrackedTimes(requestParameters.owner, requestParameters.repo, requestParameters.user, options).then((request) => request(this.axios, this.basePath));
     }
 }

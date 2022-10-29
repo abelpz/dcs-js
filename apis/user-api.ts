@@ -4219,6 +4219,930 @@ export const UserApiFactory = function (configuration?: Configuration, basePath?
 };
 
 /**
+ * Request parameters for createCurrentUserRepo operation in UserApi.
+ * @export
+ * @interface UserApiCreateCurrentUserRepoRequest
+ */
+export interface UserApiCreateCurrentUserRepoRequest {
+    /**
+     * 
+     * @type {CreateRepoOption}
+     * @memberof UserApiCreateCurrentUserRepo
+     */
+    readonly body?: CreateRepoOption
+}
+
+/**
+ * Request parameters for updateUserSettings operation in UserApi.
+ * @export
+ * @interface UserApiUpdateUserSettingsRequest
+ */
+export interface UserApiUpdateUserSettingsRequest {
+    /**
+     * 
+     * @type {UserSettingsOptions}
+     * @memberof UserApiUpdateUserSettings
+     */
+    readonly body?: UserSettingsOptions
+}
+
+/**
+ * Request parameters for userAddEmail operation in UserApi.
+ * @export
+ * @interface UserApiUserAddEmailRequest
+ */
+export interface UserApiUserAddEmailRequest {
+    /**
+     * 
+     * @type {CreateEmailOption}
+     * @memberof UserApiUserAddEmail
+     */
+    readonly body?: CreateEmailOption
+}
+
+/**
+ * Request parameters for userCheckFollowing operation in UserApi.
+ * @export
+ * @interface UserApiUserCheckFollowingRequest
+ */
+export interface UserApiUserCheckFollowingRequest {
+    /**
+     * username of following user
+     * @type {string}
+     * @memberof UserApiUserCheckFollowing
+     */
+    readonly username: string
+
+    /**
+     * username of followed user
+     * @type {string}
+     * @memberof UserApiUserCheckFollowing
+     */
+    readonly target: string
+}
+
+/**
+ * Request parameters for userCreateOAuth2Application operation in UserApi.
+ * @export
+ * @interface UserApiUserCreateOAuth2ApplicationRequest
+ */
+export interface UserApiUserCreateOAuth2ApplicationRequest {
+    /**
+     * 
+     * @type {CreateOAuth2ApplicationOptions}
+     * @memberof UserApiUserCreateOAuth2Application
+     */
+    readonly body: CreateOAuth2ApplicationOptions
+}
+
+/**
+ * Request parameters for userCreateToken operation in UserApi.
+ * @export
+ * @interface UserApiUserCreateTokenRequest
+ */
+export interface UserApiUserCreateTokenRequest {
+    /**
+     * username of user
+     * @type {string}
+     * @memberof UserApiUserCreateToken
+     */
+    readonly username: string
+
+    /**
+     * 
+     * @type {CreateAccessTokenOption}
+     * @memberof UserApiUserCreateToken
+     */
+    readonly userCreateToken?: CreateAccessTokenOption
+}
+
+/**
+ * Request parameters for userCurrentCheckFollowing operation in UserApi.
+ * @export
+ * @interface UserApiUserCurrentCheckFollowingRequest
+ */
+export interface UserApiUserCurrentCheckFollowingRequest {
+    /**
+     * username of followed user
+     * @type {string}
+     * @memberof UserApiUserCurrentCheckFollowing
+     */
+    readonly username: string
+}
+
+/**
+ * Request parameters for userCurrentCheckStarring operation in UserApi.
+ * @export
+ * @interface UserApiUserCurrentCheckStarringRequest
+ */
+export interface UserApiUserCurrentCheckStarringRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof UserApiUserCurrentCheckStarring
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof UserApiUserCurrentCheckStarring
+     */
+    readonly repo: string
+}
+
+/**
+ * Request parameters for userCurrentDeleteFollow operation in UserApi.
+ * @export
+ * @interface UserApiUserCurrentDeleteFollowRequest
+ */
+export interface UserApiUserCurrentDeleteFollowRequest {
+    /**
+     * username of user to unfollow
+     * @type {string}
+     * @memberof UserApiUserCurrentDeleteFollow
+     */
+    readonly username: string
+}
+
+/**
+ * Request parameters for userCurrentDeleteGPGKey operation in UserApi.
+ * @export
+ * @interface UserApiUserCurrentDeleteGPGKeyRequest
+ */
+export interface UserApiUserCurrentDeleteGPGKeyRequest {
+    /**
+     * id of key to delete
+     * @type {number}
+     * @memberof UserApiUserCurrentDeleteGPGKey
+     */
+    readonly id: number
+}
+
+/**
+ * Request parameters for userCurrentDeleteKey operation in UserApi.
+ * @export
+ * @interface UserApiUserCurrentDeleteKeyRequest
+ */
+export interface UserApiUserCurrentDeleteKeyRequest {
+    /**
+     * id of key to delete
+     * @type {number}
+     * @memberof UserApiUserCurrentDeleteKey
+     */
+    readonly id: number
+}
+
+/**
+ * Request parameters for userCurrentDeleteStar operation in UserApi.
+ * @export
+ * @interface UserApiUserCurrentDeleteStarRequest
+ */
+export interface UserApiUserCurrentDeleteStarRequest {
+    /**
+     * owner of the repo to unstar
+     * @type {string}
+     * @memberof UserApiUserCurrentDeleteStar
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo to unstar
+     * @type {string}
+     * @memberof UserApiUserCurrentDeleteStar
+     */
+    readonly repo: string
+}
+
+/**
+ * Request parameters for userCurrentGetGPGKey operation in UserApi.
+ * @export
+ * @interface UserApiUserCurrentGetGPGKeyRequest
+ */
+export interface UserApiUserCurrentGetGPGKeyRequest {
+    /**
+     * id of key to get
+     * @type {number}
+     * @memberof UserApiUserCurrentGetGPGKey
+     */
+    readonly id: number
+}
+
+/**
+ * Request parameters for userCurrentGetKey operation in UserApi.
+ * @export
+ * @interface UserApiUserCurrentGetKeyRequest
+ */
+export interface UserApiUserCurrentGetKeyRequest {
+    /**
+     * id of key to get
+     * @type {number}
+     * @memberof UserApiUserCurrentGetKey
+     */
+    readonly id: number
+}
+
+/**
+ * Request parameters for userCurrentListFollowers operation in UserApi.
+ * @export
+ * @interface UserApiUserCurrentListFollowersRequest
+ */
+export interface UserApiUserCurrentListFollowersRequest {
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof UserApiUserCurrentListFollowers
+     */
+    readonly page?: number
+
+    /**
+     * page size of results
+     * @type {number}
+     * @memberof UserApiUserCurrentListFollowers
+     */
+    readonly limit?: number
+}
+
+/**
+ * Request parameters for userCurrentListFollowing operation in UserApi.
+ * @export
+ * @interface UserApiUserCurrentListFollowingRequest
+ */
+export interface UserApiUserCurrentListFollowingRequest {
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof UserApiUserCurrentListFollowing
+     */
+    readonly page?: number
+
+    /**
+     * page size of results
+     * @type {number}
+     * @memberof UserApiUserCurrentListFollowing
+     */
+    readonly limit?: number
+}
+
+/**
+ * Request parameters for userCurrentListGPGKeys operation in UserApi.
+ * @export
+ * @interface UserApiUserCurrentListGPGKeysRequest
+ */
+export interface UserApiUserCurrentListGPGKeysRequest {
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof UserApiUserCurrentListGPGKeys
+     */
+    readonly page?: number
+
+    /**
+     * page size of results
+     * @type {number}
+     * @memberof UserApiUserCurrentListGPGKeys
+     */
+    readonly limit?: number
+}
+
+/**
+ * Request parameters for userCurrentListKeys operation in UserApi.
+ * @export
+ * @interface UserApiUserCurrentListKeysRequest
+ */
+export interface UserApiUserCurrentListKeysRequest {
+    /**
+     * fingerprint of the key
+     * @type {string}
+     * @memberof UserApiUserCurrentListKeys
+     */
+    readonly fingerprint?: string
+
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof UserApiUserCurrentListKeys
+     */
+    readonly page?: number
+
+    /**
+     * page size of results
+     * @type {number}
+     * @memberof UserApiUserCurrentListKeys
+     */
+    readonly limit?: number
+}
+
+/**
+ * Request parameters for userCurrentListRepos operation in UserApi.
+ * @export
+ * @interface UserApiUserCurrentListReposRequest
+ */
+export interface UserApiUserCurrentListReposRequest {
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof UserApiUserCurrentListRepos
+     */
+    readonly page?: number
+
+    /**
+     * page size of results
+     * @type {number}
+     * @memberof UserApiUserCurrentListRepos
+     */
+    readonly limit?: number
+}
+
+/**
+ * Request parameters for userCurrentListStarred operation in UserApi.
+ * @export
+ * @interface UserApiUserCurrentListStarredRequest
+ */
+export interface UserApiUserCurrentListStarredRequest {
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof UserApiUserCurrentListStarred
+     */
+    readonly page?: number
+
+    /**
+     * page size of results
+     * @type {number}
+     * @memberof UserApiUserCurrentListStarred
+     */
+    readonly limit?: number
+}
+
+/**
+ * Request parameters for userCurrentListSubscriptions operation in UserApi.
+ * @export
+ * @interface UserApiUserCurrentListSubscriptionsRequest
+ */
+export interface UserApiUserCurrentListSubscriptionsRequest {
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof UserApiUserCurrentListSubscriptions
+     */
+    readonly page?: number
+
+    /**
+     * page size of results
+     * @type {number}
+     * @memberof UserApiUserCurrentListSubscriptions
+     */
+    readonly limit?: number
+}
+
+/**
+ * Request parameters for userCurrentPostGPGKey operation in UserApi.
+ * @export
+ * @interface UserApiUserCurrentPostGPGKeyRequest
+ */
+export interface UserApiUserCurrentPostGPGKeyRequest {
+    /**
+     * 
+     * @type {CreateGPGKeyOption}
+     * @memberof UserApiUserCurrentPostGPGKey
+     */
+    readonly form?: CreateGPGKeyOption
+}
+
+/**
+ * Request parameters for userCurrentPostKey operation in UserApi.
+ * @export
+ * @interface UserApiUserCurrentPostKeyRequest
+ */
+export interface UserApiUserCurrentPostKeyRequest {
+    /**
+     * 
+     * @type {CreateKeyOption}
+     * @memberof UserApiUserCurrentPostKey
+     */
+    readonly body?: CreateKeyOption
+}
+
+/**
+ * Request parameters for userCurrentPutFollow operation in UserApi.
+ * @export
+ * @interface UserApiUserCurrentPutFollowRequest
+ */
+export interface UserApiUserCurrentPutFollowRequest {
+    /**
+     * username of user to follow
+     * @type {string}
+     * @memberof UserApiUserCurrentPutFollow
+     */
+    readonly username: string
+}
+
+/**
+ * Request parameters for userCurrentPutStar operation in UserApi.
+ * @export
+ * @interface UserApiUserCurrentPutStarRequest
+ */
+export interface UserApiUserCurrentPutStarRequest {
+    /**
+     * owner of the repo to star
+     * @type {string}
+     * @memberof UserApiUserCurrentPutStar
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo to star
+     * @type {string}
+     * @memberof UserApiUserCurrentPutStar
+     */
+    readonly repo: string
+}
+
+/**
+ * Request parameters for userCurrentTrackedTimes operation in UserApi.
+ * @export
+ * @interface UserApiUserCurrentTrackedTimesRequest
+ */
+export interface UserApiUserCurrentTrackedTimesRequest {
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof UserApiUserCurrentTrackedTimes
+     */
+    readonly page?: number
+
+    /**
+     * page size of results
+     * @type {number}
+     * @memberof UserApiUserCurrentTrackedTimes
+     */
+    readonly limit?: number
+
+    /**
+     * Only show times updated after the given time. This is a timestamp in RFC 3339 format
+     * @type {string}
+     * @memberof UserApiUserCurrentTrackedTimes
+     */
+    readonly since?: string
+
+    /**
+     * Only show times updated before the given time. This is a timestamp in RFC 3339 format
+     * @type {string}
+     * @memberof UserApiUserCurrentTrackedTimes
+     */
+    readonly before?: string
+}
+
+/**
+ * Request parameters for userDeleteAccessToken operation in UserApi.
+ * @export
+ * @interface UserApiUserDeleteAccessTokenRequest
+ */
+export interface UserApiUserDeleteAccessTokenRequest {
+    /**
+     * username of user
+     * @type {string}
+     * @memberof UserApiUserDeleteAccessToken
+     */
+    readonly username: string
+
+    /**
+     * token to be deleted, identified by ID and if not available by name
+     * @type {string}
+     * @memberof UserApiUserDeleteAccessToken
+     */
+    readonly token: string
+}
+
+/**
+ * Request parameters for userDeleteEmail operation in UserApi.
+ * @export
+ * @interface UserApiUserDeleteEmailRequest
+ */
+export interface UserApiUserDeleteEmailRequest {
+    /**
+     * 
+     * @type {DeleteEmailOption}
+     * @memberof UserApiUserDeleteEmail
+     */
+    readonly body?: DeleteEmailOption
+}
+
+/**
+ * Request parameters for userDeleteOAuth2Application operation in UserApi.
+ * @export
+ * @interface UserApiUserDeleteOAuth2ApplicationRequest
+ */
+export interface UserApiUserDeleteOAuth2ApplicationRequest {
+    /**
+     * token to be deleted
+     * @type {number}
+     * @memberof UserApiUserDeleteOAuth2Application
+     */
+    readonly id: number
+}
+
+/**
+ * Request parameters for userGet operation in UserApi.
+ * @export
+ * @interface UserApiUserGetRequest
+ */
+export interface UserApiUserGetRequest {
+    /**
+     * username of user to get
+     * @type {string}
+     * @memberof UserApiUserGet
+     */
+    readonly username: string
+}
+
+/**
+ * Request parameters for userGetHeatmapData operation in UserApi.
+ * @export
+ * @interface UserApiUserGetHeatmapDataRequest
+ */
+export interface UserApiUserGetHeatmapDataRequest {
+    /**
+     * username of user to get
+     * @type {string}
+     * @memberof UserApiUserGetHeatmapData
+     */
+    readonly username: string
+}
+
+/**
+ * Request parameters for userGetOAuth2Application operation in UserApi.
+ * @export
+ * @interface UserApiUserGetOAuth2ApplicationRequest
+ */
+export interface UserApiUserGetOAuth2ApplicationRequest {
+    /**
+     * Application ID to be found
+     * @type {number}
+     * @memberof UserApiUserGetOAuth2Application
+     */
+    readonly id: number
+}
+
+/**
+ * Request parameters for userGetOauth2Application operation in UserApi.
+ * @export
+ * @interface UserApiUserGetOauth2ApplicationRequest
+ */
+export interface UserApiUserGetOauth2ApplicationRequest {
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof UserApiUserGetOauth2Application
+     */
+    readonly page?: number
+
+    /**
+     * page size of results
+     * @type {number}
+     * @memberof UserApiUserGetOauth2Application
+     */
+    readonly limit?: number
+}
+
+/**
+ * Request parameters for userGetStopWatches operation in UserApi.
+ * @export
+ * @interface UserApiUserGetStopWatchesRequest
+ */
+export interface UserApiUserGetStopWatchesRequest {
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof UserApiUserGetStopWatches
+     */
+    readonly page?: number
+
+    /**
+     * page size of results
+     * @type {number}
+     * @memberof UserApiUserGetStopWatches
+     */
+    readonly limit?: number
+}
+
+/**
+ * Request parameters for userGetTokens operation in UserApi.
+ * @export
+ * @interface UserApiUserGetTokensRequest
+ */
+export interface UserApiUserGetTokensRequest {
+    /**
+     * username of user
+     * @type {string}
+     * @memberof UserApiUserGetTokens
+     */
+    readonly username: string
+
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof UserApiUserGetTokens
+     */
+    readonly page?: number
+
+    /**
+     * page size of results
+     * @type {number}
+     * @memberof UserApiUserGetTokens
+     */
+    readonly limit?: number
+}
+
+/**
+ * Request parameters for userListFollowers operation in UserApi.
+ * @export
+ * @interface UserApiUserListFollowersRequest
+ */
+export interface UserApiUserListFollowersRequest {
+    /**
+     * username of user
+     * @type {string}
+     * @memberof UserApiUserListFollowers
+     */
+    readonly username: string
+
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof UserApiUserListFollowers
+     */
+    readonly page?: number
+
+    /**
+     * page size of results
+     * @type {number}
+     * @memberof UserApiUserListFollowers
+     */
+    readonly limit?: number
+}
+
+/**
+ * Request parameters for userListFollowing operation in UserApi.
+ * @export
+ * @interface UserApiUserListFollowingRequest
+ */
+export interface UserApiUserListFollowingRequest {
+    /**
+     * username of user
+     * @type {string}
+     * @memberof UserApiUserListFollowing
+     */
+    readonly username: string
+
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof UserApiUserListFollowing
+     */
+    readonly page?: number
+
+    /**
+     * page size of results
+     * @type {number}
+     * @memberof UserApiUserListFollowing
+     */
+    readonly limit?: number
+}
+
+/**
+ * Request parameters for userListGPGKeys operation in UserApi.
+ * @export
+ * @interface UserApiUserListGPGKeysRequest
+ */
+export interface UserApiUserListGPGKeysRequest {
+    /**
+     * username of user
+     * @type {string}
+     * @memberof UserApiUserListGPGKeys
+     */
+    readonly username: string
+
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof UserApiUserListGPGKeys
+     */
+    readonly page?: number
+
+    /**
+     * page size of results
+     * @type {number}
+     * @memberof UserApiUserListGPGKeys
+     */
+    readonly limit?: number
+}
+
+/**
+ * Request parameters for userListKeys operation in UserApi.
+ * @export
+ * @interface UserApiUserListKeysRequest
+ */
+export interface UserApiUserListKeysRequest {
+    /**
+     * username of user
+     * @type {string}
+     * @memberof UserApiUserListKeys
+     */
+    readonly username: string
+
+    /**
+     * fingerprint of the key
+     * @type {string}
+     * @memberof UserApiUserListKeys
+     */
+    readonly fingerprint?: string
+
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof UserApiUserListKeys
+     */
+    readonly page?: number
+
+    /**
+     * page size of results
+     * @type {number}
+     * @memberof UserApiUserListKeys
+     */
+    readonly limit?: number
+}
+
+/**
+ * Request parameters for userListRepos operation in UserApi.
+ * @export
+ * @interface UserApiUserListReposRequest
+ */
+export interface UserApiUserListReposRequest {
+    /**
+     * username of user
+     * @type {string}
+     * @memberof UserApiUserListRepos
+     */
+    readonly username: string
+
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof UserApiUserListRepos
+     */
+    readonly page?: number
+
+    /**
+     * page size of results
+     * @type {number}
+     * @memberof UserApiUserListRepos
+     */
+    readonly limit?: number
+}
+
+/**
+ * Request parameters for userListStarred operation in UserApi.
+ * @export
+ * @interface UserApiUserListStarredRequest
+ */
+export interface UserApiUserListStarredRequest {
+    /**
+     * username of user
+     * @type {string}
+     * @memberof UserApiUserListStarred
+     */
+    readonly username: string
+
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof UserApiUserListStarred
+     */
+    readonly page?: number
+
+    /**
+     * page size of results
+     * @type {number}
+     * @memberof UserApiUserListStarred
+     */
+    readonly limit?: number
+}
+
+/**
+ * Request parameters for userListSubscriptions operation in UserApi.
+ * @export
+ * @interface UserApiUserListSubscriptionsRequest
+ */
+export interface UserApiUserListSubscriptionsRequest {
+    /**
+     * username of the user
+     * @type {string}
+     * @memberof UserApiUserListSubscriptions
+     */
+    readonly username: string
+
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof UserApiUserListSubscriptions
+     */
+    readonly page?: number
+
+    /**
+     * page size of results
+     * @type {number}
+     * @memberof UserApiUserListSubscriptions
+     */
+    readonly limit?: number
+}
+
+/**
+ * Request parameters for userListTeams operation in UserApi.
+ * @export
+ * @interface UserApiUserListTeamsRequest
+ */
+export interface UserApiUserListTeamsRequest {
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof UserApiUserListTeams
+     */
+    readonly page?: number
+
+    /**
+     * page size of results
+     * @type {number}
+     * @memberof UserApiUserListTeams
+     */
+    readonly limit?: number
+}
+
+/**
+ * Request parameters for userSearch operation in UserApi.
+ * @export
+ * @interface UserApiUserSearchRequest
+ */
+export interface UserApiUserSearchRequest {
+    /**
+     * keyword
+     * @type {string}
+     * @memberof UserApiUserSearch
+     */
+    readonly q?: string
+
+    /**
+     * ID of the user to search for
+     * @type {number}
+     * @memberof UserApiUserSearch
+     */
+    readonly uid?: number
+
+    /**
+     * If the user has one or more repos with the given language(s), the org will be in the results. Multiple lang\&#39;s are ORed.
+     * @type {string}
+     * @memberof UserApiUserSearch
+     */
+    readonly lang?: string
+
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof UserApiUserSearch
+     */
+    readonly page?: number
+
+    /**
+     * page size of results
+     * @type {number}
+     * @memberof UserApiUserSearch
+     */
+    readonly limit?: number
+}
+
+/**
+ * Request parameters for userUpdateOAuth2Application operation in UserApi.
+ * @export
+ * @interface UserApiUserUpdateOAuth2ApplicationRequest
+ */
+export interface UserApiUserUpdateOAuth2ApplicationRequest {
+    /**
+     * application to be updated
+     * @type {number}
+     * @memberof UserApiUserUpdateOAuth2Application
+     */
+    readonly id: number
+
+    /**
+     * 
+     * @type {CreateOAuth2ApplicationOptions}
+     * @memberof UserApiUserUpdateOAuth2Application
+     */
+    readonly body: CreateOAuth2ApplicationOptions
+}
+
+/**
  * UserApi - object-oriented interface
  * @export
  * @class UserApi
@@ -4228,13 +5152,13 @@ export class UserApi extends BaseAPI {
     /**
      * 
      * @summary Create a repository
-     * @param {CreateRepoOption} [body] 
+     * @param {UserApiCreateCurrentUserRepoRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public createCurrentUserRepo(body?: CreateRepoOption, options?: AxiosRequestConfig) {
-        return UserApiFp(this.configuration).createCurrentUserRepo(body, options).then((request) => request(this.axios, this.basePath));
+    public createCurrentUserRepo(requestParameters: UserApiCreateCurrentUserRepoRequest = {}, options?: AxiosRequestConfig) {
+        return UserApiFp(this.configuration).createCurrentUserRepo(requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -4262,366 +5186,349 @@ export class UserApi extends BaseAPI {
     /**
      * 
      * @summary Update user settings
-     * @param {UserSettingsOptions} [body] 
+     * @param {UserApiUpdateUserSettingsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public updateUserSettings(body?: UserSettingsOptions, options?: AxiosRequestConfig) {
-        return UserApiFp(this.configuration).updateUserSettings(body, options).then((request) => request(this.axios, this.basePath));
+    public updateUserSettings(requestParameters: UserApiUpdateUserSettingsRequest = {}, options?: AxiosRequestConfig) {
+        return UserApiFp(this.configuration).updateUserSettings(requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Add email addresses
-     * @param {CreateEmailOption} [body] 
+     * @param {UserApiUserAddEmailRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public userAddEmail(body?: CreateEmailOption, options?: AxiosRequestConfig) {
-        return UserApiFp(this.configuration).userAddEmail(body, options).then((request) => request(this.axios, this.basePath));
+    public userAddEmail(requestParameters: UserApiUserAddEmailRequest = {}, options?: AxiosRequestConfig) {
+        return UserApiFp(this.configuration).userAddEmail(requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Check if one user is following another user
-     * @param {string} username username of following user
-     * @param {string} target username of followed user
+     * @param {UserApiUserCheckFollowingRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public userCheckFollowing(username: string, target: string, options?: AxiosRequestConfig) {
-        return UserApiFp(this.configuration).userCheckFollowing(username, target, options).then((request) => request(this.axios, this.basePath));
+    public userCheckFollowing(requestParameters: UserApiUserCheckFollowingRequest, options?: AxiosRequestConfig) {
+        return UserApiFp(this.configuration).userCheckFollowing(requestParameters.username, requestParameters.target, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary creates a new OAuth2 application
-     * @param {CreateOAuth2ApplicationOptions} body 
+     * @param {UserApiUserCreateOAuth2ApplicationRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public userCreateOAuth2Application(body: CreateOAuth2ApplicationOptions, options?: AxiosRequestConfig) {
-        return UserApiFp(this.configuration).userCreateOAuth2Application(body, options).then((request) => request(this.axios, this.basePath));
+    public userCreateOAuth2Application(requestParameters: UserApiUserCreateOAuth2ApplicationRequest, options?: AxiosRequestConfig) {
+        return UserApiFp(this.configuration).userCreateOAuth2Application(requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Create an access token
-     * @param {string} username username of user
-     * @param {CreateAccessTokenOption} [userCreateToken] 
+     * @param {UserApiUserCreateTokenRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public userCreateToken(username: string, userCreateToken?: CreateAccessTokenOption, options?: AxiosRequestConfig) {
-        return UserApiFp(this.configuration).userCreateToken(username, userCreateToken, options).then((request) => request(this.axios, this.basePath));
+    public userCreateToken(requestParameters: UserApiUserCreateTokenRequest, options?: AxiosRequestConfig) {
+        return UserApiFp(this.configuration).userCreateToken(requestParameters.username, requestParameters.userCreateToken, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Check whether a user is followed by the authenticated user
-     * @param {string} username username of followed user
+     * @param {UserApiUserCurrentCheckFollowingRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public userCurrentCheckFollowing(username: string, options?: AxiosRequestConfig) {
-        return UserApiFp(this.configuration).userCurrentCheckFollowing(username, options).then((request) => request(this.axios, this.basePath));
+    public userCurrentCheckFollowing(requestParameters: UserApiUserCurrentCheckFollowingRequest, options?: AxiosRequestConfig) {
+        return UserApiFp(this.configuration).userCurrentCheckFollowing(requestParameters.username, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Whether the authenticated is starring the repo
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
+     * @param {UserApiUserCurrentCheckStarringRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public userCurrentCheckStarring(owner: string, repo: string, options?: AxiosRequestConfig) {
-        return UserApiFp(this.configuration).userCurrentCheckStarring(owner, repo, options).then((request) => request(this.axios, this.basePath));
+    public userCurrentCheckStarring(requestParameters: UserApiUserCurrentCheckStarringRequest, options?: AxiosRequestConfig) {
+        return UserApiFp(this.configuration).userCurrentCheckStarring(requestParameters.owner, requestParameters.repo, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Unfollow a user
-     * @param {string} username username of user to unfollow
+     * @param {UserApiUserCurrentDeleteFollowRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public userCurrentDeleteFollow(username: string, options?: AxiosRequestConfig) {
-        return UserApiFp(this.configuration).userCurrentDeleteFollow(username, options).then((request) => request(this.axios, this.basePath));
+    public userCurrentDeleteFollow(requestParameters: UserApiUserCurrentDeleteFollowRequest, options?: AxiosRequestConfig) {
+        return UserApiFp(this.configuration).userCurrentDeleteFollow(requestParameters.username, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Remove a GPG key
-     * @param {number} id id of key to delete
+     * @param {UserApiUserCurrentDeleteGPGKeyRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public userCurrentDeleteGPGKey(id: number, options?: AxiosRequestConfig) {
-        return UserApiFp(this.configuration).userCurrentDeleteGPGKey(id, options).then((request) => request(this.axios, this.basePath));
+    public userCurrentDeleteGPGKey(requestParameters: UserApiUserCurrentDeleteGPGKeyRequest, options?: AxiosRequestConfig) {
+        return UserApiFp(this.configuration).userCurrentDeleteGPGKey(requestParameters.id, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Delete a public key
-     * @param {number} id id of key to delete
+     * @param {UserApiUserCurrentDeleteKeyRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public userCurrentDeleteKey(id: number, options?: AxiosRequestConfig) {
-        return UserApiFp(this.configuration).userCurrentDeleteKey(id, options).then((request) => request(this.axios, this.basePath));
+    public userCurrentDeleteKey(requestParameters: UserApiUserCurrentDeleteKeyRequest, options?: AxiosRequestConfig) {
+        return UserApiFp(this.configuration).userCurrentDeleteKey(requestParameters.id, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Unstar the given repo
-     * @param {string} owner owner of the repo to unstar
-     * @param {string} repo name of the repo to unstar
+     * @param {UserApiUserCurrentDeleteStarRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public userCurrentDeleteStar(owner: string, repo: string, options?: AxiosRequestConfig) {
-        return UserApiFp(this.configuration).userCurrentDeleteStar(owner, repo, options).then((request) => request(this.axios, this.basePath));
+    public userCurrentDeleteStar(requestParameters: UserApiUserCurrentDeleteStarRequest, options?: AxiosRequestConfig) {
+        return UserApiFp(this.configuration).userCurrentDeleteStar(requestParameters.owner, requestParameters.repo, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Get a GPG key
-     * @param {number} id id of key to get
+     * @param {UserApiUserCurrentGetGPGKeyRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public userCurrentGetGPGKey(id: number, options?: AxiosRequestConfig) {
-        return UserApiFp(this.configuration).userCurrentGetGPGKey(id, options).then((request) => request(this.axios, this.basePath));
+    public userCurrentGetGPGKey(requestParameters: UserApiUserCurrentGetGPGKeyRequest, options?: AxiosRequestConfig) {
+        return UserApiFp(this.configuration).userCurrentGetGPGKey(requestParameters.id, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Get a public key
-     * @param {number} id id of key to get
+     * @param {UserApiUserCurrentGetKeyRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public userCurrentGetKey(id: number, options?: AxiosRequestConfig) {
-        return UserApiFp(this.configuration).userCurrentGetKey(id, options).then((request) => request(this.axios, this.basePath));
+    public userCurrentGetKey(requestParameters: UserApiUserCurrentGetKeyRequest, options?: AxiosRequestConfig) {
+        return UserApiFp(this.configuration).userCurrentGetKey(requestParameters.id, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary List the authenticated user\'s followers
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results
+     * @param {UserApiUserCurrentListFollowersRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public userCurrentListFollowers(page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return UserApiFp(this.configuration).userCurrentListFollowers(page, limit, options).then((request) => request(this.axios, this.basePath));
+    public userCurrentListFollowers(requestParameters: UserApiUserCurrentListFollowersRequest = {}, options?: AxiosRequestConfig) {
+        return UserApiFp(this.configuration).userCurrentListFollowers(requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary List the users that the authenticated user is following
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results
+     * @param {UserApiUserCurrentListFollowingRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public userCurrentListFollowing(page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return UserApiFp(this.configuration).userCurrentListFollowing(page, limit, options).then((request) => request(this.axios, this.basePath));
+    public userCurrentListFollowing(requestParameters: UserApiUserCurrentListFollowingRequest = {}, options?: AxiosRequestConfig) {
+        return UserApiFp(this.configuration).userCurrentListFollowing(requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary List the authenticated user\'s GPG keys
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results
+     * @param {UserApiUserCurrentListGPGKeysRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public userCurrentListGPGKeys(page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return UserApiFp(this.configuration).userCurrentListGPGKeys(page, limit, options).then((request) => request(this.axios, this.basePath));
+    public userCurrentListGPGKeys(requestParameters: UserApiUserCurrentListGPGKeysRequest = {}, options?: AxiosRequestConfig) {
+        return UserApiFp(this.configuration).userCurrentListGPGKeys(requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary List the authenticated user\'s public keys
-     * @param {string} [fingerprint] fingerprint of the key
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results
+     * @param {UserApiUserCurrentListKeysRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public userCurrentListKeys(fingerprint?: string, page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return UserApiFp(this.configuration).userCurrentListKeys(fingerprint, page, limit, options).then((request) => request(this.axios, this.basePath));
+    public userCurrentListKeys(requestParameters: UserApiUserCurrentListKeysRequest = {}, options?: AxiosRequestConfig) {
+        return UserApiFp(this.configuration).userCurrentListKeys(requestParameters.fingerprint, requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary List the repos that the authenticated user owns
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results
+     * @param {UserApiUserCurrentListReposRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public userCurrentListRepos(page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return UserApiFp(this.configuration).userCurrentListRepos(page, limit, options).then((request) => request(this.axios, this.basePath));
+    public userCurrentListRepos(requestParameters: UserApiUserCurrentListReposRequest = {}, options?: AxiosRequestConfig) {
+        return UserApiFp(this.configuration).userCurrentListRepos(requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary The repos that the authenticated user has starred
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results
+     * @param {UserApiUserCurrentListStarredRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public userCurrentListStarred(page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return UserApiFp(this.configuration).userCurrentListStarred(page, limit, options).then((request) => request(this.axios, this.basePath));
+    public userCurrentListStarred(requestParameters: UserApiUserCurrentListStarredRequest = {}, options?: AxiosRequestConfig) {
+        return UserApiFp(this.configuration).userCurrentListStarred(requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary List repositories watched by the authenticated user
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results
+     * @param {UserApiUserCurrentListSubscriptionsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public userCurrentListSubscriptions(page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return UserApiFp(this.configuration).userCurrentListSubscriptions(page, limit, options).then((request) => request(this.axios, this.basePath));
+    public userCurrentListSubscriptions(requestParameters: UserApiUserCurrentListSubscriptionsRequest = {}, options?: AxiosRequestConfig) {
+        return UserApiFp(this.configuration).userCurrentListSubscriptions(requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Create a GPG key
-     * @param {CreateGPGKeyOption} [form] 
+     * @param {UserApiUserCurrentPostGPGKeyRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public userCurrentPostGPGKey(form?: CreateGPGKeyOption, options?: AxiosRequestConfig) {
-        return UserApiFp(this.configuration).userCurrentPostGPGKey(form, options).then((request) => request(this.axios, this.basePath));
+    public userCurrentPostGPGKey(requestParameters: UserApiUserCurrentPostGPGKeyRequest = {}, options?: AxiosRequestConfig) {
+        return UserApiFp(this.configuration).userCurrentPostGPGKey(requestParameters.form, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Create a public key
-     * @param {CreateKeyOption} [body] 
+     * @param {UserApiUserCurrentPostKeyRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public userCurrentPostKey(body?: CreateKeyOption, options?: AxiosRequestConfig) {
-        return UserApiFp(this.configuration).userCurrentPostKey(body, options).then((request) => request(this.axios, this.basePath));
+    public userCurrentPostKey(requestParameters: UserApiUserCurrentPostKeyRequest = {}, options?: AxiosRequestConfig) {
+        return UserApiFp(this.configuration).userCurrentPostKey(requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Follow a user
-     * @param {string} username username of user to follow
+     * @param {UserApiUserCurrentPutFollowRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public userCurrentPutFollow(username: string, options?: AxiosRequestConfig) {
-        return UserApiFp(this.configuration).userCurrentPutFollow(username, options).then((request) => request(this.axios, this.basePath));
+    public userCurrentPutFollow(requestParameters: UserApiUserCurrentPutFollowRequest, options?: AxiosRequestConfig) {
+        return UserApiFp(this.configuration).userCurrentPutFollow(requestParameters.username, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Star the given repo
-     * @param {string} owner owner of the repo to star
-     * @param {string} repo name of the repo to star
+     * @param {UserApiUserCurrentPutStarRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public userCurrentPutStar(owner: string, repo: string, options?: AxiosRequestConfig) {
-        return UserApiFp(this.configuration).userCurrentPutStar(owner, repo, options).then((request) => request(this.axios, this.basePath));
+    public userCurrentPutStar(requestParameters: UserApiUserCurrentPutStarRequest, options?: AxiosRequestConfig) {
+        return UserApiFp(this.configuration).userCurrentPutStar(requestParameters.owner, requestParameters.repo, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary List the current user\'s tracked times
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results
-     * @param {string} [since] Only show times updated after the given time. This is a timestamp in RFC 3339 format
-     * @param {string} [before] Only show times updated before the given time. This is a timestamp in RFC 3339 format
+     * @param {UserApiUserCurrentTrackedTimesRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public userCurrentTrackedTimes(page?: number, limit?: number, since?: string, before?: string, options?: AxiosRequestConfig) {
-        return UserApiFp(this.configuration).userCurrentTrackedTimes(page, limit, since, before, options).then((request) => request(this.axios, this.basePath));
+    public userCurrentTrackedTimes(requestParameters: UserApiUserCurrentTrackedTimesRequest = {}, options?: AxiosRequestConfig) {
+        return UserApiFp(this.configuration).userCurrentTrackedTimes(requestParameters.page, requestParameters.limit, requestParameters.since, requestParameters.before, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary delete an access token
-     * @param {string} username username of user
-     * @param {string} token token to be deleted, identified by ID and if not available by name
+     * @param {UserApiUserDeleteAccessTokenRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public userDeleteAccessToken(username: string, token: string, options?: AxiosRequestConfig) {
-        return UserApiFp(this.configuration).userDeleteAccessToken(username, token, options).then((request) => request(this.axios, this.basePath));
+    public userDeleteAccessToken(requestParameters: UserApiUserDeleteAccessTokenRequest, options?: AxiosRequestConfig) {
+        return UserApiFp(this.configuration).userDeleteAccessToken(requestParameters.username, requestParameters.token, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Delete email addresses
-     * @param {DeleteEmailOption} [body] 
+     * @param {UserApiUserDeleteEmailRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public userDeleteEmail(body?: DeleteEmailOption, options?: AxiosRequestConfig) {
-        return UserApiFp(this.configuration).userDeleteEmail(body, options).then((request) => request(this.axios, this.basePath));
+    public userDeleteEmail(requestParameters: UserApiUserDeleteEmailRequest = {}, options?: AxiosRequestConfig) {
+        return UserApiFp(this.configuration).userDeleteEmail(requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary delete an OAuth2 Application
-     * @param {number} id token to be deleted
+     * @param {UserApiUserDeleteOAuth2ApplicationRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public userDeleteOAuth2Application(id: number, options?: AxiosRequestConfig) {
-        return UserApiFp(this.configuration).userDeleteOAuth2Application(id, options).then((request) => request(this.axios, this.basePath));
+    public userDeleteOAuth2Application(requestParameters: UserApiUserDeleteOAuth2ApplicationRequest, options?: AxiosRequestConfig) {
+        return UserApiFp(this.configuration).userDeleteOAuth2Application(requestParameters.id, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Get a user
-     * @param {string} username username of user to get
+     * @param {UserApiUserGetRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public userGet(username: string, options?: AxiosRequestConfig) {
-        return UserApiFp(this.configuration).userGet(username, options).then((request) => request(this.axios, this.basePath));
+    public userGet(requestParameters: UserApiUserGetRequest, options?: AxiosRequestConfig) {
+        return UserApiFp(this.configuration).userGet(requestParameters.username, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -4638,65 +5545,61 @@ export class UserApi extends BaseAPI {
     /**
      * 
      * @summary Get a user\'s heatmap
-     * @param {string} username username of user to get
+     * @param {UserApiUserGetHeatmapDataRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public userGetHeatmapData(username: string, options?: AxiosRequestConfig) {
-        return UserApiFp(this.configuration).userGetHeatmapData(username, options).then((request) => request(this.axios, this.basePath));
+    public userGetHeatmapData(requestParameters: UserApiUserGetHeatmapDataRequest, options?: AxiosRequestConfig) {
+        return UserApiFp(this.configuration).userGetHeatmapData(requestParameters.username, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary get an OAuth2 Application
-     * @param {number} id Application ID to be found
+     * @param {UserApiUserGetOAuth2ApplicationRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public userGetOAuth2Application(id: number, options?: AxiosRequestConfig) {
-        return UserApiFp(this.configuration).userGetOAuth2Application(id, options).then((request) => request(this.axios, this.basePath));
+    public userGetOAuth2Application(requestParameters: UserApiUserGetOAuth2ApplicationRequest, options?: AxiosRequestConfig) {
+        return UserApiFp(this.configuration).userGetOAuth2Application(requestParameters.id, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary List the authenticated user\'s oauth2 applications
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results
+     * @param {UserApiUserGetOauth2ApplicationRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public userGetOauth2Application(page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return UserApiFp(this.configuration).userGetOauth2Application(page, limit, options).then((request) => request(this.axios, this.basePath));
+    public userGetOauth2Application(requestParameters: UserApiUserGetOauth2ApplicationRequest = {}, options?: AxiosRequestConfig) {
+        return UserApiFp(this.configuration).userGetOauth2Application(requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Get list of all existing stopwatches
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results
+     * @param {UserApiUserGetStopWatchesRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public userGetStopWatches(page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return UserApiFp(this.configuration).userGetStopWatches(page, limit, options).then((request) => request(this.axios, this.basePath));
+    public userGetStopWatches(requestParameters: UserApiUserGetStopWatchesRequest = {}, options?: AxiosRequestConfig) {
+        return UserApiFp(this.configuration).userGetStopWatches(requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary List the authenticated user\'s access tokens
-     * @param {string} username username of user
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results
+     * @param {UserApiUserGetTokensRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public userGetTokens(username: string, page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return UserApiFp(this.configuration).userGetTokens(username, page, limit, options).then((request) => request(this.axios, this.basePath));
+    public userGetTokens(requestParameters: UserApiUserGetTokensRequest, options?: AxiosRequestConfig) {
+        return UserApiFp(this.configuration).userGetTokens(requestParameters.username, requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -4713,142 +5616,121 @@ export class UserApi extends BaseAPI {
     /**
      * 
      * @summary List the given user\'s followers
-     * @param {string} username username of user
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results
+     * @param {UserApiUserListFollowersRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public userListFollowers(username: string, page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return UserApiFp(this.configuration).userListFollowers(username, page, limit, options).then((request) => request(this.axios, this.basePath));
+    public userListFollowers(requestParameters: UserApiUserListFollowersRequest, options?: AxiosRequestConfig) {
+        return UserApiFp(this.configuration).userListFollowers(requestParameters.username, requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary List the users that the given user is following
-     * @param {string} username username of user
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results
+     * @param {UserApiUserListFollowingRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public userListFollowing(username: string, page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return UserApiFp(this.configuration).userListFollowing(username, page, limit, options).then((request) => request(this.axios, this.basePath));
+    public userListFollowing(requestParameters: UserApiUserListFollowingRequest, options?: AxiosRequestConfig) {
+        return UserApiFp(this.configuration).userListFollowing(requestParameters.username, requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary List the given user\'s GPG keys
-     * @param {string} username username of user
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results
+     * @param {UserApiUserListGPGKeysRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public userListGPGKeys(username: string, page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return UserApiFp(this.configuration).userListGPGKeys(username, page, limit, options).then((request) => request(this.axios, this.basePath));
+    public userListGPGKeys(requestParameters: UserApiUserListGPGKeysRequest, options?: AxiosRequestConfig) {
+        return UserApiFp(this.configuration).userListGPGKeys(requestParameters.username, requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary List the given user\'s public keys
-     * @param {string} username username of user
-     * @param {string} [fingerprint] fingerprint of the key
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results
+     * @param {UserApiUserListKeysRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public userListKeys(username: string, fingerprint?: string, page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return UserApiFp(this.configuration).userListKeys(username, fingerprint, page, limit, options).then((request) => request(this.axios, this.basePath));
+    public userListKeys(requestParameters: UserApiUserListKeysRequest, options?: AxiosRequestConfig) {
+        return UserApiFp(this.configuration).userListKeys(requestParameters.username, requestParameters.fingerprint, requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary List the repos owned by the given user
-     * @param {string} username username of user
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results
+     * @param {UserApiUserListReposRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public userListRepos(username: string, page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return UserApiFp(this.configuration).userListRepos(username, page, limit, options).then((request) => request(this.axios, this.basePath));
+    public userListRepos(requestParameters: UserApiUserListReposRequest, options?: AxiosRequestConfig) {
+        return UserApiFp(this.configuration).userListRepos(requestParameters.username, requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary The repos that the given user has starred
-     * @param {string} username username of user
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results
+     * @param {UserApiUserListStarredRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public userListStarred(username: string, page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return UserApiFp(this.configuration).userListStarred(username, page, limit, options).then((request) => request(this.axios, this.basePath));
+    public userListStarred(requestParameters: UserApiUserListStarredRequest, options?: AxiosRequestConfig) {
+        return UserApiFp(this.configuration).userListStarred(requestParameters.username, requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary List the repositories watched by a user
-     * @param {string} username username of the user
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results
+     * @param {UserApiUserListSubscriptionsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public userListSubscriptions(username: string, page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return UserApiFp(this.configuration).userListSubscriptions(username, page, limit, options).then((request) => request(this.axios, this.basePath));
+    public userListSubscriptions(requestParameters: UserApiUserListSubscriptionsRequest, options?: AxiosRequestConfig) {
+        return UserApiFp(this.configuration).userListSubscriptions(requestParameters.username, requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary List all the teams a user belongs to
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results
+     * @param {UserApiUserListTeamsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public userListTeams(page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return UserApiFp(this.configuration).userListTeams(page, limit, options).then((request) => request(this.axios, this.basePath));
+    public userListTeams(requestParameters: UserApiUserListTeamsRequest = {}, options?: AxiosRequestConfig) {
+        return UserApiFp(this.configuration).userListTeams(requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Search for users
-     * @param {string} [q] keyword
-     * @param {number} [uid] ID of the user to search for
-     * @param {string} [lang] If the user has one or more repos with the given language(s), the org will be in the results. Multiple lang\&#39;s are ORed.
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results
+     * @param {UserApiUserSearchRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public userSearch(q?: string, uid?: number, lang?: string, page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return UserApiFp(this.configuration).userSearch(q, uid, lang, page, limit, options).then((request) => request(this.axios, this.basePath));
+    public userSearch(requestParameters: UserApiUserSearchRequest = {}, options?: AxiosRequestConfig) {
+        return UserApiFp(this.configuration).userSearch(requestParameters.q, requestParameters.uid, requestParameters.lang, requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary update an OAuth2 Application, this includes regenerating the client secret
-     * @param {number} id application to be updated
-     * @param {CreateOAuth2ApplicationOptions} body 
+     * @param {UserApiUserUpdateOAuth2ApplicationRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public userUpdateOAuth2Application(id: number, body: CreateOAuth2ApplicationOptions, options?: AxiosRequestConfig) {
-        return UserApiFp(this.configuration).userUpdateOAuth2Application(id, body, options).then((request) => request(this.axios, this.basePath));
+    public userUpdateOAuth2Application(requestParameters: UserApiUserUpdateOAuth2ApplicationRequest, options?: AxiosRequestConfig) {
+        return UserApiFp(this.configuration).userUpdateOAuth2Application(requestParameters.id, requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**

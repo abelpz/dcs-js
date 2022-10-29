@@ -425,6 +425,34 @@ export const MiscellaneousApiFactory = function (configuration?: Configuration, 
 };
 
 /**
+ * Request parameters for renderMarkdown operation in MiscellaneousApi.
+ * @export
+ * @interface MiscellaneousApiRenderMarkdownRequest
+ */
+export interface MiscellaneousApiRenderMarkdownRequest {
+    /**
+     * 
+     * @type {MarkdownOption}
+     * @memberof MiscellaneousApiRenderMarkdown
+     */
+    readonly body?: MarkdownOption
+}
+
+/**
+ * Request parameters for renderMarkdownRaw operation in MiscellaneousApi.
+ * @export
+ * @interface MiscellaneousApiRenderMarkdownRawRequest
+ */
+export interface MiscellaneousApiRenderMarkdownRawRequest {
+    /**
+     * Request body to render
+     * @type {string}
+     * @memberof MiscellaneousApiRenderMarkdownRaw
+     */
+    readonly body: string
+}
+
+/**
  * MiscellaneousApi - object-oriented interface
  * @export
  * @class MiscellaneousApi
@@ -467,24 +495,24 @@ export class MiscellaneousApi extends BaseAPI {
     /**
      * 
      * @summary Render a markdown document as HTML
-     * @param {MarkdownOption} [body] 
+     * @param {MiscellaneousApiRenderMarkdownRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof MiscellaneousApi
      */
-    public renderMarkdown(body?: MarkdownOption, options?: AxiosRequestConfig) {
-        return MiscellaneousApiFp(this.configuration).renderMarkdown(body, options).then((request) => request(this.axios, this.basePath));
+    public renderMarkdown(requestParameters: MiscellaneousApiRenderMarkdownRequest = {}, options?: AxiosRequestConfig) {
+        return MiscellaneousApiFp(this.configuration).renderMarkdown(requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Render raw markdown as HTML
-     * @param {string} body Request body to render
+     * @param {MiscellaneousApiRenderMarkdownRawRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof MiscellaneousApi
      */
-    public renderMarkdownRaw(body: string, options?: AxiosRequestConfig) {
-        return MiscellaneousApiFp(this.configuration).renderMarkdownRaw(body, options).then((request) => request(this.axios, this.basePath));
+    public renderMarkdownRaw(requestParameters: MiscellaneousApiRenderMarkdownRawRequest, options?: AxiosRequestConfig) {
+        return MiscellaneousApiFp(this.configuration).renderMarkdownRaw(requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 }

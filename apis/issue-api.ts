@@ -4845,6 +4845,1812 @@ export const IssueApiFactory = function (configuration?: Configuration, basePath
 };
 
 /**
+ * Request parameters for issueAddLabel operation in IssueApi.
+ * @export
+ * @interface IssueApiIssueAddLabelRequest
+ */
+export interface IssueApiIssueAddLabelRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof IssueApiIssueAddLabel
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof IssueApiIssueAddLabel
+     */
+    readonly repo: string
+
+    /**
+     * index of the issue
+     * @type {number}
+     * @memberof IssueApiIssueAddLabel
+     */
+    readonly index: number
+
+    /**
+     * 
+     * @type {IssueLabelsOption}
+     * @memberof IssueApiIssueAddLabel
+     */
+    readonly body?: IssueLabelsOption
+}
+
+/**
+ * Request parameters for issueAddSubscription operation in IssueApi.
+ * @export
+ * @interface IssueApiIssueAddSubscriptionRequest
+ */
+export interface IssueApiIssueAddSubscriptionRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof IssueApiIssueAddSubscription
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof IssueApiIssueAddSubscription
+     */
+    readonly repo: string
+
+    /**
+     * index of the issue
+     * @type {number}
+     * @memberof IssueApiIssueAddSubscription
+     */
+    readonly index: number
+
+    /**
+     * user to subscribe
+     * @type {string}
+     * @memberof IssueApiIssueAddSubscription
+     */
+    readonly user: string
+}
+
+/**
+ * Request parameters for issueAddTime operation in IssueApi.
+ * @export
+ * @interface IssueApiIssueAddTimeRequest
+ */
+export interface IssueApiIssueAddTimeRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof IssueApiIssueAddTime
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof IssueApiIssueAddTime
+     */
+    readonly repo: string
+
+    /**
+     * index of the issue
+     * @type {number}
+     * @memberof IssueApiIssueAddTime
+     */
+    readonly index: number
+
+    /**
+     * 
+     * @type {AddTimeOption}
+     * @memberof IssueApiIssueAddTime
+     */
+    readonly body?: AddTimeOption
+}
+
+/**
+ * Request parameters for issueCheckSubscription operation in IssueApi.
+ * @export
+ * @interface IssueApiIssueCheckSubscriptionRequest
+ */
+export interface IssueApiIssueCheckSubscriptionRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof IssueApiIssueCheckSubscription
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof IssueApiIssueCheckSubscription
+     */
+    readonly repo: string
+
+    /**
+     * index of the issue
+     * @type {number}
+     * @memberof IssueApiIssueCheckSubscription
+     */
+    readonly index: number
+}
+
+/**
+ * Request parameters for issueClearLabels operation in IssueApi.
+ * @export
+ * @interface IssueApiIssueClearLabelsRequest
+ */
+export interface IssueApiIssueClearLabelsRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof IssueApiIssueClearLabels
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof IssueApiIssueClearLabels
+     */
+    readonly repo: string
+
+    /**
+     * index of the issue
+     * @type {number}
+     * @memberof IssueApiIssueClearLabels
+     */
+    readonly index: number
+}
+
+/**
+ * Request parameters for issueCreateComment operation in IssueApi.
+ * @export
+ * @interface IssueApiIssueCreateCommentRequest
+ */
+export interface IssueApiIssueCreateCommentRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof IssueApiIssueCreateComment
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof IssueApiIssueCreateComment
+     */
+    readonly repo: string
+
+    /**
+     * index of the issue
+     * @type {number}
+     * @memberof IssueApiIssueCreateComment
+     */
+    readonly index: number
+
+    /**
+     * 
+     * @type {CreateIssueCommentOption}
+     * @memberof IssueApiIssueCreateComment
+     */
+    readonly body?: CreateIssueCommentOption
+}
+
+/**
+ * Request parameters for issueCreateIssue operation in IssueApi.
+ * @export
+ * @interface IssueApiIssueCreateIssueRequest
+ */
+export interface IssueApiIssueCreateIssueRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof IssueApiIssueCreateIssue
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof IssueApiIssueCreateIssue
+     */
+    readonly repo: string
+
+    /**
+     * 
+     * @type {CreateIssueOption}
+     * @memberof IssueApiIssueCreateIssue
+     */
+    readonly body?: CreateIssueOption
+}
+
+/**
+ * Request parameters for issueCreateLabel operation in IssueApi.
+ * @export
+ * @interface IssueApiIssueCreateLabelRequest
+ */
+export interface IssueApiIssueCreateLabelRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof IssueApiIssueCreateLabel
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof IssueApiIssueCreateLabel
+     */
+    readonly repo: string
+
+    /**
+     * 
+     * @type {CreateLabelOption}
+     * @memberof IssueApiIssueCreateLabel
+     */
+    readonly body?: CreateLabelOption
+}
+
+/**
+ * Request parameters for issueCreateMilestone operation in IssueApi.
+ * @export
+ * @interface IssueApiIssueCreateMilestoneRequest
+ */
+export interface IssueApiIssueCreateMilestoneRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof IssueApiIssueCreateMilestone
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof IssueApiIssueCreateMilestone
+     */
+    readonly repo: string
+
+    /**
+     * 
+     * @type {CreateMilestoneOption}
+     * @memberof IssueApiIssueCreateMilestone
+     */
+    readonly body?: CreateMilestoneOption
+}
+
+/**
+ * Request parameters for issueDelete operation in IssueApi.
+ * @export
+ * @interface IssueApiIssueDeleteRequest
+ */
+export interface IssueApiIssueDeleteRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof IssueApiIssueDelete
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof IssueApiIssueDelete
+     */
+    readonly repo: string
+
+    /**
+     * index of issue to delete
+     * @type {number}
+     * @memberof IssueApiIssueDelete
+     */
+    readonly index: number
+}
+
+/**
+ * Request parameters for issueDeleteComment operation in IssueApi.
+ * @export
+ * @interface IssueApiIssueDeleteCommentRequest
+ */
+export interface IssueApiIssueDeleteCommentRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof IssueApiIssueDeleteComment
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof IssueApiIssueDeleteComment
+     */
+    readonly repo: string
+
+    /**
+     * id of comment to delete
+     * @type {number}
+     * @memberof IssueApiIssueDeleteComment
+     */
+    readonly id: number
+}
+
+/**
+ * Request parameters for issueDeleteCommentDeprecated operation in IssueApi.
+ * @export
+ * @interface IssueApiIssueDeleteCommentDeprecatedRequest
+ */
+export interface IssueApiIssueDeleteCommentDeprecatedRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof IssueApiIssueDeleteCommentDeprecated
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof IssueApiIssueDeleteCommentDeprecated
+     */
+    readonly repo: string
+
+    /**
+     * this parameter is ignored
+     * @type {number}
+     * @memberof IssueApiIssueDeleteCommentDeprecated
+     */
+    readonly index: number
+
+    /**
+     * id of comment to delete
+     * @type {number}
+     * @memberof IssueApiIssueDeleteCommentDeprecated
+     */
+    readonly id: number
+}
+
+/**
+ * Request parameters for issueDeleteCommentReaction operation in IssueApi.
+ * @export
+ * @interface IssueApiIssueDeleteCommentReactionRequest
+ */
+export interface IssueApiIssueDeleteCommentReactionRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof IssueApiIssueDeleteCommentReaction
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof IssueApiIssueDeleteCommentReaction
+     */
+    readonly repo: string
+
+    /**
+     * id of the comment to edit
+     * @type {number}
+     * @memberof IssueApiIssueDeleteCommentReaction
+     */
+    readonly id: number
+
+    /**
+     * 
+     * @type {EditReactionOption}
+     * @memberof IssueApiIssueDeleteCommentReaction
+     */
+    readonly content?: EditReactionOption
+}
+
+/**
+ * Request parameters for issueDeleteIssueReaction operation in IssueApi.
+ * @export
+ * @interface IssueApiIssueDeleteIssueReactionRequest
+ */
+export interface IssueApiIssueDeleteIssueReactionRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof IssueApiIssueDeleteIssueReaction
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof IssueApiIssueDeleteIssueReaction
+     */
+    readonly repo: string
+
+    /**
+     * index of the issue
+     * @type {number}
+     * @memberof IssueApiIssueDeleteIssueReaction
+     */
+    readonly index: number
+
+    /**
+     * 
+     * @type {EditReactionOption}
+     * @memberof IssueApiIssueDeleteIssueReaction
+     */
+    readonly content?: EditReactionOption
+}
+
+/**
+ * Request parameters for issueDeleteLabel operation in IssueApi.
+ * @export
+ * @interface IssueApiIssueDeleteLabelRequest
+ */
+export interface IssueApiIssueDeleteLabelRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof IssueApiIssueDeleteLabel
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof IssueApiIssueDeleteLabel
+     */
+    readonly repo: string
+
+    /**
+     * id of the label to delete
+     * @type {number}
+     * @memberof IssueApiIssueDeleteLabel
+     */
+    readonly id: number
+}
+
+/**
+ * Request parameters for issueDeleteMilestone operation in IssueApi.
+ * @export
+ * @interface IssueApiIssueDeleteMilestoneRequest
+ */
+export interface IssueApiIssueDeleteMilestoneRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof IssueApiIssueDeleteMilestone
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof IssueApiIssueDeleteMilestone
+     */
+    readonly repo: string
+
+    /**
+     * the milestone to delete, identified by ID and if not available by name
+     * @type {string}
+     * @memberof IssueApiIssueDeleteMilestone
+     */
+    readonly id: string
+}
+
+/**
+ * Request parameters for issueDeleteStopWatch operation in IssueApi.
+ * @export
+ * @interface IssueApiIssueDeleteStopWatchRequest
+ */
+export interface IssueApiIssueDeleteStopWatchRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof IssueApiIssueDeleteStopWatch
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof IssueApiIssueDeleteStopWatch
+     */
+    readonly repo: string
+
+    /**
+     * index of the issue to stop the stopwatch on
+     * @type {number}
+     * @memberof IssueApiIssueDeleteStopWatch
+     */
+    readonly index: number
+}
+
+/**
+ * Request parameters for issueDeleteSubscription operation in IssueApi.
+ * @export
+ * @interface IssueApiIssueDeleteSubscriptionRequest
+ */
+export interface IssueApiIssueDeleteSubscriptionRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof IssueApiIssueDeleteSubscription
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof IssueApiIssueDeleteSubscription
+     */
+    readonly repo: string
+
+    /**
+     * index of the issue
+     * @type {number}
+     * @memberof IssueApiIssueDeleteSubscription
+     */
+    readonly index: number
+
+    /**
+     * user witch unsubscribe
+     * @type {string}
+     * @memberof IssueApiIssueDeleteSubscription
+     */
+    readonly user: string
+}
+
+/**
+ * Request parameters for issueDeleteTime operation in IssueApi.
+ * @export
+ * @interface IssueApiIssueDeleteTimeRequest
+ */
+export interface IssueApiIssueDeleteTimeRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof IssueApiIssueDeleteTime
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof IssueApiIssueDeleteTime
+     */
+    readonly repo: string
+
+    /**
+     * index of the issue
+     * @type {number}
+     * @memberof IssueApiIssueDeleteTime
+     */
+    readonly index: number
+
+    /**
+     * id of time to delete
+     * @type {number}
+     * @memberof IssueApiIssueDeleteTime
+     */
+    readonly id: number
+}
+
+/**
+ * Request parameters for issueEditComment operation in IssueApi.
+ * @export
+ * @interface IssueApiIssueEditCommentRequest
+ */
+export interface IssueApiIssueEditCommentRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof IssueApiIssueEditComment
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof IssueApiIssueEditComment
+     */
+    readonly repo: string
+
+    /**
+     * id of the comment to edit
+     * @type {number}
+     * @memberof IssueApiIssueEditComment
+     */
+    readonly id: number
+
+    /**
+     * 
+     * @type {EditIssueCommentOption}
+     * @memberof IssueApiIssueEditComment
+     */
+    readonly body?: EditIssueCommentOption
+}
+
+/**
+ * Request parameters for issueEditCommentDeprecated operation in IssueApi.
+ * @export
+ * @interface IssueApiIssueEditCommentDeprecatedRequest
+ */
+export interface IssueApiIssueEditCommentDeprecatedRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof IssueApiIssueEditCommentDeprecated
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof IssueApiIssueEditCommentDeprecated
+     */
+    readonly repo: string
+
+    /**
+     * this parameter is ignored
+     * @type {number}
+     * @memberof IssueApiIssueEditCommentDeprecated
+     */
+    readonly index: number
+
+    /**
+     * id of the comment to edit
+     * @type {number}
+     * @memberof IssueApiIssueEditCommentDeprecated
+     */
+    readonly id: number
+
+    /**
+     * 
+     * @type {EditIssueCommentOption}
+     * @memberof IssueApiIssueEditCommentDeprecated
+     */
+    readonly body?: EditIssueCommentOption
+}
+
+/**
+ * Request parameters for issueEditIssue operation in IssueApi.
+ * @export
+ * @interface IssueApiIssueEditIssueRequest
+ */
+export interface IssueApiIssueEditIssueRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof IssueApiIssueEditIssue
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof IssueApiIssueEditIssue
+     */
+    readonly repo: string
+
+    /**
+     * index of the issue to edit
+     * @type {number}
+     * @memberof IssueApiIssueEditIssue
+     */
+    readonly index: number
+
+    /**
+     * 
+     * @type {EditIssueOption}
+     * @memberof IssueApiIssueEditIssue
+     */
+    readonly body?: EditIssueOption
+}
+
+/**
+ * Request parameters for issueEditIssueDeadline operation in IssueApi.
+ * @export
+ * @interface IssueApiIssueEditIssueDeadlineRequest
+ */
+export interface IssueApiIssueEditIssueDeadlineRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof IssueApiIssueEditIssueDeadline
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof IssueApiIssueEditIssueDeadline
+     */
+    readonly repo: string
+
+    /**
+     * index of the issue to create or update a deadline on
+     * @type {number}
+     * @memberof IssueApiIssueEditIssueDeadline
+     */
+    readonly index: number
+
+    /**
+     * 
+     * @type {EditDeadlineOption}
+     * @memberof IssueApiIssueEditIssueDeadline
+     */
+    readonly body?: EditDeadlineOption
+}
+
+/**
+ * Request parameters for issueEditLabel operation in IssueApi.
+ * @export
+ * @interface IssueApiIssueEditLabelRequest
+ */
+export interface IssueApiIssueEditLabelRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof IssueApiIssueEditLabel
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof IssueApiIssueEditLabel
+     */
+    readonly repo: string
+
+    /**
+     * id of the label to edit
+     * @type {number}
+     * @memberof IssueApiIssueEditLabel
+     */
+    readonly id: number
+
+    /**
+     * 
+     * @type {EditLabelOption}
+     * @memberof IssueApiIssueEditLabel
+     */
+    readonly body?: EditLabelOption
+}
+
+/**
+ * Request parameters for issueEditMilestone operation in IssueApi.
+ * @export
+ * @interface IssueApiIssueEditMilestoneRequest
+ */
+export interface IssueApiIssueEditMilestoneRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof IssueApiIssueEditMilestone
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof IssueApiIssueEditMilestone
+     */
+    readonly repo: string
+
+    /**
+     * the milestone to edit, identified by ID and if not available by name
+     * @type {string}
+     * @memberof IssueApiIssueEditMilestone
+     */
+    readonly id: string
+
+    /**
+     * 
+     * @type {EditMilestoneOption}
+     * @memberof IssueApiIssueEditMilestone
+     */
+    readonly body?: EditMilestoneOption
+}
+
+/**
+ * Request parameters for issueGetComment operation in IssueApi.
+ * @export
+ * @interface IssueApiIssueGetCommentRequest
+ */
+export interface IssueApiIssueGetCommentRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof IssueApiIssueGetComment
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof IssueApiIssueGetComment
+     */
+    readonly repo: string
+
+    /**
+     * id of the comment
+     * @type {number}
+     * @memberof IssueApiIssueGetComment
+     */
+    readonly id: number
+}
+
+/**
+ * Request parameters for issueGetCommentReactions operation in IssueApi.
+ * @export
+ * @interface IssueApiIssueGetCommentReactionsRequest
+ */
+export interface IssueApiIssueGetCommentReactionsRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof IssueApiIssueGetCommentReactions
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof IssueApiIssueGetCommentReactions
+     */
+    readonly repo: string
+
+    /**
+     * id of the comment to edit
+     * @type {number}
+     * @memberof IssueApiIssueGetCommentReactions
+     */
+    readonly id: number
+}
+
+/**
+ * Request parameters for issueGetComments operation in IssueApi.
+ * @export
+ * @interface IssueApiIssueGetCommentsRequest
+ */
+export interface IssueApiIssueGetCommentsRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof IssueApiIssueGetComments
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof IssueApiIssueGetComments
+     */
+    readonly repo: string
+
+    /**
+     * index of the issue
+     * @type {number}
+     * @memberof IssueApiIssueGetComments
+     */
+    readonly index: number
+
+    /**
+     * if provided, only comments updated since the specified time are returned.
+     * @type {string}
+     * @memberof IssueApiIssueGetComments
+     */
+    readonly since?: string
+
+    /**
+     * if provided, only comments updated before the provided time are returned.
+     * @type {string}
+     * @memberof IssueApiIssueGetComments
+     */
+    readonly before?: string
+}
+
+/**
+ * Request parameters for issueGetCommentsAndTimeline operation in IssueApi.
+ * @export
+ * @interface IssueApiIssueGetCommentsAndTimelineRequest
+ */
+export interface IssueApiIssueGetCommentsAndTimelineRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof IssueApiIssueGetCommentsAndTimeline
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof IssueApiIssueGetCommentsAndTimeline
+     */
+    readonly repo: string
+
+    /**
+     * index of the issue
+     * @type {number}
+     * @memberof IssueApiIssueGetCommentsAndTimeline
+     */
+    readonly index: number
+
+    /**
+     * if provided, only comments updated since the specified time are returned.
+     * @type {string}
+     * @memberof IssueApiIssueGetCommentsAndTimeline
+     */
+    readonly since?: string
+
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof IssueApiIssueGetCommentsAndTimeline
+     */
+    readonly page?: number
+
+    /**
+     * page size of results
+     * @type {number}
+     * @memberof IssueApiIssueGetCommentsAndTimeline
+     */
+    readonly limit?: number
+
+    /**
+     * if provided, only comments updated before the provided time are returned.
+     * @type {string}
+     * @memberof IssueApiIssueGetCommentsAndTimeline
+     */
+    readonly before?: string
+}
+
+/**
+ * Request parameters for issueGetIssue operation in IssueApi.
+ * @export
+ * @interface IssueApiIssueGetIssueRequest
+ */
+export interface IssueApiIssueGetIssueRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof IssueApiIssueGetIssue
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof IssueApiIssueGetIssue
+     */
+    readonly repo: string
+
+    /**
+     * index of the issue to get
+     * @type {number}
+     * @memberof IssueApiIssueGetIssue
+     */
+    readonly index: number
+}
+
+/**
+ * Request parameters for issueGetIssueReactions operation in IssueApi.
+ * @export
+ * @interface IssueApiIssueGetIssueReactionsRequest
+ */
+export interface IssueApiIssueGetIssueReactionsRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof IssueApiIssueGetIssueReactions
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof IssueApiIssueGetIssueReactions
+     */
+    readonly repo: string
+
+    /**
+     * index of the issue
+     * @type {number}
+     * @memberof IssueApiIssueGetIssueReactions
+     */
+    readonly index: number
+
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof IssueApiIssueGetIssueReactions
+     */
+    readonly page?: number
+
+    /**
+     * page size of results
+     * @type {number}
+     * @memberof IssueApiIssueGetIssueReactions
+     */
+    readonly limit?: number
+}
+
+/**
+ * Request parameters for issueGetLabel operation in IssueApi.
+ * @export
+ * @interface IssueApiIssueGetLabelRequest
+ */
+export interface IssueApiIssueGetLabelRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof IssueApiIssueGetLabel
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof IssueApiIssueGetLabel
+     */
+    readonly repo: string
+
+    /**
+     * id of the label to get
+     * @type {number}
+     * @memberof IssueApiIssueGetLabel
+     */
+    readonly id: number
+}
+
+/**
+ * Request parameters for issueGetLabels operation in IssueApi.
+ * @export
+ * @interface IssueApiIssueGetLabelsRequest
+ */
+export interface IssueApiIssueGetLabelsRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof IssueApiIssueGetLabels
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof IssueApiIssueGetLabels
+     */
+    readonly repo: string
+
+    /**
+     * index of the issue
+     * @type {number}
+     * @memberof IssueApiIssueGetLabels
+     */
+    readonly index: number
+}
+
+/**
+ * Request parameters for issueGetMilestone operation in IssueApi.
+ * @export
+ * @interface IssueApiIssueGetMilestoneRequest
+ */
+export interface IssueApiIssueGetMilestoneRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof IssueApiIssueGetMilestone
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof IssueApiIssueGetMilestone
+     */
+    readonly repo: string
+
+    /**
+     * the milestone to get, identified by ID and if not available by name
+     * @type {string}
+     * @memberof IssueApiIssueGetMilestone
+     */
+    readonly id: string
+}
+
+/**
+ * Request parameters for issueGetMilestonesList operation in IssueApi.
+ * @export
+ * @interface IssueApiIssueGetMilestonesListRequest
+ */
+export interface IssueApiIssueGetMilestonesListRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof IssueApiIssueGetMilestonesList
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof IssueApiIssueGetMilestonesList
+     */
+    readonly repo: string
+
+    /**
+     * Milestone state, Recognized values are open, closed and all. Defaults to \&quot;open\&quot;
+     * @type {string}
+     * @memberof IssueApiIssueGetMilestonesList
+     */
+    readonly state?: string
+
+    /**
+     * filter by milestone name
+     * @type {string}
+     * @memberof IssueApiIssueGetMilestonesList
+     */
+    readonly name?: string
+
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof IssueApiIssueGetMilestonesList
+     */
+    readonly page?: number
+
+    /**
+     * page size of results
+     * @type {number}
+     * @memberof IssueApiIssueGetMilestonesList
+     */
+    readonly limit?: number
+}
+
+/**
+ * Request parameters for issueGetRepoComments operation in IssueApi.
+ * @export
+ * @interface IssueApiIssueGetRepoCommentsRequest
+ */
+export interface IssueApiIssueGetRepoCommentsRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof IssueApiIssueGetRepoComments
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof IssueApiIssueGetRepoComments
+     */
+    readonly repo: string
+
+    /**
+     * if provided, only comments updated since the provided time are returned.
+     * @type {string}
+     * @memberof IssueApiIssueGetRepoComments
+     */
+    readonly since?: string
+
+    /**
+     * if provided, only comments updated before the provided time are returned.
+     * @type {string}
+     * @memberof IssueApiIssueGetRepoComments
+     */
+    readonly before?: string
+
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof IssueApiIssueGetRepoComments
+     */
+    readonly page?: number
+
+    /**
+     * page size of results
+     * @type {number}
+     * @memberof IssueApiIssueGetRepoComments
+     */
+    readonly limit?: number
+}
+
+/**
+ * Request parameters for issueListIssues operation in IssueApi.
+ * @export
+ * @interface IssueApiIssueListIssuesRequest
+ */
+export interface IssueApiIssueListIssuesRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof IssueApiIssueListIssues
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof IssueApiIssueListIssues
+     */
+    readonly repo: string
+
+    /**
+     * whether issue is open or closed
+     * @type {'closed' | 'open' | 'all'}
+     * @memberof IssueApiIssueListIssues
+     */
+    readonly state?: 'closed' | 'open' | 'all'
+
+    /**
+     * comma separated list of labels. Fetch only issues that have any of this labels. Non existent labels are discarded
+     * @type {string}
+     * @memberof IssueApiIssueListIssues
+     */
+    readonly labels?: string
+
+    /**
+     * search string
+     * @type {string}
+     * @memberof IssueApiIssueListIssues
+     */
+    readonly q?: string
+
+    /**
+     * filter by type (issues / pulls) if set
+     * @type {'issues' | 'pulls'}
+     * @memberof IssueApiIssueListIssues
+     */
+    readonly type?: 'issues' | 'pulls'
+
+    /**
+     * comma separated list of milestone names or ids. It uses names and fall back to ids. Fetch only issues that have any of this milestones. Non existent milestones are discarded
+     * @type {string}
+     * @memberof IssueApiIssueListIssues
+     */
+    readonly milestones?: string
+
+    /**
+     * Only show items updated after the given time. This is a timestamp in RFC 3339 format
+     * @type {string}
+     * @memberof IssueApiIssueListIssues
+     */
+    readonly since?: string
+
+    /**
+     * Only show items updated before the given time. This is a timestamp in RFC 3339 format
+     * @type {string}
+     * @memberof IssueApiIssueListIssues
+     */
+    readonly before?: string
+
+    /**
+     * Only show items which were created by the the given user
+     * @type {string}
+     * @memberof IssueApiIssueListIssues
+     */
+    readonly createdBy?: string
+
+    /**
+     * Only show items for which the given user is assigned
+     * @type {string}
+     * @memberof IssueApiIssueListIssues
+     */
+    readonly assignedBy?: string
+
+    /**
+     * Only show items in which the given user was mentioned
+     * @type {string}
+     * @memberof IssueApiIssueListIssues
+     */
+    readonly mentionedBy?: string
+
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof IssueApiIssueListIssues
+     */
+    readonly page?: number
+
+    /**
+     * page size of results
+     * @type {number}
+     * @memberof IssueApiIssueListIssues
+     */
+    readonly limit?: number
+}
+
+/**
+ * Request parameters for issueListLabels operation in IssueApi.
+ * @export
+ * @interface IssueApiIssueListLabelsRequest
+ */
+export interface IssueApiIssueListLabelsRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof IssueApiIssueListLabels
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof IssueApiIssueListLabels
+     */
+    readonly repo: string
+
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof IssueApiIssueListLabels
+     */
+    readonly page?: number
+
+    /**
+     * page size of results
+     * @type {number}
+     * @memberof IssueApiIssueListLabels
+     */
+    readonly limit?: number
+}
+
+/**
+ * Request parameters for issuePostCommentReaction operation in IssueApi.
+ * @export
+ * @interface IssueApiIssuePostCommentReactionRequest
+ */
+export interface IssueApiIssuePostCommentReactionRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof IssueApiIssuePostCommentReaction
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof IssueApiIssuePostCommentReaction
+     */
+    readonly repo: string
+
+    /**
+     * id of the comment to edit
+     * @type {number}
+     * @memberof IssueApiIssuePostCommentReaction
+     */
+    readonly id: number
+
+    /**
+     * 
+     * @type {EditReactionOption}
+     * @memberof IssueApiIssuePostCommentReaction
+     */
+    readonly content?: EditReactionOption
+}
+
+/**
+ * Request parameters for issuePostIssueReaction operation in IssueApi.
+ * @export
+ * @interface IssueApiIssuePostIssueReactionRequest
+ */
+export interface IssueApiIssuePostIssueReactionRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof IssueApiIssuePostIssueReaction
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof IssueApiIssuePostIssueReaction
+     */
+    readonly repo: string
+
+    /**
+     * index of the issue
+     * @type {number}
+     * @memberof IssueApiIssuePostIssueReaction
+     */
+    readonly index: number
+
+    /**
+     * 
+     * @type {EditReactionOption}
+     * @memberof IssueApiIssuePostIssueReaction
+     */
+    readonly content?: EditReactionOption
+}
+
+/**
+ * Request parameters for issueRemoveLabel operation in IssueApi.
+ * @export
+ * @interface IssueApiIssueRemoveLabelRequest
+ */
+export interface IssueApiIssueRemoveLabelRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof IssueApiIssueRemoveLabel
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof IssueApiIssueRemoveLabel
+     */
+    readonly repo: string
+
+    /**
+     * index of the issue
+     * @type {number}
+     * @memberof IssueApiIssueRemoveLabel
+     */
+    readonly index: number
+
+    /**
+     * id of the label to remove
+     * @type {number}
+     * @memberof IssueApiIssueRemoveLabel
+     */
+    readonly id: number
+}
+
+/**
+ * Request parameters for issueReplaceLabels operation in IssueApi.
+ * @export
+ * @interface IssueApiIssueReplaceLabelsRequest
+ */
+export interface IssueApiIssueReplaceLabelsRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof IssueApiIssueReplaceLabels
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof IssueApiIssueReplaceLabels
+     */
+    readonly repo: string
+
+    /**
+     * index of the issue
+     * @type {number}
+     * @memberof IssueApiIssueReplaceLabels
+     */
+    readonly index: number
+
+    /**
+     * 
+     * @type {IssueLabelsOption}
+     * @memberof IssueApiIssueReplaceLabels
+     */
+    readonly body?: IssueLabelsOption
+}
+
+/**
+ * Request parameters for issueResetTime operation in IssueApi.
+ * @export
+ * @interface IssueApiIssueResetTimeRequest
+ */
+export interface IssueApiIssueResetTimeRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof IssueApiIssueResetTime
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof IssueApiIssueResetTime
+     */
+    readonly repo: string
+
+    /**
+     * index of the issue to add tracked time to
+     * @type {number}
+     * @memberof IssueApiIssueResetTime
+     */
+    readonly index: number
+}
+
+/**
+ * Request parameters for issueSearchIssues operation in IssueApi.
+ * @export
+ * @interface IssueApiIssueSearchIssuesRequest
+ */
+export interface IssueApiIssueSearchIssuesRequest {
+    /**
+     * whether issue is open or closed
+     * @type {string}
+     * @memberof IssueApiIssueSearchIssues
+     */
+    readonly state?: string
+
+    /**
+     * comma separated list of labels. Fetch only issues that have any of this labels. Non existent labels are discarded
+     * @type {string}
+     * @memberof IssueApiIssueSearchIssues
+     */
+    readonly labels?: string
+
+    /**
+     * comma separated list of milestone names. Fetch only issues that have any of this milestones. Non existent are discarded
+     * @type {string}
+     * @memberof IssueApiIssueSearchIssues
+     */
+    readonly milestones?: string
+
+    /**
+     * search string
+     * @type {string}
+     * @memberof IssueApiIssueSearchIssues
+     */
+    readonly q?: string
+
+    /**
+     * repository to prioritize in the results
+     * @type {number}
+     * @memberof IssueApiIssueSearchIssues
+     */
+    readonly priorityRepoId?: number
+
+    /**
+     * filter by type (issues / pulls) if set
+     * @type {string}
+     * @memberof IssueApiIssueSearchIssues
+     */
+    readonly type?: string
+
+    /**
+     * Only show notifications updated after the given time. This is a timestamp in RFC 3339 format
+     * @type {string}
+     * @memberof IssueApiIssueSearchIssues
+     */
+    readonly since?: string
+
+    /**
+     * Only show notifications updated before the given time. This is a timestamp in RFC 3339 format
+     * @type {string}
+     * @memberof IssueApiIssueSearchIssues
+     */
+    readonly before?: string
+
+    /**
+     * filter (issues / pulls) assigned to you, default is false
+     * @type {boolean}
+     * @memberof IssueApiIssueSearchIssues
+     */
+    readonly assigned?: boolean
+
+    /**
+     * filter (issues / pulls) created by you, default is false
+     * @type {boolean}
+     * @memberof IssueApiIssueSearchIssues
+     */
+    readonly created?: boolean
+
+    /**
+     * filter (issues / pulls) mentioning you, default is false
+     * @type {boolean}
+     * @memberof IssueApiIssueSearchIssues
+     */
+    readonly mentioned?: boolean
+
+    /**
+     * filter pulls requesting your review, default is false
+     * @type {boolean}
+     * @memberof IssueApiIssueSearchIssues
+     */
+    readonly reviewRequested?: boolean
+
+    /**
+     * filter by owner
+     * @type {string}
+     * @memberof IssueApiIssueSearchIssues
+     */
+    readonly owner?: string
+
+    /**
+     * filter by team (requires organization owner parameter to be provided)
+     * @type {string}
+     * @memberof IssueApiIssueSearchIssues
+     */
+    readonly team?: string
+
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof IssueApiIssueSearchIssues
+     */
+    readonly page?: number
+
+    /**
+     * page size of results
+     * @type {number}
+     * @memberof IssueApiIssueSearchIssues
+     */
+    readonly limit?: number
+}
+
+/**
+ * Request parameters for issueStartStopWatch operation in IssueApi.
+ * @export
+ * @interface IssueApiIssueStartStopWatchRequest
+ */
+export interface IssueApiIssueStartStopWatchRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof IssueApiIssueStartStopWatch
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof IssueApiIssueStartStopWatch
+     */
+    readonly repo: string
+
+    /**
+     * index of the issue to create the stopwatch on
+     * @type {number}
+     * @memberof IssueApiIssueStartStopWatch
+     */
+    readonly index: number
+}
+
+/**
+ * Request parameters for issueStopStopWatch operation in IssueApi.
+ * @export
+ * @interface IssueApiIssueStopStopWatchRequest
+ */
+export interface IssueApiIssueStopStopWatchRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof IssueApiIssueStopStopWatch
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof IssueApiIssueStopStopWatch
+     */
+    readonly repo: string
+
+    /**
+     * index of the issue to stop the stopwatch on
+     * @type {number}
+     * @memberof IssueApiIssueStopStopWatch
+     */
+    readonly index: number
+}
+
+/**
+ * Request parameters for issueSubscriptions operation in IssueApi.
+ * @export
+ * @interface IssueApiIssueSubscriptionsRequest
+ */
+export interface IssueApiIssueSubscriptionsRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof IssueApiIssueSubscriptions
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof IssueApiIssueSubscriptions
+     */
+    readonly repo: string
+
+    /**
+     * index of the issue
+     * @type {number}
+     * @memberof IssueApiIssueSubscriptions
+     */
+    readonly index: number
+
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof IssueApiIssueSubscriptions
+     */
+    readonly page?: number
+
+    /**
+     * page size of results
+     * @type {number}
+     * @memberof IssueApiIssueSubscriptions
+     */
+    readonly limit?: number
+}
+
+/**
+ * Request parameters for issueTrackedTimes operation in IssueApi.
+ * @export
+ * @interface IssueApiIssueTrackedTimesRequest
+ */
+export interface IssueApiIssueTrackedTimesRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof IssueApiIssueTrackedTimes
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof IssueApiIssueTrackedTimes
+     */
+    readonly repo: string
+
+    /**
+     * index of the issue
+     * @type {number}
+     * @memberof IssueApiIssueTrackedTimes
+     */
+    readonly index: number
+
+    /**
+     * optional filter by user (available for issue managers)
+     * @type {string}
+     * @memberof IssueApiIssueTrackedTimes
+     */
+    readonly user?: string
+
+    /**
+     * Only show times updated after the given time. This is a timestamp in RFC 3339 format
+     * @type {string}
+     * @memberof IssueApiIssueTrackedTimes
+     */
+    readonly since?: string
+
+    /**
+     * Only show times updated before the given time. This is a timestamp in RFC 3339 format
+     * @type {string}
+     * @memberof IssueApiIssueTrackedTimes
+     */
+    readonly before?: string
+
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof IssueApiIssueTrackedTimes
+     */
+    readonly page?: number
+
+    /**
+     * page size of results
+     * @type {number}
+     * @memberof IssueApiIssueTrackedTimes
+     */
+    readonly limit?: number
+}
+
+/**
  * IssueApi - object-oriented interface
  * @export
  * @class IssueApi
@@ -4854,740 +6660,578 @@ export class IssueApi extends BaseAPI {
     /**
      * 
      * @summary Add a label to an issue
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} index index of the issue
-     * @param {IssueLabelsOption} [body] 
+     * @param {IssueApiIssueAddLabelRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof IssueApi
      */
-    public issueAddLabel(owner: string, repo: string, index: number, body?: IssueLabelsOption, options?: AxiosRequestConfig) {
-        return IssueApiFp(this.configuration).issueAddLabel(owner, repo, index, body, options).then((request) => request(this.axios, this.basePath));
+    public issueAddLabel(requestParameters: IssueApiIssueAddLabelRequest, options?: AxiosRequestConfig) {
+        return IssueApiFp(this.configuration).issueAddLabel(requestParameters.owner, requestParameters.repo, requestParameters.index, requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Subscribe user to issue
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} index index of the issue
-     * @param {string} user user to subscribe
+     * @param {IssueApiIssueAddSubscriptionRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof IssueApi
      */
-    public issueAddSubscription(owner: string, repo: string, index: number, user: string, options?: AxiosRequestConfig) {
-        return IssueApiFp(this.configuration).issueAddSubscription(owner, repo, index, user, options).then((request) => request(this.axios, this.basePath));
+    public issueAddSubscription(requestParameters: IssueApiIssueAddSubscriptionRequest, options?: AxiosRequestConfig) {
+        return IssueApiFp(this.configuration).issueAddSubscription(requestParameters.owner, requestParameters.repo, requestParameters.index, requestParameters.user, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Add tracked time to a issue
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} index index of the issue
-     * @param {AddTimeOption} [body] 
+     * @param {IssueApiIssueAddTimeRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof IssueApi
      */
-    public issueAddTime(owner: string, repo: string, index: number, body?: AddTimeOption, options?: AxiosRequestConfig) {
-        return IssueApiFp(this.configuration).issueAddTime(owner, repo, index, body, options).then((request) => request(this.axios, this.basePath));
+    public issueAddTime(requestParameters: IssueApiIssueAddTimeRequest, options?: AxiosRequestConfig) {
+        return IssueApiFp(this.configuration).issueAddTime(requestParameters.owner, requestParameters.repo, requestParameters.index, requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Check if user is subscribed to an issue
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} index index of the issue
+     * @param {IssueApiIssueCheckSubscriptionRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof IssueApi
      */
-    public issueCheckSubscription(owner: string, repo: string, index: number, options?: AxiosRequestConfig) {
-        return IssueApiFp(this.configuration).issueCheckSubscription(owner, repo, index, options).then((request) => request(this.axios, this.basePath));
+    public issueCheckSubscription(requestParameters: IssueApiIssueCheckSubscriptionRequest, options?: AxiosRequestConfig) {
+        return IssueApiFp(this.configuration).issueCheckSubscription(requestParameters.owner, requestParameters.repo, requestParameters.index, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Remove all labels from an issue
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} index index of the issue
+     * @param {IssueApiIssueClearLabelsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof IssueApi
      */
-    public issueClearLabels(owner: string, repo: string, index: number, options?: AxiosRequestConfig) {
-        return IssueApiFp(this.configuration).issueClearLabels(owner, repo, index, options).then((request) => request(this.axios, this.basePath));
+    public issueClearLabels(requestParameters: IssueApiIssueClearLabelsRequest, options?: AxiosRequestConfig) {
+        return IssueApiFp(this.configuration).issueClearLabels(requestParameters.owner, requestParameters.repo, requestParameters.index, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Add a comment to an issue
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} index index of the issue
-     * @param {CreateIssueCommentOption} [body] 
+     * @param {IssueApiIssueCreateCommentRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof IssueApi
      */
-    public issueCreateComment(owner: string, repo: string, index: number, body?: CreateIssueCommentOption, options?: AxiosRequestConfig) {
-        return IssueApiFp(this.configuration).issueCreateComment(owner, repo, index, body, options).then((request) => request(this.axios, this.basePath));
+    public issueCreateComment(requestParameters: IssueApiIssueCreateCommentRequest, options?: AxiosRequestConfig) {
+        return IssueApiFp(this.configuration).issueCreateComment(requestParameters.owner, requestParameters.repo, requestParameters.index, requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Create an issue. If using deadline only the date will be taken into account, and time of day ignored.
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {CreateIssueOption} [body] 
+     * @param {IssueApiIssueCreateIssueRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof IssueApi
      */
-    public issueCreateIssue(owner: string, repo: string, body?: CreateIssueOption, options?: AxiosRequestConfig) {
-        return IssueApiFp(this.configuration).issueCreateIssue(owner, repo, body, options).then((request) => request(this.axios, this.basePath));
+    public issueCreateIssue(requestParameters: IssueApiIssueCreateIssueRequest, options?: AxiosRequestConfig) {
+        return IssueApiFp(this.configuration).issueCreateIssue(requestParameters.owner, requestParameters.repo, requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Create a label
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {CreateLabelOption} [body] 
+     * @param {IssueApiIssueCreateLabelRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof IssueApi
      */
-    public issueCreateLabel(owner: string, repo: string, body?: CreateLabelOption, options?: AxiosRequestConfig) {
-        return IssueApiFp(this.configuration).issueCreateLabel(owner, repo, body, options).then((request) => request(this.axios, this.basePath));
+    public issueCreateLabel(requestParameters: IssueApiIssueCreateLabelRequest, options?: AxiosRequestConfig) {
+        return IssueApiFp(this.configuration).issueCreateLabel(requestParameters.owner, requestParameters.repo, requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Create a milestone
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {CreateMilestoneOption} [body] 
+     * @param {IssueApiIssueCreateMilestoneRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof IssueApi
      */
-    public issueCreateMilestone(owner: string, repo: string, body?: CreateMilestoneOption, options?: AxiosRequestConfig) {
-        return IssueApiFp(this.configuration).issueCreateMilestone(owner, repo, body, options).then((request) => request(this.axios, this.basePath));
+    public issueCreateMilestone(requestParameters: IssueApiIssueCreateMilestoneRequest, options?: AxiosRequestConfig) {
+        return IssueApiFp(this.configuration).issueCreateMilestone(requestParameters.owner, requestParameters.repo, requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Delete an issue
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} index index of issue to delete
+     * @param {IssueApiIssueDeleteRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof IssueApi
      */
-    public issueDelete(owner: string, repo: string, index: number, options?: AxiosRequestConfig) {
-        return IssueApiFp(this.configuration).issueDelete(owner, repo, index, options).then((request) => request(this.axios, this.basePath));
+    public issueDelete(requestParameters: IssueApiIssueDeleteRequest, options?: AxiosRequestConfig) {
+        return IssueApiFp(this.configuration).issueDelete(requestParameters.owner, requestParameters.repo, requestParameters.index, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Delete a comment
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} id id of comment to delete
+     * @param {IssueApiIssueDeleteCommentRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof IssueApi
      */
-    public issueDeleteComment(owner: string, repo: string, id: number, options?: AxiosRequestConfig) {
-        return IssueApiFp(this.configuration).issueDeleteComment(owner, repo, id, options).then((request) => request(this.axios, this.basePath));
+    public issueDeleteComment(requestParameters: IssueApiIssueDeleteCommentRequest, options?: AxiosRequestConfig) {
+        return IssueApiFp(this.configuration).issueDeleteComment(requestParameters.owner, requestParameters.repo, requestParameters.id, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Delete a comment
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} index this parameter is ignored
-     * @param {number} id id of comment to delete
+     * @param {IssueApiIssueDeleteCommentDeprecatedRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @deprecated
      * @throws {RequiredError}
      * @memberof IssueApi
      */
-    public issueDeleteCommentDeprecated(owner: string, repo: string, index: number, id: number, options?: AxiosRequestConfig) {
-        return IssueApiFp(this.configuration).issueDeleteCommentDeprecated(owner, repo, index, id, options).then((request) => request(this.axios, this.basePath));
+    public issueDeleteCommentDeprecated(requestParameters: IssueApiIssueDeleteCommentDeprecatedRequest, options?: AxiosRequestConfig) {
+        return IssueApiFp(this.configuration).issueDeleteCommentDeprecated(requestParameters.owner, requestParameters.repo, requestParameters.index, requestParameters.id, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Remove a reaction from a comment of an issue
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} id id of the comment to edit
-     * @param {EditReactionOption} [content] 
+     * @param {IssueApiIssueDeleteCommentReactionRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof IssueApi
      */
-    public issueDeleteCommentReaction(owner: string, repo: string, id: number, content?: EditReactionOption, options?: AxiosRequestConfig) {
-        return IssueApiFp(this.configuration).issueDeleteCommentReaction(owner, repo, id, content, options).then((request) => request(this.axios, this.basePath));
+    public issueDeleteCommentReaction(requestParameters: IssueApiIssueDeleteCommentReactionRequest, options?: AxiosRequestConfig) {
+        return IssueApiFp(this.configuration).issueDeleteCommentReaction(requestParameters.owner, requestParameters.repo, requestParameters.id, requestParameters.content, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Remove a reaction from an issue
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} index index of the issue
-     * @param {EditReactionOption} [content] 
+     * @param {IssueApiIssueDeleteIssueReactionRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof IssueApi
      */
-    public issueDeleteIssueReaction(owner: string, repo: string, index: number, content?: EditReactionOption, options?: AxiosRequestConfig) {
-        return IssueApiFp(this.configuration).issueDeleteIssueReaction(owner, repo, index, content, options).then((request) => request(this.axios, this.basePath));
+    public issueDeleteIssueReaction(requestParameters: IssueApiIssueDeleteIssueReactionRequest, options?: AxiosRequestConfig) {
+        return IssueApiFp(this.configuration).issueDeleteIssueReaction(requestParameters.owner, requestParameters.repo, requestParameters.index, requestParameters.content, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Delete a label
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} id id of the label to delete
+     * @param {IssueApiIssueDeleteLabelRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof IssueApi
      */
-    public issueDeleteLabel(owner: string, repo: string, id: number, options?: AxiosRequestConfig) {
-        return IssueApiFp(this.configuration).issueDeleteLabel(owner, repo, id, options).then((request) => request(this.axios, this.basePath));
+    public issueDeleteLabel(requestParameters: IssueApiIssueDeleteLabelRequest, options?: AxiosRequestConfig) {
+        return IssueApiFp(this.configuration).issueDeleteLabel(requestParameters.owner, requestParameters.repo, requestParameters.id, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Delete a milestone
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {string} id the milestone to delete, identified by ID and if not available by name
+     * @param {IssueApiIssueDeleteMilestoneRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof IssueApi
      */
-    public issueDeleteMilestone(owner: string, repo: string, id: string, options?: AxiosRequestConfig) {
-        return IssueApiFp(this.configuration).issueDeleteMilestone(owner, repo, id, options).then((request) => request(this.axios, this.basePath));
+    public issueDeleteMilestone(requestParameters: IssueApiIssueDeleteMilestoneRequest, options?: AxiosRequestConfig) {
+        return IssueApiFp(this.configuration).issueDeleteMilestone(requestParameters.owner, requestParameters.repo, requestParameters.id, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Delete an issue\'s existing stopwatch.
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} index index of the issue to stop the stopwatch on
+     * @param {IssueApiIssueDeleteStopWatchRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof IssueApi
      */
-    public issueDeleteStopWatch(owner: string, repo: string, index: number, options?: AxiosRequestConfig) {
-        return IssueApiFp(this.configuration).issueDeleteStopWatch(owner, repo, index, options).then((request) => request(this.axios, this.basePath));
+    public issueDeleteStopWatch(requestParameters: IssueApiIssueDeleteStopWatchRequest, options?: AxiosRequestConfig) {
+        return IssueApiFp(this.configuration).issueDeleteStopWatch(requestParameters.owner, requestParameters.repo, requestParameters.index, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Unsubscribe user from issue
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} index index of the issue
-     * @param {string} user user witch unsubscribe
+     * @param {IssueApiIssueDeleteSubscriptionRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof IssueApi
      */
-    public issueDeleteSubscription(owner: string, repo: string, index: number, user: string, options?: AxiosRequestConfig) {
-        return IssueApiFp(this.configuration).issueDeleteSubscription(owner, repo, index, user, options).then((request) => request(this.axios, this.basePath));
+    public issueDeleteSubscription(requestParameters: IssueApiIssueDeleteSubscriptionRequest, options?: AxiosRequestConfig) {
+        return IssueApiFp(this.configuration).issueDeleteSubscription(requestParameters.owner, requestParameters.repo, requestParameters.index, requestParameters.user, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Delete specific tracked time
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} index index of the issue
-     * @param {number} id id of time to delete
+     * @param {IssueApiIssueDeleteTimeRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof IssueApi
      */
-    public issueDeleteTime(owner: string, repo: string, index: number, id: number, options?: AxiosRequestConfig) {
-        return IssueApiFp(this.configuration).issueDeleteTime(owner, repo, index, id, options).then((request) => request(this.axios, this.basePath));
+    public issueDeleteTime(requestParameters: IssueApiIssueDeleteTimeRequest, options?: AxiosRequestConfig) {
+        return IssueApiFp(this.configuration).issueDeleteTime(requestParameters.owner, requestParameters.repo, requestParameters.index, requestParameters.id, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Edit a comment
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} id id of the comment to edit
-     * @param {EditIssueCommentOption} [body] 
+     * @param {IssueApiIssueEditCommentRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof IssueApi
      */
-    public issueEditComment(owner: string, repo: string, id: number, body?: EditIssueCommentOption, options?: AxiosRequestConfig) {
-        return IssueApiFp(this.configuration).issueEditComment(owner, repo, id, body, options).then((request) => request(this.axios, this.basePath));
+    public issueEditComment(requestParameters: IssueApiIssueEditCommentRequest, options?: AxiosRequestConfig) {
+        return IssueApiFp(this.configuration).issueEditComment(requestParameters.owner, requestParameters.repo, requestParameters.id, requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Edit a comment
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} index this parameter is ignored
-     * @param {number} id id of the comment to edit
-     * @param {EditIssueCommentOption} [body] 
+     * @param {IssueApiIssueEditCommentDeprecatedRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @deprecated
      * @throws {RequiredError}
      * @memberof IssueApi
      */
-    public issueEditCommentDeprecated(owner: string, repo: string, index: number, id: number, body?: EditIssueCommentOption, options?: AxiosRequestConfig) {
-        return IssueApiFp(this.configuration).issueEditCommentDeprecated(owner, repo, index, id, body, options).then((request) => request(this.axios, this.basePath));
+    public issueEditCommentDeprecated(requestParameters: IssueApiIssueEditCommentDeprecatedRequest, options?: AxiosRequestConfig) {
+        return IssueApiFp(this.configuration).issueEditCommentDeprecated(requestParameters.owner, requestParameters.repo, requestParameters.index, requestParameters.id, requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Edit an issue. If using deadline only the date will be taken into account, and time of day ignored.
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} index index of the issue to edit
-     * @param {EditIssueOption} [body] 
+     * @param {IssueApiIssueEditIssueRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof IssueApi
      */
-    public issueEditIssue(owner: string, repo: string, index: number, body?: EditIssueOption, options?: AxiosRequestConfig) {
-        return IssueApiFp(this.configuration).issueEditIssue(owner, repo, index, body, options).then((request) => request(this.axios, this.basePath));
+    public issueEditIssue(requestParameters: IssueApiIssueEditIssueRequest, options?: AxiosRequestConfig) {
+        return IssueApiFp(this.configuration).issueEditIssue(requestParameters.owner, requestParameters.repo, requestParameters.index, requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Set an issue deadline. If set to null, the deadline is deleted. If using deadline only the date will be taken into account, and time of day ignored.
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} index index of the issue to create or update a deadline on
-     * @param {EditDeadlineOption} [body] 
+     * @param {IssueApiIssueEditIssueDeadlineRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof IssueApi
      */
-    public issueEditIssueDeadline(owner: string, repo: string, index: number, body?: EditDeadlineOption, options?: AxiosRequestConfig) {
-        return IssueApiFp(this.configuration).issueEditIssueDeadline(owner, repo, index, body, options).then((request) => request(this.axios, this.basePath));
+    public issueEditIssueDeadline(requestParameters: IssueApiIssueEditIssueDeadlineRequest, options?: AxiosRequestConfig) {
+        return IssueApiFp(this.configuration).issueEditIssueDeadline(requestParameters.owner, requestParameters.repo, requestParameters.index, requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Update a label
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} id id of the label to edit
-     * @param {EditLabelOption} [body] 
+     * @param {IssueApiIssueEditLabelRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof IssueApi
      */
-    public issueEditLabel(owner: string, repo: string, id: number, body?: EditLabelOption, options?: AxiosRequestConfig) {
-        return IssueApiFp(this.configuration).issueEditLabel(owner, repo, id, body, options).then((request) => request(this.axios, this.basePath));
+    public issueEditLabel(requestParameters: IssueApiIssueEditLabelRequest, options?: AxiosRequestConfig) {
+        return IssueApiFp(this.configuration).issueEditLabel(requestParameters.owner, requestParameters.repo, requestParameters.id, requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Update a milestone
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {string} id the milestone to edit, identified by ID and if not available by name
-     * @param {EditMilestoneOption} [body] 
+     * @param {IssueApiIssueEditMilestoneRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof IssueApi
      */
-    public issueEditMilestone(owner: string, repo: string, id: string, body?: EditMilestoneOption, options?: AxiosRequestConfig) {
-        return IssueApiFp(this.configuration).issueEditMilestone(owner, repo, id, body, options).then((request) => request(this.axios, this.basePath));
+    public issueEditMilestone(requestParameters: IssueApiIssueEditMilestoneRequest, options?: AxiosRequestConfig) {
+        return IssueApiFp(this.configuration).issueEditMilestone(requestParameters.owner, requestParameters.repo, requestParameters.id, requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Get a comment
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} id id of the comment
+     * @param {IssueApiIssueGetCommentRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof IssueApi
      */
-    public issueGetComment(owner: string, repo: string, id: number, options?: AxiosRequestConfig) {
-        return IssueApiFp(this.configuration).issueGetComment(owner, repo, id, options).then((request) => request(this.axios, this.basePath));
+    public issueGetComment(requestParameters: IssueApiIssueGetCommentRequest, options?: AxiosRequestConfig) {
+        return IssueApiFp(this.configuration).issueGetComment(requestParameters.owner, requestParameters.repo, requestParameters.id, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Get a list of reactions from a comment of an issue
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} id id of the comment to edit
+     * @param {IssueApiIssueGetCommentReactionsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof IssueApi
      */
-    public issueGetCommentReactions(owner: string, repo: string, id: number, options?: AxiosRequestConfig) {
-        return IssueApiFp(this.configuration).issueGetCommentReactions(owner, repo, id, options).then((request) => request(this.axios, this.basePath));
+    public issueGetCommentReactions(requestParameters: IssueApiIssueGetCommentReactionsRequest, options?: AxiosRequestConfig) {
+        return IssueApiFp(this.configuration).issueGetCommentReactions(requestParameters.owner, requestParameters.repo, requestParameters.id, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary List all comments on an issue
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} index index of the issue
-     * @param {string} [since] if provided, only comments updated since the specified time are returned.
-     * @param {string} [before] if provided, only comments updated before the provided time are returned.
+     * @param {IssueApiIssueGetCommentsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof IssueApi
      */
-    public issueGetComments(owner: string, repo: string, index: number, since?: string, before?: string, options?: AxiosRequestConfig) {
-        return IssueApiFp(this.configuration).issueGetComments(owner, repo, index, since, before, options).then((request) => request(this.axios, this.basePath));
+    public issueGetComments(requestParameters: IssueApiIssueGetCommentsRequest, options?: AxiosRequestConfig) {
+        return IssueApiFp(this.configuration).issueGetComments(requestParameters.owner, requestParameters.repo, requestParameters.index, requestParameters.since, requestParameters.before, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary List all comments and events on an issue
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} index index of the issue
-     * @param {string} [since] if provided, only comments updated since the specified time are returned.
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results
-     * @param {string} [before] if provided, only comments updated before the provided time are returned.
+     * @param {IssueApiIssueGetCommentsAndTimelineRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof IssueApi
      */
-    public issueGetCommentsAndTimeline(owner: string, repo: string, index: number, since?: string, page?: number, limit?: number, before?: string, options?: AxiosRequestConfig) {
-        return IssueApiFp(this.configuration).issueGetCommentsAndTimeline(owner, repo, index, since, page, limit, before, options).then((request) => request(this.axios, this.basePath));
+    public issueGetCommentsAndTimeline(requestParameters: IssueApiIssueGetCommentsAndTimelineRequest, options?: AxiosRequestConfig) {
+        return IssueApiFp(this.configuration).issueGetCommentsAndTimeline(requestParameters.owner, requestParameters.repo, requestParameters.index, requestParameters.since, requestParameters.page, requestParameters.limit, requestParameters.before, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Get an issue
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} index index of the issue to get
+     * @param {IssueApiIssueGetIssueRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof IssueApi
      */
-    public issueGetIssue(owner: string, repo: string, index: number, options?: AxiosRequestConfig) {
-        return IssueApiFp(this.configuration).issueGetIssue(owner, repo, index, options).then((request) => request(this.axios, this.basePath));
+    public issueGetIssue(requestParameters: IssueApiIssueGetIssueRequest, options?: AxiosRequestConfig) {
+        return IssueApiFp(this.configuration).issueGetIssue(requestParameters.owner, requestParameters.repo, requestParameters.index, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Get a list reactions of an issue
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} index index of the issue
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results
+     * @param {IssueApiIssueGetIssueReactionsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof IssueApi
      */
-    public issueGetIssueReactions(owner: string, repo: string, index: number, page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return IssueApiFp(this.configuration).issueGetIssueReactions(owner, repo, index, page, limit, options).then((request) => request(this.axios, this.basePath));
+    public issueGetIssueReactions(requestParameters: IssueApiIssueGetIssueReactionsRequest, options?: AxiosRequestConfig) {
+        return IssueApiFp(this.configuration).issueGetIssueReactions(requestParameters.owner, requestParameters.repo, requestParameters.index, requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Get a single label
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} id id of the label to get
+     * @param {IssueApiIssueGetLabelRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof IssueApi
      */
-    public issueGetLabel(owner: string, repo: string, id: number, options?: AxiosRequestConfig) {
-        return IssueApiFp(this.configuration).issueGetLabel(owner, repo, id, options).then((request) => request(this.axios, this.basePath));
+    public issueGetLabel(requestParameters: IssueApiIssueGetLabelRequest, options?: AxiosRequestConfig) {
+        return IssueApiFp(this.configuration).issueGetLabel(requestParameters.owner, requestParameters.repo, requestParameters.id, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Get an issue\'s labels
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} index index of the issue
+     * @param {IssueApiIssueGetLabelsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof IssueApi
      */
-    public issueGetLabels(owner: string, repo: string, index: number, options?: AxiosRequestConfig) {
-        return IssueApiFp(this.configuration).issueGetLabels(owner, repo, index, options).then((request) => request(this.axios, this.basePath));
+    public issueGetLabels(requestParameters: IssueApiIssueGetLabelsRequest, options?: AxiosRequestConfig) {
+        return IssueApiFp(this.configuration).issueGetLabels(requestParameters.owner, requestParameters.repo, requestParameters.index, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Get a milestone
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {string} id the milestone to get, identified by ID and if not available by name
+     * @param {IssueApiIssueGetMilestoneRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof IssueApi
      */
-    public issueGetMilestone(owner: string, repo: string, id: string, options?: AxiosRequestConfig) {
-        return IssueApiFp(this.configuration).issueGetMilestone(owner, repo, id, options).then((request) => request(this.axios, this.basePath));
+    public issueGetMilestone(requestParameters: IssueApiIssueGetMilestoneRequest, options?: AxiosRequestConfig) {
+        return IssueApiFp(this.configuration).issueGetMilestone(requestParameters.owner, requestParameters.repo, requestParameters.id, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Get all of a repository\'s opened milestones
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {string} [state] Milestone state, Recognized values are open, closed and all. Defaults to \&quot;open\&quot;
-     * @param {string} [name] filter by milestone name
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results
+     * @param {IssueApiIssueGetMilestonesListRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof IssueApi
      */
-    public issueGetMilestonesList(owner: string, repo: string, state?: string, name?: string, page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return IssueApiFp(this.configuration).issueGetMilestonesList(owner, repo, state, name, page, limit, options).then((request) => request(this.axios, this.basePath));
+    public issueGetMilestonesList(requestParameters: IssueApiIssueGetMilestonesListRequest, options?: AxiosRequestConfig) {
+        return IssueApiFp(this.configuration).issueGetMilestonesList(requestParameters.owner, requestParameters.repo, requestParameters.state, requestParameters.name, requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary List all comments in a repository
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {string} [since] if provided, only comments updated since the provided time are returned.
-     * @param {string} [before] if provided, only comments updated before the provided time are returned.
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results
+     * @param {IssueApiIssueGetRepoCommentsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof IssueApi
      */
-    public issueGetRepoComments(owner: string, repo: string, since?: string, before?: string, page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return IssueApiFp(this.configuration).issueGetRepoComments(owner, repo, since, before, page, limit, options).then((request) => request(this.axios, this.basePath));
+    public issueGetRepoComments(requestParameters: IssueApiIssueGetRepoCommentsRequest, options?: AxiosRequestConfig) {
+        return IssueApiFp(this.configuration).issueGetRepoComments(requestParameters.owner, requestParameters.repo, requestParameters.since, requestParameters.before, requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary List a repository\'s issues
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {'closed' | 'open' | 'all'} [state] whether issue is open or closed
-     * @param {string} [labels] comma separated list of labels. Fetch only issues that have any of this labels. Non existent labels are discarded
-     * @param {string} [q] search string
-     * @param {'issues' | 'pulls'} [type] filter by type (issues / pulls) if set
-     * @param {string} [milestones] comma separated list of milestone names or ids. It uses names and fall back to ids. Fetch only issues that have any of this milestones. Non existent milestones are discarded
-     * @param {string} [since] Only show items updated after the given time. This is a timestamp in RFC 3339 format
-     * @param {string} [before] Only show items updated before the given time. This is a timestamp in RFC 3339 format
-     * @param {string} [createdBy] Only show items which were created by the the given user
-     * @param {string} [assignedBy] Only show items for which the given user is assigned
-     * @param {string} [mentionedBy] Only show items in which the given user was mentioned
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results
+     * @param {IssueApiIssueListIssuesRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof IssueApi
      */
-    public issueListIssues(owner: string, repo: string, state?: 'closed' | 'open' | 'all', labels?: string, q?: string, type?: 'issues' | 'pulls', milestones?: string, since?: string, before?: string, createdBy?: string, assignedBy?: string, mentionedBy?: string, page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return IssueApiFp(this.configuration).issueListIssues(owner, repo, state, labels, q, type, milestones, since, before, createdBy, assignedBy, mentionedBy, page, limit, options).then((request) => request(this.axios, this.basePath));
+    public issueListIssues(requestParameters: IssueApiIssueListIssuesRequest, options?: AxiosRequestConfig) {
+        return IssueApiFp(this.configuration).issueListIssues(requestParameters.owner, requestParameters.repo, requestParameters.state, requestParameters.labels, requestParameters.q, requestParameters.type, requestParameters.milestones, requestParameters.since, requestParameters.before, requestParameters.createdBy, requestParameters.assignedBy, requestParameters.mentionedBy, requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Get all of a repository\'s labels
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results
+     * @param {IssueApiIssueListLabelsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof IssueApi
      */
-    public issueListLabels(owner: string, repo: string, page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return IssueApiFp(this.configuration).issueListLabels(owner, repo, page, limit, options).then((request) => request(this.axios, this.basePath));
+    public issueListLabels(requestParameters: IssueApiIssueListLabelsRequest, options?: AxiosRequestConfig) {
+        return IssueApiFp(this.configuration).issueListLabels(requestParameters.owner, requestParameters.repo, requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Add a reaction to a comment of an issue
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} id id of the comment to edit
-     * @param {EditReactionOption} [content] 
+     * @param {IssueApiIssuePostCommentReactionRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof IssueApi
      */
-    public issuePostCommentReaction(owner: string, repo: string, id: number, content?: EditReactionOption, options?: AxiosRequestConfig) {
-        return IssueApiFp(this.configuration).issuePostCommentReaction(owner, repo, id, content, options).then((request) => request(this.axios, this.basePath));
+    public issuePostCommentReaction(requestParameters: IssueApiIssuePostCommentReactionRequest, options?: AxiosRequestConfig) {
+        return IssueApiFp(this.configuration).issuePostCommentReaction(requestParameters.owner, requestParameters.repo, requestParameters.id, requestParameters.content, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Add a reaction to an issue
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} index index of the issue
-     * @param {EditReactionOption} [content] 
+     * @param {IssueApiIssuePostIssueReactionRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof IssueApi
      */
-    public issuePostIssueReaction(owner: string, repo: string, index: number, content?: EditReactionOption, options?: AxiosRequestConfig) {
-        return IssueApiFp(this.configuration).issuePostIssueReaction(owner, repo, index, content, options).then((request) => request(this.axios, this.basePath));
+    public issuePostIssueReaction(requestParameters: IssueApiIssuePostIssueReactionRequest, options?: AxiosRequestConfig) {
+        return IssueApiFp(this.configuration).issuePostIssueReaction(requestParameters.owner, requestParameters.repo, requestParameters.index, requestParameters.content, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Remove a label from an issue
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} index index of the issue
-     * @param {number} id id of the label to remove
+     * @param {IssueApiIssueRemoveLabelRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof IssueApi
      */
-    public issueRemoveLabel(owner: string, repo: string, index: number, id: number, options?: AxiosRequestConfig) {
-        return IssueApiFp(this.configuration).issueRemoveLabel(owner, repo, index, id, options).then((request) => request(this.axios, this.basePath));
+    public issueRemoveLabel(requestParameters: IssueApiIssueRemoveLabelRequest, options?: AxiosRequestConfig) {
+        return IssueApiFp(this.configuration).issueRemoveLabel(requestParameters.owner, requestParameters.repo, requestParameters.index, requestParameters.id, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Replace an issue\'s labels
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} index index of the issue
-     * @param {IssueLabelsOption} [body] 
+     * @param {IssueApiIssueReplaceLabelsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof IssueApi
      */
-    public issueReplaceLabels(owner: string, repo: string, index: number, body?: IssueLabelsOption, options?: AxiosRequestConfig) {
-        return IssueApiFp(this.configuration).issueReplaceLabels(owner, repo, index, body, options).then((request) => request(this.axios, this.basePath));
+    public issueReplaceLabels(requestParameters: IssueApiIssueReplaceLabelsRequest, options?: AxiosRequestConfig) {
+        return IssueApiFp(this.configuration).issueReplaceLabels(requestParameters.owner, requestParameters.repo, requestParameters.index, requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Reset a tracked time of an issue
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} index index of the issue to add tracked time to
+     * @param {IssueApiIssueResetTimeRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof IssueApi
      */
-    public issueResetTime(owner: string, repo: string, index: number, options?: AxiosRequestConfig) {
-        return IssueApiFp(this.configuration).issueResetTime(owner, repo, index, options).then((request) => request(this.axios, this.basePath));
+    public issueResetTime(requestParameters: IssueApiIssueResetTimeRequest, options?: AxiosRequestConfig) {
+        return IssueApiFp(this.configuration).issueResetTime(requestParameters.owner, requestParameters.repo, requestParameters.index, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Search for issues across the repositories that the user has access to
-     * @param {string} [state] whether issue is open or closed
-     * @param {string} [labels] comma separated list of labels. Fetch only issues that have any of this labels. Non existent labels are discarded
-     * @param {string} [milestones] comma separated list of milestone names. Fetch only issues that have any of this milestones. Non existent are discarded
-     * @param {string} [q] search string
-     * @param {number} [priorityRepoId] repository to prioritize in the results
-     * @param {string} [type] filter by type (issues / pulls) if set
-     * @param {string} [since] Only show notifications updated after the given time. This is a timestamp in RFC 3339 format
-     * @param {string} [before] Only show notifications updated before the given time. This is a timestamp in RFC 3339 format
-     * @param {boolean} [assigned] filter (issues / pulls) assigned to you, default is false
-     * @param {boolean} [created] filter (issues / pulls) created by you, default is false
-     * @param {boolean} [mentioned] filter (issues / pulls) mentioning you, default is false
-     * @param {boolean} [reviewRequested] filter pulls requesting your review, default is false
-     * @param {string} [owner] filter by owner
-     * @param {string} [team] filter by team (requires organization owner parameter to be provided)
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results
+     * @param {IssueApiIssueSearchIssuesRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof IssueApi
      */
-    public issueSearchIssues(state?: string, labels?: string, milestones?: string, q?: string, priorityRepoId?: number, type?: string, since?: string, before?: string, assigned?: boolean, created?: boolean, mentioned?: boolean, reviewRequested?: boolean, owner?: string, team?: string, page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return IssueApiFp(this.configuration).issueSearchIssues(state, labels, milestones, q, priorityRepoId, type, since, before, assigned, created, mentioned, reviewRequested, owner, team, page, limit, options).then((request) => request(this.axios, this.basePath));
+    public issueSearchIssues(requestParameters: IssueApiIssueSearchIssuesRequest = {}, options?: AxiosRequestConfig) {
+        return IssueApiFp(this.configuration).issueSearchIssues(requestParameters.state, requestParameters.labels, requestParameters.milestones, requestParameters.q, requestParameters.priorityRepoId, requestParameters.type, requestParameters.since, requestParameters.before, requestParameters.assigned, requestParameters.created, requestParameters.mentioned, requestParameters.reviewRequested, requestParameters.owner, requestParameters.team, requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Start stopwatch on an issue.
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} index index of the issue to create the stopwatch on
+     * @param {IssueApiIssueStartStopWatchRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof IssueApi
      */
-    public issueStartStopWatch(owner: string, repo: string, index: number, options?: AxiosRequestConfig) {
-        return IssueApiFp(this.configuration).issueStartStopWatch(owner, repo, index, options).then((request) => request(this.axios, this.basePath));
+    public issueStartStopWatch(requestParameters: IssueApiIssueStartStopWatchRequest, options?: AxiosRequestConfig) {
+        return IssueApiFp(this.configuration).issueStartStopWatch(requestParameters.owner, requestParameters.repo, requestParameters.index, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Stop an issue\'s existing stopwatch.
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} index index of the issue to stop the stopwatch on
+     * @param {IssueApiIssueStopStopWatchRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof IssueApi
      */
-    public issueStopStopWatch(owner: string, repo: string, index: number, options?: AxiosRequestConfig) {
-        return IssueApiFp(this.configuration).issueStopStopWatch(owner, repo, index, options).then((request) => request(this.axios, this.basePath));
+    public issueStopStopWatch(requestParameters: IssueApiIssueStopStopWatchRequest, options?: AxiosRequestConfig) {
+        return IssueApiFp(this.configuration).issueStopStopWatch(requestParameters.owner, requestParameters.repo, requestParameters.index, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Get users who subscribed on an issue.
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} index index of the issue
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results
+     * @param {IssueApiIssueSubscriptionsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof IssueApi
      */
-    public issueSubscriptions(owner: string, repo: string, index: number, page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return IssueApiFp(this.configuration).issueSubscriptions(owner, repo, index, page, limit, options).then((request) => request(this.axios, this.basePath));
+    public issueSubscriptions(requestParameters: IssueApiIssueSubscriptionsRequest, options?: AxiosRequestConfig) {
+        return IssueApiFp(this.configuration).issueSubscriptions(requestParameters.owner, requestParameters.repo, requestParameters.index, requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary List an issue\'s tracked times
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
-     * @param {number} index index of the issue
-     * @param {string} [user] optional filter by user (available for issue managers)
-     * @param {string} [since] Only show times updated after the given time. This is a timestamp in RFC 3339 format
-     * @param {string} [before] Only show times updated before the given time. This is a timestamp in RFC 3339 format
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results
+     * @param {IssueApiIssueTrackedTimesRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof IssueApi
      */
-    public issueTrackedTimes(owner: string, repo: string, index: number, user?: string, since?: string, before?: string, page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return IssueApiFp(this.configuration).issueTrackedTimes(owner, repo, index, user, since, before, page, limit, options).then((request) => request(this.axios, this.basePath));
+    public issueTrackedTimes(requestParameters: IssueApiIssueTrackedTimesRequest, options?: AxiosRequestConfig) {
+        return IssueApiFp(this.configuration).issueTrackedTimes(requestParameters.owner, requestParameters.repo, requestParameters.index, requestParameters.user, requestParameters.since, requestParameters.before, requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 }

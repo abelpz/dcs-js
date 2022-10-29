@@ -1247,6 +1247,300 @@ export const AdminApiFactory = function (configuration?: Configuration, basePath
 };
 
 /**
+ * Request parameters for adminAdoptRepository operation in AdminApi.
+ * @export
+ * @interface AdminApiAdminAdoptRepositoryRequest
+ */
+export interface AdminApiAdminAdoptRepositoryRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof AdminApiAdminAdoptRepository
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof AdminApiAdminAdoptRepository
+     */
+    readonly repo: string
+}
+
+/**
+ * Request parameters for adminCreateOrg operation in AdminApi.
+ * @export
+ * @interface AdminApiAdminCreateOrgRequest
+ */
+export interface AdminApiAdminCreateOrgRequest {
+    /**
+     * username of the user that will own the created organization
+     * @type {string}
+     * @memberof AdminApiAdminCreateOrg
+     */
+    readonly username: string
+
+    /**
+     * 
+     * @type {CreateOrgOption}
+     * @memberof AdminApiAdminCreateOrg
+     */
+    readonly organization: CreateOrgOption
+}
+
+/**
+ * Request parameters for adminCreatePublicKey operation in AdminApi.
+ * @export
+ * @interface AdminApiAdminCreatePublicKeyRequest
+ */
+export interface AdminApiAdminCreatePublicKeyRequest {
+    /**
+     * username of the user
+     * @type {string}
+     * @memberof AdminApiAdminCreatePublicKey
+     */
+    readonly username: string
+
+    /**
+     * 
+     * @type {CreateKeyOption}
+     * @memberof AdminApiAdminCreatePublicKey
+     */
+    readonly key?: CreateKeyOption
+}
+
+/**
+ * Request parameters for adminCreateRepo operation in AdminApi.
+ * @export
+ * @interface AdminApiAdminCreateRepoRequest
+ */
+export interface AdminApiAdminCreateRepoRequest {
+    /**
+     * username of the user. This user will own the created repository
+     * @type {string}
+     * @memberof AdminApiAdminCreateRepo
+     */
+    readonly username: string
+
+    /**
+     * 
+     * @type {CreateRepoOption}
+     * @memberof AdminApiAdminCreateRepo
+     */
+    readonly repository: CreateRepoOption
+}
+
+/**
+ * Request parameters for adminCreateUser operation in AdminApi.
+ * @export
+ * @interface AdminApiAdminCreateUserRequest
+ */
+export interface AdminApiAdminCreateUserRequest {
+    /**
+     * 
+     * @type {CreateUserOption}
+     * @memberof AdminApiAdminCreateUser
+     */
+    readonly body?: CreateUserOption
+}
+
+/**
+ * Request parameters for adminCronList operation in AdminApi.
+ * @export
+ * @interface AdminApiAdminCronListRequest
+ */
+export interface AdminApiAdminCronListRequest {
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof AdminApiAdminCronList
+     */
+    readonly page?: number
+
+    /**
+     * page size of results
+     * @type {number}
+     * @memberof AdminApiAdminCronList
+     */
+    readonly limit?: number
+}
+
+/**
+ * Request parameters for adminCronRun operation in AdminApi.
+ * @export
+ * @interface AdminApiAdminCronRunRequest
+ */
+export interface AdminApiAdminCronRunRequest {
+    /**
+     * task to run
+     * @type {string}
+     * @memberof AdminApiAdminCronRun
+     */
+    readonly task: string
+}
+
+/**
+ * Request parameters for adminDeleteUnadoptedRepository operation in AdminApi.
+ * @export
+ * @interface AdminApiAdminDeleteUnadoptedRepositoryRequest
+ */
+export interface AdminApiAdminDeleteUnadoptedRepositoryRequest {
+    /**
+     * owner of the repo
+     * @type {string}
+     * @memberof AdminApiAdminDeleteUnadoptedRepository
+     */
+    readonly owner: string
+
+    /**
+     * name of the repo
+     * @type {string}
+     * @memberof AdminApiAdminDeleteUnadoptedRepository
+     */
+    readonly repo: string
+}
+
+/**
+ * Request parameters for adminDeleteUser operation in AdminApi.
+ * @export
+ * @interface AdminApiAdminDeleteUserRequest
+ */
+export interface AdminApiAdminDeleteUserRequest {
+    /**
+     * username of user to delete
+     * @type {string}
+     * @memberof AdminApiAdminDeleteUser
+     */
+    readonly username: string
+}
+
+/**
+ * Request parameters for adminDeleteUserPublicKey operation in AdminApi.
+ * @export
+ * @interface AdminApiAdminDeleteUserPublicKeyRequest
+ */
+export interface AdminApiAdminDeleteUserPublicKeyRequest {
+    /**
+     * username of user
+     * @type {string}
+     * @memberof AdminApiAdminDeleteUserPublicKey
+     */
+    readonly username: string
+
+    /**
+     * id of the key to delete
+     * @type {number}
+     * @memberof AdminApiAdminDeleteUserPublicKey
+     */
+    readonly id: number
+}
+
+/**
+ * Request parameters for adminEditUser operation in AdminApi.
+ * @export
+ * @interface AdminApiAdminEditUserRequest
+ */
+export interface AdminApiAdminEditUserRequest {
+    /**
+     * username of user to edit
+     * @type {string}
+     * @memberof AdminApiAdminEditUser
+     */
+    readonly username: string
+
+    /**
+     * 
+     * @type {EditUserOption}
+     * @memberof AdminApiAdminEditUser
+     */
+    readonly body?: EditUserOption
+}
+
+/**
+ * Request parameters for adminGetAllOrgs operation in AdminApi.
+ * @export
+ * @interface AdminApiAdminGetAllOrgsRequest
+ */
+export interface AdminApiAdminGetAllOrgsRequest {
+    /**
+     * If the org has one or more repos with the given language(s), the org will be in the results. Multiple lang\&#39;s are ORed.
+     * @type {string}
+     * @memberof AdminApiAdminGetAllOrgs
+     */
+    readonly lang?: string
+
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof AdminApiAdminGetAllOrgs
+     */
+    readonly page?: number
+
+    /**
+     * page size of results
+     * @type {number}
+     * @memberof AdminApiAdminGetAllOrgs
+     */
+    readonly limit?: number
+}
+
+/**
+ * Request parameters for adminGetAllUsers operation in AdminApi.
+ * @export
+ * @interface AdminApiAdminGetAllUsersRequest
+ */
+export interface AdminApiAdminGetAllUsersRequest {
+    /**
+     * If the user has one or more repos with the given language(s), the org will be in the results. Multiple lang\&#39;s are ORed.
+     * @type {string}
+     * @memberof AdminApiAdminGetAllUsers
+     */
+    readonly lang?: string
+
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof AdminApiAdminGetAllUsers
+     */
+    readonly page?: number
+
+    /**
+     * page size of results
+     * @type {number}
+     * @memberof AdminApiAdminGetAllUsers
+     */
+    readonly limit?: number
+}
+
+/**
+ * Request parameters for adminUnadoptedList operation in AdminApi.
+ * @export
+ * @interface AdminApiAdminUnadoptedListRequest
+ */
+export interface AdminApiAdminUnadoptedListRequest {
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof AdminApiAdminUnadoptedList
+     */
+    readonly page?: number
+
+    /**
+     * page size of results
+     * @type {number}
+     * @memberof AdminApiAdminUnadoptedList
+     */
+    readonly limit?: number
+
+    /**
+     * pattern of repositories to search for
+     * @type {string}
+     * @memberof AdminApiAdminUnadoptedList
+     */
+    readonly pattern?: string
+}
+
+/**
  * AdminApi - object-oriented interface
  * @export
  * @class AdminApi
@@ -1256,182 +1550,168 @@ export class AdminApi extends BaseAPI {
     /**
      * 
      * @summary Adopt unadopted files as a repository
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
+     * @param {AdminApiAdminAdoptRepositoryRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof AdminApi
      */
-    public adminAdoptRepository(owner: string, repo: string, options?: AxiosRequestConfig) {
-        return AdminApiFp(this.configuration).adminAdoptRepository(owner, repo, options).then((request) => request(this.axios, this.basePath));
+    public adminAdoptRepository(requestParameters: AdminApiAdminAdoptRepositoryRequest, options?: AxiosRequestConfig) {
+        return AdminApiFp(this.configuration).adminAdoptRepository(requestParameters.owner, requestParameters.repo, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Create an organization
-     * @param {string} username username of the user that will own the created organization
-     * @param {CreateOrgOption} organization 
+     * @param {AdminApiAdminCreateOrgRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof AdminApi
      */
-    public adminCreateOrg(username: string, organization: CreateOrgOption, options?: AxiosRequestConfig) {
-        return AdminApiFp(this.configuration).adminCreateOrg(username, organization, options).then((request) => request(this.axios, this.basePath));
+    public adminCreateOrg(requestParameters: AdminApiAdminCreateOrgRequest, options?: AxiosRequestConfig) {
+        return AdminApiFp(this.configuration).adminCreateOrg(requestParameters.username, requestParameters.organization, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Add a public key on behalf of a user
-     * @param {string} username username of the user
-     * @param {CreateKeyOption} [key] 
+     * @param {AdminApiAdminCreatePublicKeyRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof AdminApi
      */
-    public adminCreatePublicKey(username: string, key?: CreateKeyOption, options?: AxiosRequestConfig) {
-        return AdminApiFp(this.configuration).adminCreatePublicKey(username, key, options).then((request) => request(this.axios, this.basePath));
+    public adminCreatePublicKey(requestParameters: AdminApiAdminCreatePublicKeyRequest, options?: AxiosRequestConfig) {
+        return AdminApiFp(this.configuration).adminCreatePublicKey(requestParameters.username, requestParameters.key, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Create a repository on behalf of a user
-     * @param {string} username username of the user. This user will own the created repository
-     * @param {CreateRepoOption} repository 
+     * @param {AdminApiAdminCreateRepoRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof AdminApi
      */
-    public adminCreateRepo(username: string, repository: CreateRepoOption, options?: AxiosRequestConfig) {
-        return AdminApiFp(this.configuration).adminCreateRepo(username, repository, options).then((request) => request(this.axios, this.basePath));
+    public adminCreateRepo(requestParameters: AdminApiAdminCreateRepoRequest, options?: AxiosRequestConfig) {
+        return AdminApiFp(this.configuration).adminCreateRepo(requestParameters.username, requestParameters.repository, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Create a user
-     * @param {CreateUserOption} [body] 
+     * @param {AdminApiAdminCreateUserRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof AdminApi
      */
-    public adminCreateUser(body?: CreateUserOption, options?: AxiosRequestConfig) {
-        return AdminApiFp(this.configuration).adminCreateUser(body, options).then((request) => request(this.axios, this.basePath));
+    public adminCreateUser(requestParameters: AdminApiAdminCreateUserRequest = {}, options?: AxiosRequestConfig) {
+        return AdminApiFp(this.configuration).adminCreateUser(requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary List cron tasks
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results
+     * @param {AdminApiAdminCronListRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof AdminApi
      */
-    public adminCronList(page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return AdminApiFp(this.configuration).adminCronList(page, limit, options).then((request) => request(this.axios, this.basePath));
+    public adminCronList(requestParameters: AdminApiAdminCronListRequest = {}, options?: AxiosRequestConfig) {
+        return AdminApiFp(this.configuration).adminCronList(requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Run cron task
-     * @param {string} task task to run
+     * @param {AdminApiAdminCronRunRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof AdminApi
      */
-    public adminCronRun(task: string, options?: AxiosRequestConfig) {
-        return AdminApiFp(this.configuration).adminCronRun(task, options).then((request) => request(this.axios, this.basePath));
+    public adminCronRun(requestParameters: AdminApiAdminCronRunRequest, options?: AxiosRequestConfig) {
+        return AdminApiFp(this.configuration).adminCronRun(requestParameters.task, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Delete unadopted files
-     * @param {string} owner owner of the repo
-     * @param {string} repo name of the repo
+     * @param {AdminApiAdminDeleteUnadoptedRepositoryRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof AdminApi
      */
-    public adminDeleteUnadoptedRepository(owner: string, repo: string, options?: AxiosRequestConfig) {
-        return AdminApiFp(this.configuration).adminDeleteUnadoptedRepository(owner, repo, options).then((request) => request(this.axios, this.basePath));
+    public adminDeleteUnadoptedRepository(requestParameters: AdminApiAdminDeleteUnadoptedRepositoryRequest, options?: AxiosRequestConfig) {
+        return AdminApiFp(this.configuration).adminDeleteUnadoptedRepository(requestParameters.owner, requestParameters.repo, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Delete a user
-     * @param {string} username username of user to delete
+     * @param {AdminApiAdminDeleteUserRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof AdminApi
      */
-    public adminDeleteUser(username: string, options?: AxiosRequestConfig) {
-        return AdminApiFp(this.configuration).adminDeleteUser(username, options).then((request) => request(this.axios, this.basePath));
+    public adminDeleteUser(requestParameters: AdminApiAdminDeleteUserRequest, options?: AxiosRequestConfig) {
+        return AdminApiFp(this.configuration).adminDeleteUser(requestParameters.username, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Delete a user\'s public key
-     * @param {string} username username of user
-     * @param {number} id id of the key to delete
+     * @param {AdminApiAdminDeleteUserPublicKeyRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof AdminApi
      */
-    public adminDeleteUserPublicKey(username: string, id: number, options?: AxiosRequestConfig) {
-        return AdminApiFp(this.configuration).adminDeleteUserPublicKey(username, id, options).then((request) => request(this.axios, this.basePath));
+    public adminDeleteUserPublicKey(requestParameters: AdminApiAdminDeleteUserPublicKeyRequest, options?: AxiosRequestConfig) {
+        return AdminApiFp(this.configuration).adminDeleteUserPublicKey(requestParameters.username, requestParameters.id, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Edit an existing user
-     * @param {string} username username of user to edit
-     * @param {EditUserOption} [body] 
+     * @param {AdminApiAdminEditUserRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof AdminApi
      */
-    public adminEditUser(username: string, body?: EditUserOption, options?: AxiosRequestConfig) {
-        return AdminApiFp(this.configuration).adminEditUser(username, body, options).then((request) => request(this.axios, this.basePath));
+    public adminEditUser(requestParameters: AdminApiAdminEditUserRequest, options?: AxiosRequestConfig) {
+        return AdminApiFp(this.configuration).adminEditUser(requestParameters.username, requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary List all organizations
-     * @param {string} [lang] If the org has one or more repos with the given language(s), the org will be in the results. Multiple lang\&#39;s are ORed.
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results
+     * @param {AdminApiAdminGetAllOrgsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof AdminApi
      */
-    public adminGetAllOrgs(lang?: string, page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return AdminApiFp(this.configuration).adminGetAllOrgs(lang, page, limit, options).then((request) => request(this.axios, this.basePath));
+    public adminGetAllOrgs(requestParameters: AdminApiAdminGetAllOrgsRequest = {}, options?: AxiosRequestConfig) {
+        return AdminApiFp(this.configuration).adminGetAllOrgs(requestParameters.lang, requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary List all users
-     * @param {string} [lang] If the user has one or more repos with the given language(s), the org will be in the results. Multiple lang\&#39;s are ORed.
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results
+     * @param {AdminApiAdminGetAllUsersRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof AdminApi
      */
-    public adminGetAllUsers(lang?: string, page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return AdminApiFp(this.configuration).adminGetAllUsers(lang, page, limit, options).then((request) => request(this.axios, this.basePath));
+    public adminGetAllUsers(requestParameters: AdminApiAdminGetAllUsersRequest = {}, options?: AxiosRequestConfig) {
+        return AdminApiFp(this.configuration).adminGetAllUsers(requestParameters.lang, requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary List unadopted repositories
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results
-     * @param {string} [pattern] pattern of repositories to search for
+     * @param {AdminApiAdminUnadoptedListRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof AdminApi
      */
-    public adminUnadoptedList(page?: number, limit?: number, pattern?: string, options?: AxiosRequestConfig) {
-        return AdminApiFp(this.configuration).adminUnadoptedList(page, limit, pattern, options).then((request) => request(this.axios, this.basePath));
+    public adminUnadoptedList(requestParameters: AdminApiAdminUnadoptedListRequest = {}, options?: AxiosRequestConfig) {
+        return AdminApiFp(this.configuration).adminUnadoptedList(requestParameters.page, requestParameters.limit, requestParameters.pattern, options).then((request) => request(this.axios, this.basePath));
     }
 }

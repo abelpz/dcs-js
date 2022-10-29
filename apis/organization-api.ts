@@ -3684,6 +3684,979 @@ export const OrganizationApiFactory = function (configuration?: Configuration, b
 };
 
 /**
+ * Request parameters for createOrgRepo operation in OrganizationApi.
+ * @export
+ * @interface OrganizationApiCreateOrgRepoRequest
+ */
+export interface OrganizationApiCreateOrgRepoRequest {
+    /**
+     * name of organization
+     * @type {string}
+     * @memberof OrganizationApiCreateOrgRepo
+     */
+    readonly org: string
+
+    /**
+     * 
+     * @type {CreateRepoOption}
+     * @memberof OrganizationApiCreateOrgRepo
+     */
+    readonly body?: CreateRepoOption
+}
+
+/**
+ * Request parameters for createOrgRepoDeprecated operation in OrganizationApi.
+ * @export
+ * @interface OrganizationApiCreateOrgRepoDeprecatedRequest
+ */
+export interface OrganizationApiCreateOrgRepoDeprecatedRequest {
+    /**
+     * name of organization
+     * @type {string}
+     * @memberof OrganizationApiCreateOrgRepoDeprecated
+     */
+    readonly org: string
+
+    /**
+     * 
+     * @type {CreateRepoOption}
+     * @memberof OrganizationApiCreateOrgRepoDeprecated
+     */
+    readonly body?: CreateRepoOption
+}
+
+/**
+ * Request parameters for orgAddTeamMember operation in OrganizationApi.
+ * @export
+ * @interface OrganizationApiOrgAddTeamMemberRequest
+ */
+export interface OrganizationApiOrgAddTeamMemberRequest {
+    /**
+     * id of the team
+     * @type {number}
+     * @memberof OrganizationApiOrgAddTeamMember
+     */
+    readonly id: number
+
+    /**
+     * username of the user to add
+     * @type {string}
+     * @memberof OrganizationApiOrgAddTeamMember
+     */
+    readonly username: string
+}
+
+/**
+ * Request parameters for orgAddTeamRepository operation in OrganizationApi.
+ * @export
+ * @interface OrganizationApiOrgAddTeamRepositoryRequest
+ */
+export interface OrganizationApiOrgAddTeamRepositoryRequest {
+    /**
+     * id of the team
+     * @type {number}
+     * @memberof OrganizationApiOrgAddTeamRepository
+     */
+    readonly id: number
+
+    /**
+     * organization that owns the repo to add
+     * @type {string}
+     * @memberof OrganizationApiOrgAddTeamRepository
+     */
+    readonly org: string
+
+    /**
+     * name of the repo to add
+     * @type {string}
+     * @memberof OrganizationApiOrgAddTeamRepository
+     */
+    readonly repo: string
+}
+
+/**
+ * Request parameters for orgConcealMember operation in OrganizationApi.
+ * @export
+ * @interface OrganizationApiOrgConcealMemberRequest
+ */
+export interface OrganizationApiOrgConcealMemberRequest {
+    /**
+     * name of the organization
+     * @type {string}
+     * @memberof OrganizationApiOrgConcealMember
+     */
+    readonly org: string
+
+    /**
+     * username of the user
+     * @type {string}
+     * @memberof OrganizationApiOrgConcealMember
+     */
+    readonly username: string
+}
+
+/**
+ * Request parameters for orgCreate operation in OrganizationApi.
+ * @export
+ * @interface OrganizationApiOrgCreateRequest
+ */
+export interface OrganizationApiOrgCreateRequest {
+    /**
+     * 
+     * @type {CreateOrgOption}
+     * @memberof OrganizationApiOrgCreate
+     */
+    readonly organization: CreateOrgOption
+}
+
+/**
+ * Request parameters for orgCreateHook operation in OrganizationApi.
+ * @export
+ * @interface OrganizationApiOrgCreateHookRequest
+ */
+export interface OrganizationApiOrgCreateHookRequest {
+    /**
+     * name of the organization
+     * @type {string}
+     * @memberof OrganizationApiOrgCreateHook
+     */
+    readonly org: string
+
+    /**
+     * 
+     * @type {CreateHookOption}
+     * @memberof OrganizationApiOrgCreateHook
+     */
+    readonly body: CreateHookOption
+}
+
+/**
+ * Request parameters for orgCreateLabel operation in OrganizationApi.
+ * @export
+ * @interface OrganizationApiOrgCreateLabelRequest
+ */
+export interface OrganizationApiOrgCreateLabelRequest {
+    /**
+     * name of the organization
+     * @type {string}
+     * @memberof OrganizationApiOrgCreateLabel
+     */
+    readonly org: string
+
+    /**
+     * 
+     * @type {CreateLabelOption}
+     * @memberof OrganizationApiOrgCreateLabel
+     */
+    readonly body?: CreateLabelOption
+}
+
+/**
+ * Request parameters for orgCreateTeam operation in OrganizationApi.
+ * @export
+ * @interface OrganizationApiOrgCreateTeamRequest
+ */
+export interface OrganizationApiOrgCreateTeamRequest {
+    /**
+     * name of the organization
+     * @type {string}
+     * @memberof OrganizationApiOrgCreateTeam
+     */
+    readonly org: string
+
+    /**
+     * 
+     * @type {CreateTeamOption}
+     * @memberof OrganizationApiOrgCreateTeam
+     */
+    readonly body?: CreateTeamOption
+}
+
+/**
+ * Request parameters for orgDelete operation in OrganizationApi.
+ * @export
+ * @interface OrganizationApiOrgDeleteRequest
+ */
+export interface OrganizationApiOrgDeleteRequest {
+    /**
+     * organization that is to be deleted
+     * @type {string}
+     * @memberof OrganizationApiOrgDelete
+     */
+    readonly org: string
+}
+
+/**
+ * Request parameters for orgDeleteHook operation in OrganizationApi.
+ * @export
+ * @interface OrganizationApiOrgDeleteHookRequest
+ */
+export interface OrganizationApiOrgDeleteHookRequest {
+    /**
+     * name of the organization
+     * @type {string}
+     * @memberof OrganizationApiOrgDeleteHook
+     */
+    readonly org: string
+
+    /**
+     * id of the hook to delete
+     * @type {number}
+     * @memberof OrganizationApiOrgDeleteHook
+     */
+    readonly id: number
+}
+
+/**
+ * Request parameters for orgDeleteLabel operation in OrganizationApi.
+ * @export
+ * @interface OrganizationApiOrgDeleteLabelRequest
+ */
+export interface OrganizationApiOrgDeleteLabelRequest {
+    /**
+     * name of the organization
+     * @type {string}
+     * @memberof OrganizationApiOrgDeleteLabel
+     */
+    readonly org: string
+
+    /**
+     * id of the label to delete
+     * @type {number}
+     * @memberof OrganizationApiOrgDeleteLabel
+     */
+    readonly id: number
+}
+
+/**
+ * Request parameters for orgDeleteMember operation in OrganizationApi.
+ * @export
+ * @interface OrganizationApiOrgDeleteMemberRequest
+ */
+export interface OrganizationApiOrgDeleteMemberRequest {
+    /**
+     * name of the organization
+     * @type {string}
+     * @memberof OrganizationApiOrgDeleteMember
+     */
+    readonly org: string
+
+    /**
+     * username of the user
+     * @type {string}
+     * @memberof OrganizationApiOrgDeleteMember
+     */
+    readonly username: string
+}
+
+/**
+ * Request parameters for orgDeleteTeam operation in OrganizationApi.
+ * @export
+ * @interface OrganizationApiOrgDeleteTeamRequest
+ */
+export interface OrganizationApiOrgDeleteTeamRequest {
+    /**
+     * id of the team to delete
+     * @type {number}
+     * @memberof OrganizationApiOrgDeleteTeam
+     */
+    readonly id: number
+}
+
+/**
+ * Request parameters for orgEdit operation in OrganizationApi.
+ * @export
+ * @interface OrganizationApiOrgEditRequest
+ */
+export interface OrganizationApiOrgEditRequest {
+    /**
+     * name of the organization to edit
+     * @type {string}
+     * @memberof OrganizationApiOrgEdit
+     */
+    readonly org: string
+
+    /**
+     * 
+     * @type {EditOrgOption}
+     * @memberof OrganizationApiOrgEdit
+     */
+    readonly body: EditOrgOption
+}
+
+/**
+ * Request parameters for orgEditHook operation in OrganizationApi.
+ * @export
+ * @interface OrganizationApiOrgEditHookRequest
+ */
+export interface OrganizationApiOrgEditHookRequest {
+    /**
+     * name of the organization
+     * @type {string}
+     * @memberof OrganizationApiOrgEditHook
+     */
+    readonly org: string
+
+    /**
+     * id of the hook to update
+     * @type {number}
+     * @memberof OrganizationApiOrgEditHook
+     */
+    readonly id: number
+
+    /**
+     * 
+     * @type {EditHookOption}
+     * @memberof OrganizationApiOrgEditHook
+     */
+    readonly body?: EditHookOption
+}
+
+/**
+ * Request parameters for orgEditLabel operation in OrganizationApi.
+ * @export
+ * @interface OrganizationApiOrgEditLabelRequest
+ */
+export interface OrganizationApiOrgEditLabelRequest {
+    /**
+     * name of the organization
+     * @type {string}
+     * @memberof OrganizationApiOrgEditLabel
+     */
+    readonly org: string
+
+    /**
+     * id of the label to edit
+     * @type {number}
+     * @memberof OrganizationApiOrgEditLabel
+     */
+    readonly id: number
+
+    /**
+     * 
+     * @type {EditLabelOption}
+     * @memberof OrganizationApiOrgEditLabel
+     */
+    readonly body?: EditLabelOption
+}
+
+/**
+ * Request parameters for orgEditTeam operation in OrganizationApi.
+ * @export
+ * @interface OrganizationApiOrgEditTeamRequest
+ */
+export interface OrganizationApiOrgEditTeamRequest {
+    /**
+     * id of the team to edit
+     * @type {number}
+     * @memberof OrganizationApiOrgEditTeam
+     */
+    readonly id: number
+
+    /**
+     * 
+     * @type {EditTeamOption}
+     * @memberof OrganizationApiOrgEditTeam
+     */
+    readonly body?: EditTeamOption
+}
+
+/**
+ * Request parameters for orgGet operation in OrganizationApi.
+ * @export
+ * @interface OrganizationApiOrgGetRequest
+ */
+export interface OrganizationApiOrgGetRequest {
+    /**
+     * name of the organization to get
+     * @type {string}
+     * @memberof OrganizationApiOrgGet
+     */
+    readonly org: string
+}
+
+/**
+ * Request parameters for orgGetAll operation in OrganizationApi.
+ * @export
+ * @interface OrganizationApiOrgGetAllRequest
+ */
+export interface OrganizationApiOrgGetAllRequest {
+    /**
+     * If the org has one or more repos with the given language(s), the org will be in the results. Multiple lang\&#39;s are ORed.
+     * @type {string}
+     * @memberof OrganizationApiOrgGetAll
+     */
+    readonly lang?: string
+
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof OrganizationApiOrgGetAll
+     */
+    readonly page?: number
+
+    /**
+     * page size of results
+     * @type {number}
+     * @memberof OrganizationApiOrgGetAll
+     */
+    readonly limit?: number
+}
+
+/**
+ * Request parameters for orgGetHook operation in OrganizationApi.
+ * @export
+ * @interface OrganizationApiOrgGetHookRequest
+ */
+export interface OrganizationApiOrgGetHookRequest {
+    /**
+     * name of the organization
+     * @type {string}
+     * @memberof OrganizationApiOrgGetHook
+     */
+    readonly org: string
+
+    /**
+     * id of the hook to get
+     * @type {number}
+     * @memberof OrganizationApiOrgGetHook
+     */
+    readonly id: number
+}
+
+/**
+ * Request parameters for orgGetLabel operation in OrganizationApi.
+ * @export
+ * @interface OrganizationApiOrgGetLabelRequest
+ */
+export interface OrganizationApiOrgGetLabelRequest {
+    /**
+     * name of the organization
+     * @type {string}
+     * @memberof OrganizationApiOrgGetLabel
+     */
+    readonly org: string
+
+    /**
+     * id of the label to get
+     * @type {number}
+     * @memberof OrganizationApiOrgGetLabel
+     */
+    readonly id: number
+}
+
+/**
+ * Request parameters for orgGetTeam operation in OrganizationApi.
+ * @export
+ * @interface OrganizationApiOrgGetTeamRequest
+ */
+export interface OrganizationApiOrgGetTeamRequest {
+    /**
+     * id of the team to get
+     * @type {number}
+     * @memberof OrganizationApiOrgGetTeam
+     */
+    readonly id: number
+}
+
+/**
+ * Request parameters for orgGetUserPermissions operation in OrganizationApi.
+ * @export
+ * @interface OrganizationApiOrgGetUserPermissionsRequest
+ */
+export interface OrganizationApiOrgGetUserPermissionsRequest {
+    /**
+     * username of user
+     * @type {string}
+     * @memberof OrganizationApiOrgGetUserPermissions
+     */
+    readonly username: string
+
+    /**
+     * name of the organization
+     * @type {string}
+     * @memberof OrganizationApiOrgGetUserPermissions
+     */
+    readonly org: string
+}
+
+/**
+ * Request parameters for orgIsMember operation in OrganizationApi.
+ * @export
+ * @interface OrganizationApiOrgIsMemberRequest
+ */
+export interface OrganizationApiOrgIsMemberRequest {
+    /**
+     * name of the organization
+     * @type {string}
+     * @memberof OrganizationApiOrgIsMember
+     */
+    readonly org: string
+
+    /**
+     * username of the user
+     * @type {string}
+     * @memberof OrganizationApiOrgIsMember
+     */
+    readonly username: string
+}
+
+/**
+ * Request parameters for orgIsPublicMember operation in OrganizationApi.
+ * @export
+ * @interface OrganizationApiOrgIsPublicMemberRequest
+ */
+export interface OrganizationApiOrgIsPublicMemberRequest {
+    /**
+     * name of the organization
+     * @type {string}
+     * @memberof OrganizationApiOrgIsPublicMember
+     */
+    readonly org: string
+
+    /**
+     * username of the user
+     * @type {string}
+     * @memberof OrganizationApiOrgIsPublicMember
+     */
+    readonly username: string
+}
+
+/**
+ * Request parameters for orgListCurrentUserOrgs operation in OrganizationApi.
+ * @export
+ * @interface OrganizationApiOrgListCurrentUserOrgsRequest
+ */
+export interface OrganizationApiOrgListCurrentUserOrgsRequest {
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof OrganizationApiOrgListCurrentUserOrgs
+     */
+    readonly page?: number
+
+    /**
+     * page size of results
+     * @type {number}
+     * @memberof OrganizationApiOrgListCurrentUserOrgs
+     */
+    readonly limit?: number
+}
+
+/**
+ * Request parameters for orgListHooks operation in OrganizationApi.
+ * @export
+ * @interface OrganizationApiOrgListHooksRequest
+ */
+export interface OrganizationApiOrgListHooksRequest {
+    /**
+     * name of the organization
+     * @type {string}
+     * @memberof OrganizationApiOrgListHooks
+     */
+    readonly org: string
+
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof OrganizationApiOrgListHooks
+     */
+    readonly page?: number
+
+    /**
+     * page size of results
+     * @type {number}
+     * @memberof OrganizationApiOrgListHooks
+     */
+    readonly limit?: number
+}
+
+/**
+ * Request parameters for orgListLabels operation in OrganizationApi.
+ * @export
+ * @interface OrganizationApiOrgListLabelsRequest
+ */
+export interface OrganizationApiOrgListLabelsRequest {
+    /**
+     * name of the organization
+     * @type {string}
+     * @memberof OrganizationApiOrgListLabels
+     */
+    readonly org: string
+
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof OrganizationApiOrgListLabels
+     */
+    readonly page?: number
+
+    /**
+     * page size of results
+     * @type {number}
+     * @memberof OrganizationApiOrgListLabels
+     */
+    readonly limit?: number
+}
+
+/**
+ * Request parameters for orgListMembers operation in OrganizationApi.
+ * @export
+ * @interface OrganizationApiOrgListMembersRequest
+ */
+export interface OrganizationApiOrgListMembersRequest {
+    /**
+     * name of the organization
+     * @type {string}
+     * @memberof OrganizationApiOrgListMembers
+     */
+    readonly org: string
+
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof OrganizationApiOrgListMembers
+     */
+    readonly page?: number
+
+    /**
+     * page size of results
+     * @type {number}
+     * @memberof OrganizationApiOrgListMembers
+     */
+    readonly limit?: number
+}
+
+/**
+ * Request parameters for orgListPublicMembers operation in OrganizationApi.
+ * @export
+ * @interface OrganizationApiOrgListPublicMembersRequest
+ */
+export interface OrganizationApiOrgListPublicMembersRequest {
+    /**
+     * name of the organization
+     * @type {string}
+     * @memberof OrganizationApiOrgListPublicMembers
+     */
+    readonly org: string
+
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof OrganizationApiOrgListPublicMembers
+     */
+    readonly page?: number
+
+    /**
+     * page size of results
+     * @type {number}
+     * @memberof OrganizationApiOrgListPublicMembers
+     */
+    readonly limit?: number
+}
+
+/**
+ * Request parameters for orgListRepos operation in OrganizationApi.
+ * @export
+ * @interface OrganizationApiOrgListReposRequest
+ */
+export interface OrganizationApiOrgListReposRequest {
+    /**
+     * name of the organization
+     * @type {string}
+     * @memberof OrganizationApiOrgListRepos
+     */
+    readonly org: string
+
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof OrganizationApiOrgListRepos
+     */
+    readonly page?: number
+
+    /**
+     * page size of results
+     * @type {number}
+     * @memberof OrganizationApiOrgListRepos
+     */
+    readonly limit?: number
+}
+
+/**
+ * Request parameters for orgListTeamMember operation in OrganizationApi.
+ * @export
+ * @interface OrganizationApiOrgListTeamMemberRequest
+ */
+export interface OrganizationApiOrgListTeamMemberRequest {
+    /**
+     * id of the team
+     * @type {number}
+     * @memberof OrganizationApiOrgListTeamMember
+     */
+    readonly id: number
+
+    /**
+     * username of the member to list
+     * @type {string}
+     * @memberof OrganizationApiOrgListTeamMember
+     */
+    readonly username: string
+}
+
+/**
+ * Request parameters for orgListTeamMembers operation in OrganizationApi.
+ * @export
+ * @interface OrganizationApiOrgListTeamMembersRequest
+ */
+export interface OrganizationApiOrgListTeamMembersRequest {
+    /**
+     * id of the team
+     * @type {number}
+     * @memberof OrganizationApiOrgListTeamMembers
+     */
+    readonly id: number
+
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof OrganizationApiOrgListTeamMembers
+     */
+    readonly page?: number
+
+    /**
+     * page size of results
+     * @type {number}
+     * @memberof OrganizationApiOrgListTeamMembers
+     */
+    readonly limit?: number
+}
+
+/**
+ * Request parameters for orgListTeamRepo operation in OrganizationApi.
+ * @export
+ * @interface OrganizationApiOrgListTeamRepoRequest
+ */
+export interface OrganizationApiOrgListTeamRepoRequest {
+    /**
+     * id of the team
+     * @type {number}
+     * @memberof OrganizationApiOrgListTeamRepo
+     */
+    readonly id: number
+
+    /**
+     * organization that owns the repo to list
+     * @type {string}
+     * @memberof OrganizationApiOrgListTeamRepo
+     */
+    readonly org: string
+
+    /**
+     * name of the repo to list
+     * @type {string}
+     * @memberof OrganizationApiOrgListTeamRepo
+     */
+    readonly repo: string
+}
+
+/**
+ * Request parameters for orgListTeamRepos operation in OrganizationApi.
+ * @export
+ * @interface OrganizationApiOrgListTeamReposRequest
+ */
+export interface OrganizationApiOrgListTeamReposRequest {
+    /**
+     * id of the team
+     * @type {number}
+     * @memberof OrganizationApiOrgListTeamRepos
+     */
+    readonly id: number
+
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof OrganizationApiOrgListTeamRepos
+     */
+    readonly page?: number
+
+    /**
+     * page size of results
+     * @type {number}
+     * @memberof OrganizationApiOrgListTeamRepos
+     */
+    readonly limit?: number
+}
+
+/**
+ * Request parameters for orgListTeams operation in OrganizationApi.
+ * @export
+ * @interface OrganizationApiOrgListTeamsRequest
+ */
+export interface OrganizationApiOrgListTeamsRequest {
+    /**
+     * name of the organization
+     * @type {string}
+     * @memberof OrganizationApiOrgListTeams
+     */
+    readonly org: string
+
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof OrganizationApiOrgListTeams
+     */
+    readonly page?: number
+
+    /**
+     * page size of results
+     * @type {number}
+     * @memberof OrganizationApiOrgListTeams
+     */
+    readonly limit?: number
+}
+
+/**
+ * Request parameters for orgListUserOrgs operation in OrganizationApi.
+ * @export
+ * @interface OrganizationApiOrgListUserOrgsRequest
+ */
+export interface OrganizationApiOrgListUserOrgsRequest {
+    /**
+     * username of user
+     * @type {string}
+     * @memberof OrganizationApiOrgListUserOrgs
+     */
+    readonly username: string
+
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof OrganizationApiOrgListUserOrgs
+     */
+    readonly page?: number
+
+    /**
+     * page size of results
+     * @type {number}
+     * @memberof OrganizationApiOrgListUserOrgs
+     */
+    readonly limit?: number
+}
+
+/**
+ * Request parameters for orgPublicizeMember operation in OrganizationApi.
+ * @export
+ * @interface OrganizationApiOrgPublicizeMemberRequest
+ */
+export interface OrganizationApiOrgPublicizeMemberRequest {
+    /**
+     * name of the organization
+     * @type {string}
+     * @memberof OrganizationApiOrgPublicizeMember
+     */
+    readonly org: string
+
+    /**
+     * username of the user
+     * @type {string}
+     * @memberof OrganizationApiOrgPublicizeMember
+     */
+    readonly username: string
+}
+
+/**
+ * Request parameters for orgRemoveTeamMember operation in OrganizationApi.
+ * @export
+ * @interface OrganizationApiOrgRemoveTeamMemberRequest
+ */
+export interface OrganizationApiOrgRemoveTeamMemberRequest {
+    /**
+     * id of the team
+     * @type {number}
+     * @memberof OrganizationApiOrgRemoveTeamMember
+     */
+    readonly id: number
+
+    /**
+     * username of the user to remove
+     * @type {string}
+     * @memberof OrganizationApiOrgRemoveTeamMember
+     */
+    readonly username: string
+}
+
+/**
+ * Request parameters for orgRemoveTeamRepository operation in OrganizationApi.
+ * @export
+ * @interface OrganizationApiOrgRemoveTeamRepositoryRequest
+ */
+export interface OrganizationApiOrgRemoveTeamRepositoryRequest {
+    /**
+     * id of the team
+     * @type {number}
+     * @memberof OrganizationApiOrgRemoveTeamRepository
+     */
+    readonly id: number
+
+    /**
+     * organization that owns the repo to remove
+     * @type {string}
+     * @memberof OrganizationApiOrgRemoveTeamRepository
+     */
+    readonly org: string
+
+    /**
+     * name of the repo to remove
+     * @type {string}
+     * @memberof OrganizationApiOrgRemoveTeamRepository
+     */
+    readonly repo: string
+}
+
+/**
+ * Request parameters for teamSearch operation in OrganizationApi.
+ * @export
+ * @interface OrganizationApiTeamSearchRequest
+ */
+export interface OrganizationApiTeamSearchRequest {
+    /**
+     * name of the organization
+     * @type {string}
+     * @memberof OrganizationApiTeamSearch
+     */
+    readonly org: string
+
+    /**
+     * keywords to search
+     * @type {string}
+     * @memberof OrganizationApiTeamSearch
+     */
+    readonly q?: string
+
+    /**
+     * include search within team description (defaults to true)
+     * @type {boolean}
+     * @memberof OrganizationApiTeamSearch
+     */
+    readonly includeDesc?: boolean
+
+    /**
+     * page number of results to return (1-based)
+     * @type {number}
+     * @memberof OrganizationApiTeamSearch
+     */
+    readonly page?: number
+
+    /**
+     * page size of results
+     * @type {number}
+     * @memberof OrganizationApiTeamSearch
+     */
+    readonly limit?: number
+}
+
+/**
  * OrganizationApi - object-oriented interface
  * @export
  * @class OrganizationApi
@@ -3693,560 +4666,505 @@ export class OrganizationApi extends BaseAPI {
     /**
      * 
      * @summary Create a repository in an organization
-     * @param {string} org name of organization
-     * @param {CreateRepoOption} [body] 
+     * @param {OrganizationApiCreateOrgRepoRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof OrganizationApi
      */
-    public createOrgRepo(org: string, body?: CreateRepoOption, options?: AxiosRequestConfig) {
-        return OrganizationApiFp(this.configuration).createOrgRepo(org, body, options).then((request) => request(this.axios, this.basePath));
+    public createOrgRepo(requestParameters: OrganizationApiCreateOrgRepoRequest, options?: AxiosRequestConfig) {
+        return OrganizationApiFp(this.configuration).createOrgRepo(requestParameters.org, requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Create a repository in an organization
-     * @param {string} org name of organization
-     * @param {CreateRepoOption} [body] 
+     * @param {OrganizationApiCreateOrgRepoDeprecatedRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @deprecated
      * @throws {RequiredError}
      * @memberof OrganizationApi
      */
-    public createOrgRepoDeprecated(org: string, body?: CreateRepoOption, options?: AxiosRequestConfig) {
-        return OrganizationApiFp(this.configuration).createOrgRepoDeprecated(org, body, options).then((request) => request(this.axios, this.basePath));
+    public createOrgRepoDeprecated(requestParameters: OrganizationApiCreateOrgRepoDeprecatedRequest, options?: AxiosRequestConfig) {
+        return OrganizationApiFp(this.configuration).createOrgRepoDeprecated(requestParameters.org, requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Add a team member
-     * @param {number} id id of the team
-     * @param {string} username username of the user to add
+     * @param {OrganizationApiOrgAddTeamMemberRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof OrganizationApi
      */
-    public orgAddTeamMember(id: number, username: string, options?: AxiosRequestConfig) {
-        return OrganizationApiFp(this.configuration).orgAddTeamMember(id, username, options).then((request) => request(this.axios, this.basePath));
+    public orgAddTeamMember(requestParameters: OrganizationApiOrgAddTeamMemberRequest, options?: AxiosRequestConfig) {
+        return OrganizationApiFp(this.configuration).orgAddTeamMember(requestParameters.id, requestParameters.username, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Add a repository to a team
-     * @param {number} id id of the team
-     * @param {string} org organization that owns the repo to add
-     * @param {string} repo name of the repo to add
+     * @param {OrganizationApiOrgAddTeamRepositoryRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof OrganizationApi
      */
-    public orgAddTeamRepository(id: number, org: string, repo: string, options?: AxiosRequestConfig) {
-        return OrganizationApiFp(this.configuration).orgAddTeamRepository(id, org, repo, options).then((request) => request(this.axios, this.basePath));
+    public orgAddTeamRepository(requestParameters: OrganizationApiOrgAddTeamRepositoryRequest, options?: AxiosRequestConfig) {
+        return OrganizationApiFp(this.configuration).orgAddTeamRepository(requestParameters.id, requestParameters.org, requestParameters.repo, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Conceal a user\'s membership
-     * @param {string} org name of the organization
-     * @param {string} username username of the user
+     * @param {OrganizationApiOrgConcealMemberRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof OrganizationApi
      */
-    public orgConcealMember(org: string, username: string, options?: AxiosRequestConfig) {
-        return OrganizationApiFp(this.configuration).orgConcealMember(org, username, options).then((request) => request(this.axios, this.basePath));
+    public orgConcealMember(requestParameters: OrganizationApiOrgConcealMemberRequest, options?: AxiosRequestConfig) {
+        return OrganizationApiFp(this.configuration).orgConcealMember(requestParameters.org, requestParameters.username, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Create an organization
-     * @param {CreateOrgOption} organization 
+     * @param {OrganizationApiOrgCreateRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof OrganizationApi
      */
-    public orgCreate(organization: CreateOrgOption, options?: AxiosRequestConfig) {
-        return OrganizationApiFp(this.configuration).orgCreate(organization, options).then((request) => request(this.axios, this.basePath));
+    public orgCreate(requestParameters: OrganizationApiOrgCreateRequest, options?: AxiosRequestConfig) {
+        return OrganizationApiFp(this.configuration).orgCreate(requestParameters.organization, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Create a hook
-     * @param {string} org name of the organization
-     * @param {CreateHookOption} body 
+     * @param {OrganizationApiOrgCreateHookRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof OrganizationApi
      */
-    public orgCreateHook(org: string, body: CreateHookOption, options?: AxiosRequestConfig) {
-        return OrganizationApiFp(this.configuration).orgCreateHook(org, body, options).then((request) => request(this.axios, this.basePath));
+    public orgCreateHook(requestParameters: OrganizationApiOrgCreateHookRequest, options?: AxiosRequestConfig) {
+        return OrganizationApiFp(this.configuration).orgCreateHook(requestParameters.org, requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Create a label for an organization
-     * @param {string} org name of the organization
-     * @param {CreateLabelOption} [body] 
+     * @param {OrganizationApiOrgCreateLabelRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof OrganizationApi
      */
-    public orgCreateLabel(org: string, body?: CreateLabelOption, options?: AxiosRequestConfig) {
-        return OrganizationApiFp(this.configuration).orgCreateLabel(org, body, options).then((request) => request(this.axios, this.basePath));
+    public orgCreateLabel(requestParameters: OrganizationApiOrgCreateLabelRequest, options?: AxiosRequestConfig) {
+        return OrganizationApiFp(this.configuration).orgCreateLabel(requestParameters.org, requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Create a team
-     * @param {string} org name of the organization
-     * @param {CreateTeamOption} [body] 
+     * @param {OrganizationApiOrgCreateTeamRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof OrganizationApi
      */
-    public orgCreateTeam(org: string, body?: CreateTeamOption, options?: AxiosRequestConfig) {
-        return OrganizationApiFp(this.configuration).orgCreateTeam(org, body, options).then((request) => request(this.axios, this.basePath));
+    public orgCreateTeam(requestParameters: OrganizationApiOrgCreateTeamRequest, options?: AxiosRequestConfig) {
+        return OrganizationApiFp(this.configuration).orgCreateTeam(requestParameters.org, requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Delete an organization
-     * @param {string} org organization that is to be deleted
+     * @param {OrganizationApiOrgDeleteRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof OrganizationApi
      */
-    public orgDelete(org: string, options?: AxiosRequestConfig) {
-        return OrganizationApiFp(this.configuration).orgDelete(org, options).then((request) => request(this.axios, this.basePath));
+    public orgDelete(requestParameters: OrganizationApiOrgDeleteRequest, options?: AxiosRequestConfig) {
+        return OrganizationApiFp(this.configuration).orgDelete(requestParameters.org, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Delete a hook
-     * @param {string} org name of the organization
-     * @param {number} id id of the hook to delete
+     * @param {OrganizationApiOrgDeleteHookRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof OrganizationApi
      */
-    public orgDeleteHook(org: string, id: number, options?: AxiosRequestConfig) {
-        return OrganizationApiFp(this.configuration).orgDeleteHook(org, id, options).then((request) => request(this.axios, this.basePath));
+    public orgDeleteHook(requestParameters: OrganizationApiOrgDeleteHookRequest, options?: AxiosRequestConfig) {
+        return OrganizationApiFp(this.configuration).orgDeleteHook(requestParameters.org, requestParameters.id, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Delete a label
-     * @param {string} org name of the organization
-     * @param {number} id id of the label to delete
+     * @param {OrganizationApiOrgDeleteLabelRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof OrganizationApi
      */
-    public orgDeleteLabel(org: string, id: number, options?: AxiosRequestConfig) {
-        return OrganizationApiFp(this.configuration).orgDeleteLabel(org, id, options).then((request) => request(this.axios, this.basePath));
+    public orgDeleteLabel(requestParameters: OrganizationApiOrgDeleteLabelRequest, options?: AxiosRequestConfig) {
+        return OrganizationApiFp(this.configuration).orgDeleteLabel(requestParameters.org, requestParameters.id, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Remove a member from an organization
-     * @param {string} org name of the organization
-     * @param {string} username username of the user
+     * @param {OrganizationApiOrgDeleteMemberRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof OrganizationApi
      */
-    public orgDeleteMember(org: string, username: string, options?: AxiosRequestConfig) {
-        return OrganizationApiFp(this.configuration).orgDeleteMember(org, username, options).then((request) => request(this.axios, this.basePath));
+    public orgDeleteMember(requestParameters: OrganizationApiOrgDeleteMemberRequest, options?: AxiosRequestConfig) {
+        return OrganizationApiFp(this.configuration).orgDeleteMember(requestParameters.org, requestParameters.username, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Delete a team
-     * @param {number} id id of the team to delete
+     * @param {OrganizationApiOrgDeleteTeamRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof OrganizationApi
      */
-    public orgDeleteTeam(id: number, options?: AxiosRequestConfig) {
-        return OrganizationApiFp(this.configuration).orgDeleteTeam(id, options).then((request) => request(this.axios, this.basePath));
+    public orgDeleteTeam(requestParameters: OrganizationApiOrgDeleteTeamRequest, options?: AxiosRequestConfig) {
+        return OrganizationApiFp(this.configuration).orgDeleteTeam(requestParameters.id, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Edit an organization
-     * @param {string} org name of the organization to edit
-     * @param {EditOrgOption} body 
+     * @param {OrganizationApiOrgEditRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof OrganizationApi
      */
-    public orgEdit(org: string, body: EditOrgOption, options?: AxiosRequestConfig) {
-        return OrganizationApiFp(this.configuration).orgEdit(org, body, options).then((request) => request(this.axios, this.basePath));
+    public orgEdit(requestParameters: OrganizationApiOrgEditRequest, options?: AxiosRequestConfig) {
+        return OrganizationApiFp(this.configuration).orgEdit(requestParameters.org, requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Update a hook
-     * @param {string} org name of the organization
-     * @param {number} id id of the hook to update
-     * @param {EditHookOption} [body] 
+     * @param {OrganizationApiOrgEditHookRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof OrganizationApi
      */
-    public orgEditHook(org: string, id: number, body?: EditHookOption, options?: AxiosRequestConfig) {
-        return OrganizationApiFp(this.configuration).orgEditHook(org, id, body, options).then((request) => request(this.axios, this.basePath));
+    public orgEditHook(requestParameters: OrganizationApiOrgEditHookRequest, options?: AxiosRequestConfig) {
+        return OrganizationApiFp(this.configuration).orgEditHook(requestParameters.org, requestParameters.id, requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Update a label
-     * @param {string} org name of the organization
-     * @param {number} id id of the label to edit
-     * @param {EditLabelOption} [body] 
+     * @param {OrganizationApiOrgEditLabelRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof OrganizationApi
      */
-    public orgEditLabel(org: string, id: number, body?: EditLabelOption, options?: AxiosRequestConfig) {
-        return OrganizationApiFp(this.configuration).orgEditLabel(org, id, body, options).then((request) => request(this.axios, this.basePath));
+    public orgEditLabel(requestParameters: OrganizationApiOrgEditLabelRequest, options?: AxiosRequestConfig) {
+        return OrganizationApiFp(this.configuration).orgEditLabel(requestParameters.org, requestParameters.id, requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Edit a team
-     * @param {number} id id of the team to edit
-     * @param {EditTeamOption} [body] 
+     * @param {OrganizationApiOrgEditTeamRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof OrganizationApi
      */
-    public orgEditTeam(id: number, body?: EditTeamOption, options?: AxiosRequestConfig) {
-        return OrganizationApiFp(this.configuration).orgEditTeam(id, body, options).then((request) => request(this.axios, this.basePath));
+    public orgEditTeam(requestParameters: OrganizationApiOrgEditTeamRequest, options?: AxiosRequestConfig) {
+        return OrganizationApiFp(this.configuration).orgEditTeam(requestParameters.id, requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Get an organization
-     * @param {string} org name of the organization to get
+     * @param {OrganizationApiOrgGetRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof OrganizationApi
      */
-    public orgGet(org: string, options?: AxiosRequestConfig) {
-        return OrganizationApiFp(this.configuration).orgGet(org, options).then((request) => request(this.axios, this.basePath));
+    public orgGet(requestParameters: OrganizationApiOrgGetRequest, options?: AxiosRequestConfig) {
+        return OrganizationApiFp(this.configuration).orgGet(requestParameters.org, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Get list of organizations
-     * @param {string} [lang] If the org has one or more repos with the given language(s), the org will be in the results. Multiple lang\&#39;s are ORed.
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results
+     * @param {OrganizationApiOrgGetAllRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof OrganizationApi
      */
-    public orgGetAll(lang?: string, page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return OrganizationApiFp(this.configuration).orgGetAll(lang, page, limit, options).then((request) => request(this.axios, this.basePath));
+    public orgGetAll(requestParameters: OrganizationApiOrgGetAllRequest = {}, options?: AxiosRequestConfig) {
+        return OrganizationApiFp(this.configuration).orgGetAll(requestParameters.lang, requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Get a hook
-     * @param {string} org name of the organization
-     * @param {number} id id of the hook to get
+     * @param {OrganizationApiOrgGetHookRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof OrganizationApi
      */
-    public orgGetHook(org: string, id: number, options?: AxiosRequestConfig) {
-        return OrganizationApiFp(this.configuration).orgGetHook(org, id, options).then((request) => request(this.axios, this.basePath));
+    public orgGetHook(requestParameters: OrganizationApiOrgGetHookRequest, options?: AxiosRequestConfig) {
+        return OrganizationApiFp(this.configuration).orgGetHook(requestParameters.org, requestParameters.id, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Get a single label
-     * @param {string} org name of the organization
-     * @param {number} id id of the label to get
+     * @param {OrganizationApiOrgGetLabelRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof OrganizationApi
      */
-    public orgGetLabel(org: string, id: number, options?: AxiosRequestConfig) {
-        return OrganizationApiFp(this.configuration).orgGetLabel(org, id, options).then((request) => request(this.axios, this.basePath));
+    public orgGetLabel(requestParameters: OrganizationApiOrgGetLabelRequest, options?: AxiosRequestConfig) {
+        return OrganizationApiFp(this.configuration).orgGetLabel(requestParameters.org, requestParameters.id, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Get a team
-     * @param {number} id id of the team to get
+     * @param {OrganizationApiOrgGetTeamRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof OrganizationApi
      */
-    public orgGetTeam(id: number, options?: AxiosRequestConfig) {
-        return OrganizationApiFp(this.configuration).orgGetTeam(id, options).then((request) => request(this.axios, this.basePath));
+    public orgGetTeam(requestParameters: OrganizationApiOrgGetTeamRequest, options?: AxiosRequestConfig) {
+        return OrganizationApiFp(this.configuration).orgGetTeam(requestParameters.id, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Get user permissions in organization
-     * @param {string} username username of user
-     * @param {string} org name of the organization
+     * @param {OrganizationApiOrgGetUserPermissionsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof OrganizationApi
      */
-    public orgGetUserPermissions(username: string, org: string, options?: AxiosRequestConfig) {
-        return OrganizationApiFp(this.configuration).orgGetUserPermissions(username, org, options).then((request) => request(this.axios, this.basePath));
+    public orgGetUserPermissions(requestParameters: OrganizationApiOrgGetUserPermissionsRequest, options?: AxiosRequestConfig) {
+        return OrganizationApiFp(this.configuration).orgGetUserPermissions(requestParameters.username, requestParameters.org, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Check if a user is a member of an organization
-     * @param {string} org name of the organization
-     * @param {string} username username of the user
+     * @param {OrganizationApiOrgIsMemberRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof OrganizationApi
      */
-    public orgIsMember(org: string, username: string, options?: AxiosRequestConfig) {
-        return OrganizationApiFp(this.configuration).orgIsMember(org, username, options).then((request) => request(this.axios, this.basePath));
+    public orgIsMember(requestParameters: OrganizationApiOrgIsMemberRequest, options?: AxiosRequestConfig) {
+        return OrganizationApiFp(this.configuration).orgIsMember(requestParameters.org, requestParameters.username, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Check if a user is a public member of an organization
-     * @param {string} org name of the organization
-     * @param {string} username username of the user
+     * @param {OrganizationApiOrgIsPublicMemberRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof OrganizationApi
      */
-    public orgIsPublicMember(org: string, username: string, options?: AxiosRequestConfig) {
-        return OrganizationApiFp(this.configuration).orgIsPublicMember(org, username, options).then((request) => request(this.axios, this.basePath));
+    public orgIsPublicMember(requestParameters: OrganizationApiOrgIsPublicMemberRequest, options?: AxiosRequestConfig) {
+        return OrganizationApiFp(this.configuration).orgIsPublicMember(requestParameters.org, requestParameters.username, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary List the current user\'s organizations
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results
+     * @param {OrganizationApiOrgListCurrentUserOrgsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof OrganizationApi
      */
-    public orgListCurrentUserOrgs(page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return OrganizationApiFp(this.configuration).orgListCurrentUserOrgs(page, limit, options).then((request) => request(this.axios, this.basePath));
+    public orgListCurrentUserOrgs(requestParameters: OrganizationApiOrgListCurrentUserOrgsRequest = {}, options?: AxiosRequestConfig) {
+        return OrganizationApiFp(this.configuration).orgListCurrentUserOrgs(requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary List an organization\'s webhooks
-     * @param {string} org name of the organization
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results
+     * @param {OrganizationApiOrgListHooksRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof OrganizationApi
      */
-    public orgListHooks(org: string, page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return OrganizationApiFp(this.configuration).orgListHooks(org, page, limit, options).then((request) => request(this.axios, this.basePath));
+    public orgListHooks(requestParameters: OrganizationApiOrgListHooksRequest, options?: AxiosRequestConfig) {
+        return OrganizationApiFp(this.configuration).orgListHooks(requestParameters.org, requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary List an organization\'s labels
-     * @param {string} org name of the organization
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results
+     * @param {OrganizationApiOrgListLabelsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof OrganizationApi
      */
-    public orgListLabels(org: string, page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return OrganizationApiFp(this.configuration).orgListLabels(org, page, limit, options).then((request) => request(this.axios, this.basePath));
+    public orgListLabels(requestParameters: OrganizationApiOrgListLabelsRequest, options?: AxiosRequestConfig) {
+        return OrganizationApiFp(this.configuration).orgListLabels(requestParameters.org, requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary List an organization\'s members
-     * @param {string} org name of the organization
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results
+     * @param {OrganizationApiOrgListMembersRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof OrganizationApi
      */
-    public orgListMembers(org: string, page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return OrganizationApiFp(this.configuration).orgListMembers(org, page, limit, options).then((request) => request(this.axios, this.basePath));
+    public orgListMembers(requestParameters: OrganizationApiOrgListMembersRequest, options?: AxiosRequestConfig) {
+        return OrganizationApiFp(this.configuration).orgListMembers(requestParameters.org, requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary List an organization\'s public members
-     * @param {string} org name of the organization
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results
+     * @param {OrganizationApiOrgListPublicMembersRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof OrganizationApi
      */
-    public orgListPublicMembers(org: string, page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return OrganizationApiFp(this.configuration).orgListPublicMembers(org, page, limit, options).then((request) => request(this.axios, this.basePath));
+    public orgListPublicMembers(requestParameters: OrganizationApiOrgListPublicMembersRequest, options?: AxiosRequestConfig) {
+        return OrganizationApiFp(this.configuration).orgListPublicMembers(requestParameters.org, requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary List an organization\'s repos
-     * @param {string} org name of the organization
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results
+     * @param {OrganizationApiOrgListReposRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof OrganizationApi
      */
-    public orgListRepos(org: string, page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return OrganizationApiFp(this.configuration).orgListRepos(org, page, limit, options).then((request) => request(this.axios, this.basePath));
+    public orgListRepos(requestParameters: OrganizationApiOrgListReposRequest, options?: AxiosRequestConfig) {
+        return OrganizationApiFp(this.configuration).orgListRepos(requestParameters.org, requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary List a particular member of team
-     * @param {number} id id of the team
-     * @param {string} username username of the member to list
+     * @param {OrganizationApiOrgListTeamMemberRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof OrganizationApi
      */
-    public orgListTeamMember(id: number, username: string, options?: AxiosRequestConfig) {
-        return OrganizationApiFp(this.configuration).orgListTeamMember(id, username, options).then((request) => request(this.axios, this.basePath));
+    public orgListTeamMember(requestParameters: OrganizationApiOrgListTeamMemberRequest, options?: AxiosRequestConfig) {
+        return OrganizationApiFp(this.configuration).orgListTeamMember(requestParameters.id, requestParameters.username, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary List a team\'s members
-     * @param {number} id id of the team
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results
+     * @param {OrganizationApiOrgListTeamMembersRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof OrganizationApi
      */
-    public orgListTeamMembers(id: number, page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return OrganizationApiFp(this.configuration).orgListTeamMembers(id, page, limit, options).then((request) => request(this.axios, this.basePath));
+    public orgListTeamMembers(requestParameters: OrganizationApiOrgListTeamMembersRequest, options?: AxiosRequestConfig) {
+        return OrganizationApiFp(this.configuration).orgListTeamMembers(requestParameters.id, requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary List a particular repo of team
-     * @param {number} id id of the team
-     * @param {string} org organization that owns the repo to list
-     * @param {string} repo name of the repo to list
+     * @param {OrganizationApiOrgListTeamRepoRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof OrganizationApi
      */
-    public orgListTeamRepo(id: number, org: string, repo: string, options?: AxiosRequestConfig) {
-        return OrganizationApiFp(this.configuration).orgListTeamRepo(id, org, repo, options).then((request) => request(this.axios, this.basePath));
+    public orgListTeamRepo(requestParameters: OrganizationApiOrgListTeamRepoRequest, options?: AxiosRequestConfig) {
+        return OrganizationApiFp(this.configuration).orgListTeamRepo(requestParameters.id, requestParameters.org, requestParameters.repo, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary List a team\'s repos
-     * @param {number} id id of the team
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results
+     * @param {OrganizationApiOrgListTeamReposRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof OrganizationApi
      */
-    public orgListTeamRepos(id: number, page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return OrganizationApiFp(this.configuration).orgListTeamRepos(id, page, limit, options).then((request) => request(this.axios, this.basePath));
+    public orgListTeamRepos(requestParameters: OrganizationApiOrgListTeamReposRequest, options?: AxiosRequestConfig) {
+        return OrganizationApiFp(this.configuration).orgListTeamRepos(requestParameters.id, requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary List an organization\'s teams
-     * @param {string} org name of the organization
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results
+     * @param {OrganizationApiOrgListTeamsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof OrganizationApi
      */
-    public orgListTeams(org: string, page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return OrganizationApiFp(this.configuration).orgListTeams(org, page, limit, options).then((request) => request(this.axios, this.basePath));
+    public orgListTeams(requestParameters: OrganizationApiOrgListTeamsRequest, options?: AxiosRequestConfig) {
+        return OrganizationApiFp(this.configuration).orgListTeams(requestParameters.org, requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary List a user\'s organizations
-     * @param {string} username username of user
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results
+     * @param {OrganizationApiOrgListUserOrgsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof OrganizationApi
      */
-    public orgListUserOrgs(username: string, page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return OrganizationApiFp(this.configuration).orgListUserOrgs(username, page, limit, options).then((request) => request(this.axios, this.basePath));
+    public orgListUserOrgs(requestParameters: OrganizationApiOrgListUserOrgsRequest, options?: AxiosRequestConfig) {
+        return OrganizationApiFp(this.configuration).orgListUserOrgs(requestParameters.username, requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Publicize a user\'s membership
-     * @param {string} org name of the organization
-     * @param {string} username username of the user
+     * @param {OrganizationApiOrgPublicizeMemberRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof OrganizationApi
      */
-    public orgPublicizeMember(org: string, username: string, options?: AxiosRequestConfig) {
-        return OrganizationApiFp(this.configuration).orgPublicizeMember(org, username, options).then((request) => request(this.axios, this.basePath));
+    public orgPublicizeMember(requestParameters: OrganizationApiOrgPublicizeMemberRequest, options?: AxiosRequestConfig) {
+        return OrganizationApiFp(this.configuration).orgPublicizeMember(requestParameters.org, requestParameters.username, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Remove a team member
-     * @param {number} id id of the team
-     * @param {string} username username of the user to remove
+     * @param {OrganizationApiOrgRemoveTeamMemberRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof OrganizationApi
      */
-    public orgRemoveTeamMember(id: number, username: string, options?: AxiosRequestConfig) {
-        return OrganizationApiFp(this.configuration).orgRemoveTeamMember(id, username, options).then((request) => request(this.axios, this.basePath));
+    public orgRemoveTeamMember(requestParameters: OrganizationApiOrgRemoveTeamMemberRequest, options?: AxiosRequestConfig) {
+        return OrganizationApiFp(this.configuration).orgRemoveTeamMember(requestParameters.id, requestParameters.username, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * This does not delete the repository, it only removes the repository from the team.
      * @summary Remove a repository from a team
-     * @param {number} id id of the team
-     * @param {string} org organization that owns the repo to remove
-     * @param {string} repo name of the repo to remove
+     * @param {OrganizationApiOrgRemoveTeamRepositoryRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof OrganizationApi
      */
-    public orgRemoveTeamRepository(id: number, org: string, repo: string, options?: AxiosRequestConfig) {
-        return OrganizationApiFp(this.configuration).orgRemoveTeamRepository(id, org, repo, options).then((request) => request(this.axios, this.basePath));
+    public orgRemoveTeamRepository(requestParameters: OrganizationApiOrgRemoveTeamRepositoryRequest, options?: AxiosRequestConfig) {
+        return OrganizationApiFp(this.configuration).orgRemoveTeamRepository(requestParameters.id, requestParameters.org, requestParameters.repo, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Search for teams within an organization
-     * @param {string} org name of the organization
-     * @param {string} [q] keywords to search
-     * @param {boolean} [includeDesc] include search within team description (defaults to true)
-     * @param {number} [page] page number of results to return (1-based)
-     * @param {number} [limit] page size of results
+     * @param {OrganizationApiTeamSearchRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof OrganizationApi
      */
-    public teamSearch(org: string, q?: string, includeDesc?: boolean, page?: number, limit?: number, options?: AxiosRequestConfig) {
-        return OrganizationApiFp(this.configuration).teamSearch(org, q, includeDesc, page, limit, options).then((request) => request(this.axios, this.basePath));
+    public teamSearch(requestParameters: OrganizationApiTeamSearchRequest, options?: AxiosRequestConfig) {
+        return OrganizationApiFp(this.configuration).teamSearch(requestParameters.org, requestParameters.q, requestParameters.includeDesc, requestParameters.page, requestParameters.limit, options).then((request) => request(this.axios, this.basePath));
     }
 }

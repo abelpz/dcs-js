@@ -10,7 +10,7 @@ try {
       `generate`,
       `-g=typescript-axios`,
       `-i=${target}`,
-      `--additional-properties=withSeparateModelsAndApi=true,modelPackage=models,apiPackage=apis`,
+      `--additional-properties=withSeparateModelsAndApi=true,modelPackage=models,apiPackage=apis,useSingleRequestParameter=true`,
     ],
     { shell: true }
   );
