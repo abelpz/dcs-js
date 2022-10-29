@@ -101,7 +101,7 @@ To use this functional programming modules first import one of the exposed gener
 import { OrganizationApiFp } from "dcs-js";
 ```
 
-Then use the generator to generate the requester function generators. Each requester generator will generate a specific requester function that will allow the user to make a new request with the same params on each use.
+Then use the generator to generate a requester function generators. Each requester function generator will generate a specific requester function that will allow the user to make a new request to one of the DCS API endpoints operations with the same params on each use.
 
 **Example:**
 
@@ -135,7 +135,7 @@ async function dcsJsExample() {
 dcs-js also exposes each of the DCS API operations as functions organized in javascript factories. User will be able to use a function for each specific request.
 
 Unlike the functional programming interface, which generate functions that, given the needed params for a specific request,
-generate a function that makes that very specific request to DCS API o each call 😵‍💫; the factory interface generate functions that, given the needed params for a specific request, are able to make that request to DCS API.
+generate a function that makes that very specific request to a DCS API endpoint operation o each call 😵‍💫; the factory interface generate functions that, given the needed params for a specific request, are able to make that request to a DCS API endpoint operation.
 
 To use this factory modules first import one of the exposed generators:
 
