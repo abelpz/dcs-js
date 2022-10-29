@@ -42,7 +42,7 @@ yarn
 yarn build
 ```
 
-## Regenerate the library
+### Regenerating the library
 
 To regenerate the library run the `generate` script defined in `package.json`.
 
@@ -58,7 +58,7 @@ yarn generate url.to/swagger-source.json
 
 Then build the library.
 
-## Regenearate the documentation
+### Regenearating the documentation
 
 To regenerate docs use the `docmd` and `dochtml` scripts defined in `package.json`
 
