@@ -26,9 +26,11 @@ dcs-js is available as an [npm package 📦](https://www.npmjs.com/package/dcs-j
 npm:
 
 `npm install dcs-js`
+
 yarn:
 
 `yarn add dcs-js`
+
 pnpm:
 
 `pnpm add dcs-js`
@@ -211,22 +213,17 @@ Then build the library.
 
 To regenerate docs use the `docmd` and `dochtml` scripts defined in `package.json`
 
-```
-yarn docmd
-```
+`yarn docmd`
 
-```
-yarn dochtml
-```
+`yarn dochtml`
 
 ### Building
 
 To build and compile the typescript sources to javascript use:
 
-```
-yarn
-yarn build
-```
+`yarn`
+
+`yarn build`
 
 ### Publishing
 
