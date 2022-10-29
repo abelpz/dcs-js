@@ -5,8 +5,9 @@
 </p>
 <h1 align="center">dcs-js</h1>
 <p align="center">
-A [Door43 Content Service](https://git.door43.org/) API client that makes it easier to use [DCS API](https://git.door43.org/api/swagger).
+A <a href="https://git.door43.org/" rel="noopener" target="_blank">Door43 Content Service</a> API client that makes it easier to use <a href="https://git.door43.org/api/swagger" rel="noopener" target="_blank">DCS API</a>.
 </p>
+<hr/>
 
 ## Consuming
 
