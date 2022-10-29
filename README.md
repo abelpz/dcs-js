@@ -34,15 +34,6 @@ A list of these classes can be found in: [/docs/API.md](/docs/API.md)
 
 This library is generated using `@openapitools/openapi-generator-cli` package, which creates a _Door43 Content Service_ TypeScript/JavaScript client that utilizes [axios](https://github.com/axios/axios).
 
-### Building
-
-To build and compile the typescript sources to javascript use:
-
-```
-yarn
-yarn build
-```
-
 ### Regenerating the library
 
 To regenerate the library run the `generate` script defined in `package.json`.
@@ -69,6 +60,15 @@ yarn docmd
 
 ```
 yarn dochtml
+```
+
+### Building
+
+To build and compile the typescript sources to javascript use:
+
+```
+yarn
+yarn build
 ```
 
 ### Publishing
