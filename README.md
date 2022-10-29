@@ -4,8 +4,9 @@
 </a>
 </p>
 <h1 align="center">dcs-js</h1>
-
+<p align="center">
 A Door43 Content Service API client that makes it easier to use DCS API.
+</p>
 
 ## Usage
 
