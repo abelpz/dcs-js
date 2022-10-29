@@ -28,7 +28,7 @@ pnpm:
 
 dcs-js exposes a set of classes that should be instantiated to gain access to request methods.
 
-A list of these classes can be found in: [/docs/API.md](/docs/API.md)
+A list of these classes can be found in: [/docs/API.md](https://github.com/unfoldingWord/dcs-js/blob/master/docs/API.md) or [dcs-js.netlify.app](https://dcs-js.netlify.app)
 
 ### Usage
 
