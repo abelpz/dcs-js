@@ -43,7 +43,7 @@ export const setApiKeyToObject = async function (object: any, keyParamName: stri
         const localVarApiKeyValue = typeof configuration.apiKey === 'function'
             ? await configuration.apiKey(keyParamName)
             : await configuration.apiKey;
-        object[keyParamName] = localVarApiKeyValue;
+        if(localVarApiKeyValue) object[keyParamName] = localVarApiKeyValue;
     }
 }
 
