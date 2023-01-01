@@ -15,6 +15,7 @@
 - [message](RepoCommit.md#message)
 - [tree](RepoCommit.md#tree)
 - [url](RepoCommit.md#url)
+- [verification](RepoCommit.md#verification)
 
 ## Properties
 
@@ -26,7 +27,7 @@
 
 #### Defined in
 
-[models/repo-commit.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repo-commit.ts#L34)
+[models/repo-commit.ts:37](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/repo-commit.ts#L37)
 
 ___
 
@@ -38,7 +39,7 @@ ___
 
 #### Defined in
 
-[models/repo-commit.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repo-commit.ts#L40)
+[models/repo-commit.ts:43](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/repo-commit.ts#L43)
 
 ___
 
@@ -50,7 +51,7 @@ ___
 
 #### Defined in
 
-[models/repo-commit.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repo-commit.ts#L46)
+[models/repo-commit.ts:49](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/repo-commit.ts#L49)
 
 ___
 
@@ -62,7 +63,7 @@ ___
 
 #### Defined in
 
-[models/repo-commit.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repo-commit.ts#L52)
+[models/repo-commit.ts:55](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/repo-commit.ts#L55)
 
 ___
 
@@ -74,4 +75,16 @@ ___
 
 #### Defined in
 
-[models/repo-commit.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/repo-commit.ts#L58)
+[models/repo-commit.ts:61](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/repo-commit.ts#L61)
+
+___
+
+### <a id="verification" name="verification"></a> verification
+
+• `Optional` **verification**: [`PayloadCommitVerification`](PayloadCommitVerification.md)
+
+**`memberof`** RepoCommit
+
+#### Defined in
+
+[models/repo-commit.ts:67](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/repo-commit.ts#L67)

@@ -46,7 +46,7 @@ Issue represents an issue in a repository
 
 #### Defined in
 
-[models/issue.ts:43](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/issue.ts#L43)
+[models/issue.ts:43](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/issue.ts#L43)
 
 ___
 
@@ -58,7 +58,7 @@ ___
 
 #### Defined in
 
-[models/issue.ts:49](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/issue.ts#L49)
+[models/issue.ts:49](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/issue.ts#L49)
 
 ___
 
@@ -70,7 +70,7 @@ ___
 
 #### Defined in
 
-[models/issue.ts:55](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/issue.ts#L55)
+[models/issue.ts:55](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/issue.ts#L55)
 
 ___
 
@@ -82,7 +82,7 @@ ___
 
 #### Defined in
 
-[models/issue.ts:61](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/issue.ts#L61)
+[models/issue.ts:61](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/issue.ts#L61)
 
 ___
 
@@ -94,7 +94,7 @@ ___
 
 #### Defined in
 
-[models/issue.ts:67](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/issue.ts#L67)
+[models/issue.ts:67](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/issue.ts#L67)
 
 ___
 
@@ -106,7 +106,7 @@ ___
 
 #### Defined in
 
-[models/issue.ts:73](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/issue.ts#L73)
+[models/issue.ts:73](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/issue.ts#L73)
 
 ___
 
@@ -118,7 +118,7 @@ ___
 
 #### Defined in
 
-[models/issue.ts:79](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/issue.ts#L79)
+[models/issue.ts:79](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/issue.ts#L79)
 
 ___
 
@@ -130,7 +130,7 @@ ___
 
 #### Defined in
 
-[models/issue.ts:85](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/issue.ts#L85)
+[models/issue.ts:85](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/issue.ts#L85)
 
 ___
 
@@ -142,7 +142,7 @@ ___
 
 #### Defined in
 
-[models/issue.ts:91](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/issue.ts#L91)
+[models/issue.ts:91](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/issue.ts#L91)
 
 ___
 
@@ -154,7 +154,7 @@ ___
 
 #### Defined in
 
-[models/issue.ts:97](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/issue.ts#L97)
+[models/issue.ts:97](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/issue.ts#L97)
 
 ___
 
@@ -166,7 +166,7 @@ ___
 
 #### Defined in
 
-[models/issue.ts:103](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/issue.ts#L103)
+[models/issue.ts:103](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/issue.ts#L103)
 
 ___
 
@@ -178,7 +178,7 @@ ___
 
 #### Defined in
 
-[models/issue.ts:109](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/issue.ts#L109)
+[models/issue.ts:109](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/issue.ts#L109)
 
 ___
 
@@ -190,7 +190,7 @@ ___
 
 #### Defined in
 
-[models/issue.ts:115](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/issue.ts#L115)
+[models/issue.ts:115](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/issue.ts#L115)
 
 ___
 
@@ -202,7 +202,7 @@ ___
 
 #### Defined in
 
-[models/issue.ts:121](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/issue.ts#L121)
+[models/issue.ts:121](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/issue.ts#L121)
 
 ___
 
@@ -214,7 +214,7 @@ ___
 
 #### Defined in
 
-[models/issue.ts:127](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/issue.ts#L127)
+[models/issue.ts:127](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/issue.ts#L127)
 
 ___
 
@@ -226,7 +226,7 @@ ___
 
 #### Defined in
 
-[models/issue.ts:133](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/issue.ts#L133)
+[models/issue.ts:133](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/issue.ts#L133)
 
 ___
 
@@ -238,7 +238,7 @@ ___
 
 #### Defined in
 
-[models/issue.ts:139](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/issue.ts#L139)
+[models/issue.ts:139](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/issue.ts#L139)
 
 ___
 
@@ -250,7 +250,7 @@ ___
 
 #### Defined in
 
-[models/issue.ts:145](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/issue.ts#L145)
+[models/issue.ts:145](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/issue.ts#L145)
 
 ___
 
@@ -264,7 +264,7 @@ StateType issue state type
 
 #### Defined in
 
-[models/issue.ts:151](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/issue.ts#L151)
+[models/issue.ts:151](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/issue.ts#L151)
 
 ___
 
@@ -276,7 +276,7 @@ ___
 
 #### Defined in
 
-[models/issue.ts:157](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/issue.ts#L157)
+[models/issue.ts:157](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/issue.ts#L157)
 
 ___
 
@@ -288,7 +288,7 @@ ___
 
 #### Defined in
 
-[models/issue.ts:163](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/issue.ts#L163)
+[models/issue.ts:163](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/issue.ts#L163)
 
 ___
 
@@ -300,7 +300,7 @@ ___
 
 #### Defined in
 
-[models/issue.ts:169](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/issue.ts#L169)
+[models/issue.ts:169](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/issue.ts#L169)
 
 ___
 
@@ -312,4 +312,4 @@ ___
 
 #### Defined in
 
-[models/issue.ts:175](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/issue.ts#L175)
+[models/issue.ts:175](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/issue.ts#L175)

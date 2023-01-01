@@ -13,6 +13,7 @@ DismissPullReviewOptions are options to dismiss a pull review
 ### Properties
 
 - [message](DismissPullReviewOptions.md#message)
+- [priors](DismissPullReviewOptions.md#priors)
 
 ## Properties
 
@@ -24,4 +25,16 @@ DismissPullReviewOptions are options to dismiss a pull review
 
 #### Defined in
 
-[models/dismiss-pull-review-options.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/dismiss-pull-review-options.ts#L28)
+[models/dismiss-pull-review-options.ts:28](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/dismiss-pull-review-options.ts#L28)
+
+___
+
+### <a id="priors" name="priors"></a> priors
+
+• `Optional` **priors**: `boolean`
+
+**`memberof`** DismissPullReviewOptions
+
+#### Defined in
+
+[models/dismiss-pull-review-options.ts:34](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/dismiss-pull-review-options.ts#L34)

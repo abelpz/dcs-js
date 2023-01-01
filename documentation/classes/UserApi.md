@@ -97,7 +97,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[base.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/base.ts#L52)
+[base.ts:52](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/base.ts#L52)
 
 ## Properties
 
@@ -131,13 +131,13 @@ BaseAPI.configuration
 
 #### Defined in
 
-[base.ts:50](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/base.ts#L50)
+[base.ts:50](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/base.ts#L50)
 
 ## Methods
 
 ### <a id="createcurrentuserrepo" name="createcurrentuserrepo"></a> createCurrentUserRepo
 
-▸ **createCurrentUserRepo**(`body?`, `options?`): `Promise`<`AxiosResponse`<[`Repository`](../interfaces/Repository.md)\>\>
+▸ **createCurrentUserRepo**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`Repository`](../interfaces/Repository.md)\>\>
 
 **`summary`** Create a repository
 
@@ -147,10 +147,10 @@ BaseAPI.configuration
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `body?` | [`CreateRepoOption`](../interfaces/CreateRepoOption.md) |
-| `options?` | `AxiosRequestConfig` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `requestParameters` | [`UserApiCreateCurrentUserRepoRequest`](../interfaces/UserApiCreateCurrentUserRepoRequest.md) | Request parameters. |
+| `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
 
@@ -158,7 +158,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[apis/user-api.ts:4222](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4222)
+[apis/user-api.ts:5160](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/user-api.ts#L5160)
 
 ___
 
@@ -184,7 +184,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4233](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4233)
+[apis/user-api.ts:5171](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/user-api.ts#L5171)
 
 ___
 
@@ -210,13 +210,13 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4244](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4244)
+[apis/user-api.ts:5182](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/user-api.ts#L5182)
 
 ___
 
 ### <a id="updateusersettings" name="updateusersettings"></a> updateUserSettings
 
-▸ **updateUserSettings**(`body?`, `options?`): `Promise`<`AxiosResponse`<[`UserSettings`](../interfaces/UserSettings.md)[]\>\>
+▸ **updateUserSettings**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`UserSettings`](../interfaces/UserSettings.md)[]\>\>
 
 **`summary`** Update user settings
 
@@ -226,10 +226,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `body?` | [`UserSettingsOptions`](../interfaces/UserSettingsOptions.md) |
-| `options?` | `AxiosRequestConfig` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `requestParameters` | [`UserApiUpdateUserSettingsRequest`](../interfaces/UserApiUpdateUserSettingsRequest.md) | Request parameters. |
+| `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
 
@@ -237,13 +237,13 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4256](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4256)
+[apis/user-api.ts:5194](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/user-api.ts#L5194)
 
 ___
 
 ### <a id="useraddemail" name="useraddemail"></a> userAddEmail
 
-▸ **userAddEmail**(`body?`, `options?`): `Promise`<`AxiosResponse`<[`Email`](../interfaces/Email.md)[]\>\>
+▸ **userAddEmail**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`Email`](../interfaces/Email.md)[]\>\>
 
 **`summary`** Add email addresses
 
@@ -253,10 +253,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `body?` | [`CreateEmailOption`](../interfaces/CreateEmailOption.md) |
-| `options?` | `AxiosRequestConfig` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `requestParameters` | [`UserApiUserAddEmailRequest`](../interfaces/UserApiUserAddEmailRequest.md) | Request parameters. |
+| `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
 
@@ -264,13 +264,13 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4268](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4268)
+[apis/user-api.ts:5206](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/user-api.ts#L5206)
 
 ___
 
 ### <a id="usercheckfollowing" name="usercheckfollowing"></a> userCheckFollowing
 
-▸ **userCheckFollowing**(`follower`, `followee`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **userCheckFollowing**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Check if one user is following another user
 
@@ -282,8 +282,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `follower` | `string` | username of following user |
-| `followee` | `string` | username of followed user |
+| `requestParameters` | [`UserApiUserCheckFollowingRequest`](../interfaces/UserApiUserCheckFollowingRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -292,13 +291,13 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4281](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4281)
+[apis/user-api.ts:5218](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/user-api.ts#L5218)
 
 ___
 
 ### <a id="usercreateoauth2application" name="usercreateoauth2application"></a> userCreateOAuth2Application
 
-▸ **userCreateOAuth2Application**(`body`, `options?`): `Promise`<`AxiosResponse`<[`OAuth2Application`](../interfaces/OAuth2Application.md)\>\>
+▸ **userCreateOAuth2Application**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`OAuth2Application`](../interfaces/OAuth2Application.md)\>\>
 
 **`summary`** creates a new OAuth2 application
 
@@ -308,10 +307,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `body` | [`CreateOAuth2ApplicationOptions`](../interfaces/CreateOAuth2ApplicationOptions.md) |
-| `options?` | `AxiosRequestConfig` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `requestParameters` | [`UserApiUserCreateOAuth2ApplicationRequest`](../interfaces/UserApiUserCreateOAuth2ApplicationRequest.md) | Request parameters. |
+| `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
 
@@ -319,13 +318,13 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4293](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4293)
+[apis/user-api.ts:5230](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/user-api.ts#L5230)
 
 ___
 
 ### <a id="usercreatetoken" name="usercreatetoken"></a> userCreateToken
 
-▸ **userCreateToken**(`username`, `userCreateToken?`, `options?`): `Promise`<`AxiosResponse`<[`AccessToken`](../interfaces/AccessToken.md)\>\>
+▸ **userCreateToken**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`AccessToken`](../interfaces/AccessToken.md)\>\>
 
 **`summary`** Create an access token
 
@@ -337,8 +336,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `username` | `string` | username of user |
-| `userCreateToken?` | [`CreateAccessTokenOption`](../interfaces/CreateAccessTokenOption.md) | - |
+| `requestParameters` | [`UserApiUserCreateTokenRequest`](../interfaces/UserApiUserCreateTokenRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -347,13 +345,13 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4306](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4306)
+[apis/user-api.ts:5242](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/user-api.ts#L5242)
 
 ___
 
 ### <a id="usercurrentcheckfollowing" name="usercurrentcheckfollowing"></a> userCurrentCheckFollowing
 
-▸ **userCurrentCheckFollowing**(`username`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **userCurrentCheckFollowing**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Check whether a user is followed by the authenticated user
 
@@ -365,7 +363,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `username` | `string` | username of followed user |
+| `requestParameters` | [`UserApiUserCurrentCheckFollowingRequest`](../interfaces/UserApiUserCurrentCheckFollowingRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -374,13 +372,13 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4318](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4318)
+[apis/user-api.ts:5254](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/user-api.ts#L5254)
 
 ___
 
 ### <a id="usercurrentcheckstarring" name="usercurrentcheckstarring"></a> userCurrentCheckStarring
 
-▸ **userCurrentCheckStarring**(`owner`, `repo`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **userCurrentCheckStarring**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Whether the authenticated is starring the repo
 
@@ -392,8 +390,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
+| `requestParameters` | [`UserApiUserCurrentCheckStarringRequest`](../interfaces/UserApiUserCurrentCheckStarringRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -402,13 +399,13 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4331](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4331)
+[apis/user-api.ts:5266](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/user-api.ts#L5266)
 
 ___
 
 ### <a id="usercurrentdeletefollow" name="usercurrentdeletefollow"></a> userCurrentDeleteFollow
 
-▸ **userCurrentDeleteFollow**(`username`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **userCurrentDeleteFollow**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Unfollow a user
 
@@ -420,7 +417,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `username` | `string` | username of user to unfollow |
+| `requestParameters` | [`UserApiUserCurrentDeleteFollowRequest`](../interfaces/UserApiUserCurrentDeleteFollowRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -429,13 +426,13 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4343](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4343)
+[apis/user-api.ts:5278](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/user-api.ts#L5278)
 
 ___
 
 ### <a id="usercurrentdeletegpgkey" name="usercurrentdeletegpgkey"></a> userCurrentDeleteGPGKey
 
-▸ **userCurrentDeleteGPGKey**(`id`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **userCurrentDeleteGPGKey**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Remove a GPG key
 
@@ -447,7 +444,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `id` | `number` | id of key to delete |
+| `requestParameters` | [`UserApiUserCurrentDeleteGPGKeyRequest`](../interfaces/UserApiUserCurrentDeleteGPGKeyRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -456,13 +453,13 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4355](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4355)
+[apis/user-api.ts:5290](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/user-api.ts#L5290)
 
 ___
 
 ### <a id="usercurrentdeletekey" name="usercurrentdeletekey"></a> userCurrentDeleteKey
 
-▸ **userCurrentDeleteKey**(`id`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **userCurrentDeleteKey**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Delete a public key
 
@@ -474,7 +471,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `id` | `number` | id of key to delete |
+| `requestParameters` | [`UserApiUserCurrentDeleteKeyRequest`](../interfaces/UserApiUserCurrentDeleteKeyRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -483,13 +480,13 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4367](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4367)
+[apis/user-api.ts:5302](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/user-api.ts#L5302)
 
 ___
 
 ### <a id="usercurrentdeletestar" name="usercurrentdeletestar"></a> userCurrentDeleteStar
 
-▸ **userCurrentDeleteStar**(`owner`, `repo`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **userCurrentDeleteStar**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Unstar the given repo
 
@@ -501,8 +498,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo to unstar |
-| `repo` | `string` | name of the repo to unstar |
+| `requestParameters` | [`UserApiUserCurrentDeleteStarRequest`](../interfaces/UserApiUserCurrentDeleteStarRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -511,13 +507,13 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4380](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4380)
+[apis/user-api.ts:5314](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/user-api.ts#L5314)
 
 ___
 
 ### <a id="usercurrentgetgpgkey" name="usercurrentgetgpgkey"></a> userCurrentGetGPGKey
 
-▸ **userCurrentGetGPGKey**(`id`, `options?`): `Promise`<`AxiosResponse`<[`GPGKey`](../interfaces/GPGKey.md)\>\>
+▸ **userCurrentGetGPGKey**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`GPGKey`](../interfaces/GPGKey.md)\>\>
 
 **`summary`** Get a GPG key
 
@@ -529,7 +525,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `id` | `number` | id of key to get |
+| `requestParameters` | [`UserApiUserCurrentGetGPGKeyRequest`](../interfaces/UserApiUserCurrentGetGPGKeyRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -538,13 +534,13 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4392](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4392)
+[apis/user-api.ts:5326](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/user-api.ts#L5326)
 
 ___
 
 ### <a id="usercurrentgetkey" name="usercurrentgetkey"></a> userCurrentGetKey
 
-▸ **userCurrentGetKey**(`id`, `options?`): `Promise`<`AxiosResponse`<[`PublicKey`](../interfaces/PublicKey.md)\>\>
+▸ **userCurrentGetKey**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`PublicKey`](../interfaces/PublicKey.md)\>\>
 
 **`summary`** Get a public key
 
@@ -556,7 +552,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `id` | `number` | id of key to get |
+| `requestParameters` | [`UserApiUserCurrentGetKeyRequest`](../interfaces/UserApiUserCurrentGetKeyRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -565,13 +561,13 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4404](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4404)
+[apis/user-api.ts:5338](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/user-api.ts#L5338)
 
 ___
 
 ### <a id="usercurrentlistfollowers" name="usercurrentlistfollowers"></a> userCurrentListFollowers
 
-▸ **userCurrentListFollowers**(`page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`User`](../interfaces/User.md)[]\>\>
+▸ **userCurrentListFollowers**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`User`](../interfaces/User.md)[]\>\>
 
 **`summary`** List the authenticated user\'s followers
 
@@ -581,11 +577,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `page?` | `number` |
-| `limit?` | `number` |
-| `options?` | `AxiosRequestConfig` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `requestParameters` | [`UserApiUserCurrentListFollowersRequest`](../interfaces/UserApiUserCurrentListFollowersRequest.md) | Request parameters. |
+| `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
 
@@ -593,13 +588,13 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4417](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4417)
+[apis/user-api.ts:5350](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/user-api.ts#L5350)
 
 ___
 
 ### <a id="usercurrentlistfollowing" name="usercurrentlistfollowing"></a> userCurrentListFollowing
 
-▸ **userCurrentListFollowing**(`page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`User`](../interfaces/User.md)[]\>\>
+▸ **userCurrentListFollowing**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`User`](../interfaces/User.md)[]\>\>
 
 **`summary`** List the users that the authenticated user is following
 
@@ -609,11 +604,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `page?` | `number` |
-| `limit?` | `number` |
-| `options?` | `AxiosRequestConfig` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `requestParameters` | [`UserApiUserCurrentListFollowingRequest`](../interfaces/UserApiUserCurrentListFollowingRequest.md) | Request parameters. |
+| `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
 
@@ -621,13 +615,13 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4430](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4430)
+[apis/user-api.ts:5362](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/user-api.ts#L5362)
 
 ___
 
 ### <a id="usercurrentlistgpgkeys" name="usercurrentlistgpgkeys"></a> userCurrentListGPGKeys
 
-▸ **userCurrentListGPGKeys**(`page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`GPGKey`](../interfaces/GPGKey.md)[]\>\>
+▸ **userCurrentListGPGKeys**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`GPGKey`](../interfaces/GPGKey.md)[]\>\>
 
 **`summary`** List the authenticated user\'s GPG keys
 
@@ -637,11 +631,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `page?` | `number` |
-| `limit?` | `number` |
-| `options?` | `AxiosRequestConfig` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `requestParameters` | [`UserApiUserCurrentListGPGKeysRequest`](../interfaces/UserApiUserCurrentListGPGKeysRequest.md) | Request parameters. |
+| `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
 
@@ -649,13 +642,13 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4443](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4443)
+[apis/user-api.ts:5374](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/user-api.ts#L5374)
 
 ___
 
 ### <a id="usercurrentlistkeys" name="usercurrentlistkeys"></a> userCurrentListKeys
 
-▸ **userCurrentListKeys**(`fingerprint?`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`PublicKey`](../interfaces/PublicKey.md)[]\>\>
+▸ **userCurrentListKeys**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`PublicKey`](../interfaces/PublicKey.md)[]\>\>
 
 **`summary`** List the authenticated user\'s public keys
 
@@ -665,12 +658,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `fingerprint?` | `string` |
-| `page?` | `number` |
-| `limit?` | `number` |
-| `options?` | `AxiosRequestConfig` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `requestParameters` | [`UserApiUserCurrentListKeysRequest`](../interfaces/UserApiUserCurrentListKeysRequest.md) | Request parameters. |
+| `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
 
@@ -678,13 +669,13 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4457](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4457)
+[apis/user-api.ts:5386](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/user-api.ts#L5386)
 
 ___
 
 ### <a id="usercurrentlistrepos" name="usercurrentlistrepos"></a> userCurrentListRepos
 
-▸ **userCurrentListRepos**(`page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`Repository`](../interfaces/Repository.md)[]\>\>
+▸ **userCurrentListRepos**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`Repository`](../interfaces/Repository.md)[]\>\>
 
 **`summary`** List the repos that the authenticated user owns
 
@@ -694,11 +685,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `page?` | `number` |
-| `limit?` | `number` |
-| `options?` | `AxiosRequestConfig` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `requestParameters` | [`UserApiUserCurrentListReposRequest`](../interfaces/UserApiUserCurrentListReposRequest.md) | Request parameters. |
+| `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
 
@@ -706,13 +696,13 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4470](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4470)
+[apis/user-api.ts:5398](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/user-api.ts#L5398)
 
 ___
 
 ### <a id="usercurrentliststarred" name="usercurrentliststarred"></a> userCurrentListStarred
 
-▸ **userCurrentListStarred**(`page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`Repository`](../interfaces/Repository.md)[]\>\>
+▸ **userCurrentListStarred**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`Repository`](../interfaces/Repository.md)[]\>\>
 
 **`summary`** The repos that the authenticated user has starred
 
@@ -722,11 +712,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `page?` | `number` |
-| `limit?` | `number` |
-| `options?` | `AxiosRequestConfig` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `requestParameters` | [`UserApiUserCurrentListStarredRequest`](../interfaces/UserApiUserCurrentListStarredRequest.md) | Request parameters. |
+| `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
 
@@ -734,13 +723,13 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4483](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4483)
+[apis/user-api.ts:5410](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/user-api.ts#L5410)
 
 ___
 
 ### <a id="usercurrentlistsubscriptions" name="usercurrentlistsubscriptions"></a> userCurrentListSubscriptions
 
-▸ **userCurrentListSubscriptions**(`page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`Repository`](../interfaces/Repository.md)[]\>\>
+▸ **userCurrentListSubscriptions**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`Repository`](../interfaces/Repository.md)[]\>\>
 
 **`summary`** List repositories watched by the authenticated user
 
@@ -750,11 +739,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `page?` | `number` |
-| `limit?` | `number` |
-| `options?` | `AxiosRequestConfig` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `requestParameters` | [`UserApiUserCurrentListSubscriptionsRequest`](../interfaces/UserApiUserCurrentListSubscriptionsRequest.md) | Request parameters. |
+| `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
 
@@ -762,13 +750,13 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4496](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4496)
+[apis/user-api.ts:5422](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/user-api.ts#L5422)
 
 ___
 
 ### <a id="usercurrentpostgpgkey" name="usercurrentpostgpgkey"></a> userCurrentPostGPGKey
 
-▸ **userCurrentPostGPGKey**(`form?`, `options?`): `Promise`<`AxiosResponse`<[`GPGKey`](../interfaces/GPGKey.md)\>\>
+▸ **userCurrentPostGPGKey**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`GPGKey`](../interfaces/GPGKey.md)\>\>
 
 **`summary`** Create a GPG key
 
@@ -778,10 +766,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `form?` | [`CreateGPGKeyOption`](../interfaces/CreateGPGKeyOption.md) |
-| `options?` | `AxiosRequestConfig` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `requestParameters` | [`UserApiUserCurrentPostGPGKeyRequest`](../interfaces/UserApiUserCurrentPostGPGKeyRequest.md) | Request parameters. |
+| `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
 
@@ -789,13 +777,13 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4508](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4508)
+[apis/user-api.ts:5434](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/user-api.ts#L5434)
 
 ___
 
 ### <a id="usercurrentpostkey" name="usercurrentpostkey"></a> userCurrentPostKey
 
-▸ **userCurrentPostKey**(`body?`, `options?`): `Promise`<`AxiosResponse`<[`PublicKey`](../interfaces/PublicKey.md)\>\>
+▸ **userCurrentPostKey**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`PublicKey`](../interfaces/PublicKey.md)\>\>
 
 **`summary`** Create a public key
 
@@ -805,10 +793,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `body?` | [`CreateKeyOption`](../interfaces/CreateKeyOption.md) |
-| `options?` | `AxiosRequestConfig` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `requestParameters` | [`UserApiUserCurrentPostKeyRequest`](../interfaces/UserApiUserCurrentPostKeyRequest.md) | Request parameters. |
+| `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
 
@@ -816,13 +804,13 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4520](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4520)
+[apis/user-api.ts:5446](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/user-api.ts#L5446)
 
 ___
 
 ### <a id="usercurrentputfollow" name="usercurrentputfollow"></a> userCurrentPutFollow
 
-▸ **userCurrentPutFollow**(`username`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **userCurrentPutFollow**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Follow a user
 
@@ -834,7 +822,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `username` | `string` | username of user to follow |
+| `requestParameters` | [`UserApiUserCurrentPutFollowRequest`](../interfaces/UserApiUserCurrentPutFollowRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -843,13 +831,13 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4532](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4532)
+[apis/user-api.ts:5458](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/user-api.ts#L5458)
 
 ___
 
 ### <a id="usercurrentputstar" name="usercurrentputstar"></a> userCurrentPutStar
 
-▸ **userCurrentPutStar**(`owner`, `repo`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **userCurrentPutStar**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Star the given repo
 
@@ -861,8 +849,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo to star |
-| `repo` | `string` | name of the repo to star |
+| `requestParameters` | [`UserApiUserCurrentPutStarRequest`](../interfaces/UserApiUserCurrentPutStarRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -871,13 +858,13 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4545](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4545)
+[apis/user-api.ts:5470](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/user-api.ts#L5470)
 
 ___
 
 ### <a id="usercurrenttrackedtimes" name="usercurrenttrackedtimes"></a> userCurrentTrackedTimes
 
-▸ **userCurrentTrackedTimes**(`since?`, `before?`, `options?`): `Promise`<`AxiosResponse`<[`TrackedTime`](../interfaces/TrackedTime.md)[]\>\>
+▸ **userCurrentTrackedTimes**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`TrackedTime`](../interfaces/TrackedTime.md)[]\>\>
 
 **`summary`** List the current user\'s tracked times
 
@@ -887,11 +874,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `since?` | `string` |
-| `before?` | `string` |
-| `options?` | `AxiosRequestConfig` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `requestParameters` | [`UserApiUserCurrentTrackedTimesRequest`](../interfaces/UserApiUserCurrentTrackedTimesRequest.md) | Request parameters. |
+| `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
 
@@ -899,13 +885,13 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4558](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4558)
+[apis/user-api.ts:5482](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/user-api.ts#L5482)
 
 ___
 
 ### <a id="userdeleteaccesstoken" name="userdeleteaccesstoken"></a> userDeleteAccessToken
 
-▸ **userDeleteAccessToken**(`username`, `token`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **userDeleteAccessToken**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** delete an access token
 
@@ -917,8 +903,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `username` | `string` | username of user |
-| `token` | `string` | token to be deleted, identified by ID and if not available by name |
+| `requestParameters` | [`UserApiUserDeleteAccessTokenRequest`](../interfaces/UserApiUserDeleteAccessTokenRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -927,13 +912,13 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4571](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4571)
+[apis/user-api.ts:5494](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/user-api.ts#L5494)
 
 ___
 
 ### <a id="userdeleteemail" name="userdeleteemail"></a> userDeleteEmail
 
-▸ **userDeleteEmail**(`body?`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **userDeleteEmail**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Delete email addresses
 
@@ -943,10 +928,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `body?` | [`DeleteEmailOption`](../interfaces/DeleteEmailOption.md) |
-| `options?` | `AxiosRequestConfig` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `requestParameters` | [`UserApiUserDeleteEmailRequest`](../interfaces/UserApiUserDeleteEmailRequest.md) | Request parameters. |
+| `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
 
@@ -954,13 +939,13 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4583](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4583)
+[apis/user-api.ts:5506](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/user-api.ts#L5506)
 
 ___
 
 ### <a id="userdeleteoauth2application" name="userdeleteoauth2application"></a> userDeleteOAuth2Application
 
-▸ **userDeleteOAuth2Application**(`id`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **userDeleteOAuth2Application**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** delete an OAuth2 Application
 
@@ -972,7 +957,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `id` | `number` | token to be deleted |
+| `requestParameters` | [`UserApiUserDeleteOAuth2ApplicationRequest`](../interfaces/UserApiUserDeleteOAuth2ApplicationRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -981,13 +966,13 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4595](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4595)
+[apis/user-api.ts:5518](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/user-api.ts#L5518)
 
 ___
 
 ### <a id="userget" name="userget"></a> userGet
 
-▸ **userGet**(`username`, `options?`): `Promise`<`AxiosResponse`<[`User`](../interfaces/User.md)\>\>
+▸ **userGet**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`User`](../interfaces/User.md)\>\>
 
 **`summary`** Get a user
 
@@ -999,7 +984,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `username` | `string` | username of user to get |
+| `requestParameters` | [`UserApiUserGetRequest`](../interfaces/UserApiUserGetRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1008,7 +993,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4607](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4607)
+[apis/user-api.ts:5530](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/user-api.ts#L5530)
 
 ___
 
@@ -1034,13 +1019,13 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4618](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4618)
+[apis/user-api.ts:5541](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/user-api.ts#L5541)
 
 ___
 
 ### <a id="usergetheatmapdata" name="usergetheatmapdata"></a> userGetHeatmapData
 
-▸ **userGetHeatmapData**(`username`, `options?`): `Promise`<`AxiosResponse`<[`UserHeatmapData`](../interfaces/UserHeatmapData.md)[]\>\>
+▸ **userGetHeatmapData**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`UserHeatmapData`](../interfaces/UserHeatmapData.md)[]\>\>
 
 **`summary`** Get a user\'s heatmap
 
@@ -1052,7 +1037,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `username` | `string` | username of user to get |
+| `requestParameters` | [`UserApiUserGetHeatmapDataRequest`](../interfaces/UserApiUserGetHeatmapDataRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1061,13 +1046,13 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4630](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4630)
+[apis/user-api.ts:5553](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/user-api.ts#L5553)
 
 ___
 
 ### <a id="usergetoauth2application" name="usergetoauth2application"></a> userGetOAuth2Application
 
-▸ **userGetOAuth2Application**(`id`, `options?`): `Promise`<`AxiosResponse`<[`OAuth2Application`](../interfaces/OAuth2Application.md)\>\>
+▸ **userGetOAuth2Application**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`OAuth2Application`](../interfaces/OAuth2Application.md)\>\>
 
 **`summary`** get an OAuth2 Application
 
@@ -1079,7 +1064,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `id` | `number` | Application ID to be found |
+| `requestParameters` | [`UserApiUserGetOAuth2ApplicationRequest`](../interfaces/UserApiUserGetOAuth2ApplicationRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1088,13 +1073,13 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4642](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4642)
+[apis/user-api.ts:5565](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/user-api.ts#L5565)
 
 ___
 
 ### <a id="usergetoauth2application-1" name="usergetoauth2application-1"></a> userGetOauth2Application
 
-▸ **userGetOauth2Application**(`page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`OAuth2Application`](../interfaces/OAuth2Application.md)[]\>\>
+▸ **userGetOauth2Application**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`OAuth2Application`](../interfaces/OAuth2Application.md)[]\>\>
 
 **`summary`** List the authenticated user\'s oauth2 applications
 
@@ -1104,11 +1089,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `page?` | `number` |
-| `limit?` | `number` |
-| `options?` | `AxiosRequestConfig` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `requestParameters` | [`UserApiUserGetOauth2ApplicationRequest`](../interfaces/UserApiUserGetOauth2ApplicationRequest.md) | Request parameters. |
+| `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
 
@@ -1116,13 +1100,13 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4655](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4655)
+[apis/user-api.ts:5577](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/user-api.ts#L5577)
 
 ___
 
 ### <a id="usergetstopwatches" name="usergetstopwatches"></a> userGetStopWatches
 
-▸ **userGetStopWatches**(`page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`StopWatch`](../interfaces/StopWatch.md)[]\>\>
+▸ **userGetStopWatches**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`StopWatch`](../interfaces/StopWatch.md)[]\>\>
 
 **`summary`** Get list of all existing stopwatches
 
@@ -1132,11 +1116,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `page?` | `number` |
-| `limit?` | `number` |
-| `options?` | `AxiosRequestConfig` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `requestParameters` | [`UserApiUserGetStopWatchesRequest`](../interfaces/UserApiUserGetStopWatchesRequest.md) | Request parameters. |
+| `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
 
@@ -1144,13 +1127,13 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4668](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4668)
+[apis/user-api.ts:5589](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/user-api.ts#L5589)
 
 ___
 
 ### <a id="usergettokens" name="usergettokens"></a> userGetTokens
 
-▸ **userGetTokens**(`username`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`AccessToken`](../interfaces/AccessToken.md)[]\>\>
+▸ **userGetTokens**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`AccessToken`](../interfaces/AccessToken.md)[]\>\>
 
 **`summary`** List the authenticated user\'s access tokens
 
@@ -1162,9 +1145,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `username` | `string` | username of user |
-| `page?` | `number` | - |
-| `limit?` | `number` | - |
+| `requestParameters` | [`UserApiUserGetTokensRequest`](../interfaces/UserApiUserGetTokensRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1173,7 +1154,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4682](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4682)
+[apis/user-api.ts:5601](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/user-api.ts#L5601)
 
 ___
 
@@ -1199,13 +1180,13 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4693](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4693)
+[apis/user-api.ts:5612](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/user-api.ts#L5612)
 
 ___
 
 ### <a id="userlistfollowers" name="userlistfollowers"></a> userListFollowers
 
-▸ **userListFollowers**(`username`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`User`](../interfaces/User.md)[]\>\>
+▸ **userListFollowers**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`User`](../interfaces/User.md)[]\>\>
 
 **`summary`** List the given user\'s followers
 
@@ -1217,9 +1198,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `username` | `string` | username of user |
-| `page?` | `number` | - |
-| `limit?` | `number` | - |
+| `requestParameters` | [`UserApiUserListFollowersRequest`](../interfaces/UserApiUserListFollowersRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1228,13 +1207,13 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4707](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4707)
+[apis/user-api.ts:5624](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/user-api.ts#L5624)
 
 ___
 
 ### <a id="userlistfollowing" name="userlistfollowing"></a> userListFollowing
 
-▸ **userListFollowing**(`username`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`User`](../interfaces/User.md)[]\>\>
+▸ **userListFollowing**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`User`](../interfaces/User.md)[]\>\>
 
 **`summary`** List the users that the given user is following
 
@@ -1246,9 +1225,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `username` | `string` | username of user |
-| `page?` | `number` | - |
-| `limit?` | `number` | - |
+| `requestParameters` | [`UserApiUserListFollowingRequest`](../interfaces/UserApiUserListFollowingRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1257,13 +1234,13 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4721](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4721)
+[apis/user-api.ts:5636](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/user-api.ts#L5636)
 
 ___
 
 ### <a id="userlistgpgkeys" name="userlistgpgkeys"></a> userListGPGKeys
 
-▸ **userListGPGKeys**(`username`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`GPGKey`](../interfaces/GPGKey.md)[]\>\>
+▸ **userListGPGKeys**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`GPGKey`](../interfaces/GPGKey.md)[]\>\>
 
 **`summary`** List the given user\'s GPG keys
 
@@ -1275,9 +1252,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `username` | `string` | username of user |
-| `page?` | `number` | - |
-| `limit?` | `number` | - |
+| `requestParameters` | [`UserApiUserListGPGKeysRequest`](../interfaces/UserApiUserListGPGKeysRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1286,13 +1261,13 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4735](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4735)
+[apis/user-api.ts:5648](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/user-api.ts#L5648)
 
 ___
 
 ### <a id="userlistkeys" name="userlistkeys"></a> userListKeys
 
-▸ **userListKeys**(`username`, `fingerprint?`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`PublicKey`](../interfaces/PublicKey.md)[]\>\>
+▸ **userListKeys**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`PublicKey`](../interfaces/PublicKey.md)[]\>\>
 
 **`summary`** List the given user\'s public keys
 
@@ -1304,10 +1279,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `username` | `string` | username of user |
-| `fingerprint?` | `string` | - |
-| `page?` | `number` | - |
-| `limit?` | `number` | - |
+| `requestParameters` | [`UserApiUserListKeysRequest`](../interfaces/UserApiUserListKeysRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1316,13 +1288,13 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4750](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4750)
+[apis/user-api.ts:5660](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/user-api.ts#L5660)
 
 ___
 
 ### <a id="userlistrepos" name="userlistrepos"></a> userListRepos
 
-▸ **userListRepos**(`username`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`Repository`](../interfaces/Repository.md)[]\>\>
+▸ **userListRepos**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Repository`](../interfaces/Repository.md)[]\>\>
 
 **`summary`** List the repos owned by the given user
 
@@ -1334,9 +1306,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `username` | `string` | username of user |
-| `page?` | `number` | - |
-| `limit?` | `number` | - |
+| `requestParameters` | [`UserApiUserListReposRequest`](../interfaces/UserApiUserListReposRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1345,13 +1315,13 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4764](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4764)
+[apis/user-api.ts:5672](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/user-api.ts#L5672)
 
 ___
 
 ### <a id="userliststarred" name="userliststarred"></a> userListStarred
 
-▸ **userListStarred**(`username`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`Repository`](../interfaces/Repository.md)[]\>\>
+▸ **userListStarred**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Repository`](../interfaces/Repository.md)[]\>\>
 
 **`summary`** The repos that the given user has starred
 
@@ -1363,9 +1333,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `username` | `string` | username of user |
-| `page?` | `number` | - |
-| `limit?` | `number` | - |
+| `requestParameters` | [`UserApiUserListStarredRequest`](../interfaces/UserApiUserListStarredRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1374,13 +1342,13 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4778](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4778)
+[apis/user-api.ts:5684](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/user-api.ts#L5684)
 
 ___
 
 ### <a id="userlistsubscriptions" name="userlistsubscriptions"></a> userListSubscriptions
 
-▸ **userListSubscriptions**(`username`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`Repository`](../interfaces/Repository.md)[]\>\>
+▸ **userListSubscriptions**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Repository`](../interfaces/Repository.md)[]\>\>
 
 **`summary`** List the repositories watched by a user
 
@@ -1392,9 +1360,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `username` | `string` | username of the user |
-| `page?` | `number` | - |
-| `limit?` | `number` | - |
+| `requestParameters` | [`UserApiUserListSubscriptionsRequest`](../interfaces/UserApiUserListSubscriptionsRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1403,13 +1369,13 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4792](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4792)
+[apis/user-api.ts:5696](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/user-api.ts#L5696)
 
 ___
 
 ### <a id="userlistteams" name="userlistteams"></a> userListTeams
 
-▸ **userListTeams**(`page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`Team`](../interfaces/Team.md)[]\>\>
+▸ **userListTeams**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`Team`](../interfaces/Team.md)[]\>\>
 
 **`summary`** List all the teams a user belongs to
 
@@ -1419,11 +1385,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `page?` | `number` |
-| `limit?` | `number` |
-| `options?` | `AxiosRequestConfig` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `requestParameters` | [`UserApiUserListTeamsRequest`](../interfaces/UserApiUserListTeamsRequest.md) | Request parameters. |
+| `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
 
@@ -1431,13 +1396,13 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4805](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4805)
+[apis/user-api.ts:5708](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/user-api.ts#L5708)
 
 ___
 
 ### <a id="usersearch" name="usersearch"></a> userSearch
 
-▸ **userSearch**(`q?`, `uid?`, `lang?`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`UserSearch200Response`](../interfaces/UserSearch200Response.md)\>\>
+▸ **userSearch**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`UserSearch200Response`](../interfaces/UserSearch200Response.md)\>\>
 
 **`summary`** Search for users
 
@@ -1447,14 +1412,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `q?` | `string` |
-| `uid?` | `number` |
-| `lang?` | `string` |
-| `page?` | `number` |
-| `limit?` | `number` |
-| `options?` | `AxiosRequestConfig` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `requestParameters` | [`UserApiUserSearchRequest`](../interfaces/UserApiUserSearchRequest.md) | Request parameters. |
+| `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
 
@@ -1462,13 +1423,13 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4821](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4821)
+[apis/user-api.ts:5720](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/user-api.ts#L5720)
 
 ___
 
 ### <a id="userupdateoauth2application" name="userupdateoauth2application"></a> userUpdateOAuth2Application
 
-▸ **userUpdateOAuth2Application**(`id`, `body`, `options?`): `Promise`<`AxiosResponse`<[`OAuth2Application`](../interfaces/OAuth2Application.md)\>\>
+▸ **userUpdateOAuth2Application**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`OAuth2Application`](../interfaces/OAuth2Application.md)\>\>
 
 **`summary`** update an OAuth2 Application, this includes regenerating the client secret
 
@@ -1480,8 +1441,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `id` | `number` | application to be updated |
-| `body` | [`CreateOAuth2ApplicationOptions`](../interfaces/CreateOAuth2ApplicationOptions.md) |  |
+| `requestParameters` | [`UserApiUserUpdateOAuth2ApplicationRequest`](../interfaces/UserApiUserUpdateOAuth2ApplicationRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1490,7 +1450,7 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4834](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4834)
+[apis/user-api.ts:5732](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/user-api.ts#L5732)
 
 ___
 
@@ -1516,4 +1476,4 @@ ___
 
 #### Defined in
 
-[apis/user-api.ts:4845](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L4845)
+[apis/user-api.ts:5743](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/user-api.ts#L5743)

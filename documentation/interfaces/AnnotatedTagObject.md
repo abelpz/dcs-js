@@ -26,7 +26,7 @@ AnnotatedTagObject contains meta information of the tag object
 
 #### Defined in
 
-[models/annotated-tag-object.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/annotated-tag-object.ts#L28)
+[models/annotated-tag-object.ts:28](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/annotated-tag-object.ts#L28)
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 #### Defined in
 
-[models/annotated-tag-object.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/annotated-tag-object.ts#L34)
+[models/annotated-tag-object.ts:34](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/annotated-tag-object.ts#L34)
 
 ___
 
@@ -50,4 +50,4 @@ ___
 
 #### Defined in
 
-[models/annotated-tag-object.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/annotated-tag-object.ts#L40)
+[models/annotated-tag-object.ts:40](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/annotated-tag-object.ts#L40)

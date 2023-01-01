@@ -26,4 +26,4 @@ URL of external wiki.
 
 #### Defined in
 
-[models/external-wiki.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/external-wiki.ts#L28)
+[models/external-wiki.ts:28](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/external-wiki.ts#L28)

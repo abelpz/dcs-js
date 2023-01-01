@@ -27,7 +27,7 @@ CreatePullReviewComment represent a review comment for creation api
 
 #### Defined in
 
-[models/create-pull-review-comment.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-pull-review-comment.ts#L28)
+[models/create-pull-review-comment.ts:28](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/create-pull-review-comment.ts#L28)
 
 ___
 
@@ -41,7 +41,7 @@ if comment to new file line or 0
 
 #### Defined in
 
-[models/create-pull-review-comment.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-pull-review-comment.ts#L34)
+[models/create-pull-review-comment.ts:34](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/create-pull-review-comment.ts#L34)
 
 ___
 
@@ -55,7 +55,7 @@ if comment to old file line or 0
 
 #### Defined in
 
-[models/create-pull-review-comment.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-pull-review-comment.ts#L40)
+[models/create-pull-review-comment.ts:40](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/create-pull-review-comment.ts#L40)
 
 ___
 
@@ -69,4 +69,4 @@ the tree path
 
 #### Defined in
 
-[models/create-pull-review-comment.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-pull-review-comment.ts#L46)
+[models/create-pull-review-comment.ts:46](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/create-pull-review-comment.ts#L46)

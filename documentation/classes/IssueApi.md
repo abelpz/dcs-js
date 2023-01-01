@@ -35,6 +35,7 @@ IssueApi - object-oriented interface
 - [issueCreateIssue](IssueApi.md#issuecreateissue)
 - [issueCreateLabel](IssueApi.md#issuecreatelabel)
 - [issueCreateMilestone](IssueApi.md#issuecreatemilestone)
+- [issueDelete](IssueApi.md#issuedelete)
 - [issueDeleteComment](IssueApi.md#issuedeletecomment)
 - [issueDeleteCommentDeprecated](IssueApi.md#issuedeletecommentdeprecated)
 - [issueDeleteCommentReaction](IssueApi.md#issuedeletecommentreaction)
@@ -94,7 +95,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[base.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/base.ts#L52)
+[base.ts:52](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/base.ts#L52)
 
 ## Properties
 
@@ -128,13 +129,13 @@ BaseAPI.configuration
 
 #### Defined in
 
-[base.ts:50](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/base.ts#L50)
+[base.ts:50](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/base.ts#L50)
 
 ## Methods
 
 ### <a id="issueaddlabel" name="issueaddlabel"></a> issueAddLabel
 
-▸ **issueAddLabel**(`owner`, `repo`, `index`, `body?`, `options?`): `Promise`<`AxiosResponse`<[`Label`](../interfaces/Label.md)[]\>\>
+▸ **issueAddLabel**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Label`](../interfaces/Label.md)[]\>\>
 
 **`summary`** Add a label to an issue
 
@@ -146,10 +147,7 @@ BaseAPI.configuration
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `index` | `number` | index of the issue |
-| `body?` | [`IssueLabelsOption`](../interfaces/IssueLabelsOption.md) | - |
+| `requestParameters` | [`IssueApiIssueAddLabelRequest`](../interfaces/IssueApiIssueAddLabelRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -158,13 +156,13 @@ BaseAPI.configuration
 
 #### Defined in
 
-[apis/issue-api.ts:4776](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L4776)
+[apis/issue-api.ts:6668](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/issue-api.ts#L6668)
 
 ___
 
 ### <a id="issueaddsubscription" name="issueaddsubscription"></a> issueAddSubscription
 
-▸ **issueAddSubscription**(`owner`, `repo`, `index`, `user`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **issueAddSubscription**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Subscribe user to issue
 
@@ -176,10 +174,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `index` | `number` | index of the issue |
-| `user` | `string` | user to subscribe |
+| `requestParameters` | [`IssueApiIssueAddSubscriptionRequest`](../interfaces/IssueApiIssueAddSubscriptionRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -188,13 +183,13 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:4791](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L4791)
+[apis/issue-api.ts:6680](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/issue-api.ts#L6680)
 
 ___
 
 ### <a id="issueaddtime" name="issueaddtime"></a> issueAddTime
 
-▸ **issueAddTime**(`owner`, `repo`, `index`, `body?`, `options?`): `Promise`<`AxiosResponse`<[`TrackedTime`](../interfaces/TrackedTime.md)\>\>
+▸ **issueAddTime**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`TrackedTime`](../interfaces/TrackedTime.md)\>\>
 
 **`summary`** Add tracked time to a issue
 
@@ -206,10 +201,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `index` | `number` | index of the issue |
-| `body?` | [`AddTimeOption`](../interfaces/AddTimeOption.md) | - |
+| `requestParameters` | [`IssueApiIssueAddTimeRequest`](../interfaces/IssueApiIssueAddTimeRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -218,13 +210,13 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:4806](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L4806)
+[apis/issue-api.ts:6692](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/issue-api.ts#L6692)
 
 ___
 
 ### <a id="issuechecksubscription" name="issuechecksubscription"></a> issueCheckSubscription
 
-▸ **issueCheckSubscription**(`owner`, `repo`, `index`, `options?`): `Promise`<`AxiosResponse`<[`WatchInfo`](../interfaces/WatchInfo.md)\>\>
+▸ **issueCheckSubscription**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`WatchInfo`](../interfaces/WatchInfo.md)\>\>
 
 **`summary`** Check if user is subscribed to an issue
 
@@ -236,9 +228,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `index` | `number` | index of the issue |
+| `requestParameters` | [`IssueApiIssueCheckSubscriptionRequest`](../interfaces/IssueApiIssueCheckSubscriptionRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -247,13 +237,13 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:4820](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L4820)
+[apis/issue-api.ts:6704](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/issue-api.ts#L6704)
 
 ___
 
 ### <a id="issueclearlabels" name="issueclearlabels"></a> issueClearLabels
 
-▸ **issueClearLabels**(`owner`, `repo`, `index`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **issueClearLabels**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Remove all labels from an issue
 
@@ -265,9 +255,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `index` | `number` | index of the issue |
+| `requestParameters` | [`IssueApiIssueClearLabelsRequest`](../interfaces/IssueApiIssueClearLabelsRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -276,13 +264,13 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:4834](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L4834)
+[apis/issue-api.ts:6716](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/issue-api.ts#L6716)
 
 ___
 
 ### <a id="issuecreatecomment" name="issuecreatecomment"></a> issueCreateComment
 
-▸ **issueCreateComment**(`owner`, `repo`, `index`, `body?`, `options?`): `Promise`<`AxiosResponse`<[`Comment`](../interfaces/Comment.md)\>\>
+▸ **issueCreateComment**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Comment`](../interfaces/Comment.md)\>\>
 
 **`summary`** Add a comment to an issue
 
@@ -294,10 +282,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `index` | `number` | index of the issue |
-| `body?` | [`CreateIssueCommentOption`](../interfaces/CreateIssueCommentOption.md) | - |
+| `requestParameters` | [`IssueApiIssueCreateCommentRequest`](../interfaces/IssueApiIssueCreateCommentRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -306,13 +291,13 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:4849](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L4849)
+[apis/issue-api.ts:6728](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/issue-api.ts#L6728)
 
 ___
 
 ### <a id="issuecreateissue" name="issuecreateissue"></a> issueCreateIssue
 
-▸ **issueCreateIssue**(`owner`, `repo`, `body?`, `options?`): `Promise`<`AxiosResponse`<[`Issue`](../interfaces/Issue.md)\>\>
+▸ **issueCreateIssue**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Issue`](../interfaces/Issue.md)\>\>
 
 **`summary`** Create an issue. If using deadline only the date will be taken into account, and time of day ignored.
 
@@ -324,9 +309,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `body?` | [`CreateIssueOption`](../interfaces/CreateIssueOption.md) | - |
+| `requestParameters` | [`IssueApiIssueCreateIssueRequest`](../interfaces/IssueApiIssueCreateIssueRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -335,13 +318,13 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:4863](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L4863)
+[apis/issue-api.ts:6740](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/issue-api.ts#L6740)
 
 ___
 
 ### <a id="issuecreatelabel" name="issuecreatelabel"></a> issueCreateLabel
 
-▸ **issueCreateLabel**(`owner`, `repo`, `body?`, `options?`): `Promise`<`AxiosResponse`<[`Label`](../interfaces/Label.md)\>\>
+▸ **issueCreateLabel**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Label`](../interfaces/Label.md)\>\>
 
 **`summary`** Create a label
 
@@ -353,9 +336,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `body?` | [`CreateLabelOption`](../interfaces/CreateLabelOption.md) | - |
+| `requestParameters` | [`IssueApiIssueCreateLabelRequest`](../interfaces/IssueApiIssueCreateLabelRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -364,13 +345,13 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:4877](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L4877)
+[apis/issue-api.ts:6752](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/issue-api.ts#L6752)
 
 ___
 
 ### <a id="issuecreatemilestone" name="issuecreatemilestone"></a> issueCreateMilestone
 
-▸ **issueCreateMilestone**(`owner`, `repo`, `body?`, `options?`): `Promise`<`AxiosResponse`<[`Milestone`](../interfaces/Milestone.md)\>\>
+▸ **issueCreateMilestone**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Milestone`](../interfaces/Milestone.md)\>\>
 
 **`summary`** Create a milestone
 
@@ -382,9 +363,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `body?` | [`CreateMilestoneOption`](../interfaces/CreateMilestoneOption.md) | - |
+| `requestParameters` | [`IssueApiIssueCreateMilestoneRequest`](../interfaces/IssueApiIssueCreateMilestoneRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -393,13 +372,40 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:4891](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L4891)
+[apis/issue-api.ts:6764](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/issue-api.ts#L6764)
+
+___
+
+### <a id="issuedelete" name="issuedelete"></a> issueDelete
+
+▸ **issueDelete**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+
+**`summary`** Delete an issue
+
+**`throws`** {RequiredError}
+
+**`memberof`** IssueApi
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `requestParameters` | [`IssueApiIssueDeleteRequest`](../interfaces/IssueApiIssueDeleteRequest.md) | Request parameters. |
+| `options?` | `AxiosRequestConfig` | - |
+
+#### Returns
+
+`Promise`<`AxiosResponse`<`void`\>\>
+
+#### Defined in
+
+[apis/issue-api.ts:6776](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/issue-api.ts#L6776)
 
 ___
 
 ### <a id="issuedeletecomment" name="issuedeletecomment"></a> issueDeleteComment
 
-▸ **issueDeleteComment**(`owner`, `repo`, `id`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **issueDeleteComment**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Delete a comment
 
@@ -411,9 +417,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `id` | `number` | id of comment to delete |
+| `requestParameters` | [`IssueApiIssueDeleteCommentRequest`](../interfaces/IssueApiIssueDeleteCommentRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -422,13 +426,13 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:4905](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L4905)
+[apis/issue-api.ts:6788](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/issue-api.ts#L6788)
 
 ___
 
 ### <a id="issuedeletecommentdeprecated" name="issuedeletecommentdeprecated"></a> issueDeleteCommentDeprecated
 
-▸ **issueDeleteCommentDeprecated**(`owner`, `repo`, `index`, `id`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **issueDeleteCommentDeprecated**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Delete a comment
 
@@ -442,10 +446,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `index` | `number` | this parameter is ignored |
-| `id` | `number` | id of comment to delete |
+| `requestParameters` | [`IssueApiIssueDeleteCommentDeprecatedRequest`](../interfaces/IssueApiIssueDeleteCommentDeprecatedRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -454,13 +455,13 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:4921](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L4921)
+[apis/issue-api.ts:6801](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/issue-api.ts#L6801)
 
 ___
 
 ### <a id="issuedeletecommentreaction" name="issuedeletecommentreaction"></a> issueDeleteCommentReaction
 
-▸ **issueDeleteCommentReaction**(`owner`, `repo`, `id`, `content?`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **issueDeleteCommentReaction**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Remove a reaction from a comment of an issue
 
@@ -472,10 +473,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `id` | `number` | id of the comment to edit |
-| `content?` | [`EditReactionOption`](../interfaces/EditReactionOption.md) | - |
+| `requestParameters` | [`IssueApiIssueDeleteCommentReactionRequest`](../interfaces/IssueApiIssueDeleteCommentReactionRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -484,13 +482,13 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:4936](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L4936)
+[apis/issue-api.ts:6813](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/issue-api.ts#L6813)
 
 ___
 
 ### <a id="issuedeleteissuereaction" name="issuedeleteissuereaction"></a> issueDeleteIssueReaction
 
-▸ **issueDeleteIssueReaction**(`owner`, `repo`, `index`, `content?`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **issueDeleteIssueReaction**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Remove a reaction from an issue
 
@@ -502,10 +500,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `index` | `number` | index of the issue |
-| `content?` | [`EditReactionOption`](../interfaces/EditReactionOption.md) | - |
+| `requestParameters` | [`IssueApiIssueDeleteIssueReactionRequest`](../interfaces/IssueApiIssueDeleteIssueReactionRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -514,13 +509,13 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:4951](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L4951)
+[apis/issue-api.ts:6825](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/issue-api.ts#L6825)
 
 ___
 
 ### <a id="issuedeletelabel" name="issuedeletelabel"></a> issueDeleteLabel
 
-▸ **issueDeleteLabel**(`owner`, `repo`, `id`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **issueDeleteLabel**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Delete a label
 
@@ -532,9 +527,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `id` | `number` | id of the label to delete |
+| `requestParameters` | [`IssueApiIssueDeleteLabelRequest`](../interfaces/IssueApiIssueDeleteLabelRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -543,13 +536,13 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:4965](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L4965)
+[apis/issue-api.ts:6837](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/issue-api.ts#L6837)
 
 ___
 
 ### <a id="issuedeletemilestone" name="issuedeletemilestone"></a> issueDeleteMilestone
 
-▸ **issueDeleteMilestone**(`owner`, `repo`, `id`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **issueDeleteMilestone**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Delete a milestone
 
@@ -561,9 +554,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `id` | `string` | the milestone to delete, identified by ID and if not available by name |
+| `requestParameters` | [`IssueApiIssueDeleteMilestoneRequest`](../interfaces/IssueApiIssueDeleteMilestoneRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -572,13 +563,13 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:4979](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L4979)
+[apis/issue-api.ts:6849](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/issue-api.ts#L6849)
 
 ___
 
 ### <a id="issuedeletestopwatch" name="issuedeletestopwatch"></a> issueDeleteStopWatch
 
-▸ **issueDeleteStopWatch**(`owner`, `repo`, `index`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **issueDeleteStopWatch**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Delete an issue\'s existing stopwatch.
 
@@ -590,9 +581,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `index` | `number` | index of the issue to stop the stopwatch on |
+| `requestParameters` | [`IssueApiIssueDeleteStopWatchRequest`](../interfaces/IssueApiIssueDeleteStopWatchRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -601,13 +590,13 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:4993](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L4993)
+[apis/issue-api.ts:6861](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/issue-api.ts#L6861)
 
 ___
 
 ### <a id="issuedeletesubscription" name="issuedeletesubscription"></a> issueDeleteSubscription
 
-▸ **issueDeleteSubscription**(`owner`, `repo`, `index`, `user`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **issueDeleteSubscription**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Unsubscribe user from issue
 
@@ -619,10 +608,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `index` | `number` | index of the issue |
-| `user` | `string` | user witch unsubscribe |
+| `requestParameters` | [`IssueApiIssueDeleteSubscriptionRequest`](../interfaces/IssueApiIssueDeleteSubscriptionRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -631,13 +617,13 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:5008](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5008)
+[apis/issue-api.ts:6873](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/issue-api.ts#L6873)
 
 ___
 
 ### <a id="issuedeletetime" name="issuedeletetime"></a> issueDeleteTime
 
-▸ **issueDeleteTime**(`owner`, `repo`, `index`, `id`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **issueDeleteTime**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Delete specific tracked time
 
@@ -649,10 +635,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `index` | `number` | index of the issue |
-| `id` | `number` | id of time to delete |
+| `requestParameters` | [`IssueApiIssueDeleteTimeRequest`](../interfaces/IssueApiIssueDeleteTimeRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -661,13 +644,13 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:5023](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5023)
+[apis/issue-api.ts:6885](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/issue-api.ts#L6885)
 
 ___
 
 ### <a id="issueeditcomment" name="issueeditcomment"></a> issueEditComment
 
-▸ **issueEditComment**(`owner`, `repo`, `id`, `body?`, `options?`): `Promise`<`AxiosResponse`<[`Comment`](../interfaces/Comment.md)\>\>
+▸ **issueEditComment**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Comment`](../interfaces/Comment.md)\>\>
 
 **`summary`** Edit a comment
 
@@ -679,10 +662,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `id` | `number` | id of the comment to edit |
-| `body?` | [`EditIssueCommentOption`](../interfaces/EditIssueCommentOption.md) | - |
+| `requestParameters` | [`IssueApiIssueEditCommentRequest`](../interfaces/IssueApiIssueEditCommentRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -691,13 +671,13 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:5038](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5038)
+[apis/issue-api.ts:6897](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/issue-api.ts#L6897)
 
 ___
 
 ### <a id="issueeditcommentdeprecated" name="issueeditcommentdeprecated"></a> issueEditCommentDeprecated
 
-▸ **issueEditCommentDeprecated**(`owner`, `repo`, `index`, `id`, `body?`, `options?`): `Promise`<`AxiosResponse`<[`Comment`](../interfaces/Comment.md)\>\>
+▸ **issueEditCommentDeprecated**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Comment`](../interfaces/Comment.md)\>\>
 
 **`summary`** Edit a comment
 
@@ -711,11 +691,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `index` | `number` | this parameter is ignored |
-| `id` | `number` | id of the comment to edit |
-| `body?` | [`EditIssueCommentOption`](../interfaces/EditIssueCommentOption.md) | - |
+| `requestParameters` | [`IssueApiIssueEditCommentDeprecatedRequest`](../interfaces/IssueApiIssueEditCommentDeprecatedRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -724,13 +700,13 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:5055](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5055)
+[apis/issue-api.ts:6910](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/issue-api.ts#L6910)
 
 ___
 
 ### <a id="issueeditissue" name="issueeditissue"></a> issueEditIssue
 
-▸ **issueEditIssue**(`owner`, `repo`, `index`, `body?`, `options?`): `Promise`<`AxiosResponse`<[`Issue`](../interfaces/Issue.md)\>\>
+▸ **issueEditIssue**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Issue`](../interfaces/Issue.md)\>\>
 
 **`summary`** Edit an issue. If using deadline only the date will be taken into account, and time of day ignored.
 
@@ -742,10 +718,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `index` | `number` | index of the issue to edit |
-| `body?` | [`EditIssueOption`](../interfaces/EditIssueOption.md) | - |
+| `requestParameters` | [`IssueApiIssueEditIssueRequest`](../interfaces/IssueApiIssueEditIssueRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -754,13 +727,13 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:5070](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5070)
+[apis/issue-api.ts:6922](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/issue-api.ts#L6922)
 
 ___
 
 ### <a id="issueeditissuedeadline" name="issueeditissuedeadline"></a> issueEditIssueDeadline
 
-▸ **issueEditIssueDeadline**(`owner`, `repo`, `index`, `body?`, `options?`): `Promise`<`AxiosResponse`<[`IssueDeadline`](../interfaces/IssueDeadline.md)\>\>
+▸ **issueEditIssueDeadline**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`IssueDeadline`](../interfaces/IssueDeadline.md)\>\>
 
 **`summary`** Set an issue deadline. If set to null, the deadline is deleted. If using deadline only the date will be taken into account, and time of day ignored.
 
@@ -772,10 +745,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `index` | `number` | index of the issue to create or update a deadline on |
-| `body?` | [`EditDeadlineOption`](../interfaces/EditDeadlineOption.md) | - |
+| `requestParameters` | [`IssueApiIssueEditIssueDeadlineRequest`](../interfaces/IssueApiIssueEditIssueDeadlineRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -784,13 +754,13 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:5085](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5085)
+[apis/issue-api.ts:6934](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/issue-api.ts#L6934)
 
 ___
 
 ### <a id="issueeditlabel" name="issueeditlabel"></a> issueEditLabel
 
-▸ **issueEditLabel**(`owner`, `repo`, `id`, `body?`, `options?`): `Promise`<`AxiosResponse`<[`Label`](../interfaces/Label.md)\>\>
+▸ **issueEditLabel**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Label`](../interfaces/Label.md)\>\>
 
 **`summary`** Update a label
 
@@ -802,10 +772,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `id` | `number` | id of the label to edit |
-| `body?` | [`EditLabelOption`](../interfaces/EditLabelOption.md) | - |
+| `requestParameters` | [`IssueApiIssueEditLabelRequest`](../interfaces/IssueApiIssueEditLabelRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -814,13 +781,13 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:5100](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5100)
+[apis/issue-api.ts:6946](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/issue-api.ts#L6946)
 
 ___
 
 ### <a id="issueeditmilestone" name="issueeditmilestone"></a> issueEditMilestone
 
-▸ **issueEditMilestone**(`owner`, `repo`, `id`, `body?`, `options?`): `Promise`<`AxiosResponse`<[`Milestone`](../interfaces/Milestone.md)\>\>
+▸ **issueEditMilestone**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Milestone`](../interfaces/Milestone.md)\>\>
 
 **`summary`** Update a milestone
 
@@ -832,10 +799,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `id` | `string` | the milestone to edit, identified by ID and if not available by name |
-| `body?` | [`EditMilestoneOption`](../interfaces/EditMilestoneOption.md) | - |
+| `requestParameters` | [`IssueApiIssueEditMilestoneRequest`](../interfaces/IssueApiIssueEditMilestoneRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -844,13 +808,13 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:5115](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5115)
+[apis/issue-api.ts:6958](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/issue-api.ts#L6958)
 
 ___
 
 ### <a id="issuegetcomment" name="issuegetcomment"></a> issueGetComment
 
-▸ **issueGetComment**(`owner`, `repo`, `id`, `options?`): `Promise`<`AxiosResponse`<[`Comment`](../interfaces/Comment.md)\>\>
+▸ **issueGetComment**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Comment`](../interfaces/Comment.md)\>\>
 
 **`summary`** Get a comment
 
@@ -862,9 +826,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `id` | `number` | id of the comment |
+| `requestParameters` | [`IssueApiIssueGetCommentRequest`](../interfaces/IssueApiIssueGetCommentRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -873,13 +835,13 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:5129](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5129)
+[apis/issue-api.ts:6970](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/issue-api.ts#L6970)
 
 ___
 
 ### <a id="issuegetcommentreactions" name="issuegetcommentreactions"></a> issueGetCommentReactions
 
-▸ **issueGetCommentReactions**(`owner`, `repo`, `id`, `options?`): `Promise`<`AxiosResponse`<[`Reaction`](../interfaces/Reaction.md)[]\>\>
+▸ **issueGetCommentReactions**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Reaction`](../interfaces/Reaction.md)[]\>\>
 
 **`summary`** Get a list of reactions from a comment of an issue
 
@@ -891,9 +853,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `id` | `number` | id of the comment to edit |
+| `requestParameters` | [`IssueApiIssueGetCommentReactionsRequest`](../interfaces/IssueApiIssueGetCommentReactionsRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -902,13 +862,13 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:5143](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5143)
+[apis/issue-api.ts:6982](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/issue-api.ts#L6982)
 
 ___
 
 ### <a id="issuegetcomments" name="issuegetcomments"></a> issueGetComments
 
-▸ **issueGetComments**(`owner`, `repo`, `index`, `since?`, `before?`, `options?`): `Promise`<`AxiosResponse`<[`Comment`](../interfaces/Comment.md)[]\>\>
+▸ **issueGetComments**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Comment`](../interfaces/Comment.md)[]\>\>
 
 **`summary`** List all comments on an issue
 
@@ -920,11 +880,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `index` | `number` | index of the issue |
-| `since?` | `string` | - |
-| `before?` | `string` | - |
+| `requestParameters` | [`IssueApiIssueGetCommentsRequest`](../interfaces/IssueApiIssueGetCommentsRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -933,13 +889,13 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:5159](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5159)
+[apis/issue-api.ts:6994](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/issue-api.ts#L6994)
 
 ___
 
 ### <a id="issuegetcommentsandtimeline" name="issuegetcommentsandtimeline"></a> issueGetCommentsAndTimeline
 
-▸ **issueGetCommentsAndTimeline**(`owner`, `repo`, `index`, `since?`, `page?`, `limit?`, `before?`, `options?`): `Promise`<`AxiosResponse`<[`TimelineComment`](../interfaces/TimelineComment.md)[]\>\>
+▸ **issueGetCommentsAndTimeline**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`TimelineComment`](../interfaces/TimelineComment.md)[]\>\>
 
 **`summary`** List all comments and events on an issue
 
@@ -951,13 +907,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `index` | `number` | index of the issue |
-| `since?` | `string` | - |
-| `page?` | `number` | - |
-| `limit?` | `number` | - |
-| `before?` | `string` | - |
+| `requestParameters` | [`IssueApiIssueGetCommentsAndTimelineRequest`](../interfaces/IssueApiIssueGetCommentsAndTimelineRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -966,13 +916,13 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:5177](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5177)
+[apis/issue-api.ts:7006](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/issue-api.ts#L7006)
 
 ___
 
 ### <a id="issuegetissue" name="issuegetissue"></a> issueGetIssue
 
-▸ **issueGetIssue**(`owner`, `repo`, `index`, `options?`): `Promise`<`AxiosResponse`<[`Issue`](../interfaces/Issue.md)\>\>
+▸ **issueGetIssue**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Issue`](../interfaces/Issue.md)\>\>
 
 **`summary`** Get an issue
 
@@ -984,9 +934,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `index` | `number` | index of the issue to get |
+| `requestParameters` | [`IssueApiIssueGetIssueRequest`](../interfaces/IssueApiIssueGetIssueRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -995,13 +943,13 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:5191](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5191)
+[apis/issue-api.ts:7018](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/issue-api.ts#L7018)
 
 ___
 
 ### <a id="issuegetissuereactions" name="issuegetissuereactions"></a> issueGetIssueReactions
 
-▸ **issueGetIssueReactions**(`owner`, `repo`, `index`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`Reaction`](../interfaces/Reaction.md)[]\>\>
+▸ **issueGetIssueReactions**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Reaction`](../interfaces/Reaction.md)[]\>\>
 
 **`summary`** Get a list reactions of an issue
 
@@ -1013,11 +961,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `index` | `number` | index of the issue |
-| `page?` | `number` | - |
-| `limit?` | `number` | - |
+| `requestParameters` | [`IssueApiIssueGetIssueReactionsRequest`](../interfaces/IssueApiIssueGetIssueReactionsRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1026,13 +970,13 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:5207](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5207)
+[apis/issue-api.ts:7030](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/issue-api.ts#L7030)
 
 ___
 
 ### <a id="issuegetlabel" name="issuegetlabel"></a> issueGetLabel
 
-▸ **issueGetLabel**(`owner`, `repo`, `id`, `options?`): `Promise`<`AxiosResponse`<[`Label`](../interfaces/Label.md)\>\>
+▸ **issueGetLabel**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Label`](../interfaces/Label.md)\>\>
 
 **`summary`** Get a single label
 
@@ -1044,9 +988,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `id` | `number` | id of the label to get |
+| `requestParameters` | [`IssueApiIssueGetLabelRequest`](../interfaces/IssueApiIssueGetLabelRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1055,13 +997,13 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:5221](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5221)
+[apis/issue-api.ts:7042](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/issue-api.ts#L7042)
 
 ___
 
 ### <a id="issuegetlabels" name="issuegetlabels"></a> issueGetLabels
 
-▸ **issueGetLabels**(`owner`, `repo`, `index`, `options?`): `Promise`<`AxiosResponse`<[`Label`](../interfaces/Label.md)[]\>\>
+▸ **issueGetLabels**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Label`](../interfaces/Label.md)[]\>\>
 
 **`summary`** Get an issue\'s labels
 
@@ -1073,9 +1015,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `index` | `number` | index of the issue |
+| `requestParameters` | [`IssueApiIssueGetLabelsRequest`](../interfaces/IssueApiIssueGetLabelsRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1084,13 +1024,13 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:5235](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5235)
+[apis/issue-api.ts:7054](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/issue-api.ts#L7054)
 
 ___
 
 ### <a id="issuegetmilestone" name="issuegetmilestone"></a> issueGetMilestone
 
-▸ **issueGetMilestone**(`owner`, `repo`, `id`, `options?`): `Promise`<`AxiosResponse`<[`Milestone`](../interfaces/Milestone.md)\>\>
+▸ **issueGetMilestone**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Milestone`](../interfaces/Milestone.md)\>\>
 
 **`summary`** Get a milestone
 
@@ -1102,9 +1042,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `id` | `string` | the milestone to get, identified by ID and if not available by name |
+| `requestParameters` | [`IssueApiIssueGetMilestoneRequest`](../interfaces/IssueApiIssueGetMilestoneRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1113,13 +1051,13 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:5249](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5249)
+[apis/issue-api.ts:7066](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/issue-api.ts#L7066)
 
 ___
 
 ### <a id="issuegetmilestoneslist" name="issuegetmilestoneslist"></a> issueGetMilestonesList
 
-▸ **issueGetMilestonesList**(`owner`, `repo`, `state?`, `name?`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`Milestone`](../interfaces/Milestone.md)[]\>\>
+▸ **issueGetMilestonesList**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Milestone`](../interfaces/Milestone.md)[]\>\>
 
 **`summary`** Get all of a repository\'s opened milestones
 
@@ -1131,12 +1069,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `state?` | `string` | - |
-| `name?` | `string` | - |
-| `page?` | `number` | - |
-| `limit?` | `number` | - |
+| `requestParameters` | [`IssueApiIssueGetMilestonesListRequest`](../interfaces/IssueApiIssueGetMilestonesListRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1145,13 +1078,13 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:5266](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5266)
+[apis/issue-api.ts:7078](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/issue-api.ts#L7078)
 
 ___
 
 ### <a id="issuegetrepocomments" name="issuegetrepocomments"></a> issueGetRepoComments
 
-▸ **issueGetRepoComments**(`owner`, `repo`, `since?`, `before?`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`Comment`](../interfaces/Comment.md)[]\>\>
+▸ **issueGetRepoComments**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Comment`](../interfaces/Comment.md)[]\>\>
 
 **`summary`** List all comments in a repository
 
@@ -1163,12 +1096,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `since?` | `string` | - |
-| `before?` | `string` | - |
-| `page?` | `number` | - |
-| `limit?` | `number` | - |
+| `requestParameters` | [`IssueApiIssueGetRepoCommentsRequest`](../interfaces/IssueApiIssueGetRepoCommentsRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1177,13 +1105,13 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:5283](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5283)
+[apis/issue-api.ts:7090](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/issue-api.ts#L7090)
 
 ___
 
 ### <a id="issuelistissues" name="issuelistissues"></a> issueListIssues
 
-▸ **issueListIssues**(`owner`, `repo`, `state?`, `labels?`, `q?`, `type?`, `milestones?`, `since?`, `before?`, `createdBy?`, `assignedBy?`, `mentionedBy?`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`Issue`](../interfaces/Issue.md)[]\>\>
+▸ **issueListIssues**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Issue`](../interfaces/Issue.md)[]\>\>
 
 **`summary`** List a repository\'s issues
 
@@ -1195,20 +1123,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `state?` | ``"all"`` \| ``"closed"`` \| ``"open"`` | - |
-| `labels?` | `string` | - |
-| `q?` | `string` | - |
-| `type?` | ``"issues"`` \| ``"pulls"`` | - |
-| `milestones?` | `string` | - |
-| `since?` | `string` | - |
-| `before?` | `string` | - |
-| `createdBy?` | `string` | - |
-| `assignedBy?` | `string` | - |
-| `mentionedBy?` | `string` | - |
-| `page?` | `number` | - |
-| `limit?` | `number` | - |
+| `requestParameters` | [`IssueApiIssueListIssuesRequest`](../interfaces/IssueApiIssueListIssuesRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1217,13 +1132,13 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:5308](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5308)
+[apis/issue-api.ts:7102](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/issue-api.ts#L7102)
 
 ___
 
 ### <a id="issuelistlabels" name="issuelistlabels"></a> issueListLabels
 
-▸ **issueListLabels**(`owner`, `repo`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`Label`](../interfaces/Label.md)[]\>\>
+▸ **issueListLabels**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Label`](../interfaces/Label.md)[]\>\>
 
 **`summary`** Get all of a repository\'s labels
 
@@ -1235,10 +1150,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `page?` | `number` | - |
-| `limit?` | `number` | - |
+| `requestParameters` | [`IssueApiIssueListLabelsRequest`](../interfaces/IssueApiIssueListLabelsRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1247,13 +1159,13 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:5323](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5323)
+[apis/issue-api.ts:7114](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/issue-api.ts#L7114)
 
 ___
 
 ### <a id="issuepostcommentreaction" name="issuepostcommentreaction"></a> issuePostCommentReaction
 
-▸ **issuePostCommentReaction**(`owner`, `repo`, `id`, `content?`, `options?`): `Promise`<`AxiosResponse`<[`Reaction`](../interfaces/Reaction.md)\>\>
+▸ **issuePostCommentReaction**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Reaction`](../interfaces/Reaction.md)\>\>
 
 **`summary`** Add a reaction to a comment of an issue
 
@@ -1265,10 +1177,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `id` | `number` | id of the comment to edit |
-| `content?` | [`EditReactionOption`](../interfaces/EditReactionOption.md) | - |
+| `requestParameters` | [`IssueApiIssuePostCommentReactionRequest`](../interfaces/IssueApiIssuePostCommentReactionRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1277,13 +1186,13 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:5338](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5338)
+[apis/issue-api.ts:7126](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/issue-api.ts#L7126)
 
 ___
 
 ### <a id="issuepostissuereaction" name="issuepostissuereaction"></a> issuePostIssueReaction
 
-▸ **issuePostIssueReaction**(`owner`, `repo`, `index`, `content?`, `options?`): `Promise`<`AxiosResponse`<[`Reaction`](../interfaces/Reaction.md)\>\>
+▸ **issuePostIssueReaction**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Reaction`](../interfaces/Reaction.md)\>\>
 
 **`summary`** Add a reaction to an issue
 
@@ -1295,10 +1204,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `index` | `number` | index of the issue |
-| `content?` | [`EditReactionOption`](../interfaces/EditReactionOption.md) | - |
+| `requestParameters` | [`IssueApiIssuePostIssueReactionRequest`](../interfaces/IssueApiIssuePostIssueReactionRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1307,13 +1213,13 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:5353](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5353)
+[apis/issue-api.ts:7138](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/issue-api.ts#L7138)
 
 ___
 
 ### <a id="issueremovelabel" name="issueremovelabel"></a> issueRemoveLabel
 
-▸ **issueRemoveLabel**(`owner`, `repo`, `index`, `id`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **issueRemoveLabel**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Remove a label from an issue
 
@@ -1325,10 +1231,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `index` | `number` | index of the issue |
-| `id` | `number` | id of the label to remove |
+| `requestParameters` | [`IssueApiIssueRemoveLabelRequest`](../interfaces/IssueApiIssueRemoveLabelRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1337,13 +1240,13 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:5368](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5368)
+[apis/issue-api.ts:7150](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/issue-api.ts#L7150)
 
 ___
 
 ### <a id="issuereplacelabels" name="issuereplacelabels"></a> issueReplaceLabels
 
-▸ **issueReplaceLabels**(`owner`, `repo`, `index`, `body?`, `options?`): `Promise`<`AxiosResponse`<[`Label`](../interfaces/Label.md)[]\>\>
+▸ **issueReplaceLabels**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Label`](../interfaces/Label.md)[]\>\>
 
 **`summary`** Replace an issue\'s labels
 
@@ -1355,10 +1258,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `index` | `number` | index of the issue |
-| `body?` | [`IssueLabelsOption`](../interfaces/IssueLabelsOption.md) | - |
+| `requestParameters` | [`IssueApiIssueReplaceLabelsRequest`](../interfaces/IssueApiIssueReplaceLabelsRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1367,13 +1267,13 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:5383](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5383)
+[apis/issue-api.ts:7162](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/issue-api.ts#L7162)
 
 ___
 
 ### <a id="issueresettime" name="issueresettime"></a> issueResetTime
 
-▸ **issueResetTime**(`owner`, `repo`, `index`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **issueResetTime**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Reset a tracked time of an issue
 
@@ -1385,9 +1285,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `index` | `number` | index of the issue to add tracked time to |
+| `requestParameters` | [`IssueApiIssueResetTimeRequest`](../interfaces/IssueApiIssueResetTimeRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1396,13 +1294,13 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:5397](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5397)
+[apis/issue-api.ts:7174](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/issue-api.ts#L7174)
 
 ___
 
 ### <a id="issuesearchissues" name="issuesearchissues"></a> issueSearchIssues
 
-▸ **issueSearchIssues**(`state?`, `labels?`, `milestones?`, `q?`, `priorityRepoId?`, `type?`, `since?`, `before?`, `assigned?`, `created?`, `mentioned?`, `reviewRequested?`, `owner?`, `team?`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`Issue`](../interfaces/Issue.md)[]\>\>
+▸ **issueSearchIssues**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`Issue`](../interfaces/Issue.md)[]\>\>
 
 **`summary`** Search for issues across the repositories that the user has access to
 
@@ -1412,25 +1310,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `state?` | `string` |
-| `labels?` | `string` |
-| `milestones?` | `string` |
-| `q?` | `string` |
-| `priorityRepoId?` | `number` |
-| `type?` | `string` |
-| `since?` | `string` |
-| `before?` | `string` |
-| `assigned?` | `boolean` |
-| `created?` | `boolean` |
-| `mentioned?` | `boolean` |
-| `reviewRequested?` | `boolean` |
-| `owner?` | `string` |
-| `team?` | `string` |
-| `page?` | `number` |
-| `limit?` | `number` |
-| `options?` | `AxiosRequestConfig` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `requestParameters` | [`IssueApiIssueSearchIssuesRequest`](../interfaces/IssueApiIssueSearchIssuesRequest.md) | Request parameters. |
+| `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
 
@@ -1438,13 +1321,13 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:5424](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5424)
+[apis/issue-api.ts:7186](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/issue-api.ts#L7186)
 
 ___
 
 ### <a id="issuestartstopwatch" name="issuestartstopwatch"></a> issueStartStopWatch
 
-▸ **issueStartStopWatch**(`owner`, `repo`, `index`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **issueStartStopWatch**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Start stopwatch on an issue.
 
@@ -1456,9 +1339,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `index` | `number` | index of the issue to create the stopwatch on |
+| `requestParameters` | [`IssueApiIssueStartStopWatchRequest`](../interfaces/IssueApiIssueStartStopWatchRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1467,13 +1348,13 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:5438](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5438)
+[apis/issue-api.ts:7198](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/issue-api.ts#L7198)
 
 ___
 
 ### <a id="issuestopstopwatch" name="issuestopstopwatch"></a> issueStopStopWatch
 
-▸ **issueStopStopWatch**(`owner`, `repo`, `index`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **issueStopStopWatch**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Stop an issue\'s existing stopwatch.
 
@@ -1485,9 +1366,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `index` | `number` | index of the issue to stop the stopwatch on |
+| `requestParameters` | [`IssueApiIssueStopStopWatchRequest`](../interfaces/IssueApiIssueStopStopWatchRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1496,13 +1375,13 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:5452](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5452)
+[apis/issue-api.ts:7210](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/issue-api.ts#L7210)
 
 ___
 
 ### <a id="issuesubscriptions" name="issuesubscriptions"></a> issueSubscriptions
 
-▸ **issueSubscriptions**(`owner`, `repo`, `index`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`User`](../interfaces/User.md)[]\>\>
+▸ **issueSubscriptions**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`User`](../interfaces/User.md)[]\>\>
 
 **`summary`** Get users who subscribed on an issue.
 
@@ -1514,11 +1393,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `index` | `number` | index of the issue |
-| `page?` | `number` | - |
-| `limit?` | `number` | - |
+| `requestParameters` | [`IssueApiIssueSubscriptionsRequest`](../interfaces/IssueApiIssueSubscriptionsRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1527,13 +1402,13 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:5468](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5468)
+[apis/issue-api.ts:7222](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/issue-api.ts#L7222)
 
 ___
 
 ### <a id="issuetrackedtimes" name="issuetrackedtimes"></a> issueTrackedTimes
 
-▸ **issueTrackedTimes**(`owner`, `repo`, `index`, `user?`, `since?`, `before?`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`TrackedTime`](../interfaces/TrackedTime.md)[]\>\>
+▸ **issueTrackedTimes**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`TrackedTime`](../interfaces/TrackedTime.md)[]\>\>
 
 **`summary`** List an issue\'s tracked times
 
@@ -1545,14 +1420,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `index` | `number` | index of the issue |
-| `user?` | `string` | - |
-| `since?` | `string` | - |
-| `before?` | `string` | - |
-| `page?` | `number` | - |
-| `limit?` | `number` | - |
+| `requestParameters` | [`IssueApiIssueTrackedTimesRequest`](../interfaces/IssueApiIssueTrackedTimesRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1561,4 +1429,4 @@ ___
 
 #### Defined in
 
-[apis/issue-api.ts:5487](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L5487)
+[apis/issue-api.ts:7234](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/issue-api.ts#L7234)

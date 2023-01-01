@@ -28,7 +28,7 @@ content must be base64 encoded
 
 #### Defined in
 
-[models/create-wiki-page-options.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-wiki-page-options.ts#L28)
+[models/create-wiki-page-options.ts:28](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/create-wiki-page-options.ts#L28)
 
 ___
 
@@ -42,7 +42,7 @@ optional commit message summarizing the change
 
 #### Defined in
 
-[models/create-wiki-page-options.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-wiki-page-options.ts#L34)
+[models/create-wiki-page-options.ts:34](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/create-wiki-page-options.ts#L34)
 
 ___
 
@@ -56,4 +56,4 @@ page title. leave empty to keep unchanged
 
 #### Defined in
 
-[models/create-wiki-page-options.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-wiki-page-options.ts#L40)
+[models/create-wiki-page-options.ts:40](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/create-wiki-page-options.ts#L40)

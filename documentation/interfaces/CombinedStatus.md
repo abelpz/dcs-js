@@ -30,7 +30,7 @@ CombinedStatus holds the combined state of several statuses for a single commit
 
 #### Defined in
 
-[models/combined-status.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/combined-status.ts#L34)
+[models/combined-status.ts:34](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/combined-status.ts#L34)
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 #### Defined in
 
-[models/combined-status.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/combined-status.ts#L40)
+[models/combined-status.ts:40](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/combined-status.ts#L40)
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 #### Defined in
 
-[models/combined-status.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/combined-status.ts#L46)
+[models/combined-status.ts:46](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/combined-status.ts#L46)
 
 ___
 
@@ -68,7 +68,7 @@ CommitStatusState holds the state of a CommitStatus It can be \"pending\", \"suc
 
 #### Defined in
 
-[models/combined-status.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/combined-status.ts#L52)
+[models/combined-status.ts:52](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/combined-status.ts#L52)
 
 ___
 
@@ -80,7 +80,7 @@ ___
 
 #### Defined in
 
-[models/combined-status.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/combined-status.ts#L58)
+[models/combined-status.ts:58](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/combined-status.ts#L58)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[models/combined-status.ts:64](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/combined-status.ts#L64)
+[models/combined-status.ts:64](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/combined-status.ts#L64)
 
 ___
 
@@ -104,4 +104,4 @@ ___
 
 #### Defined in
 
-[models/combined-status.ts:70](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/combined-status.ts#L70)
+[models/combined-status.ts:70](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/combined-status.ts#L70)

@@ -38,11 +38,14 @@ RepositoryApi - object-oriented interface
 - [repoAddCollaborator](RepositoryApi.md#repoaddcollaborator)
 - [repoAddTeam](RepositoryApi.md#repoaddteam)
 - [repoAddTopic](RepositoryApi.md#repoaddtopic)
+- [repoApplyDiffPatch](RepositoryApi.md#repoapplydiffpatch)
+- [repoCancelScheduledAutoMerge](RepositoryApi.md#repocancelscheduledautomerge)
 - [repoCheckCollaborator](RepositoryApi.md#repocheckcollaborator)
 - [repoCheckTeam](RepositoryApi.md#repocheckteam)
 - [repoCreateBranch](RepositoryApi.md#repocreatebranch)
 - [repoCreateBranchProtection](RepositoryApi.md#repocreatebranchprotection)
 - [repoCreateFile](RepositoryApi.md#repocreatefile)
+- [repoCreateGitRef](RepositoryApi.md#repocreategitref)
 - [repoCreateHook](RepositoryApi.md#repocreatehook)
 - [repoCreateKey](RepositoryApi.md#repocreatekey)
 - [repoCreatePullRequest](RepositoryApi.md#repocreatepullrequest)
@@ -59,6 +62,7 @@ RepositoryApi - object-oriented interface
 - [repoDeleteCollaborator](RepositoryApi.md#repodeletecollaborator)
 - [repoDeleteFile](RepositoryApi.md#repodeletefile)
 - [repoDeleteGitHook](RepositoryApi.md#repodeletegithook)
+- [repoDeleteGitRef](RepositoryApi.md#repodeletegitref)
 - [repoDeleteHook](RepositoryApi.md#repodeletehook)
 - [repoDeleteKey](RepositoryApi.md#repodeletekey)
 - [repoDeletePullReview](RepositoryApi.md#repodeletepullreview)
@@ -103,9 +107,11 @@ RepositoryApi - object-oriented interface
 - [repoGetPullReview](RepositoryApi.md#repogetpullreview)
 - [repoGetPullReviewComments](RepositoryApi.md#repogetpullreviewcomments)
 - [repoGetRawFile](RepositoryApi.md#repogetrawfile)
+- [repoGetRawFileOrLFS](RepositoryApi.md#repogetrawfileorlfs)
 - [repoGetRelease](RepositoryApi.md#repogetrelease)
 - [repoGetReleaseAttachment](RepositoryApi.md#repogetreleaseattachment)
 - [repoGetReleaseByTag](RepositoryApi.md#repogetreleasebytag)
+- [repoGetRepoPermissions](RepositoryApi.md#repogetrepopermissions)
 - [repoGetReviewers](RepositoryApi.md#repogetreviewers)
 - [repoGetSingleCommit](RepositoryApi.md#repogetsinglecommit)
 - [repoGetTag](RepositoryApi.md#repogettag)
@@ -143,6 +149,7 @@ RepositoryApi - object-oriented interface
 - [repoTransfer](RepositoryApi.md#repotransfer)
 - [repoUnDismissPullReview](RepositoryApi.md#repoundismisspullreview)
 - [repoUpdateFile](RepositoryApi.md#repoupdatefile)
+- [repoUpdateGitRef](RepositoryApi.md#repoupdategitref)
 - [repoUpdatePullRequest](RepositoryApi.md#repoupdatepullrequest)
 - [repoUpdateTopics](RepositoryApi.md#repoupdatetopics)
 - [topicSearch](RepositoryApi.md#topicsearch)
@@ -171,7 +178,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[base.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/base.ts#L52)
+[base.ts:52](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/base.ts#L52)
 
 ## Properties
 
@@ -205,13 +212,13 @@ BaseAPI.configuration
 
 #### Defined in
 
-[base.ts:50](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/base.ts#L50)
+[base.ts:50](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/base.ts#L50)
 
 ## Methods
 
 ### <a id="acceptrepotransfer" name="acceptrepotransfer"></a> acceptRepoTransfer
 
-▸ **acceptRepoTransfer**(`owner`, `repo`, `options?`): `Promise`<`AxiosResponse`<[`Repository`](../interfaces/Repository.md)\>\>
+▸ **acceptRepoTransfer**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Repository`](../interfaces/Repository.md)\>\>
 
 **`summary`** Accept a repo transfer
 
@@ -223,8 +230,7 @@ BaseAPI.configuration
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo to transfer |
-| `repo` | `string` | name of the repo to transfer |
+| `requestParameters` | [`RepositoryApiAcceptRepoTransferRequest`](../interfaces/RepositoryApiAcceptRepoTransferRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -233,13 +239,13 @@ BaseAPI.configuration
 
 #### Defined in
 
-[apis/repository-api.ts:11830](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L11830)
+[apis/repository-api.ts:16729](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L16729)
 
 ___
 
 ### <a id="createcurrentuserrepo" name="createcurrentuserrepo"></a> createCurrentUserRepo
 
-▸ **createCurrentUserRepo**(`body?`, `options?`): `Promise`<`AxiosResponse`<[`Repository`](../interfaces/Repository.md)\>\>
+▸ **createCurrentUserRepo**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`Repository`](../interfaces/Repository.md)\>\>
 
 **`summary`** Create a repository
 
@@ -249,10 +255,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `body?` | [`CreateRepoOption`](../interfaces/CreateRepoOption.md) |
-| `options?` | `AxiosRequestConfig` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `requestParameters` | [`RepositoryApiCreateCurrentUserRepoRequest`](../interfaces/RepositoryApiCreateCurrentUserRepoRequest.md) | Request parameters. |
+| `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
 
@@ -260,13 +266,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:11842](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L11842)
+[apis/repository-api.ts:16741](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L16741)
 
 ___
 
 ### <a id="createfork" name="createfork"></a> createFork
 
-▸ **createFork**(`owner`, `repo`, `body?`, `options?`): `Promise`<`AxiosResponse`<[`Repository`](../interfaces/Repository.md)\>\>
+▸ **createFork**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Repository`](../interfaces/Repository.md)\>\>
 
 **`summary`** Fork a repository
 
@@ -278,9 +284,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo to fork |
-| `repo` | `string` | name of the repo to fork |
-| `body?` | [`CreateForkOption`](../interfaces/CreateForkOption.md) | - |
+| `requestParameters` | [`RepositoryApiCreateForkRequest`](../interfaces/RepositoryApiCreateForkRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -289,13 +293,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:11856](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L11856)
+[apis/repository-api.ts:16753](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L16753)
 
 ___
 
 ### <a id="generaterepo" name="generaterepo"></a> generateRepo
 
-▸ **generateRepo**(`templateOwner`, `templateRepo`, `body?`, `options?`): `Promise`<`AxiosResponse`<[`Repository`](../interfaces/Repository.md)\>\>
+▸ **generateRepo**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Repository`](../interfaces/Repository.md)\>\>
 
 **`summary`** Create a repository using a template
 
@@ -307,9 +311,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `templateOwner` | `string` | name of the template repository owner |
-| `templateRepo` | `string` | name of the template repository |
-| `body?` | [`GenerateRepoOption`](../interfaces/GenerateRepoOption.md) | - |
+| `requestParameters` | [`RepositoryApiGenerateRepoRequest`](../interfaces/RepositoryApiGenerateRepoRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -318,13 +320,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:11870](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L11870)
+[apis/repository-api.ts:16765](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L16765)
 
 ___
 
 ### <a id="getannotatedtag" name="getannotatedtag"></a> getAnnotatedTag
 
-▸ **getAnnotatedTag**(`owner`, `repo`, `sha`, `options?`): `Promise`<`AxiosResponse`<[`AnnotatedTag`](../interfaces/AnnotatedTag.md)\>\>
+▸ **getAnnotatedTag**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`AnnotatedTag`](../interfaces/AnnotatedTag.md)\>\>
 
 **`summary`** Gets the tag object of an annotated tag (not lightweight tags)
 
@@ -336,9 +338,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `sha` | `string` | sha of the tag. The Git tags API only supports annotated tag objects, not lightweight tags. |
+| `requestParameters` | [`RepositoryApiGetAnnotatedTagRequest`](../interfaces/RepositoryApiGetAnnotatedTagRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -347,13 +347,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:11884](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L11884)
+[apis/repository-api.ts:16777](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L16777)
 
 ___
 
 ### <a id="getblob" name="getblob"></a> getBlob
 
-▸ **getBlob**(`owner`, `repo`, `sha`, `options?`): `Promise`<`AxiosResponse`<[`GitBlobResponse`](../interfaces/GitBlobResponse.md)\>\>
+▸ **getBlob**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`GitBlobResponse`](../interfaces/GitBlobResponse.md)\>\>
 
 **`summary`** Gets the blob of a repository.
 
@@ -365,9 +365,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `sha` | `string` | sha of the commit |
+| `requestParameters` | [`RepositoryApiGetBlobRequest`](../interfaces/RepositoryApiGetBlobRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -376,13 +374,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:11898](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L11898)
+[apis/repository-api.ts:16789](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L16789)
 
 ___
 
 ### <a id="gettree" name="gettree"></a> getTree
 
-▸ **getTree**(`owner`, `repo`, `sha`, `recursive?`, `page?`, `perPage?`, `options?`): `Promise`<`AxiosResponse`<[`GitTreeResponse`](../interfaces/GitTreeResponse.md)\>\>
+▸ **getTree**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`GitTreeResponse`](../interfaces/GitTreeResponse.md)\>\>
 
 **`summary`** Gets the tree of a repository.
 
@@ -394,12 +392,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `sha` | `string` | sha of the commit |
-| `recursive?` | `boolean` | - |
-| `page?` | `number` | - |
-| `perPage?` | `number` | - |
+| `requestParameters` | [`RepositoryApiGetTreeRequest`](../interfaces/RepositoryApiGetTreeRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -408,13 +401,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:11915](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L11915)
+[apis/repository-api.ts:16801](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L16801)
 
 ___
 
 ### <a id="listforks" name="listforks"></a> listForks
 
-▸ **listForks**(`owner`, `repo`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`Repository`](../interfaces/Repository.md)[]\>\>
+▸ **listForks**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Repository`](../interfaces/Repository.md)[]\>\>
 
 **`summary`** List a repository\'s forks
 
@@ -426,10 +419,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `page?` | `number` | - |
-| `limit?` | `number` | - |
+| `requestParameters` | [`RepositoryApiListForksRequest`](../interfaces/RepositoryApiListForksRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -438,13 +428,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:11930](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L11930)
+[apis/repository-api.ts:16813](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L16813)
 
 ___
 
 ### <a id="rejectrepotransfer" name="rejectrepotransfer"></a> rejectRepoTransfer
 
-▸ **rejectRepoTransfer**(`owner`, `repo`, `options?`): `Promise`<`AxiosResponse`<[`Repository`](../interfaces/Repository.md)\>\>
+▸ **rejectRepoTransfer**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Repository`](../interfaces/Repository.md)\>\>
 
 **`summary`** Reject a repo transfer
 
@@ -456,8 +446,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo to transfer |
-| `repo` | `string` | name of the repo to transfer |
+| `requestParameters` | [`RepositoryApiRejectRepoTransferRequest`](../interfaces/RepositoryApiRejectRepoTransferRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -466,13 +455,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:11943](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L11943)
+[apis/repository-api.ts:16825](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L16825)
 
 ___
 
 ### <a id="repoaddcollaborator" name="repoaddcollaborator"></a> repoAddCollaborator
 
-▸ **repoAddCollaborator**(`owner`, `repo`, `collaborator`, `body?`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **repoAddCollaborator**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Add a collaborator to a repository
 
@@ -484,10 +473,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `collaborator` | `string` | username of the collaborator to add |
-| `body?` | [`AddCollaboratorOption`](../interfaces/AddCollaboratorOption.md) | - |
+| `requestParameters` | [`RepositoryApiRepoAddCollaboratorRequest`](../interfaces/RepositoryApiRepoAddCollaboratorRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -496,13 +482,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:11958](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L11958)
+[apis/repository-api.ts:16837](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L16837)
 
 ___
 
 ### <a id="repoaddteam" name="repoaddteam"></a> repoAddTeam
 
-▸ **repoAddTeam**(`owner`, `repo`, `team`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **repoAddTeam**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Add a team to a repository
 
@@ -514,9 +500,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `team` | `string` | team name |
+| `requestParameters` | [`RepositoryApiRepoAddTeamRequest`](../interfaces/RepositoryApiRepoAddTeamRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -525,13 +509,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:11972](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L11972)
+[apis/repository-api.ts:16849](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L16849)
 
 ___
 
 ### <a id="repoaddtopic" name="repoaddtopic"></a> repoAddTopic
 
-▸ **repoAddTopic**(`owner`, `repo`, `topic`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **repoAddTopic**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Add a topic to a repository
 
@@ -543,9 +527,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `topic` | `string` | name of the topic to add |
+| `requestParameters` | [`RepositoryApiRepoAddTopicRequest`](../interfaces/RepositoryApiRepoAddTopicRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -554,13 +536,67 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:11986](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L11986)
+[apis/repository-api.ts:16861](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L16861)
+
+___
+
+### <a id="repoapplydiffpatch" name="repoapplydiffpatch"></a> repoApplyDiffPatch
+
+▸ **repoApplyDiffPatch**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`FileResponse`](../interfaces/FileResponse.md)\>\>
+
+**`summary`** Apply diff patch to repository
+
+**`throws`** {RequiredError}
+
+**`memberof`** RepositoryApi
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `requestParameters` | [`RepositoryApiRepoApplyDiffPatchRequest`](../interfaces/RepositoryApiRepoApplyDiffPatchRequest.md) | Request parameters. |
+| `options?` | `AxiosRequestConfig` | - |
+
+#### Returns
+
+`Promise`<`AxiosResponse`<[`FileResponse`](../interfaces/FileResponse.md)\>\>
+
+#### Defined in
+
+[apis/repository-api.ts:16873](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L16873)
+
+___
+
+### <a id="repocancelscheduledautomerge" name="repocancelscheduledautomerge"></a> repoCancelScheduledAutoMerge
+
+▸ **repoCancelScheduledAutoMerge**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+
+**`summary`** Cancel the scheduled auto merge for the given pull request
+
+**`throws`** {RequiredError}
+
+**`memberof`** RepositoryApi
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `requestParameters` | [`RepositoryApiRepoCancelScheduledAutoMergeRequest`](../interfaces/RepositoryApiRepoCancelScheduledAutoMergeRequest.md) | Request parameters. |
+| `options?` | `AxiosRequestConfig` | - |
+
+#### Returns
+
+`Promise`<`AxiosResponse`<`void`\>\>
+
+#### Defined in
+
+[apis/repository-api.ts:16885](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L16885)
 
 ___
 
 ### <a id="repocheckcollaborator" name="repocheckcollaborator"></a> repoCheckCollaborator
 
-▸ **repoCheckCollaborator**(`owner`, `repo`, `collaborator`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **repoCheckCollaborator**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Check if a user is a collaborator of a repository
 
@@ -572,9 +608,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `collaborator` | `string` | username of the collaborator |
+| `requestParameters` | [`RepositoryApiRepoCheckCollaboratorRequest`](../interfaces/RepositoryApiRepoCheckCollaboratorRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -583,13 +617,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12000](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12000)
+[apis/repository-api.ts:16897](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L16897)
 
 ___
 
 ### <a id="repocheckteam" name="repocheckteam"></a> repoCheckTeam
 
-▸ **repoCheckTeam**(`owner`, `repo`, `team`, `options?`): `Promise`<`AxiosResponse`<[`Team`](../interfaces/Team.md)\>\>
+▸ **repoCheckTeam**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Team`](../interfaces/Team.md)\>\>
 
 **`summary`** Check if a team is assigned to a repository
 
@@ -601,9 +635,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `team` | `string` | team name |
+| `requestParameters` | [`RepositoryApiRepoCheckTeamRequest`](../interfaces/RepositoryApiRepoCheckTeamRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -612,13 +644,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12014](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12014)
+[apis/repository-api.ts:16909](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L16909)
 
 ___
 
 ### <a id="repocreatebranch" name="repocreatebranch"></a> repoCreateBranch
 
-▸ **repoCreateBranch**(`owner`, `repo`, `body?`, `options?`): `Promise`<`AxiosResponse`<[`Branch`](../interfaces/Branch.md)\>\>
+▸ **repoCreateBranch**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Branch`](../interfaces/Branch.md)\>\>
 
 **`summary`** Create a branch
 
@@ -630,9 +662,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `body?` | [`CreateBranchRepoOption`](../interfaces/CreateBranchRepoOption.md) | - |
+| `requestParameters` | [`RepositoryApiRepoCreateBranchRequest`](../interfaces/RepositoryApiRepoCreateBranchRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -641,13 +671,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12028](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12028)
+[apis/repository-api.ts:16921](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L16921)
 
 ___
 
 ### <a id="repocreatebranchprotection" name="repocreatebranchprotection"></a> repoCreateBranchProtection
 
-▸ **repoCreateBranchProtection**(`owner`, `repo`, `body?`, `options?`): `Promise`<`AxiosResponse`<[`BranchProtection`](../interfaces/BranchProtection.md)\>\>
+▸ **repoCreateBranchProtection**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`BranchProtection`](../interfaces/BranchProtection.md)\>\>
 
 **`summary`** Create a branch protections for a repository
 
@@ -659,9 +689,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `body?` | [`CreateBranchProtectionOption`](../interfaces/CreateBranchProtectionOption.md) | - |
+| `requestParameters` | [`RepositoryApiRepoCreateBranchProtectionRequest`](../interfaces/RepositoryApiRepoCreateBranchProtectionRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -670,13 +698,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12042](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12042)
+[apis/repository-api.ts:16933](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L16933)
 
 ___
 
 ### <a id="repocreatefile" name="repocreatefile"></a> repoCreateFile
 
-▸ **repoCreateFile**(`owner`, `repo`, `filepath`, `body`, `options?`): `Promise`<`AxiosResponse`<[`FileResponse`](../interfaces/FileResponse.md)\>\>
+▸ **repoCreateFile**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`FileResponse`](../interfaces/FileResponse.md)\>\>
 
 **`summary`** Create a file in a repository
 
@@ -688,10 +716,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `filepath` | `string` | path of the file to create |
-| `body` | [`CreateFileOptions`](../interfaces/CreateFileOptions.md) |  |
+| `requestParameters` | [`RepositoryApiRepoCreateFileRequest`](../interfaces/RepositoryApiRepoCreateFileRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -700,13 +725,42 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12057](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12057)
+[apis/repository-api.ts:16945](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L16945)
+
+___
+
+### <a id="repocreategitref" name="repocreategitref"></a> repoCreateGitRef
+
+▸ **repoCreateGitRef**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Reference`](../interfaces/Reference.md)\>\>
+
+Creates a reference for your repository. You are unable to create new references for empty repositories, even if the commit SHA-1 hash used exists. Empty repositories are repositories without branches.
+
+**`summary`** Create a reference
+
+**`throws`** {RequiredError}
+
+**`memberof`** RepositoryApi
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `requestParameters` | [`RepositoryApiRepoCreateGitRefRequest`](../interfaces/RepositoryApiRepoCreateGitRefRequest.md) | Request parameters. |
+| `options?` | `AxiosRequestConfig` | - |
+
+#### Returns
+
+`Promise`<`AxiosResponse`<[`Reference`](../interfaces/Reference.md)\>\>
+
+#### Defined in
+
+[apis/repository-api.ts:16957](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L16957)
 
 ___
 
 ### <a id="repocreatehook" name="repocreatehook"></a> repoCreateHook
 
-▸ **repoCreateHook**(`owner`, `repo`, `body?`, `options?`): `Promise`<`AxiosResponse`<[`Hook`](../interfaces/Hook.md)\>\>
+▸ **repoCreateHook**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Hook`](../interfaces/Hook.md)\>\>
 
 **`summary`** Create a hook
 
@@ -718,9 +772,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `body?` | [`CreateHookOption`](../interfaces/CreateHookOption.md) | - |
+| `requestParameters` | [`RepositoryApiRepoCreateHookRequest`](../interfaces/RepositoryApiRepoCreateHookRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -729,13 +781,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12071](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12071)
+[apis/repository-api.ts:16969](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L16969)
 
 ___
 
 ### <a id="repocreatekey" name="repocreatekey"></a> repoCreateKey
 
-▸ **repoCreateKey**(`owner`, `repo`, `body?`, `options?`): `Promise`<`AxiosResponse`<[`DeployKey`](../interfaces/DeployKey.md)\>\>
+▸ **repoCreateKey**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`DeployKey`](../interfaces/DeployKey.md)\>\>
 
 **`summary`** Add a key to a repository
 
@@ -747,9 +799,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `body?` | [`CreateKeyOption`](../interfaces/CreateKeyOption.md) | - |
+| `requestParameters` | [`RepositoryApiRepoCreateKeyRequest`](../interfaces/RepositoryApiRepoCreateKeyRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -758,13 +808,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12085](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12085)
+[apis/repository-api.ts:16981](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L16981)
 
 ___
 
 ### <a id="repocreatepullrequest" name="repocreatepullrequest"></a> repoCreatePullRequest
 
-▸ **repoCreatePullRequest**(`owner`, `repo`, `body?`, `options?`): `Promise`<`AxiosResponse`<[`PullRequest`](../interfaces/PullRequest.md)\>\>
+▸ **repoCreatePullRequest**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`PullRequest`](../interfaces/PullRequest.md)\>\>
 
 **`summary`** Create a pull request
 
@@ -776,9 +826,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `body?` | [`CreatePullRequestOption`](../interfaces/CreatePullRequestOption.md) | - |
+| `requestParameters` | [`RepositoryApiRepoCreatePullRequestRequest`](../interfaces/RepositoryApiRepoCreatePullRequestRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -787,13 +835,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12099](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12099)
+[apis/repository-api.ts:16993](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L16993)
 
 ___
 
 ### <a id="repocreatepullreview" name="repocreatepullreview"></a> repoCreatePullReview
 
-▸ **repoCreatePullReview**(`owner`, `repo`, `index`, `body`, `options?`): `Promise`<`AxiosResponse`<[`PullReview`](../interfaces/PullReview.md)\>\>
+▸ **repoCreatePullReview**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`PullReview`](../interfaces/PullReview.md)\>\>
 
 **`summary`** Create a review to an pull request
 
@@ -805,10 +853,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `index` | `number` | index of the pull request |
-| `body` | [`CreatePullReviewOptions`](../interfaces/CreatePullReviewOptions.md) |  |
+| `requestParameters` | [`RepositoryApiRepoCreatePullReviewRequest`](../interfaces/RepositoryApiRepoCreatePullReviewRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -817,13 +862,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12114](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12114)
+[apis/repository-api.ts:17005](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17005)
 
 ___
 
 ### <a id="repocreatepullreviewrequests" name="repocreatepullreviewrequests"></a> repoCreatePullReviewRequests
 
-▸ **repoCreatePullReviewRequests**(`owner`, `repo`, `index`, `body`, `options?`): `Promise`<`AxiosResponse`<[`PullReview`](../interfaces/PullReview.md)[]\>\>
+▸ **repoCreatePullReviewRequests**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`PullReview`](../interfaces/PullReview.md)[]\>\>
 
 **`summary`** create review requests for a pull request
 
@@ -835,10 +880,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `index` | `number` | index of the pull request |
-| `body` | [`PullReviewRequestOptions`](../interfaces/PullReviewRequestOptions.md) |  |
+| `requestParameters` | [`RepositoryApiRepoCreatePullReviewRequestsRequest`](../interfaces/RepositoryApiRepoCreatePullReviewRequestsRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -847,13 +889,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12129](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12129)
+[apis/repository-api.ts:17017](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17017)
 
 ___
 
 ### <a id="repocreaterelease" name="repocreaterelease"></a> repoCreateRelease
 
-▸ **repoCreateRelease**(`owner`, `repo`, `body?`, `options?`): `Promise`<`AxiosResponse`<[`Release`](../interfaces/Release.md)\>\>
+▸ **repoCreateRelease**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Release`](../interfaces/Release.md)\>\>
 
 **`summary`** Create a release
 
@@ -865,9 +907,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `body?` | [`CreateReleaseOption`](../interfaces/CreateReleaseOption.md) | - |
+| `requestParameters` | [`RepositoryApiRepoCreateReleaseRequest`](../interfaces/RepositoryApiRepoCreateReleaseRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -876,13 +916,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12143](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12143)
+[apis/repository-api.ts:17029](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17029)
 
 ___
 
 ### <a id="repocreatereleaseattachment" name="repocreatereleaseattachment"></a> repoCreateReleaseAttachment
 
-▸ **repoCreateReleaseAttachment**(`owner`, `repo`, `id`, `attachment`, `name?`, `options?`): `Promise`<`AxiosResponse`<[`Attachment`](../interfaces/Attachment.md)\>\>
+▸ **repoCreateReleaseAttachment**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Attachment`](../interfaces/Attachment.md)\>\>
 
 **`summary`** Create a release attachment
 
@@ -894,11 +934,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `id` | `number` | id of the release |
-| `attachment` | `File` | attachment to upload |
-| `name?` | `string` | - |
+| `requestParameters` | [`RepositoryApiRepoCreateReleaseAttachmentRequest`](../interfaces/RepositoryApiRepoCreateReleaseAttachmentRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -907,13 +943,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12159](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12159)
+[apis/repository-api.ts:17041](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17041)
 
 ___
 
 ### <a id="repocreatestatus" name="repocreatestatus"></a> repoCreateStatus
 
-▸ **repoCreateStatus**(`owner`, `repo`, `sha`, `body?`, `options?`): `Promise`<`AxiosResponse`<[`CommitStatus`](../interfaces/CommitStatus.md)\>\>
+▸ **repoCreateStatus**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`CommitStatus`](../interfaces/CommitStatus.md)\>\>
 
 **`summary`** Create a commit status
 
@@ -925,10 +961,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `sha` | `string` | sha of the commit |
-| `body?` | [`CreateStatusOption`](../interfaces/CreateStatusOption.md) | - |
+| `requestParameters` | [`RepositoryApiRepoCreateStatusRequest`](../interfaces/RepositoryApiRepoCreateStatusRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -937,13 +970,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12174](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12174)
+[apis/repository-api.ts:17053](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17053)
 
 ___
 
 ### <a id="repocreatetag" name="repocreatetag"></a> repoCreateTag
 
-▸ **repoCreateTag**(`owner`, `repo`, `body?`, `options?`): `Promise`<`AxiosResponse`<[`Tag`](../interfaces/Tag.md)\>\>
+▸ **repoCreateTag**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Tag`](../interfaces/Tag.md)\>\>
 
 **`summary`** Create a new git tag in a repository
 
@@ -955,9 +988,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `body?` | [`CreateTagOption`](../interfaces/CreateTagOption.md) | - |
+| `requestParameters` | [`RepositoryApiRepoCreateTagRequest`](../interfaces/RepositoryApiRepoCreateTagRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -966,13 +997,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12188](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12188)
+[apis/repository-api.ts:17065](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17065)
 
 ___
 
 ### <a id="repocreatewikipage" name="repocreatewikipage"></a> repoCreateWikiPage
 
-▸ **repoCreateWikiPage**(`owner`, `repo`, `body?`, `options?`): `Promise`<`AxiosResponse`<[`WikiPage`](../interfaces/WikiPage.md)\>\>
+▸ **repoCreateWikiPage**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`WikiPage`](../interfaces/WikiPage.md)\>\>
 
 **`summary`** Create a wiki page
 
@@ -984,9 +1015,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `body?` | [`CreateWikiPageOptions`](../interfaces/CreateWikiPageOptions.md) | - |
+| `requestParameters` | [`RepositoryApiRepoCreateWikiPageRequest`](../interfaces/RepositoryApiRepoCreateWikiPageRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -995,13 +1024,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12202](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12202)
+[apis/repository-api.ts:17077](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17077)
 
 ___
 
 ### <a id="repodelete" name="repodelete"></a> repoDelete
 
-▸ **repoDelete**(`owner`, `repo`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **repoDelete**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Delete a repository
 
@@ -1013,8 +1042,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo to delete |
-| `repo` | `string` | name of the repo to delete |
+| `requestParameters` | [`RepositoryApiRepoDeleteRequest`](../interfaces/RepositoryApiRepoDeleteRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1023,13 +1051,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12215](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12215)
+[apis/repository-api.ts:17089](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17089)
 
 ___
 
 ### <a id="repodeletebranch" name="repodeletebranch"></a> repoDeleteBranch
 
-▸ **repoDeleteBranch**(`owner`, `repo`, `branch`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **repoDeleteBranch**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Delete a specific branch from a repository
 
@@ -1041,9 +1069,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `branch` | `string` | branch to delete |
+| `requestParameters` | [`RepositoryApiRepoDeleteBranchRequest`](../interfaces/RepositoryApiRepoDeleteBranchRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1052,13 +1078,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12229](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12229)
+[apis/repository-api.ts:17101](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17101)
 
 ___
 
 ### <a id="repodeletebranchprotection" name="repodeletebranchprotection"></a> repoDeleteBranchProtection
 
-▸ **repoDeleteBranchProtection**(`owner`, `repo`, `name`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **repoDeleteBranchProtection**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Delete a specific branch protection for the repository
 
@@ -1070,9 +1096,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `name` | `string` | name of protected branch |
+| `requestParameters` | [`RepositoryApiRepoDeleteBranchProtectionRequest`](../interfaces/RepositoryApiRepoDeleteBranchProtectionRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1081,13 +1105,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12243](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12243)
+[apis/repository-api.ts:17113](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17113)
 
 ___
 
 ### <a id="repodeletecollaborator" name="repodeletecollaborator"></a> repoDeleteCollaborator
 
-▸ **repoDeleteCollaborator**(`owner`, `repo`, `collaborator`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **repoDeleteCollaborator**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Delete a collaborator from a repository
 
@@ -1099,9 +1123,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `collaborator` | `string` | username of the collaborator to delete |
+| `requestParameters` | [`RepositoryApiRepoDeleteCollaboratorRequest`](../interfaces/RepositoryApiRepoDeleteCollaboratorRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1110,13 +1132,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12257](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12257)
+[apis/repository-api.ts:17125](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17125)
 
 ___
 
 ### <a id="repodeletefile" name="repodeletefile"></a> repoDeleteFile
 
-▸ **repoDeleteFile**(`owner`, `repo`, `filepath`, `body`, `options?`): `Promise`<`AxiosResponse`<[`FileDeleteResponse`](../interfaces/FileDeleteResponse.md)\>\>
+▸ **repoDeleteFile**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`FileDeleteResponse`](../interfaces/FileDeleteResponse.md)\>\>
 
 **`summary`** Delete a file in a repository
 
@@ -1128,10 +1150,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `filepath` | `string` | path of the file to delete |
-| `body` | [`DeleteFileOptions`](../interfaces/DeleteFileOptions.md) |  |
+| `requestParameters` | [`RepositoryApiRepoDeleteFileRequest`](../interfaces/RepositoryApiRepoDeleteFileRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1140,13 +1159,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12272](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12272)
+[apis/repository-api.ts:17137](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17137)
 
 ___
 
 ### <a id="repodeletegithook" name="repodeletegithook"></a> repoDeleteGitHook
 
-▸ **repoDeleteGitHook**(`owner`, `repo`, `id`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **repoDeleteGitHook**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Delete a Git hook in a repository
 
@@ -1158,9 +1177,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `id` | `string` | id of the hook to get |
+| `requestParameters` | [`RepositoryApiRepoDeleteGitHookRequest`](../interfaces/RepositoryApiRepoDeleteGitHookRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1169,13 +1186,40 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12286](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12286)
+[apis/repository-api.ts:17149](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17149)
+
+___
+
+### <a id="repodeletegitref" name="repodeletegitref"></a> repoDeleteGitRef
+
+▸ **repoDeleteGitRef**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+
+**`summary`** Delete a reference
+
+**`throws`** {RequiredError}
+
+**`memberof`** RepositoryApi
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `requestParameters` | [`RepositoryApiRepoDeleteGitRefRequest`](../interfaces/RepositoryApiRepoDeleteGitRefRequest.md) | Request parameters. |
+| `options?` | `AxiosRequestConfig` | - |
+
+#### Returns
+
+`Promise`<`AxiosResponse`<`void`\>\>
+
+#### Defined in
+
+[apis/repository-api.ts:17161](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17161)
 
 ___
 
 ### <a id="repodeletehook" name="repodeletehook"></a> repoDeleteHook
 
-▸ **repoDeleteHook**(`owner`, `repo`, `id`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **repoDeleteHook**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Delete a hook in a repository
 
@@ -1187,9 +1231,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `id` | `number` | id of the hook to delete |
+| `requestParameters` | [`RepositoryApiRepoDeleteHookRequest`](../interfaces/RepositoryApiRepoDeleteHookRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1198,13 +1240,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12300](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12300)
+[apis/repository-api.ts:17173](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17173)
 
 ___
 
 ### <a id="repodeletekey" name="repodeletekey"></a> repoDeleteKey
 
-▸ **repoDeleteKey**(`owner`, `repo`, `id`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **repoDeleteKey**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Delete a key from a repository
 
@@ -1216,9 +1258,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `id` | `number` | id of the key to delete |
+| `requestParameters` | [`RepositoryApiRepoDeleteKeyRequest`](../interfaces/RepositoryApiRepoDeleteKeyRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1227,13 +1267,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12314](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12314)
+[apis/repository-api.ts:17185](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17185)
 
 ___
 
 ### <a id="repodeletepullreview" name="repodeletepullreview"></a> repoDeletePullReview
 
-▸ **repoDeletePullReview**(`owner`, `repo`, `index`, `id`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **repoDeletePullReview**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Delete a specific review from a pull request
 
@@ -1245,10 +1285,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `index` | `number` | index of the pull request |
-| `id` | `number` | id of the review |
+| `requestParameters` | [`RepositoryApiRepoDeletePullReviewRequest`](../interfaces/RepositoryApiRepoDeletePullReviewRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1257,13 +1294,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12329](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12329)
+[apis/repository-api.ts:17197](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17197)
 
 ___
 
 ### <a id="repodeletepullreviewrequests" name="repodeletepullreviewrequests"></a> repoDeletePullReviewRequests
 
-▸ **repoDeletePullReviewRequests**(`owner`, `repo`, `index`, `body`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **repoDeletePullReviewRequests**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** cancel review requests for a pull request
 
@@ -1275,10 +1312,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `index` | `number` | index of the pull request |
-| `body` | [`PullReviewRequestOptions`](../interfaces/PullReviewRequestOptions.md) |  |
+| `requestParameters` | [`RepositoryApiRepoDeletePullReviewRequestsRequest`](../interfaces/RepositoryApiRepoDeletePullReviewRequestsRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1287,13 +1321,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12344](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12344)
+[apis/repository-api.ts:17209](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17209)
 
 ___
 
 ### <a id="repodeleterelease" name="repodeleterelease"></a> repoDeleteRelease
 
-▸ **repoDeleteRelease**(`owner`, `repo`, `id`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **repoDeleteRelease**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Delete a release
 
@@ -1305,9 +1339,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `id` | `number` | id of the release to delete |
+| `requestParameters` | [`RepositoryApiRepoDeleteReleaseRequest`](../interfaces/RepositoryApiRepoDeleteReleaseRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1316,13 +1348,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12358](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12358)
+[apis/repository-api.ts:17221](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17221)
 
 ___
 
 ### <a id="repodeletereleaseattachment" name="repodeletereleaseattachment"></a> repoDeleteReleaseAttachment
 
-▸ **repoDeleteReleaseAttachment**(`owner`, `repo`, `id`, `attachmentId`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **repoDeleteReleaseAttachment**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Delete a release attachment
 
@@ -1334,10 +1366,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `id` | `number` | id of the release |
-| `attachmentId` | `number` | id of the attachment to delete |
+| `requestParameters` | [`RepositoryApiRepoDeleteReleaseAttachmentRequest`](../interfaces/RepositoryApiRepoDeleteReleaseAttachmentRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1346,13 +1375,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12373](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12373)
+[apis/repository-api.ts:17233](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17233)
 
 ___
 
 ### <a id="repodeletereleasebytag" name="repodeletereleasebytag"></a> repoDeleteReleaseByTag
 
-▸ **repoDeleteReleaseByTag**(`owner`, `repo`, `tag`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **repoDeleteReleaseByTag**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Delete a release by tag name
 
@@ -1364,9 +1393,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `tag` | `string` | tag name of the release to delete |
+| `requestParameters` | [`RepositoryApiRepoDeleteReleaseByTagRequest`](../interfaces/RepositoryApiRepoDeleteReleaseByTagRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1375,13 +1402,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12387](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12387)
+[apis/repository-api.ts:17245](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17245)
 
 ___
 
 ### <a id="repodeletetag" name="repodeletetag"></a> repoDeleteTag
 
-▸ **repoDeleteTag**(`owner`, `repo`, `tag`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **repoDeleteTag**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Delete a repository\'s tag by name
 
@@ -1393,9 +1420,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `tag` | `string` | name of tag to delete |
+| `requestParameters` | [`RepositoryApiRepoDeleteTagRequest`](../interfaces/RepositoryApiRepoDeleteTagRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1404,13 +1429,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12401](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12401)
+[apis/repository-api.ts:17257](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17257)
 
 ___
 
 ### <a id="repodeleteteam" name="repodeleteteam"></a> repoDeleteTeam
 
-▸ **repoDeleteTeam**(`owner`, `repo`, `team`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **repoDeleteTeam**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Delete a team from a repository
 
@@ -1422,9 +1447,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `team` | `string` | team name |
+| `requestParameters` | [`RepositoryApiRepoDeleteTeamRequest`](../interfaces/RepositoryApiRepoDeleteTeamRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1433,13 +1456,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12415](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12415)
+[apis/repository-api.ts:17269](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17269)
 
 ___
 
 ### <a id="repodeletetopic" name="repodeletetopic"></a> repoDeleteTopic
 
-▸ **repoDeleteTopic**(`owner`, `repo`, `topic`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **repoDeleteTopic**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Delete a topic from a repository
 
@@ -1451,9 +1474,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `topic` | `string` | name of the topic to delete |
+| `requestParameters` | [`RepositoryApiRepoDeleteTopicRequest`](../interfaces/RepositoryApiRepoDeleteTopicRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1462,13 +1483,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12429](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12429)
+[apis/repository-api.ts:17281](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17281)
 
 ___
 
 ### <a id="repodeletewikipage" name="repodeletewikipage"></a> repoDeleteWikiPage
 
-▸ **repoDeleteWikiPage**(`owner`, `repo`, `pageName`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **repoDeleteWikiPage**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Delete a wiki page
 
@@ -1480,9 +1501,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `pageName` | `string` | name of the page |
+| `requestParameters` | [`RepositoryApiRepoDeleteWikiPageRequest`](../interfaces/RepositoryApiRepoDeleteWikiPageRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1491,13 +1510,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12443](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12443)
+[apis/repository-api.ts:17293](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17293)
 
 ___
 
 ### <a id="repodismisspullreview" name="repodismisspullreview"></a> repoDismissPullReview
 
-▸ **repoDismissPullReview**(`owner`, `repo`, `index`, `id`, `body`, `options?`): `Promise`<`AxiosResponse`<[`PullReview`](../interfaces/PullReview.md)\>\>
+▸ **repoDismissPullReview**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`PullReview`](../interfaces/PullReview.md)\>\>
 
 **`summary`** Dismiss a review for a pull request
 
@@ -1509,11 +1528,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `index` | `number` | index of the pull request |
-| `id` | `number` | id of the review |
-| `body` | [`DismissPullReviewOptions`](../interfaces/DismissPullReviewOptions.md) |  |
+| `requestParameters` | [`RepositoryApiRepoDismissPullReviewRequest`](../interfaces/RepositoryApiRepoDismissPullReviewRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1522,13 +1537,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12459](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12459)
+[apis/repository-api.ts:17305](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17305)
 
 ___
 
 ### <a id="repodownloadcommitdifforpatch" name="repodownloadcommitdifforpatch"></a> repoDownloadCommitDiffOrPatch
 
-▸ **repoDownloadCommitDiffOrPatch**(`owner`, `repo`, `sha`, `diffType`, `options?`): `Promise`<`AxiosResponse`<`string`\>\>
+▸ **repoDownloadCommitDiffOrPatch**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`string`\>\>
 
 **`summary`** Get a commit\'s diff or patch
 
@@ -1540,10 +1555,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `sha` | `string` | SHA of the commit to get |
-| `diffType` | ``"patch"`` \| ``"diff"`` | whether the output is diff or patch |
+| `requestParameters` | [`RepositoryApiRepoDownloadCommitDiffOrPatchRequest`](../interfaces/RepositoryApiRepoDownloadCommitDiffOrPatchRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1552,13 +1564,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12474](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12474)
+[apis/repository-api.ts:17317](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17317)
 
 ___
 
 ### <a id="repodownloadpulldifforpatch" name="repodownloadpulldifforpatch"></a> repoDownloadPullDiffOrPatch
 
-▸ **repoDownloadPullDiffOrPatch**(`owner`, `repo`, `index`, `diffType`, `binary?`, `options?`): `Promise`<`AxiosResponse`<`string`\>\>
+▸ **repoDownloadPullDiffOrPatch**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`string`\>\>
 
 **`summary`** Get a pull request diff or patch
 
@@ -1570,11 +1582,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `index` | `number` | index of the pull request to get |
-| `diffType` | ``"patch"`` \| ``"diff"`` | whether the output is diff or patch |
-| `binary?` | `boolean` | - |
+| `requestParameters` | [`RepositoryApiRepoDownloadPullDiffOrPatchRequest`](../interfaces/RepositoryApiRepoDownloadPullDiffOrPatchRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1583,13 +1591,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12490](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12490)
+[apis/repository-api.ts:17329](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17329)
 
 ___
 
 ### <a id="repoedit" name="repoedit"></a> repoEdit
 
-▸ **repoEdit**(`owner`, `repo`, `body?`, `options?`): `Promise`<`AxiosResponse`<[`Repository`](../interfaces/Repository.md)\>\>
+▸ **repoEdit**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Repository`](../interfaces/Repository.md)\>\>
 
 **`summary`** Edit a repository\'s properties. Only fields that are set will be changed.
 
@@ -1601,9 +1609,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo to edit |
-| `repo` | `string` | name of the repo to edit |
-| `body?` | [`EditRepoOption`](../interfaces/EditRepoOption.md) | - |
+| `requestParameters` | [`RepositoryApiRepoEditRequest`](../interfaces/RepositoryApiRepoEditRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1612,13 +1618,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12504](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12504)
+[apis/repository-api.ts:17341](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17341)
 
 ___
 
 ### <a id="repoeditbranchprotection" name="repoeditbranchprotection"></a> repoEditBranchProtection
 
-▸ **repoEditBranchProtection**(`owner`, `repo`, `name`, `body?`, `options?`): `Promise`<`AxiosResponse`<[`BranchProtection`](../interfaces/BranchProtection.md)\>\>
+▸ **repoEditBranchProtection**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`BranchProtection`](../interfaces/BranchProtection.md)\>\>
 
 **`summary`** Edit a branch protections for a repository. Only fields that are set will be changed
 
@@ -1630,10 +1636,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `name` | `string` | name of protected branch |
-| `body?` | [`EditBranchProtectionOption`](../interfaces/EditBranchProtectionOption.md) | - |
+| `requestParameters` | [`RepositoryApiRepoEditBranchProtectionRequest`](../interfaces/RepositoryApiRepoEditBranchProtectionRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1642,13 +1645,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12519](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12519)
+[apis/repository-api.ts:17353](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17353)
 
 ___
 
 ### <a id="repoeditgithook" name="repoeditgithook"></a> repoEditGitHook
 
-▸ **repoEditGitHook**(`owner`, `repo`, `id`, `body?`, `options?`): `Promise`<`AxiosResponse`<[`GitHook`](../interfaces/GitHook.md)\>\>
+▸ **repoEditGitHook**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`GitHook`](../interfaces/GitHook.md)\>\>
 
 **`summary`** Edit a Git hook in a repository
 
@@ -1660,10 +1663,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `id` | `string` | id of the hook to get |
-| `body?` | [`EditGitHookOption`](../interfaces/EditGitHookOption.md) | - |
+| `requestParameters` | [`RepositoryApiRepoEditGitHookRequest`](../interfaces/RepositoryApiRepoEditGitHookRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1672,13 +1672,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12534](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12534)
+[apis/repository-api.ts:17365](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17365)
 
 ___
 
 ### <a id="repoedithook" name="repoedithook"></a> repoEditHook
 
-▸ **repoEditHook**(`owner`, `repo`, `id`, `body?`, `options?`): `Promise`<`AxiosResponse`<[`Hook`](../interfaces/Hook.md)\>\>
+▸ **repoEditHook**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Hook`](../interfaces/Hook.md)\>\>
 
 **`summary`** Edit a hook in a repository
 
@@ -1690,10 +1690,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `id` | `number` | index of the hook |
-| `body?` | [`EditHookOption`](../interfaces/EditHookOption.md) | - |
+| `requestParameters` | [`RepositoryApiRepoEditHookRequest`](../interfaces/RepositoryApiRepoEditHookRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1702,13 +1699,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12549](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12549)
+[apis/repository-api.ts:17377](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17377)
 
 ___
 
 ### <a id="repoeditpullrequest" name="repoeditpullrequest"></a> repoEditPullRequest
 
-▸ **repoEditPullRequest**(`owner`, `repo`, `index`, `body?`, `options?`): `Promise`<`AxiosResponse`<[`PullRequest`](../interfaces/PullRequest.md)\>\>
+▸ **repoEditPullRequest**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`PullRequest`](../interfaces/PullRequest.md)\>\>
 
 **`summary`** Update a pull request. If using deadline only the date will be taken into account, and time of day ignored.
 
@@ -1720,10 +1717,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `index` | `number` | index of the pull request to edit |
-| `body?` | [`EditPullRequestOption`](../interfaces/EditPullRequestOption.md) | - |
+| `requestParameters` | [`RepositoryApiRepoEditPullRequestRequest`](../interfaces/RepositoryApiRepoEditPullRequestRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1732,13 +1726,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12564](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12564)
+[apis/repository-api.ts:17389](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17389)
 
 ___
 
 ### <a id="repoeditrelease" name="repoeditrelease"></a> repoEditRelease
 
-▸ **repoEditRelease**(`owner`, `repo`, `id`, `body?`, `options?`): `Promise`<`AxiosResponse`<[`Release`](../interfaces/Release.md)\>\>
+▸ **repoEditRelease**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Release`](../interfaces/Release.md)\>\>
 
 **`summary`** Update a release
 
@@ -1750,10 +1744,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `id` | `number` | id of the release to edit |
-| `body?` | [`EditReleaseOption`](../interfaces/EditReleaseOption.md) | - |
+| `requestParameters` | [`RepositoryApiRepoEditReleaseRequest`](../interfaces/RepositoryApiRepoEditReleaseRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1762,13 +1753,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12579](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12579)
+[apis/repository-api.ts:17401](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17401)
 
 ___
 
 ### <a id="repoeditreleaseattachment" name="repoeditreleaseattachment"></a> repoEditReleaseAttachment
 
-▸ **repoEditReleaseAttachment**(`owner`, `repo`, `id`, `attachmentId`, `body?`, `options?`): `Promise`<`AxiosResponse`<[`Attachment`](../interfaces/Attachment.md)\>\>
+▸ **repoEditReleaseAttachment**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Attachment`](../interfaces/Attachment.md)\>\>
 
 **`summary`** Edit a release attachment
 
@@ -1780,11 +1771,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `id` | `number` | id of the release |
-| `attachmentId` | `number` | id of the attachment to edit |
-| `body?` | [`EditAttachmentOptions`](../interfaces/EditAttachmentOptions.md) | - |
+| `requestParameters` | [`RepositoryApiRepoEditReleaseAttachmentRequest`](../interfaces/RepositoryApiRepoEditReleaseAttachmentRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1793,13 +1780,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12595](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12595)
+[apis/repository-api.ts:17413](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17413)
 
 ___
 
 ### <a id="repoeditwikipage" name="repoeditwikipage"></a> repoEditWikiPage
 
-▸ **repoEditWikiPage**(`owner`, `repo`, `pageName`, `body?`, `options?`): `Promise`<`AxiosResponse`<[`WikiPage`](../interfaces/WikiPage.md)\>\>
+▸ **repoEditWikiPage**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`WikiPage`](../interfaces/WikiPage.md)\>\>
 
 **`summary`** Edit a wiki page
 
@@ -1811,10 +1798,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `pageName` | `string` | name of the page |
-| `body?` | [`CreateWikiPageOptions`](../interfaces/CreateWikiPageOptions.md) | - |
+| `requestParameters` | [`RepositoryApiRepoEditWikiPageRequest`](../interfaces/RepositoryApiRepoEditWikiPageRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1823,13 +1807,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12610](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12610)
+[apis/repository-api.ts:17425](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17425)
 
 ___
 
 ### <a id="repoget" name="repoget"></a> repoGet
 
-▸ **repoGet**(`owner`, `repo`, `options?`): `Promise`<`AxiosResponse`<[`Repository`](../interfaces/Repository.md)\>\>
+▸ **repoGet**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Repository`](../interfaces/Repository.md)\>\>
 
 **`summary`** Get a repository
 
@@ -1841,8 +1825,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
+| `requestParameters` | [`RepositoryApiRepoGetRequest`](../interfaces/RepositoryApiRepoGetRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1851,13 +1834,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12623](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12623)
+[apis/repository-api.ts:17437](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17437)
 
 ___
 
 ### <a id="repogetallcommits" name="repogetallcommits"></a> repoGetAllCommits
 
-▸ **repoGetAllCommits**(`owner`, `repo`, `sha?`, `path?`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`Commit`](../interfaces/Commit.md)[]\>\>
+▸ **repoGetAllCommits**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Commit`](../interfaces/Commit.md)[]\>\>
 
 **`summary`** Get a list of all commits from a repository
 
@@ -1869,12 +1852,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `sha?` | `string` | - |
-| `path?` | `string` | - |
-| `page?` | `number` | - |
-| `limit?` | `number` | - |
+| `requestParameters` | [`RepositoryApiRepoGetAllCommitsRequest`](../interfaces/RepositoryApiRepoGetAllCommitsRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1883,13 +1861,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12640](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12640)
+[apis/repository-api.ts:17449](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17449)
 
 ___
 
 ### <a id="repogetarchive" name="repogetarchive"></a> repoGetArchive
 
-▸ **repoGetArchive**(`owner`, `repo`, `archive`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **repoGetArchive**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Get an archive of a repository
 
@@ -1901,9 +1879,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `archive` | `string` | the git reference for download with attached archive format (e.g. master.zip) |
+| `requestParameters` | [`RepositoryApiRepoGetArchiveRequest`](../interfaces/RepositoryApiRepoGetArchiveRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1912,13 +1888,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12654](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12654)
+[apis/repository-api.ts:17461](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17461)
 
 ___
 
 ### <a id="repogetassignees" name="repogetassignees"></a> repoGetAssignees
 
-▸ **repoGetAssignees**(`owner`, `repo`, `options?`): `Promise`<`AxiosResponse`<[`User`](../interfaces/User.md)[]\>\>
+▸ **repoGetAssignees**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`User`](../interfaces/User.md)[]\>\>
 
 **`summary`** Return all users that have write access and can be assigned to issues
 
@@ -1930,8 +1906,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
+| `requestParameters` | [`RepositoryApiRepoGetAssigneesRequest`](../interfaces/RepositoryApiRepoGetAssigneesRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1940,13 +1915,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12667](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12667)
+[apis/repository-api.ts:17473](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17473)
 
 ___
 
 ### <a id="repogetbranch" name="repogetbranch"></a> repoGetBranch
 
-▸ **repoGetBranch**(`owner`, `repo`, `branch`, `options?`): `Promise`<`AxiosResponse`<[`Branch`](../interfaces/Branch.md)\>\>
+▸ **repoGetBranch**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Branch`](../interfaces/Branch.md)\>\>
 
 **`summary`** Retrieve a specific branch from a repository, including its effective branch protection
 
@@ -1958,9 +1933,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `branch` | `string` | branch to get |
+| `requestParameters` | [`RepositoryApiRepoGetBranchRequest`](../interfaces/RepositoryApiRepoGetBranchRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1969,13 +1942,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12681](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12681)
+[apis/repository-api.ts:17485](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17485)
 
 ___
 
 ### <a id="repogetbranchprotection" name="repogetbranchprotection"></a> repoGetBranchProtection
 
-▸ **repoGetBranchProtection**(`owner`, `repo`, `name`, `options?`): `Promise`<`AxiosResponse`<[`BranchProtection`](../interfaces/BranchProtection.md)\>\>
+▸ **repoGetBranchProtection**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`BranchProtection`](../interfaces/BranchProtection.md)\>\>
 
 **`summary`** Get a specific branch protection for the repository
 
@@ -1987,9 +1960,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `name` | `string` | name of protected branch |
+| `requestParameters` | [`RepositoryApiRepoGetBranchProtectionRequest`](../interfaces/RepositoryApiRepoGetBranchProtectionRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1998,13 +1969,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12695](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12695)
+[apis/repository-api.ts:17497](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17497)
 
 ___
 
 ### <a id="repogetbyid" name="repogetbyid"></a> repoGetByID
 
-▸ **repoGetByID**(`id`, `options?`): `Promise`<`AxiosResponse`<[`Repository`](../interfaces/Repository.md)\>\>
+▸ **repoGetByID**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Repository`](../interfaces/Repository.md)\>\>
 
 **`summary`** Get a repository by id
 
@@ -2016,7 +1987,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `id` | `number` | id of the repo to get |
+| `requestParameters` | [`RepositoryApiRepoGetByIDRequest`](../interfaces/RepositoryApiRepoGetByIDRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -2025,13 +1996,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12707](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12707)
+[apis/repository-api.ts:17509](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17509)
 
 ___
 
 ### <a id="repogetcombinedstatusbyref" name="repogetcombinedstatusbyref"></a> repoGetCombinedStatusByRef
 
-▸ **repoGetCombinedStatusByRef**(`owner`, `repo`, `ref`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`CombinedStatus`](../interfaces/CombinedStatus.md)\>\>
+▸ **repoGetCombinedStatusByRef**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`CombinedStatus`](../interfaces/CombinedStatus.md)\>\>
 
 **`summary`** Get a commit\'s combined status, by branch/tag/commit reference
 
@@ -2043,11 +2014,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `ref` | `string` | name of branch/tag/commit |
-| `page?` | `number` | - |
-| `limit?` | `number` | - |
+| `requestParameters` | [`RepositoryApiRepoGetCombinedStatusByRefRequest`](../interfaces/RepositoryApiRepoGetCombinedStatusByRefRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -2056,13 +2023,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12723](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12723)
+[apis/repository-api.ts:17521](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17521)
 
 ___
 
 ### <a id="repogetcontents" name="repogetcontents"></a> repoGetContents
 
-▸ **repoGetContents**(`owner`, `repo`, `filepath`, `ref?`, `options?`): `Promise`<`AxiosResponse`<[`ContentsResponse`](../interfaces/ContentsResponse.md)\>\>
+▸ **repoGetContents**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`ContentsResponse`](../interfaces/ContentsResponse.md)\>\>
 
 **`summary`** Gets the metadata and contents (if a file) of an entry in a repository, or a list of entries if a dir
 
@@ -2074,10 +2041,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `filepath` | `string` | path of the dir, file, symlink or submodule in the repo |
-| `ref?` | `string` | - |
+| `requestParameters` | [`RepositoryApiRepoGetContentsRequest`](../interfaces/RepositoryApiRepoGetContentsRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -2086,13 +2050,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12738](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12738)
+[apis/repository-api.ts:17533](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17533)
 
 ___
 
 ### <a id="repogetcontentslist" name="repogetcontentslist"></a> repoGetContentsList
 
-▸ **repoGetContentsList**(`owner`, `repo`, `ref?`, `options?`): `Promise`<`AxiosResponse`<[`ContentsResponse`](../interfaces/ContentsResponse.md)[]\>\>
+▸ **repoGetContentsList**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`ContentsResponse`](../interfaces/ContentsResponse.md)[]\>\>
 
 **`summary`** Gets the metadata of all the entries of the root dir
 
@@ -2104,9 +2068,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `ref?` | `string` | - |
+| `requestParameters` | [`RepositoryApiRepoGetContentsListRequest`](../interfaces/RepositoryApiRepoGetContentsListRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -2115,13 +2077,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12752](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12752)
+[apis/repository-api.ts:17545](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17545)
 
 ___
 
 ### <a id="repogeteditorconfig" name="repogeteditorconfig"></a> repoGetEditorConfig
 
-▸ **repoGetEditorConfig**(`owner`, `repo`, `filepath`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **repoGetEditorConfig**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Get the EditorConfig definitions of a file in a repository
 
@@ -2133,9 +2095,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `filepath` | `string` | filepath of file to get |
+| `requestParameters` | [`RepositoryApiRepoGetEditorConfigRequest`](../interfaces/RepositoryApiRepoGetEditorConfigRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -2144,13 +2104,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12766](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12766)
+[apis/repository-api.ts:17557](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17557)
 
 ___
 
 ### <a id="repogetgithook" name="repogetgithook"></a> repoGetGitHook
 
-▸ **repoGetGitHook**(`owner`, `repo`, `id`, `options?`): `Promise`<`AxiosResponse`<[`GitHook`](../interfaces/GitHook.md)\>\>
+▸ **repoGetGitHook**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`GitHook`](../interfaces/GitHook.md)\>\>
 
 **`summary`** Get a Git hook
 
@@ -2162,9 +2122,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `id` | `string` | id of the hook to get |
+| `requestParameters` | [`RepositoryApiRepoGetGitHookRequest`](../interfaces/RepositoryApiRepoGetGitHookRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -2173,13 +2131,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12780](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12780)
+[apis/repository-api.ts:17569](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17569)
 
 ___
 
 ### <a id="repogethook" name="repogethook"></a> repoGetHook
 
-▸ **repoGetHook**(`owner`, `repo`, `id`, `options?`): `Promise`<`AxiosResponse`<[`Hook`](../interfaces/Hook.md)\>\>
+▸ **repoGetHook**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Hook`](../interfaces/Hook.md)\>\>
 
 **`summary`** Get a hook
 
@@ -2191,9 +2149,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `id` | `number` | id of the hook to get |
+| `requestParameters` | [`RepositoryApiRepoGetHookRequest`](../interfaces/RepositoryApiRepoGetHookRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -2202,13 +2158,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12794](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12794)
+[apis/repository-api.ts:17581](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17581)
 
 ___
 
 ### <a id="repogetissuetemplates" name="repogetissuetemplates"></a> repoGetIssueTemplates
 
-▸ **repoGetIssueTemplates**(`owner`, `repo`, `options?`): `Promise`<`AxiosResponse`<[`IssueTemplate`](../interfaces/IssueTemplate.md)[]\>\>
+▸ **repoGetIssueTemplates**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`IssueTemplate`](../interfaces/IssueTemplate.md)[]\>\>
 
 **`summary`** Get available issue templates for a repository
 
@@ -2220,8 +2176,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
+| `requestParameters` | [`RepositoryApiRepoGetIssueTemplatesRequest`](../interfaces/RepositoryApiRepoGetIssueTemplatesRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -2230,13 +2185,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12807](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12807)
+[apis/repository-api.ts:17593](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17593)
 
 ___
 
 ### <a id="repogetkey" name="repogetkey"></a> repoGetKey
 
-▸ **repoGetKey**(`owner`, `repo`, `id`, `options?`): `Promise`<`AxiosResponse`<[`DeployKey`](../interfaces/DeployKey.md)\>\>
+▸ **repoGetKey**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`DeployKey`](../interfaces/DeployKey.md)\>\>
 
 **`summary`** Get a repository\'s key by id
 
@@ -2248,9 +2203,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `id` | `number` | id of the key to get |
+| `requestParameters` | [`RepositoryApiRepoGetKeyRequest`](../interfaces/RepositoryApiRepoGetKeyRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -2259,13 +2212,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12821](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12821)
+[apis/repository-api.ts:17605](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17605)
 
 ___
 
 ### <a id="repogetlanguages" name="repogetlanguages"></a> repoGetLanguages
 
-▸ **repoGetLanguages**(`owner`, `repo`, `options?`): `Promise`<`AxiosResponse`<{ `[key: string]`: `number`;  }\>\>
+▸ **repoGetLanguages**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<{ `[key: string]`: `number`;  }\>\>
 
 **`summary`** Get languages and number of bytes of code written
 
@@ -2277,8 +2230,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
+| `requestParameters` | [`RepositoryApiRepoGetLanguagesRequest`](../interfaces/RepositoryApiRepoGetLanguagesRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -2287,13 +2239,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12834](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12834)
+[apis/repository-api.ts:17617](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17617)
 
 ___
 
 ### <a id="repogetnote" name="repogetnote"></a> repoGetNote
 
-▸ **repoGetNote**(`owner`, `repo`, `sha`, `options?`): `Promise`<`AxiosResponse`<[`Note`](../interfaces/Note.md)\>\>
+▸ **repoGetNote**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Note`](../interfaces/Note.md)\>\>
 
 **`summary`** Get a note corresponding to a single commit from a repository
 
@@ -2305,9 +2257,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `sha` | `string` | a git ref or commit sha |
+| `requestParameters` | [`RepositoryApiRepoGetNoteRequest`](../interfaces/RepositoryApiRepoGetNoteRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -2316,13 +2266,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12848](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12848)
+[apis/repository-api.ts:17629](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17629)
 
 ___
 
 ### <a id="repogetpullrequest" name="repogetpullrequest"></a> repoGetPullRequest
 
-▸ **repoGetPullRequest**(`owner`, `repo`, `index`, `options?`): `Promise`<`AxiosResponse`<[`PullRequest`](../interfaces/PullRequest.md)\>\>
+▸ **repoGetPullRequest**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`PullRequest`](../interfaces/PullRequest.md)\>\>
 
 **`summary`** Get a pull request
 
@@ -2334,9 +2284,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `index` | `number` | index of the pull request to get |
+| `requestParameters` | [`RepositoryApiRepoGetPullRequestRequest`](../interfaces/RepositoryApiRepoGetPullRequestRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -2345,13 +2293,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12862](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12862)
+[apis/repository-api.ts:17641](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17641)
 
 ___
 
 ### <a id="repogetpullrequestcommits" name="repogetpullrequestcommits"></a> repoGetPullRequestCommits
 
-▸ **repoGetPullRequestCommits**(`owner`, `repo`, `index`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`Commit`](../interfaces/Commit.md)[]\>\>
+▸ **repoGetPullRequestCommits**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Commit`](../interfaces/Commit.md)[]\>\>
 
 **`summary`** Get commits for a pull request
 
@@ -2363,11 +2311,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `index` | `number` | index of the pull request to get |
-| `page?` | `number` | - |
-| `limit?` | `number` | - |
+| `requestParameters` | [`RepositoryApiRepoGetPullRequestCommitsRequest`](../interfaces/RepositoryApiRepoGetPullRequestCommitsRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -2376,13 +2320,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12878](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12878)
+[apis/repository-api.ts:17653](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17653)
 
 ___
 
 ### <a id="repogetpullreview" name="repogetpullreview"></a> repoGetPullReview
 
-▸ **repoGetPullReview**(`owner`, `repo`, `index`, `id`, `options?`): `Promise`<`AxiosResponse`<[`PullReview`](../interfaces/PullReview.md)\>\>
+▸ **repoGetPullReview**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`PullReview`](../interfaces/PullReview.md)\>\>
 
 **`summary`** Get a specific review for a pull request
 
@@ -2394,10 +2338,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `index` | `number` | index of the pull request |
-| `id` | `number` | id of the review |
+| `requestParameters` | [`RepositoryApiRepoGetPullReviewRequest`](../interfaces/RepositoryApiRepoGetPullReviewRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -2406,13 +2347,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12893](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12893)
+[apis/repository-api.ts:17665](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17665)
 
 ___
 
 ### <a id="repogetpullreviewcomments" name="repogetpullreviewcomments"></a> repoGetPullReviewComments
 
-▸ **repoGetPullReviewComments**(`owner`, `repo`, `index`, `id`, `options?`): `Promise`<`AxiosResponse`<[`PullReviewComment`](../interfaces/PullReviewComment.md)[]\>\>
+▸ **repoGetPullReviewComments**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`PullReviewComment`](../interfaces/PullReviewComment.md)[]\>\>
 
 **`summary`** Get a specific review for a pull request
 
@@ -2424,10 +2365,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `index` | `number` | index of the pull request |
-| `id` | `number` | id of the review |
+| `requestParameters` | [`RepositoryApiRepoGetPullReviewCommentsRequest`](../interfaces/RepositoryApiRepoGetPullReviewCommentsRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -2436,13 +2374,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12908](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12908)
+[apis/repository-api.ts:17677](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17677)
 
 ___
 
 ### <a id="repogetrawfile" name="repogetrawfile"></a> repoGetRawFile
 
-▸ **repoGetRawFile**(`owner`, `repo`, `filepath`, `ref?`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **repoGetRawFile**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Get a file from a repository
 
@@ -2454,10 +2392,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `filepath` | `string` | filepath of the file to get |
-| `ref?` | `string` | - |
+| `requestParameters` | [`RepositoryApiRepoGetRawFileRequest`](../interfaces/RepositoryApiRepoGetRawFileRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -2466,13 +2401,40 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12923](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12923)
+[apis/repository-api.ts:17689](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17689)
+
+___
+
+### <a id="repogetrawfileorlfs" name="repogetrawfileorlfs"></a> repoGetRawFileOrLFS
+
+▸ **repoGetRawFileOrLFS**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+
+**`summary`** Get a file or it\'s LFS object from a repository
+
+**`throws`** {RequiredError}
+
+**`memberof`** RepositoryApi
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `requestParameters` | [`RepositoryApiRepoGetRawFileOrLFSRequest`](../interfaces/RepositoryApiRepoGetRawFileOrLFSRequest.md) | Request parameters. |
+| `options?` | `AxiosRequestConfig` | - |
+
+#### Returns
+
+`Promise`<`AxiosResponse`<`void`\>\>
+
+#### Defined in
+
+[apis/repository-api.ts:17701](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17701)
 
 ___
 
 ### <a id="repogetrelease" name="repogetrelease"></a> repoGetRelease
 
-▸ **repoGetRelease**(`owner`, `repo`, `id`, `options?`): `Promise`<`AxiosResponse`<[`Release`](../interfaces/Release.md)\>\>
+▸ **repoGetRelease**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Release`](../interfaces/Release.md)\>\>
 
 **`summary`** Get a release
 
@@ -2484,9 +2446,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `id` | `number` | id of the release to get |
+| `requestParameters` | [`RepositoryApiRepoGetReleaseRequest`](../interfaces/RepositoryApiRepoGetReleaseRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -2495,13 +2455,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12937](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12937)
+[apis/repository-api.ts:17713](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17713)
 
 ___
 
 ### <a id="repogetreleaseattachment" name="repogetreleaseattachment"></a> repoGetReleaseAttachment
 
-▸ **repoGetReleaseAttachment**(`owner`, `repo`, `id`, `attachmentId`, `options?`): `Promise`<`AxiosResponse`<[`Attachment`](../interfaces/Attachment.md)\>\>
+▸ **repoGetReleaseAttachment**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Attachment`](../interfaces/Attachment.md)\>\>
 
 **`summary`** Get a release attachment
 
@@ -2513,10 +2473,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `id` | `number` | id of the release |
-| `attachmentId` | `number` | id of the attachment to get |
+| `requestParameters` | [`RepositoryApiRepoGetReleaseAttachmentRequest`](../interfaces/RepositoryApiRepoGetReleaseAttachmentRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -2525,13 +2482,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12952](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12952)
+[apis/repository-api.ts:17725](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17725)
 
 ___
 
 ### <a id="repogetreleasebytag" name="repogetreleasebytag"></a> repoGetReleaseByTag
 
-▸ **repoGetReleaseByTag**(`owner`, `repo`, `tag`, `options?`): `Promise`<`AxiosResponse`<[`Release`](../interfaces/Release.md)\>\>
+▸ **repoGetReleaseByTag**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Release`](../interfaces/Release.md)\>\>
 
 **`summary`** Get a release by tag name
 
@@ -2543,9 +2500,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `tag` | `string` | tag name of the release to get |
+| `requestParameters` | [`RepositoryApiRepoGetReleaseByTagRequest`](../interfaces/RepositoryApiRepoGetReleaseByTagRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -2554,13 +2509,40 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12966](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12966)
+[apis/repository-api.ts:17737](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17737)
+
+___
+
+### <a id="repogetrepopermissions" name="repogetrepopermissions"></a> repoGetRepoPermissions
+
+▸ **repoGetRepoPermissions**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`RepoCollaboratorPermission`](../interfaces/RepoCollaboratorPermission.md)\>\>
+
+**`summary`** Get repository permissions for a user
+
+**`throws`** {RequiredError}
+
+**`memberof`** RepositoryApi
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `requestParameters` | [`RepositoryApiRepoGetRepoPermissionsRequest`](../interfaces/RepositoryApiRepoGetRepoPermissionsRequest.md) | Request parameters. |
+| `options?` | `AxiosRequestConfig` | - |
+
+#### Returns
+
+`Promise`<`AxiosResponse`<[`RepoCollaboratorPermission`](../interfaces/RepoCollaboratorPermission.md)\>\>
+
+#### Defined in
+
+[apis/repository-api.ts:17749](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17749)
 
 ___
 
 ### <a id="repogetreviewers" name="repogetreviewers"></a> repoGetReviewers
 
-▸ **repoGetReviewers**(`owner`, `repo`, `options?`): `Promise`<`AxiosResponse`<[`User`](../interfaces/User.md)[]\>\>
+▸ **repoGetReviewers**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`User`](../interfaces/User.md)[]\>\>
 
 **`summary`** Return all users that can be requested to review in this repo
 
@@ -2572,8 +2554,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
+| `requestParameters` | [`RepositoryApiRepoGetReviewersRequest`](../interfaces/RepositoryApiRepoGetReviewersRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -2582,13 +2563,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12979](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12979)
+[apis/repository-api.ts:17761](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17761)
 
 ___
 
 ### <a id="repogetsinglecommit" name="repogetsinglecommit"></a> repoGetSingleCommit
 
-▸ **repoGetSingleCommit**(`owner`, `repo`, `sha`, `options?`): `Promise`<`AxiosResponse`<[`Commit`](../interfaces/Commit.md)\>\>
+▸ **repoGetSingleCommit**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Commit`](../interfaces/Commit.md)\>\>
 
 **`summary`** Get a single commit from a repository
 
@@ -2600,9 +2581,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `sha` | `string` | a git ref or commit sha |
+| `requestParameters` | [`RepositoryApiRepoGetSingleCommitRequest`](../interfaces/RepositoryApiRepoGetSingleCommitRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -2611,13 +2590,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12993](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12993)
+[apis/repository-api.ts:17773](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17773)
 
 ___
 
 ### <a id="repogettag" name="repogettag"></a> repoGetTag
 
-▸ **repoGetTag**(`owner`, `repo`, `tag`, `options?`): `Promise`<`AxiosResponse`<[`Tag`](../interfaces/Tag.md)\>\>
+▸ **repoGetTag**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Tag`](../interfaces/Tag.md)\>\>
 
 **`summary`** Get the tag of a repository by tag name
 
@@ -2629,9 +2608,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `tag` | `string` | name of tag |
+| `requestParameters` | [`RepositoryApiRepoGetTagRequest`](../interfaces/RepositoryApiRepoGetTagRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -2640,13 +2617,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13007](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13007)
+[apis/repository-api.ts:17785](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17785)
 
 ___
 
 ### <a id="repogetwikipage" name="repogetwikipage"></a> repoGetWikiPage
 
-▸ **repoGetWikiPage**(`owner`, `repo`, `pageName`, `options?`): `Promise`<`AxiosResponse`<[`WikiPage`](../interfaces/WikiPage.md)\>\>
+▸ **repoGetWikiPage**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`WikiPage`](../interfaces/WikiPage.md)\>\>
 
 **`summary`** Get a wiki page
 
@@ -2658,9 +2635,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `pageName` | `string` | name of the page |
+| `requestParameters` | [`RepositoryApiRepoGetWikiPageRequest`](../interfaces/RepositoryApiRepoGetWikiPageRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -2669,13 +2644,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13021](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13021)
+[apis/repository-api.ts:17797](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17797)
 
 ___
 
 ### <a id="repogetwikipagerevisions" name="repogetwikipagerevisions"></a> repoGetWikiPageRevisions
 
-▸ **repoGetWikiPageRevisions**(`owner`, `repo`, `pageName`, `page?`, `options?`): `Promise`<`AxiosResponse`<[`WikiCommitList`](../interfaces/WikiCommitList.md)\>\>
+▸ **repoGetWikiPageRevisions**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`WikiCommitList`](../interfaces/WikiCommitList.md)\>\>
 
 **`summary`** Get revisions of a wiki page
 
@@ -2687,10 +2662,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `pageName` | `string` | name of the page |
-| `page?` | `number` | - |
+| `requestParameters` | [`RepositoryApiRepoGetWikiPageRevisionsRequest`](../interfaces/RepositoryApiRepoGetWikiPageRevisionsRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -2699,13 +2671,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13036](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13036)
+[apis/repository-api.ts:17809](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17809)
 
 ___
 
 ### <a id="repogetwikipages" name="repogetwikipages"></a> repoGetWikiPages
 
-▸ **repoGetWikiPages**(`owner`, `repo`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`WikiPageMetaData`](../interfaces/WikiPageMetaData.md)[]\>\>
+▸ **repoGetWikiPages**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`WikiPageMetaData`](../interfaces/WikiPageMetaData.md)[]\>\>
 
 **`summary`** Get all wiki pages
 
@@ -2717,10 +2689,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `page?` | `number` | - |
-| `limit?` | `number` | - |
+| `requestParameters` | [`RepositoryApiRepoGetWikiPagesRequest`](../interfaces/RepositoryApiRepoGetWikiPagesRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -2729,13 +2698,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13051](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13051)
+[apis/repository-api.ts:17821](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17821)
 
 ___
 
 ### <a id="repolistallgitrefs" name="repolistallgitrefs"></a> repoListAllGitRefs
 
-▸ **repoListAllGitRefs**(`owner`, `repo`, `options?`): `Promise`<`AxiosResponse`<[`Reference`](../interfaces/Reference.md)[]\>\>
+▸ **repoListAllGitRefs**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Reference`](../interfaces/Reference.md)[]\>\>
 
 **`summary`** Get specified ref or filtered repository\'s refs
 
@@ -2747,8 +2716,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
+| `requestParameters` | [`RepositoryApiRepoListAllGitRefsRequest`](../interfaces/RepositoryApiRepoListAllGitRefsRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -2757,13 +2725,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13064](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13064)
+[apis/repository-api.ts:17833](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17833)
 
 ___
 
 ### <a id="repolistbranchprotection" name="repolistbranchprotection"></a> repoListBranchProtection
 
-▸ **repoListBranchProtection**(`owner`, `repo`, `options?`): `Promise`<`AxiosResponse`<[`BranchProtection`](../interfaces/BranchProtection.md)[]\>\>
+▸ **repoListBranchProtection**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`BranchProtection`](../interfaces/BranchProtection.md)[]\>\>
 
 **`summary`** List branch protections for a repository
 
@@ -2775,8 +2743,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
+| `requestParameters` | [`RepositoryApiRepoListBranchProtectionRequest`](../interfaces/RepositoryApiRepoListBranchProtectionRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -2785,13 +2752,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13077](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13077)
+[apis/repository-api.ts:17845](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17845)
 
 ___
 
 ### <a id="repolistbranches" name="repolistbranches"></a> repoListBranches
 
-▸ **repoListBranches**(`owner`, `repo`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`Branch`](../interfaces/Branch.md)[]\>\>
+▸ **repoListBranches**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Branch`](../interfaces/Branch.md)[]\>\>
 
 **`summary`** List a repository\'s branches
 
@@ -2803,10 +2770,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `page?` | `number` | - |
-| `limit?` | `number` | - |
+| `requestParameters` | [`RepositoryApiRepoListBranchesRequest`](../interfaces/RepositoryApiRepoListBranchesRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -2815,13 +2779,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13092](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13092)
+[apis/repository-api.ts:17857](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17857)
 
 ___
 
 ### <a id="repolistcollaborators" name="repolistcollaborators"></a> repoListCollaborators
 
-▸ **repoListCollaborators**(`owner`, `repo`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`User`](../interfaces/User.md)[]\>\>
+▸ **repoListCollaborators**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`User`](../interfaces/User.md)[]\>\>
 
 **`summary`** List a repository\'s collaborators
 
@@ -2833,10 +2797,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `page?` | `number` | - |
-| `limit?` | `number` | - |
+| `requestParameters` | [`RepositoryApiRepoListCollaboratorsRequest`](../interfaces/RepositoryApiRepoListCollaboratorsRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -2845,13 +2806,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13107](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13107)
+[apis/repository-api.ts:17869](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17869)
 
 ___
 
 ### <a id="repolistgithooks" name="repolistgithooks"></a> repoListGitHooks
 
-▸ **repoListGitHooks**(`owner`, `repo`, `options?`): `Promise`<`AxiosResponse`<[`GitHook`](../interfaces/GitHook.md)[]\>\>
+▸ **repoListGitHooks**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`GitHook`](../interfaces/GitHook.md)[]\>\>
 
 **`summary`** List the Git hooks in a repository
 
@@ -2863,8 +2824,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
+| `requestParameters` | [`RepositoryApiRepoListGitHooksRequest`](../interfaces/RepositoryApiRepoListGitHooksRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -2873,13 +2833,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13120](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13120)
+[apis/repository-api.ts:17881](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17881)
 
 ___
 
 ### <a id="repolistgitrefs" name="repolistgitrefs"></a> repoListGitRefs
 
-▸ **repoListGitRefs**(`owner`, `repo`, `ref`, `options?`): `Promise`<`AxiosResponse`<[`Reference`](../interfaces/Reference.md)[]\>\>
+▸ **repoListGitRefs**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Reference`](../interfaces/Reference.md)[]\>\>
 
 **`summary`** Get specified ref or filtered repository\'s refs
 
@@ -2891,9 +2851,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `ref` | `string` | part or full name of the ref |
+| `requestParameters` | [`RepositoryApiRepoListGitRefsRequest`](../interfaces/RepositoryApiRepoListGitRefsRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -2902,13 +2860,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13134](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13134)
+[apis/repository-api.ts:17893](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17893)
 
 ___
 
 ### <a id="repolisthooks" name="repolisthooks"></a> repoListHooks
 
-▸ **repoListHooks**(`owner`, `repo`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`Hook`](../interfaces/Hook.md)[]\>\>
+▸ **repoListHooks**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Hook`](../interfaces/Hook.md)[]\>\>
 
 **`summary`** List the hooks in a repository
 
@@ -2920,10 +2878,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `page?` | `number` | - |
-| `limit?` | `number` | - |
+| `requestParameters` | [`RepositoryApiRepoListHooksRequest`](../interfaces/RepositoryApiRepoListHooksRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -2932,13 +2887,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13149](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13149)
+[apis/repository-api.ts:17905](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17905)
 
 ___
 
 ### <a id="repolistkeys" name="repolistkeys"></a> repoListKeys
 
-▸ **repoListKeys**(`owner`, `repo`, `keyId?`, `fingerprint?`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`DeployKey`](../interfaces/DeployKey.md)[]\>\>
+▸ **repoListKeys**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`DeployKey`](../interfaces/DeployKey.md)[]\>\>
 
 **`summary`** List a repository\'s keys
 
@@ -2950,12 +2905,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `keyId?` | `number` | - |
-| `fingerprint?` | `string` | - |
-| `page?` | `number` | - |
-| `limit?` | `number` | - |
+| `requestParameters` | [`RepositoryApiRepoListKeysRequest`](../interfaces/RepositoryApiRepoListKeysRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -2964,13 +2914,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13166](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13166)
+[apis/repository-api.ts:17917](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17917)
 
 ___
 
 ### <a id="repolistpullrequests" name="repolistpullrequests"></a> repoListPullRequests
 
-▸ **repoListPullRequests**(`owner`, `repo`, `state?`, `sort?`, `milestone?`, `labels?`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`PullRequest`](../interfaces/PullRequest.md)[]\>\>
+▸ **repoListPullRequests**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`PullRequest`](../interfaces/PullRequest.md)[]\>\>
 
 **`summary`** List a repo\'s pull requests
 
@@ -2982,14 +2932,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `state?` | ``"all"`` \| ``"closed"`` \| ``"open"`` | - |
-| `sort?` | ``"priority"`` \| ``"oldest"`` \| ``"recentupdate"`` \| ``"leastupdate"`` \| ``"mostcomment"`` \| ``"leastcomment"`` | - |
-| `milestone?` | `number` | - |
-| `labels?` | `number`[] | - |
-| `page?` | `number` | - |
-| `limit?` | `number` | - |
+| `requestParameters` | [`RepositoryApiRepoListPullRequestsRequest`](../interfaces/RepositoryApiRepoListPullRequestsRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -2998,13 +2941,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13185](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13185)
+[apis/repository-api.ts:17929](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17929)
 
 ___
 
 ### <a id="repolistpullreviews" name="repolistpullreviews"></a> repoListPullReviews
 
-▸ **repoListPullReviews**(`owner`, `repo`, `index`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`PullReview`](../interfaces/PullReview.md)[]\>\>
+▸ **repoListPullReviews**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`PullReview`](../interfaces/PullReview.md)[]\>\>
 
 **`summary`** List all reviews for a pull request
 
@@ -3016,11 +2959,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `index` | `number` | index of the pull request |
-| `page?` | `number` | - |
-| `limit?` | `number` | - |
+| `requestParameters` | [`RepositoryApiRepoListPullReviewsRequest`](../interfaces/RepositoryApiRepoListPullReviewsRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -3029,13 +2968,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13201](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13201)
+[apis/repository-api.ts:17941](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17941)
 
 ___
 
 ### <a id="repolistreleaseattachments" name="repolistreleaseattachments"></a> repoListReleaseAttachments
 
-▸ **repoListReleaseAttachments**(`owner`, `repo`, `id`, `options?`): `Promise`<`AxiosResponse`<[`Attachment`](../interfaces/Attachment.md)[]\>\>
+▸ **repoListReleaseAttachments**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Attachment`](../interfaces/Attachment.md)[]\>\>
 
 **`summary`** List release\'s attachments
 
@@ -3047,9 +2986,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `id` | `number` | id of the release |
+| `requestParameters` | [`RepositoryApiRepoListReleaseAttachmentsRequest`](../interfaces/RepositoryApiRepoListReleaseAttachmentsRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -3058,13 +2995,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13215](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13215)
+[apis/repository-api.ts:17953](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17953)
 
 ___
 
 ### <a id="repolistreleases" name="repolistreleases"></a> repoListReleases
 
-▸ **repoListReleases**(`owner`, `repo`, `draft?`, `preRelease?`, `perPage?`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`Release`](../interfaces/Release.md)[]\>\>
+▸ **repoListReleases**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Release`](../interfaces/Release.md)[]\>\>
 
 **`summary`** List a repo\'s releases
 
@@ -3076,13 +3013,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `draft?` | `boolean` | - |
-| `preRelease?` | `boolean` | - |
-| `perPage?` | `number` | - |
-| `page?` | `number` | - |
-| `limit?` | `number` | - |
+| `requestParameters` | [`RepositoryApiRepoListReleasesRequest`](../interfaces/RepositoryApiRepoListReleasesRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -3091,13 +3022,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13233](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13233)
+[apis/repository-api.ts:17965](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17965)
 
 ___
 
 ### <a id="repoliststargazers" name="repoliststargazers"></a> repoListStargazers
 
-▸ **repoListStargazers**(`owner`, `repo`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`User`](../interfaces/User.md)[]\>\>
+▸ **repoListStargazers**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`User`](../interfaces/User.md)[]\>\>
 
 **`summary`** List a repo\'s stargazers
 
@@ -3109,10 +3040,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `page?` | `number` | - |
-| `limit?` | `number` | - |
+| `requestParameters` | [`RepositoryApiRepoListStargazersRequest`](../interfaces/RepositoryApiRepoListStargazersRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -3121,13 +3049,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13248](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13248)
+[apis/repository-api.ts:17977](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17977)
 
 ___
 
 ### <a id="repoliststatuses" name="repoliststatuses"></a> repoListStatuses
 
-▸ **repoListStatuses**(`owner`, `repo`, `sha`, `sort?`, `state?`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`CommitStatus`](../interfaces/CommitStatus.md)[]\>\>
+▸ **repoListStatuses**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`CommitStatus`](../interfaces/CommitStatus.md)[]\>\>
 
 **`summary`** Get a commit\'s statuses
 
@@ -3139,13 +3067,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `sha` | `string` | sha of the commit |
-| `sort?` | ``"oldest"`` \| ``"recentupdate"`` \| ``"leastupdate"`` \| ``"leastindex"`` \| ``"highestindex"`` | - |
-| `state?` | ``"error"`` \| ``"pending"`` \| ``"success"`` \| ``"failure"`` \| ``"warning"`` | - |
-| `page?` | `number` | - |
-| `limit?` | `number` | - |
+| `requestParameters` | [`RepositoryApiRepoListStatusesRequest`](../interfaces/RepositoryApiRepoListStatusesRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -3154,13 +3076,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13266](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13266)
+[apis/repository-api.ts:17989](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L17989)
 
 ___
 
 ### <a id="repoliststatusesbyref" name="repoliststatusesbyref"></a> repoListStatusesByRef
 
-▸ **repoListStatusesByRef**(`owner`, `repo`, `ref`, `sort?`, `state?`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`CommitStatus`](../interfaces/CommitStatus.md)[]\>\>
+▸ **repoListStatusesByRef**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`CommitStatus`](../interfaces/CommitStatus.md)[]\>\>
 
 **`summary`** Get a commit\'s statuses, by branch/tag/commit reference
 
@@ -3172,13 +3094,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `ref` | `string` | name of branch/tag/commit |
-| `sort?` | ``"oldest"`` \| ``"recentupdate"`` \| ``"leastupdate"`` \| ``"leastindex"`` \| ``"highestindex"`` | - |
-| `state?` | ``"error"`` \| ``"pending"`` \| ``"success"`` \| ``"failure"`` \| ``"warning"`` | - |
-| `page?` | `number` | - |
-| `limit?` | `number` | - |
+| `requestParameters` | [`RepositoryApiRepoListStatusesByRefRequest`](../interfaces/RepositoryApiRepoListStatusesByRefRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -3187,13 +3103,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13284](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13284)
+[apis/repository-api.ts:18001](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L18001)
 
 ___
 
 ### <a id="repolistsubscribers" name="repolistsubscribers"></a> repoListSubscribers
 
-▸ **repoListSubscribers**(`owner`, `repo`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`User`](../interfaces/User.md)[]\>\>
+▸ **repoListSubscribers**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`User`](../interfaces/User.md)[]\>\>
 
 **`summary`** List a repo\'s watchers
 
@@ -3205,10 +3121,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `page?` | `number` | - |
-| `limit?` | `number` | - |
+| `requestParameters` | [`RepositoryApiRepoListSubscribersRequest`](../interfaces/RepositoryApiRepoListSubscribersRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -3217,13 +3130,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13299](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13299)
+[apis/repository-api.ts:18013](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L18013)
 
 ___
 
 ### <a id="repolisttags" name="repolisttags"></a> repoListTags
 
-▸ **repoListTags**(`owner`, `repo`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`Tag`](../interfaces/Tag.md)[]\>\>
+▸ **repoListTags**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Tag`](../interfaces/Tag.md)[]\>\>
 
 **`summary`** List a repository\'s tags
 
@@ -3235,10 +3148,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `page?` | `number` | - |
-| `limit?` | `number` | - |
+| `requestParameters` | [`RepositoryApiRepoListTagsRequest`](../interfaces/RepositoryApiRepoListTagsRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -3247,13 +3157,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13314](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13314)
+[apis/repository-api.ts:18025](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L18025)
 
 ___
 
 ### <a id="repolistteams" name="repolistteams"></a> repoListTeams
 
-▸ **repoListTeams**(`owner`, `repo`, `options?`): `Promise`<`AxiosResponse`<[`Team`](../interfaces/Team.md)[]\>\>
+▸ **repoListTeams**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Team`](../interfaces/Team.md)[]\>\>
 
 **`summary`** List a repository\'s teams
 
@@ -3265,8 +3175,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
+| `requestParameters` | [`RepositoryApiRepoListTeamsRequest`](../interfaces/RepositoryApiRepoListTeamsRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -3275,13 +3184,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13327](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13327)
+[apis/repository-api.ts:18037](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L18037)
 
 ___
 
 ### <a id="repolisttopics" name="repolisttopics"></a> repoListTopics
 
-▸ **repoListTopics**(`owner`, `repo`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`TopicName`](../interfaces/TopicName.md)\>\>
+▸ **repoListTopics**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`TopicName`](../interfaces/TopicName.md)\>\>
 
 **`summary`** Get list of topics that a repository has
 
@@ -3293,10 +3202,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `page?` | `number` | - |
-| `limit?` | `number` | - |
+| `requestParameters` | [`RepositoryApiRepoListTopicsRequest`](../interfaces/RepositoryApiRepoListTopicsRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -3305,13 +3211,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13342](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13342)
+[apis/repository-api.ts:18049](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L18049)
 
 ___
 
 ### <a id="repomergepullrequest" name="repomergepullrequest"></a> repoMergePullRequest
 
-▸ **repoMergePullRequest**(`owner`, `repo`, `index`, `body?`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **repoMergePullRequest**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Merge a pull request
 
@@ -3323,10 +3229,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `index` | `number` | index of the pull request to merge |
-| `body?` | [`MergePullRequestOption`](../interfaces/MergePullRequestOption.md) | - |
+| `requestParameters` | [`RepositoryApiRepoMergePullRequestRequest`](../interfaces/RepositoryApiRepoMergePullRequestRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -3335,13 +3238,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13357](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13357)
+[apis/repository-api.ts:18061](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L18061)
 
 ___
 
 ### <a id="repomigrate" name="repomigrate"></a> repoMigrate
 
-▸ **repoMigrate**(`body?`, `options?`): `Promise`<`AxiosResponse`<[`Repository`](../interfaces/Repository.md)\>\>
+▸ **repoMigrate**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`Repository`](../interfaces/Repository.md)\>\>
 
 **`summary`** Migrate a remote git repository
 
@@ -3351,10 +3254,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `body?` | [`MigrateRepoOptions`](../interfaces/MigrateRepoOptions.md) |
-| `options?` | `AxiosRequestConfig` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `requestParameters` | [`RepositoryApiRepoMigrateRequest`](../interfaces/RepositoryApiRepoMigrateRequest.md) | Request parameters. |
+| `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
 
@@ -3362,13 +3265,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13369](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13369)
+[apis/repository-api.ts:18073](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L18073)
 
 ___
 
 ### <a id="repomirrorsync" name="repomirrorsync"></a> repoMirrorSync
 
-▸ **repoMirrorSync**(`owner`, `repo`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **repoMirrorSync**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Sync a mirrored repository
 
@@ -3380,8 +3283,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo to sync |
-| `repo` | `string` | name of the repo to sync |
+| `requestParameters` | [`RepositoryApiRepoMirrorSyncRequest`](../interfaces/RepositoryApiRepoMirrorSyncRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -3390,13 +3292,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13382](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13382)
+[apis/repository-api.ts:18085](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L18085)
 
 ___
 
 ### <a id="repopullrequestismerged" name="repopullrequestismerged"></a> repoPullRequestIsMerged
 
-▸ **repoPullRequestIsMerged**(`owner`, `repo`, `index`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **repoPullRequestIsMerged**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Check if a pull request has been merged
 
@@ -3408,9 +3310,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `index` | `number` | index of the pull request |
+| `requestParameters` | [`RepositoryApiRepoPullRequestIsMergedRequest`](../interfaces/RepositoryApiRepoPullRequestIsMergedRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -3419,13 +3319,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13396](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13396)
+[apis/repository-api.ts:18097](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L18097)
 
 ___
 
 ### <a id="reposearch" name="reposearch"></a> repoSearch
 
-▸ **repoSearch**(`q?`, `topic?`, `includeDesc?`, `uid?`, `priorityOwnerId?`, `teamId?`, `starredBy?`, `_private?`, `isPrivate?`, `template?`, `archived?`, `mode?`, `exclusive?`, `repo?`, `owner?`, `lang?`, `subject?`, `book?`, `includeMetadata?`, `sort?`, `order?`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`SearchResults`](../interfaces/SearchResults.md)\>\>
+▸ **repoSearch**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`SearchResults`](../interfaces/SearchResults.md)\>\>
 
 **`summary`** Search for repositories
 
@@ -3435,32 +3335,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `q?` | `string` |
-| `topic?` | `boolean` |
-| `includeDesc?` | `boolean` |
-| `uid?` | `number` |
-| `priorityOwnerId?` | `number` |
-| `teamId?` | `number` |
-| `starredBy?` | `number` |
-| `_private?` | `boolean` |
-| `isPrivate?` | `boolean` |
-| `template?` | `boolean` |
-| `archived?` | `boolean` |
-| `mode?` | `string` |
-| `exclusive?` | `boolean` |
-| `repo?` | `string` |
-| `owner?` | `string` |
-| `lang?` | `string` |
-| `subject?` | `string` |
-| `book?` | `string` |
-| `includeMetadata?` | `boolean` |
-| `sort?` | `string` |
-| `order?` | `string` |
-| `page?` | `number` |
-| `limit?` | `number` |
-| `options?` | `AxiosRequestConfig` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `requestParameters` | [`RepositoryApiRepoSearchRequest`](../interfaces/RepositoryApiRepoSearchRequest.md) | Request parameters. |
+| `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
 
@@ -3468,13 +3346,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13430](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13430)
+[apis/repository-api.ts:18109](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L18109)
 
 ___
 
 ### <a id="reposigningkey" name="reposigningkey"></a> repoSigningKey
 
-▸ **repoSigningKey**(`owner`, `repo`, `options?`): `Promise`<`AxiosResponse`<`string`\>\>
+▸ **repoSigningKey**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`string`\>\>
 
 **`summary`** Get signing-key.gpg for given repository
 
@@ -3486,8 +3364,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
+| `requestParameters` | [`RepositoryApiRepoSigningKeyRequest`](../interfaces/RepositoryApiRepoSigningKeyRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -3496,13 +3373,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13443](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13443)
+[apis/repository-api.ts:18121](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L18121)
 
 ___
 
 ### <a id="reposubmitpullreview" name="reposubmitpullreview"></a> repoSubmitPullReview
 
-▸ **repoSubmitPullReview**(`owner`, `repo`, `index`, `id`, `body`, `options?`): `Promise`<`AxiosResponse`<[`PullReview`](../interfaces/PullReview.md)\>\>
+▸ **repoSubmitPullReview**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`PullReview`](../interfaces/PullReview.md)\>\>
 
 **`summary`** Submit a pending review to an pull request
 
@@ -3514,11 +3391,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `index` | `number` | index of the pull request |
-| `id` | `number` | id of the review |
-| `body` | [`SubmitPullReviewOptions`](../interfaces/SubmitPullReviewOptions.md) |  |
+| `requestParameters` | [`RepositoryApiRepoSubmitPullReviewRequest`](../interfaces/RepositoryApiRepoSubmitPullReviewRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -3527,13 +3400,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13459](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13459)
+[apis/repository-api.ts:18133](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L18133)
 
 ___
 
 ### <a id="repotesthook" name="repotesthook"></a> repoTestHook
 
-▸ **repoTestHook**(`owner`, `repo`, `id`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **repoTestHook**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Test a push webhook
 
@@ -3545,9 +3418,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `id` | `number` | id of the hook to test |
+| `requestParameters` | [`RepositoryApiRepoTestHookRequest`](../interfaces/RepositoryApiRepoTestHookRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -3556,13 +3427,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13473](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13473)
+[apis/repository-api.ts:18145](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L18145)
 
 ___
 
 ### <a id="repotrackedtimes" name="repotrackedtimes"></a> repoTrackedTimes
 
-▸ **repoTrackedTimes**(`owner`, `repo`, `user?`, `since?`, `before?`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`TrackedTime`](../interfaces/TrackedTime.md)[]\>\>
+▸ **repoTrackedTimes**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`TrackedTime`](../interfaces/TrackedTime.md)[]\>\>
 
 **`summary`** List a repo\'s tracked times
 
@@ -3574,13 +3445,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `user?` | `string` | - |
-| `since?` | `string` | - |
-| `before?` | `string` | - |
-| `page?` | `number` | - |
-| `limit?` | `number` | - |
+| `requestParameters` | [`RepositoryApiRepoTrackedTimesRequest`](../interfaces/RepositoryApiRepoTrackedTimesRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -3589,13 +3454,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13491](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13491)
+[apis/repository-api.ts:18157](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L18157)
 
 ___
 
 ### <a id="repotransfer" name="repotransfer"></a> repoTransfer
 
-▸ **repoTransfer**(`owner`, `repo`, `body`, `options?`): `Promise`<`AxiosResponse`<[`Repository`](../interfaces/Repository.md)\>\>
+▸ **repoTransfer**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Repository`](../interfaces/Repository.md)\>\>
 
 **`summary`** Transfer a repo ownership
 
@@ -3607,9 +3472,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo to transfer |
-| `repo` | `string` | name of the repo to transfer |
-| `body` | [`TransferRepoOption`](../interfaces/TransferRepoOption.md) | Transfer Options |
+| `requestParameters` | [`RepositoryApiRepoTransferRequest`](../interfaces/RepositoryApiRepoTransferRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -3618,13 +3481,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13505](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13505)
+[apis/repository-api.ts:18169](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L18169)
 
 ___
 
 ### <a id="repoundismisspullreview" name="repoundismisspullreview"></a> repoUnDismissPullReview
 
-▸ **repoUnDismissPullReview**(`owner`, `repo`, `index`, `id`, `options?`): `Promise`<`AxiosResponse`<[`PullReview`](../interfaces/PullReview.md)\>\>
+▸ **repoUnDismissPullReview**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`PullReview`](../interfaces/PullReview.md)\>\>
 
 **`summary`** Cancel to dismiss a review for a pull request
 
@@ -3636,10 +3499,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `index` | `number` | index of the pull request |
-| `id` | `number` | id of the review |
+| `requestParameters` | [`RepositoryApiRepoUnDismissPullReviewRequest`](../interfaces/RepositoryApiRepoUnDismissPullReviewRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -3648,13 +3508,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13520](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13520)
+[apis/repository-api.ts:18181](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L18181)
 
 ___
 
 ### <a id="repoupdatefile" name="repoupdatefile"></a> repoUpdateFile
 
-▸ **repoUpdateFile**(`owner`, `repo`, `filepath`, `body`, `options?`): `Promise`<`AxiosResponse`<[`FileResponse`](../interfaces/FileResponse.md)\>\>
+▸ **repoUpdateFile**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`FileResponse`](../interfaces/FileResponse.md)\>\>
 
 **`summary`** Update a file in a repository
 
@@ -3666,10 +3526,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `filepath` | `string` | path of the file to update |
-| `body` | [`UpdateFileOptions`](../interfaces/UpdateFileOptions.md) |  |
+| `requestParameters` | [`RepositoryApiRepoUpdateFileRequest`](../interfaces/RepositoryApiRepoUpdateFileRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -3678,13 +3535,40 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13535](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13535)
+[apis/repository-api.ts:18193](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L18193)
+
+___
+
+### <a id="repoupdategitref" name="repoupdategitref"></a> repoUpdateGitRef
+
+▸ **repoUpdateGitRef**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Reference`](../interfaces/Reference.md)\>\>
+
+**`summary`** Update a reference
+
+**`throws`** {RequiredError}
+
+**`memberof`** RepositoryApi
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `requestParameters` | [`RepositoryApiRepoUpdateGitRefRequest`](../interfaces/RepositoryApiRepoUpdateGitRefRequest.md) | Request parameters. |
+| `options?` | `AxiosRequestConfig` | - |
+
+#### Returns
+
+`Promise`<`AxiosResponse`<[`Reference`](../interfaces/Reference.md)\>\>
+
+#### Defined in
+
+[apis/repository-api.ts:18205](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L18205)
 
 ___
 
 ### <a id="repoupdatepullrequest" name="repoupdatepullrequest"></a> repoUpdatePullRequest
 
-▸ **repoUpdatePullRequest**(`owner`, `repo`, `index`, `style?`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **repoUpdatePullRequest**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Merge PR\'s baseBranch into headBranch
 
@@ -3696,10 +3580,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `index` | `number` | index of the pull request to get |
-| `style?` | ``"merge"`` \| ``"rebase"`` | - |
+| `requestParameters` | [`RepositoryApiRepoUpdatePullRequestRequest`](../interfaces/RepositoryApiRepoUpdatePullRequestRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -3708,13 +3589,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13550](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13550)
+[apis/repository-api.ts:18217](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L18217)
 
 ___
 
 ### <a id="repoupdatetopics" name="repoupdatetopics"></a> repoUpdateTopics
 
-▸ **repoUpdateTopics**(`owner`, `repo`, `body?`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **repoUpdateTopics**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Replace list of topics for a repository
 
@@ -3726,9 +3607,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `body?` | [`RepoTopicOptions`](../interfaces/RepoTopicOptions.md) | - |
+| `requestParameters` | [`RepositoryApiRepoUpdateTopicsRequest`](../interfaces/RepositoryApiRepoUpdateTopicsRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -3737,13 +3616,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13564](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13564)
+[apis/repository-api.ts:18229](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L18229)
 
 ___
 
 ### <a id="topicsearch" name="topicsearch"></a> topicSearch
 
-▸ **topicSearch**(`q`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`TopicResponse`](../interfaces/TopicResponse.md)[]\>\>
+▸ **topicSearch**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`TopicResponse`](../interfaces/TopicResponse.md)[]\>\>
 
 **`summary`** search topics via keyword
 
@@ -3755,9 +3634,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `q` | `string` | keywords to search |
-| `page?` | `number` | - |
-| `limit?` | `number` | - |
+| `requestParameters` | [`RepositoryApiTopicSearchRequest`](../interfaces/RepositoryApiTopicSearchRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -3766,13 +3643,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13578](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13578)
+[apis/repository-api.ts:18241](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L18241)
 
 ___
 
 ### <a id="usercurrentchecksubscription" name="usercurrentchecksubscription"></a> userCurrentCheckSubscription
 
-▸ **userCurrentCheckSubscription**(`owner`, `repo`, `options?`): `Promise`<`AxiosResponse`<[`WatchInfo`](../interfaces/WatchInfo.md)\>\>
+▸ **userCurrentCheckSubscription**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`WatchInfo`](../interfaces/WatchInfo.md)\>\>
 
 **`summary`** Check if the current user is watching a repo
 
@@ -3784,8 +3661,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
+| `requestParameters` | [`RepositoryApiUserCurrentCheckSubscriptionRequest`](../interfaces/RepositoryApiUserCurrentCheckSubscriptionRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -3794,13 +3670,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13591](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13591)
+[apis/repository-api.ts:18253](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L18253)
 
 ___
 
 ### <a id="usercurrentdeletesubscription" name="usercurrentdeletesubscription"></a> userCurrentDeleteSubscription
 
-▸ **userCurrentDeleteSubscription**(`owner`, `repo`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **userCurrentDeleteSubscription**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Unwatch a repo
 
@@ -3812,8 +3688,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
+| `requestParameters` | [`RepositoryApiUserCurrentDeleteSubscriptionRequest`](../interfaces/RepositoryApiUserCurrentDeleteSubscriptionRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -3822,13 +3697,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13604](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13604)
+[apis/repository-api.ts:18265](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L18265)
 
 ___
 
 ### <a id="usercurrentputsubscription" name="usercurrentputsubscription"></a> userCurrentPutSubscription
 
-▸ **userCurrentPutSubscription**(`owner`, `repo`, `options?`): `Promise`<`AxiosResponse`<[`WatchInfo`](../interfaces/WatchInfo.md)\>\>
+▸ **userCurrentPutSubscription**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`WatchInfo`](../interfaces/WatchInfo.md)\>\>
 
 **`summary`** Watch a repo
 
@@ -3840,8 +3715,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
+| `requestParameters` | [`RepositoryApiUserCurrentPutSubscriptionRequest`](../interfaces/RepositoryApiUserCurrentPutSubscriptionRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -3850,13 +3724,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13617](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13617)
+[apis/repository-api.ts:18277](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L18277)
 
 ___
 
 ### <a id="usertrackedtimes" name="usertrackedtimes"></a> userTrackedTimes
 
-▸ **userTrackedTimes**(`owner`, `repo`, `user`, `options?`): `Promise`<`AxiosResponse`<[`TrackedTime`](../interfaces/TrackedTime.md)[]\>\>
+▸ **userTrackedTimes**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`TrackedTime`](../interfaces/TrackedTime.md)[]\>\>
 
 **`summary`** List a user\'s tracked times in a repo
 
@@ -3870,9 +3744,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `user` | `string` | username of user |
+| `requestParameters` | [`RepositoryApiUserTrackedTimesRequest`](../interfaces/RepositoryApiUserTrackedTimesRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -3881,4 +3753,4 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13632](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13632)
+[apis/repository-api.ts:18290](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L18290)

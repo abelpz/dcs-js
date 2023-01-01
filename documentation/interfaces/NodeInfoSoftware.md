@@ -27,7 +27,7 @@ NodeInfoSoftware contains Metadata about server software in use
 
 #### Defined in
 
-[models/node-info-software.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/node-info-software.ts#L28)
+[models/node-info-software.ts:28](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/node-info-software.ts#L28)
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 #### Defined in
 
-[models/node-info-software.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/node-info-software.ts#L34)
+[models/node-info-software.ts:34](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/node-info-software.ts#L34)
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 #### Defined in
 
-[models/node-info-software.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/node-info-software.ts#L40)
+[models/node-info-software.ts:40](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/node-info-software.ts#L40)
 
 ___
 
@@ -63,4 +63,4 @@ ___
 
 #### Defined in
 
-[models/node-info-software.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/node-info-software.ts#L46)
+[models/node-info-software.ts:46](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/node-info-software.ts#L46)

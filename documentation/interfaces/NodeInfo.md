@@ -30,7 +30,7 @@ NodeInfo contains standardized way of exposing metadata about a server running o
 
 #### Defined in
 
-[models/node-info.ts:37](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/node-info.ts#L37)
+[models/node-info.ts:37](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/node-info.ts#L37)
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 #### Defined in
 
-[models/node-info.ts:43](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/node-info.ts#L43)
+[models/node-info.ts:43](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/node-info.ts#L43)
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 #### Defined in
 
-[models/node-info.ts:49](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/node-info.ts#L49)
+[models/node-info.ts:49](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/node-info.ts#L49)
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 #### Defined in
 
-[models/node-info.ts:55](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/node-info.ts#L55)
+[models/node-info.ts:55](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/node-info.ts#L55)
 
 ___
 
@@ -78,7 +78,7 @@ ___
 
 #### Defined in
 
-[models/node-info.ts:61](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/node-info.ts#L61)
+[models/node-info.ts:61](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/node-info.ts#L61)
 
 ___
 
@@ -90,7 +90,7 @@ ___
 
 #### Defined in
 
-[models/node-info.ts:67](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/node-info.ts#L67)
+[models/node-info.ts:67](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/node-info.ts#L67)
 
 ___
 
@@ -102,4 +102,4 @@ ___
 
 #### Defined in
 
-[models/node-info.ts:73](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/node-info.ts#L73)
+[models/node-info.ts:73](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/node-info.ts#L73)

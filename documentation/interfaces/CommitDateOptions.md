@@ -25,7 +25,7 @@ CommitDateOptions store dates for GIT_AUTHOR_DATE and GIT_COMMITTER_DATE
 
 #### Defined in
 
-[models/commit-date-options.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/commit-date-options.ts#L28)
+[models/commit-date-options.ts:28](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/commit-date-options.ts#L28)
 
 ___
 
@@ -37,4 +37,4 @@ ___
 
 #### Defined in
 
-[models/commit-date-options.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/commit-date-options.ts#L34)
+[models/commit-date-options.ts:34](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/commit-date-options.ts#L34)

@@ -27,7 +27,7 @@ Name of the branch to create
 
 #### Defined in
 
-[models/create-branch-repo-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-branch-repo-option.ts#L28)
+[models/create-branch-repo-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/create-branch-repo-option.ts#L28)
 
 ___
 
@@ -41,4 +41,4 @@ Name of the old branch to create from
 
 #### Defined in
 
-[models/create-branch-repo-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-branch-repo-option.ts#L34)
+[models/create-branch-repo-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/create-branch-repo-option.ts#L34)

@@ -24,4 +24,4 @@ EditAttachmentOptions options for editing attachments
 
 #### Defined in
 
-[models/edit-attachment-options.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-attachment-options.ts#L28)
+[models/edit-attachment-options.ts:28](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/edit-attachment-options.ts#L28)

@@ -26,4 +26,4 @@ email addresses to delete
 
 #### Defined in
 
-[models/delete-email-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/delete-email-option.ts#L28)
+[models/delete-email-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/delete-email-option.ts#L28)

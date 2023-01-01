@@ -24,4 +24,4 @@ AddCollaboratorOption options when adding a user as a collaborator of a reposito
 
 #### Defined in
 
-[models/add-collaborator-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/add-collaborator-option.ts#L28)
+[models/add-collaborator-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/add-collaborator-option.ts#L28)

@@ -27,7 +27,7 @@ GeneralAttachmentSettings contains global Attachment settings exposed by API
 
 #### Defined in
 
-[models/general-attachment-settings.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/general-attachment-settings.ts#L28)
+[models/general-attachment-settings.ts:28](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/general-attachment-settings.ts#L28)
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 #### Defined in
 
-[models/general-attachment-settings.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/general-attachment-settings.ts#L34)
+[models/general-attachment-settings.ts:34](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/general-attachment-settings.ts#L34)
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 #### Defined in
 
-[models/general-attachment-settings.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/general-attachment-settings.ts#L40)
+[models/general-attachment-settings.ts:40](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/general-attachment-settings.ts#L40)
 
 ___
 
@@ -63,4 +63,4 @@ ___
 
 #### Defined in
 
-[models/general-attachment-settings.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/general-attachment-settings.ts#L46)
+[models/general-attachment-settings.ts:46](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/general-attachment-settings.ts#L46)

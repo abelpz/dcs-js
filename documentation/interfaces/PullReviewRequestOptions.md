@@ -25,7 +25,7 @@ PullReviewRequestOptions are options to add or remove pull review requests
 
 #### Defined in
 
-[models/pull-review-request-options.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-review-request-options.ts#L28)
+[models/pull-review-request-options.ts:28](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/pull-review-request-options.ts#L28)
 
 ___
 
@@ -37,4 +37,4 @@ ___
 
 #### Defined in
 
-[models/pull-review-request-options.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-review-request-options.ts#L34)
+[models/pull-review-request-options.ts:34](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/pull-review-request-options.ts#L34)

@@ -60,6 +60,7 @@ OrganizationApi - object-oriented interface
 - [orgListRepos](OrganizationApi.md#orglistrepos)
 - [orgListTeamMember](OrganizationApi.md#orglistteammember)
 - [orgListTeamMembers](OrganizationApi.md#orglistteammembers)
+- [orgListTeamRepo](OrganizationApi.md#orglistteamrepo)
 - [orgListTeamRepos](OrganizationApi.md#orglistteamrepos)
 - [orgListTeams](OrganizationApi.md#orglistteams)
 - [orgListUserOrgs](OrganizationApi.md#orglistuserorgs)
@@ -88,7 +89,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[base.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/base.ts#L52)
+[base.ts:52](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/base.ts#L52)
 
 ## Properties
 
@@ -122,13 +123,13 @@ BaseAPI.configuration
 
 #### Defined in
 
-[base.ts:50](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/base.ts#L50)
+[base.ts:50](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/base.ts#L50)
 
 ## Methods
 
 ### <a id="createorgrepo" name="createorgrepo"></a> createOrgRepo
 
-▸ **createOrgRepo**(`org`, `body?`, `options?`): `Promise`<`AxiosResponse`<[`Repository`](../interfaces/Repository.md)\>\>
+▸ **createOrgRepo**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Repository`](../interfaces/Repository.md)\>\>
 
 **`summary`** Create a repository in an organization
 
@@ -140,8 +141,7 @@ BaseAPI.configuration
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `org` | `string` | name of organization |
-| `body?` | [`CreateRepoOption`](../interfaces/CreateRepoOption.md) | - |
+| `requestParameters` | [`OrganizationApiCreateOrgRepoRequest`](../interfaces/OrganizationApiCreateOrgRepoRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -150,13 +150,13 @@ BaseAPI.configuration
 
 #### Defined in
 
-[apis/organization-api.ts:3613](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3613)
+[apis/organization-api.ts:4674](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/organization-api.ts#L4674)
 
 ___
 
 ### <a id="createorgrepodeprecated" name="createorgrepodeprecated"></a> createOrgRepoDeprecated
 
-▸ **createOrgRepoDeprecated**(`org`, `body?`, `options?`): `Promise`<`AxiosResponse`<[`Repository`](../interfaces/Repository.md)\>\>
+▸ **createOrgRepoDeprecated**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Repository`](../interfaces/Repository.md)\>\>
 
 **`summary`** Create a repository in an organization
 
@@ -170,8 +170,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `org` | `string` | name of organization |
-| `body?` | [`CreateRepoOption`](../interfaces/CreateRepoOption.md) | - |
+| `requestParameters` | [`OrganizationApiCreateOrgRepoDeprecatedRequest`](../interfaces/OrganizationApiCreateOrgRepoDeprecatedRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -180,13 +179,13 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:3627](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3627)
+[apis/organization-api.ts:4687](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/organization-api.ts#L4687)
 
 ___
 
 ### <a id="orgaddteammember" name="orgaddteammember"></a> orgAddTeamMember
 
-▸ **orgAddTeamMember**(`id`, `username`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **orgAddTeamMember**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Add a team member
 
@@ -198,8 +197,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `id` | `number` | id of the team |
-| `username` | `string` | username of the user to add |
+| `requestParameters` | [`OrganizationApiOrgAddTeamMemberRequest`](../interfaces/OrganizationApiOrgAddTeamMemberRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -208,13 +206,13 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:3640](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3640)
+[apis/organization-api.ts:4699](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/organization-api.ts#L4699)
 
 ___
 
 ### <a id="orgaddteamrepository" name="orgaddteamrepository"></a> orgAddTeamRepository
 
-▸ **orgAddTeamRepository**(`id`, `org`, `repo`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **orgAddTeamRepository**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Add a repository to a team
 
@@ -226,9 +224,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `id` | `number` | id of the team |
-| `org` | `string` | organization that owns the repo to add |
-| `repo` | `string` | name of the repo to add |
+| `requestParameters` | [`OrganizationApiOrgAddTeamRepositoryRequest`](../interfaces/OrganizationApiOrgAddTeamRepositoryRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -237,13 +233,13 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:3654](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3654)
+[apis/organization-api.ts:4711](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/organization-api.ts#L4711)
 
 ___
 
 ### <a id="orgconcealmember" name="orgconcealmember"></a> orgConcealMember
 
-▸ **orgConcealMember**(`org`, `username`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **orgConcealMember**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Conceal a user\'s membership
 
@@ -255,8 +251,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `org` | `string` | name of the organization |
-| `username` | `string` | username of the user |
+| `requestParameters` | [`OrganizationApiOrgConcealMemberRequest`](../interfaces/OrganizationApiOrgConcealMemberRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -265,13 +260,13 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:3667](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3667)
+[apis/organization-api.ts:4723](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/organization-api.ts#L4723)
 
 ___
 
 ### <a id="orgcreate" name="orgcreate"></a> orgCreate
 
-▸ **orgCreate**(`organization`, `options?`): `Promise`<`AxiosResponse`<[`Organization`](../interfaces/Organization.md)\>\>
+▸ **orgCreate**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Organization`](../interfaces/Organization.md)\>\>
 
 **`summary`** Create an organization
 
@@ -281,10 +276,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `organization` | [`CreateOrgOption`](../interfaces/CreateOrgOption.md) |
-| `options?` | `AxiosRequestConfig` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `requestParameters` | [`OrganizationApiOrgCreateRequest`](../interfaces/OrganizationApiOrgCreateRequest.md) | Request parameters. |
+| `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
 
@@ -292,13 +287,13 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:3679](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3679)
+[apis/organization-api.ts:4735](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/organization-api.ts#L4735)
 
 ___
 
 ### <a id="orgcreatehook" name="orgcreatehook"></a> orgCreateHook
 
-▸ **orgCreateHook**(`org`, `body`, `options?`): `Promise`<`AxiosResponse`<[`Hook`](../interfaces/Hook.md)\>\>
+▸ **orgCreateHook**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Hook`](../interfaces/Hook.md)\>\>
 
 **`summary`** Create a hook
 
@@ -310,8 +305,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `org` | `string` | name of the organization |
-| `body` | [`CreateHookOption`](../interfaces/CreateHookOption.md) |  |
+| `requestParameters` | [`OrganizationApiOrgCreateHookRequest`](../interfaces/OrganizationApiOrgCreateHookRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -320,13 +314,13 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:3692](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3692)
+[apis/organization-api.ts:4747](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/organization-api.ts#L4747)
 
 ___
 
 ### <a id="orgcreatelabel" name="orgcreatelabel"></a> orgCreateLabel
 
-▸ **orgCreateLabel**(`org`, `body?`, `options?`): `Promise`<`AxiosResponse`<[`Label`](../interfaces/Label.md)\>\>
+▸ **orgCreateLabel**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Label`](../interfaces/Label.md)\>\>
 
 **`summary`** Create a label for an organization
 
@@ -338,8 +332,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `org` | `string` | name of the organization |
-| `body?` | [`CreateLabelOption`](../interfaces/CreateLabelOption.md) | - |
+| `requestParameters` | [`OrganizationApiOrgCreateLabelRequest`](../interfaces/OrganizationApiOrgCreateLabelRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -348,13 +341,13 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:3705](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3705)
+[apis/organization-api.ts:4759](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/organization-api.ts#L4759)
 
 ___
 
 ### <a id="orgcreateteam" name="orgcreateteam"></a> orgCreateTeam
 
-▸ **orgCreateTeam**(`org`, `body?`, `options?`): `Promise`<`AxiosResponse`<[`Team`](../interfaces/Team.md)\>\>
+▸ **orgCreateTeam**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Team`](../interfaces/Team.md)\>\>
 
 **`summary`** Create a team
 
@@ -366,8 +359,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `org` | `string` | name of the organization |
-| `body?` | [`CreateTeamOption`](../interfaces/CreateTeamOption.md) | - |
+| `requestParameters` | [`OrganizationApiOrgCreateTeamRequest`](../interfaces/OrganizationApiOrgCreateTeamRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -376,13 +368,13 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:3718](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3718)
+[apis/organization-api.ts:4771](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/organization-api.ts#L4771)
 
 ___
 
 ### <a id="orgdelete" name="orgdelete"></a> orgDelete
 
-▸ **orgDelete**(`org`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **orgDelete**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Delete an organization
 
@@ -394,7 +386,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `org` | `string` | organization that is to be deleted |
+| `requestParameters` | [`OrganizationApiOrgDeleteRequest`](../interfaces/OrganizationApiOrgDeleteRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -403,13 +395,13 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:3730](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3730)
+[apis/organization-api.ts:4783](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/organization-api.ts#L4783)
 
 ___
 
 ### <a id="orgdeletehook" name="orgdeletehook"></a> orgDeleteHook
 
-▸ **orgDeleteHook**(`org`, `id`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **orgDeleteHook**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Delete a hook
 
@@ -421,8 +413,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `org` | `string` | name of the organization |
-| `id` | `number` | id of the hook to delete |
+| `requestParameters` | [`OrganizationApiOrgDeleteHookRequest`](../interfaces/OrganizationApiOrgDeleteHookRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -431,13 +422,13 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:3743](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3743)
+[apis/organization-api.ts:4795](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/organization-api.ts#L4795)
 
 ___
 
 ### <a id="orgdeletelabel" name="orgdeletelabel"></a> orgDeleteLabel
 
-▸ **orgDeleteLabel**(`org`, `id`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **orgDeleteLabel**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Delete a label
 
@@ -449,8 +440,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `org` | `string` | name of the organization |
-| `id` | `number` | id of the label to delete |
+| `requestParameters` | [`OrganizationApiOrgDeleteLabelRequest`](../interfaces/OrganizationApiOrgDeleteLabelRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -459,13 +449,13 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:3756](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3756)
+[apis/organization-api.ts:4807](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/organization-api.ts#L4807)
 
 ___
 
 ### <a id="orgdeletemember" name="orgdeletemember"></a> orgDeleteMember
 
-▸ **orgDeleteMember**(`org`, `username`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **orgDeleteMember**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Remove a member from an organization
 
@@ -477,8 +467,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `org` | `string` | name of the organization |
-| `username` | `string` | username of the user |
+| `requestParameters` | [`OrganizationApiOrgDeleteMemberRequest`](../interfaces/OrganizationApiOrgDeleteMemberRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -487,13 +476,13 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:3769](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3769)
+[apis/organization-api.ts:4819](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/organization-api.ts#L4819)
 
 ___
 
 ### <a id="orgdeleteteam" name="orgdeleteteam"></a> orgDeleteTeam
 
-▸ **orgDeleteTeam**(`id`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **orgDeleteTeam**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Delete a team
 
@@ -505,7 +494,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `id` | `number` | id of the team to delete |
+| `requestParameters` | [`OrganizationApiOrgDeleteTeamRequest`](../interfaces/OrganizationApiOrgDeleteTeamRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -514,13 +503,13 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:3781](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3781)
+[apis/organization-api.ts:4831](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/organization-api.ts#L4831)
 
 ___
 
 ### <a id="orgedit" name="orgedit"></a> orgEdit
 
-▸ **orgEdit**(`org`, `body`, `options?`): `Promise`<`AxiosResponse`<[`Organization`](../interfaces/Organization.md)\>\>
+▸ **orgEdit**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Organization`](../interfaces/Organization.md)\>\>
 
 **`summary`** Edit an organization
 
@@ -532,8 +521,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `org` | `string` | name of the organization to edit |
-| `body` | [`EditOrgOption`](../interfaces/EditOrgOption.md) |  |
+| `requestParameters` | [`OrganizationApiOrgEditRequest`](../interfaces/OrganizationApiOrgEditRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -542,13 +530,13 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:3794](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3794)
+[apis/organization-api.ts:4843](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/organization-api.ts#L4843)
 
 ___
 
 ### <a id="orgedithook" name="orgedithook"></a> orgEditHook
 
-▸ **orgEditHook**(`org`, `id`, `body?`, `options?`): `Promise`<`AxiosResponse`<[`Hook`](../interfaces/Hook.md)\>\>
+▸ **orgEditHook**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Hook`](../interfaces/Hook.md)\>\>
 
 **`summary`** Update a hook
 
@@ -560,9 +548,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `org` | `string` | name of the organization |
-| `id` | `number` | id of the hook to update |
-| `body?` | [`EditHookOption`](../interfaces/EditHookOption.md) | - |
+| `requestParameters` | [`OrganizationApiOrgEditHookRequest`](../interfaces/OrganizationApiOrgEditHookRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -571,13 +557,13 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:3808](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3808)
+[apis/organization-api.ts:4855](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/organization-api.ts#L4855)
 
 ___
 
 ### <a id="orgeditlabel" name="orgeditlabel"></a> orgEditLabel
 
-▸ **orgEditLabel**(`org`, `id`, `body?`, `options?`): `Promise`<`AxiosResponse`<[`Label`](../interfaces/Label.md)\>\>
+▸ **orgEditLabel**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Label`](../interfaces/Label.md)\>\>
 
 **`summary`** Update a label
 
@@ -589,9 +575,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `org` | `string` | name of the organization |
-| `id` | `number` | id of the label to edit |
-| `body?` | [`EditLabelOption`](../interfaces/EditLabelOption.md) | - |
+| `requestParameters` | [`OrganizationApiOrgEditLabelRequest`](../interfaces/OrganizationApiOrgEditLabelRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -600,13 +584,13 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:3822](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3822)
+[apis/organization-api.ts:4867](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/organization-api.ts#L4867)
 
 ___
 
 ### <a id="orgeditteam" name="orgeditteam"></a> orgEditTeam
 
-▸ **orgEditTeam**(`id`, `body?`, `options?`): `Promise`<`AxiosResponse`<[`Team`](../interfaces/Team.md)\>\>
+▸ **orgEditTeam**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Team`](../interfaces/Team.md)\>\>
 
 **`summary`** Edit a team
 
@@ -618,8 +602,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `id` | `number` | id of the team to edit |
-| `body?` | [`EditTeamOption`](../interfaces/EditTeamOption.md) | - |
+| `requestParameters` | [`OrganizationApiOrgEditTeamRequest`](../interfaces/OrganizationApiOrgEditTeamRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -628,13 +611,13 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:3835](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3835)
+[apis/organization-api.ts:4879](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/organization-api.ts#L4879)
 
 ___
 
 ### <a id="orgget" name="orgget"></a> orgGet
 
-▸ **orgGet**(`org`, `options?`): `Promise`<`AxiosResponse`<[`Organization`](../interfaces/Organization.md)\>\>
+▸ **orgGet**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Organization`](../interfaces/Organization.md)\>\>
 
 **`summary`** Get an organization
 
@@ -646,7 +629,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `org` | `string` | name of the organization to get |
+| `requestParameters` | [`OrganizationApiOrgGetRequest`](../interfaces/OrganizationApiOrgGetRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -655,13 +638,13 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:3847](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3847)
+[apis/organization-api.ts:4891](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/organization-api.ts#L4891)
 
 ___
 
 ### <a id="orggetall" name="orggetall"></a> orgGetAll
 
-▸ **orgGetAll**(`lang?`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`Organization`](../interfaces/Organization.md)[]\>\>
+▸ **orgGetAll**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`Organization`](../interfaces/Organization.md)[]\>\>
 
 **`summary`** Get list of organizations
 
@@ -671,12 +654,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `lang?` | `string` |
-| `page?` | `number` |
-| `limit?` | `number` |
-| `options?` | `AxiosRequestConfig` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `requestParameters` | [`OrganizationApiOrgGetAllRequest`](../interfaces/OrganizationApiOrgGetAllRequest.md) | Request parameters. |
+| `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
 
@@ -684,13 +665,13 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:3861](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3861)
+[apis/organization-api.ts:4903](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/organization-api.ts#L4903)
 
 ___
 
 ### <a id="orggethook" name="orggethook"></a> orgGetHook
 
-▸ **orgGetHook**(`org`, `id`, `options?`): `Promise`<`AxiosResponse`<[`Hook`](../interfaces/Hook.md)\>\>
+▸ **orgGetHook**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Hook`](../interfaces/Hook.md)\>\>
 
 **`summary`** Get a hook
 
@@ -702,8 +683,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `org` | `string` | name of the organization |
-| `id` | `number` | id of the hook to get |
+| `requestParameters` | [`OrganizationApiOrgGetHookRequest`](../interfaces/OrganizationApiOrgGetHookRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -712,13 +692,13 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:3874](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3874)
+[apis/organization-api.ts:4915](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/organization-api.ts#L4915)
 
 ___
 
 ### <a id="orggetlabel" name="orggetlabel"></a> orgGetLabel
 
-▸ **orgGetLabel**(`org`, `id`, `options?`): `Promise`<`AxiosResponse`<[`Label`](../interfaces/Label.md)\>\>
+▸ **orgGetLabel**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Label`](../interfaces/Label.md)\>\>
 
 **`summary`** Get a single label
 
@@ -730,8 +710,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `org` | `string` | name of the organization |
-| `id` | `number` | id of the label to get |
+| `requestParameters` | [`OrganizationApiOrgGetLabelRequest`](../interfaces/OrganizationApiOrgGetLabelRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -740,13 +719,13 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:3887](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3887)
+[apis/organization-api.ts:4927](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/organization-api.ts#L4927)
 
 ___
 
 ### <a id="orggetteam" name="orggetteam"></a> orgGetTeam
 
-▸ **orgGetTeam**(`id`, `options?`): `Promise`<`AxiosResponse`<[`Team`](../interfaces/Team.md)\>\>
+▸ **orgGetTeam**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Team`](../interfaces/Team.md)\>\>
 
 **`summary`** Get a team
 
@@ -758,7 +737,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `id` | `number` | id of the team to get |
+| `requestParameters` | [`OrganizationApiOrgGetTeamRequest`](../interfaces/OrganizationApiOrgGetTeamRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -767,13 +746,13 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:3899](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3899)
+[apis/organization-api.ts:4939](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/organization-api.ts#L4939)
 
 ___
 
 ### <a id="orggetuserpermissions" name="orggetuserpermissions"></a> orgGetUserPermissions
 
-▸ **orgGetUserPermissions**(`username`, `org`, `options?`): `Promise`<`AxiosResponse`<[`OrganizationPermissions`](../interfaces/OrganizationPermissions.md)\>\>
+▸ **orgGetUserPermissions**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`OrganizationPermissions`](../interfaces/OrganizationPermissions.md)\>\>
 
 **`summary`** Get user permissions in organization
 
@@ -785,8 +764,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `username` | `string` | username of user |
-| `org` | `string` | name of the organization |
+| `requestParameters` | [`OrganizationApiOrgGetUserPermissionsRequest`](../interfaces/OrganizationApiOrgGetUserPermissionsRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -795,13 +773,13 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:3912](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3912)
+[apis/organization-api.ts:4951](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/organization-api.ts#L4951)
 
 ___
 
 ### <a id="orgismember" name="orgismember"></a> orgIsMember
 
-▸ **orgIsMember**(`org`, `username`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **orgIsMember**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Check if a user is a member of an organization
 
@@ -813,8 +791,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `org` | `string` | name of the organization |
-| `username` | `string` | username of the user |
+| `requestParameters` | [`OrganizationApiOrgIsMemberRequest`](../interfaces/OrganizationApiOrgIsMemberRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -823,13 +800,13 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:3925](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3925)
+[apis/organization-api.ts:4963](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/organization-api.ts#L4963)
 
 ___
 
 ### <a id="orgispublicmember" name="orgispublicmember"></a> orgIsPublicMember
 
-▸ **orgIsPublicMember**(`org`, `username`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **orgIsPublicMember**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Check if a user is a public member of an organization
 
@@ -841,8 +818,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `org` | `string` | name of the organization |
-| `username` | `string` | username of the user |
+| `requestParameters` | [`OrganizationApiOrgIsPublicMemberRequest`](../interfaces/OrganizationApiOrgIsPublicMemberRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -851,13 +827,13 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:3938](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3938)
+[apis/organization-api.ts:4975](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/organization-api.ts#L4975)
 
 ___
 
 ### <a id="orglistcurrentuserorgs" name="orglistcurrentuserorgs"></a> orgListCurrentUserOrgs
 
-▸ **orgListCurrentUserOrgs**(`page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`Organization`](../interfaces/Organization.md)[]\>\>
+▸ **orgListCurrentUserOrgs**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`Organization`](../interfaces/Organization.md)[]\>\>
 
 **`summary`** List the current user\'s organizations
 
@@ -867,11 +843,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `page?` | `number` |
-| `limit?` | `number` |
-| `options?` | `AxiosRequestConfig` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `requestParameters` | [`OrganizationApiOrgListCurrentUserOrgsRequest`](../interfaces/OrganizationApiOrgListCurrentUserOrgsRequest.md) | Request parameters. |
+| `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
 
@@ -879,13 +854,13 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:3951](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3951)
+[apis/organization-api.ts:4987](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/organization-api.ts#L4987)
 
 ___
 
 ### <a id="orglisthooks" name="orglisthooks"></a> orgListHooks
 
-▸ **orgListHooks**(`org`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`Hook`](../interfaces/Hook.md)[]\>\>
+▸ **orgListHooks**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Hook`](../interfaces/Hook.md)[]\>\>
 
 **`summary`** List an organization\'s webhooks
 
@@ -897,9 +872,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `org` | `string` | name of the organization |
-| `page?` | `number` | - |
-| `limit?` | `number` | - |
+| `requestParameters` | [`OrganizationApiOrgListHooksRequest`](../interfaces/OrganizationApiOrgListHooksRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -908,13 +881,13 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:3965](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3965)
+[apis/organization-api.ts:4999](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/organization-api.ts#L4999)
 
 ___
 
 ### <a id="orglistlabels" name="orglistlabels"></a> orgListLabels
 
-▸ **orgListLabels**(`org`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`Label`](../interfaces/Label.md)[]\>\>
+▸ **orgListLabels**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Label`](../interfaces/Label.md)[]\>\>
 
 **`summary`** List an organization\'s labels
 
@@ -926,9 +899,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `org` | `string` | name of the organization |
-| `page?` | `number` | - |
-| `limit?` | `number` | - |
+| `requestParameters` | [`OrganizationApiOrgListLabelsRequest`](../interfaces/OrganizationApiOrgListLabelsRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -937,13 +908,13 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:3979](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3979)
+[apis/organization-api.ts:5011](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/organization-api.ts#L5011)
 
 ___
 
 ### <a id="orglistmembers" name="orglistmembers"></a> orgListMembers
 
-▸ **orgListMembers**(`org`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`User`](../interfaces/User.md)[]\>\>
+▸ **orgListMembers**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`User`](../interfaces/User.md)[]\>\>
 
 **`summary`** List an organization\'s members
 
@@ -955,9 +926,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `org` | `string` | name of the organization |
-| `page?` | `number` | - |
-| `limit?` | `number` | - |
+| `requestParameters` | [`OrganizationApiOrgListMembersRequest`](../interfaces/OrganizationApiOrgListMembersRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -966,13 +935,13 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:3993](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3993)
+[apis/organization-api.ts:5023](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/organization-api.ts#L5023)
 
 ___
 
 ### <a id="orglistpublicmembers" name="orglistpublicmembers"></a> orgListPublicMembers
 
-▸ **orgListPublicMembers**(`org`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`User`](../interfaces/User.md)[]\>\>
+▸ **orgListPublicMembers**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`User`](../interfaces/User.md)[]\>\>
 
 **`summary`** List an organization\'s public members
 
@@ -984,9 +953,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `org` | `string` | name of the organization |
-| `page?` | `number` | - |
-| `limit?` | `number` | - |
+| `requestParameters` | [`OrganizationApiOrgListPublicMembersRequest`](../interfaces/OrganizationApiOrgListPublicMembersRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -995,13 +962,13 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:4007](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L4007)
+[apis/organization-api.ts:5035](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/organization-api.ts#L5035)
 
 ___
 
 ### <a id="orglistrepos" name="orglistrepos"></a> orgListRepos
 
-▸ **orgListRepos**(`org`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`Repository`](../interfaces/Repository.md)[]\>\>
+▸ **orgListRepos**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Repository`](../interfaces/Repository.md)[]\>\>
 
 **`summary`** List an organization\'s repos
 
@@ -1013,9 +980,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `org` | `string` | name of the organization |
-| `page?` | `number` | - |
-| `limit?` | `number` | - |
+| `requestParameters` | [`OrganizationApiOrgListReposRequest`](../interfaces/OrganizationApiOrgListReposRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1024,13 +989,13 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:4021](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L4021)
+[apis/organization-api.ts:5047](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/organization-api.ts#L5047)
 
 ___
 
 ### <a id="orglistteammember" name="orglistteammember"></a> orgListTeamMember
 
-▸ **orgListTeamMember**(`id`, `username`, `options?`): `Promise`<`AxiosResponse`<[`User`](../interfaces/User.md)\>\>
+▸ **orgListTeamMember**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`User`](../interfaces/User.md)\>\>
 
 **`summary`** List a particular member of team
 
@@ -1042,8 +1007,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `id` | `number` | id of the team |
-| `username` | `string` | username of the member to list |
+| `requestParameters` | [`OrganizationApiOrgListTeamMemberRequest`](../interfaces/OrganizationApiOrgListTeamMemberRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1052,13 +1016,13 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:4034](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L4034)
+[apis/organization-api.ts:5059](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/organization-api.ts#L5059)
 
 ___
 
 ### <a id="orglistteammembers" name="orglistteammembers"></a> orgListTeamMembers
 
-▸ **orgListTeamMembers**(`id`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`User`](../interfaces/User.md)[]\>\>
+▸ **orgListTeamMembers**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`User`](../interfaces/User.md)[]\>\>
 
 **`summary`** List a team\'s members
 
@@ -1070,9 +1034,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `id` | `number` | id of the team |
-| `page?` | `number` | - |
-| `limit?` | `number` | - |
+| `requestParameters` | [`OrganizationApiOrgListTeamMembersRequest`](../interfaces/OrganizationApiOrgListTeamMembersRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1081,13 +1043,40 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:4048](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L4048)
+[apis/organization-api.ts:5071](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/organization-api.ts#L5071)
+
+___
+
+### <a id="orglistteamrepo" name="orglistteamrepo"></a> orgListTeamRepo
+
+▸ **orgListTeamRepo**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Repository`](../interfaces/Repository.md)\>\>
+
+**`summary`** List a particular repo of team
+
+**`throws`** {RequiredError}
+
+**`memberof`** OrganizationApi
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `requestParameters` | [`OrganizationApiOrgListTeamRepoRequest`](../interfaces/OrganizationApiOrgListTeamRepoRequest.md) | Request parameters. |
+| `options?` | `AxiosRequestConfig` | - |
+
+#### Returns
+
+`Promise`<`AxiosResponse`<[`Repository`](../interfaces/Repository.md)\>\>
+
+#### Defined in
+
+[apis/organization-api.ts:5083](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/organization-api.ts#L5083)
 
 ___
 
 ### <a id="orglistteamrepos" name="orglistteamrepos"></a> orgListTeamRepos
 
-▸ **orgListTeamRepos**(`id`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`Repository`](../interfaces/Repository.md)[]\>\>
+▸ **orgListTeamRepos**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Repository`](../interfaces/Repository.md)[]\>\>
 
 **`summary`** List a team\'s repos
 
@@ -1099,9 +1088,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `id` | `number` | id of the team |
-| `page?` | `number` | - |
-| `limit?` | `number` | - |
+| `requestParameters` | [`OrganizationApiOrgListTeamReposRequest`](../interfaces/OrganizationApiOrgListTeamReposRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1110,13 +1097,13 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:4062](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L4062)
+[apis/organization-api.ts:5095](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/organization-api.ts#L5095)
 
 ___
 
 ### <a id="orglistteams" name="orglistteams"></a> orgListTeams
 
-▸ **orgListTeams**(`org`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`Team`](../interfaces/Team.md)[]\>\>
+▸ **orgListTeams**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Team`](../interfaces/Team.md)[]\>\>
 
 **`summary`** List an organization\'s teams
 
@@ -1128,9 +1115,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `org` | `string` | name of the organization |
-| `page?` | `number` | - |
-| `limit?` | `number` | - |
+| `requestParameters` | [`OrganizationApiOrgListTeamsRequest`](../interfaces/OrganizationApiOrgListTeamsRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1139,13 +1124,13 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:4076](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L4076)
+[apis/organization-api.ts:5107](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/organization-api.ts#L5107)
 
 ___
 
 ### <a id="orglistuserorgs" name="orglistuserorgs"></a> orgListUserOrgs
 
-▸ **orgListUserOrgs**(`username`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`Organization`](../interfaces/Organization.md)[]\>\>
+▸ **orgListUserOrgs**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Organization`](../interfaces/Organization.md)[]\>\>
 
 **`summary`** List a user\'s organizations
 
@@ -1157,9 +1142,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `username` | `string` | username of user |
-| `page?` | `number` | - |
-| `limit?` | `number` | - |
+| `requestParameters` | [`OrganizationApiOrgListUserOrgsRequest`](../interfaces/OrganizationApiOrgListUserOrgsRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1168,13 +1151,13 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:4090](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L4090)
+[apis/organization-api.ts:5119](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/organization-api.ts#L5119)
 
 ___
 
 ### <a id="orgpublicizemember" name="orgpublicizemember"></a> orgPublicizeMember
 
-▸ **orgPublicizeMember**(`org`, `username`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **orgPublicizeMember**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Publicize a user\'s membership
 
@@ -1186,8 +1169,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `org` | `string` | name of the organization |
-| `username` | `string` | username of the user |
+| `requestParameters` | [`OrganizationApiOrgPublicizeMemberRequest`](../interfaces/OrganizationApiOrgPublicizeMemberRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1196,13 +1178,13 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:4103](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L4103)
+[apis/organization-api.ts:5131](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/organization-api.ts#L5131)
 
 ___
 
 ### <a id="orgremoveteammember" name="orgremoveteammember"></a> orgRemoveTeamMember
 
-▸ **orgRemoveTeamMember**(`id`, `username`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **orgRemoveTeamMember**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Remove a team member
 
@@ -1214,8 +1196,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `id` | `number` | id of the team |
-| `username` | `string` | username of the user to remove |
+| `requestParameters` | [`OrganizationApiOrgRemoveTeamMemberRequest`](../interfaces/OrganizationApiOrgRemoveTeamMemberRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1224,13 +1205,13 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:4116](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L4116)
+[apis/organization-api.ts:5143](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/organization-api.ts#L5143)
 
 ___
 
 ### <a id="orgremoveteamrepository" name="orgremoveteamrepository"></a> orgRemoveTeamRepository
 
-▸ **orgRemoveTeamRepository**(`id`, `org`, `repo`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **orgRemoveTeamRepository**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 This does not delete the repository, it only removes the repository from the team.
 
@@ -1244,9 +1225,7 @@ This does not delete the repository, it only removes the repository from the tea
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `id` | `number` | id of the team |
-| `org` | `string` | organization that owns the repo to remove |
-| `repo` | `string` | name of the repo to remove |
+| `requestParameters` | [`OrganizationApiOrgRemoveTeamRepositoryRequest`](../interfaces/OrganizationApiOrgRemoveTeamRepositoryRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1255,13 +1234,13 @@ This does not delete the repository, it only removes the repository from the tea
 
 #### Defined in
 
-[apis/organization-api.ts:4130](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L4130)
+[apis/organization-api.ts:5155](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/organization-api.ts#L5155)
 
 ___
 
 ### <a id="teamsearch" name="teamsearch"></a> teamSearch
 
-▸ **teamSearch**(`org`, `q?`, `includeDesc?`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`TeamSearch200Response`](../interfaces/TeamSearch200Response.md)\>\>
+▸ **teamSearch**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`TeamSearch200Response`](../interfaces/TeamSearch200Response.md)\>\>
 
 **`summary`** Search for teams within an organization
 
@@ -1273,11 +1252,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `org` | `string` | name of the organization |
-| `q?` | `string` | - |
-| `includeDesc?` | `boolean` | - |
-| `page?` | `number` | - |
-| `limit?` | `number` | - |
+| `requestParameters` | [`OrganizationApiTeamSearchRequest`](../interfaces/OrganizationApiTeamSearchRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -1286,4 +1261,4 @@ ___
 
 #### Defined in
 
-[apis/organization-api.ts:4146](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L4146)
+[apis/organization-api.ts:5167](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/organization-api.ts#L5167)

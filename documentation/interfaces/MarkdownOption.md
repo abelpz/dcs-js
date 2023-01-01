@@ -29,7 +29,7 @@ Context to render  in: body
 
 #### Defined in
 
-[models/markdown-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/markdown-option.ts#L28)
+[models/markdown-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/markdown-option.ts#L28)
 
 ___
 
@@ -43,7 +43,7 @@ Mode to render  in: body
 
 #### Defined in
 
-[models/markdown-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/markdown-option.ts#L34)
+[models/markdown-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/markdown-option.ts#L34)
 
 ___
 
@@ -57,7 +57,7 @@ Text markdown to render  in: body
 
 #### Defined in
 
-[models/markdown-option.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/markdown-option.ts#L40)
+[models/markdown-option.ts:40](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/markdown-option.ts#L40)
 
 ___
 
@@ -71,4 +71,4 @@ Is it a wiki page ?  in: body
 
 #### Defined in
 
-[models/markdown-option.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/markdown-option.ts#L46)
+[models/markdown-option.ts:46](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/markdown-option.ts#L46)

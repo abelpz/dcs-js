@@ -30,7 +30,7 @@ NotificationThread expose Notification on API
 
 #### Defined in
 
-[models/notification-thread.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/notification-thread.ts#L34)
+[models/notification-thread.ts:34](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/notification-thread.ts#L34)
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 #### Defined in
 
-[models/notification-thread.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/notification-thread.ts#L40)
+[models/notification-thread.ts:40](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/notification-thread.ts#L40)
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 #### Defined in
 
-[models/notification-thread.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/notification-thread.ts#L46)
+[models/notification-thread.ts:46](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/notification-thread.ts#L46)
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 #### Defined in
 
-[models/notification-thread.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/notification-thread.ts#L52)
+[models/notification-thread.ts:52](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/notification-thread.ts#L52)
 
 ___
 
@@ -78,7 +78,7 @@ ___
 
 #### Defined in
 
-[models/notification-thread.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/notification-thread.ts#L58)
+[models/notification-thread.ts:58](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/notification-thread.ts#L58)
 
 ___
 
@@ -90,7 +90,7 @@ ___
 
 #### Defined in
 
-[models/notification-thread.ts:64](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/notification-thread.ts#L64)
+[models/notification-thread.ts:64](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/notification-thread.ts#L64)
 
 ___
 
@@ -102,4 +102,4 @@ ___
 
 #### Defined in
 
-[models/notification-thread.ts:70](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/notification-thread.ts#L70)
+[models/notification-thread.ts:70](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/notification-thread.ts#L70)

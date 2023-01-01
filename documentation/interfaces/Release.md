@@ -38,7 +38,7 @@ Release represents a repository release
 
 #### Defined in
 
-[models/release.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/release.ts#L34)
+[models/release.ts:34](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/release.ts#L34)
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 #### Defined in
 
-[models/release.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/release.ts#L40)
+[models/release.ts:40](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/release.ts#L40)
 
 ___
 
@@ -62,7 +62,7 @@ ___
 
 #### Defined in
 
-[models/release.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/release.ts#L46)
+[models/release.ts:46](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/release.ts#L46)
 
 ___
 
@@ -74,7 +74,7 @@ ___
 
 #### Defined in
 
-[models/release.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/release.ts#L52)
+[models/release.ts:52](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/release.ts#L52)
 
 ___
 
@@ -86,7 +86,7 @@ ___
 
 #### Defined in
 
-[models/release.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/release.ts#L58)
+[models/release.ts:58](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/release.ts#L58)
 
 ___
 
@@ -98,7 +98,7 @@ ___
 
 #### Defined in
 
-[models/release.ts:64](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/release.ts#L64)
+[models/release.ts:64](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/release.ts#L64)
 
 ___
 
@@ -110,7 +110,7 @@ ___
 
 #### Defined in
 
-[models/release.ts:70](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/release.ts#L70)
+[models/release.ts:70](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/release.ts#L70)
 
 ___
 
@@ -122,7 +122,7 @@ ___
 
 #### Defined in
 
-[models/release.ts:76](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/release.ts#L76)
+[models/release.ts:76](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/release.ts#L76)
 
 ___
 
@@ -134,7 +134,7 @@ ___
 
 #### Defined in
 
-[models/release.ts:82](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/release.ts#L82)
+[models/release.ts:82](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/release.ts#L82)
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-[models/release.ts:88](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/release.ts#L88)
+[models/release.ts:88](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/release.ts#L88)
 
 ___
 
@@ -158,7 +158,7 @@ ___
 
 #### Defined in
 
-[models/release.ts:94](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/release.ts#L94)
+[models/release.ts:94](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/release.ts#L94)
 
 ___
 
@@ -170,7 +170,7 @@ ___
 
 #### Defined in
 
-[models/release.ts:100](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/release.ts#L100)
+[models/release.ts:100](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/release.ts#L100)
 
 ___
 
@@ -182,7 +182,7 @@ ___
 
 #### Defined in
 
-[models/release.ts:106](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/release.ts#L106)
+[models/release.ts:106](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/release.ts#L106)
 
 ___
 
@@ -194,7 +194,7 @@ ___
 
 #### Defined in
 
-[models/release.ts:112](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/release.ts#L112)
+[models/release.ts:112](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/release.ts#L112)
 
 ___
 
@@ -206,4 +206,4 @@ ___
 
 #### Defined in
 
-[models/release.ts:118](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/release.ts#L118)
+[models/release.ts:118](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/release.ts#L118)

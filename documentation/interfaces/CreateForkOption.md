@@ -27,7 +27,7 @@ name of the forked repository
 
 #### Defined in
 
-[models/create-fork-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-fork-option.ts#L28)
+[models/create-fork-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/create-fork-option.ts#L28)
 
 ___
 
@@ -41,4 +41,4 @@ organization name, if forking into an organization
 
 #### Defined in
 
-[models/create-fork-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-fork-option.ts#L34)
+[models/create-fork-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/create-fork-option.ts#L34)

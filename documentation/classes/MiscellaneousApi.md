@@ -52,7 +52,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[base.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/base.ts#L52)
+[base.ts:52](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/base.ts#L52)
 
 ## Properties
 
@@ -86,7 +86,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[base.ts:50](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/base.ts#L50)
+[base.ts:50](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/base.ts#L50)
 
 ## Methods
 
@@ -112,7 +112,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[apis/miscellaneous-api.ts:441](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/miscellaneous-api.ts#L441)
+[apis/miscellaneous-api.ts:469](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/miscellaneous-api.ts#L469)
 
 ___
 
@@ -138,7 +138,7 @@ ___
 
 #### Defined in
 
-[apis/miscellaneous-api.ts:452](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/miscellaneous-api.ts#L452)
+[apis/miscellaneous-api.ts:480](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/miscellaneous-api.ts#L480)
 
 ___
 
@@ -164,13 +164,13 @@ ___
 
 #### Defined in
 
-[apis/miscellaneous-api.ts:463](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/miscellaneous-api.ts#L463)
+[apis/miscellaneous-api.ts:491](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/miscellaneous-api.ts#L491)
 
 ___
 
 ### <a id="rendermarkdown" name="rendermarkdown"></a> renderMarkdown
 
-▸ **renderMarkdown**(`body?`, `options?`): `Promise`<`AxiosResponse`<`string`\>\>
+▸ **renderMarkdown**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<`string`\>\>
 
 **`summary`** Render a markdown document as HTML
 
@@ -180,10 +180,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `body?` | [`MarkdownOption`](../interfaces/MarkdownOption.md) |
-| `options?` | `AxiosRequestConfig` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `requestParameters` | [`MiscellaneousApiRenderMarkdownRequest`](../interfaces/MiscellaneousApiRenderMarkdownRequest.md) | Request parameters. |
+| `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
 
@@ -191,13 +191,13 @@ ___
 
 #### Defined in
 
-[apis/miscellaneous-api.ts:475](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/miscellaneous-api.ts#L475)
+[apis/miscellaneous-api.ts:503](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/miscellaneous-api.ts#L503)
 
 ___
 
 ### <a id="rendermarkdownraw" name="rendermarkdownraw"></a> renderMarkdownRaw
 
-▸ **renderMarkdownRaw**(`body`, `options?`): `Promise`<`AxiosResponse`<`string`\>\>
+▸ **renderMarkdownRaw**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`string`\>\>
 
 **`summary`** Render raw markdown as HTML
 
@@ -209,7 +209,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `body` | `string` | Request body to render |
+| `requestParameters` | [`MiscellaneousApiRenderMarkdownRawRequest`](../interfaces/MiscellaneousApiRenderMarkdownRawRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -218,4 +218,4 @@ ___
 
 #### Defined in
 
-[apis/miscellaneous-api.ts:487](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/miscellaneous-api.ts#L487)
+[apis/miscellaneous-api.ts:515](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/miscellaneous-api.ts#L515)

@@ -30,7 +30,7 @@ CatalogStage a repo\'s catalog stage metadata
 
 #### Defined in
 
-[models/catalog-stage.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/catalog-stage.ts#L28)
+[models/catalog-stage.ts:28](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/catalog-stage.ts#L28)
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 #### Defined in
 
-[models/catalog-stage.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/catalog-stage.ts#L34)
+[models/catalog-stage.ts:34](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/catalog-stage.ts#L34)
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 #### Defined in
 
-[models/catalog-stage.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/catalog-stage.ts#L40)
+[models/catalog-stage.ts:40](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/catalog-stage.ts#L40)
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 #### Defined in
 
-[models/catalog-stage.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/catalog-stage.ts#L46)
+[models/catalog-stage.ts:46](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/catalog-stage.ts#L46)
 
 ___
 
@@ -78,7 +78,7 @@ ___
 
 #### Defined in
 
-[models/catalog-stage.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/catalog-stage.ts#L52)
+[models/catalog-stage.ts:52](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/catalog-stage.ts#L52)
 
 ___
 
@@ -90,7 +90,7 @@ ___
 
 #### Defined in
 
-[models/catalog-stage.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/catalog-stage.ts#L58)
+[models/catalog-stage.ts:58](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/catalog-stage.ts#L58)
 
 ___
 
@@ -102,4 +102,4 @@ ___
 
 #### Defined in
 
-[models/catalog-stage.ts:64](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/catalog-stage.ts#L64)
+[models/catalog-stage.ts:64](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/catalog-stage.ts#L64)

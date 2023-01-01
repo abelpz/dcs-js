@@ -7,11 +7,13 @@
 ### Classes
 
 - [AdminApi](classes/AdminApi.md)
+- [CatalogApi](classes/CatalogApi.md)
 - [Configuration](classes/Configuration.md)
 - [IssueApi](classes/IssueApi.md)
 - [MiscellaneousApi](classes/MiscellaneousApi.md)
 - [NotificationApi](classes/NotificationApi.md)
 - [OrganizationApi](classes/OrganizationApi.md)
+- [PackageApi](classes/PackageApi.md)
 - [RepositoryApi](classes/RepositoryApi.md)
 - [SettingsApi](classes/SettingsApi.md)
 - [UserApi](classes/UserApi.md)
@@ -22,19 +24,43 @@
 - [AccessToken](interfaces/AccessToken.md)
 - [AddCollaboratorOption](interfaces/AddCollaboratorOption.md)
 - [AddTimeOption](interfaces/AddTimeOption.md)
+- [AdminApiAdminAdoptRepositoryRequest](interfaces/AdminApiAdminAdoptRepositoryRequest.md)
+- [AdminApiAdminCreateOrgRequest](interfaces/AdminApiAdminCreateOrgRequest.md)
+- [AdminApiAdminCreatePublicKeyRequest](interfaces/AdminApiAdminCreatePublicKeyRequest.md)
+- [AdminApiAdminCreateRepoRequest](interfaces/AdminApiAdminCreateRepoRequest.md)
+- [AdminApiAdminCreateUserRequest](interfaces/AdminApiAdminCreateUserRequest.md)
+- [AdminApiAdminCronListRequest](interfaces/AdminApiAdminCronListRequest.md)
+- [AdminApiAdminCronRunRequest](interfaces/AdminApiAdminCronRunRequest.md)
+- [AdminApiAdminDeleteUnadoptedRepositoryRequest](interfaces/AdminApiAdminDeleteUnadoptedRepositoryRequest.md)
+- [AdminApiAdminDeleteUserPublicKeyRequest](interfaces/AdminApiAdminDeleteUserPublicKeyRequest.md)
+- [AdminApiAdminDeleteUserRequest](interfaces/AdminApiAdminDeleteUserRequest.md)
+- [AdminApiAdminEditUserRequest](interfaces/AdminApiAdminEditUserRequest.md)
+- [AdminApiAdminGetAllOrgsRequest](interfaces/AdminApiAdminGetAllOrgsRequest.md)
+- [AdminApiAdminGetAllUsersRequest](interfaces/AdminApiAdminGetAllUsersRequest.md)
+- [AdminApiAdminUnadoptedListRequest](interfaces/AdminApiAdminUnadoptedListRequest.md)
 - [AnnotatedTag](interfaces/AnnotatedTag.md)
 - [AnnotatedTagObject](interfaces/AnnotatedTagObject.md)
 - [Attachment](interfaces/Attachment.md)
 - [Branch](interfaces/Branch.md)
 - [BranchProtection](interfaces/BranchProtection.md)
+- [CatalogApiCatalogGetEntryRequest](interfaces/CatalogApiCatalogGetEntryRequest.md)
+- [CatalogApiCatalogGetMetadataRequest](interfaces/CatalogApiCatalogGetMetadataRequest.md)
+- [CatalogApiCatalogSearchOwnerRequest](interfaces/CatalogApiCatalogSearchOwnerRequest.md)
+- [CatalogApiCatalogSearchRepoRequest](interfaces/CatalogApiCatalogSearchRepoRequest.md)
+- [CatalogApiCatalogSearchRequest](interfaces/CatalogApiCatalogSearchRequest.md)
+- [CatalogEntry](interfaces/CatalogEntry.md)
+- [CatalogSearchResults](interfaces/CatalogSearchResults.md)
 - [CatalogStage](interfaces/CatalogStage.md)
 - [CatalogStages](interfaces/CatalogStages.md)
+- [CatalogVersionEndpoints](interfaces/CatalogVersionEndpoints.md)
+- [CatalogVersionEndpointsResponse](interfaces/CatalogVersionEndpointsResponse.md)
 - [CombinedStatus](interfaces/CombinedStatus.md)
 - [Comment](interfaces/Comment.md)
 - [Commit](interfaces/Commit.md)
 - [CommitAffectedFiles](interfaces/CommitAffectedFiles.md)
 - [CommitDateOptions](interfaces/CommitDateOptions.md)
 - [CommitMeta](interfaces/CommitMeta.md)
+- [CommitStats](interfaces/CommitStats.md)
 - [CommitStatus](interfaces/CommitStatus.md)
 - [CommitUser](interfaces/CommitUser.md)
 - [ConfigurationParameters](interfaces/ConfigurationParameters.md)
@@ -46,6 +72,7 @@
 - [CreateFileOptions](interfaces/CreateFileOptions.md)
 - [CreateForkOption](interfaces/CreateForkOption.md)
 - [CreateGPGKeyOption](interfaces/CreateGPGKeyOption.md)
+- [CreateGitRefOption](interfaces/CreateGitRefOption.md)
 - [CreateHookOption](interfaces/CreateHookOption.md)
 - [CreateIssueCommentOption](interfaces/CreateIssueCommentOption.md)
 - [CreateIssueOption](interfaces/CreateIssueOption.md)
@@ -106,8 +133,57 @@
 - [GitTreeResponse](interfaces/GitTreeResponse.md)
 - [Hook](interfaces/Hook.md)
 - [Identity](interfaces/Identity.md)
+- [Ingredient](interfaces/Ingredient.md)
 - [InternalTracker](interfaces/InternalTracker.md)
 - [Issue](interfaces/Issue.md)
+- [IssueApiIssueAddLabelRequest](interfaces/IssueApiIssueAddLabelRequest.md)
+- [IssueApiIssueAddSubscriptionRequest](interfaces/IssueApiIssueAddSubscriptionRequest.md)
+- [IssueApiIssueAddTimeRequest](interfaces/IssueApiIssueAddTimeRequest.md)
+- [IssueApiIssueCheckSubscriptionRequest](interfaces/IssueApiIssueCheckSubscriptionRequest.md)
+- [IssueApiIssueClearLabelsRequest](interfaces/IssueApiIssueClearLabelsRequest.md)
+- [IssueApiIssueCreateCommentRequest](interfaces/IssueApiIssueCreateCommentRequest.md)
+- [IssueApiIssueCreateIssueRequest](interfaces/IssueApiIssueCreateIssueRequest.md)
+- [IssueApiIssueCreateLabelRequest](interfaces/IssueApiIssueCreateLabelRequest.md)
+- [IssueApiIssueCreateMilestoneRequest](interfaces/IssueApiIssueCreateMilestoneRequest.md)
+- [IssueApiIssueDeleteCommentDeprecatedRequest](interfaces/IssueApiIssueDeleteCommentDeprecatedRequest.md)
+- [IssueApiIssueDeleteCommentReactionRequest](interfaces/IssueApiIssueDeleteCommentReactionRequest.md)
+- [IssueApiIssueDeleteCommentRequest](interfaces/IssueApiIssueDeleteCommentRequest.md)
+- [IssueApiIssueDeleteIssueReactionRequest](interfaces/IssueApiIssueDeleteIssueReactionRequest.md)
+- [IssueApiIssueDeleteLabelRequest](interfaces/IssueApiIssueDeleteLabelRequest.md)
+- [IssueApiIssueDeleteMilestoneRequest](interfaces/IssueApiIssueDeleteMilestoneRequest.md)
+- [IssueApiIssueDeleteRequest](interfaces/IssueApiIssueDeleteRequest.md)
+- [IssueApiIssueDeleteStopWatchRequest](interfaces/IssueApiIssueDeleteStopWatchRequest.md)
+- [IssueApiIssueDeleteSubscriptionRequest](interfaces/IssueApiIssueDeleteSubscriptionRequest.md)
+- [IssueApiIssueDeleteTimeRequest](interfaces/IssueApiIssueDeleteTimeRequest.md)
+- [IssueApiIssueEditCommentDeprecatedRequest](interfaces/IssueApiIssueEditCommentDeprecatedRequest.md)
+- [IssueApiIssueEditCommentRequest](interfaces/IssueApiIssueEditCommentRequest.md)
+- [IssueApiIssueEditIssueDeadlineRequest](interfaces/IssueApiIssueEditIssueDeadlineRequest.md)
+- [IssueApiIssueEditIssueRequest](interfaces/IssueApiIssueEditIssueRequest.md)
+- [IssueApiIssueEditLabelRequest](interfaces/IssueApiIssueEditLabelRequest.md)
+- [IssueApiIssueEditMilestoneRequest](interfaces/IssueApiIssueEditMilestoneRequest.md)
+- [IssueApiIssueGetCommentReactionsRequest](interfaces/IssueApiIssueGetCommentReactionsRequest.md)
+- [IssueApiIssueGetCommentRequest](interfaces/IssueApiIssueGetCommentRequest.md)
+- [IssueApiIssueGetCommentsAndTimelineRequest](interfaces/IssueApiIssueGetCommentsAndTimelineRequest.md)
+- [IssueApiIssueGetCommentsRequest](interfaces/IssueApiIssueGetCommentsRequest.md)
+- [IssueApiIssueGetIssueReactionsRequest](interfaces/IssueApiIssueGetIssueReactionsRequest.md)
+- [IssueApiIssueGetIssueRequest](interfaces/IssueApiIssueGetIssueRequest.md)
+- [IssueApiIssueGetLabelRequest](interfaces/IssueApiIssueGetLabelRequest.md)
+- [IssueApiIssueGetLabelsRequest](interfaces/IssueApiIssueGetLabelsRequest.md)
+- [IssueApiIssueGetMilestoneRequest](interfaces/IssueApiIssueGetMilestoneRequest.md)
+- [IssueApiIssueGetMilestonesListRequest](interfaces/IssueApiIssueGetMilestonesListRequest.md)
+- [IssueApiIssueGetRepoCommentsRequest](interfaces/IssueApiIssueGetRepoCommentsRequest.md)
+- [IssueApiIssueListIssuesRequest](interfaces/IssueApiIssueListIssuesRequest.md)
+- [IssueApiIssueListLabelsRequest](interfaces/IssueApiIssueListLabelsRequest.md)
+- [IssueApiIssuePostCommentReactionRequest](interfaces/IssueApiIssuePostCommentReactionRequest.md)
+- [IssueApiIssuePostIssueReactionRequest](interfaces/IssueApiIssuePostIssueReactionRequest.md)
+- [IssueApiIssueRemoveLabelRequest](interfaces/IssueApiIssueRemoveLabelRequest.md)
+- [IssueApiIssueReplaceLabelsRequest](interfaces/IssueApiIssueReplaceLabelsRequest.md)
+- [IssueApiIssueResetTimeRequest](interfaces/IssueApiIssueResetTimeRequest.md)
+- [IssueApiIssueSearchIssuesRequest](interfaces/IssueApiIssueSearchIssuesRequest.md)
+- [IssueApiIssueStartStopWatchRequest](interfaces/IssueApiIssueStartStopWatchRequest.md)
+- [IssueApiIssueStopStopWatchRequest](interfaces/IssueApiIssueStopStopWatchRequest.md)
+- [IssueApiIssueSubscriptionsRequest](interfaces/IssueApiIssueSubscriptionsRequest.md)
+- [IssueApiIssueTrackedTimesRequest](interfaces/IssueApiIssueTrackedTimesRequest.md)
 - [IssueDeadline](interfaces/IssueDeadline.md)
 - [IssueLabelsOption](interfaces/IssueLabelsOption.md)
 - [IssueTemplate](interfaces/IssueTemplate.md)
@@ -117,19 +193,75 @@
 - [MigrateRepoForm](interfaces/MigrateRepoForm.md)
 - [MigrateRepoOptions](interfaces/MigrateRepoOptions.md)
 - [Milestone](interfaces/Milestone.md)
+- [MiscellaneousApiRenderMarkdownRawRequest](interfaces/MiscellaneousApiRenderMarkdownRawRequest.md)
+- [MiscellaneousApiRenderMarkdownRequest](interfaces/MiscellaneousApiRenderMarkdownRequest.md)
 - [NodeInfo](interfaces/NodeInfo.md)
 - [NodeInfoServices](interfaces/NodeInfoServices.md)
 - [NodeInfoSoftware](interfaces/NodeInfoSoftware.md)
 - [NodeInfoUsage](interfaces/NodeInfoUsage.md)
 - [NodeInfoUsageUsers](interfaces/NodeInfoUsageUsers.md)
 - [Note](interfaces/Note.md)
+- [NotificationApiNotifyGetListRequest](interfaces/NotificationApiNotifyGetListRequest.md)
+- [NotificationApiNotifyGetRepoListRequest](interfaces/NotificationApiNotifyGetRepoListRequest.md)
+- [NotificationApiNotifyGetThreadRequest](interfaces/NotificationApiNotifyGetThreadRequest.md)
+- [NotificationApiNotifyReadListRequest](interfaces/NotificationApiNotifyReadListRequest.md)
+- [NotificationApiNotifyReadRepoListRequest](interfaces/NotificationApiNotifyReadRepoListRequest.md)
+- [NotificationApiNotifyReadThreadRequest](interfaces/NotificationApiNotifyReadThreadRequest.md)
 - [NotificationCount](interfaces/NotificationCount.md)
 - [NotificationSubject](interfaces/NotificationSubject.md)
 - [NotificationThread](interfaces/NotificationThread.md)
 - [OAuth2Application](interfaces/OAuth2Application.md)
 - [Organization](interfaces/Organization.md)
+- [OrganizationApiCreateOrgRepoDeprecatedRequest](interfaces/OrganizationApiCreateOrgRepoDeprecatedRequest.md)
+- [OrganizationApiCreateOrgRepoRequest](interfaces/OrganizationApiCreateOrgRepoRequest.md)
+- [OrganizationApiOrgAddTeamMemberRequest](interfaces/OrganizationApiOrgAddTeamMemberRequest.md)
+- [OrganizationApiOrgAddTeamRepositoryRequest](interfaces/OrganizationApiOrgAddTeamRepositoryRequest.md)
+- [OrganizationApiOrgConcealMemberRequest](interfaces/OrganizationApiOrgConcealMemberRequest.md)
+- [OrganizationApiOrgCreateHookRequest](interfaces/OrganizationApiOrgCreateHookRequest.md)
+- [OrganizationApiOrgCreateLabelRequest](interfaces/OrganizationApiOrgCreateLabelRequest.md)
+- [OrganizationApiOrgCreateRequest](interfaces/OrganizationApiOrgCreateRequest.md)
+- [OrganizationApiOrgCreateTeamRequest](interfaces/OrganizationApiOrgCreateTeamRequest.md)
+- [OrganizationApiOrgDeleteHookRequest](interfaces/OrganizationApiOrgDeleteHookRequest.md)
+- [OrganizationApiOrgDeleteLabelRequest](interfaces/OrganizationApiOrgDeleteLabelRequest.md)
+- [OrganizationApiOrgDeleteMemberRequest](interfaces/OrganizationApiOrgDeleteMemberRequest.md)
+- [OrganizationApiOrgDeleteRequest](interfaces/OrganizationApiOrgDeleteRequest.md)
+- [OrganizationApiOrgDeleteTeamRequest](interfaces/OrganizationApiOrgDeleteTeamRequest.md)
+- [OrganizationApiOrgEditHookRequest](interfaces/OrganizationApiOrgEditHookRequest.md)
+- [OrganizationApiOrgEditLabelRequest](interfaces/OrganizationApiOrgEditLabelRequest.md)
+- [OrganizationApiOrgEditRequest](interfaces/OrganizationApiOrgEditRequest.md)
+- [OrganizationApiOrgEditTeamRequest](interfaces/OrganizationApiOrgEditTeamRequest.md)
+- [OrganizationApiOrgGetAllRequest](interfaces/OrganizationApiOrgGetAllRequest.md)
+- [OrganizationApiOrgGetHookRequest](interfaces/OrganizationApiOrgGetHookRequest.md)
+- [OrganizationApiOrgGetLabelRequest](interfaces/OrganizationApiOrgGetLabelRequest.md)
+- [OrganizationApiOrgGetRequest](interfaces/OrganizationApiOrgGetRequest.md)
+- [OrganizationApiOrgGetTeamRequest](interfaces/OrganizationApiOrgGetTeamRequest.md)
+- [OrganizationApiOrgGetUserPermissionsRequest](interfaces/OrganizationApiOrgGetUserPermissionsRequest.md)
+- [OrganizationApiOrgIsMemberRequest](interfaces/OrganizationApiOrgIsMemberRequest.md)
+- [OrganizationApiOrgIsPublicMemberRequest](interfaces/OrganizationApiOrgIsPublicMemberRequest.md)
+- [OrganizationApiOrgListCurrentUserOrgsRequest](interfaces/OrganizationApiOrgListCurrentUserOrgsRequest.md)
+- [OrganizationApiOrgListHooksRequest](interfaces/OrganizationApiOrgListHooksRequest.md)
+- [OrganizationApiOrgListLabelsRequest](interfaces/OrganizationApiOrgListLabelsRequest.md)
+- [OrganizationApiOrgListMembersRequest](interfaces/OrganizationApiOrgListMembersRequest.md)
+- [OrganizationApiOrgListPublicMembersRequest](interfaces/OrganizationApiOrgListPublicMembersRequest.md)
+- [OrganizationApiOrgListReposRequest](interfaces/OrganizationApiOrgListReposRequest.md)
+- [OrganizationApiOrgListTeamMemberRequest](interfaces/OrganizationApiOrgListTeamMemberRequest.md)
+- [OrganizationApiOrgListTeamMembersRequest](interfaces/OrganizationApiOrgListTeamMembersRequest.md)
+- [OrganizationApiOrgListTeamRepoRequest](interfaces/OrganizationApiOrgListTeamRepoRequest.md)
+- [OrganizationApiOrgListTeamReposRequest](interfaces/OrganizationApiOrgListTeamReposRequest.md)
+- [OrganizationApiOrgListTeamsRequest](interfaces/OrganizationApiOrgListTeamsRequest.md)
+- [OrganizationApiOrgListUserOrgsRequest](interfaces/OrganizationApiOrgListUserOrgsRequest.md)
+- [OrganizationApiOrgPublicizeMemberRequest](interfaces/OrganizationApiOrgPublicizeMemberRequest.md)
+- [OrganizationApiOrgRemoveTeamMemberRequest](interfaces/OrganizationApiOrgRemoveTeamMemberRequest.md)
+- [OrganizationApiOrgRemoveTeamRepositoryRequest](interfaces/OrganizationApiOrgRemoveTeamRepositoryRequest.md)
+- [OrganizationApiTeamSearchRequest](interfaces/OrganizationApiTeamSearchRequest.md)
 - [OrganizationPermissions](interfaces/OrganizationPermissions.md)
 - [PRBranchInfo](interfaces/PRBranchInfo.md)
+- [Package](interfaces/Package.md)
+- [PackageApiDeletePackageRequest](interfaces/PackageApiDeletePackageRequest.md)
+- [PackageApiGetPackageRequest](interfaces/PackageApiGetPackageRequest.md)
+- [PackageApiListPackageFilesRequest](interfaces/PackageApiListPackageFilesRequest.md)
+- [PackageApiListPackagesRequest](interfaces/PackageApiListPackagesRequest.md)
+- [PackageFile](interfaces/PackageFile.md)
 - [PayloadCommit](interfaces/PayloadCommit.md)
 - [PayloadCommitVerification](interfaces/PayloadCommitVerification.md)
 - [PayloadUser](interfaces/PayloadUser.md)
@@ -143,10 +275,142 @@
 - [Reaction](interfaces/Reaction.md)
 - [Reference](interfaces/Reference.md)
 - [Release](interfaces/Release.md)
+- [RepoCollaboratorPermission](interfaces/RepoCollaboratorPermission.md)
 - [RepoCommit](interfaces/RepoCommit.md)
 - [RepoTopicOptions](interfaces/RepoTopicOptions.md)
 - [RepoTransfer](interfaces/RepoTransfer.md)
 - [Repository](interfaces/Repository.md)
+- [RepositoryApiAcceptRepoTransferRequest](interfaces/RepositoryApiAcceptRepoTransferRequest.md)
+- [RepositoryApiCreateCurrentUserRepoRequest](interfaces/RepositoryApiCreateCurrentUserRepoRequest.md)
+- [RepositoryApiCreateForkRequest](interfaces/RepositoryApiCreateForkRequest.md)
+- [RepositoryApiGenerateRepoRequest](interfaces/RepositoryApiGenerateRepoRequest.md)
+- [RepositoryApiGetAnnotatedTagRequest](interfaces/RepositoryApiGetAnnotatedTagRequest.md)
+- [RepositoryApiGetBlobRequest](interfaces/RepositoryApiGetBlobRequest.md)
+- [RepositoryApiGetTreeRequest](interfaces/RepositoryApiGetTreeRequest.md)
+- [RepositoryApiListForksRequest](interfaces/RepositoryApiListForksRequest.md)
+- [RepositoryApiRejectRepoTransferRequest](interfaces/RepositoryApiRejectRepoTransferRequest.md)
+- [RepositoryApiRepoAddCollaboratorRequest](interfaces/RepositoryApiRepoAddCollaboratorRequest.md)
+- [RepositoryApiRepoAddTeamRequest](interfaces/RepositoryApiRepoAddTeamRequest.md)
+- [RepositoryApiRepoAddTopicRequest](interfaces/RepositoryApiRepoAddTopicRequest.md)
+- [RepositoryApiRepoApplyDiffPatchRequest](interfaces/RepositoryApiRepoApplyDiffPatchRequest.md)
+- [RepositoryApiRepoCancelScheduledAutoMergeRequest](interfaces/RepositoryApiRepoCancelScheduledAutoMergeRequest.md)
+- [RepositoryApiRepoCheckCollaboratorRequest](interfaces/RepositoryApiRepoCheckCollaboratorRequest.md)
+- [RepositoryApiRepoCheckTeamRequest](interfaces/RepositoryApiRepoCheckTeamRequest.md)
+- [RepositoryApiRepoCreateBranchProtectionRequest](interfaces/RepositoryApiRepoCreateBranchProtectionRequest.md)
+- [RepositoryApiRepoCreateBranchRequest](interfaces/RepositoryApiRepoCreateBranchRequest.md)
+- [RepositoryApiRepoCreateFileRequest](interfaces/RepositoryApiRepoCreateFileRequest.md)
+- [RepositoryApiRepoCreateGitRefRequest](interfaces/RepositoryApiRepoCreateGitRefRequest.md)
+- [RepositoryApiRepoCreateHookRequest](interfaces/RepositoryApiRepoCreateHookRequest.md)
+- [RepositoryApiRepoCreateKeyRequest](interfaces/RepositoryApiRepoCreateKeyRequest.md)
+- [RepositoryApiRepoCreatePullRequestRequest](interfaces/RepositoryApiRepoCreatePullRequestRequest.md)
+- [RepositoryApiRepoCreatePullReviewRequest](interfaces/RepositoryApiRepoCreatePullReviewRequest.md)
+- [RepositoryApiRepoCreatePullReviewRequestsRequest](interfaces/RepositoryApiRepoCreatePullReviewRequestsRequest.md)
+- [RepositoryApiRepoCreateReleaseAttachmentRequest](interfaces/RepositoryApiRepoCreateReleaseAttachmentRequest.md)
+- [RepositoryApiRepoCreateReleaseRequest](interfaces/RepositoryApiRepoCreateReleaseRequest.md)
+- [RepositoryApiRepoCreateStatusRequest](interfaces/RepositoryApiRepoCreateStatusRequest.md)
+- [RepositoryApiRepoCreateTagRequest](interfaces/RepositoryApiRepoCreateTagRequest.md)
+- [RepositoryApiRepoCreateWikiPageRequest](interfaces/RepositoryApiRepoCreateWikiPageRequest.md)
+- [RepositoryApiRepoDeleteBranchProtectionRequest](interfaces/RepositoryApiRepoDeleteBranchProtectionRequest.md)
+- [RepositoryApiRepoDeleteBranchRequest](interfaces/RepositoryApiRepoDeleteBranchRequest.md)
+- [RepositoryApiRepoDeleteCollaboratorRequest](interfaces/RepositoryApiRepoDeleteCollaboratorRequest.md)
+- [RepositoryApiRepoDeleteFileRequest](interfaces/RepositoryApiRepoDeleteFileRequest.md)
+- [RepositoryApiRepoDeleteGitHookRequest](interfaces/RepositoryApiRepoDeleteGitHookRequest.md)
+- [RepositoryApiRepoDeleteGitRefRequest](interfaces/RepositoryApiRepoDeleteGitRefRequest.md)
+- [RepositoryApiRepoDeleteHookRequest](interfaces/RepositoryApiRepoDeleteHookRequest.md)
+- [RepositoryApiRepoDeleteKeyRequest](interfaces/RepositoryApiRepoDeleteKeyRequest.md)
+- [RepositoryApiRepoDeletePullReviewRequest](interfaces/RepositoryApiRepoDeletePullReviewRequest.md)
+- [RepositoryApiRepoDeletePullReviewRequestsRequest](interfaces/RepositoryApiRepoDeletePullReviewRequestsRequest.md)
+- [RepositoryApiRepoDeleteReleaseAttachmentRequest](interfaces/RepositoryApiRepoDeleteReleaseAttachmentRequest.md)
+- [RepositoryApiRepoDeleteReleaseByTagRequest](interfaces/RepositoryApiRepoDeleteReleaseByTagRequest.md)
+- [RepositoryApiRepoDeleteReleaseRequest](interfaces/RepositoryApiRepoDeleteReleaseRequest.md)
+- [RepositoryApiRepoDeleteRequest](interfaces/RepositoryApiRepoDeleteRequest.md)
+- [RepositoryApiRepoDeleteTagRequest](interfaces/RepositoryApiRepoDeleteTagRequest.md)
+- [RepositoryApiRepoDeleteTeamRequest](interfaces/RepositoryApiRepoDeleteTeamRequest.md)
+- [RepositoryApiRepoDeleteTopicRequest](interfaces/RepositoryApiRepoDeleteTopicRequest.md)
+- [RepositoryApiRepoDeleteWikiPageRequest](interfaces/RepositoryApiRepoDeleteWikiPageRequest.md)
+- [RepositoryApiRepoDismissPullReviewRequest](interfaces/RepositoryApiRepoDismissPullReviewRequest.md)
+- [RepositoryApiRepoDownloadCommitDiffOrPatchRequest](interfaces/RepositoryApiRepoDownloadCommitDiffOrPatchRequest.md)
+- [RepositoryApiRepoDownloadPullDiffOrPatchRequest](interfaces/RepositoryApiRepoDownloadPullDiffOrPatchRequest.md)
+- [RepositoryApiRepoEditBranchProtectionRequest](interfaces/RepositoryApiRepoEditBranchProtectionRequest.md)
+- [RepositoryApiRepoEditGitHookRequest](interfaces/RepositoryApiRepoEditGitHookRequest.md)
+- [RepositoryApiRepoEditHookRequest](interfaces/RepositoryApiRepoEditHookRequest.md)
+- [RepositoryApiRepoEditPullRequestRequest](interfaces/RepositoryApiRepoEditPullRequestRequest.md)
+- [RepositoryApiRepoEditReleaseAttachmentRequest](interfaces/RepositoryApiRepoEditReleaseAttachmentRequest.md)
+- [RepositoryApiRepoEditReleaseRequest](interfaces/RepositoryApiRepoEditReleaseRequest.md)
+- [RepositoryApiRepoEditRequest](interfaces/RepositoryApiRepoEditRequest.md)
+- [RepositoryApiRepoEditWikiPageRequest](interfaces/RepositoryApiRepoEditWikiPageRequest.md)
+- [RepositoryApiRepoGetAllCommitsRequest](interfaces/RepositoryApiRepoGetAllCommitsRequest.md)
+- [RepositoryApiRepoGetArchiveRequest](interfaces/RepositoryApiRepoGetArchiveRequest.md)
+- [RepositoryApiRepoGetAssigneesRequest](interfaces/RepositoryApiRepoGetAssigneesRequest.md)
+- [RepositoryApiRepoGetBranchProtectionRequest](interfaces/RepositoryApiRepoGetBranchProtectionRequest.md)
+- [RepositoryApiRepoGetBranchRequest](interfaces/RepositoryApiRepoGetBranchRequest.md)
+- [RepositoryApiRepoGetByIDRequest](interfaces/RepositoryApiRepoGetByIDRequest.md)
+- [RepositoryApiRepoGetCombinedStatusByRefRequest](interfaces/RepositoryApiRepoGetCombinedStatusByRefRequest.md)
+- [RepositoryApiRepoGetContentsListRequest](interfaces/RepositoryApiRepoGetContentsListRequest.md)
+- [RepositoryApiRepoGetContentsRequest](interfaces/RepositoryApiRepoGetContentsRequest.md)
+- [RepositoryApiRepoGetEditorConfigRequest](interfaces/RepositoryApiRepoGetEditorConfigRequest.md)
+- [RepositoryApiRepoGetGitHookRequest](interfaces/RepositoryApiRepoGetGitHookRequest.md)
+- [RepositoryApiRepoGetHookRequest](interfaces/RepositoryApiRepoGetHookRequest.md)
+- [RepositoryApiRepoGetIssueTemplatesRequest](interfaces/RepositoryApiRepoGetIssueTemplatesRequest.md)
+- [RepositoryApiRepoGetKeyRequest](interfaces/RepositoryApiRepoGetKeyRequest.md)
+- [RepositoryApiRepoGetLanguagesRequest](interfaces/RepositoryApiRepoGetLanguagesRequest.md)
+- [RepositoryApiRepoGetNoteRequest](interfaces/RepositoryApiRepoGetNoteRequest.md)
+- [RepositoryApiRepoGetPullRequestCommitsRequest](interfaces/RepositoryApiRepoGetPullRequestCommitsRequest.md)
+- [RepositoryApiRepoGetPullRequestRequest](interfaces/RepositoryApiRepoGetPullRequestRequest.md)
+- [RepositoryApiRepoGetPullReviewCommentsRequest](interfaces/RepositoryApiRepoGetPullReviewCommentsRequest.md)
+- [RepositoryApiRepoGetPullReviewRequest](interfaces/RepositoryApiRepoGetPullReviewRequest.md)
+- [RepositoryApiRepoGetRawFileOrLFSRequest](interfaces/RepositoryApiRepoGetRawFileOrLFSRequest.md)
+- [RepositoryApiRepoGetRawFileRequest](interfaces/RepositoryApiRepoGetRawFileRequest.md)
+- [RepositoryApiRepoGetReleaseAttachmentRequest](interfaces/RepositoryApiRepoGetReleaseAttachmentRequest.md)
+- [RepositoryApiRepoGetReleaseByTagRequest](interfaces/RepositoryApiRepoGetReleaseByTagRequest.md)
+- [RepositoryApiRepoGetReleaseRequest](interfaces/RepositoryApiRepoGetReleaseRequest.md)
+- [RepositoryApiRepoGetRepoPermissionsRequest](interfaces/RepositoryApiRepoGetRepoPermissionsRequest.md)
+- [RepositoryApiRepoGetRequest](interfaces/RepositoryApiRepoGetRequest.md)
+- [RepositoryApiRepoGetReviewersRequest](interfaces/RepositoryApiRepoGetReviewersRequest.md)
+- [RepositoryApiRepoGetSingleCommitRequest](interfaces/RepositoryApiRepoGetSingleCommitRequest.md)
+- [RepositoryApiRepoGetTagRequest](interfaces/RepositoryApiRepoGetTagRequest.md)
+- [RepositoryApiRepoGetWikiPageRequest](interfaces/RepositoryApiRepoGetWikiPageRequest.md)
+- [RepositoryApiRepoGetWikiPageRevisionsRequest](interfaces/RepositoryApiRepoGetWikiPageRevisionsRequest.md)
+- [RepositoryApiRepoGetWikiPagesRequest](interfaces/RepositoryApiRepoGetWikiPagesRequest.md)
+- [RepositoryApiRepoListAllGitRefsRequest](interfaces/RepositoryApiRepoListAllGitRefsRequest.md)
+- [RepositoryApiRepoListBranchProtectionRequest](interfaces/RepositoryApiRepoListBranchProtectionRequest.md)
+- [RepositoryApiRepoListBranchesRequest](interfaces/RepositoryApiRepoListBranchesRequest.md)
+- [RepositoryApiRepoListCollaboratorsRequest](interfaces/RepositoryApiRepoListCollaboratorsRequest.md)
+- [RepositoryApiRepoListGitHooksRequest](interfaces/RepositoryApiRepoListGitHooksRequest.md)
+- [RepositoryApiRepoListGitRefsRequest](interfaces/RepositoryApiRepoListGitRefsRequest.md)
+- [RepositoryApiRepoListHooksRequest](interfaces/RepositoryApiRepoListHooksRequest.md)
+- [RepositoryApiRepoListKeysRequest](interfaces/RepositoryApiRepoListKeysRequest.md)
+- [RepositoryApiRepoListPullRequestsRequest](interfaces/RepositoryApiRepoListPullRequestsRequest.md)
+- [RepositoryApiRepoListPullReviewsRequest](interfaces/RepositoryApiRepoListPullReviewsRequest.md)
+- [RepositoryApiRepoListReleaseAttachmentsRequest](interfaces/RepositoryApiRepoListReleaseAttachmentsRequest.md)
+- [RepositoryApiRepoListReleasesRequest](interfaces/RepositoryApiRepoListReleasesRequest.md)
+- [RepositoryApiRepoListStargazersRequest](interfaces/RepositoryApiRepoListStargazersRequest.md)
+- [RepositoryApiRepoListStatusesByRefRequest](interfaces/RepositoryApiRepoListStatusesByRefRequest.md)
+- [RepositoryApiRepoListStatusesRequest](interfaces/RepositoryApiRepoListStatusesRequest.md)
+- [RepositoryApiRepoListSubscribersRequest](interfaces/RepositoryApiRepoListSubscribersRequest.md)
+- [RepositoryApiRepoListTagsRequest](interfaces/RepositoryApiRepoListTagsRequest.md)
+- [RepositoryApiRepoListTeamsRequest](interfaces/RepositoryApiRepoListTeamsRequest.md)
+- [RepositoryApiRepoListTopicsRequest](interfaces/RepositoryApiRepoListTopicsRequest.md)
+- [RepositoryApiRepoMergePullRequestRequest](interfaces/RepositoryApiRepoMergePullRequestRequest.md)
+- [RepositoryApiRepoMigrateRequest](interfaces/RepositoryApiRepoMigrateRequest.md)
+- [RepositoryApiRepoMirrorSyncRequest](interfaces/RepositoryApiRepoMirrorSyncRequest.md)
+- [RepositoryApiRepoPullRequestIsMergedRequest](interfaces/RepositoryApiRepoPullRequestIsMergedRequest.md)
+- [RepositoryApiRepoSearchRequest](interfaces/RepositoryApiRepoSearchRequest.md)
+- [RepositoryApiRepoSigningKeyRequest](interfaces/RepositoryApiRepoSigningKeyRequest.md)
+- [RepositoryApiRepoSubmitPullReviewRequest](interfaces/RepositoryApiRepoSubmitPullReviewRequest.md)
+- [RepositoryApiRepoTestHookRequest](interfaces/RepositoryApiRepoTestHookRequest.md)
+- [RepositoryApiRepoTrackedTimesRequest](interfaces/RepositoryApiRepoTrackedTimesRequest.md)
+- [RepositoryApiRepoTransferRequest](interfaces/RepositoryApiRepoTransferRequest.md)
+- [RepositoryApiRepoUnDismissPullReviewRequest](interfaces/RepositoryApiRepoUnDismissPullReviewRequest.md)
+- [RepositoryApiRepoUpdateFileRequest](interfaces/RepositoryApiRepoUpdateFileRequest.md)
+- [RepositoryApiRepoUpdateGitRefRequest](interfaces/RepositoryApiRepoUpdateGitRefRequest.md)
+- [RepositoryApiRepoUpdatePullRequestRequest](interfaces/RepositoryApiRepoUpdatePullRequestRequest.md)
+- [RepositoryApiRepoUpdateTopicsRequest](interfaces/RepositoryApiRepoUpdateTopicsRequest.md)
+- [RepositoryApiTopicSearchRequest](interfaces/RepositoryApiTopicSearchRequest.md)
+- [RepositoryApiUserCurrentCheckSubscriptionRequest](interfaces/RepositoryApiUserCurrentCheckSubscriptionRequest.md)
+- [RepositoryApiUserCurrentDeleteSubscriptionRequest](interfaces/RepositoryApiUserCurrentDeleteSubscriptionRequest.md)
+- [RepositoryApiUserCurrentPutSubscriptionRequest](interfaces/RepositoryApiUserCurrentPutSubscriptionRequest.md)
+- [RepositoryApiUserTrackedTimesRequest](interfaces/RepositoryApiUserTrackedTimesRequest.md)
 - [RepositoryMeta](interfaces/RepositoryMeta.md)
 - [SearchResults](interfaces/SearchResults.md)
 - [ServerVersion](interfaces/ServerVersion.md)
@@ -161,7 +425,53 @@
 - [TrackedTime](interfaces/TrackedTime.md)
 - [TransferRepoOption](interfaces/TransferRepoOption.md)
 - [UpdateFileOptions](interfaces/UpdateFileOptions.md)
+- [UpdateGitRefOption](interfaces/UpdateGitRefOption.md)
 - [User](interfaces/User.md)
+- [UserApiCreateCurrentUserRepoRequest](interfaces/UserApiCreateCurrentUserRepoRequest.md)
+- [UserApiUpdateUserSettingsRequest](interfaces/UserApiUpdateUserSettingsRequest.md)
+- [UserApiUserAddEmailRequest](interfaces/UserApiUserAddEmailRequest.md)
+- [UserApiUserCheckFollowingRequest](interfaces/UserApiUserCheckFollowingRequest.md)
+- [UserApiUserCreateOAuth2ApplicationRequest](interfaces/UserApiUserCreateOAuth2ApplicationRequest.md)
+- [UserApiUserCreateTokenRequest](interfaces/UserApiUserCreateTokenRequest.md)
+- [UserApiUserCurrentCheckFollowingRequest](interfaces/UserApiUserCurrentCheckFollowingRequest.md)
+- [UserApiUserCurrentCheckStarringRequest](interfaces/UserApiUserCurrentCheckStarringRequest.md)
+- [UserApiUserCurrentDeleteFollowRequest](interfaces/UserApiUserCurrentDeleteFollowRequest.md)
+- [UserApiUserCurrentDeleteGPGKeyRequest](interfaces/UserApiUserCurrentDeleteGPGKeyRequest.md)
+- [UserApiUserCurrentDeleteKeyRequest](interfaces/UserApiUserCurrentDeleteKeyRequest.md)
+- [UserApiUserCurrentDeleteStarRequest](interfaces/UserApiUserCurrentDeleteStarRequest.md)
+- [UserApiUserCurrentGetGPGKeyRequest](interfaces/UserApiUserCurrentGetGPGKeyRequest.md)
+- [UserApiUserCurrentGetKeyRequest](interfaces/UserApiUserCurrentGetKeyRequest.md)
+- [UserApiUserCurrentListFollowersRequest](interfaces/UserApiUserCurrentListFollowersRequest.md)
+- [UserApiUserCurrentListFollowingRequest](interfaces/UserApiUserCurrentListFollowingRequest.md)
+- [UserApiUserCurrentListGPGKeysRequest](interfaces/UserApiUserCurrentListGPGKeysRequest.md)
+- [UserApiUserCurrentListKeysRequest](interfaces/UserApiUserCurrentListKeysRequest.md)
+- [UserApiUserCurrentListReposRequest](interfaces/UserApiUserCurrentListReposRequest.md)
+- [UserApiUserCurrentListStarredRequest](interfaces/UserApiUserCurrentListStarredRequest.md)
+- [UserApiUserCurrentListSubscriptionsRequest](interfaces/UserApiUserCurrentListSubscriptionsRequest.md)
+- [UserApiUserCurrentPostGPGKeyRequest](interfaces/UserApiUserCurrentPostGPGKeyRequest.md)
+- [UserApiUserCurrentPostKeyRequest](interfaces/UserApiUserCurrentPostKeyRequest.md)
+- [UserApiUserCurrentPutFollowRequest](interfaces/UserApiUserCurrentPutFollowRequest.md)
+- [UserApiUserCurrentPutStarRequest](interfaces/UserApiUserCurrentPutStarRequest.md)
+- [UserApiUserCurrentTrackedTimesRequest](interfaces/UserApiUserCurrentTrackedTimesRequest.md)
+- [UserApiUserDeleteAccessTokenRequest](interfaces/UserApiUserDeleteAccessTokenRequest.md)
+- [UserApiUserDeleteEmailRequest](interfaces/UserApiUserDeleteEmailRequest.md)
+- [UserApiUserDeleteOAuth2ApplicationRequest](interfaces/UserApiUserDeleteOAuth2ApplicationRequest.md)
+- [UserApiUserGetHeatmapDataRequest](interfaces/UserApiUserGetHeatmapDataRequest.md)
+- [UserApiUserGetOAuth2ApplicationRequest](interfaces/UserApiUserGetOAuth2ApplicationRequest.md)
+- [UserApiUserGetOauth2ApplicationRequest](interfaces/UserApiUserGetOauth2ApplicationRequest.md)
+- [UserApiUserGetRequest](interfaces/UserApiUserGetRequest.md)
+- [UserApiUserGetStopWatchesRequest](interfaces/UserApiUserGetStopWatchesRequest.md)
+- [UserApiUserGetTokensRequest](interfaces/UserApiUserGetTokensRequest.md)
+- [UserApiUserListFollowersRequest](interfaces/UserApiUserListFollowersRequest.md)
+- [UserApiUserListFollowingRequest](interfaces/UserApiUserListFollowingRequest.md)
+- [UserApiUserListGPGKeysRequest](interfaces/UserApiUserListGPGKeysRequest.md)
+- [UserApiUserListKeysRequest](interfaces/UserApiUserListKeysRequest.md)
+- [UserApiUserListReposRequest](interfaces/UserApiUserListReposRequest.md)
+- [UserApiUserListStarredRequest](interfaces/UserApiUserListStarredRequest.md)
+- [UserApiUserListSubscriptionsRequest](interfaces/UserApiUserListSubscriptionsRequest.md)
+- [UserApiUserListTeamsRequest](interfaces/UserApiUserListTeamsRequest.md)
+- [UserApiUserSearchRequest](interfaces/UserApiUserSearchRequest.md)
+- [UserApiUserUpdateOAuth2ApplicationRequest](interfaces/UserApiUserUpdateOAuth2ApplicationRequest.md)
 - [UserHeatmapData](interfaces/UserHeatmapData.md)
 - [UserSearch200Response](interfaces/UserSearch200Response.md)
 - [UserSettings](interfaces/UserSettings.md)
@@ -203,6 +513,9 @@
 - [AdminApiAxiosParamCreator](modules.md#adminapiaxiosparamcreator)
 - [AdminApiFactory](modules.md#adminapifactory)
 - [AdminApiFp](modules.md#adminapifp)
+- [CatalogApiAxiosParamCreator](modules.md#catalogapiaxiosparamcreator)
+- [CatalogApiFactory](modules.md#catalogapifactory)
+- [CatalogApiFp](modules.md#catalogapifp)
 - [IssueApiAxiosParamCreator](modules.md#issueapiaxiosparamcreator)
 - [IssueApiFactory](modules.md#issueapifactory)
 - [IssueApiFp](modules.md#issueapifp)
@@ -215,6 +528,9 @@
 - [OrganizationApiAxiosParamCreator](modules.md#organizationapiaxiosparamcreator)
 - [OrganizationApiFactory](modules.md#organizationapifactory)
 - [OrganizationApiFp](modules.md#organizationapifp)
+- [PackageApiAxiosParamCreator](modules.md#packageapiaxiosparamcreator)
+- [PackageApiFactory](modules.md#packageapifactory)
+- [PackageApiFp](modules.md#packageapifp)
 - [RepositoryApiAxiosParamCreator](modules.md#repositoryapiaxiosparamcreator)
 - [RepositoryApiFactory](modules.md#repositoryapifactory)
 - [RepositoryApiFp](modules.md#repositoryapifp)
@@ -233,7 +549,7 @@
 
 #### Defined in
 
-[models/create-hook-option.ts:67](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-hook-option.ts#L67)
+[models/create-hook-option.ts:68](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/create-hook-option.ts#L68)
 
 ___
 
@@ -243,7 +559,7 @@ ___
 
 #### Defined in
 
-[models/create-milestone-option.ts:54](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-milestone-option.ts#L54)
+[models/create-milestone-option.ts:54](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/create-milestone-option.ts#L54)
 
 ___
 
@@ -253,7 +569,7 @@ ___
 
 #### Defined in
 
-[models/create-org-option.ts:73](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-org-option.ts#L73)
+[models/create-org-option.ts:73](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/create-org-option.ts#L73)
 
 ___
 
@@ -263,7 +579,7 @@ ___
 
 #### Defined in
 
-[models/create-repo-option.ts:98](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-repo-option.ts#L98)
+[models/create-repo-option.ts:98](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/create-repo-option.ts#L98)
 
 ___
 
@@ -273,7 +589,7 @@ ___
 
 #### Defined in
 
-[models/create-team-option.ts:73](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-team-option.ts#L73)
+[models/create-team-option.ts:73](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/create-team-option.ts#L73)
 
 ___
 
@@ -283,7 +599,7 @@ ___
 
 #### Defined in
 
-[models/edit-org-option.ts:67](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-org-option.ts#L67)
+[models/edit-org-option.ts:67](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/edit-org-option.ts#L67)
 
 ___
 
@@ -293,7 +609,7 @@ ___
 
 #### Defined in
 
-[models/edit-team-option.ts:73](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-team-option.ts#L73)
+[models/edit-team-option.ts:73](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/edit-team-option.ts#L73)
 
 ___
 
@@ -303,7 +619,7 @@ ___
 
 #### Defined in
 
-[models/merge-pull-request-option.ts:75](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/merge-pull-request-option.ts#L75)
+[models/merge-pull-request-option.ts:81](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/merge-pull-request-option.ts#L81)
 
 ___
 
@@ -313,7 +629,7 @@ ___
 
 #### Defined in
 
-[models/migrate-repo-options.ts:152](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/migrate-repo-options.ts#L152)
+[models/migrate-repo-options.ts:152](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/migrate-repo-options.ts#L152)
 
 ___
 
@@ -323,7 +639,7 @@ ___
 
 #### Defined in
 
-[models/team.ts:90](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/team.ts#L90)
+[models/team.ts:90](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/team.ts#L90)
 
 ## Variables
 
@@ -341,13 +657,14 @@ ___
 | `Gitea` | ``"gitea"`` |
 | `Gogs` | ``"gogs"`` |
 | `Msteams` | ``"msteams"`` |
+| `Packagist` | ``"packagist"`` |
 | `Slack` | ``"slack"`` |
 | `Telegram` | ``"telegram"`` |
 | `Wechatwork` | ``"wechatwork"`` |
 
 #### Defined in
 
-[models/create-hook-option.ts:55](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-hook-option.ts#L55)
+[models/create-hook-option.ts:55](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/create-hook-option.ts#L55)
 
 ___
 
@@ -364,7 +681,7 @@ ___
 
 #### Defined in
 
-[models/create-milestone-option.ts:49](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-milestone-option.ts#L49)
+[models/create-milestone-option.ts:49](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/create-milestone-option.ts#L49)
 
 ___
 
@@ -382,7 +699,7 @@ ___
 
 #### Defined in
 
-[models/create-org-option.ts:67](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-org-option.ts#L67)
+[models/create-org-option.ts:67](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/create-org-option.ts#L67)
 
 ___
 
@@ -401,7 +718,7 @@ ___
 
 #### Defined in
 
-[models/create-repo-option.ts:91](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-repo-option.ts#L91)
+[models/create-repo-option.ts:91](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/create-repo-option.ts#L91)
 
 ___
 
@@ -419,7 +736,7 @@ ___
 
 #### Defined in
 
-[models/create-team-option.ts:67](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-team-option.ts#L67)
+[models/create-team-option.ts:67](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/create-team-option.ts#L67)
 
 ___
 
@@ -437,7 +754,7 @@ ___
 
 #### Defined in
 
-[models/edit-org-option.ts:61](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-org-option.ts#L61)
+[models/edit-org-option.ts:61](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/edit-org-option.ts#L61)
 
 ___
 
@@ -455,7 +772,7 @@ ___
 
 #### Defined in
 
-[models/edit-team-option.ts:67](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-team-option.ts#L67)
+[models/edit-team-option.ts:67](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/edit-team-option.ts#L67)
 
 ___
 
@@ -475,7 +792,7 @@ ___
 
 #### Defined in
 
-[models/merge-pull-request-option.ts:67](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/merge-pull-request-option.ts#L67)
+[models/merge-pull-request-option.ts:73](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/merge-pull-request-option.ts#L73)
 
 ___
 
@@ -494,7 +811,7 @@ ___
 
 #### Defined in
 
-[models/migrate-repo-options.ts:145](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/migrate-repo-options.ts#L145)
+[models/migrate-repo-options.ts:145](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/migrate-repo-options.ts#L145)
 
 ___
 
@@ -514,7 +831,7 @@ ___
 
 #### Defined in
 
-[models/team.ts:82](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/team.ts#L82)
+[models/team.ts:82](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/team.ts#L82)
 
 ## Functions
 
@@ -555,7 +872,7 @@ AdminApi - axios parameter creator
 
 #### Defined in
 
-[apis/admin-api.ts:47](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/admin-api.ts#L47)
+[apis/admin-api.ts:47](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/admin-api.ts#L47)
 
 ___
 
@@ -598,7 +915,7 @@ AdminApi - factory interface
 
 #### Defined in
 
-[apis/admin-api.ts:1089](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/admin-api.ts#L1089)
+[apis/admin-api.ts:1089](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/admin-api.ts#L1089)
 
 ___
 
@@ -639,7 +956,105 @@ AdminApi - functional programming interface
 
 #### Defined in
 
-[apis/admin-api.ts:911](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/admin-api.ts#L911)
+[apis/admin-api.ts:911](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/admin-api.ts#L911)
+
+___
+
+### <a id="catalogapiaxiosparamcreator" name="catalogapiaxiosparamcreator"></a> CatalogApiAxiosParamCreator
+
+▸ **CatalogApiAxiosParamCreator**(`configuration?`): `Object`
+
+CatalogApi - axios parameter creator
+
+**`export`**
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `configuration?` | [`Configuration`](classes/Configuration.md) |
+
+#### Returns
+
+`Object`
+
+| Name | Type |
+| :------ | :------ |
+| `catalogGetEntry` | (`owner`: `string`, `repo`: `string`, `tag`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
+| `catalogGetMetadata` | (`owner`: `string`, `repo`: `string`, `tag`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
+| `catalogSearch` | (`q?`: `string`, `owner?`: `string`, `repo?`: `string`, `tag?`: `string`, `lang?`: `string`, `stage?`: `string`, `subject?`: `string`, `checkingLevel?`: `string`, `book?`: `string`, `partialMatch?`: `boolean`, `includeHistory?`: `boolean`, `includeMetadata?`: `boolean`, `showIngredients?`: `boolean`, `sort?`: `string`, `order?`: `string`, `page?`: `number`, `limit?`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
+| `catalogSearchOwner` | (`owner`: `string`, `q?`: `string`, `repo?`: `string`, `tag?`: `string`, `lang?`: `string`, `stage?`: `string`, `subject?`: `string`, `checkingLevel?`: `string`, `book?`: `string`, `partialMatch?`: `boolean`, `includeHistory?`: `boolean`, `includeMetadata?`: `boolean`, `showIngredients?`: `boolean`, `sort?`: `string`, `order?`: `string`, `page?`: `number`, `limit?`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
+| `catalogSearchRepo` | (`owner`: `string`, `repo`: `string`, `q?`: `string`, `owner2?`: `string`, `repo2?`: `string`, `tag?`: `string`, `lang?`: `string`, `stage?`: `string`, `subject?`: `string`, `checkingLevel?`: `string`, `book?`: `string`, `partialMatch?`: `boolean`, `includeHistory?`: `boolean`, `includeMetadata?`: `boolean`, `showIngredients?`: `boolean`, `sort?`: `string`, `order?`: `string`, `page?`: `number`, `limit?`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
+
+#### Defined in
+
+[apis/catalog-api.ts:31](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/catalog-api.ts#L31)
+
+___
+
+### <a id="catalogapifactory" name="catalogapifactory"></a> CatalogApiFactory
+
+▸ **CatalogApiFactory**(`configuration?`, `basePath?`, `axios?`): `Object`
+
+CatalogApi - factory interface
+
+**`export`**
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `configuration?` | [`Configuration`](classes/Configuration.md) |
+| `basePath?` | `string` |
+| `axios?` | `AxiosInstance` |
+
+#### Returns
+
+`Object`
+
+| Name | Type |
+| :------ | :------ |
+| `catalogGetEntry` | (`owner`: `string`, `repo`: `string`, `tag`: `string`, `options?`: `any`) => `AxiosPromise`<[`CatalogEntry`](interfaces/CatalogEntry.md)\> |
+| `catalogGetMetadata` | (`owner`: `string`, `repo`: `string`, `tag`: `string`, `options?`: `any`) => `AxiosPromise`<{ `[key: string]`: `object`;  }\> |
+| `catalogSearch` | (`q?`: `string`, `owner?`: `string`, `repo?`: `string`, `tag?`: `string`, `lang?`: `string`, `stage?`: `string`, `subject?`: `string`, `checkingLevel?`: `string`, `book?`: `string`, `partialMatch?`: `boolean`, `includeHistory?`: `boolean`, `includeMetadata?`: `boolean`, `showIngredients?`: `boolean`, `sort?`: `string`, `order?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`CatalogSearchResults`](interfaces/CatalogSearchResults.md)\> |
+| `catalogSearchOwner` | (`owner`: `string`, `q?`: `string`, `repo?`: `string`, `tag?`: `string`, `lang?`: `string`, `stage?`: `string`, `subject?`: `string`, `checkingLevel?`: `string`, `book?`: `string`, `partialMatch?`: `boolean`, `includeHistory?`: `boolean`, `includeMetadata?`: `boolean`, `showIngredients?`: `boolean`, `sort?`: `string`, `order?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`CatalogSearchResults`](interfaces/CatalogSearchResults.md)\> |
+| `catalogSearchRepo` | (`owner`: `string`, `repo`: `string`, `q?`: `string`, `owner2?`: `string`, `repo2?`: `string`, `tag?`: `string`, `lang?`: `string`, `stage?`: `string`, `subject?`: `string`, `checkingLevel?`: `string`, `book?`: `string`, `partialMatch?`: `boolean`, `includeHistory?`: `boolean`, `includeMetadata?`: `boolean`, `showIngredients?`: `boolean`, `sort?`: `string`, `order?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`CatalogSearchResults`](interfaces/CatalogSearchResults.md)\> |
+
+#### Defined in
+
+[apis/catalog-api.ts:705](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/catalog-api.ts#L705)
+
+___
+
+### <a id="catalogapifp" name="catalogapifp"></a> CatalogApiFp
+
+▸ **CatalogApiFp**(`configuration?`): `Object`
+
+CatalogApi - functional programming interface
+
+**`export`**
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `configuration?` | [`Configuration`](classes/Configuration.md) |
+
+#### Returns
+
+`Object`
+
+| Name | Type |
+| :------ | :------ |
+| `catalogGetEntry` | (`owner`: `string`, `repo`: `string`, `tag`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`CatalogEntry`](interfaces/CatalogEntry.md)\>\> |
+| `catalogGetMetadata` | (`owner`: `string`, `repo`: `string`, `tag`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<{ `[key: string]`: `object`;  }\>\> |
+| `catalogSearch` | (`q?`: `string`, `owner?`: `string`, `repo?`: `string`, `tag?`: `string`, `lang?`: `string`, `stage?`: `string`, `subject?`: `string`, `checkingLevel?`: `string`, `book?`: `string`, `partialMatch?`: `boolean`, `includeHistory?`: `boolean`, `includeMetadata?`: `boolean`, `showIngredients?`: `boolean`, `sort?`: `string`, `order?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`CatalogSearchResults`](interfaces/CatalogSearchResults.md)\>\> |
+| `catalogSearchOwner` | (`owner`: `string`, `q?`: `string`, `repo?`: `string`, `tag?`: `string`, `lang?`: `string`, `stage?`: `string`, `subject?`: `string`, `checkingLevel?`: `string`, `book?`: `string`, `partialMatch?`: `boolean`, `includeHistory?`: `boolean`, `includeMetadata?`: `boolean`, `showIngredients?`: `boolean`, `sort?`: `string`, `order?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`CatalogSearchResults`](interfaces/CatalogSearchResults.md)\>\> |
+| `catalogSearchRepo` | (`owner`: `string`, `repo`: `string`, `q?`: `string`, `owner2?`: `string`, `repo2?`: `string`, `tag?`: `string`, `lang?`: `string`, `stage?`: `string`, `subject?`: `string`, `checkingLevel?`: `string`, `book?`: `string`, `partialMatch?`: `boolean`, `includeHistory?`: `boolean`, `includeMetadata?`: `boolean`, `showIngredients?`: `boolean`, `sort?`: `string`, `order?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`CatalogSearchResults`](interfaces/CatalogSearchResults.md)\>\> |
+
+#### Defined in
+
+[apis/catalog-api.ts:586](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/catalog-api.ts#L586)
 
 ___
 
@@ -672,6 +1087,7 @@ IssueApi - axios parameter creator
 | `issueCreateIssue` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateIssueOption`](interfaces/CreateIssueOption.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `issueCreateLabel` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateLabelOption`](interfaces/CreateLabelOption.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `issueCreateMilestone` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateMilestoneOption`](interfaces/CreateMilestoneOption.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
+| `issueDelete` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `issueDeleteComment` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `issueDeleteCommentDeprecated` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `id`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `issueDeleteCommentReaction` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `content?`: [`EditReactionOption`](interfaces/EditReactionOption.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
@@ -713,7 +1129,7 @@ IssueApi - axios parameter creator
 
 #### Defined in
 
-[apis/issue-api.ts:71](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L71)
+[apis/issue-api.ts:71](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/issue-api.ts#L71)
 
 ___
 
@@ -748,6 +1164,7 @@ IssueApi - factory interface
 | `issueCreateIssue` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateIssueOption`](interfaces/CreateIssueOption.md), `options?`: `any`) => `AxiosPromise`<[`Issue`](interfaces/Issue.md)\> |
 | `issueCreateLabel` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateLabelOption`](interfaces/CreateLabelOption.md), `options?`: `any`) => `AxiosPromise`<[`Label`](interfaces/Label.md)\> |
 | `issueCreateMilestone` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateMilestoneOption`](interfaces/CreateMilestoneOption.md), `options?`: `any`) => `AxiosPromise`<[`Milestone`](interfaces/Milestone.md)\> |
+| `issueDelete` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `options?`: `any`) => `AxiosPromise`<`void`\> |
 | `issueDeleteComment` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options?`: `any`) => `AxiosPromise`<`void`\> |
 | `issueDeleteCommentDeprecated` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `id`: `number`, `options?`: `any`) => `AxiosPromise`<`void`\> |
 | `issueDeleteCommentReaction` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `content?`: [`EditReactionOption`](interfaces/EditReactionOption.md), `options?`: `any`) => `AxiosPromise`<`void`\> |
@@ -789,7 +1206,7 @@ IssueApi - factory interface
 
 #### Defined in
 
-[apis/issue-api.ts:4120](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L4120)
+[apis/issue-api.ts:4197](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/issue-api.ts#L4197)
 
 ___
 
@@ -822,6 +1239,7 @@ IssueApi - functional programming interface
 | `issueCreateIssue` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateIssueOption`](interfaces/CreateIssueOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Issue`](interfaces/Issue.md)\>\> |
 | `issueCreateLabel` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateLabelOption`](interfaces/CreateLabelOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Label`](interfaces/Label.md)\>\> |
 | `issueCreateMilestone` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateMilestoneOption`](interfaces/CreateMilestoneOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Milestone`](interfaces/Milestone.md)\>\> |
+| `issueDelete` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
 | `issueDeleteComment` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
 | `issueDeleteCommentDeprecated` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
 | `issueDeleteCommentReaction` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `content?`: [`EditReactionOption`](interfaces/EditReactionOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
@@ -863,7 +1281,7 @@ IssueApi - functional programming interface
 
 #### Defined in
 
-[apis/issue-api.ts:3431](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/issue-api.ts#L3431)
+[apis/issue-api.ts:3495](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/issue-api.ts#L3495)
 
 ___
 
@@ -895,7 +1313,7 @@ MiscellaneousApi - axios parameter creator
 
 #### Defined in
 
-[apis/miscellaneous-api.ts:33](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/miscellaneous-api.ts#L33)
+[apis/miscellaneous-api.ts:33](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/miscellaneous-api.ts#L33)
 
 ___
 
@@ -929,7 +1347,7 @@ MiscellaneousApi - factory interface
 
 #### Defined in
 
-[apis/miscellaneous-api.ts:374](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/miscellaneous-api.ts#L374)
+[apis/miscellaneous-api.ts:374](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/miscellaneous-api.ts#L374)
 
 ___
 
@@ -961,7 +1379,7 @@ MiscellaneousApi - functional programming interface
 
 #### Defined in
 
-[apis/miscellaneous-api.ts:312](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/miscellaneous-api.ts#L312)
+[apis/miscellaneous-api.ts:312](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/miscellaneous-api.ts#L312)
 
 ___
 
@@ -995,7 +1413,7 @@ NotificationApi - axios parameter creator
 
 #### Defined in
 
-[apis/notification-api.ts:31](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/notification-api.ts#L31)
+[apis/notification-api.ts:31](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/notification-api.ts#L31)
 
 ___
 
@@ -1031,7 +1449,7 @@ NotificationApi - factory interface
 
 #### Defined in
 
-[apis/notification-api.ts:664](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/notification-api.ts#L664)
+[apis/notification-api.ts:664](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/notification-api.ts#L664)
 
 ___
 
@@ -1065,7 +1483,7 @@ NotificationApi - functional programming interface
 
 #### Defined in
 
-[apis/notification-api.ts:555](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/notification-api.ts#L555)
+[apis/notification-api.ts:555](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/notification-api.ts#L555)
 
 ___
 
@@ -1123,6 +1541,7 @@ OrganizationApi - axios parameter creator
 | `orgListRepos` | (`org`: `string`, `page?`: `number`, `limit?`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `orgListTeamMember` | (`id`: `number`, `username`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `orgListTeamMembers` | (`id`: `number`, `page?`: `number`, `limit?`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
+| `orgListTeamRepo` | (`id`: `number`, `org`: `string`, `repo`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `orgListTeamRepos` | (`id`: `number`, `page?`: `number`, `limit?`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `orgListTeams` | (`org`: `string`, `page?`: `number`, `limit?`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `orgListUserOrgs` | (`username`: `string`, `page?`: `number`, `limit?`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
@@ -1133,7 +1552,7 @@ OrganizationApi - axios parameter creator
 
 #### Defined in
 
-[apis/organization-api.ts:61](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L61)
+[apis/organization-api.ts:61](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/organization-api.ts#L61)
 
 ___
 
@@ -1193,6 +1612,7 @@ OrganizationApi - factory interface
 | `orgListRepos` | (`org`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`Repository`](interfaces/Repository.md)[]\> |
 | `orgListTeamMember` | (`id`: `number`, `username`: `string`, `options?`: `any`) => `AxiosPromise`<[`User`](interfaces/User.md)\> |
 | `orgListTeamMembers` | (`id`: `number`, `page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`User`](interfaces/User.md)[]\> |
+| `orgListTeamRepo` | (`id`: `number`, `org`: `string`, `repo`: `string`, `options?`: `any`) => `AxiosPromise`<[`Repository`](interfaces/Repository.md)\> |
 | `orgListTeamRepos` | (`id`: `number`, `page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`Repository`](interfaces/Repository.md)[]\> |
 | `orgListTeams` | (`org`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`Team`](interfaces/Team.md)[]\> |
 | `orgListUserOrgs` | (`username`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`Organization`](interfaces/Organization.md)[]\> |
@@ -1203,7 +1623,7 @@ OrganizationApi - factory interface
 
 #### Defined in
 
-[apis/organization-api.ts:3127](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L3127)
+[apis/organization-api.ts:3204](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/organization-api.ts#L3204)
 
 ___
 
@@ -1261,6 +1681,7 @@ OrganizationApi - functional programming interface
 | `orgListRepos` | (`org`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Repository`](interfaces/Repository.md)[]\>\> |
 | `orgListTeamMember` | (`id`: `number`, `username`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`User`](interfaces/User.md)\>\> |
 | `orgListTeamMembers` | (`id`: `number`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`User`](interfaces/User.md)[]\>\> |
+| `orgListTeamRepo` | (`id`: `number`, `org`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Repository`](interfaces/Repository.md)\>\> |
 | `orgListTeamRepos` | (`id`: `number`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Repository`](interfaces/Repository.md)[]\>\> |
 | `orgListTeams` | (`org`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Team`](interfaces/Team.md)[]\>\> |
 | `orgListUserOrgs` | (`username`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Organization`](interfaces/Organization.md)[]\>\> |
@@ -1271,7 +1692,102 @@ OrganizationApi - functional programming interface
 
 #### Defined in
 
-[apis/organization-api.ts:2612](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/organization-api.ts#L2612)
+[apis/organization-api.ts:2676](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/organization-api.ts#L2676)
+
+___
+
+### <a id="packageapiaxiosparamcreator" name="packageapiaxiosparamcreator"></a> PackageApiAxiosParamCreator
+
+▸ **PackageApiAxiosParamCreator**(`configuration?`): `Object`
+
+PackageApi - axios parameter creator
+
+**`export`**
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `configuration?` | [`Configuration`](classes/Configuration.md) |
+
+#### Returns
+
+`Object`
+
+| Name | Type |
+| :------ | :------ |
+| `deletePackage` | (`owner`: `string`, `type`: `string`, `name`: `string`, `version`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
+| `getPackage` | (`owner`: `string`, `type`: `string`, `name`: `string`, `version`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
+| `listPackageFiles` | (`owner`: `string`, `type`: `string`, `name`: `string`, `version`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
+| `listPackages` | (`owner`: `string`, `page?`: `number`, `limit?`: `number`, `type?`: ``"composer"`` \| ``"conan"`` \| ``"container"`` \| ``"generic"`` \| ``"helm"`` \| ``"maven"`` \| ``"npm"`` \| ``"nuget"`` \| ``"pypi"`` \| ``"rubygems"``, `q?`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
+
+#### Defined in
+
+[apis/package-api.ts:31](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/package-api.ts#L31)
+
+___
+
+### <a id="packageapifactory" name="packageapifactory"></a> PackageApiFactory
+
+▸ **PackageApiFactory**(`configuration?`, `basePath?`, `axios?`): `Object`
+
+PackageApi - factory interface
+
+**`export`**
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `configuration?` | [`Configuration`](classes/Configuration.md) |
+| `basePath?` | `string` |
+| `axios?` | `AxiosInstance` |
+
+#### Returns
+
+`Object`
+
+| Name | Type |
+| :------ | :------ |
+| `deletePackage` | (`owner`: `string`, `type`: `string`, `name`: `string`, `version`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `getPackage` | (`owner`: `string`, `type`: `string`, `name`: `string`, `version`: `string`, `options?`: `any`) => `AxiosPromise`<[`Package`](interfaces/Package.md)\> |
+| `listPackageFiles` | (`owner`: `string`, `type`: `string`, `name`: `string`, `version`: `string`, `options?`: `any`) => `AxiosPromise`<[`PackageFile`](interfaces/PackageFile.md)[]\> |
+| `listPackages` | (`owner`: `string`, `page?`: `number`, `limit?`: `number`, `type?`: ``"composer"`` \| ``"conan"`` \| ``"container"`` \| ``"generic"`` \| ``"helm"`` \| ``"maven"`` \| ``"npm"`` \| ``"nuget"`` \| ``"pypi"`` \| ``"rubygems"``, `q?`: `string`, `options?`: `any`) => `AxiosPromise`<[`Package`](interfaces/Package.md)[]\> |
+
+#### Defined in
+
+[apis/package-api.ts:387](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/package-api.ts#L387)
+
+___
+
+### <a id="packageapifp" name="packageapifp"></a> PackageApiFp
+
+▸ **PackageApiFp**(`configuration?`): `Object`
+
+PackageApi - functional programming interface
+
+**`export`**
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `configuration?` | [`Configuration`](classes/Configuration.md) |
+
+#### Returns
+
+`Object`
+
+| Name | Type |
+| :------ | :------ |
+| `deletePackage` | (`owner`: `string`, `type`: `string`, `name`: `string`, `version`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `getPackage` | (`owner`: `string`, `type`: `string`, `name`: `string`, `version`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Package`](interfaces/Package.md)\>\> |
+| `listPackageFiles` | (`owner`: `string`, `type`: `string`, `name`: `string`, `version`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`PackageFile`](interfaces/PackageFile.md)[]\>\> |
+| `listPackages` | (`owner`: `string`, `page?`: `number`, `limit?`: `number`, `type?`: ``"composer"`` \| ``"conan"`` \| ``"container"`` \| ``"generic"`` \| ``"helm"`` \| ``"maven"`` \| ``"npm"`` \| ``"nuget"`` \| ``"pypi"`` \| ``"rubygems"``, `q?`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Package`](interfaces/Package.md)[]\>\> |
+
+#### Defined in
+
+[apis/package-api.ts:320](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/package-api.ts#L320)
 
 ___
 
@@ -1307,11 +1823,14 @@ RepositoryApi - axios parameter creator
 | `repoAddCollaborator` | (`owner`: `string`, `repo`: `string`, `collaborator`: `string`, `body?`: [`AddCollaboratorOption`](interfaces/AddCollaboratorOption.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoAddTeam` | (`owner`: `string`, `repo`: `string`, `team`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoAddTopic` | (`owner`: `string`, `repo`: `string`, `topic`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
+| `repoApplyDiffPatch` | (`owner`: `string`, `repo`: `string`, `body`: [`UpdateFileOptions`](interfaces/UpdateFileOptions.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
+| `repoCancelScheduledAutoMerge` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoCheckCollaborator` | (`owner`: `string`, `repo`: `string`, `collaborator`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoCheckTeam` | (`owner`: `string`, `repo`: `string`, `team`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoCreateBranch` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateBranchRepoOption`](interfaces/CreateBranchRepoOption.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoCreateBranchProtection` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateBranchProtectionOption`](interfaces/CreateBranchProtectionOption.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoCreateFile` | (`owner`: `string`, `repo`: `string`, `filepath`: `string`, `body`: [`CreateFileOptions`](interfaces/CreateFileOptions.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
+| `repoCreateGitRef` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateGitRefOption`](interfaces/CreateGitRefOption.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoCreateHook` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateHookOption`](interfaces/CreateHookOption.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoCreateKey` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateKeyOption`](interfaces/CreateKeyOption.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoCreatePullRequest` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreatePullRequestOption`](interfaces/CreatePullRequestOption.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
@@ -1328,6 +1847,7 @@ RepositoryApi - axios parameter creator
 | `repoDeleteCollaborator` | (`owner`: `string`, `repo`: `string`, `collaborator`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoDeleteFile` | (`owner`: `string`, `repo`: `string`, `filepath`: `string`, `body`: [`DeleteFileOptions`](interfaces/DeleteFileOptions.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoDeleteGitHook` | (`owner`: `string`, `repo`: `string`, `id`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
+| `repoDeleteGitRef` | (`owner`: `string`, `repo`: `string`, `ref`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoDeleteHook` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoDeleteKey` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoDeletePullReview` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `id`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
@@ -1360,7 +1880,7 @@ RepositoryApi - axios parameter creator
 | `repoGetCombinedStatusByRef` | (`owner`: `string`, `repo`: `string`, `ref`: `string`, `page?`: `number`, `limit?`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoGetContents` | (`owner`: `string`, `repo`: `string`, `filepath`: `string`, `ref?`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoGetContentsList` | (`owner`: `string`, `repo`: `string`, `ref?`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
-| `repoGetEditorConfig` | (`owner`: `string`, `repo`: `string`, `filepath`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
+| `repoGetEditorConfig` | (`owner`: `string`, `repo`: `string`, `filepath`: `string`, `ref?`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoGetGitHook` | (`owner`: `string`, `repo`: `string`, `id`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoGetHook` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoGetIssueTemplates` | (`owner`: `string`, `repo`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
@@ -1372,9 +1892,11 @@ RepositoryApi - axios parameter creator
 | `repoGetPullReview` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `id`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoGetPullReviewComments` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `id`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoGetRawFile` | (`owner`: `string`, `repo`: `string`, `filepath`: `string`, `ref?`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
+| `repoGetRawFileOrLFS` | (`owner`: `string`, `repo`: `string`, `filepath`: `string`, `ref?`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoGetRelease` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoGetReleaseAttachment` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `attachmentId`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoGetReleaseByTag` | (`owner`: `string`, `repo`: `string`, `tag`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
+| `repoGetRepoPermissions` | (`owner`: `string`, `repo`: `string`, `collaborator`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoGetReviewers` | (`owner`: `string`, `repo`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoGetSingleCommit` | (`owner`: `string`, `repo`: `string`, `sha`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoGetTag` | (`owner`: `string`, `repo`: `string`, `tag`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
@@ -1407,11 +1929,12 @@ RepositoryApi - axios parameter creator
 | `repoSearch` | (`q?`: `string`, `topic?`: `boolean`, `includeDesc?`: `boolean`, `uid?`: `number`, `priorityOwnerId?`: `number`, `teamId?`: `number`, `starredBy?`: `number`, `_private?`: `boolean`, `isPrivate?`: `boolean`, `template?`: `boolean`, `archived?`: `boolean`, `mode?`: `string`, `exclusive?`: `boolean`, `repo?`: `string`, `owner?`: `string`, `lang?`: `string`, `subject?`: `string`, `book?`: `string`, `includeMetadata?`: `boolean`, `sort?`: `string`, `order?`: `string`, `page?`: `number`, `limit?`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoSigningKey` | (`owner`: `string`, `repo`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoSubmitPullReview` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `id`: `number`, `body`: [`SubmitPullReviewOptions`](interfaces/SubmitPullReviewOptions.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
-| `repoTestHook` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
+| `repoTestHook` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `ref?`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoTrackedTimes` | (`owner`: `string`, `repo`: `string`, `user?`: `string`, `since?`: `string`, `before?`: `string`, `page?`: `number`, `limit?`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoTransfer` | (`owner`: `string`, `repo`: `string`, `body`: [`TransferRepoOption`](interfaces/TransferRepoOption.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoUnDismissPullReview` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `id`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoUpdateFile` | (`owner`: `string`, `repo`: `string`, `filepath`: `string`, `body`: [`UpdateFileOptions`](interfaces/UpdateFileOptions.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
+| `repoUpdateGitRef` | (`owner`: `string`, `repo`: `string`, `ref`: `string`, `body?`: [`UpdateGitRefOption`](interfaces/UpdateGitRefOption.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoUpdatePullRequest` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `style?`: ``"merge"`` \| ``"rebase"``, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `repoUpdateTopics` | (`owner`: `string`, `repo`: `string`, `body?`: [`RepoTopicOptions`](interfaces/RepoTopicOptions.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `topicSearch` | (`q`: `string`, `page?`: `number`, `limit?`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
@@ -1422,7 +1945,7 @@ RepositoryApi - axios parameter creator
 
 #### Defined in
 
-[apis/repository-api.ts:159](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L159)
+[apis/repository-api.ts:165](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L165)
 
 ___
 
@@ -1460,11 +1983,14 @@ RepositoryApi - factory interface
 | `repoAddCollaborator` | (`owner`: `string`, `repo`: `string`, `collaborator`: `string`, `body?`: [`AddCollaboratorOption`](interfaces/AddCollaboratorOption.md), `options?`: `any`) => `AxiosPromise`<`void`\> |
 | `repoAddTeam` | (`owner`: `string`, `repo`: `string`, `team`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
 | `repoAddTopic` | (`owner`: `string`, `repo`: `string`, `topic`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `repoApplyDiffPatch` | (`owner`: `string`, `repo`: `string`, `body`: [`UpdateFileOptions`](interfaces/UpdateFileOptions.md), `options?`: `any`) => `AxiosPromise`<[`FileResponse`](interfaces/FileResponse.md)\> |
+| `repoCancelScheduledAutoMerge` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `options?`: `any`) => `AxiosPromise`<`void`\> |
 | `repoCheckCollaborator` | (`owner`: `string`, `repo`: `string`, `collaborator`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
 | `repoCheckTeam` | (`owner`: `string`, `repo`: `string`, `team`: `string`, `options?`: `any`) => `AxiosPromise`<[`Team`](interfaces/Team.md)\> |
 | `repoCreateBranch` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateBranchRepoOption`](interfaces/CreateBranchRepoOption.md), `options?`: `any`) => `AxiosPromise`<[`Branch`](interfaces/Branch.md)\> |
 | `repoCreateBranchProtection` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateBranchProtectionOption`](interfaces/CreateBranchProtectionOption.md), `options?`: `any`) => `AxiosPromise`<[`BranchProtection`](interfaces/BranchProtection.md)\> |
 | `repoCreateFile` | (`owner`: `string`, `repo`: `string`, `filepath`: `string`, `body`: [`CreateFileOptions`](interfaces/CreateFileOptions.md), `options?`: `any`) => `AxiosPromise`<[`FileResponse`](interfaces/FileResponse.md)\> |
+| `repoCreateGitRef` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateGitRefOption`](interfaces/CreateGitRefOption.md), `options?`: `any`) => `AxiosPromise`<[`Reference`](interfaces/Reference.md)\> |
 | `repoCreateHook` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateHookOption`](interfaces/CreateHookOption.md), `options?`: `any`) => `AxiosPromise`<[`Hook`](interfaces/Hook.md)\> |
 | `repoCreateKey` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateKeyOption`](interfaces/CreateKeyOption.md), `options?`: `any`) => `AxiosPromise`<[`DeployKey`](interfaces/DeployKey.md)\> |
 | `repoCreatePullRequest` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreatePullRequestOption`](interfaces/CreatePullRequestOption.md), `options?`: `any`) => `AxiosPromise`<[`PullRequest`](interfaces/PullRequest.md)\> |
@@ -1481,6 +2007,7 @@ RepositoryApi - factory interface
 | `repoDeleteCollaborator` | (`owner`: `string`, `repo`: `string`, `collaborator`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
 | `repoDeleteFile` | (`owner`: `string`, `repo`: `string`, `filepath`: `string`, `body`: [`DeleteFileOptions`](interfaces/DeleteFileOptions.md), `options?`: `any`) => `AxiosPromise`<[`FileDeleteResponse`](interfaces/FileDeleteResponse.md)\> |
 | `repoDeleteGitHook` | (`owner`: `string`, `repo`: `string`, `id`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `repoDeleteGitRef` | (`owner`: `string`, `repo`: `string`, `ref`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
 | `repoDeleteHook` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options?`: `any`) => `AxiosPromise`<`void`\> |
 | `repoDeleteKey` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options?`: `any`) => `AxiosPromise`<`void`\> |
 | `repoDeletePullReview` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `id`: `number`, `options?`: `any`) => `AxiosPromise`<`void`\> |
@@ -1513,7 +2040,7 @@ RepositoryApi - factory interface
 | `repoGetCombinedStatusByRef` | (`owner`: `string`, `repo`: `string`, `ref`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`CombinedStatus`](interfaces/CombinedStatus.md)\> |
 | `repoGetContents` | (`owner`: `string`, `repo`: `string`, `filepath`: `string`, `ref?`: `string`, `options?`: `any`) => `AxiosPromise`<[`ContentsResponse`](interfaces/ContentsResponse.md)\> |
 | `repoGetContentsList` | (`owner`: `string`, `repo`: `string`, `ref?`: `string`, `options?`: `any`) => `AxiosPromise`<[`ContentsResponse`](interfaces/ContentsResponse.md)[]\> |
-| `repoGetEditorConfig` | (`owner`: `string`, `repo`: `string`, `filepath`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `repoGetEditorConfig` | (`owner`: `string`, `repo`: `string`, `filepath`: `string`, `ref?`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
 | `repoGetGitHook` | (`owner`: `string`, `repo`: `string`, `id`: `string`, `options?`: `any`) => `AxiosPromise`<[`GitHook`](interfaces/GitHook.md)\> |
 | `repoGetHook` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options?`: `any`) => `AxiosPromise`<[`Hook`](interfaces/Hook.md)\> |
 | `repoGetIssueTemplates` | (`owner`: `string`, `repo`: `string`, `options?`: `any`) => `AxiosPromise`<[`IssueTemplate`](interfaces/IssueTemplate.md)[]\> |
@@ -1525,9 +2052,11 @@ RepositoryApi - factory interface
 | `repoGetPullReview` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `id`: `number`, `options?`: `any`) => `AxiosPromise`<[`PullReview`](interfaces/PullReview.md)\> |
 | `repoGetPullReviewComments` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `id`: `number`, `options?`: `any`) => `AxiosPromise`<[`PullReviewComment`](interfaces/PullReviewComment.md)[]\> |
 | `repoGetRawFile` | (`owner`: `string`, `repo`: `string`, `filepath`: `string`, `ref?`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `repoGetRawFileOrLFS` | (`owner`: `string`, `repo`: `string`, `filepath`: `string`, `ref?`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
 | `repoGetRelease` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options?`: `any`) => `AxiosPromise`<[`Release`](interfaces/Release.md)\> |
 | `repoGetReleaseAttachment` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `attachmentId`: `number`, `options?`: `any`) => `AxiosPromise`<[`Attachment`](interfaces/Attachment.md)\> |
 | `repoGetReleaseByTag` | (`owner`: `string`, `repo`: `string`, `tag`: `string`, `options?`: `any`) => `AxiosPromise`<[`Release`](interfaces/Release.md)\> |
+| `repoGetRepoPermissions` | (`owner`: `string`, `repo`: `string`, `collaborator`: `string`, `options?`: `any`) => `AxiosPromise`<[`RepoCollaboratorPermission`](interfaces/RepoCollaboratorPermission.md)\> |
 | `repoGetReviewers` | (`owner`: `string`, `repo`: `string`, `options?`: `any`) => `AxiosPromise`<[`User`](interfaces/User.md)[]\> |
 | `repoGetSingleCommit` | (`owner`: `string`, `repo`: `string`, `sha`: `string`, `options?`: `any`) => `AxiosPromise`<[`Commit`](interfaces/Commit.md)\> |
 | `repoGetTag` | (`owner`: `string`, `repo`: `string`, `tag`: `string`, `options?`: `any`) => `AxiosPromise`<[`Tag`](interfaces/Tag.md)\> |
@@ -1560,11 +2089,12 @@ RepositoryApi - factory interface
 | `repoSearch` | (`q?`: `string`, `topic?`: `boolean`, `includeDesc?`: `boolean`, `uid?`: `number`, `priorityOwnerId?`: `number`, `teamId?`: `number`, `starredBy?`: `number`, `_private?`: `boolean`, `isPrivate?`: `boolean`, `template?`: `boolean`, `archived?`: `boolean`, `mode?`: `string`, `exclusive?`: `boolean`, `repo?`: `string`, `owner?`: `string`, `lang?`: `string`, `subject?`: `string`, `book?`: `string`, `includeMetadata?`: `boolean`, `sort?`: `string`, `order?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`SearchResults`](interfaces/SearchResults.md)\> |
 | `repoSigningKey` | (`owner`: `string`, `repo`: `string`, `options?`: `any`) => `AxiosPromise`<`string`\> |
 | `repoSubmitPullReview` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `id`: `number`, `body`: [`SubmitPullReviewOptions`](interfaces/SubmitPullReviewOptions.md), `options?`: `any`) => `AxiosPromise`<[`PullReview`](interfaces/PullReview.md)\> |
-| `repoTestHook` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `repoTestHook` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `ref?`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
 | `repoTrackedTimes` | (`owner`: `string`, `repo`: `string`, `user?`: `string`, `since?`: `string`, `before?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`TrackedTime`](interfaces/TrackedTime.md)[]\> |
 | `repoTransfer` | (`owner`: `string`, `repo`: `string`, `body`: [`TransferRepoOption`](interfaces/TransferRepoOption.md), `options?`: `any`) => `AxiosPromise`<[`Repository`](interfaces/Repository.md)\> |
 | `repoUnDismissPullReview` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `id`: `number`, `options?`: `any`) => `AxiosPromise`<[`PullReview`](interfaces/PullReview.md)\> |
 | `repoUpdateFile` | (`owner`: `string`, `repo`: `string`, `filepath`: `string`, `body`: [`UpdateFileOptions`](interfaces/UpdateFileOptions.md), `options?`: `any`) => `AxiosPromise`<[`FileResponse`](interfaces/FileResponse.md)\> |
+| `repoUpdateGitRef` | (`owner`: `string`, `repo`: `string`, `ref`: `string`, `body?`: [`UpdateGitRefOption`](interfaces/UpdateGitRefOption.md), `options?`: `any`) => `AxiosPromise`<[`Reference`](interfaces/Reference.md)\> |
 | `repoUpdatePullRequest` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `style?`: ``"merge"`` \| ``"rebase"``, `options?`: `any`) => `AxiosPromise`<`void`\> |
 | `repoUpdateTopics` | (`owner`: `string`, `repo`: `string`, `body?`: [`RepoTopicOptions`](interfaces/RepoTopicOptions.md), `options?`: `any`) => `AxiosPromise`<`void`\> |
 | `topicSearch` | (`q`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `any`) => `AxiosPromise`<[`TopicResponse`](interfaces/TopicResponse.md)[]\> |
@@ -1575,7 +2105,7 @@ RepositoryApi - factory interface
 
 #### Defined in
 
-[apis/repository-api.ts:10241](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L10241)
+[apis/repository-api.ts:10811](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L10811)
 
 ___
 
@@ -1611,11 +2141,14 @@ RepositoryApi - functional programming interface
 | `repoAddCollaborator` | (`owner`: `string`, `repo`: `string`, `collaborator`: `string`, `body?`: [`AddCollaboratorOption`](interfaces/AddCollaboratorOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
 | `repoAddTeam` | (`owner`: `string`, `repo`: `string`, `team`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
 | `repoAddTopic` | (`owner`: `string`, `repo`: `string`, `topic`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `repoApplyDiffPatch` | (`owner`: `string`, `repo`: `string`, `body`: [`UpdateFileOptions`](interfaces/UpdateFileOptions.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`FileResponse`](interfaces/FileResponse.md)\>\> |
+| `repoCancelScheduledAutoMerge` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
 | `repoCheckCollaborator` | (`owner`: `string`, `repo`: `string`, `collaborator`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
 | `repoCheckTeam` | (`owner`: `string`, `repo`: `string`, `team`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Team`](interfaces/Team.md)\>\> |
 | `repoCreateBranch` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateBranchRepoOption`](interfaces/CreateBranchRepoOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Branch`](interfaces/Branch.md)\>\> |
 | `repoCreateBranchProtection` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateBranchProtectionOption`](interfaces/CreateBranchProtectionOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`BranchProtection`](interfaces/BranchProtection.md)\>\> |
 | `repoCreateFile` | (`owner`: `string`, `repo`: `string`, `filepath`: `string`, `body`: [`CreateFileOptions`](interfaces/CreateFileOptions.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`FileResponse`](interfaces/FileResponse.md)\>\> |
+| `repoCreateGitRef` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateGitRefOption`](interfaces/CreateGitRefOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Reference`](interfaces/Reference.md)\>\> |
 | `repoCreateHook` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateHookOption`](interfaces/CreateHookOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Hook`](interfaces/Hook.md)\>\> |
 | `repoCreateKey` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreateKeyOption`](interfaces/CreateKeyOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`DeployKey`](interfaces/DeployKey.md)\>\> |
 | `repoCreatePullRequest` | (`owner`: `string`, `repo`: `string`, `body?`: [`CreatePullRequestOption`](interfaces/CreatePullRequestOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`PullRequest`](interfaces/PullRequest.md)\>\> |
@@ -1632,6 +2165,7 @@ RepositoryApi - functional programming interface
 | `repoDeleteCollaborator` | (`owner`: `string`, `repo`: `string`, `collaborator`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
 | `repoDeleteFile` | (`owner`: `string`, `repo`: `string`, `filepath`: `string`, `body`: [`DeleteFileOptions`](interfaces/DeleteFileOptions.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`FileDeleteResponse`](interfaces/FileDeleteResponse.md)\>\> |
 | `repoDeleteGitHook` | (`owner`: `string`, `repo`: `string`, `id`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `repoDeleteGitRef` | (`owner`: `string`, `repo`: `string`, `ref`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
 | `repoDeleteHook` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
 | `repoDeleteKey` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
 | `repoDeletePullReview` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
@@ -1664,7 +2198,7 @@ RepositoryApi - functional programming interface
 | `repoGetCombinedStatusByRef` | (`owner`: `string`, `repo`: `string`, `ref`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`CombinedStatus`](interfaces/CombinedStatus.md)\>\> |
 | `repoGetContents` | (`owner`: `string`, `repo`: `string`, `filepath`: `string`, `ref?`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`ContentsResponse`](interfaces/ContentsResponse.md)\>\> |
 | `repoGetContentsList` | (`owner`: `string`, `repo`: `string`, `ref?`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`ContentsResponse`](interfaces/ContentsResponse.md)[]\>\> |
-| `repoGetEditorConfig` | (`owner`: `string`, `repo`: `string`, `filepath`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `repoGetEditorConfig` | (`owner`: `string`, `repo`: `string`, `filepath`: `string`, `ref?`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
 | `repoGetGitHook` | (`owner`: `string`, `repo`: `string`, `id`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`GitHook`](interfaces/GitHook.md)\>\> |
 | `repoGetHook` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Hook`](interfaces/Hook.md)\>\> |
 | `repoGetIssueTemplates` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`IssueTemplate`](interfaces/IssueTemplate.md)[]\>\> |
@@ -1676,9 +2210,11 @@ RepositoryApi - functional programming interface
 | `repoGetPullReview` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`PullReview`](interfaces/PullReview.md)\>\> |
 | `repoGetPullReviewComments` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`PullReviewComment`](interfaces/PullReviewComment.md)[]\>\> |
 | `repoGetRawFile` | (`owner`: `string`, `repo`: `string`, `filepath`: `string`, `ref?`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `repoGetRawFileOrLFS` | (`owner`: `string`, `repo`: `string`, `filepath`: `string`, `ref?`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
 | `repoGetRelease` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Release`](interfaces/Release.md)\>\> |
 | `repoGetReleaseAttachment` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `attachmentId`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Attachment`](interfaces/Attachment.md)\>\> |
 | `repoGetReleaseByTag` | (`owner`: `string`, `repo`: `string`, `tag`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Release`](interfaces/Release.md)\>\> |
+| `repoGetRepoPermissions` | (`owner`: `string`, `repo`: `string`, `collaborator`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`RepoCollaboratorPermission`](interfaces/RepoCollaboratorPermission.md)\>\> |
 | `repoGetReviewers` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`User`](interfaces/User.md)[]\>\> |
 | `repoGetSingleCommit` | (`owner`: `string`, `repo`: `string`, `sha`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Commit`](interfaces/Commit.md)\>\> |
 | `repoGetTag` | (`owner`: `string`, `repo`: `string`, `tag`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Tag`](interfaces/Tag.md)\>\> |
@@ -1711,11 +2247,12 @@ RepositoryApi - functional programming interface
 | `repoSearch` | (`q?`: `string`, `topic?`: `boolean`, `includeDesc?`: `boolean`, `uid?`: `number`, `priorityOwnerId?`: `number`, `teamId?`: `number`, `starredBy?`: `number`, `_private?`: `boolean`, `isPrivate?`: `boolean`, `template?`: `boolean`, `archived?`: `boolean`, `mode?`: `string`, `exclusive?`: `boolean`, `repo?`: `string`, `owner?`: `string`, `lang?`: `string`, `subject?`: `string`, `book?`: `string`, `includeMetadata?`: `boolean`, `sort?`: `string`, `order?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`SearchResults`](interfaces/SearchResults.md)\>\> |
 | `repoSigningKey` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`string`\>\> |
 | `repoSubmitPullReview` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `id`: `number`, `body`: [`SubmitPullReviewOptions`](interfaces/SubmitPullReviewOptions.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`PullReview`](interfaces/PullReview.md)\>\> |
-| `repoTestHook` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `repoTestHook` | (`owner`: `string`, `repo`: `string`, `id`: `number`, `ref?`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
 | `repoTrackedTimes` | (`owner`: `string`, `repo`: `string`, `user?`: `string`, `since?`: `string`, `before?`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`TrackedTime`](interfaces/TrackedTime.md)[]\>\> |
 | `repoTransfer` | (`owner`: `string`, `repo`: `string`, `body`: [`TransferRepoOption`](interfaces/TransferRepoOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Repository`](interfaces/Repository.md)\>\> |
 | `repoUnDismissPullReview` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`PullReview`](interfaces/PullReview.md)\>\> |
 | `repoUpdateFile` | (`owner`: `string`, `repo`: `string`, `filepath`: `string`, `body`: [`UpdateFileOptions`](interfaces/UpdateFileOptions.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`FileResponse`](interfaces/FileResponse.md)\>\> |
+| `repoUpdateGitRef` | (`owner`: `string`, `repo`: `string`, `ref`: `string`, `body?`: [`UpdateGitRefOption`](interfaces/UpdateGitRefOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Reference`](interfaces/Reference.md)\>\> |
 | `repoUpdatePullRequest` | (`owner`: `string`, `repo`: `string`, `index`: `number`, `style?`: ``"merge"`` \| ``"rebase"``, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
 | `repoUpdateTopics` | (`owner`: `string`, `repo`: `string`, `body?`: [`RepoTopicOptions`](interfaces/RepoTopicOptions.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
 | `topicSearch` | (`q`: `string`, `page?`: `number`, `limit?`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`TopicResponse`](interfaces/TopicResponse.md)[]\>\> |
@@ -1726,7 +2263,7 @@ RepositoryApi - functional programming interface
 
 #### Defined in
 
-[apis/repository-api.ts:8540](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L8540)
+[apis/repository-api.ts:9015](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/repository-api.ts#L9015)
 
 ___
 
@@ -1757,7 +2294,7 @@ SettingsApi - axios parameter creator
 
 #### Defined in
 
-[apis/settings-api.ts:35](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/settings-api.ts#L35)
+[apis/settings-api.ts:35](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/settings-api.ts#L35)
 
 ___
 
@@ -1790,7 +2327,7 @@ SettingsApi - factory interface
 
 #### Defined in
 
-[apis/settings-api.ts:302](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/settings-api.ts#L302)
+[apis/settings-api.ts:302](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/settings-api.ts#L302)
 
 ___
 
@@ -1821,7 +2358,7 @@ SettingsApi - functional programming interface
 
 #### Defined in
 
-[apis/settings-api.ts:252](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/settings-api.ts#L252)
+[apis/settings-api.ts:252](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/settings-api.ts#L252)
 
 ___
 
@@ -1850,7 +2387,7 @@ UserApi - axios parameter creator
 | `getVerificationToken` | (`options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `updateUserSettings` | (`body?`: [`UserSettingsOptions`](interfaces/UserSettingsOptions.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `userAddEmail` | (`body?`: [`CreateEmailOption`](interfaces/CreateEmailOption.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
-| `userCheckFollowing` | (`follower`: `string`, `followee`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
+| `userCheckFollowing` | (`username`: `string`, `target`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `userCreateOAuth2Application` | (`body`: [`CreateOAuth2ApplicationOptions`](interfaces/CreateOAuth2ApplicationOptions.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `userCreateToken` | (`username`: `string`, `userCreateToken?`: [`CreateAccessTokenOption`](interfaces/CreateAccessTokenOption.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `userCurrentCheckFollowing` | (`username`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
@@ -1872,7 +2409,7 @@ UserApi - axios parameter creator
 | `userCurrentPostKey` | (`body?`: [`CreateKeyOption`](interfaces/CreateKeyOption.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `userCurrentPutFollow` | (`username`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `userCurrentPutStar` | (`owner`: `string`, `repo`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
-| `userCurrentTrackedTimes` | (`since?`: `string`, `before?`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
+| `userCurrentTrackedTimes` | (`page?`: `number`, `limit?`: `number`, `since?`: `string`, `before?`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `userDeleteAccessToken` | (`username`: `string`, `token`: `string`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `userDeleteEmail` | (`body?`: [`DeleteEmailOption`](interfaces/DeleteEmailOption.md), `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
 | `userDeleteOAuth2Application` | (`id`: `number`, `options`: `AxiosRequestConfig`) => `Promise`<`RequestArgs`\> |
@@ -1898,7 +2435,7 @@ UserApi - axios parameter creator
 
 #### Defined in
 
-[apis/user-api.ts:69](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L69)
+[apis/user-api.ts:69](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/user-api.ts#L69)
 
 ___
 
@@ -1929,7 +2466,7 @@ UserApi - factory interface
 | `getVerificationToken` | (`options?`: `any`) => `AxiosPromise`<`string`\> |
 | `updateUserSettings` | (`body?`: [`UserSettingsOptions`](interfaces/UserSettingsOptions.md), `options?`: `any`) => `AxiosPromise`<[`UserSettings`](interfaces/UserSettings.md)[]\> |
 | `userAddEmail` | (`body?`: [`CreateEmailOption`](interfaces/CreateEmailOption.md), `options?`: `any`) => `AxiosPromise`<[`Email`](interfaces/Email.md)[]\> |
-| `userCheckFollowing` | (`follower`: `string`, `followee`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `userCheckFollowing` | (`username`: `string`, `target`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
 | `userCreateOAuth2Application` | (`body`: [`CreateOAuth2ApplicationOptions`](interfaces/CreateOAuth2ApplicationOptions.md), `options?`: `any`) => `AxiosPromise`<[`OAuth2Application`](interfaces/OAuth2Application.md)\> |
 | `userCreateToken` | (`username`: `string`, `userCreateToken?`: [`CreateAccessTokenOption`](interfaces/CreateAccessTokenOption.md), `options?`: `any`) => `AxiosPromise`<[`AccessToken`](interfaces/AccessToken.md)\> |
 | `userCurrentCheckFollowing` | (`username`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
@@ -1951,7 +2488,7 @@ UserApi - factory interface
 | `userCurrentPostKey` | (`body?`: [`CreateKeyOption`](interfaces/CreateKeyOption.md), `options?`: `any`) => `AxiosPromise`<[`PublicKey`](interfaces/PublicKey.md)\> |
 | `userCurrentPutFollow` | (`username`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
 | `userCurrentPutStar` | (`owner`: `string`, `repo`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
-| `userCurrentTrackedTimes` | (`since?`: `string`, `before?`: `string`, `options?`: `any`) => `AxiosPromise`<[`TrackedTime`](interfaces/TrackedTime.md)[]\> |
+| `userCurrentTrackedTimes` | (`page?`: `number`, `limit?`: `number`, `since?`: `string`, `before?`: `string`, `options?`: `any`) => `AxiosPromise`<[`TrackedTime`](interfaces/TrackedTime.md)[]\> |
 | `userDeleteAccessToken` | (`username`: `string`, `token`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
 | `userDeleteEmail` | (`body?`: [`DeleteEmailOption`](interfaces/DeleteEmailOption.md), `options?`: `any`) => `AxiosPromise`<`void`\> |
 | `userDeleteOAuth2Application` | (`id`: `number`, `options?`: `any`) => `AxiosPromise`<`void`\> |
@@ -1977,7 +2514,7 @@ UserApi - factory interface
 
 #### Defined in
 
-[apis/user-api.ts:3666](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L3666)
+[apis/user-api.ts:3678](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/user-api.ts#L3678)
 
 ___
 
@@ -2006,7 +2543,7 @@ UserApi - functional programming interface
 | `getVerificationToken` | (`options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`string`\>\> |
 | `updateUserSettings` | (`body?`: [`UserSettingsOptions`](interfaces/UserSettingsOptions.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`UserSettings`](interfaces/UserSettings.md)[]\>\> |
 | `userAddEmail` | (`body?`: [`CreateEmailOption`](interfaces/CreateEmailOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`Email`](interfaces/Email.md)[]\>\> |
-| `userCheckFollowing` | (`follower`: `string`, `followee`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `userCheckFollowing` | (`username`: `string`, `target`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
 | `userCreateOAuth2Application` | (`body`: [`CreateOAuth2ApplicationOptions`](interfaces/CreateOAuth2ApplicationOptions.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`OAuth2Application`](interfaces/OAuth2Application.md)\>\> |
 | `userCreateToken` | (`username`: `string`, `userCreateToken?`: [`CreateAccessTokenOption`](interfaces/CreateAccessTokenOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`AccessToken`](interfaces/AccessToken.md)\>\> |
 | `userCurrentCheckFollowing` | (`username`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
@@ -2028,7 +2565,7 @@ UserApi - functional programming interface
 | `userCurrentPostKey` | (`body?`: [`CreateKeyOption`](interfaces/CreateKeyOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`PublicKey`](interfaces/PublicKey.md)\>\> |
 | `userCurrentPutFollow` | (`username`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
 | `userCurrentPutStar` | (`owner`: `string`, `repo`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
-| `userCurrentTrackedTimes` | (`since?`: `string`, `before?`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`TrackedTime`](interfaces/TrackedTime.md)[]\>\> |
+| `userCurrentTrackedTimes` | (`page?`: `number`, `limit?`: `number`, `since?`: `string`, `before?`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`TrackedTime`](interfaces/TrackedTime.md)[]\>\> |
 | `userDeleteAccessToken` | (`username`: `string`, `token`: `string`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
 | `userDeleteEmail` | (`body?`: [`DeleteEmailOption`](interfaces/DeleteEmailOption.md), `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
 | `userDeleteOAuth2Application` | (`id`: `number`, `options?`: `AxiosRequestConfig`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
@@ -2054,4 +2591,4 @@ UserApi - functional programming interface
 
 #### Defined in
 
-[apis/user-api.ts:3071](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/user-api.ts#L3071)
+[apis/user-api.ts:3081](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/user-api.ts#L3081)

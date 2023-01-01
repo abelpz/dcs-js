@@ -33,7 +33,7 @@ PayloadCommit represents a commit
 
 #### Defined in
 
-[models/payload-commit.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/payload-commit.ts#L34)
+[models/payload-commit.ts:34](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/payload-commit.ts#L34)
 
 ___
 
@@ -45,7 +45,7 @@ ___
 
 #### Defined in
 
-[models/payload-commit.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/payload-commit.ts#L40)
+[models/payload-commit.ts:40](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/payload-commit.ts#L40)
 
 ___
 
@@ -57,7 +57,7 @@ ___
 
 #### Defined in
 
-[models/payload-commit.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/payload-commit.ts#L46)
+[models/payload-commit.ts:46](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/payload-commit.ts#L46)
 
 ___
 
@@ -71,7 +71,7 @@ sha1 hash of the commit
 
 #### Defined in
 
-[models/payload-commit.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/payload-commit.ts#L52)
+[models/payload-commit.ts:52](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/payload-commit.ts#L52)
 
 ___
 
@@ -83,7 +83,7 @@ ___
 
 #### Defined in
 
-[models/payload-commit.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/payload-commit.ts#L58)
+[models/payload-commit.ts:58](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/payload-commit.ts#L58)
 
 ___
 
@@ -95,7 +95,7 @@ ___
 
 #### Defined in
 
-[models/payload-commit.ts:64](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/payload-commit.ts#L64)
+[models/payload-commit.ts:64](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/payload-commit.ts#L64)
 
 ___
 
@@ -107,7 +107,7 @@ ___
 
 #### Defined in
 
-[models/payload-commit.ts:70](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/payload-commit.ts#L70)
+[models/payload-commit.ts:70](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/payload-commit.ts#L70)
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-[models/payload-commit.ts:76](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/payload-commit.ts#L76)
+[models/payload-commit.ts:76](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/payload-commit.ts#L76)
 
 ___
 
@@ -131,7 +131,7 @@ ___
 
 #### Defined in
 
-[models/payload-commit.ts:82](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/payload-commit.ts#L82)
+[models/payload-commit.ts:82](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/payload-commit.ts#L82)
 
 ___
 
@@ -143,4 +143,4 @@ ___
 
 #### Defined in
 
-[models/payload-commit.ts:88](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/payload-commit.ts#L88)
+[models/payload-commit.ts:88](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/payload-commit.ts#L88)

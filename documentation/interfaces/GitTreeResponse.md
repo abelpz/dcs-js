@@ -29,7 +29,7 @@ GitTreeResponse returns a git tree
 
 #### Defined in
 
-[models/git-tree-response.ts:31](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/git-tree-response.ts#L31)
+[models/git-tree-response.ts:31](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/git-tree-response.ts#L31)
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 #### Defined in
 
-[models/git-tree-response.ts:37](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/git-tree-response.ts#L37)
+[models/git-tree-response.ts:37](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/git-tree-response.ts#L37)
 
 ___
 
@@ -53,7 +53,7 @@ ___
 
 #### Defined in
 
-[models/git-tree-response.ts:43](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/git-tree-response.ts#L43)
+[models/git-tree-response.ts:43](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/git-tree-response.ts#L43)
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 #### Defined in
 
-[models/git-tree-response.ts:49](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/git-tree-response.ts#L49)
+[models/git-tree-response.ts:49](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/git-tree-response.ts#L49)
 
 ___
 
@@ -77,7 +77,7 @@ ___
 
 #### Defined in
 
-[models/git-tree-response.ts:55](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/git-tree-response.ts#L55)
+[models/git-tree-response.ts:55](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/git-tree-response.ts#L55)
 
 ___
 
@@ -89,4 +89,4 @@ ___
 
 #### Defined in
 
-[models/git-tree-response.ts:61](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/git-tree-response.ts#L61)
+[models/git-tree-response.ts:61](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/git-tree-response.ts#L61)

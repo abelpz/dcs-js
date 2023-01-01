@@ -24,4 +24,4 @@ EditGitHookOption options when modifying one Git hook
 
 #### Defined in
 
-[models/edit-git-hook-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-git-hook-option.ts#L28)
+[models/edit-git-hook-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/edit-git-hook-option.ts#L28)

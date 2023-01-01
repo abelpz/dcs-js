@@ -28,7 +28,7 @@ OrganizationPermissions list different users permissions on an organization
 
 #### Defined in
 
-[models/organization-permissions.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/organization-permissions.ts#L28)
+[models/organization-permissions.ts:28](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/organization-permissions.ts#L28)
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 #### Defined in
 
-[models/organization-permissions.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/organization-permissions.ts#L34)
+[models/organization-permissions.ts:34](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/organization-permissions.ts#L34)
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 #### Defined in
 
-[models/organization-permissions.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/organization-permissions.ts#L40)
+[models/organization-permissions.ts:40](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/organization-permissions.ts#L40)
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 #### Defined in
 
-[models/organization-permissions.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/organization-permissions.ts#L46)
+[models/organization-permissions.ts:46](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/organization-permissions.ts#L46)
 
 ___
 
@@ -76,4 +76,4 @@ ___
 
 #### Defined in
 
-[models/organization-permissions.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/organization-permissions.ts#L52)
+[models/organization-permissions.ts:52](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/organization-permissions.ts#L52)

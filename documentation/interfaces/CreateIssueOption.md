@@ -34,7 +34,7 @@ deprecated
 
 #### Defined in
 
-[models/create-issue-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-issue-option.ts#L28)
+[models/create-issue-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/create-issue-option.ts#L28)
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 #### Defined in
 
-[models/create-issue-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-issue-option.ts#L34)
+[models/create-issue-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/create-issue-option.ts#L34)
 
 ___
 
@@ -58,7 +58,7 @@ ___
 
 #### Defined in
 
-[models/create-issue-option.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-issue-option.ts#L40)
+[models/create-issue-option.ts:40](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/create-issue-option.ts#L40)
 
 ___
 
@@ -70,7 +70,7 @@ ___
 
 #### Defined in
 
-[models/create-issue-option.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-issue-option.ts#L46)
+[models/create-issue-option.ts:46](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/create-issue-option.ts#L46)
 
 ___
 
@@ -82,7 +82,7 @@ ___
 
 #### Defined in
 
-[models/create-issue-option.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-issue-option.ts#L52)
+[models/create-issue-option.ts:52](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/create-issue-option.ts#L52)
 
 ___
 
@@ -96,7 +96,7 @@ list of label ids
 
 #### Defined in
 
-[models/create-issue-option.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-issue-option.ts#L58)
+[models/create-issue-option.ts:58](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/create-issue-option.ts#L58)
 
 ___
 
@@ -110,7 +110,7 @@ milestone id
 
 #### Defined in
 
-[models/create-issue-option.ts:64](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-issue-option.ts#L64)
+[models/create-issue-option.ts:64](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/create-issue-option.ts#L64)
 
 ___
 
@@ -122,7 +122,7 @@ ___
 
 #### Defined in
 
-[models/create-issue-option.ts:70](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-issue-option.ts#L70)
+[models/create-issue-option.ts:70](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/create-issue-option.ts#L70)
 
 ___
 
@@ -134,4 +134,4 @@ ___
 
 #### Defined in
 
-[models/create-issue-option.ts:76](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-issue-option.ts#L76)
+[models/create-issue-option.ts:76](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/create-issue-option.ts#L76)

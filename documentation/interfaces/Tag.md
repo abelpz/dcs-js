@@ -29,7 +29,7 @@ Tag represents a repository tag
 
 #### Defined in
 
-[models/tag.ts:31](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/tag.ts#L31)
+[models/tag.ts:31](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/tag.ts#L31)
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 #### Defined in
 
-[models/tag.ts:37](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/tag.ts#L37)
+[models/tag.ts:37](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/tag.ts#L37)
 
 ___
 
@@ -53,7 +53,7 @@ ___
 
 #### Defined in
 
-[models/tag.ts:43](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/tag.ts#L43)
+[models/tag.ts:43](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/tag.ts#L43)
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 #### Defined in
 
-[models/tag.ts:49](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/tag.ts#L49)
+[models/tag.ts:49](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/tag.ts#L49)
 
 ___
 
@@ -77,7 +77,7 @@ ___
 
 #### Defined in
 
-[models/tag.ts:55](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/tag.ts#L55)
+[models/tag.ts:55](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/tag.ts#L55)
 
 ___
 
@@ -89,4 +89,4 @@ ___
 
 #### Defined in
 
-[models/tag.ts:61](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/tag.ts#L61)
+[models/tag.ts:61](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/tag.ts#L61)

@@ -25,7 +25,7 @@ SearchResults results of a successful search
 
 #### Defined in
 
-[models/search-results.ts:31](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/search-results.ts#L31)
+[models/search-results.ts:31](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/search-results.ts#L31)
 
 ___
 
@@ -37,4 +37,4 @@ ___
 
 #### Defined in
 
-[models/search-results.ts:37](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/search-results.ts#L37)
+[models/search-results.ts:37](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/search-results.ts#L37)

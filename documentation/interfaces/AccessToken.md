@@ -25,7 +25,7 @@
 
 #### Defined in
 
-[models/access-token.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/access-token.ts#L28)
+[models/access-token.ts:28](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/access-token.ts#L28)
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 #### Defined in
 
-[models/access-token.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/access-token.ts#L34)
+[models/access-token.ts:34](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/access-token.ts#L34)
 
 ___
 
@@ -49,7 +49,7 @@ ___
 
 #### Defined in
 
-[models/access-token.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/access-token.ts#L40)
+[models/access-token.ts:40](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/access-token.ts#L40)
 
 ___
 
@@ -61,4 +61,4 @@ ___
 
 #### Defined in
 
-[models/access-token.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/access-token.ts#L46)
+[models/access-token.ts:46](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/access-token.ts#L46)

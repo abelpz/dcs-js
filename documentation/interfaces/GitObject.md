@@ -24,7 +24,7 @@
 
 #### Defined in
 
-[models/git-object.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/git-object.ts#L28)
+[models/git-object.ts:28](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/git-object.ts#L28)
 
 ___
 
@@ -36,7 +36,7 @@ ___
 
 #### Defined in
 
-[models/git-object.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/git-object.ts#L34)
+[models/git-object.ts:34](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/git-object.ts#L34)
 
 ___
 
@@ -48,4 +48,4 @@ ___
 
 #### Defined in
 
-[models/git-object.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/git-object.ts#L40)
+[models/git-object.ts:40](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/git-object.ts#L40)

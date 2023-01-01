@@ -61,7 +61,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[base.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/base.ts#L52)
+[base.ts:52](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/base.ts#L52)
 
 ## Properties
 
@@ -95,13 +95,13 @@ BaseAPI.configuration
 
 #### Defined in
 
-[base.ts:50](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/base.ts#L50)
+[base.ts:50](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/base.ts#L50)
 
 ## Methods
 
 ### <a id="adminadoptrepository" name="adminadoptrepository"></a> adminAdoptRepository
 
-▸ **adminAdoptRepository**(`owner`, `repo`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **adminAdoptRepository**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Adopt unadopted files as a repository
 
@@ -113,8 +113,7 @@ BaseAPI.configuration
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
+| `requestParameters` | [`AdminApiAdminAdoptRepositoryRequest`](../interfaces/AdminApiAdminAdoptRepositoryRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -123,13 +122,13 @@ BaseAPI.configuration
 
 #### Defined in
 
-[apis/admin-api.ts:1265](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/admin-api.ts#L1265)
+[apis/admin-api.ts:1558](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/admin-api.ts#L1558)
 
 ___
 
 ### <a id="admincreateorg" name="admincreateorg"></a> adminCreateOrg
 
-▸ **adminCreateOrg**(`username`, `organization`, `options?`): `Promise`<`AxiosResponse`<[`Organization`](../interfaces/Organization.md)\>\>
+▸ **adminCreateOrg**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Organization`](../interfaces/Organization.md)\>\>
 
 **`summary`** Create an organization
 
@@ -141,8 +140,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `username` | `string` | username of the user that will own the created organization |
-| `organization` | [`CreateOrgOption`](../interfaces/CreateOrgOption.md) |  |
+| `requestParameters` | [`AdminApiAdminCreateOrgRequest`](../interfaces/AdminApiAdminCreateOrgRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -151,13 +149,13 @@ ___
 
 #### Defined in
 
-[apis/admin-api.ts:1278](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/admin-api.ts#L1278)
+[apis/admin-api.ts:1570](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/admin-api.ts#L1570)
 
 ___
 
 ### <a id="admincreatepublickey" name="admincreatepublickey"></a> adminCreatePublicKey
 
-▸ **adminCreatePublicKey**(`username`, `key?`, `options?`): `Promise`<`AxiosResponse`<[`PublicKey`](../interfaces/PublicKey.md)\>\>
+▸ **adminCreatePublicKey**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`PublicKey`](../interfaces/PublicKey.md)\>\>
 
 **`summary`** Add a public key on behalf of a user
 
@@ -169,8 +167,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `username` | `string` | username of the user |
-| `key?` | [`CreateKeyOption`](../interfaces/CreateKeyOption.md) | - |
+| `requestParameters` | [`AdminApiAdminCreatePublicKeyRequest`](../interfaces/AdminApiAdminCreatePublicKeyRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -179,13 +176,13 @@ ___
 
 #### Defined in
 
-[apis/admin-api.ts:1291](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/admin-api.ts#L1291)
+[apis/admin-api.ts:1582](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/admin-api.ts#L1582)
 
 ___
 
 ### <a id="admincreaterepo" name="admincreaterepo"></a> adminCreateRepo
 
-▸ **adminCreateRepo**(`username`, `repository`, `options?`): `Promise`<`AxiosResponse`<[`Repository`](../interfaces/Repository.md)\>\>
+▸ **adminCreateRepo**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`Repository`](../interfaces/Repository.md)\>\>
 
 **`summary`** Create a repository on behalf of a user
 
@@ -197,8 +194,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `username` | `string` | username of the user. This user will own the created repository |
-| `repository` | [`CreateRepoOption`](../interfaces/CreateRepoOption.md) |  |
+| `requestParameters` | [`AdminApiAdminCreateRepoRequest`](../interfaces/AdminApiAdminCreateRepoRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -207,13 +203,13 @@ ___
 
 #### Defined in
 
-[apis/admin-api.ts:1304](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/admin-api.ts#L1304)
+[apis/admin-api.ts:1594](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/admin-api.ts#L1594)
 
 ___
 
 ### <a id="admincreateuser" name="admincreateuser"></a> adminCreateUser
 
-▸ **adminCreateUser**(`body?`, `options?`): `Promise`<`AxiosResponse`<[`User`](../interfaces/User.md)\>\>
+▸ **adminCreateUser**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`User`](../interfaces/User.md)\>\>
 
 **`summary`** Create a user
 
@@ -223,10 +219,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `body?` | [`CreateUserOption`](../interfaces/CreateUserOption.md) |
-| `options?` | `AxiosRequestConfig` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `requestParameters` | [`AdminApiAdminCreateUserRequest`](../interfaces/AdminApiAdminCreateUserRequest.md) | Request parameters. |
+| `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
 
@@ -234,13 +230,13 @@ ___
 
 #### Defined in
 
-[apis/admin-api.ts:1316](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/admin-api.ts#L1316)
+[apis/admin-api.ts:1606](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/admin-api.ts#L1606)
 
 ___
 
 ### <a id="admincronlist" name="admincronlist"></a> adminCronList
 
-▸ **adminCronList**(`page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`Cron`](../interfaces/Cron.md)[]\>\>
+▸ **adminCronList**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`Cron`](../interfaces/Cron.md)[]\>\>
 
 **`summary`** List cron tasks
 
@@ -250,11 +246,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `page?` | `number` |
-| `limit?` | `number` |
-| `options?` | `AxiosRequestConfig` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `requestParameters` | [`AdminApiAdminCronListRequest`](../interfaces/AdminApiAdminCronListRequest.md) | Request parameters. |
+| `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
 
@@ -262,13 +257,13 @@ ___
 
 #### Defined in
 
-[apis/admin-api.ts:1329](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/admin-api.ts#L1329)
+[apis/admin-api.ts:1618](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/admin-api.ts#L1618)
 
 ___
 
 ### <a id="admincronrun" name="admincronrun"></a> adminCronRun
 
-▸ **adminCronRun**(`task`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **adminCronRun**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Run cron task
 
@@ -280,7 +275,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `task` | `string` | task to run |
+| `requestParameters` | [`AdminApiAdminCronRunRequest`](../interfaces/AdminApiAdminCronRunRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -289,13 +284,13 @@ ___
 
 #### Defined in
 
-[apis/admin-api.ts:1341](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/admin-api.ts#L1341)
+[apis/admin-api.ts:1630](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/admin-api.ts#L1630)
 
 ___
 
 ### <a id="admindeleteunadoptedrepository" name="admindeleteunadoptedrepository"></a> adminDeleteUnadoptedRepository
 
-▸ **adminDeleteUnadoptedRepository**(`owner`, `repo`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **adminDeleteUnadoptedRepository**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Delete unadopted files
 
@@ -307,8 +302,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
+| `requestParameters` | [`AdminApiAdminDeleteUnadoptedRepositoryRequest`](../interfaces/AdminApiAdminDeleteUnadoptedRepositoryRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -317,13 +311,13 @@ ___
 
 #### Defined in
 
-[apis/admin-api.ts:1354](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/admin-api.ts#L1354)
+[apis/admin-api.ts:1642](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/admin-api.ts#L1642)
 
 ___
 
 ### <a id="admindeleteuser" name="admindeleteuser"></a> adminDeleteUser
 
-▸ **adminDeleteUser**(`username`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **adminDeleteUser**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Delete a user
 
@@ -335,7 +329,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `username` | `string` | username of user to delete |
+| `requestParameters` | [`AdminApiAdminDeleteUserRequest`](../interfaces/AdminApiAdminDeleteUserRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -344,13 +338,13 @@ ___
 
 #### Defined in
 
-[apis/admin-api.ts:1366](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/admin-api.ts#L1366)
+[apis/admin-api.ts:1654](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/admin-api.ts#L1654)
 
 ___
 
 ### <a id="admindeleteuserpublickey" name="admindeleteuserpublickey"></a> adminDeleteUserPublicKey
 
-▸ **adminDeleteUserPublicKey**(`username`, `id`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **adminDeleteUserPublicKey**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Delete a user\'s public key
 
@@ -362,8 +356,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `username` | `string` | username of user |
-| `id` | `number` | id of the key to delete |
+| `requestParameters` | [`AdminApiAdminDeleteUserPublicKeyRequest`](../interfaces/AdminApiAdminDeleteUserPublicKeyRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -372,13 +365,13 @@ ___
 
 #### Defined in
 
-[apis/admin-api.ts:1379](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/admin-api.ts#L1379)
+[apis/admin-api.ts:1666](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/admin-api.ts#L1666)
 
 ___
 
 ### <a id="adminedituser" name="adminedituser"></a> adminEditUser
 
-▸ **adminEditUser**(`username`, `body?`, `options?`): `Promise`<`AxiosResponse`<[`User`](../interfaces/User.md)\>\>
+▸ **adminEditUser**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`User`](../interfaces/User.md)\>\>
 
 **`summary`** Edit an existing user
 
@@ -390,8 +383,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `username` | `string` | username of user to edit |
-| `body?` | [`EditUserOption`](../interfaces/EditUserOption.md) | - |
+| `requestParameters` | [`AdminApiAdminEditUserRequest`](../interfaces/AdminApiAdminEditUserRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -400,13 +392,13 @@ ___
 
 #### Defined in
 
-[apis/admin-api.ts:1392](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/admin-api.ts#L1392)
+[apis/admin-api.ts:1678](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/admin-api.ts#L1678)
 
 ___
 
 ### <a id="admingetallorgs" name="admingetallorgs"></a> adminGetAllOrgs
 
-▸ **adminGetAllOrgs**(`lang?`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`Organization`](../interfaces/Organization.md)[]\>\>
+▸ **adminGetAllOrgs**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`Organization`](../interfaces/Organization.md)[]\>\>
 
 **`summary`** List all organizations
 
@@ -416,12 +408,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `lang?` | `string` |
-| `page?` | `number` |
-| `limit?` | `number` |
-| `options?` | `AxiosRequestConfig` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `requestParameters` | [`AdminApiAdminGetAllOrgsRequest`](../interfaces/AdminApiAdminGetAllOrgsRequest.md) | Request parameters. |
+| `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
 
@@ -429,13 +419,13 @@ ___
 
 #### Defined in
 
-[apis/admin-api.ts:1406](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/admin-api.ts#L1406)
+[apis/admin-api.ts:1690](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/admin-api.ts#L1690)
 
 ___
 
 ### <a id="admingetallusers" name="admingetallusers"></a> adminGetAllUsers
 
-▸ **adminGetAllUsers**(`lang?`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`User`](../interfaces/User.md)[]\>\>
+▸ **adminGetAllUsers**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`User`](../interfaces/User.md)[]\>\>
 
 **`summary`** List all users
 
@@ -445,12 +435,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `lang?` | `string` |
-| `page?` | `number` |
-| `limit?` | `number` |
-| `options?` | `AxiosRequestConfig` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `requestParameters` | [`AdminApiAdminGetAllUsersRequest`](../interfaces/AdminApiAdminGetAllUsersRequest.md) | Request parameters. |
+| `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
 
@@ -458,13 +446,13 @@ ___
 
 #### Defined in
 
-[apis/admin-api.ts:1420](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/admin-api.ts#L1420)
+[apis/admin-api.ts:1702](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/admin-api.ts#L1702)
 
 ___
 
 ### <a id="adminunadoptedlist" name="adminunadoptedlist"></a> adminUnadoptedList
 
-▸ **adminUnadoptedList**(`page?`, `limit?`, `pattern?`, `options?`): `Promise`<`AxiosResponse`<`string`[]\>\>
+▸ **adminUnadoptedList**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<`string`[]\>\>
 
 **`summary`** List unadopted repositories
 
@@ -474,12 +462,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `page?` | `number` |
-| `limit?` | `number` |
-| `pattern?` | `string` |
-| `options?` | `AxiosRequestConfig` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `requestParameters` | [`AdminApiAdminUnadoptedListRequest`](../interfaces/AdminApiAdminUnadoptedListRequest.md) | Request parameters. |
+| `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
 
@@ -487,4 +473,4 @@ ___
 
 #### Defined in
 
-[apis/admin-api.ts:1434](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/admin-api.ts#L1434)
+[apis/admin-api.ts:1714](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/admin-api.ts#L1714)

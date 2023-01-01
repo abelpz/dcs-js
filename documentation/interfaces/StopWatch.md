@@ -30,7 +30,7 @@ StopWatch represent a running stopwatch
 
 #### Defined in
 
-[models/stop-watch.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/stop-watch.ts#L28)
+[models/stop-watch.ts:28](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/stop-watch.ts#L28)
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 #### Defined in
 
-[models/stop-watch.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/stop-watch.ts#L34)
+[models/stop-watch.ts:34](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/stop-watch.ts#L34)
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 #### Defined in
 
-[models/stop-watch.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/stop-watch.ts#L40)
+[models/stop-watch.ts:40](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/stop-watch.ts#L40)
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 #### Defined in
 
-[models/stop-watch.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/stop-watch.ts#L46)
+[models/stop-watch.ts:46](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/stop-watch.ts#L46)
 
 ___
 
@@ -78,7 +78,7 @@ ___
 
 #### Defined in
 
-[models/stop-watch.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/stop-watch.ts#L52)
+[models/stop-watch.ts:52](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/stop-watch.ts#L52)
 
 ___
 
@@ -90,7 +90,7 @@ ___
 
 #### Defined in
 
-[models/stop-watch.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/stop-watch.ts#L58)
+[models/stop-watch.ts:58](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/stop-watch.ts#L58)
 
 ___
 
@@ -102,4 +102,4 @@ ___
 
 #### Defined in
 
-[models/stop-watch.ts:64](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/stop-watch.ts#L64)
+[models/stop-watch.ts:64](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/stop-watch.ts#L64)

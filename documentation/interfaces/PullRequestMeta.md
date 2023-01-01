@@ -25,7 +25,7 @@ PullRequestMeta PR info if an issue is a PR
 
 #### Defined in
 
-[models/pull-request-meta.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-request-meta.ts#L28)
+[models/pull-request-meta.ts:28](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/pull-request-meta.ts#L28)
 
 ___
 
@@ -37,4 +37,4 @@ ___
 
 #### Defined in
 
-[models/pull-request-meta.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/pull-request-meta.ts#L34)
+[models/pull-request-meta.ts:34](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/pull-request-meta.ts#L34)

@@ -26,7 +26,7 @@ EditLabelOption options for editing a label
 
 #### Defined in
 
-[models/edit-label-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-label-option.ts#L28)
+[models/edit-label-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/edit-label-option.ts#L28)
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 #### Defined in
 
-[models/edit-label-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-label-option.ts#L34)
+[models/edit-label-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/edit-label-option.ts#L34)
 
 ___
 
@@ -50,4 +50,4 @@ ___
 
 #### Defined in
 
-[models/edit-label-option.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-label-option.ts#L40)
+[models/edit-label-option.ts:40](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/edit-label-option.ts#L40)

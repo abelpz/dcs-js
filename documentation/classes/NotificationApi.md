@@ -54,7 +54,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[base.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/base.ts#L52)
+[base.ts:52](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/base.ts#L52)
 
 ## Properties
 
@@ -88,13 +88,13 @@ BaseAPI.configuration
 
 #### Defined in
 
-[base.ts:50](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/base.ts#L50)
+[base.ts:50](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/base.ts#L50)
 
 ## Methods
 
 ### <a id="notifygetlist" name="notifygetlist"></a> notifyGetList
 
-▸ **notifyGetList**(`all?`, `statusTypes?`, `subjectType?`, `since?`, `before?`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`NotificationThread`](../interfaces/NotificationThread.md)[]\>\>
+▸ **notifyGetList**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`NotificationThread`](../interfaces/NotificationThread.md)[]\>\>
 
 **`summary`** List users\'s notification threads
 
@@ -104,16 +104,10 @@ BaseAPI.configuration
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `all?` | `boolean` |
-| `statusTypes?` | `string`[] |
-| `subjectType?` | (``"repository"`` \| ``"issue"`` \| ``"pull"`` \| ``"commit"``)[] |
-| `since?` | `string` |
-| `before?` | `string` |
-| `page?` | `number` |
-| `limit?` | `number` |
-| `options?` | `AxiosRequestConfig` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `requestParameters` | [`NotificationApiNotifyGetListRequest`](../interfaces/NotificationApiNotifyGetListRequest.md) | Request parameters. |
+| `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
 
@@ -121,13 +115,13 @@ BaseAPI.configuration
 
 #### Defined in
 
-[apis/notification-api.ts:783](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/notification-api.ts#L783)
+[apis/notification-api.ts:1022](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/notification-api.ts#L1022)
 
 ___
 
 ### <a id="notifygetrepolist" name="notifygetrepolist"></a> notifyGetRepoList
 
-▸ **notifyGetRepoList**(`owner`, `repo`, `all?`, `statusTypes?`, `subjectType?`, `since?`, `before?`, `page?`, `limit?`, `options?`): `Promise`<`AxiosResponse`<[`NotificationThread`](../interfaces/NotificationThread.md)[]\>\>
+▸ **notifyGetRepoList**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`NotificationThread`](../interfaces/NotificationThread.md)[]\>\>
 
 **`summary`** List users\'s notification threads on a specific repo
 
@@ -139,15 +133,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `all?` | `boolean` | - |
-| `statusTypes?` | `string`[] | - |
-| `subjectType?` | (``"repository"`` \| ``"issue"`` \| ``"pull"`` \| ``"commit"``)[] | - |
-| `since?` | `string` | - |
-| `before?` | `string` | - |
-| `page?` | `number` | - |
-| `limit?` | `number` | - |
+| `requestParameters` | [`NotificationApiNotifyGetRepoListRequest`](../interfaces/NotificationApiNotifyGetRepoListRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -156,13 +142,13 @@ ___
 
 #### Defined in
 
-[apis/notification-api.ts:803](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/notification-api.ts#L803)
+[apis/notification-api.ts:1034](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/notification-api.ts#L1034)
 
 ___
 
 ### <a id="notifygetthread" name="notifygetthread"></a> notifyGetThread
 
-▸ **notifyGetThread**(`id`, `options?`): `Promise`<`AxiosResponse`<[`NotificationThread`](../interfaces/NotificationThread.md)\>\>
+▸ **notifyGetThread**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`NotificationThread`](../interfaces/NotificationThread.md)\>\>
 
 **`summary`** Get notification thread by ID
 
@@ -174,7 +160,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `id` | `string` | id of notification thread |
+| `requestParameters` | [`NotificationApiNotifyGetThreadRequest`](../interfaces/NotificationApiNotifyGetThreadRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -183,7 +169,7 @@ ___
 
 #### Defined in
 
-[apis/notification-api.ts:815](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/notification-api.ts#L815)
+[apis/notification-api.ts:1046](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/notification-api.ts#L1046)
 
 ___
 
@@ -209,13 +195,13 @@ ___
 
 #### Defined in
 
-[apis/notification-api.ts:826](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/notification-api.ts#L826)
+[apis/notification-api.ts:1057](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/notification-api.ts#L1057)
 
 ___
 
 ### <a id="notifyreadlist" name="notifyreadlist"></a> notifyReadList
 
-▸ **notifyReadList**(`lastReadAt?`, `all?`, `statusTypes?`, `toStatus?`, `options?`): `Promise`<`AxiosResponse`<[`NotificationThread`](../interfaces/NotificationThread.md)[]\>\>
+▸ **notifyReadList**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`NotificationThread`](../interfaces/NotificationThread.md)[]\>\>
 
 **`summary`** Mark notification threads as read, pinned or unread
 
@@ -225,13 +211,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `lastReadAt?` | `string` |
-| `all?` | `string` |
-| `statusTypes?` | `string`[] |
-| `toStatus?` | `string` |
-| `options?` | `AxiosRequestConfig` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `requestParameters` | [`NotificationApiNotifyReadListRequest`](../interfaces/NotificationApiNotifyReadListRequest.md) | Request parameters. |
+| `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
 
@@ -239,13 +222,13 @@ ___
 
 #### Defined in
 
-[apis/notification-api.ts:841](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/notification-api.ts#L841)
+[apis/notification-api.ts:1069](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/notification-api.ts#L1069)
 
 ___
 
 ### <a id="notifyreadrepolist" name="notifyreadrepolist"></a> notifyReadRepoList
 
-▸ **notifyReadRepoList**(`owner`, `repo`, `all?`, `statusTypes?`, `toStatus?`, `lastReadAt?`, `options?`): `Promise`<`AxiosResponse`<[`NotificationThread`](../interfaces/NotificationThread.md)[]\>\>
+▸ **notifyReadRepoList**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`NotificationThread`](../interfaces/NotificationThread.md)[]\>\>
 
 **`summary`** Mark notification threads as read, pinned or unread on a specific repo
 
@@ -257,12 +240,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `owner` | `string` | owner of the repo |
-| `repo` | `string` | name of the repo |
-| `all?` | `string` | - |
-| `statusTypes?` | `string`[] | - |
-| `toStatus?` | `string` | - |
-| `lastReadAt?` | `string` | - |
+| `requestParameters` | [`NotificationApiNotifyReadRepoListRequest`](../interfaces/NotificationApiNotifyReadRepoListRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -271,13 +249,13 @@ ___
 
 #### Defined in
 
-[apis/notification-api.ts:858](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/notification-api.ts#L858)
+[apis/notification-api.ts:1081](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/notification-api.ts#L1081)
 
 ___
 
 ### <a id="notifyreadthread" name="notifyreadthread"></a> notifyReadThread
 
-▸ **notifyReadThread**(`id`, `toStatus?`, `options?`): `Promise`<`AxiosResponse`<[`NotificationThread`](../interfaces/NotificationThread.md)\>\>
+▸ **notifyReadThread**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`NotificationThread`](../interfaces/NotificationThread.md)\>\>
 
 **`summary`** Mark notification thread as read by ID
 
@@ -289,8 +267,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `id` | `string` | id of notification thread |
-| `toStatus?` | `string` | - |
+| `requestParameters` | [`NotificationApiNotifyReadThreadRequest`](../interfaces/NotificationApiNotifyReadThreadRequest.md) | Request parameters. |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -299,4 +276,4 @@ ___
 
 #### Defined in
 
-[apis/notification-api.ts:871](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/notification-api.ts#L871)
+[apis/notification-api.ts:1093](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/apis/notification-api.ts#L1093)

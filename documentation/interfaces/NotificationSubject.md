@@ -30,7 +30,7 @@ NotificationSubject contains the notification subject (Issue/Pull/Commit)
 
 #### Defined in
 
-[models/notification-subject.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/notification-subject.ts#L28)
+[models/notification-subject.ts:28](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/notification-subject.ts#L28)
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 #### Defined in
 
-[models/notification-subject.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/notification-subject.ts#L34)
+[models/notification-subject.ts:34](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/notification-subject.ts#L34)
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 #### Defined in
 
-[models/notification-subject.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/notification-subject.ts#L40)
+[models/notification-subject.ts:40](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/notification-subject.ts#L40)
 
 ___
 
@@ -68,7 +68,7 @@ StateType issue state type
 
 #### Defined in
 
-[models/notification-subject.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/notification-subject.ts#L46)
+[models/notification-subject.ts:46](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/notification-subject.ts#L46)
 
 ___
 
@@ -80,7 +80,7 @@ ___
 
 #### Defined in
 
-[models/notification-subject.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/notification-subject.ts#L52)
+[models/notification-subject.ts:52](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/notification-subject.ts#L52)
 
 ___
 
@@ -94,7 +94,7 @@ NotifySubjectType represent type of notification subject
 
 #### Defined in
 
-[models/notification-subject.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/notification-subject.ts#L58)
+[models/notification-subject.ts:58](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/notification-subject.ts#L58)
 
 ___
 
@@ -106,4 +106,4 @@ ___
 
 #### Defined in
 
-[models/notification-subject.ts:64](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/notification-subject.ts#L64)
+[models/notification-subject.ts:64](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/notification-subject.ts#L64)

@@ -31,7 +31,7 @@ DeleteFileOptions options for deleting files (used for other File structs below)
 
 #### Defined in
 
-[models/delete-file-options.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/delete-file-options.ts#L34)
+[models/delete-file-options.ts:34](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/delete-file-options.ts#L34)
 
 ___
 
@@ -45,7 +45,7 @@ branch (optional) to base this file from. if not given, the default branch is us
 
 #### Defined in
 
-[models/delete-file-options.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/delete-file-options.ts#L40)
+[models/delete-file-options.ts:40](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/delete-file-options.ts#L40)
 
 ___
 
@@ -57,7 +57,7 @@ ___
 
 #### Defined in
 
-[models/delete-file-options.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/delete-file-options.ts#L46)
+[models/delete-file-options.ts:46](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/delete-file-options.ts#L46)
 
 ___
 
@@ -69,7 +69,7 @@ ___
 
 #### Defined in
 
-[models/delete-file-options.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/delete-file-options.ts#L52)
+[models/delete-file-options.ts:52](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/delete-file-options.ts#L52)
 
 ___
 
@@ -83,7 +83,7 @@ message (optional) for the commit of this file. if not supplied, a default messa
 
 #### Defined in
 
-[models/delete-file-options.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/delete-file-options.ts#L58)
+[models/delete-file-options.ts:58](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/delete-file-options.ts#L58)
 
 ___
 
@@ -97,7 +97,7 @@ new_branch (optional) will make a new branch from `branch` before creating the f
 
 #### Defined in
 
-[models/delete-file-options.ts:64](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/delete-file-options.ts#L64)
+[models/delete-file-options.ts:64](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/delete-file-options.ts#L64)
 
 ___
 
@@ -111,7 +111,7 @@ sha is the SHA for the file that already exists
 
 #### Defined in
 
-[models/delete-file-options.ts:70](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/delete-file-options.ts#L70)
+[models/delete-file-options.ts:70](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/delete-file-options.ts#L70)
 
 ___
 
@@ -125,4 +125,4 @@ Add a Signed-off-by trailer by the committer at the end of the commit log messag
 
 #### Defined in
 
-[models/delete-file-options.ts:76](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/delete-file-options.ts#L76)
+[models/delete-file-options.ts:76](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/delete-file-options.ts#L76)

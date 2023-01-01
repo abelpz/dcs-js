@@ -24,4 +24,4 @@ EditIssueCommentOption options for editing a comment
 
 #### Defined in
 
-[models/edit-issue-comment-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-issue-comment-option.ts#L28)
+[models/edit-issue-comment-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/b29eb7a/models/edit-issue-comment-option.ts#L28)
