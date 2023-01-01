@@ -30,7 +30,7 @@ Attachment a generic attachment
 
 #### Defined in
 
-[models/attachment.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/attachment.ts#L28)
+[models/attachment.ts:28](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/attachment.ts#L28)
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 #### Defined in
 
-[models/attachment.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/attachment.ts#L34)
+[models/attachment.ts:34](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/attachment.ts#L34)
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 #### Defined in
 
-[models/attachment.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/attachment.ts#L40)
+[models/attachment.ts:40](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/attachment.ts#L40)
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 #### Defined in
 
-[models/attachment.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/attachment.ts#L46)
+[models/attachment.ts:46](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/attachment.ts#L46)
 
 ___
 
@@ -78,7 +78,7 @@ ___
 
 #### Defined in
 
-[models/attachment.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/attachment.ts#L52)
+[models/attachment.ts:52](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/attachment.ts#L52)
 
 ___
 
@@ -90,7 +90,7 @@ ___
 
 #### Defined in
 
-[models/attachment.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/attachment.ts#L58)
+[models/attachment.ts:58](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/attachment.ts#L58)
 
 ___
 
@@ -102,4 +102,4 @@ ___
 
 #### Defined in
 
-[models/attachment.ts:64](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/attachment.ts#L64)
+[models/attachment.ts:64](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/attachment.ts#L64)

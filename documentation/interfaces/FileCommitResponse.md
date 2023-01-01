@@ -30,7 +30,7 @@
 
 #### Defined in
 
-[models/file-commit-response.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/file-commit-response.ts#L34)
+[models/file-commit-response.ts:34](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/file-commit-response.ts#L34)
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 #### Defined in
 
-[models/file-commit-response.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/file-commit-response.ts#L40)
+[models/file-commit-response.ts:40](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/file-commit-response.ts#L40)
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 #### Defined in
 
-[models/file-commit-response.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/file-commit-response.ts#L46)
+[models/file-commit-response.ts:46](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/file-commit-response.ts#L46)
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 #### Defined in
 
-[models/file-commit-response.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/file-commit-response.ts#L52)
+[models/file-commit-response.ts:52](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/file-commit-response.ts#L52)
 
 ___
 
@@ -78,7 +78,7 @@ ___
 
 #### Defined in
 
-[models/file-commit-response.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/file-commit-response.ts#L58)
+[models/file-commit-response.ts:58](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/file-commit-response.ts#L58)
 
 ___
 
@@ -90,7 +90,7 @@ ___
 
 #### Defined in
 
-[models/file-commit-response.ts:64](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/file-commit-response.ts#L64)
+[models/file-commit-response.ts:64](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/file-commit-response.ts#L64)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-[models/file-commit-response.ts:70](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/file-commit-response.ts#L70)
+[models/file-commit-response.ts:70](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/file-commit-response.ts#L70)
 
 ___
 
@@ -114,7 +114,7 @@ ___
 
 #### Defined in
 
-[models/file-commit-response.ts:76](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/file-commit-response.ts#L76)
+[models/file-commit-response.ts:76](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/file-commit-response.ts#L76)
 
 ___
 
@@ -126,4 +126,4 @@ ___
 
 #### Defined in
 
-[models/file-commit-response.ts:82](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/file-commit-response.ts#L82)
+[models/file-commit-response.ts:82](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/file-commit-response.ts#L82)

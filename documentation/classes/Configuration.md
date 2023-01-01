@@ -36,7 +36,7 @@
 
 #### Defined in
 
-[configuration.ts:77](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/configuration.ts#L77)
+[configuration.ts:77](https://github.com/unfoldingWord/dcs-js/blob/dd84989/configuration.ts#L77)
 
 ## Properties
 
@@ -54,7 +54,7 @@ parameter for oauth2 security
 
 #### Defined in
 
-[configuration.ts:53](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/configuration.ts#L53)
+[configuration.ts:53](https://github.com/unfoldingWord/dcs-js/blob/dd84989/configuration.ts#L53)
 
 ___
 
@@ -70,7 +70,7 @@ parameter for apiKey security
 
 #### Defined in
 
-[configuration.ts:32](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/configuration.ts#L32)
+[configuration.ts:32](https://github.com/unfoldingWord/dcs-js/blob/dd84989/configuration.ts#L32)
 
 ___
 
@@ -84,7 +84,7 @@ base options for axios calls
 
 #### Defined in
 
-[configuration.ts:67](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/configuration.ts#L67)
+[configuration.ts:67](https://github.com/unfoldingWord/dcs-js/blob/dd84989/configuration.ts#L67)
 
 ___
 
@@ -98,7 +98,7 @@ override base path
 
 #### Defined in
 
-[configuration.ts:60](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/configuration.ts#L60)
+[configuration.ts:60](https://github.com/unfoldingWord/dcs-js/blob/dd84989/configuration.ts#L60)
 
 ___
 
@@ -116,7 +116,7 @@ do not support the FormData class can still run the generated client.
 
 #### Defined in
 
-[configuration.ts:75](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/configuration.ts#L75)
+[configuration.ts:75](https://github.com/unfoldingWord/dcs-js/blob/dd84989/configuration.ts#L75)
 
 ___
 
@@ -130,7 +130,7 @@ parameter for basic security
 
 #### Defined in
 
-[configuration.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/configuration.ts#L46)
+[configuration.ts:46](https://github.com/unfoldingWord/dcs-js/blob/dd84989/configuration.ts#L46)
 
 ___
 
@@ -144,7 +144,7 @@ parameter for basic security
 
 #### Defined in
 
-[configuration.ts:39](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/configuration.ts#L39)
+[configuration.ts:39](https://github.com/unfoldingWord/dcs-js/blob/dd84989/configuration.ts#L39)
 
 ## Methods
 
@@ -173,4 +173,4 @@ True if the given MIME is JSON, false otherwise.
 
 #### Defined in
 
-[configuration.ts:97](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/configuration.ts#L97)
+[configuration.ts:97](https://github.com/unfoldingWord/dcs-js/blob/dd84989/configuration.ts#L97)

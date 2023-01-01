@@ -26,7 +26,7 @@ FileDeleteResponse contains information about a repo\'s file that was deleted
 
 #### Defined in
 
-[models/file-delete-response.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/file-delete-response.ts#L34)
+[models/file-delete-response.ts:34](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/file-delete-response.ts#L34)
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 #### Defined in
 
-[models/file-delete-response.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/file-delete-response.ts#L40)
+[models/file-delete-response.ts:40](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/file-delete-response.ts#L40)
 
 ___
 
@@ -50,4 +50,4 @@ ___
 
 #### Defined in
 
-[models/file-delete-response.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/file-delete-response.ts#L46)
+[models/file-delete-response.ts:46](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/file-delete-response.ts#L46)

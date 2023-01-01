@@ -29,7 +29,7 @@ CreateReleaseOption options when creating a release
 
 #### Defined in
 
-[models/create-release-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-release-option.ts#L28)
+[models/create-release-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/create-release-option.ts#L28)
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 #### Defined in
 
-[models/create-release-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-release-option.ts#L34)
+[models/create-release-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/create-release-option.ts#L34)
 
 ___
 
@@ -53,7 +53,7 @@ ___
 
 #### Defined in
 
-[models/create-release-option.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-release-option.ts#L40)
+[models/create-release-option.ts:40](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/create-release-option.ts#L40)
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 #### Defined in
 
-[models/create-release-option.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-release-option.ts#L46)
+[models/create-release-option.ts:46](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/create-release-option.ts#L46)
 
 ___
 
@@ -77,7 +77,7 @@ ___
 
 #### Defined in
 
-[models/create-release-option.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-release-option.ts#L52)
+[models/create-release-option.ts:52](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/create-release-option.ts#L52)
 
 ___
 
@@ -89,4 +89,4 @@ ___
 
 #### Defined in
 
-[models/create-release-option.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-release-option.ts#L58)
+[models/create-release-option.ts:58](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/create-release-option.ts#L58)

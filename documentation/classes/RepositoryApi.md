@@ -38,11 +38,14 @@ RepositoryApi - object-oriented interface
 - [repoAddCollaborator](RepositoryApi.md#repoaddcollaborator)
 - [repoAddTeam](RepositoryApi.md#repoaddteam)
 - [repoAddTopic](RepositoryApi.md#repoaddtopic)
+- [repoApplyDiffPatch](RepositoryApi.md#repoapplydiffpatch)
+- [repoCancelScheduledAutoMerge](RepositoryApi.md#repocancelscheduledautomerge)
 - [repoCheckCollaborator](RepositoryApi.md#repocheckcollaborator)
 - [repoCheckTeam](RepositoryApi.md#repocheckteam)
 - [repoCreateBranch](RepositoryApi.md#repocreatebranch)
 - [repoCreateBranchProtection](RepositoryApi.md#repocreatebranchprotection)
 - [repoCreateFile](RepositoryApi.md#repocreatefile)
+- [repoCreateGitRef](RepositoryApi.md#repocreategitref)
 - [repoCreateHook](RepositoryApi.md#repocreatehook)
 - [repoCreateKey](RepositoryApi.md#repocreatekey)
 - [repoCreatePullRequest](RepositoryApi.md#repocreatepullrequest)
@@ -59,6 +62,7 @@ RepositoryApi - object-oriented interface
 - [repoDeleteCollaborator](RepositoryApi.md#repodeletecollaborator)
 - [repoDeleteFile](RepositoryApi.md#repodeletefile)
 - [repoDeleteGitHook](RepositoryApi.md#repodeletegithook)
+- [repoDeleteGitRef](RepositoryApi.md#repodeletegitref)
 - [repoDeleteHook](RepositoryApi.md#repodeletehook)
 - [repoDeleteKey](RepositoryApi.md#repodeletekey)
 - [repoDeletePullReview](RepositoryApi.md#repodeletepullreview)
@@ -103,9 +107,11 @@ RepositoryApi - object-oriented interface
 - [repoGetPullReview](RepositoryApi.md#repogetpullreview)
 - [repoGetPullReviewComments](RepositoryApi.md#repogetpullreviewcomments)
 - [repoGetRawFile](RepositoryApi.md#repogetrawfile)
+- [repoGetRawFileOrLFS](RepositoryApi.md#repogetrawfileorlfs)
 - [repoGetRelease](RepositoryApi.md#repogetrelease)
 - [repoGetReleaseAttachment](RepositoryApi.md#repogetreleaseattachment)
 - [repoGetReleaseByTag](RepositoryApi.md#repogetreleasebytag)
+- [repoGetRepoPermissions](RepositoryApi.md#repogetrepopermissions)
 - [repoGetReviewers](RepositoryApi.md#repogetreviewers)
 - [repoGetSingleCommit](RepositoryApi.md#repogetsinglecommit)
 - [repoGetTag](RepositoryApi.md#repogettag)
@@ -143,6 +149,7 @@ RepositoryApi - object-oriented interface
 - [repoTransfer](RepositoryApi.md#repotransfer)
 - [repoUnDismissPullReview](RepositoryApi.md#repoundismisspullreview)
 - [repoUpdateFile](RepositoryApi.md#repoupdatefile)
+- [repoUpdateGitRef](RepositoryApi.md#repoupdategitref)
 - [repoUpdatePullRequest](RepositoryApi.md#repoupdatepullrequest)
 - [repoUpdateTopics](RepositoryApi.md#repoupdatetopics)
 - [topicSearch](RepositoryApi.md#topicsearch)
@@ -171,7 +178,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[base.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/base.ts#L52)
+[base.ts:52](https://github.com/unfoldingWord/dcs-js/blob/dd84989/base.ts#L52)
 
 ## Properties
 
@@ -205,7 +212,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[base.ts:50](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/base.ts#L50)
+[base.ts:50](https://github.com/unfoldingWord/dcs-js/blob/dd84989/base.ts#L50)
 
 ## Methods
 
@@ -233,7 +240,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[apis/repository-api.ts:11830](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L11830)
+[apis/repository-api.ts:12488](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L12488)
 
 ___
 
@@ -260,7 +267,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:11842](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L11842)
+[apis/repository-api.ts:12500](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L12500)
 
 ___
 
@@ -289,7 +296,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:11856](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L11856)
+[apis/repository-api.ts:12514](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L12514)
 
 ___
 
@@ -318,7 +325,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:11870](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L11870)
+[apis/repository-api.ts:12528](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L12528)
 
 ___
 
@@ -347,7 +354,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:11884](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L11884)
+[apis/repository-api.ts:12542](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L12542)
 
 ___
 
@@ -376,7 +383,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:11898](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L11898)
+[apis/repository-api.ts:12556](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L12556)
 
 ___
 
@@ -408,7 +415,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:11915](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L11915)
+[apis/repository-api.ts:12573](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L12573)
 
 ___
 
@@ -438,7 +445,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:11930](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L11930)
+[apis/repository-api.ts:12588](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L12588)
 
 ___
 
@@ -466,7 +473,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:11943](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L11943)
+[apis/repository-api.ts:12601](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L12601)
 
 ___
 
@@ -496,7 +503,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:11958](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L11958)
+[apis/repository-api.ts:12616](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L12616)
 
 ___
 
@@ -525,7 +532,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:11972](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L11972)
+[apis/repository-api.ts:12630](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L12630)
 
 ___
 
@@ -554,7 +561,65 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:11986](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L11986)
+[apis/repository-api.ts:12644](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L12644)
+
+___
+
+### <a id="repoapplydiffpatch" name="repoapplydiffpatch"></a> repoApplyDiffPatch
+
+▸ **repoApplyDiffPatch**(`owner`, `repo`, `body`, `options?`): `Promise`<`AxiosResponse`<[`FileResponse`](../interfaces/FileResponse.md)\>\>
+
+**`summary`** Apply diff patch to repository
+
+**`throws`** {RequiredError}
+
+**`memberof`** RepositoryApi
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `owner` | `string` | owner of the repo |
+| `repo` | `string` | name of the repo |
+| `body` | [`UpdateFileOptions`](../interfaces/UpdateFileOptions.md) |  |
+| `options?` | `AxiosRequestConfig` | - |
+
+#### Returns
+
+`Promise`<`AxiosResponse`<[`FileResponse`](../interfaces/FileResponse.md)\>\>
+
+#### Defined in
+
+[apis/repository-api.ts:12658](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L12658)
+
+___
+
+### <a id="repocancelscheduledautomerge" name="repocancelscheduledautomerge"></a> repoCancelScheduledAutoMerge
+
+▸ **repoCancelScheduledAutoMerge**(`owner`, `repo`, `index`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+
+**`summary`** Cancel the scheduled auto merge for the given pull request
+
+**`throws`** {RequiredError}
+
+**`memberof`** RepositoryApi
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `owner` | `string` | owner of the repo |
+| `repo` | `string` | name of the repo |
+| `index` | `number` | index of the pull request to merge |
+| `options?` | `AxiosRequestConfig` | - |
+
+#### Returns
+
+`Promise`<`AxiosResponse`<`void`\>\>
+
+#### Defined in
+
+[apis/repository-api.ts:12672](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L12672)
 
 ___
 
@@ -583,7 +648,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12000](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12000)
+[apis/repository-api.ts:12686](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L12686)
 
 ___
 
@@ -612,7 +677,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12014](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12014)
+[apis/repository-api.ts:12700](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L12700)
 
 ___
 
@@ -641,7 +706,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12028](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12028)
+[apis/repository-api.ts:12714](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L12714)
 
 ___
 
@@ -670,7 +735,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12042](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12042)
+[apis/repository-api.ts:12728](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L12728)
 
 ___
 
@@ -700,7 +765,38 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12057](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12057)
+[apis/repository-api.ts:12743](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L12743)
+
+___
+
+### <a id="repocreategitref" name="repocreategitref"></a> repoCreateGitRef
+
+▸ **repoCreateGitRef**(`owner`, `repo`, `body?`, `options?`): `Promise`<`AxiosResponse`<[`Reference`](../interfaces/Reference.md)\>\>
+
+Creates a reference for your repository. You are unable to create new references for empty repositories, even if the commit SHA-1 hash used exists. Empty repositories are repositories without branches.
+
+**`summary`** Create a reference
+
+**`throws`** {RequiredError}
+
+**`memberof`** RepositoryApi
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `owner` | `string` | owner of the repo |
+| `repo` | `string` | name of the repo |
+| `body?` | [`CreateGitRefOption`](../interfaces/CreateGitRefOption.md) | - |
+| `options?` | `AxiosRequestConfig` | - |
+
+#### Returns
+
+`Promise`<`AxiosResponse`<[`Reference`](../interfaces/Reference.md)\>\>
+
+#### Defined in
+
+[apis/repository-api.ts:12757](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L12757)
 
 ___
 
@@ -729,7 +825,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12071](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12071)
+[apis/repository-api.ts:12771](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L12771)
 
 ___
 
@@ -758,7 +854,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12085](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12085)
+[apis/repository-api.ts:12785](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L12785)
 
 ___
 
@@ -787,7 +883,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12099](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12099)
+[apis/repository-api.ts:12799](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L12799)
 
 ___
 
@@ -817,7 +913,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12114](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12114)
+[apis/repository-api.ts:12814](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L12814)
 
 ___
 
@@ -847,7 +943,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12129](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12129)
+[apis/repository-api.ts:12829](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L12829)
 
 ___
 
@@ -876,7 +972,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12143](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12143)
+[apis/repository-api.ts:12843](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L12843)
 
 ___
 
@@ -907,7 +1003,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12159](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12159)
+[apis/repository-api.ts:12859](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L12859)
 
 ___
 
@@ -937,7 +1033,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12174](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12174)
+[apis/repository-api.ts:12874](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L12874)
 
 ___
 
@@ -966,7 +1062,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12188](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12188)
+[apis/repository-api.ts:12888](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L12888)
 
 ___
 
@@ -995,7 +1091,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12202](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12202)
+[apis/repository-api.ts:12902](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L12902)
 
 ___
 
@@ -1023,7 +1119,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12215](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12215)
+[apis/repository-api.ts:12915](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L12915)
 
 ___
 
@@ -1052,7 +1148,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12229](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12229)
+[apis/repository-api.ts:12929](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L12929)
 
 ___
 
@@ -1081,7 +1177,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12243](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12243)
+[apis/repository-api.ts:12943](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L12943)
 
 ___
 
@@ -1110,7 +1206,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12257](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12257)
+[apis/repository-api.ts:12957](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L12957)
 
 ___
 
@@ -1140,7 +1236,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12272](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12272)
+[apis/repository-api.ts:12972](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L12972)
 
 ___
 
@@ -1169,7 +1265,36 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12286](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12286)
+[apis/repository-api.ts:12986](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L12986)
+
+___
+
+### <a id="repodeletegitref" name="repodeletegitref"></a> repoDeleteGitRef
+
+▸ **repoDeleteGitRef**(`owner`, `repo`, `ref`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+
+**`summary`** Delete a reference
+
+**`throws`** {RequiredError}
+
+**`memberof`** RepositoryApi
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `owner` | `string` | owner of the repo |
+| `repo` | `string` | name of the repo |
+| `ref` | `string` | name of the ref to be deleted |
+| `options?` | `AxiosRequestConfig` | - |
+
+#### Returns
+
+`Promise`<`AxiosResponse`<`void`\>\>
+
+#### Defined in
+
+[apis/repository-api.ts:13000](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13000)
 
 ___
 
@@ -1198,7 +1323,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12300](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12300)
+[apis/repository-api.ts:13014](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13014)
 
 ___
 
@@ -1227,7 +1352,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12314](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12314)
+[apis/repository-api.ts:13028](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13028)
 
 ___
 
@@ -1257,7 +1382,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12329](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12329)
+[apis/repository-api.ts:13043](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13043)
 
 ___
 
@@ -1287,7 +1412,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12344](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12344)
+[apis/repository-api.ts:13058](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13058)
 
 ___
 
@@ -1316,7 +1441,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12358](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12358)
+[apis/repository-api.ts:13072](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13072)
 
 ___
 
@@ -1346,7 +1471,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12373](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12373)
+[apis/repository-api.ts:13087](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13087)
 
 ___
 
@@ -1375,7 +1500,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12387](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12387)
+[apis/repository-api.ts:13101](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13101)
 
 ___
 
@@ -1404,7 +1529,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12401](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12401)
+[apis/repository-api.ts:13115](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13115)
 
 ___
 
@@ -1433,7 +1558,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12415](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12415)
+[apis/repository-api.ts:13129](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13129)
 
 ___
 
@@ -1462,7 +1587,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12429](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12429)
+[apis/repository-api.ts:13143](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13143)
 
 ___
 
@@ -1491,7 +1616,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12443](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12443)
+[apis/repository-api.ts:13157](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13157)
 
 ___
 
@@ -1522,7 +1647,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12459](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12459)
+[apis/repository-api.ts:13173](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13173)
 
 ___
 
@@ -1552,7 +1677,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12474](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12474)
+[apis/repository-api.ts:13188](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13188)
 
 ___
 
@@ -1583,7 +1708,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12490](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12490)
+[apis/repository-api.ts:13204](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13204)
 
 ___
 
@@ -1612,7 +1737,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12504](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12504)
+[apis/repository-api.ts:13218](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13218)
 
 ___
 
@@ -1642,7 +1767,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12519](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12519)
+[apis/repository-api.ts:13233](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13233)
 
 ___
 
@@ -1672,7 +1797,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12534](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12534)
+[apis/repository-api.ts:13248](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13248)
 
 ___
 
@@ -1702,7 +1827,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12549](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12549)
+[apis/repository-api.ts:13263](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13263)
 
 ___
 
@@ -1732,7 +1857,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12564](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12564)
+[apis/repository-api.ts:13278](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13278)
 
 ___
 
@@ -1762,7 +1887,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12579](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12579)
+[apis/repository-api.ts:13293](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13293)
 
 ___
 
@@ -1793,7 +1918,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12595](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12595)
+[apis/repository-api.ts:13309](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13309)
 
 ___
 
@@ -1823,7 +1948,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12610](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12610)
+[apis/repository-api.ts:13324](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13324)
 
 ___
 
@@ -1851,7 +1976,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12623](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12623)
+[apis/repository-api.ts:13337](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13337)
 
 ___
 
@@ -1883,7 +2008,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12640](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12640)
+[apis/repository-api.ts:13354](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13354)
 
 ___
 
@@ -1912,7 +2037,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12654](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12654)
+[apis/repository-api.ts:13368](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13368)
 
 ___
 
@@ -1940,7 +2065,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12667](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12667)
+[apis/repository-api.ts:13381](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13381)
 
 ___
 
@@ -1969,7 +2094,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12681](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12681)
+[apis/repository-api.ts:13395](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13395)
 
 ___
 
@@ -1998,7 +2123,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12695](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12695)
+[apis/repository-api.ts:13409](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13409)
 
 ___
 
@@ -2025,7 +2150,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12707](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12707)
+[apis/repository-api.ts:13421](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13421)
 
 ___
 
@@ -2056,7 +2181,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12723](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12723)
+[apis/repository-api.ts:13437](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13437)
 
 ___
 
@@ -2086,7 +2211,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12738](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12738)
+[apis/repository-api.ts:13452](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13452)
 
 ___
 
@@ -2115,13 +2240,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12752](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12752)
+[apis/repository-api.ts:13466](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13466)
 
 ___
 
 ### <a id="repogeteditorconfig" name="repogeteditorconfig"></a> repoGetEditorConfig
 
-▸ **repoGetEditorConfig**(`owner`, `repo`, `filepath`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **repoGetEditorConfig**(`owner`, `repo`, `filepath`, `ref?`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Get the EditorConfig definitions of a file in a repository
 
@@ -2136,6 +2261,7 @@ ___
 | `owner` | `string` | owner of the repo |
 | `repo` | `string` | name of the repo |
 | `filepath` | `string` | filepath of file to get |
+| `ref?` | `string` | - |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -2144,7 +2270,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12766](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12766)
+[apis/repository-api.ts:13481](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13481)
 
 ___
 
@@ -2173,7 +2299,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12780](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12780)
+[apis/repository-api.ts:13495](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13495)
 
 ___
 
@@ -2202,7 +2328,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12794](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12794)
+[apis/repository-api.ts:13509](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13509)
 
 ___
 
@@ -2230,7 +2356,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12807](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12807)
+[apis/repository-api.ts:13522](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13522)
 
 ___
 
@@ -2259,7 +2385,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12821](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12821)
+[apis/repository-api.ts:13536](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13536)
 
 ___
 
@@ -2287,7 +2413,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12834](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12834)
+[apis/repository-api.ts:13549](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13549)
 
 ___
 
@@ -2316,7 +2442,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12848](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12848)
+[apis/repository-api.ts:13563](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13563)
 
 ___
 
@@ -2345,7 +2471,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12862](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12862)
+[apis/repository-api.ts:13577](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13577)
 
 ___
 
@@ -2376,7 +2502,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12878](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12878)
+[apis/repository-api.ts:13593](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13593)
 
 ___
 
@@ -2406,7 +2532,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12893](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12893)
+[apis/repository-api.ts:13608](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13608)
 
 ___
 
@@ -2436,7 +2562,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12908](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12908)
+[apis/repository-api.ts:13623](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13623)
 
 ___
 
@@ -2466,7 +2592,37 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12923](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12923)
+[apis/repository-api.ts:13638](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13638)
+
+___
+
+### <a id="repogetrawfileorlfs" name="repogetrawfileorlfs"></a> repoGetRawFileOrLFS
+
+▸ **repoGetRawFileOrLFS**(`owner`, `repo`, `filepath`, `ref?`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+
+**`summary`** Get a file or it\'s LFS object from a repository
+
+**`throws`** {RequiredError}
+
+**`memberof`** RepositoryApi
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `owner` | `string` | owner of the repo |
+| `repo` | `string` | name of the repo |
+| `filepath` | `string` | filepath of the file to get |
+| `ref?` | `string` | - |
+| `options?` | `AxiosRequestConfig` | - |
+
+#### Returns
+
+`Promise`<`AxiosResponse`<`void`\>\>
+
+#### Defined in
+
+[apis/repository-api.ts:13653](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13653)
 
 ___
 
@@ -2495,7 +2651,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12937](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12937)
+[apis/repository-api.ts:13667](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13667)
 
 ___
 
@@ -2525,7 +2681,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12952](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12952)
+[apis/repository-api.ts:13682](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13682)
 
 ___
 
@@ -2554,7 +2710,36 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12966](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12966)
+[apis/repository-api.ts:13696](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13696)
+
+___
+
+### <a id="repogetrepopermissions" name="repogetrepopermissions"></a> repoGetRepoPermissions
+
+▸ **repoGetRepoPermissions**(`owner`, `repo`, `collaborator`, `options?`): `Promise`<`AxiosResponse`<[`RepoCollaboratorPermission`](../interfaces/RepoCollaboratorPermission.md)\>\>
+
+**`summary`** Get repository permissions for a user
+
+**`throws`** {RequiredError}
+
+**`memberof`** RepositoryApi
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `owner` | `string` | owner of the repo |
+| `repo` | `string` | name of the repo |
+| `collaborator` | `string` | username of the collaborator |
+| `options?` | `AxiosRequestConfig` | - |
+
+#### Returns
+
+`Promise`<`AxiosResponse`<[`RepoCollaboratorPermission`](../interfaces/RepoCollaboratorPermission.md)\>\>
+
+#### Defined in
+
+[apis/repository-api.ts:13710](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13710)
 
 ___
 
@@ -2582,7 +2767,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12979](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12979)
+[apis/repository-api.ts:13723](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13723)
 
 ___
 
@@ -2611,7 +2796,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:12993](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L12993)
+[apis/repository-api.ts:13737](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13737)
 
 ___
 
@@ -2640,7 +2825,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13007](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13007)
+[apis/repository-api.ts:13751](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13751)
 
 ___
 
@@ -2669,7 +2854,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13021](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13021)
+[apis/repository-api.ts:13765](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13765)
 
 ___
 
@@ -2699,7 +2884,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13036](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13036)
+[apis/repository-api.ts:13780](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13780)
 
 ___
 
@@ -2729,7 +2914,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13051](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13051)
+[apis/repository-api.ts:13795](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13795)
 
 ___
 
@@ -2757,7 +2942,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13064](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13064)
+[apis/repository-api.ts:13808](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13808)
 
 ___
 
@@ -2785,7 +2970,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13077](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13077)
+[apis/repository-api.ts:13821](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13821)
 
 ___
 
@@ -2815,7 +3000,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13092](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13092)
+[apis/repository-api.ts:13836](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13836)
 
 ___
 
@@ -2845,7 +3030,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13107](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13107)
+[apis/repository-api.ts:13851](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13851)
 
 ___
 
@@ -2873,7 +3058,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13120](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13120)
+[apis/repository-api.ts:13864](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13864)
 
 ___
 
@@ -2902,7 +3087,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13134](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13134)
+[apis/repository-api.ts:13878](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13878)
 
 ___
 
@@ -2932,7 +3117,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13149](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13149)
+[apis/repository-api.ts:13893](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13893)
 
 ___
 
@@ -2964,7 +3149,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13166](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13166)
+[apis/repository-api.ts:13910](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13910)
 
 ___
 
@@ -2998,7 +3183,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13185](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13185)
+[apis/repository-api.ts:13929](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13929)
 
 ___
 
@@ -3029,7 +3214,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13201](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13201)
+[apis/repository-api.ts:13945](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13945)
 
 ___
 
@@ -3058,7 +3243,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13215](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13215)
+[apis/repository-api.ts:13959](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13959)
 
 ___
 
@@ -3091,7 +3276,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13233](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13233)
+[apis/repository-api.ts:13977](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13977)
 
 ___
 
@@ -3121,7 +3306,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13248](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13248)
+[apis/repository-api.ts:13992](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L13992)
 
 ___
 
@@ -3154,7 +3339,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13266](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13266)
+[apis/repository-api.ts:14010](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L14010)
 
 ___
 
@@ -3187,7 +3372,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13284](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13284)
+[apis/repository-api.ts:14028](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L14028)
 
 ___
 
@@ -3217,7 +3402,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13299](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13299)
+[apis/repository-api.ts:14043](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L14043)
 
 ___
 
@@ -3247,7 +3432,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13314](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13314)
+[apis/repository-api.ts:14058](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L14058)
 
 ___
 
@@ -3275,7 +3460,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13327](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13327)
+[apis/repository-api.ts:14071](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L14071)
 
 ___
 
@@ -3305,7 +3490,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13342](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13342)
+[apis/repository-api.ts:14086](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L14086)
 
 ___
 
@@ -3335,7 +3520,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13357](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13357)
+[apis/repository-api.ts:14101](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L14101)
 
 ___
 
@@ -3362,7 +3547,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13369](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13369)
+[apis/repository-api.ts:14113](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L14113)
 
 ___
 
@@ -3390,7 +3575,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13382](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13382)
+[apis/repository-api.ts:14126](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L14126)
 
 ___
 
@@ -3419,7 +3604,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13396](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13396)
+[apis/repository-api.ts:14140](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L14140)
 
 ___
 
@@ -3468,7 +3653,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13430](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13430)
+[apis/repository-api.ts:14174](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L14174)
 
 ___
 
@@ -3496,7 +3681,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13443](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13443)
+[apis/repository-api.ts:14187](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L14187)
 
 ___
 
@@ -3527,13 +3712,13 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13459](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13459)
+[apis/repository-api.ts:14203](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L14203)
 
 ___
 
 ### <a id="repotesthook" name="repotesthook"></a> repoTestHook
 
-▸ **repoTestHook**(`owner`, `repo`, `id`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **repoTestHook**(`owner`, `repo`, `id`, `ref?`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
 
 **`summary`** Test a push webhook
 
@@ -3548,6 +3733,7 @@ ___
 | `owner` | `string` | owner of the repo |
 | `repo` | `string` | name of the repo |
 | `id` | `number` | id of the hook to test |
+| `ref?` | `string` | - |
 | `options?` | `AxiosRequestConfig` | - |
 
 #### Returns
@@ -3556,7 +3742,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13473](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13473)
+[apis/repository-api.ts:14218](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L14218)
 
 ___
 
@@ -3589,7 +3775,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13491](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13491)
+[apis/repository-api.ts:14236](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L14236)
 
 ___
 
@@ -3618,7 +3804,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13505](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13505)
+[apis/repository-api.ts:14250](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L14250)
 
 ___
 
@@ -3648,7 +3834,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13520](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13520)
+[apis/repository-api.ts:14265](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L14265)
 
 ___
 
@@ -3678,7 +3864,37 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13535](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13535)
+[apis/repository-api.ts:14280](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L14280)
+
+___
+
+### <a id="repoupdategitref" name="repoupdategitref"></a> repoUpdateGitRef
+
+▸ **repoUpdateGitRef**(`owner`, `repo`, `ref`, `body?`, `options?`): `Promise`<`AxiosResponse`<[`Reference`](../interfaces/Reference.md)\>\>
+
+**`summary`** Update a reference
+
+**`throws`** {RequiredError}
+
+**`memberof`** RepositoryApi
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `owner` | `string` | owner of the repo |
+| `repo` | `string` | name of the repo |
+| `ref` | `string` | name of the ref to update |
+| `body?` | [`UpdateGitRefOption`](../interfaces/UpdateGitRefOption.md) | - |
+| `options?` | `AxiosRequestConfig` | - |
+
+#### Returns
+
+`Promise`<`AxiosResponse`<[`Reference`](../interfaces/Reference.md)\>\>
+
+#### Defined in
+
+[apis/repository-api.ts:14295](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L14295)
 
 ___
 
@@ -3708,7 +3924,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13550](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13550)
+[apis/repository-api.ts:14310](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L14310)
 
 ___
 
@@ -3737,7 +3953,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13564](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13564)
+[apis/repository-api.ts:14324](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L14324)
 
 ___
 
@@ -3766,7 +3982,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13578](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13578)
+[apis/repository-api.ts:14338](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L14338)
 
 ___
 
@@ -3794,7 +4010,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13591](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13591)
+[apis/repository-api.ts:14351](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L14351)
 
 ___
 
@@ -3822,7 +4038,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13604](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13604)
+[apis/repository-api.ts:14364](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L14364)
 
 ___
 
@@ -3850,7 +4066,7 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13617](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13617)
+[apis/repository-api.ts:14377](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L14377)
 
 ___
 
@@ -3881,4 +4097,4 @@ ___
 
 #### Defined in
 
-[apis/repository-api.ts:13632](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/repository-api.ts#L13632)
+[apis/repository-api.ts:14392](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/repository-api.ts#L14392)

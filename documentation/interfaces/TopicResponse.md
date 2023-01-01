@@ -28,7 +28,7 @@ TopicResponse for returning topics
 
 #### Defined in
 
-[models/topic-response.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/topic-response.ts#L28)
+[models/topic-response.ts:28](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/topic-response.ts#L28)
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 #### Defined in
 
-[models/topic-response.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/topic-response.ts#L34)
+[models/topic-response.ts:34](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/topic-response.ts#L34)
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 #### Defined in
 
-[models/topic-response.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/topic-response.ts#L40)
+[models/topic-response.ts:40](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/topic-response.ts#L40)
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 #### Defined in
 
-[models/topic-response.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/topic-response.ts#L46)
+[models/topic-response.ts:46](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/topic-response.ts#L46)
 
 ___
 
@@ -76,4 +76,4 @@ ___
 
 #### Defined in
 
-[models/topic-response.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/topic-response.ts#L52)
+[models/topic-response.ts:52](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/topic-response.ts#L52)

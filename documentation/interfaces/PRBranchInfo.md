@@ -28,7 +28,7 @@ PRBranchInfo information about a branch
 
 #### Defined in
 
-[models/prbranch-info.ts:31](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/prbranch-info.ts#L31)
+[models/prbranch-info.ts:31](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/prbranch-info.ts#L31)
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 #### Defined in
 
-[models/prbranch-info.ts:37](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/prbranch-info.ts#L37)
+[models/prbranch-info.ts:37](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/prbranch-info.ts#L37)
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 #### Defined in
 
-[models/prbranch-info.ts:43](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/prbranch-info.ts#L43)
+[models/prbranch-info.ts:43](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/prbranch-info.ts#L43)
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 #### Defined in
 
-[models/prbranch-info.ts:49](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/prbranch-info.ts#L49)
+[models/prbranch-info.ts:49](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/prbranch-info.ts#L49)
 
 ___
 
@@ -76,4 +76,4 @@ ___
 
 #### Defined in
 
-[models/prbranch-info.ts:55](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/prbranch-info.ts#L55)
+[models/prbranch-info.ts:55](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/prbranch-info.ts#L55)

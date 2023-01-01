@@ -19,6 +19,7 @@ MergePullRequestForm form for merging Pull Request
 - [delete\_branch\_after\_merge](MergePullRequestOption.md#delete_branch_after_merge)
 - [force\_merge](MergePullRequestOption.md#force_merge)
 - [head\_commit\_id](MergePullRequestOption.md#head_commit_id)
+- [merge\_when\_checks\_succeed](MergePullRequestOption.md#merge_when_checks_succeed)
 
 ## Properties
 
@@ -30,7 +31,7 @@ MergePullRequestForm form for merging Pull Request
 
 #### Defined in
 
-[models/merge-pull-request-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/merge-pull-request-option.ts#L28)
+[models/merge-pull-request-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/merge-pull-request-option.ts#L28)
 
 ___
 
@@ -42,7 +43,7 @@ ___
 
 #### Defined in
 
-[models/merge-pull-request-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/merge-pull-request-option.ts#L34)
+[models/merge-pull-request-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/merge-pull-request-option.ts#L34)
 
 ___
 
@@ -54,7 +55,7 @@ ___
 
 #### Defined in
 
-[models/merge-pull-request-option.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/merge-pull-request-option.ts#L40)
+[models/merge-pull-request-option.ts:40](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/merge-pull-request-option.ts#L40)
 
 ___
 
@@ -66,7 +67,7 @@ ___
 
 #### Defined in
 
-[models/merge-pull-request-option.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/merge-pull-request-option.ts#L46)
+[models/merge-pull-request-option.ts:46](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/merge-pull-request-option.ts#L46)
 
 ___
 
@@ -78,7 +79,7 @@ ___
 
 #### Defined in
 
-[models/merge-pull-request-option.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/merge-pull-request-option.ts#L52)
+[models/merge-pull-request-option.ts:52](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/merge-pull-request-option.ts#L52)
 
 ___
 
@@ -90,7 +91,7 @@ ___
 
 #### Defined in
 
-[models/merge-pull-request-option.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/merge-pull-request-option.ts#L58)
+[models/merge-pull-request-option.ts:58](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/merge-pull-request-option.ts#L58)
 
 ___
 
@@ -102,4 +103,16 @@ ___
 
 #### Defined in
 
-[models/merge-pull-request-option.ts:64](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/merge-pull-request-option.ts#L64)
+[models/merge-pull-request-option.ts:64](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/merge-pull-request-option.ts#L64)
+
+___
+
+### <a id="merge_when_checks_succeed" name="merge_when_checks_succeed"></a> merge\_when\_checks\_succeed
+
+• `Optional` **merge\_when\_checks\_succeed**: `boolean`
+
+**`memberof`** MergePullRequestOption
+
+#### Defined in
+
+[models/merge-pull-request-option.ts:70](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/merge-pull-request-option.ts#L70)

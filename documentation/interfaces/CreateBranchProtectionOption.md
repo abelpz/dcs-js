@@ -45,7 +45,7 @@ CreateBranchProtectionOption options for creating a branch protection
 
 #### Defined in
 
-[models/create-branch-protection-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-branch-protection-option.ts#L28)
+[models/create-branch-protection-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/create-branch-protection-option.ts#L28)
 
 ___
 
@@ -57,7 +57,7 @@ ___
 
 #### Defined in
 
-[models/create-branch-protection-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-branch-protection-option.ts#L34)
+[models/create-branch-protection-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/create-branch-protection-option.ts#L34)
 
 ___
 
@@ -69,7 +69,7 @@ ___
 
 #### Defined in
 
-[models/create-branch-protection-option.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-branch-protection-option.ts#L40)
+[models/create-branch-protection-option.ts:40](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/create-branch-protection-option.ts#L40)
 
 ___
 
@@ -81,7 +81,7 @@ ___
 
 #### Defined in
 
-[models/create-branch-protection-option.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-branch-protection-option.ts#L46)
+[models/create-branch-protection-option.ts:46](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/create-branch-protection-option.ts#L46)
 
 ___
 
@@ -93,7 +93,7 @@ ___
 
 #### Defined in
 
-[models/create-branch-protection-option.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-branch-protection-option.ts#L52)
+[models/create-branch-protection-option.ts:52](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/create-branch-protection-option.ts#L52)
 
 ___
 
@@ -105,7 +105,7 @@ ___
 
 #### Defined in
 
-[models/create-branch-protection-option.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-branch-protection-option.ts#L58)
+[models/create-branch-protection-option.ts:58](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/create-branch-protection-option.ts#L58)
 
 ___
 
@@ -117,7 +117,7 @@ ___
 
 #### Defined in
 
-[models/create-branch-protection-option.ts:64](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-branch-protection-option.ts#L64)
+[models/create-branch-protection-option.ts:64](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/create-branch-protection-option.ts#L64)
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-[models/create-branch-protection-option.ts:70](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-branch-protection-option.ts#L70)
+[models/create-branch-protection-option.ts:70](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/create-branch-protection-option.ts#L70)
 
 ___
 
@@ -141,7 +141,7 @@ ___
 
 #### Defined in
 
-[models/create-branch-protection-option.ts:76](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-branch-protection-option.ts#L76)
+[models/create-branch-protection-option.ts:76](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/create-branch-protection-option.ts#L76)
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-[models/create-branch-protection-option.ts:82](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-branch-protection-option.ts#L82)
+[models/create-branch-protection-option.ts:82](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/create-branch-protection-option.ts#L82)
 
 ___
 
@@ -165,7 +165,7 @@ ___
 
 #### Defined in
 
-[models/create-branch-protection-option.ts:88](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-branch-protection-option.ts#L88)
+[models/create-branch-protection-option.ts:88](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/create-branch-protection-option.ts#L88)
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-[models/create-branch-protection-option.ts:94](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-branch-protection-option.ts#L94)
+[models/create-branch-protection-option.ts:94](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/create-branch-protection-option.ts#L94)
 
 ___
 
@@ -189,7 +189,7 @@ ___
 
 #### Defined in
 
-[models/create-branch-protection-option.ts:100](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-branch-protection-option.ts#L100)
+[models/create-branch-protection-option.ts:100](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/create-branch-protection-option.ts#L100)
 
 ___
 
@@ -201,7 +201,7 @@ ___
 
 #### Defined in
 
-[models/create-branch-protection-option.ts:106](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-branch-protection-option.ts#L106)
+[models/create-branch-protection-option.ts:106](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/create-branch-protection-option.ts#L106)
 
 ___
 
@@ -213,7 +213,7 @@ ___
 
 #### Defined in
 
-[models/create-branch-protection-option.ts:112](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-branch-protection-option.ts#L112)
+[models/create-branch-protection-option.ts:112](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/create-branch-protection-option.ts#L112)
 
 ___
 
@@ -225,7 +225,7 @@ ___
 
 #### Defined in
 
-[models/create-branch-protection-option.ts:118](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-branch-protection-option.ts#L118)
+[models/create-branch-protection-option.ts:118](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/create-branch-protection-option.ts#L118)
 
 ___
 
@@ -237,7 +237,7 @@ ___
 
 #### Defined in
 
-[models/create-branch-protection-option.ts:124](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-branch-protection-option.ts#L124)
+[models/create-branch-protection-option.ts:124](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/create-branch-protection-option.ts#L124)
 
 ___
 
@@ -249,7 +249,7 @@ ___
 
 #### Defined in
 
-[models/create-branch-protection-option.ts:130](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-branch-protection-option.ts#L130)
+[models/create-branch-protection-option.ts:130](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/create-branch-protection-option.ts#L130)
 
 ___
 
@@ -261,7 +261,7 @@ ___
 
 #### Defined in
 
-[models/create-branch-protection-option.ts:136](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-branch-protection-option.ts#L136)
+[models/create-branch-protection-option.ts:136](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/create-branch-protection-option.ts#L136)
 
 ___
 
@@ -273,7 +273,7 @@ ___
 
 #### Defined in
 
-[models/create-branch-protection-option.ts:142](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-branch-protection-option.ts#L142)
+[models/create-branch-protection-option.ts:142](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/create-branch-protection-option.ts#L142)
 
 ___
 
@@ -285,7 +285,7 @@ ___
 
 #### Defined in
 
-[models/create-branch-protection-option.ts:148](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-branch-protection-option.ts#L148)
+[models/create-branch-protection-option.ts:148](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/create-branch-protection-option.ts#L148)
 
 ___
 
@@ -297,4 +297,4 @@ ___
 
 #### Defined in
 
-[models/create-branch-protection-option.ts:154](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-branch-protection-option.ts#L154)
+[models/create-branch-protection-option.ts:154](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/create-branch-protection-option.ts#L154)

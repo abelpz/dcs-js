@@ -26,7 +26,7 @@ FileResponse contains information about a repo\'s file
 
 #### Defined in
 
-[models/file-response.ts:37](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/file-response.ts#L37)
+[models/file-response.ts:37](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/file-response.ts#L37)
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 #### Defined in
 
-[models/file-response.ts:43](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/file-response.ts#L43)
+[models/file-response.ts:43](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/file-response.ts#L43)
 
 ___
 
@@ -50,4 +50,4 @@ ___
 
 #### Defined in
 
-[models/file-response.ts:49](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/file-response.ts#L49)
+[models/file-response.ts:49](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/file-response.ts#L49)

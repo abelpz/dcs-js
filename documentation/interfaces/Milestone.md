@@ -33,7 +33,7 @@ Milestone milestone is a collection of issues on one repository
 
 #### Defined in
 
-[models/milestone.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/milestone.ts#L28)
+[models/milestone.ts:28](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/milestone.ts#L28)
 
 ___
 
@@ -45,7 +45,7 @@ ___
 
 #### Defined in
 
-[models/milestone.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/milestone.ts#L34)
+[models/milestone.ts:34](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/milestone.ts#L34)
 
 ___
 
@@ -57,7 +57,7 @@ ___
 
 #### Defined in
 
-[models/milestone.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/milestone.ts#L40)
+[models/milestone.ts:40](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/milestone.ts#L40)
 
 ___
 
@@ -69,7 +69,7 @@ ___
 
 #### Defined in
 
-[models/milestone.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/milestone.ts#L46)
+[models/milestone.ts:46](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/milestone.ts#L46)
 
 ___
 
@@ -81,7 +81,7 @@ ___
 
 #### Defined in
 
-[models/milestone.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/milestone.ts#L52)
+[models/milestone.ts:52](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/milestone.ts#L52)
 
 ___
 
@@ -93,7 +93,7 @@ ___
 
 #### Defined in
 
-[models/milestone.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/milestone.ts#L58)
+[models/milestone.ts:58](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/milestone.ts#L58)
 
 ___
 
@@ -105,7 +105,7 @@ ___
 
 #### Defined in
 
-[models/milestone.ts:64](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/milestone.ts#L64)
+[models/milestone.ts:64](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/milestone.ts#L64)
 
 ___
 
@@ -119,7 +119,7 @@ StateType issue state type
 
 #### Defined in
 
-[models/milestone.ts:70](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/milestone.ts#L70)
+[models/milestone.ts:70](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/milestone.ts#L70)
 
 ___
 
@@ -131,7 +131,7 @@ ___
 
 #### Defined in
 
-[models/milestone.ts:76](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/milestone.ts#L76)
+[models/milestone.ts:76](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/milestone.ts#L76)
 
 ___
 
@@ -143,4 +143,4 @@ ___
 
 #### Defined in
 
-[models/milestone.ts:82](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/milestone.ts#L82)
+[models/milestone.ts:82](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/milestone.ts#L82)

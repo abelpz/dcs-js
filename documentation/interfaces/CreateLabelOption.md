@@ -26,7 +26,7 @@ CreateLabelOption options for creating a label
 
 #### Defined in
 
-[models/create-label-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-label-option.ts#L28)
+[models/create-label-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/create-label-option.ts#L28)
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 #### Defined in
 
-[models/create-label-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-label-option.ts#L34)
+[models/create-label-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/create-label-option.ts#L34)
 
 ___
 
@@ -50,4 +50,4 @@ ___
 
 #### Defined in
 
-[models/create-label-option.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-label-option.ts#L40)
+[models/create-label-option.ts:40](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/create-label-option.ts#L40)

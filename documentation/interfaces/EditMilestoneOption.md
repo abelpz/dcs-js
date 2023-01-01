@@ -27,7 +27,7 @@ EditMilestoneOption options for editing a milestone
 
 #### Defined in
 
-[models/edit-milestone-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-milestone-option.ts#L28)
+[models/edit-milestone-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/edit-milestone-option.ts#L28)
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 #### Defined in
 
-[models/edit-milestone-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-milestone-option.ts#L34)
+[models/edit-milestone-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/edit-milestone-option.ts#L34)
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 #### Defined in
 
-[models/edit-milestone-option.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-milestone-option.ts#L40)
+[models/edit-milestone-option.ts:40](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/edit-milestone-option.ts#L40)
 
 ___
 
@@ -63,4 +63,4 @@ ___
 
 #### Defined in
 
-[models/edit-milestone-option.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-milestone-option.ts#L46)
+[models/edit-milestone-option.ts:46](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/edit-milestone-option.ts#L46)

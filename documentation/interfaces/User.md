@@ -46,7 +46,7 @@ Is user active
 
 #### Defined in
 
-[models/user.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/user.ts#L28)
+[models/user.ts:28](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/user.ts#L28)
 
 ___
 
@@ -60,7 +60,7 @@ URL to the user\'s avatar
 
 #### Defined in
 
-[models/user.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/user.ts#L34)
+[models/user.ts:34](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/user.ts#L34)
 
 ___
 
@@ -72,7 +72,7 @@ ___
 
 #### Defined in
 
-[models/user.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/user.ts#L40)
+[models/user.ts:40](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/user.ts#L40)
 
 ___
 
@@ -86,7 +86,7 @@ the user\'s description
 
 #### Defined in
 
-[models/user.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/user.ts#L46)
+[models/user.ts:46](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/user.ts#L46)
 
 ___
 
@@ -98,7 +98,7 @@ ___
 
 #### Defined in
 
-[models/user.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/user.ts#L52)
+[models/user.ts:52](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/user.ts#L52)
 
 ___
 
@@ -112,7 +112,7 @@ user counts
 
 #### Defined in
 
-[models/user.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/user.ts#L58)
+[models/user.ts:58](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/user.ts#L58)
 
 ___
 
@@ -124,7 +124,7 @@ ___
 
 #### Defined in
 
-[models/user.ts:64](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/user.ts#L64)
+[models/user.ts:64](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/user.ts#L64)
 
 ___
 
@@ -138,7 +138,7 @@ the user\'s full name
 
 #### Defined in
 
-[models/user.ts:70](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/user.ts#L70)
+[models/user.ts:70](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/user.ts#L70)
 
 ___
 
@@ -152,7 +152,7 @@ the user\'s id
 
 #### Defined in
 
-[models/user.ts:76](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/user.ts#L76)
+[models/user.ts:76](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/user.ts#L76)
 
 ___
 
@@ -166,7 +166,7 @@ Is the user an administrator
 
 #### Defined in
 
-[models/user.ts:82](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/user.ts#L82)
+[models/user.ts:82](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/user.ts#L82)
 
 ___
 
@@ -180,7 +180,7 @@ User locale
 
 #### Defined in
 
-[models/user.ts:88](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/user.ts#L88)
+[models/user.ts:88](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/user.ts#L88)
 
 ___
 
@@ -192,7 +192,7 @@ ___
 
 #### Defined in
 
-[models/user.ts:94](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/user.ts#L94)
+[models/user.ts:94](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/user.ts#L94)
 
 ___
 
@@ -206,7 +206,7 @@ the user\'s location
 
 #### Defined in
 
-[models/user.ts:100](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/user.ts#L100)
+[models/user.ts:100](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/user.ts#L100)
 
 ___
 
@@ -220,7 +220,7 @@ the user\'s username
 
 #### Defined in
 
-[models/user.ts:106](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/user.ts#L106)
+[models/user.ts:106](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/user.ts#L106)
 
 ___
 
@@ -234,7 +234,7 @@ Is user login prohibited
 
 #### Defined in
 
-[models/user.ts:112](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/user.ts#L112)
+[models/user.ts:112](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/user.ts#L112)
 
 ___
 
@@ -242,13 +242,13 @@ ___
 
 • `Optional` **repo\_languages**: `string`[]
 
-DCS Customizations ***_/ Repo languages
+Repo languages
 
 **`memberof`** User
 
 #### Defined in
 
-[models/user.ts:118](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/user.ts#L118)
+[models/user.ts:118](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/user.ts#L118)
 
 ___
 
@@ -262,7 +262,7 @@ Repo subjects
 
 #### Defined in
 
-[models/user.ts:124](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/user.ts#L124)
+[models/user.ts:124](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/user.ts#L124)
 
 ___
 
@@ -270,13 +270,13 @@ ___
 
 • `Optional` **restricted**: `boolean`
 
-END DCS Customizations ***_/ Is user restricted
+Is user restricted
 
 **`memberof`** User
 
 #### Defined in
 
-[models/user.ts:130](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/user.ts#L130)
+[models/user.ts:130](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/user.ts#L130)
 
 ___
 
@@ -288,7 +288,7 @@ ___
 
 #### Defined in
 
-[models/user.ts:136](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/user.ts#L136)
+[models/user.ts:136](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/user.ts#L136)
 
 ___
 
@@ -302,7 +302,7 @@ User visibility level option: public, limited, private
 
 #### Defined in
 
-[models/user.ts:142](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/user.ts#L142)
+[models/user.ts:142](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/user.ts#L142)
 
 ___
 
@@ -316,4 +316,4 @@ the user\'s website
 
 #### Defined in
 
-[models/user.ts:148](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/user.ts#L148)
+[models/user.ts:148](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/user.ts#L148)

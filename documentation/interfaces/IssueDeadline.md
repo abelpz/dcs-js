@@ -24,4 +24,4 @@ IssueDeadline represents an issue deadline
 
 #### Defined in
 
-[models/issue-deadline.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/issue-deadline.ts#L28)
+[models/issue-deadline.ts:28](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/issue-deadline.ts#L28)

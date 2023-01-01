@@ -2,10 +2,12 @@
 .npmignore
 api.ts
 apis/admin-api.ts
+apis/catalog-api.ts
 apis/issue-api.ts
 apis/miscellaneous-api.ts
 apis/notification-api.ts
 apis/organization-api.ts
+apis/package-api.ts
 apis/repository-api.ts
 apis/settings-api.ts
 apis/user-api.ts
@@ -23,13 +25,18 @@ models/apierror.ts
 models/attachment.ts
 models/branch-protection.ts
 models/branch.ts
+models/catalog-entry.ts
+models/catalog-search-results.ts
 models/catalog-stage.ts
 models/catalog-stages.ts
+models/catalog-version-endpoints-response.ts
+models/catalog-version-endpoints.ts
 models/combined-status.ts
 models/comment.ts
 models/commit-affected-files.ts
 models/commit-date-options.ts
 models/commit-meta.ts
+models/commit-stats.ts
 models/commit-status.ts
 models/commit-user.ts
 models/commit.ts
@@ -40,6 +47,7 @@ models/create-branch-repo-option.ts
 models/create-email-option.ts
 models/create-file-options.ts
 models/create-fork-option.ts
+models/create-git-ref-option.ts
 models/create-gpgkey-option.ts
 models/create-hook-option.ts
 models/create-issue-comment-option.ts
@@ -102,6 +110,7 @@ models/gpgkey.ts
 models/hook.ts
 models/identity.ts
 models/index.ts
+models/ingredient.ts
 models/internal-tracker.ts
 models/issue-deadline.ts
 models/issue-labels-option.ts
@@ -125,6 +134,8 @@ models/notification-thread.ts
 models/oauth2-application.ts
 models/organization-permissions.ts
 models/organization.ts
+models/package-file.ts
+models/package.ts
 models/payload-commit-verification.ts
 models/payload-commit.ts
 models/payload-user.ts
@@ -139,6 +150,7 @@ models/pull-review.ts
 models/reaction.ts
 models/reference.ts
 models/release.ts
+models/repo-collaborator-permission.ts
 models/repo-commit.ts
 models/repo-topic-options.ts
 models/repo-transfer.ts
@@ -157,6 +169,7 @@ models/topic-response.ts
 models/tracked-time.ts
 models/transfer-repo-option.ts
 models/update-file-options.ts
+models/update-git-ref-option.ts
 models/user-heatmap-data.ts
 models/user-search200-response.ts
 models/user-settings-options.ts

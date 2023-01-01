@@ -33,7 +33,7 @@ Comment represents a comment on a commit or issue
 
 #### Defined in
 
-[models/comment.ts:31](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/comment.ts#L31)
+[models/comment.ts:31](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/comment.ts#L31)
 
 ___
 
@@ -45,7 +45,7 @@ ___
 
 #### Defined in
 
-[models/comment.ts:37](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/comment.ts#L37)
+[models/comment.ts:37](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/comment.ts#L37)
 
 ___
 
@@ -57,7 +57,7 @@ ___
 
 #### Defined in
 
-[models/comment.ts:43](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/comment.ts#L43)
+[models/comment.ts:43](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/comment.ts#L43)
 
 ___
 
@@ -69,7 +69,7 @@ ___
 
 #### Defined in
 
-[models/comment.ts:49](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/comment.ts#L49)
+[models/comment.ts:49](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/comment.ts#L49)
 
 ___
 
@@ -81,7 +81,7 @@ ___
 
 #### Defined in
 
-[models/comment.ts:55](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/comment.ts#L55)
+[models/comment.ts:55](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/comment.ts#L55)
 
 ___
 
@@ -93,7 +93,7 @@ ___
 
 #### Defined in
 
-[models/comment.ts:61](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/comment.ts#L61)
+[models/comment.ts:61](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/comment.ts#L61)
 
 ___
 
@@ -105,7 +105,7 @@ ___
 
 #### Defined in
 
-[models/comment.ts:67](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/comment.ts#L67)
+[models/comment.ts:67](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/comment.ts#L67)
 
 ___
 
@@ -117,7 +117,7 @@ ___
 
 #### Defined in
 
-[models/comment.ts:73](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/comment.ts#L73)
+[models/comment.ts:73](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/comment.ts#L73)
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-[models/comment.ts:79](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/comment.ts#L79)
+[models/comment.ts:79](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/comment.ts#L79)
 
 ___
 
@@ -141,4 +141,4 @@ ___
 
 #### Defined in
 
-[models/comment.ts:85](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/comment.ts#L85)
+[models/comment.ts:85](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/comment.ts#L85)

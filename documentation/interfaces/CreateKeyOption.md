@@ -28,7 +28,7 @@ An armored SSH key to add
 
 #### Defined in
 
-[models/create-key-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-key-option.ts#L28)
+[models/create-key-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/create-key-option.ts#L28)
 
 ___
 
@@ -42,7 +42,7 @@ Describe if the key has only read access or read/write
 
 #### Defined in
 
-[models/create-key-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-key-option.ts#L34)
+[models/create-key-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/create-key-option.ts#L34)
 
 ___
 
@@ -56,4 +56,4 @@ Title of the key to add
 
 #### Defined in
 
-[models/create-key-option.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-key-option.ts#L40)
+[models/create-key-option.ts:40](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/create-key-option.ts#L40)

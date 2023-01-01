@@ -52,7 +52,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[base.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/base.ts#L52)
+[base.ts:52](https://github.com/unfoldingWord/dcs-js/blob/dd84989/base.ts#L52)
 
 ## Properties
 
@@ -86,7 +86,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[base.ts:50](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/base.ts#L50)
+[base.ts:50](https://github.com/unfoldingWord/dcs-js/blob/dd84989/base.ts#L50)
 
 ## Methods
 
@@ -112,7 +112,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[apis/miscellaneous-api.ts:441](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/miscellaneous-api.ts#L441)
+[apis/miscellaneous-api.ts:441](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/miscellaneous-api.ts#L441)
 
 ___
 
@@ -138,7 +138,7 @@ ___
 
 #### Defined in
 
-[apis/miscellaneous-api.ts:452](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/miscellaneous-api.ts#L452)
+[apis/miscellaneous-api.ts:452](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/miscellaneous-api.ts#L452)
 
 ___
 
@@ -164,7 +164,7 @@ ___
 
 #### Defined in
 
-[apis/miscellaneous-api.ts:463](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/miscellaneous-api.ts#L463)
+[apis/miscellaneous-api.ts:463](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/miscellaneous-api.ts#L463)
 
 ___
 
@@ -191,7 +191,7 @@ ___
 
 #### Defined in
 
-[apis/miscellaneous-api.ts:475](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/miscellaneous-api.ts#L475)
+[apis/miscellaneous-api.ts:475](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/miscellaneous-api.ts#L475)
 
 ___
 
@@ -218,4 +218,4 @@ ___
 
 #### Defined in
 
-[apis/miscellaneous-api.ts:487](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/miscellaneous-api.ts#L487)
+[apis/miscellaneous-api.ts:487](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/miscellaneous-api.ts#L487)

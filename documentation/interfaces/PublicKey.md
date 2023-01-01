@@ -32,7 +32,7 @@ PublicKey publickey is a user key to push code to repository
 
 #### Defined in
 
-[models/public-key.ts:31](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/public-key.ts#L31)
+[models/public-key.ts:31](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/public-key.ts#L31)
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 #### Defined in
 
-[models/public-key.ts:37](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/public-key.ts#L37)
+[models/public-key.ts:37](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/public-key.ts#L37)
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 #### Defined in
 
-[models/public-key.ts:43](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/public-key.ts#L43)
+[models/public-key.ts:43](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/public-key.ts#L43)
 
 ___
 
@@ -68,7 +68,7 @@ ___
 
 #### Defined in
 
-[models/public-key.ts:49](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/public-key.ts#L49)
+[models/public-key.ts:49](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/public-key.ts#L49)
 
 ___
 
@@ -80,7 +80,7 @@ ___
 
 #### Defined in
 
-[models/public-key.ts:55](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/public-key.ts#L55)
+[models/public-key.ts:55](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/public-key.ts#L55)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[models/public-key.ts:61](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/public-key.ts#L61)
+[models/public-key.ts:61](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/public-key.ts#L61)
 
 ___
 
@@ -104,7 +104,7 @@ ___
 
 #### Defined in
 
-[models/public-key.ts:67](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/public-key.ts#L67)
+[models/public-key.ts:67](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/public-key.ts#L67)
 
 ___
 
@@ -116,7 +116,7 @@ ___
 
 #### Defined in
 
-[models/public-key.ts:73](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/public-key.ts#L73)
+[models/public-key.ts:73](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/public-key.ts#L73)
 
 ___
 
@@ -128,4 +128,4 @@ ___
 
 #### Defined in
 
-[models/public-key.ts:79](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/public-key.ts#L79)
+[models/public-key.ts:79](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/public-key.ts#L79)

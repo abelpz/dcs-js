@@ -28,7 +28,7 @@ CreateHookOption options when create a hook
 
 #### Defined in
 
-[models/create-hook-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-hook-option.ts#L28)
+[models/create-hook-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/create-hook-option.ts#L28)
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 #### Defined in
 
-[models/create-hook-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-hook-option.ts#L34)
+[models/create-hook-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/create-hook-option.ts#L34)
 
 ___
 
@@ -58,7 +58,7 @@ CreateHookOptionConfig has all config options in it required are \"content_type\
 
 #### Defined in
 
-[models/create-hook-option.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-hook-option.ts#L40)
+[models/create-hook-option.ts:40](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/create-hook-option.ts#L40)
 
 ___
 
@@ -70,7 +70,7 @@ ___
 
 #### Defined in
 
-[models/create-hook-option.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-hook-option.ts#L46)
+[models/create-hook-option.ts:46](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/create-hook-option.ts#L46)
 
 ___
 
@@ -82,4 +82,4 @@ ___
 
 #### Defined in
 
-[models/create-hook-option.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-hook-option.ts#L52)
+[models/create-hook-option.ts:52](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/create-hook-option.ts#L52)

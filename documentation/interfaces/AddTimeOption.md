@@ -26,7 +26,7 @@ AddTimeOption options for adding time to an issue
 
 #### Defined in
 
-[models/add-time-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/add-time-option.ts#L28)
+[models/add-time-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/add-time-option.ts#L28)
 
 ___
 
@@ -40,7 +40,7 @@ time in seconds
 
 #### Defined in
 
-[models/add-time-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/add-time-option.ts#L34)
+[models/add-time-option.ts:34](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/add-time-option.ts#L34)
 
 ___
 
@@ -54,4 +54,4 @@ User who spent the time (optional)
 
 #### Defined in
 
-[models/add-time-option.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/add-time-option.ts#L40)
+[models/add-time-option.ts:40](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/add-time-option.ts#L40)

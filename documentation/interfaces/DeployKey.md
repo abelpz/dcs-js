@@ -32,7 +32,7 @@ DeployKey a deploy key
 
 #### Defined in
 
-[models/deploy-key.ts:31](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/deploy-key.ts#L31)
+[models/deploy-key.ts:31](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/deploy-key.ts#L31)
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 #### Defined in
 
-[models/deploy-key.ts:37](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/deploy-key.ts#L37)
+[models/deploy-key.ts:37](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/deploy-key.ts#L37)
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 #### Defined in
 
-[models/deploy-key.ts:43](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/deploy-key.ts#L43)
+[models/deploy-key.ts:43](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/deploy-key.ts#L43)
 
 ___
 
@@ -68,7 +68,7 @@ ___
 
 #### Defined in
 
-[models/deploy-key.ts:49](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/deploy-key.ts#L49)
+[models/deploy-key.ts:49](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/deploy-key.ts#L49)
 
 ___
 
@@ -80,7 +80,7 @@ ___
 
 #### Defined in
 
-[models/deploy-key.ts:55](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/deploy-key.ts#L55)
+[models/deploy-key.ts:55](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/deploy-key.ts#L55)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[models/deploy-key.ts:61](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/deploy-key.ts#L61)
+[models/deploy-key.ts:61](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/deploy-key.ts#L61)
 
 ___
 
@@ -104,7 +104,7 @@ ___
 
 #### Defined in
 
-[models/deploy-key.ts:67](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/deploy-key.ts#L67)
+[models/deploy-key.ts:67](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/deploy-key.ts#L67)
 
 ___
 
@@ -116,7 +116,7 @@ ___
 
 #### Defined in
 
-[models/deploy-key.ts:73](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/deploy-key.ts#L73)
+[models/deploy-key.ts:73](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/deploy-key.ts#L73)
 
 ___
 
@@ -128,4 +128,4 @@ ___
 
 #### Defined in
 
-[models/deploy-key.ts:79](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/deploy-key.ts#L79)
+[models/deploy-key.ts:79](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/deploy-key.ts#L79)

@@ -36,7 +36,7 @@ GPGKey a user GPG key to sign commit and tag in repository
 
 #### Defined in
 
-[models/gpgkey.ts:31](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/gpgkey.ts#L31)
+[models/gpgkey.ts:31](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/gpgkey.ts#L31)
 
 ___
 
@@ -48,7 +48,7 @@ ___
 
 #### Defined in
 
-[models/gpgkey.ts:37](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/gpgkey.ts#L37)
+[models/gpgkey.ts:37](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/gpgkey.ts#L37)
 
 ___
 
@@ -60,7 +60,7 @@ ___
 
 #### Defined in
 
-[models/gpgkey.ts:43](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/gpgkey.ts#L43)
+[models/gpgkey.ts:43](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/gpgkey.ts#L43)
 
 ___
 
@@ -72,7 +72,7 @@ ___
 
 #### Defined in
 
-[models/gpgkey.ts:49](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/gpgkey.ts#L49)
+[models/gpgkey.ts:49](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/gpgkey.ts#L49)
 
 ___
 
@@ -84,7 +84,7 @@ ___
 
 #### Defined in
 
-[models/gpgkey.ts:55](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/gpgkey.ts#L55)
+[models/gpgkey.ts:55](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/gpgkey.ts#L55)
 
 ___
 
@@ -96,7 +96,7 @@ ___
 
 #### Defined in
 
-[models/gpgkey.ts:61](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/gpgkey.ts#L61)
+[models/gpgkey.ts:61](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/gpgkey.ts#L61)
 
 ___
 
@@ -108,7 +108,7 @@ ___
 
 #### Defined in
 
-[models/gpgkey.ts:67](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/gpgkey.ts#L67)
+[models/gpgkey.ts:67](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/gpgkey.ts#L67)
 
 ___
 
@@ -120,7 +120,7 @@ ___
 
 #### Defined in
 
-[models/gpgkey.ts:73](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/gpgkey.ts#L73)
+[models/gpgkey.ts:73](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/gpgkey.ts#L73)
 
 ___
 
@@ -132,7 +132,7 @@ ___
 
 #### Defined in
 
-[models/gpgkey.ts:79](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/gpgkey.ts#L79)
+[models/gpgkey.ts:79](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/gpgkey.ts#L79)
 
 ___
 
@@ -144,7 +144,7 @@ ___
 
 #### Defined in
 
-[models/gpgkey.ts:85](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/gpgkey.ts#L85)
+[models/gpgkey.ts:85](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/gpgkey.ts#L85)
 
 ___
 
@@ -156,7 +156,7 @@ ___
 
 #### Defined in
 
-[models/gpgkey.ts:91](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/gpgkey.ts#L91)
+[models/gpgkey.ts:91](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/gpgkey.ts#L91)
 
 ___
 
@@ -168,7 +168,7 @@ ___
 
 #### Defined in
 
-[models/gpgkey.ts:97](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/gpgkey.ts#L97)
+[models/gpgkey.ts:97](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/gpgkey.ts#L97)
 
 ___
 
@@ -180,4 +180,4 @@ ___
 
 #### Defined in
 
-[models/gpgkey.ts:103](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/gpgkey.ts#L103)
+[models/gpgkey.ts:103](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/gpgkey.ts#L103)

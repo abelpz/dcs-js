@@ -37,7 +37,7 @@ ContentsResponse contains information about a repo\'s entry\'s (dir, file, symli
 
 #### Defined in
 
-[models/contents-response.ts:31](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/contents-response.ts#L31)
+[models/contents-response.ts:31](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/contents-response.ts#L31)
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 #### Defined in
 
-[models/contents-response.ts:37](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/contents-response.ts#L37)
+[models/contents-response.ts:37](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/contents-response.ts#L37)
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 #### Defined in
 
-[models/contents-response.ts:43](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/contents-response.ts#L43)
+[models/contents-response.ts:43](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/contents-response.ts#L43)
 
 ___
 
@@ -77,7 +77,7 @@ ___
 
 #### Defined in
 
-[models/contents-response.ts:49](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/contents-response.ts#L49)
+[models/contents-response.ts:49](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/contents-response.ts#L49)
 
 ___
 
@@ -89,7 +89,7 @@ ___
 
 #### Defined in
 
-[models/contents-response.ts:55](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/contents-response.ts#L55)
+[models/contents-response.ts:55](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/contents-response.ts#L55)
 
 ___
 
@@ -101,7 +101,7 @@ ___
 
 #### Defined in
 
-[models/contents-response.ts:61](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/contents-response.ts#L61)
+[models/contents-response.ts:61](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/contents-response.ts#L61)
 
 ___
 
@@ -113,7 +113,7 @@ ___
 
 #### Defined in
 
-[models/contents-response.ts:67](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/contents-response.ts#L67)
+[models/contents-response.ts:67](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/contents-response.ts#L67)
 
 ___
 
@@ -125,7 +125,7 @@ ___
 
 #### Defined in
 
-[models/contents-response.ts:73](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/contents-response.ts#L73)
+[models/contents-response.ts:73](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/contents-response.ts#L73)
 
 ___
 
@@ -137,7 +137,7 @@ ___
 
 #### Defined in
 
-[models/contents-response.ts:79](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/contents-response.ts#L79)
+[models/contents-response.ts:79](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/contents-response.ts#L79)
 
 ___
 
@@ -149,7 +149,7 @@ ___
 
 #### Defined in
 
-[models/contents-response.ts:85](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/contents-response.ts#L85)
+[models/contents-response.ts:85](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/contents-response.ts#L85)
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-[models/contents-response.ts:91](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/contents-response.ts#L91)
+[models/contents-response.ts:91](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/contents-response.ts#L91)
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-[models/contents-response.ts:97](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/contents-response.ts#L97)
+[models/contents-response.ts:97](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/contents-response.ts#L97)
 
 ___
 
@@ -191,7 +191,7 @@ ___
 
 #### Defined in
 
-[models/contents-response.ts:103](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/contents-response.ts#L103)
+[models/contents-response.ts:103](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/contents-response.ts#L103)
 
 ___
 
@@ -203,4 +203,4 @@ ___
 
 #### Defined in
 
-[models/contents-response.ts:109](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/contents-response.ts#L109)
+[models/contents-response.ts:109](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/contents-response.ts#L109)

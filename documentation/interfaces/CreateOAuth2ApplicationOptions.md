@@ -25,7 +25,7 @@ CreateOAuth2ApplicationOptions holds options to create an oauth2 application
 
 #### Defined in
 
-[models/create-oauth2-application-options.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-oauth2-application-options.ts#L28)
+[models/create-oauth2-application-options.ts:28](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/create-oauth2-application-options.ts#L28)
 
 ___
 
@@ -37,4 +37,4 @@ ___
 
 #### Defined in
 
-[models/create-oauth2-application-options.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-oauth2-application-options.ts#L34)
+[models/create-oauth2-application-options.ts:34](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/create-oauth2-application-options.ts#L34)

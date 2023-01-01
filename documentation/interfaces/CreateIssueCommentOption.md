@@ -24,4 +24,4 @@ CreateIssueCommentOption options for creating a comment on an issue
 
 #### Defined in
 
-[models/create-issue-comment-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/create-issue-comment-option.ts#L28)
+[models/create-issue-comment-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/create-issue-comment-option.ts#L28)

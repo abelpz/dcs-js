@@ -42,7 +42,7 @@ MigrateRepoForm form for migrating repository this is used to interact with web 
 
 #### Defined in
 
-[models/migrate-repo-form.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/migrate-repo-form.ts#L28)
+[models/migrate-repo-form.ts:28](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/migrate-repo-form.ts#L28)
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 #### Defined in
 
-[models/migrate-repo-form.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/migrate-repo-form.ts#L34)
+[models/migrate-repo-form.ts:34](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/migrate-repo-form.ts#L34)
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 #### Defined in
 
-[models/migrate-repo-form.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/migrate-repo-form.ts#L40)
+[models/migrate-repo-form.ts:40](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/migrate-repo-form.ts#L40)
 
 ___
 
@@ -78,7 +78,7 @@ ___
 
 #### Defined in
 
-[models/migrate-repo-form.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/migrate-repo-form.ts#L46)
+[models/migrate-repo-form.ts:46](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/migrate-repo-form.ts#L46)
 
 ___
 
@@ -90,7 +90,7 @@ ___
 
 #### Defined in
 
-[models/migrate-repo-form.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/migrate-repo-form.ts#L52)
+[models/migrate-repo-form.ts:52](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/migrate-repo-form.ts#L52)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-[models/migrate-repo-form.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/migrate-repo-form.ts#L58)
+[models/migrate-repo-form.ts:58](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/migrate-repo-form.ts#L58)
 
 ___
 
@@ -114,7 +114,7 @@ ___
 
 #### Defined in
 
-[models/migrate-repo-form.ts:64](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/migrate-repo-form.ts#L64)
+[models/migrate-repo-form.ts:64](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/migrate-repo-form.ts#L64)
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-[models/migrate-repo-form.ts:70](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/migrate-repo-form.ts#L70)
+[models/migrate-repo-form.ts:70](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/migrate-repo-form.ts#L70)
 
 ___
 
@@ -138,7 +138,7 @@ ___
 
 #### Defined in
 
-[models/migrate-repo-form.ts:76](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/migrate-repo-form.ts#L76)
+[models/migrate-repo-form.ts:76](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/migrate-repo-form.ts#L76)
 
 ___
 
@@ -150,7 +150,7 @@ ___
 
 #### Defined in
 
-[models/migrate-repo-form.ts:82](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/migrate-repo-form.ts#L82)
+[models/migrate-repo-form.ts:82](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/migrate-repo-form.ts#L82)
 
 ___
 
@@ -162,7 +162,7 @@ ___
 
 #### Defined in
 
-[models/migrate-repo-form.ts:88](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/migrate-repo-form.ts#L88)
+[models/migrate-repo-form.ts:88](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/migrate-repo-form.ts#L88)
 
 ___
 
@@ -174,7 +174,7 @@ ___
 
 #### Defined in
 
-[models/migrate-repo-form.ts:94](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/migrate-repo-form.ts#L94)
+[models/migrate-repo-form.ts:94](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/migrate-repo-form.ts#L94)
 
 ___
 
@@ -186,7 +186,7 @@ ___
 
 #### Defined in
 
-[models/migrate-repo-form.ts:100](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/migrate-repo-form.ts#L100)
+[models/migrate-repo-form.ts:100](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/migrate-repo-form.ts#L100)
 
 ___
 
@@ -198,7 +198,7 @@ ___
 
 #### Defined in
 
-[models/migrate-repo-form.ts:106](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/migrate-repo-form.ts#L106)
+[models/migrate-repo-form.ts:106](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/migrate-repo-form.ts#L106)
 
 ___
 
@@ -210,7 +210,7 @@ ___
 
 #### Defined in
 
-[models/migrate-repo-form.ts:112](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/migrate-repo-form.ts#L112)
+[models/migrate-repo-form.ts:112](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/migrate-repo-form.ts#L112)
 
 ___
 
@@ -222,7 +222,7 @@ ___
 
 #### Defined in
 
-[models/migrate-repo-form.ts:118](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/migrate-repo-form.ts#L118)
+[models/migrate-repo-form.ts:118](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/migrate-repo-form.ts#L118)
 
 ___
 
@@ -236,7 +236,7 @@ GitServiceType represents a git service
 
 #### Defined in
 
-[models/migrate-repo-form.ts:124](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/migrate-repo-form.ts#L124)
+[models/migrate-repo-form.ts:124](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/migrate-repo-form.ts#L124)
 
 ___
 
@@ -248,7 +248,7 @@ ___
 
 #### Defined in
 
-[models/migrate-repo-form.ts:130](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/migrate-repo-form.ts#L130)
+[models/migrate-repo-form.ts:130](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/migrate-repo-form.ts#L130)
 
 ___
 
@@ -260,4 +260,4 @@ ___
 
 #### Defined in
 
-[models/migrate-repo-form.ts:136](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/migrate-repo-form.ts#L136)
+[models/migrate-repo-form.ts:136](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/migrate-repo-form.ts#L136)

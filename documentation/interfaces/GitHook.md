@@ -26,7 +26,7 @@ GitHook represents a Git repository hook
 
 #### Defined in
 
-[models/git-hook.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/git-hook.ts#L28)
+[models/git-hook.ts:28](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/git-hook.ts#L28)
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 #### Defined in
 
-[models/git-hook.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/git-hook.ts#L34)
+[models/git-hook.ts:34](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/git-hook.ts#L34)
 
 ___
 
@@ -50,4 +50,4 @@ ___
 
 #### Defined in
 
-[models/git-hook.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/git-hook.ts#L40)
+[models/git-hook.ts:40](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/git-hook.ts#L40)

@@ -32,7 +32,7 @@ UserSettingsOptions represents options to change user settings
 
 #### Defined in
 
-[models/user-settings-options.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/user-settings-options.ts#L28)
+[models/user-settings-options.ts:28](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/user-settings-options.ts#L28)
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 #### Defined in
 
-[models/user-settings-options.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/user-settings-options.ts#L34)
+[models/user-settings-options.ts:34](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/user-settings-options.ts#L34)
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 #### Defined in
 
-[models/user-settings-options.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/user-settings-options.ts#L40)
+[models/user-settings-options.ts:40](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/user-settings-options.ts#L40)
 
 ___
 
@@ -68,7 +68,7 @@ ___
 
 #### Defined in
 
-[models/user-settings-options.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/user-settings-options.ts#L46)
+[models/user-settings-options.ts:46](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/user-settings-options.ts#L46)
 
 ___
 
@@ -82,7 +82,7 @@ Privacy
 
 #### Defined in
 
-[models/user-settings-options.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/user-settings-options.ts#L52)
+[models/user-settings-options.ts:52](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/user-settings-options.ts#L52)
 
 ___
 
@@ -94,7 +94,7 @@ ___
 
 #### Defined in
 
-[models/user-settings-options.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/user-settings-options.ts#L58)
+[models/user-settings-options.ts:58](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/user-settings-options.ts#L58)
 
 ___
 
@@ -106,7 +106,7 @@ ___
 
 #### Defined in
 
-[models/user-settings-options.ts:64](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/user-settings-options.ts#L64)
+[models/user-settings-options.ts:64](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/user-settings-options.ts#L64)
 
 ___
 
@@ -118,7 +118,7 @@ ___
 
 #### Defined in
 
-[models/user-settings-options.ts:70](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/user-settings-options.ts#L70)
+[models/user-settings-options.ts:70](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/user-settings-options.ts#L70)
 
 ___
 
@@ -130,4 +130,4 @@ ___
 
 #### Defined in
 
-[models/user-settings-options.ts:76](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/user-settings-options.ts#L76)
+[models/user-settings-options.ts:76](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/user-settings-options.ts#L76)

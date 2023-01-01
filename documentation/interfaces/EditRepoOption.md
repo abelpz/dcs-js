@@ -16,6 +16,7 @@ EditRepoOption options when editing a repository\'s properties
 - [allow\_merge\_commits](EditRepoOption.md#allow_merge_commits)
 - [allow\_rebase](EditRepoOption.md#allow_rebase)
 - [allow\_rebase\_explicit](EditRepoOption.md#allow_rebase_explicit)
+- [allow\_rebase\_update](EditRepoOption.md#allow_rebase_update)
 - [allow\_squash\_merge](EditRepoOption.md#allow_squash_merge)
 - [archived](EditRepoOption.md#archived)
 - [autodetect\_manual\_merge](EditRepoOption.md#autodetect_manual_merge)
@@ -50,7 +51,7 @@ either `true` to allow mark pr as merged manually, or `false` to prevent it. `ha
 
 #### Defined in
 
-[models/edit-repo-option.ts:37](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-repo-option.ts#L37)
+[models/edit-repo-option.ts:37](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/edit-repo-option.ts#L37)
 
 ___
 
@@ -64,7 +65,7 @@ either `true` to allow merging pull requests with a merge commit, or `false` to 
 
 #### Defined in
 
-[models/edit-repo-option.ts:43](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-repo-option.ts#L43)
+[models/edit-repo-option.ts:43](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/edit-repo-option.ts#L43)
 
 ___
 
@@ -78,7 +79,7 @@ either `true` to allow rebase-merging pull requests, or `false` to prevent rebas
 
 #### Defined in
 
-[models/edit-repo-option.ts:49](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-repo-option.ts#L49)
+[models/edit-repo-option.ts:49](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/edit-repo-option.ts#L49)
 
 ___
 
@@ -92,7 +93,21 @@ either `true` to allow rebase with explicit merge commits (--no-ff), or `false` 
 
 #### Defined in
 
-[models/edit-repo-option.ts:55](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-repo-option.ts#L55)
+[models/edit-repo-option.ts:55](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/edit-repo-option.ts#L55)
+
+___
+
+### <a id="allow_rebase_update" name="allow_rebase_update"></a> allow\_rebase\_update
+
+• `Optional` **allow\_rebase\_update**: `boolean`
+
+either `true` to allow updating pull request branch by rebase, or `false` to prevent it. `has_pull_requests` must be `true`.
+
+**`memberof`** EditRepoOption
+
+#### Defined in
+
+[models/edit-repo-option.ts:61](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/edit-repo-option.ts#L61)
 
 ___
 
@@ -106,7 +121,7 @@ either `true` to allow squash-merging pull requests, or `false` to prevent squas
 
 #### Defined in
 
-[models/edit-repo-option.ts:61](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-repo-option.ts#L61)
+[models/edit-repo-option.ts:67](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/edit-repo-option.ts#L67)
 
 ___
 
@@ -120,7 +135,7 @@ set to `true` to archive this repository.
 
 #### Defined in
 
-[models/edit-repo-option.ts:67](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-repo-option.ts#L67)
+[models/edit-repo-option.ts:73](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/edit-repo-option.ts#L73)
 
 ___
 
@@ -134,7 +149,7 @@ either `true` to enable AutodetectManualMerge, or `false` to prevent it. `has_pu
 
 #### Defined in
 
-[models/edit-repo-option.ts:73](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-repo-option.ts#L73)
+[models/edit-repo-option.ts:79](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/edit-repo-option.ts#L79)
 
 ___
 
@@ -148,7 +163,7 @@ sets the default branch for this repository.
 
 #### Defined in
 
-[models/edit-repo-option.ts:79](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-repo-option.ts#L79)
+[models/edit-repo-option.ts:85](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/edit-repo-option.ts#L85)
 
 ___
 
@@ -162,7 +177,7 @@ set to `true` to delete pr branch after merge by default
 
 #### Defined in
 
-[models/edit-repo-option.ts:85](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-repo-option.ts#L85)
+[models/edit-repo-option.ts:91](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/edit-repo-option.ts#L91)
 
 ___
 
@@ -176,7 +191,7 @@ set to a merge style to be used by this repository: \"merge\", \"rebase\", \"reb
 
 #### Defined in
 
-[models/edit-repo-option.ts:91](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-repo-option.ts#L91)
+[models/edit-repo-option.ts:97](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/edit-repo-option.ts#L97)
 
 ___
 
@@ -190,7 +205,7 @@ a short description of the repository.
 
 #### Defined in
 
-[models/edit-repo-option.ts:97](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-repo-option.ts#L97)
+[models/edit-repo-option.ts:103](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/edit-repo-option.ts#L103)
 
 ___
 
@@ -204,7 +219,7 @@ enable prune - remove obsolete remote-tracking references
 
 #### Defined in
 
-[models/edit-repo-option.ts:103](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-repo-option.ts#L103)
+[models/edit-repo-option.ts:109](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/edit-repo-option.ts#L109)
 
 ___
 
@@ -216,7 +231,7 @@ ___
 
 #### Defined in
 
-[models/edit-repo-option.ts:109](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-repo-option.ts#L109)
+[models/edit-repo-option.ts:115](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/edit-repo-option.ts#L115)
 
 ___
 
@@ -228,7 +243,7 @@ ___
 
 #### Defined in
 
-[models/edit-repo-option.ts:115](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-repo-option.ts#L115)
+[models/edit-repo-option.ts:121](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/edit-repo-option.ts#L121)
 
 ___
 
@@ -242,7 +257,7 @@ either `true` to enable issues for this repository or `false` to disable them.
 
 #### Defined in
 
-[models/edit-repo-option.ts:121](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-repo-option.ts#L121)
+[models/edit-repo-option.ts:127](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/edit-repo-option.ts#L127)
 
 ___
 
@@ -256,7 +271,7 @@ either `true` to enable project unit, or `false` to disable them.
 
 #### Defined in
 
-[models/edit-repo-option.ts:127](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-repo-option.ts#L127)
+[models/edit-repo-option.ts:133](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/edit-repo-option.ts#L133)
 
 ___
 
@@ -270,7 +285,7 @@ either `true` to allow pull requests, or `false` to prevent pull request.
 
 #### Defined in
 
-[models/edit-repo-option.ts:133](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-repo-option.ts#L133)
+[models/edit-repo-option.ts:139](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/edit-repo-option.ts#L139)
 
 ___
 
@@ -284,7 +299,7 @@ either `true` to enable the wiki for this repository or `false` to disable it.
 
 #### Defined in
 
-[models/edit-repo-option.ts:139](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-repo-option.ts#L139)
+[models/edit-repo-option.ts:145](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/edit-repo-option.ts#L145)
 
 ___
 
@@ -298,7 +313,7 @@ either `true` to ignore whitespace for conflicts, or `false` to not ignore white
 
 #### Defined in
 
-[models/edit-repo-option.ts:145](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-repo-option.ts#L145)
+[models/edit-repo-option.ts:151](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/edit-repo-option.ts#L151)
 
 ___
 
@@ -310,7 +325,7 @@ ___
 
 #### Defined in
 
-[models/edit-repo-option.ts:151](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-repo-option.ts#L151)
+[models/edit-repo-option.ts:157](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/edit-repo-option.ts#L157)
 
 ___
 
@@ -324,7 +339,7 @@ set to a string like `8h30m0s` to set the mirror interval time
 
 #### Defined in
 
-[models/edit-repo-option.ts:157](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-repo-option.ts#L157)
+[models/edit-repo-option.ts:163](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/edit-repo-option.ts#L163)
 
 ___
 
@@ -338,7 +353,7 @@ name of the repository
 
 #### Defined in
 
-[models/edit-repo-option.ts:163](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-repo-option.ts#L163)
+[models/edit-repo-option.ts:169](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/edit-repo-option.ts#L169)
 
 ___
 
@@ -352,7 +367,7 @@ either `true` to make the repository private or `false` to make it public. Note:
 
 #### Defined in
 
-[models/edit-repo-option.ts:169](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-repo-option.ts#L169)
+[models/edit-repo-option.ts:175](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/edit-repo-option.ts#L175)
 
 ___
 
@@ -366,7 +381,7 @@ either `true` to make this repository a template or `false` to make it a normal 
 
 #### Defined in
 
-[models/edit-repo-option.ts:175](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-repo-option.ts#L175)
+[models/edit-repo-option.ts:181](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/edit-repo-option.ts#L181)
 
 ___
 
@@ -380,4 +395,4 @@ a URL with more information about the repository.
 
 #### Defined in
 
-[models/edit-repo-option.ts:181](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-repo-option.ts#L181)
+[models/edit-repo-option.ts:187](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/edit-repo-option.ts#L187)

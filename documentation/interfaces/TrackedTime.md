@@ -30,7 +30,7 @@ TrackedTime worked time for an issue / pr
 
 #### Defined in
 
-[models/tracked-time.ts:31](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/tracked-time.ts#L31)
+[models/tracked-time.ts:31](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/tracked-time.ts#L31)
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 #### Defined in
 
-[models/tracked-time.ts:37](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/tracked-time.ts#L37)
+[models/tracked-time.ts:37](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/tracked-time.ts#L37)
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 #### Defined in
 
-[models/tracked-time.ts:43](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/tracked-time.ts#L43)
+[models/tracked-time.ts:43](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/tracked-time.ts#L43)
 
 ___
 
@@ -68,7 +68,7 @@ deprecated (only for backwards compatibility)
 
 #### Defined in
 
-[models/tracked-time.ts:49](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/tracked-time.ts#L49)
+[models/tracked-time.ts:49](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/tracked-time.ts#L49)
 
 ___
 
@@ -82,7 +82,7 @@ Time in seconds
 
 #### Defined in
 
-[models/tracked-time.ts:55](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/tracked-time.ts#L55)
+[models/tracked-time.ts:55](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/tracked-time.ts#L55)
 
 ___
 
@@ -96,7 +96,7 @@ deprecated (only for backwards compatibility)
 
 #### Defined in
 
-[models/tracked-time.ts:61](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/tracked-time.ts#L61)
+[models/tracked-time.ts:61](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/tracked-time.ts#L61)
 
 ___
 
@@ -108,4 +108,4 @@ ___
 
 #### Defined in
 
-[models/tracked-time.ts:67](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/tracked-time.ts#L67)
+[models/tracked-time.ts:67](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/tracked-time.ts#L67)

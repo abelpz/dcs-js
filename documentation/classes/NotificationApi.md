@@ -54,7 +54,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[base.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/base.ts#L52)
+[base.ts:52](https://github.com/unfoldingWord/dcs-js/blob/dd84989/base.ts#L52)
 
 ## Properties
 
@@ -88,7 +88,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[base.ts:50](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/base.ts#L50)
+[base.ts:50](https://github.com/unfoldingWord/dcs-js/blob/dd84989/base.ts#L50)
 
 ## Methods
 
@@ -121,7 +121,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[apis/notification-api.ts:783](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/notification-api.ts#L783)
+[apis/notification-api.ts:783](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/notification-api.ts#L783)
 
 ___
 
@@ -156,7 +156,7 @@ ___
 
 #### Defined in
 
-[apis/notification-api.ts:803](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/notification-api.ts#L803)
+[apis/notification-api.ts:803](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/notification-api.ts#L803)
 
 ___
 
@@ -183,7 +183,7 @@ ___
 
 #### Defined in
 
-[apis/notification-api.ts:815](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/notification-api.ts#L815)
+[apis/notification-api.ts:815](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/notification-api.ts#L815)
 
 ___
 
@@ -209,7 +209,7 @@ ___
 
 #### Defined in
 
-[apis/notification-api.ts:826](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/notification-api.ts#L826)
+[apis/notification-api.ts:826](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/notification-api.ts#L826)
 
 ___
 
@@ -239,7 +239,7 @@ ___
 
 #### Defined in
 
-[apis/notification-api.ts:841](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/notification-api.ts#L841)
+[apis/notification-api.ts:841](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/notification-api.ts#L841)
 
 ___
 
@@ -271,7 +271,7 @@ ___
 
 #### Defined in
 
-[apis/notification-api.ts:858](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/notification-api.ts#L858)
+[apis/notification-api.ts:858](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/notification-api.ts#L858)
 
 ___
 
@@ -299,4 +299,4 @@ ___
 
 #### Defined in
 
-[apis/notification-api.ts:871](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/apis/notification-api.ts#L871)
+[apis/notification-api.ts:871](https://github.com/unfoldingWord/dcs-js/blob/dd84989/apis/notification-api.ts#L871)

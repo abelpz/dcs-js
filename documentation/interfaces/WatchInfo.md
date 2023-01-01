@@ -29,7 +29,7 @@ WatchInfo represents an API watch status of one repository
 
 #### Defined in
 
-[models/watch-info.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/watch-info.ts#L28)
+[models/watch-info.ts:28](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/watch-info.ts#L28)
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 #### Defined in
 
-[models/watch-info.ts:34](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/watch-info.ts#L34)
+[models/watch-info.ts:34](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/watch-info.ts#L34)
 
 ___
 
@@ -53,7 +53,7 @@ ___
 
 #### Defined in
 
-[models/watch-info.ts:40](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/watch-info.ts#L40)
+[models/watch-info.ts:40](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/watch-info.ts#L40)
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 #### Defined in
 
-[models/watch-info.ts:46](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/watch-info.ts#L46)
+[models/watch-info.ts:46](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/watch-info.ts#L46)
 
 ___
 
@@ -77,7 +77,7 @@ ___
 
 #### Defined in
 
-[models/watch-info.ts:52](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/watch-info.ts#L52)
+[models/watch-info.ts:52](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/watch-info.ts#L52)
 
 ___
 
@@ -89,4 +89,4 @@ ___
 
 #### Defined in
 
-[models/watch-info.ts:58](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/watch-info.ts#L58)
+[models/watch-info.ts:58](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/watch-info.ts#L58)

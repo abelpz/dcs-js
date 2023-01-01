@@ -24,4 +24,4 @@ CommitAffectedFiles store information about files affected by the commit
 
 #### Defined in
 
-[models/commit-affected-files.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/commit-affected-files.ts#L28)
+[models/commit-affected-files.ts:28](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/commit-affected-files.ts#L28)

@@ -24,4 +24,4 @@ EditDeadlineOption options for creating a deadline
 
 #### Defined in
 
-[models/edit-deadline-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/09d5a5e/models/edit-deadline-option.ts#L28)
+[models/edit-deadline-option.ts:28](https://github.com/unfoldingWord/dcs-js/blob/dd84989/models/edit-deadline-option.ts#L28)
